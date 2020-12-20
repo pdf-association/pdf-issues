@@ -5,9 +5,9 @@ This public repository is hosted by the [PDF Association](https://www.pdfa.org) 
 Resolutions proposed here are **not** officially authorized by the ISO working group responsible for PDF (ISO TC 171 SC 2 WG 8) and may be changed in future ISO 32000 publications. 
 
 ## A Simple Process
-1. Open a new GitHub Issue and clearly explain the issue you are encountering or the mistake you have found in ISO 32000-2:2020. Please refer to clause and paragraph numbers, tables and figures.
+1. Open a new GitHub Issue using one of the provided templates. Clearly explain the mistake you have found in ISO 32000-2:2020 or the feature you would like to see in a future version of PDF. 
 2. The community can discuss and contribute to open issues here in GitHub.
-3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a concensus for resolution.
+3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for resolution.
 4. The issue will be updated with the agreed resolution and Closed by moderators. 
 
 A full list of all issue resolutions is published at xxxxxx.
