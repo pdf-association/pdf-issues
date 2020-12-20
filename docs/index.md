@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+# ISO 32000-2 Issues
 
-You can use the [editor on GitHub](https://github.com/pdf-association/pdf-issues/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Background
+This public repository is hosted by the [PDF Association](https://www.pdfa.org) in order to provide developers with a means of openly reporting issues against the latest core PDF 2.0 specification ([ISO 32000-2:2020](https://www.iso.org/standard/75839.html)) for review and resolution by industry and ISO experts. All issues in the PDF specification are important, from minor typos and formatting issues, to larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry, PDF interoperability and implementation reliability will be improved.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Resolutions proposed here are **not** officially authorized by the ISO working group responsible for PDF (ISO TC 171 SC 2 WG 8) and may be changed in future ISO 32000 publications. 
 
-### Markdown
+## Issues Resolved
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Here are the current set of issues that have already been resolved.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pdf-association/pdf-issues/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
