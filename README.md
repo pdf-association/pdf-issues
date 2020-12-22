@@ -10,7 +10,7 @@ Resolutions proposed here are **not** officially authorized by the ISO working g
 3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for resolution.
 4. The issue will be updated with the agreed resolution and Closed by moderators. 
 
-A full list of all issue resolutions is published at xxxxxx.
+A full list of all issue resolutions is published at https://www.pdfa.org/pdf-issues/.
 
 ## Legal
 In contributing to this GitHub repository, you acknowledge that all content you share may be reproduced in whole or in part in future PDF Association publications, ISO standards or other deliverables. It is your responsibility in submitting such content to ensure that the agreement of any copyright holder has been obtained. More information about ISO contribution processes can be found [here](https://www.iso.org/publication/PUB100037.html).  
