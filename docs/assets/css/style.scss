@@ -3,8 +3,7 @@
 
 @import "{{ site.theme }}";
 
-.main-content {
- h1 {
-   color: #ff0000;
- }
-}
+.h1          { color: blue; }
+
+.newtext     { background-color: lightyellow; color: green; }
+.deletedtext { background-color: seashell; color: red; text-decoration: line-through; text-decoration-color: red; }
