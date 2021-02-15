@@ -2,14 +2,13 @@ theme: jekyll-theme-minimal
 
 encoding: UTF-8
 
-collections_dir: iso32000-2-2020
 collections:
   clauses:
     output: true
     order:
-      - clause7.md
-      - clause8.md
-      - clause9.md
+      - clause07.md
+      - clause08.md
+      - clause09.md
       - clause10.md
       - clause12.md
       - clause13.md
