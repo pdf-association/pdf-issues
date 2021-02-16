@@ -93,6 +93,8 @@ Similarly, an <b>ID</b> operator shall only appear between a <b>BI</b> and its b
 <span class="new-text">its final or only filter<span class="new-tooltiptext">Issue #20</span></span>, the <b>ID</b> operator shall be followed by a
 single white-space character, and the next character shall be interpreted as the first byte of image data.
 
+<br/><br/>
+
 
 The key-value pairs appearing between the <b>BI</b> and <b>ID</b> operators (as listed in "Table 91 - Entries in an inline
 image object") are analogous to their respective key-value pairs in an image XObject dictionary (see "Table 87 - Additional
