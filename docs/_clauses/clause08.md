@@ -105,7 +105,7 @@ both an abbreviated key name and the corresponding full key name from Table 91 a
 precedence.<span class="new-tooltiptext">Issue #3</span></span> Entries other than those listed shall be ignored.
 
 
-...<br/>
+<br/>...<br/>
 
 
 <span class="deleted-text">NOTE 3 The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
