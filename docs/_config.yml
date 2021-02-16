@@ -37,7 +37,7 @@ include:
 collections:
   clauses:
     output: true
-    permalink: pdf-issues/:collection/:name
+    permalink: /:collection/:name
     order:
       - clause07.md
       - clause08.md
