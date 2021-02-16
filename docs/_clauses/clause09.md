@@ -38,8 +38,11 @@ title: Text
     <td>name</td>
     <td>
     (<i>Required <span class="new-text">for non-Type 3 fonts<span class="new-tooltiptext">Issue #11</span></span></i>)
-    The PostScript name of the font. This name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary
-    that refers to this font descriptor.
+    The PostScript name of the font. <span class="deleted-text">This name shall be the same as the value of <b>BaseFont</b> 
+    in the font or CIDFont dictionary that refers to this font descriptor.<span class="deleted-tooltiptext">Issue #11</span></span>
+    <span class="new-text">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match 
+    the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font 
+    or CIDFont dictionary that refers to this font descriptor.<span class="new-tooltiptext">Issue #11</span></span>
     </td>
   </tr>
 </table>
