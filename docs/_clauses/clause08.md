@@ -86,16 +86,15 @@ title: Graphics
 
 ...<br/>
 
-
+<p>
 Inline image objects shall not be nested; that is, two <b>BI</b> operators shall not appear without an intervening <b>EI</b> to close the first object.
 Similarly, an <b>ID</b> operator shall only appear between a <b>BI</b> and its balancing <b>EI</b>. Unless the image uses <b>ASCIIHexDecode</b> or
 <b>ASCII85Decode</b> as <span class="deleted-text">one of its filters<span class="deleted-tooltiptext">Issue #20</span></span>
 <span class="new-text">its final or only filter<span class="new-tooltiptext">Issue #20</span></span>, the <b>ID</b> operator shall be followed by a
 single white-space character, and the next character shall be interpreted as the first byte of image data.
+</p>
 
-<br/><br/>
-
-
+<p>
 The key-value pairs appearing between the <b>BI</b> and <b>ID</b> operators (as listed in "Table 91 - Entries in an inline
 image object") are analogous to their respective key-value pairs in an image XObject dictionary (see "Table 87 - Additional
 entries specific to an image dictionary") or a stream dictionary (see "Table 5 - Entries common to all stream dictionaries").
@@ -103,11 +102,11 @@ For convenience, the abbreviations shown in "Table 91 - Entries in an inline ima
 abbreviations in an inline image object" may be used in place of the full names. <span class="new-text">In the situation where
 both an abbreviated key name and the corresponding full key name from Table 91 are present, the abbreviated key name shall take
 precedence.<span class="new-tooltiptext">Issue #3</span></span> Entries other than those listed shall be ignored.
+</p>
 
+...<br/>
 
-<br/>...<br/>
-
-
+<p>
 <span class="deleted-text">NOTE 3 The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
 identify the corresponding colour spaces directly; they never refer to resources in the <b>ColorSpace</b> subdictionary.<span class="deleted-tooltiptext">Issue #19</span></span>
 
@@ -115,7 +114,7 @@ identify the corresponding colour spaces directly; they never refer to resources
 <span class="new-text">The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) never refer to
 resources in the <b>ColorSpace</b> subdictionary; they always identify the corresponding colour spaces either directly or via a default colour space (see
 8.6.5.6 "Default colour spaces").<span class="new-tooltiptext">Issue #19</span></span>
-
+</p>
 
 ...<br/>
 
@@ -124,7 +123,7 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 
 
 <br/><hr>
-<p style="text-align:center">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 February 2021</p>
 
 </body>
 </html>

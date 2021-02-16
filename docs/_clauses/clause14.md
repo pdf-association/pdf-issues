@@ -25,13 +25,13 @@ title: Document interchange
 
 ...<br/>
 
-
+<p>
 The property list associated with the marked-content shall specify an array of file specification dictionaries to which
 the content is associated. The named resource in the <span class="deleted-text"><b>Property List</b><span class="deleted-tooltiptext">
 Issue #14</span></span> <span class="new-text"><i>property list</i><span class="new-tooltiptext">Issue #14</span></span>
 (see 14.6.2, "Property lists") shall specify an array of file specification dictionaries to which the content is associated.
 The relationship that the associated files have to the PDF content is supplied by the AFRelationship key in each file specification dictionary.
-
+</p>
 
 ...<br/>
 
@@ -40,7 +40,7 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <br/><hr>
-<p style="text-align:center">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 February 2021</p>
 
 </body>
 </html>

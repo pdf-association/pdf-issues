@@ -47,7 +47,7 @@ title: Rendering
 
 
 <br/><hr>
-<p style="text-align:center">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 February 2021</p>
 
 </body>
 </html>

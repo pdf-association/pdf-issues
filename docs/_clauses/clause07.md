@@ -33,13 +33,13 @@ title: Syntax
   <tr>
     <td><b>F</b></td>
     <td>file specification</td>
-    <td>
+    <td><p>
     (<i>Optional; PDF 1.2</i>) The file containing the stream data. If this entry is present, the bytes between <b>stream</b> and <b>endstream</b>
     shall be ignored. However, the <b>Length</b> entry <span class="deleted-text">should<span class="deleted-tooltiptext">Issue #10</span></span>
     <span class="new-text">shall<span class="new-tooltiptext">Issue #10</span></span> still specify the
     number of those bytes (usually, there are no bytes and <b>Length</b> is 0). The filters that are applied to the file data shall be specified by
     <b>FFilter</b> and the filter parameters shall be specified by <b>FDecodeParms</b>.
-    </td>
+    </p></td>
   </tr>
 </table>
 
@@ -49,36 +49,46 @@ title: Syntax
 
 ...<br/>
 
-
+<p>
 Data used in PDF image XObjects shall be limited to the JPX baseline set of features,  <span class="deleted-text">except for<span class="deleted-tooltiptext">
 Issue #29</span></span>
 <span class="new-text">excluding<span class="new-tooltiptext">Issue #29</span></span> enumerated colour space 19 (CIEJab).
 In addition, enumerated colour space 12 (CMYK), which is part of JPX but not JPX baseline, shall be supported in a PDF file. JPX file
 structures used in PDF files shall conform to the JPEG 2000 specification.
+</p>
 
 
+...<br/>
+
+<h3>7.6.4 Standard security handler</h3>
 
 <h5>7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
 
-
-f) Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
+<ol type="a" start="6">
+<li>
+Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
 <span class="deleted-tooltiptext">Issue #24</span></span> and the file encryption key as the key. ...
-
+</li>
+</ol>
 
 <h5>7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
-
-f) Encrypt the 16-byte block using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
+<ol type="a" start="6">
+<li>
+Encrypt the 16-byte block using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
 <span class="deleted-tooltiptext">Issue #24</span></span>, using the file encryption key as the key.
 The result (16 bytes) is stored as the <b>Perms</b> string, and checked for validity when the file is opened.
-
+</li>
+</ol>
 
 <h5>7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</h5>
 
-
-a) Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
+<ol type="a" start="1">
+<li>
+Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
 <span class="deleted-tooltiptext">Issue #24</span></span> and the file encryption key as the key. ...
-
+</li>
+</ol>
 
 <h3>7.6.6 Crypt filters</h3>
 
@@ -93,13 +103,13 @@ a) Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class
   <tr>
     <td><b>Recipients</b></td>
     <td><span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string or array</td>
-    <td>
+    <td><p>
     (<i>Required</i>) If the crypt filter is referenced from <b>StmF</b> or <b>StrF</b> in the encryption dictionary, this entry shall be an array of byte strings,
     where each <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string shall be a binary-encoded CMS object that shall ...
     <br/>...<br/>
     If the crypt filter is referenced from a <b>Crypt</b> filter decode parameter dictionary (see "Table 14 - Optional parameters for Crypt filters"),
     this entry shall be a <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string that shall be a binary-encoded CMS object that shall ...
-    </td>
+    </p></td>
   </tr>
 </table>
 
@@ -127,7 +137,7 @@ attributes" from some ancestor node of the page object. ...
 
 
 <br/><hr>
-<p style="text-align:center">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 February 2021</p>
 
 </body>
 </html>

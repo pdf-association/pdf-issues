@@ -20,7 +20,7 @@ title: Multimedia features
 <h1>13. Multimedia features</h1>
 
 
-<h3>13.6.3 3D streams</h43>
+<h3>13.6.3 3D streams</h3>
 
 <h4>13.3.6.1 General</h4>
 
@@ -53,7 +53,7 @@ title: Multimedia features
 
 
 <br/><hr>
-<p style="text-align:center">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 February 2021</p>
 
 </body>
 </html>

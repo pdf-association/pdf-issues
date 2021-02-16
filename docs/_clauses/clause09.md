@@ -50,7 +50,7 @@ title: Text
 
 ...<br/>
 
-
+<p>
 The key for each entry in an <b>FD</b> dictionary shall be the name of a class of glyphs - that is, a particular subset of the CIDFont's
 character collection. The entry's value shall be a font descriptor whose contents shall <span class="new-text">be a subset of the keys defined
 in "Table 120 - Entries common to all font descriptors" that<span class="new-tooltiptext">Issue #5</span></span> override the font-wide attributes for that
@@ -59,13 +59,13 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 <b>FontFile3</b>, or any of the entries listed in <span class="deleted-text">"Table 120 - Entries common to all font descriptors"
 <span class="deleted-tooltiptext">Issue #5</span></span><span class="new-text">"Table 122 - Additional font descriptor entries for CIDFonts"
 <span class="new-tooltiptext">Issue #5</span></span>.
-
+</p>
 
 </div>
 
 
 <br/><hr>
-<p style="text-align:center">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 February 2021</p>
 
 </body>
 </html>
