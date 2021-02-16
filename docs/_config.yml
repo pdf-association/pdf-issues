@@ -31,6 +31,9 @@ theme: minima
   
 encoding: UTF-8
 
+include:
+  - _clauses
+
 collections:
   clauses:
     output: true
