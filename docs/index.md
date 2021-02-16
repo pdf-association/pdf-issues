@@ -17,7 +17,7 @@ The current set of resolved issues are presented as marked up changes (additions
 
 {% for clause in site.clauses %}
   <h3>
-    <a href="{{ clause.url }}">
+    <a href="{{ site.baseurl }}/{{ clause.url }}">
       {{ clause.number }} - {{ clause.title }}
     </a>
   </h3>
