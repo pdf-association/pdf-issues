@@ -126,7 +126,7 @@ attributes" from some ancestor node of the page object. ...
 </div>
 
 
-<hr>
+<br/><hr>
 <p style="text-align:center">Last modified: 16 February 2021</p>
 
 </body>

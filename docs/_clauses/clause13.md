@@ -17,10 +17,10 @@ title: Multimedia features
 <div class="iso32000">
 
 
-<h1>13. Multimedia features</h>
+<h1>13. Multimedia features</h1>
 
 
-<h3>13.6.3 3D streams</h4>
+<h3>13.6.3 3D streams</h43>
 
 <h4>13.3.6.1 General</h4>
 
@@ -48,9 +48,11 @@ title: Multimedia features
   </tr>
 </table>
 
+
 </div>
 
-<hr>
+
+<br/><hr>
 <p style="text-align:center">Last modified: 16 February 2021</p>
 
 </body>

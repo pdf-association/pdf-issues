@@ -39,7 +39,7 @@ The relationship that the associated files have to the PDF content is supplied b
 </div>
 
 
-<hr>
+<br/><hr>
 <p style="text-align:center">Last modified: 16 February 2021</p>
 
 </body>

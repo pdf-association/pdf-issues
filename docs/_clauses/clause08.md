@@ -121,7 +121,7 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 </div>
 
 
-<hr>
+<br/><hr>
 <p style="text-align:center">Last modified: 16 February 2021</p>
 
 </body>

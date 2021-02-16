@@ -64,7 +64,7 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 </div>
 
 
-<hr>
+<br/><hr>
 <p style="text-align:center">Last modified: 16 February 2021</p>
 
 </body>

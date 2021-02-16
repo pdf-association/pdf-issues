@@ -202,7 +202,7 @@ title: Interactive features
 </div>
 
 
-<hr>
+<br/><hr>
 <p style="text-align:center">Last modified: 16 February 2021</p>
 
 </body>
