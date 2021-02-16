@@ -37,6 +37,7 @@ include:
 collections:
   clauses:
     output: true
+    permalink: /:collection/:name
     order:
       - clause07.md
       - clause08.md
