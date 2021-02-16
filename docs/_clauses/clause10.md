@@ -3,109 +3,24 @@ number: 10
 title: Rendering
 ---
 
-<style>
-  .iso32000 {
-    font-family: Cambria, Georgia, serif;
-  }
-  .new-text {
-    background-color: lightyellow;
-    color: green;
-    position: relative;
-    display: inline-block;
-  }
-  .new-tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
-    visibility: hidden;
-    color: green;
-    background-color: lightyellow;
-    border-radius: 6px;
-    padding: 5px 0;
-    text-align: center;
-    min-width: 80px;
-    border: 3px solid green;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -50%;
-  }
 
-  .new-text .new-tooltiptext::after {
-    content: "";
-  }
+<html>
+<head>
+<title>ISO 32000-2:2020 Clause 10: Rendering</title>
+</head>
+<body>
 
-  .new-text:hover .new-tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
 
-  .deleted-text {
-    background-color: seashell;
-    color: red;
-    text-decoration: line-through;
-    text-decoration-color: red;
-    position: relative;
-    display: inline-block;
-  }
+{% include iso-style.html %}
 
-  .deleted-tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
-    visibility: hidden;
-    background-color: seashell;
-    color: red;
-    min-width: 80px;
-    text-align: center;
-    border-radius: 6px;
-    border: 3px solid red;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -50%;
-  }
-  .deleted-text .deleted-tooltiptext::after {
-    content: "";
-  }
-  .deleted-text:hover .deleted-tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    border: 1px solid black;
-  }
-  caption {
-    font-weight: bold;
-  }
-  th {
-    text-align: left;
-    border-collapse: collapse;
-    border: 1px solid black;
-    border-top: solid thick;
-    border-bottom: solid thick;
-  }
-  td {
-    text-align: left;
-    min-width: 50px;
-    max-width: 500px;
-    border-collapse: collapse;
-    border: 1px solid black;
-  }
-</style>
 
 <div class="iso32000">
 
 
-# 10. Rendering
+<h1>10. Rendering</h1>
 
 
-#### 10.6.5.6 Type 5 halftones
+<h4>10.6.5.6 Type 5 halftones</h4>
 
 
 <table>
@@ -129,3 +44,10 @@ title: Rendering
 
 
 </div>
+
+
+<hr>
+<p style="text-align:center">Last modified: 16 February 2021</p>
+
+</body>
+</html>

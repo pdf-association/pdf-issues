@@ -1,4 +1,9 @@
-# ISO 32000-2 Issues
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
 
 ## Background
 This public repository is hosted by the [PDF Association](https://www.pdfa.org) in order to provide developers with a means of openly reporting issues against the latest core PDF 2.0 specification ([ISO 32000-2:2020](https://www.iso.org/standard/75839.html)) for review and resolution by industry and ISO experts. All issues in the PDF specification are important, from minor typos and formatting issues, to larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry, PDF interoperability and implementation reliability will be improved.

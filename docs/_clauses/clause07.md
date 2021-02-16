@@ -3,110 +3,24 @@ number: 7
 title: Syntax
 ---
 
-<style>
-  .iso32000 {
-    font-family: Cambria, Georgia, serif;
-  }
-  .new-text {
-    background-color: lightyellow;
-    color: green;
-    position: relative;
-    display: inline-block;
-  }
-  .new-tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
-    visibility: hidden;
-    color: green;
-    background-color: lightyellow;
-    border-radius: 6px;
-    padding: 5px 0;
-    text-align: center;
-    min-width: 80px;
-    border: 3px solid green;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -50%;
-  }
 
-  .new-text .new-tooltiptext::after {
-    content: "";
-  }
+<html>
+<head>
+<title>ISO 32000-2:2020 Clause 7: Syntax</title>
+</head>
+<body>
 
-  .new-text:hover .new-tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
 
-  .deleted-text {
-    background-color: seashell;
-    color: red;
-    text-decoration: line-through;
-    text-decoration-color: red;
-    position: relative;
-    display: inline-block;
-  }
-
-  .deleted-tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
-    visibility: hidden;
-    background-color: seashell;
-    color: red;
-    min-width: 80px;
-    text-align: center;
-    border-radius: 6px;
-    border: 3px solid red;
-    padding: 5px 0;
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -50%;
-  }
-  .deleted-text .deleted-tooltiptext::after {
-    content: "";
-  }
-  .deleted-text:hover .deleted-tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-    border: 1px solid black;
-  }
-  caption {
-    font-weight: bold;
-  }
-  th {
-    text-align: left;
-    border-collapse: collapse;
-    border: 1px solid black;
-    border-top: solid thick;
-    border-bottom: solid thick;
-  }
-  td {
-    text-align: left;
-    min-width: 50px;
-    max-width: 500px;
-    border-collapse: collapse;
-    border: 1px solid black;
-  }
-</style>
+{% include iso-style.html %}
 
 
 <div class="iso32000">
 
 
-# 7. Syntax
+<h1>7. Syntax</h1>
 
 
-#### 7.3.8.2 Stream extent
+<h4>7.3.8.2 Stream extent</h4>
 
 
 <table>
@@ -130,7 +44,7 @@ title: Syntax
 </table>
 
 
-### 7.4.9 JPXDecode filter
+<h3>7.4.9 JPXDecode filter</h3>
 
 
 ...<br/>
@@ -144,14 +58,14 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 
 
-##### 7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)
+<h5>7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
 
 
 f) Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
 <span class="deleted-tooltiptext">Issue #24</span></span> and the file encryption key as the key. ...
 
 
-##### 7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)
+<h5>7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
 
 f) Encrypt the 16-byte block using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
@@ -159,14 +73,14 @@ f) Encrypt the 16-byte block using AES-256 in ECB mode <span class="deleted-text
 The result (16 bytes) is stored as the <b>Perms</b> string, and checked for validity when the file is opened.
 
 
-##### 7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)
+<h5>7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</h5>
 
 
 a) Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="deleted-text">with an initialization vector of zero
 <span class="deleted-tooltiptext">Issue #24</span></span> and the file encryption key as the key. ...
 
 
-### 7.6.6 Crypt filters
+<h3>7.6.6 Crypt filters</h3>
 
 
 <table>
@@ -190,7 +104,7 @@ a) Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class
 </table>
 
 
-### 7.8.3 Resource dictionaries
+<h3>7.8.3 Resource dictionaries</h3>
 
 
 ...<br/>
@@ -211,3 +125,9 @@ attributes" from some ancestor node of the page object. ...
 
 </div>
 
+
+<hr>
+<p style="text-align:center">Last modified: 16 February 2021</p>
+
+</body>
+</html>
