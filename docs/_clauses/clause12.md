@@ -90,6 +90,30 @@ title: Interactive features
 </table>
 
 
+<h3>12.4.4 Presentations</h3>
+
+
+<h4>12.4.4.1 General</h4>
+
+
+<table>
+  <caption>Table 164 - Entries in a transition dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Di</b></td>
+    <td><span class="deleted-text">number<span class="deleted-tooltiptext">Issue #36</span></span><span class="new-text">integer<span class="new-tooltiptext">Issue #36</span></span> or name</td>
+    <td>...<br/>
+    <p>If the value is a <span class="deleted-text">number<span class="deleted-tooltiptext">Issue #36</span></span><span class="new-text">integer<span class="new-tooltiptext">Issue #36</span></span>, it shall be one of:</p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
 <h3>12.5.2 Annotation dictionaries</h3>
 
 
@@ -125,9 +149,19 @@ title: Interactive features
   <tr>
     <td><b>AddRevInfo</b></td>
     <td>boolean</td>
-    <td>NOTE 3 <span class="deleted-text">adbe.pkcs7.detached<span class="deleted-tooltiptext">Issue #4</span></span><span class="new-text">adbe.x509.rsa_sha1<span class="new-tooltiptext">Issue #4</span></span> and adbe.pkcs7.sha1 are deprecated in PDF 2.0.</td>
+    <td>NOTE 3 <span class="deleted-text"><i>adbe.pkcs7.detached</i><span class="deleted-tooltiptext">Issue #4</span></span><span class="new-text"><i>adbe.x509.rsa_sha1</i>
+    <span class="new-tooltiptext">Issue #4</span></span> and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.</td>
   </tr>
 </table>
+
+
+<h3>12.7.9 Non-interactive forms</h3>
+
+
+<p>
+Unlike interactive forms, non-interactive forms do not use widget annotations but are represented with page content. Non-interactive forms are defined by the
+<b>PrintField</b> attrib<span class="deleted-text">0<span class="deleted-tooltiptext">Issue #54</span></span>ute (14.8.5.6, "PrintField attributes") for repurposing and accessibility purposes.
+</p>
 
 
 <h3>12.8.1 Signature Fields</h3>
@@ -145,7 +179,7 @@ title: Interactive features
     <td>byte string or array</td>
     <td>
     ...<br/>
-    <span class="new-text">NOTE adbe.x509.rsa_sha1 and adbe.pkcs7.sha1 are deprecated in PDF 2.0.<span class="new-tooltiptext">Issue #4</span></span></td>
+    <span class="new-text">NOTE <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.<span class="new-tooltiptext">Issue #4</span></span></td>
   </tr>
 </table>
 
@@ -203,7 +237,7 @@ title: Interactive features
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 7 March 2021</p>
 
 </body>
 </html>

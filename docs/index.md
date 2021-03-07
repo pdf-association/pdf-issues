@@ -25,11 +25,12 @@ Resolutions proposed here are <b>not</b> officially authorized by the ISO workin
 <h2>Issues Resolved</h2>
 
 <p>
-The current set of resolved issues are presented as marked up changes
+The current set of resolved issues are presented as localized marked up changes
 (<span style="background-color: lightyellow; color: green; position: relative; display: inline-block;">additions</span>
 and <span style="background-color: seashell; color: red; text-decoration: line-through; text-decoration-color: red; position: relative; display: inline-block;">deletions</span>) to the published
-wording in ISO 32000-2:2020 under each top level clause. Issue numbers refer back to
+wording in ISO 32000-2:2020 under each top level clause. Issue numbers (implemented here as popup tooltips) refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22">closed GitHub pdf-issues with a "proposed solution" label</a>.
+Due to ISO copyright, only minimal surrounding text from ISO 32000-2:2020 is provided that is sufficient to locate where the resolution is being applied.
 </p>
 
 {% for clause in site.clauses %}
@@ -39,5 +40,8 @@ wording in ISO 32000-2:2020 under each top level clause. Issue numbers refer bac
     </a>
   </h3>
 {% endfor %}
+
+<br/><hr>
+<p class="footnote">Last modified: 7 March 2021</p>
 
 </div>

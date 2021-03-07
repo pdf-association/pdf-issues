@@ -20,6 +20,47 @@ title: Text
 <h1>9. Text</h1>
 
 
+<h3>9.6.4 Type 3 fonts</h3>
+
+
+<table>
+  <caption>Table 111 - Type 3 font operators</caption>
+  <tr>
+    <th>Operands</th>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><i>w<sub>x</sub> w<sub>y</sub></i></td>
+    <td><b>d0</b></td>
+    <td>
+    ...<br/>
+    <p>
+    <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <span class="new-text">The number <span class="new-tooltiptext">Issue #43</span></span><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    </p>
+    ...<br/>
+    </td>
+  </tr>
+  <tr>
+    <td><i>w<sub>x</sub> w<sub>y</sub> ll<sub>x</sub> ll<sub>y</sub> ur<sub>x</sub> ur<sub>y</sub></i></td>
+    <td><b>d1</b></td>
+    <td>
+    ...<br/>
+    <p>
+    <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    </p>
+    <p>
+    <span class="new-text">The numbers<span class="new-tooltiptext">Issue #43</span></span> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
+    and <span class="new-text">The numbers<span class="new-tooltiptext">Issue #43</span></span> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
+    </p>
+    ...<br/>
+    </td>
+  </tr>
+</table>
+
+
 <h2>9.8 Font descriptors</h2>
 
 
@@ -38,10 +79,10 @@ title: Text
     <td>name</td>
     <td>
     (<i>Required <span class="new-text">for non-Type 3 fonts<span class="new-tooltiptext">Issue #11</span></span></i>)
-    The PostScript name of the font. <span class="deleted-text">This name shall be the same as the value of <b>BaseFont</b> 
+    The PostScript name of the font. <span class="deleted-text">This name shall be the same as the value of <b>BaseFont</b>
     in the font or CIDFont dictionary that refers to this font descriptor.<span class="deleted-tooltiptext">Issue #11</span></span>
-    <span class="new-text">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match 
-    the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font 
+    <span class="new-text">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match
+    the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font
     or CIDFont dictionary that refers to this font descriptor.<span class="new-tooltiptext">Issue #11</span></span>
     </td>
   </tr>
@@ -68,7 +109,7 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 7 March 2021</p>
 
 </body>
 </html>

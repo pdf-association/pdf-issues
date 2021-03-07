@@ -20,6 +20,27 @@ title: Document interchange
 <h1>14. Document interchange</h1>
 
 
+<h5>14.8.4.8.3 Table structure types</h5>
+
+
+<table>
+  <caption>Table 371 - Table standard structure types</caption>
+  <tr>
+    <th>Structure Type</th>
+    <th>Category</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>TR</b></td>
+    <td>Internal to a <b>Table</b> structure</td>
+    <td>
+    <p>A row of table header cells (<b>TH</b>) <span class="new-text">and/<span class="new-tooltiptext">Issue #45</span></span>or table data cells (<b>TD</b>) in a table.
+    </p>
+    </td>
+  </tr>
+</table>
+
+
 <h3>14.13.5 Associated files linked to graphics objects</h3>
 
 
@@ -40,7 +61,7 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 7 March 2021</p>
 
 </body>
 </html>

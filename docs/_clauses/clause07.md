@@ -90,6 +90,24 @@ Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="d
 </li>
 </ol>
 
+<h4>7.6.5.3 Public-key encryption algorithms</h4>
+
+<p><i>New notes added at the end of sub-clause 7.6.5.3:</i></p>
+
+<span class="new-text">
+<p>NOTE 1: This means that step c) only applies when both of the following conditions are met:</p>
+
+<ul>
+<li>the key is being generated for the crypt filter named <i>DefaultCryptFilter</i> (i.e. the crypt filter used as the value for <b>StmF</b> in the encryption dictionary);</li>
+<li>the <b>EncryptMetadata</b> entry of the associated crypt filter dictionary is set to <i>false</i>.</li>
+</ul>
+
+<p>NOTE 2: Since crypt filters are not supported when <b>SubFilter</b> is set to <i>adbe.pkcs7.s3</i> or <i>adbe.pkcs7.s4</i> in the encryption dictionary,
+there is no way to specify that metadata is to be left unencrypted in these cases. In particular, step c) is always skipped for these <b>SubFilter</b> values.</p>
+<span class="new-tooltiptext">Issue #25</span>
+</span>
+
+
 <h3>7.6.6 Crypt filters</h3>
 
 
@@ -132,12 +150,29 @@ attributes" from some ancestor node of the page object. ...
 
 ...<br/>
 
+<h3>7.10.3 Type 2 (exponential interpolation) functions</h3>
+
+
+...<br/>
+
+<p>Values of <b>Domain</b> shall constrain <i>x</i> in such a way that<span class="new-text">: <span class="new-tooltiptext">Issue #30</span></span></p>
+
+<ul>
+    <li><span class="new-text">if <b>N</b> is not an integer, all values of <i>x</i> will be non-negative; and<span class="new-tooltiptext">Issue #30</span></span></li>
+    <li><span class="new-text">if <b>N</b> is negative, no value of <i>x</i> will be zero.<span class="new-tooltiptext">Issue #30</span></span></li>
+</ul>
+
+<p>Typically, <b>Domain</b> is declared as [0.0 1.0], and <b>N</b> is a positive number. To clip the output to a specified range the <b>Range</b> attribute shall be used.</p>
+
+
+...<br/>
+
 
 </div>
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 7 March 2021</p>
 
 </body>
 </html>
