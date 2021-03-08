@@ -24,7 +24,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * The "Last Modified" date at the end of each clause MD file needs to be changed manually (as this needs to be the edit time of substantive changes, not just trying to work around GH-Pages issues)
 
-* A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll](GitHub Docs):
+* A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
 
 ```bundle exec jekyll serve```
 
