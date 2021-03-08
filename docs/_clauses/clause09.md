@@ -20,6 +20,62 @@ title: Text
 <h1>9. Text</h1>
 
 
+<h3>9.6.2 Type 1 fonts</h3>
+
+
+<h4>9.6.2.1 General</h4>
+
+
+<table>
+  <caption>Table 109 - Entries in a Type 1 font dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>FontDescritpor</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts; shall be an indirect reference</i>) A font descriptor describing the
+    font's metrics other than its glyph widths (see 9.8, "Font descriptors").</p>
+    <p><span class="deleted-text">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be
+    present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see<span class="deleted-tooltiptext">
+    Issue #47 and #48</span></span> <span class="new-text">See also<span class="new-tooltiptext">Issue #47 and #48</span></span> 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".</p>
+    </td>
+  </tr>
+</table>
+
+
+<p>
+<span class="deleted-text">
+PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries
+as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font
+descriptor data for those standard fonts for use in processing PDF files when the entries are absent.
+<span class="deleted-tooltiptext">Issue #47 and #48</span></span>
+<span class="new-text">See also 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".<span class="new-tooltiptext">Issue #47 and #48</span></span>
+</p>
+
+
+...<br/>
+
+
+<h4>9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</h4>
+
+...<br/>
+
+<p>
+<span class="new-text">NOTE: <span class="new-tooltiptext">Issue #47 and #48</span></span>
+In PDF 1.0 to PDF 1.7, the <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> (see "Table 109 - Entries in a Type 1 font dictionary") were
+optional in Type 1 font dictionaries for the standard 14 fonts. PDF processors supporting PDF 1.0 to PDF 1.7 files
+<span class="deleted-text">shall<span class="deleted-tooltiptext">Issue #47 and #48</span></span>
+<span class="new-text">are required to<span class="new-tooltiptext">Issue #47 and #48</span></span>
+have these fonts, or their font metrics and suitable substitution fonts available.</p>
+
+<p><span class="deleted-text">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.
+<span class="deleted-tooltiptext">Issue #47 and #48</span></span></p>
+
+
 <h3>9.6.4 Type 3 fonts</h3>
 
 
@@ -109,7 +165,7 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 
 
 <br/><hr>
-<p class="footnote">Last modified: 7 March 2021</p>
+<p class="footnote">Last modified: 8 March 2021</p>
 
 </body>
 </html>
