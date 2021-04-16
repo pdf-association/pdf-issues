@@ -19,6 +19,16 @@ title: Graphics
 
 <h1>8. Graphics</h1>
 
+<h4>8.6.5.8 Rendering Intents</h4>
+
+...<br/>
+
+<p>
+NOTE The exact set of rendering intents supported can vary from one output device to another; a particular device
+<span class="deleted-text">does not have to support all PDF rendering intents and<span class="deleted-tooltiptext">Issue #63</span></span>
+can support additional ones beyond those listed in the table above.
+</p>
+
 
 <h3>8.9.5 Image dictionaries</h3>
 
@@ -123,7 +133,7 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: 16 April 2021</p>
 
 </body>
 </html>

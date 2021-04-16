@@ -115,11 +115,66 @@ define appearance streams or how appearance streams would be rendered onto the p
 </table>
 
 
+<h5>13.7.2.2.2 RichMediaActivation dictionary</h5>
+
+
+<table>
+  <caption>Table 335 - Entries in a RichMediaActivation dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><span class="new-text"><b>Scripts</b><span class="new-tooltiptext">Issue #59</span></span></td>
+    <td><span class="new-text">array<span class="new-tooltiptext">Issue #59</span></span></td>
+    <td>
+    <span class="new-text">
+    <p>
+    (<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in
+    the <b>Assets</b> name tree of the RichMediaContent dictionary.</p>
+    <p>
+    Default value: If the array has no elements, no script is executed.
+    </p>
+    <span class="new-tooltiptext">Issue #59</span></span>
+    </td>
+  </tr>
+</table>
+
+
+<h5>13.7.2.3.4 RichMediaInstance dictionary</h5>
+
+
+<table>
+  <caption>Table 343 - Entries in a RichMediaInstance dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Asset</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Required; PDF 2.0</i>) A dictionary that shall be an indirect object reference to a file specification dictionary that
+    <span class="deleted-text">is also<span class="deleted-tooltiptext">Issue #58</span></span>
+    <span class="new-text">may also be<span class="new-tooltiptext">Issue #58</span></span>
+    referenced in the <b>Assets</b> name tree specified in the RichMediaContent dictionary of the annotation.
+    </p>
+    <p>
+    <span class="new-text">NOTE the RichMedia asset itself is not referenced by name, however other assets may be referenced from the
+    RichMedia asset by name and thus need to in the <b>Assets</b> name tree.<span class="new-tooltiptext">Issue #58</span></span>
+    </p>
+    </td>
+  </tr>
+</table>
+
+
 </div>
 
 
 <br/><hr>
-<p class="footnote">Last modified: 7 March 2021</p>
+<p class="footnote">Last modified: 16 April 2021</p>
 
 </body>
 </html>

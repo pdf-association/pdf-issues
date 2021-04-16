@@ -167,12 +167,40 @@ attributes" from some ancestor node of the page object. ...
 
 ...<br/>
 
+<h3>7.11.6 Collection items</h3>
+
+
+<table>
+  <caption>Table 47 - Entries in a collection subitem dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>D</b></td>
+    <td>text string, date or number</td>
+    <td><p>
+    (<i>Optional</i>) The data corresponding to the related entry in the collection field dictionary (see "Table 155 - Entries in a collection field dictionary").
+    The type of data shall match the data type identified by the corresponding collection field dictionary. <span class="deleted-text">Default: <i>none</i>.<span class="deleted-tooltiptext">Issue #37</span></span>
+    </p></td>
+  </tr>
+  <tr>
+    <td><b>P</b></td>
+    <td>text string</td>
+    <td><p>
+    (<i>Optional</i>) A prefix string that shall be concatenated with the text string presented to the user. This entry is ignored when an interactive PDF
+    processor sorts the items in the collection. <span class="deleted-text">Default: <i>none</i>.<span class="deleted-tooltiptext">Issue #37</span></span>
+    </p></td>
+  </tr>
+</table>
+
 
 </div>
 
 
 <br/><hr>
-<p class="footnote">Last modified: 7 March 2021</p>
+<p class="footnote">Last modified: 16 April 2021</p>
 
 </body>
 </html>

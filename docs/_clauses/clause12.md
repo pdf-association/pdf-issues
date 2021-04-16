@@ -136,6 +136,61 @@ title: Interactive features
 </table>
 
 
+<h4>12.5.6.5 Link annotations</h4>
+
+
+<table>
+  <caption>Table 176 - Additional entries specific to a link annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>QuadPoints</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Optional; PDF 1.6</i>) An array of 8 &times; <i>n</i> numbers specifying the coordinates of n quadrilaterals in default user space that comprise
+    the region in which the link should be activated. The coordinates for each quadrilateral are given in the order:<br/>
+    <i>x</i><sub>1</sub> <i>y</i><sub>1</sub> <i>x</i><sub>2</sub> <i>y</i><sub>2</sub> <i>x</i><sub>3</sub> <i>y</i><sub>3</sub> <i>x</i><sub>4</sub> <i>y</i><sub>4</sub><br/>
+    specifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a
+    quadrilateral is the line formed by (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) and (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>).<br/>
+    If this entry is not present, or the PDF processor does not recognise it, or if any coordinates in the <b>QuadPoints</b> array lie outside the region specified by
+    <b>Rect</b> then the activation region for the link annotation shall be defined by its <b>Rect</b> entry.
+    </p>
+    <p><span class="new-text">NOTE 1 When <b>QuadPoints</b> is used, the activation area and the visual appearance (including border) of the link annotation are not
+    required to be the same.<span class="new-tooltiptext">Issue #17</span></span></p>
+    <p>NOTE <span class="new-text">2<span class="new-tooltiptext">Issue #17</span></span> The last paragraph above was clarified in this document (2020).</p>
+    </td>
+  </tr>
+</table>
+
+
+<h3>12.7.4 Field dictionaries</h3>
+
+
+<h4>12.7.4.1 General</h4>
+
+
+<table>
+  <caption>Table 226 - Entries common to all field dictionaries</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>T</b></td>
+    <td>text string</td>
+    <td>
+    (<i><span class="deleted-text">Required<span class="deleted-tooltiptext">Issue #28</span></span>
+        <span class="new-text">Optional<span class="new-tooltiptext">Issue #28</span></span></i>)
+    The partial field name (see 12.7.4.2, "Field names").
+    </td>
+  </tr>
+</table>
+
+
 <h4>12.7.5.5 Signature Fields</h4>
 
 
@@ -166,6 +221,19 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <h3>12.8.1 Signature Fields</h3>
 
+...<br>
+
+<p>A PDF document may contain the following standard types of signatures:<p>
+<ul>
+  <li>...</li>
+  <li>
+  Any number of document timestamp signatures, see 12.8.5, "Document timestamp (DTS) dictionary". The timestamp signature dictionary of a document timestamp signature
+  shall be the value of a signature field and shall contain a <b>ByteRange</b> entry. <span class="new-text">These shall follow the certification signature if one
+  is present.<span class="new-tooltiptext">Issue #55</span></span>
+  </li>
+</ul>
+
+<p>A signature dictionary is used by all of these types of signatures.</p>
 
 <table>
   <caption>Table 255 - Entries in a signature dictionary</caption>
@@ -237,7 +305,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 
 <br/><hr>
-<p class="footnote">Last modified: 7 March 2021</p>
+<p class="footnote">Last modified: 16 April 2021</p>
 
 </body>
 </html>
