@@ -4,14 +4,13 @@ title: Multimedia features
 ---
 
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>ISO 32000-2:2020 Clause 13: Multimedia</title>
+{% include iso-style.html %}
 </head>
 <body>
-
-
-{% include iso-style.html %}
 
 
 <div class="iso32000">
@@ -129,14 +128,14 @@ define appearance streams or how appearance streams would be rendered onto the p
     <td><span class="new-text"><b>Scripts</b><span class="new-tooltiptext">Issue #59</span></span></td>
     <td><span class="new-text">array<span class="new-tooltiptext">Issue #59</span></span></td>
     <td>
-    <span class="new-text">
+    <div class="new-text">
     <p>
     (<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in
     the <b>Assets</b> name tree of the RichMediaContent dictionary.</p>
     <p>
     Default value: If the array has no elements, no script is executed.
     </p>
-    <span class="new-tooltiptext">Issue #59</span></span>
+    <span class="new-tooltiptext">Issue #59</span></div>
     </td>
   </tr>
 </table>

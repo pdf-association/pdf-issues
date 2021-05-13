@@ -32,6 +32,8 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * "View Page source" from inside various browsers (Edge, Chrome, FF, Safari for Mac users) and check for 'red' tags indicating issues (such as typos, missing or mismatched HTML tags, etc).
 
+* Upload each of the local HTML files produced by jekyll (in ```/docs/_site/clause```) to the [W3C HTML Validator](https://validator.w3.org/nu/#file). Only the error *"Error: Start tag seen without seeing a doctype first. Expected &lt;!DOCTYPE html&gt;."* should be seen for each page as Jekyll doesn't process this correctly if it gets added.
+
 * Each pdf-issue is then closed in GitHub, possibly with any additional comment if any unexpected issue or edit arose in implementing the PDF TWG recommendations.
 
 * Once pushed to GitHub, wait for the "successfully deployed" message and then also check [https://pdfa.org/pdf-issues](https://pdfa.org/pdf-issues). If there are any issues when incorporated into the iframes used by pdfa.org, also check the direct GitHub Jekkll site at [https://pdf-association.github.io/pdf-issues/](https://pdf-association.github.io/pdf-issues/)

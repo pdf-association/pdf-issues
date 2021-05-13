@@ -4,17 +4,13 @@ title: Syntax
 ---
 
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>ISO 32000-2:2020 Clause 7: Syntax</title>
+{% include iso-style.html %}
 </head>
 <body>
-
-
-{% include iso-style.html %}
-
-
-<div class="iso32000">
 
 
 <h1>7. Syntax</h1>
@@ -94,7 +90,7 @@ Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="d
 
 <p><i>New notes added at the end of sub-clause 7.6.5.3:</i></p>
 
-<span class="new-text">
+<div class="new-text">
 <p>NOTE 1: This means that step c) only applies when both of the following conditions are met:</p>
 
 <ul>
@@ -105,7 +101,7 @@ Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="d
 <p>NOTE 2: Since crypt filters are not supported when <b>SubFilter</b> is set to <i>adbe.pkcs7.s3</i> or <i>adbe.pkcs7.s4</i> in the encryption dictionary,
 there is no way to specify that metadata is to be left unencrypted in these cases. In particular, step c) is always skipped for these <b>SubFilter</b> values.</p>
 <span class="new-tooltiptext">Issue #25</span>
-</span>
+</d>
 
 
 <h3>7.6.6 Crypt filters</h3>

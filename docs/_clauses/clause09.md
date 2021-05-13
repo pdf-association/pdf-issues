@@ -4,14 +4,13 @@ title: Text
 ---
 
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>ISO 32000-2:2020 Clause 9: Text</title>
+{% include iso-style.html %}
 </head>
 <body>
-
-
-{% include iso-style.html %}
 
 
 <div class="iso32000">

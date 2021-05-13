@@ -4,14 +4,13 @@ title: Rendering
 ---
 
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>ISO 32000-2:2020 Clause 10: Rendering</title>
+{% include iso-style.html %}
 </head>
 <body>
-
-
-{% include iso-style.html %}
 
 
 <div class="iso32000">

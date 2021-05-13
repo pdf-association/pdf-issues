@@ -4,14 +4,13 @@ title: Interactive features
 ---
 
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>ISO 32000-2:2020 Clause 12: Interactive features</title>
+{% include iso-style.html %}
 </head>
 <body>
-
-
-{% include iso-style.html %}
 
 
 <div class="iso32000">
@@ -223,7 +222,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 ...<br>
 
-<p>A PDF document may contain the following standard types of signatures:<p>
+<p>A PDF document may contain the following standard types of signatures:</p>
 <ul>
   <li>...</li>
   <li>

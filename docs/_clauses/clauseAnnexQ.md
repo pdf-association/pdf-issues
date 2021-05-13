@@ -4,14 +4,13 @@ title: (normative) Method for determining transparency on a page
 ---
 
 
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>ISO 32000-2:2020 Annex Q: (normative) Method for determining transparency on a page</title>
+{% include iso-style.html %}
 </head>
 <body>
-
-
-{% include iso-style.html %}
 
 
 <div class="iso32000">
