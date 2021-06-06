@@ -13,6 +13,8 @@ title: Syntax
 <body>
 
 
+<div class="iso32000">
+
 <h1>7. Syntax</h1>
 
 
@@ -43,7 +45,7 @@ title: Syntax
 <h3>7.4.9 JPXDecode filter</h3>
 
 
-...<br/>
+<p>...</p>
 
 <p>
 Data used in PDF image XObjects shall be limited to the JPX baseline set of features,  <span class="deleted-text">except for<span class="deleted-tooltiptext">
@@ -54,7 +56,7 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 </p>
 
 
-...<br/>
+<p>...</p>
 
 <h3>7.6.4 Standard security handler</h3>
 
@@ -101,11 +103,19 @@ Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="d
 <p>NOTE 2: Since crypt filters are not supported when <b>SubFilter</b> is set to <i>adbe.pkcs7.s3</i> or <i>adbe.pkcs7.s4</i> in the encryption dictionary,
 there is no way to specify that metadata is to be left unencrypted in these cases. In particular, step c) is always skipped for these <b>SubFilter</b> values.</p>
 <span class="new-tooltiptext">Issue #25</span>
-</d>
+</div>
 
 
 <h3>7.6.6 Crypt filters</h3>
 
+<p>PDF 1.5 introduces crypt filters, which provide finer granularity control of encryption within a PDF file. The use of crypt filters involves the following structures:</p>
+
+<ul>
+  <li>The encryption dictionary (see "Table 20 - Entries common to all encryption dictionaries") contains entries that enumerate the crypt filters in the document (<b>CF</b>) and specify which ones are used by default to decrypt all the streams (<b>StmF</b>) and strings (<b>StrF</b>) in the document. In addition, the value of the V entry shall be 4 <span class="new-text">or 5<span class="new-tooltiptext">Issue #74</span></span> to use crypt filters.
+  </li>
+</ul>
+
+<p>...</p>
 
 <table>
   <caption>Table 27 - Additional crypt filter dictionary entries for public-key security handlers</caption>
@@ -130,9 +140,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h3>7.8.3 Resource dictionaries</h3>
 
-
-...<br/>
-
+<p>...</p>
 
 <ul>
 <li>
@@ -144,12 +152,30 @@ attributes" from some ancestor node of the page object. ...
 </ul>
 
 
-...<br/>
+<p>...</p>
+
+<h4>7.9.2.2 Text string type</h4>
+
+<h5>7.9.2.2.1 General</h5>
+
+<p>...</p>
+
+<p>EXAMPLE A PDF dictionary containing key ‘Key’ with the value that is the text string "text‰" will look like</p>
+
+<code>
+&lt;&lt;/Key(text?)&gt;&gt;
+</code>
+
+<p>where the character '?' after the 'text' is represented by the hex code 8B<span class="new-text">h<span class="new-tooltiptext">Issue #75</span></span> (octal code 213 - that is according to "D.2 Latin character set and encodings").</p>
+
+
+<p>...</p>
+
 
 <h3>7.10.3 Type 2 (exponential interpolation) functions</h3>
 
 
-...<br/>
+<p>...</p>
 
 <p>Values of <b>Domain</b> shall constrain <i>x</i> in such a way that<span class="new-text">: <span class="new-tooltiptext">Issue #30</span></span></p>
 
@@ -161,7 +187,8 @@ attributes" from some ancestor node of the page object. ...
 <p>Typically, <b>Domain</b> is declared as [0.0 1.0], and <b>N</b> is a positive number. To clip the output to a specified range the <b>Range</b> attribute shall be used.</p>
 
 
-...<br/>
+<p>...</p>
+
 
 <h3>7.11.6 Collection items</h3>
 
@@ -196,7 +223,7 @@ attributes" from some ancestor node of the page object. ...
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 April 2021</p>
+<p class="footnote">Last modified: 6 June 2021</p>
 
 </body>
 </html>

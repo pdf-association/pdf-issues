@@ -115,6 +115,22 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
   </tr>
 </table>
 
+<p>EXAMPLE
+This example shows the definition of a Type 3 font with only two glyphs - a filled square and a filled triangle
+<span class="deleted-text">, selected by the character codes a and b<span class="deleted-tooltiptext">Issue #44</span></span>.
+<span class="new-text">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand<span class="new-tooltiptext">Issue #44</span></span>.
+"Figure 62 - Output from the example" shows the result of showing the string ( ababab ) using this font.
+</p>
+
+<code>
+  ...<br/>
+  <span class="deleted-text">%Type 3 font definition encoding two glyphs, 'a' and 'b'<span class="deleted-tooltiptext">Issue #44</span></span><br/>
+  <span class="new-text">%Type 3 font definition encoding the two glyphs square and triangle<span class="new-tooltiptext">Issue #44</span></span><br/>
+  4 0 obj<br/>
+  &nbsp;&nbsp;&nbsp;&lt;&lt;<br/>
+  ...<br/>
+</code>
+
 
 <h2>9.8 Font descriptors</h2>
 
@@ -164,7 +180,7 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 
 
 <br/><hr>
-<p class="footnote">Last modified: 8 March 2021</p>
+<p class="footnote">Last modified: 6 June 2021</p>
 
 </body>
 </html>

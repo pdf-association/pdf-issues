@@ -18,9 +18,45 @@ title: Graphics
 
 <h1>8. Graphics</h1>
 
+<h2>8.2 Graphics objects</h2>
+
+<p>...</p>
+
+<table>
+  <caption>Table 50 - Operator categories</caption>
+  <tr>
+    <th>Category</th>
+    <th>Operators</th>
+    <th>Location</th>
+  </tr>
+  <tr>
+    <td>Shading patterns</td>
+    <td>
+    <span class="deleted-text"><b>Sh</b><span class="deleted-tooltiptext">Issue #80</span></span>
+    <span class="new-text"><b>sh</b><span class="new-tooltiptext">Issue #80</span></span>
+    </td>
+    <td>"Table 76 — Shading operator"
+    </td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>Marked-content</td>
+    <td><b>MP, DP, BMC, BDC, EMC</b></td>
+    <td>
+    <span class="deleted-text">"Table 351 — Entries in a data dictionary"<span class="deleted-tooltiptext">Issue #85</span></span>
+    <span class="new-text">"Table 352 — Marked-content operators"<span class="new-tooltiptext">Issue #85</span></span>
+    </td>
+  </tr>
+</table>
+
+
 <h4>8.6.5.8 Rendering Intents</h4>
 
-...<br/>
+<p>...</p>
 
 <p>
 NOTE The exact set of rendering intents supported can vary from one output device to another; a particular device
@@ -132,7 +168,7 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 April 2021</p>
+<p class="footnote">Last modified: 6 June 2021</p>
 
 </body>
 </html>

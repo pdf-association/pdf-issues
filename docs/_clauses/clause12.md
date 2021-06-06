@@ -89,6 +89,12 @@ title: Interactive features
 </table>
 
 
+<h3>12.4.2 Page labels <span class="new-text"> and indices<span class="new-tooltiptext">Issue #73</span></span></h3>
+
+
+<p>...</p>
+
+
 <h3>12.4.4 Presentations</h3>
 
 
@@ -304,7 +310,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 April 2021</p>
+<p class="footnote">Last modified: 6 June 2021</p>
 
 </body>
 </html>

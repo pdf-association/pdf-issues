@@ -39,6 +39,7 @@ collections:
     output: true
     permalink: /:collection/:name
     order:
+      - clause04.md
       - clause07.md
       - clause08.md
       - clause09.md
@@ -46,6 +47,7 @@ collections:
       - clause12.md
       - clause13.md
       - clause13.md
+      - clauseAnnexA.md
       - clauseAnnexL.md
       - clauseAnnexQ.md
   

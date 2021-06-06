@@ -2,7 +2,9 @@
 
 This is a short description of what happens after the PDF Association PDF TWG agrees that an issue resolution:
 
-* Edits are applied to the Markdown files in docs/_clauses. The docs/index.md is the main page but shouldn't need changing too often.
+* Edits are applied to the Markdown files in `docs/_clauses`. The `docs/index.md` is the main page but shouldn't need changing too often.
+
+* If a new `docs/_clauses` Markdown file is added then the `docs/_config.yml` file will need updating to ensure the new clause occurs on the main page in the same order as the clauses in ISO 32000-2:2020.
 
 * Edits are done manually with a lot of manual HTML formatting and fiddling to get the closest possible appearance to a "track changes" of ISO 32000-2:2020.
 
@@ -10,17 +12,17 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * We fully respect ISO copyright so only small amounts of surrounding text are used. Typically just the paragraph in question so that the track change is clearly understandable with some context and is easily and clearly locatable within ISO 32000-2. Headings (clause titles) and Table numbers are always used.
 
-* Ellipsis (...) with breaks <br\\> are used to visually indicate missing stuff from ISO 32000-2:2020. Otherwise the resolutions look like adjacent paragraphs when they're not!
+* Ellipsis (...) paragraphs are used to visually indicate missing stuff from ISO 32000-2:2020. Otherwise the resolutions look like adjacent paragraphs when they're not!
 
-* The track-changes styling is implemented via _includes/iso-style.html which is an inline set of styles that are %-included into each _clause/ MarkDown file.
+* The track-changes styling is implemented via `_includes/iso-style.html` which is an inline set of styles that are `%-included` into each `docs/_clause` MarkDown file.
 
-* Edits are currently split on top level (H1) clauses in ISO 32000. The MD files have some Jekyll magic at the top which allows them to be enumerated into a ToC from index.md. At some point this arbitrary decision may need to change... and that may be some work!
+* Edits are currently split on top level (`H1`) clauses in ISO 32000. The MD files have some Jekyll magic at the top which allows them to be enumerated into a ToC from `index.md`. At some point this arbitrary decision may need to change... and that may be some work. For now the `docs/_config.yml` file also needs to manually maintained to control the ordering of the ToC.
 
-* The heading <hX> tag in the docs/_clause Markdown matches the nearest heading level in ISO 32000-2 for all resolutions. If the heading title is something highly generic (e.g. X.Y.Z General) then also add the next highest heading (e.g. X.Y Topic) is added.
+* The heading `<hX>` tag in the `docs/_clause` Markdown matches the nearest heading level in ISO 32000-2 for all resolutions. If the heading title is something highly generic (e.g. X.Y.Z General) then also add the next highest heading (e.g. X.Y Topic) is added. This means heading numbers is not contiguous!!
 
-* The simulated "track changes" is achieved via inline span class="new-text" and class="deleted-text".
+* The simulated "track changes" is achieved via inline `span class="new-text"` and `span class="deleted-text"`.
 
-* The popup tooltips (which state the pdf-issues Issue number e.g. "Issue #123") is achieved via class="new-tooltiptext" and class="deleted-tooltiptext". Implement as an inline span within the surrounding span of the "track changes".
+* The popup tooltips (which state the pdf-issues Issue number e.g. "Issue #123") is achieved via `span class="new-tooltiptext"` and `span class="deleted-tooltiptext"`. Implement as an inline span within the surrounding span of the "track changes".
 
 * The "Last Modified" date at the end of each clause MD file needs to be changed manually (as this needs to be the edit time of substantive changes, not just trying to work around GH-Pages issues)
 
@@ -32,7 +34,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * "View Page source" from inside various browsers (Edge, Chrome, FF, Safari for Mac users) and check for 'red' tags indicating issues (such as typos, missing or mismatched HTML tags, etc).
 
-* Upload each of the local HTML files produced by jekyll (in ```/docs/_site/clause```) to the [W3C HTML Validator](https://validator.w3.org/nu/#file). Only the error *"Error: Start tag seen without seeing a doctype first. Expected &lt;!DOCTYPE html&gt;."* should be seen for each page as Jekyll doesn't process this correctly if it gets added.
+* Upload each of the local HTML files produced by jekyll (in `/docs/_site/clause`) to the [W3C HTML Validator](https://validator.w3.org/nu/#file). Only the error *"Error: Start tag seen without seeing a doctype first. Expected &lt;!DOCTYPE html&gt;."* should be seen for each page as Jekyll doesn't process this correctly if it gets added.
 
 * Each pdf-issue is then closed in GitHub, possibly with any additional comment if any unexpected issue or edit arose in implementing the PDF TWG recommendations.
 

@@ -64,7 +64,7 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
     <td><b>TR</b></td>
     <td>Internal to a <b>Table</b> structure</td>
     <td>
-    A row of table header cells (<b>TH</b>) <span class="new-text">and/<span class="new-tooltiptext">Issue #45</span></span>or table data cells (<b>TD</b>) in a table.
+    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<span class="new-text">or both<span class="new-tooltiptext">Issue #71</span></span> in a table.
     </td>
   </tr>
 </table>
@@ -74,7 +74,7 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 
 
 <table>
-  <caption>Table 371 - Standard structure type Caption</caption>
+  <caption>Table 372 - Standard structure type Caption</caption>
   <tr>
     <th>Structure Type</th>
     <th>Category</th>
@@ -145,6 +145,19 @@ endobj<br/>
 </div>
 
 
+<h4>14.8.6.3 Other namespaces</h4>
+
+<p>...</p>
+
+<p>NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
+
+<p>
+<span class="deleted-text">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").<span class="deleted-tooltiptext">Issue #72</span></span>
+<span class="new-text">When including mathematics structured as MathML 3.0, the <b>math</b> structure element type, as defined in MathML 3.0, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML 3.0 namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").<span class="new-tooltiptext">Issue #72</span></span>
+</p>
+
+<p>...</p>
+
 <h3>14.13.5 Associated files linked to graphics objects</h3>
 
 
@@ -165,7 +178,7 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <br/><hr>
-<p class="footnote">Last modified: 14 May 2021</p>
+<p class="footnote">Last modified: 6 June 2021</p>
 
 </body>
 </html>
