@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ISO 32000-2 Issues
+title: PDF 2.0 Issues
 email: info@pdfa.com
 description: >- # this means to ignore newlines until "baseurl:"
   Industry-based resolutions for issues reported against all PDF 2.0 (ISO 32000-2:2020) related published ISO standards. 
