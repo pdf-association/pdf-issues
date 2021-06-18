@@ -47,6 +47,30 @@ title: Multimedia features
   </tr>
 </table>
 
+<h3>13.6.4 3D Views</h3>
+
+<h4>13.6.4.1 General</h4>
+
+<table>
+  <caption>Table 315 - Entries in a 3D view dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>P</b></td>
+    <td>dicionary</td>
+    <td>
+    <p>...</p>
+    <p>Default value: a projection dictionary where the value of <b>Subtype</b> is
+    <span class="deleted-text"><i>Perspective</i><span class="deleted-tooltiptext">Issue #91</span></span><span class="new-text"><i>P</i> (perspective)<span class="new-tooltiptext">Issue #91</span></span>,
+    the value of <b>FOV</b> is 90, and all other entries take their default values.
+    </p>
+    </td>
+  </tr>
+</table>
+
 
 <h4>13.6.4.3 3D background dictionaries</h4>
 
@@ -104,7 +128,16 @@ define appearance streams or how appearance streams would be rendered onto the p
     <th>Value</th>
   </tr>
   <tr>
-    <td><b>IV</b></td>
+    <td><span class="new-text"><b>IV</b><span class="new-tooltiptext">Issue #49</span></span></td>
+    <td><span class="new-text">boolean<span class="new-tooltiptext">Issue #49</span></span></td>
+    <td>
+	<p><span class="new-text">(<i>Optional</i>>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible.
+	If <i>false</i>, then the cutting plane shall not be visible.<br/>
+	Default value: <i>true</i><span class="new-tooltiptext">Issue #49</span></span></p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>PV</b></td>
     <td>boolean</td>
     <td>
     ...<br/>
@@ -173,7 +206,7 @@ define appearance streams or how appearance streams would be rendered onto the p
 
 
 <br/><hr>
-<p class="footnote">Last modified: 16 April 2021</p>
+<p class="footnote">Last modified: 18 June 2021</p>
 
 </body>
 </html>

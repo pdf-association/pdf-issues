@@ -163,7 +163,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 <h4>9.8.3.3 FD</h4>
 
 
-...<br/>
+<p>...</p>
 
 <p>
 The key for each entry in an <b>FD</b> dictionary shall be the name of a class of glyphs - that is, a particular subset of the CIDFont's
@@ -176,11 +176,23 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 <span class="new-tooltiptext">Issue #5</span></span>.
 </p>
 
+<h3>9.10.3 ToUnicode CMaps</h3>
+
+<p>...</p>
+<p>EXAMPLE 2</p>
+<p style="margin-left: 40px;">...</p>
+<p style="margin-left: 40px;">Finally, the character code &lt;3A 51&gt; is mapped to the Unicode value
+<span class="deleted-text">UNICODE HAN CHARACTER 'U+2003E'<span class="deleted-tooltiptext">Issue #87</span></span>
+<span class="new-text">CJK UNIFIED IDEOGRAPH-2003E<span class="new-tooltiptext">Issue #87</span></span>
+(U+2003E), which is expressed by the byte sequence &lt;D840DC3E&gt; in UTF-16BE encoding.
+</p>
+
+
 </div>
 
 
 <br/><hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: 18 June 2021</p>
 
 </body>
 </html>

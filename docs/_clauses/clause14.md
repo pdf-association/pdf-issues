@@ -50,6 +50,31 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 </p>
 
 
+<h5>14.8.4.7.2 General inline level structure types</h5>
+
+
+<table>
+  <caption>Table 368 - General inline level structure types</caption>
+  <tr>
+    <th>Structure Type</th>
+    <th>Category</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>Strong</b></td>
+    <td>Inline</td>
+    <td>
+    <p>(<i>PDF 2.0</i>) Encloses content for the purpose of strong importance, seriousness or urgency for its contents.</p>
+    <p>EXAMPLE 3 In this example the <b>Strong</b> element is used to denote the content
+    that <span class="deleted-text">the user is intended to read first<span class="deleted-tooltiptext">Issue #84</span></span>
+    <span class="new-text">is more important<span class="new-tooltiptext">Issue #84</span></span>:
+    </p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
 <h5>14.8.4.8.3 Table structure types</h5>
 
 
@@ -158,6 +183,20 @@ endobj<br/>
 
 <p>...</p>
 
+
+<h4>14.12.4.2 Document part metadata</h4>
+
+<p>...</p>
+
+<p>
+The values of keys present in the DPM dictionary, or of any dictionary or array object present in the DPM dictionary, shall only be of type text string, date string,
+<span class="new-text">name,<span class="new-tooltiptext">Issue #86</span></span>
+array, dictionary, boolean, integer or real as defined in 7.3, "Objects".
+<span class="new-text">All key values that are PDF name objects, after expansion of character sequences escaped with a NUMBER SIGN (23h), if any, shall be valid UTF-8 character sequences.<span class="new-tooltiptext">Issue #86</span></span>
+Other PDF value types shall not be used.
+</p>
+
+
 <h3>14.13.5 Associated files linked to graphics objects</h3>
 
 
@@ -178,7 +217,7 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <br/><hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: 18 June 2021</p>
 
 </body>
 </html>

@@ -141,6 +141,19 @@ title: Interactive features
 </table>
 
 
+<h4>12.5.6.2 Markup annotations</h4>
+
+<p>...</p>
+
+<p>
+When
+<span class="new-text">providing the <b>Contents</b> key, if<span class="new-tooltiptext">Issue #90</span></span>
+separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, for example, a LINE FEED character (0Ah).
+</p>
+
+<p>...</p>
+
+
 <h4>12.5.6.5 Link annotations</h4>
 
 
@@ -310,7 +323,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 
 <br/><hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: 18 June 2021</p>
 
 </body>
 </html>

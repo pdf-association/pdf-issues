@@ -60,6 +60,18 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <h3>7.6.4 Standard security handler</h3>
 
+<h4>7.6.4.1 General</h4>
+
+<p>...</p>
+
+<p>
+If a security handler of revision 4 or 5 is specified, the standard security handler shall support crypt filters (see 7.6.6, "Crypt filters").
+The support shall be limited to the <b>Identity</b> crypt filter (see "Table 26 - Standard crypt filter names") and
+<span class="deleted-text">crypt filters<span class="deleted-tooltiptext">Issue #89</span></span><span class="new-text">a crypt filter<span class="new-tooltiptext">Issue #89</span></span>named <b>StdCF</b> whose dictionaries contain an <b>AuthEvent</b> value of <i>DocOpen</i>. For revision 4, the filter <b>CFM</b> value shall be <i>V2</i> (RC4) or <i>AESV2</i> (AES-128). For revision 6, the filter <b>CFM</b> value shall be <i>AESV3</i> (AES-256). Public-Key security handlers in this case shall use <span class="deleted-text">crypt filters<span class="deleted-tooltiptext">Issue #89</span></span><span class="new-text">a crypt filter<span class="new-tooltiptext">Issue #89</span></span> named <b>DefaultCryptFilter</b> when all document content is encrypted, and shall use <span class="deleted-text">crypt filters<span class="deleted-tooltiptext">Issue #89</span></span><span class="new-text">a crypt filter<span class="new-tooltiptext">Issue #89</span></span> named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place of <b>StdCF</b> name. This nomenclature shall not be used as an indicator of the type of the security handler or encryption. Use of security handler revisions 1, 2, 3, 4 and 5 is deprecated in PDF 2.0.
+</p>
+
+<p>...</p>
+
 <h5>7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
 
 <ol type="a" start="6">
@@ -134,6 +146,29 @@ there is no way to specify that metadata is to be left unencrypted in these case
     If the crypt filter is referenced from a <b>Crypt</b> filter decode parameter dictionary (see "Table 14 - Optional parameters for Crypt filters"),
     this entry shall be a <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string that shall be a binary-encoded CMS object that shall ...
     </p></td>
+  </tr>
+</table>
+
+
+<h4>7.7.3.3 Page objects</h4>
+
+
+<table>
+  <caption>Table 31 - Entries in a page object</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Contents</b></td>
+    <td>stream or array</td>
+    <td>
+    <p>(<i>Optional</i>) A content stream (see 7.8.2, "Content streams") that shall describe the contents of this page. If this entry is absent, the page shall be empty.</p>
+    <p><span class="new-text">NOTE: if the <b>Contents</b> key is not present, a <b>Resources</b> dictionary must still be present, either directly or through
+    inheritance, in the pages tree.<span class="new-tooltiptext">Issue #81</span></span></p>
+    <p>...</p>
+    </td>
   </tr>
 </table>
 
@@ -223,7 +258,7 @@ attributes" from some ancestor node of the page object. ...
 
 
 <br/><hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: 18 June 2021</p>
 
 </body>
 </html>
