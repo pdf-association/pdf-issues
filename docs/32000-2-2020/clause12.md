@@ -1,22 +1,15 @@
 ---
-number: 12
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: 12
 title: Interactive features
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Clause 12: Interactive features</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
 
-<div class="iso32000">
-
-
-<h1>12. Interactive features</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
 <h2>12.2 Viewer preferences</h2>
@@ -111,9 +104,10 @@ title: Interactive features
   <tr>
     <td><b>Di</b></td>
     <td><span class="deleted-text">number<span class="deleted-tooltiptext">Issue #36</span></span><span class="new-text">integer<span class="new-tooltiptext">Issue #36</span></span> or name</td>
-    <td>...<br/>
-    <p>If the value is a <span class="deleted-text">number<span class="deleted-tooltiptext">Issue #36</span></span><span class="new-text">integer<span class="new-tooltiptext">Issue #36</span></span>, it shall be one of:</p>
-    <p>...</p>
+    <td>
+      <p>...</p>
+      <p>If the value is a <span class="deleted-text">number<span class="deleted-tooltiptext">Issue #36</span></span><span class="new-text">integer<span class="new-tooltiptext">Issue #36</span></span>, it shall be one of:</p>
+      <p>...</p>
     </td>
   </tr>
 </table>
@@ -239,11 +233,11 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <h3>12.8.1 Signature Fields</h3>
 
-...<br>
+<p>...</p>
 
 <p>A PDF document may contain the following standard types of signatures:</p>
 <ul>
-  <li>...</li>
+  <li><p>...</p></li>
   <li>
   Any number of document timestamp signatures, see 12.8.5, "Document timestamp (DTS) dictionary". The timestamp signature dictionary of a document timestamp signature
   shall be the value of a signature field and shall contain a <b>ByteRange</b> entry. <span class="new-text">These shall follow the certification signature if one
@@ -264,7 +258,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td><b>Cert</b></td>
     <td>byte string or array</td>
     <td>
-    ...<br/>
+    <p>...</p>
     <span class="new-text">NOTE <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.<span class="new-tooltiptext">Issue #4</span></span></td>
   </tr>
 </table>
@@ -312,9 +306,9 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>...</td>
   </tr>
   <tr>
-    <td colspan="4">...<br/>
+    <td colspan="4"><p>...</p>
     <sup>c</sup> The values <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> have been deprecated with PDF 2.0.<br/>
-    ...</td>
+    <p>...</p></td>
   </tr>
 </table>
 
@@ -322,8 +316,5 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 18 June 2021</p>
-
-</body>
-</html>

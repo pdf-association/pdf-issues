@@ -1,22 +1,15 @@
 ---
-number: 9
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: 9
 title: Text
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Clause 9: Text</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
 
-<div class="iso32000">
-
-
-<h1>9. Text</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
 <h3>9.6.2 Type 1 fonts</h3>
@@ -56,12 +49,11 @@ descriptor data for those standard fonts for use in processing PDF files when th
 </p>
 
 
-...<br/>
-
+<p>...</p>
 
 <h4>9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</h4>
 
-...<br/>
+<p>...</p>
 
 <p>
 <span class="new-text">NOTE: <span class="new-tooltiptext">Issue #47 and #48</span></span>
@@ -89,19 +81,19 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
     <td><i>w<sub>x</sub> w<sub>y</sub></i></td>
     <td><b>d0</b></td>
     <td>
-    ...<br/>
+    <p>...</p>
     <p>
     <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
     <b>Widths</b> array. <span class="new-text">The number <span class="new-tooltiptext">Issue #43</span></span><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
-    ...<br/>
+    <p>...</p>
     </td>
   </tr>
   <tr>
     <td><i>w<sub>x</sub> w<sub>y</sub> ll<sub>x</sub> ll<sub>y</sub> ur<sub>x</sub> ur<sub>y</sub></i></td>
     <td><b>d1</b></td>
     <td>
-    ...<br/>
+    <p>...</p>
     <p>
     <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
     <b>Widths</b> array. <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
@@ -110,7 +102,7 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
     <span class="new-text">The numbers<span class="new-tooltiptext">Issue #43</span></span> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
     and <span class="new-text">The numbers<span class="new-tooltiptext">Issue #43</span></span> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
     </p>
-    ...<br/>
+    <p>...</p>
     </td>
   </tr>
 </table>
@@ -123,12 +115,12 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 </p>
 
 <code>
-  ...<br/>
+  <p>...</p>
   <span class="deleted-text">%Type 3 font definition encoding two glyphs, 'a' and 'b'<span class="deleted-tooltiptext">Issue #44</span></span><br/>
   <span class="new-text">%Type 3 font definition encoding the two glyphs square and triangle<span class="new-tooltiptext">Issue #44</span></span><br/>
   4 0 obj<br/>
   &nbsp;&nbsp;&nbsp;&lt;&lt;<br/>
-  ...<br/>
+  <p>...</p>
 </code>
 
 
@@ -191,8 +183,5 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 18 June 2021</p>
-
-</body>
-</html>

@@ -1,21 +1,14 @@
 ---
-number: A
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: Annex A
 title: (informative) Operator Summary
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Annex A: (informative) Operator Summary</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
-
-<div class="iso32000">
-
-<h1>Annex A: (informative) Operator Summary</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
 <h2>A.2 PDF content stream operators</h2>
@@ -43,8 +36,5 @@ title: (informative) Operator Summary
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 6 June 2021</p>
-
-</body>
-</html>

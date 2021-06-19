@@ -1,25 +1,18 @@
 ---
-number: Q
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: Annex Q
 title: (normative) Method for determining transparency on a page
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Annex Q: (normative) Method for determining transparency on a page</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
-
-<div class="iso32000">
-
-<h1>Annex Q: (normative) Method for determining transparency on a page</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 <h2>Q.2. Page content</h2>
 
-...<br/>
+<p>...</p>
 
 <p>
 Since Annotations require an appearance stream which is drawn by a PDF processor on top of the page content, it is possible
@@ -32,8 +25,5 @@ shall be considered to contain transparency (see "Table 166 - Entries common to 
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 16 April 2021</p>
-
-</body>
-</html>

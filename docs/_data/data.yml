@@ -1,0 +1,43 @@
+toc:
+  - standard: ISO 32000-2:2020
+    subfolderitems:
+      - ref: 'Clause 4: Notation'
+        url:  clause04.html
+      - ref: 'Clause 7: Syntax'
+        url:  clause07.html
+      - ref: 'Clause 8: Graphics'
+        url:  clause08.html
+      - ref: 'Clause 9: Text'
+        url:  clause09.html
+      - ref: 'Clause 10: Rendering'
+        url:  clause10.html
+      - ref: 'Clause 12: Interactive features'
+        url:  clause12.html
+      - ref: 'Clause 13: Multimedia features'
+        url:  clause13.html
+      - ref: 'Clause 14: Document interchange'
+        url:  clause14.html
+      - ref: 'Annex A: Operator Summary'
+        url:  clauseAnnexA.html
+      - ref: 'Annex L: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0'
+        url:  clauseAnnexL.html
+      - ref: 'Annex Q: Method for determining transparency on a page'
+        url:  clauseAnnexQ.html
+
+  - standard: ISO 19005-4:2020
+    subfolderitems:
+
+  - standard: ISO 15930-9:2020
+    subfolderitems:
+
+  - standard: ISO 16612-3:2020
+    subfolderitems:
+
+  - standard: ISO 21757-1:2020
+    subfolderitems:
+      - ref: 'Clause 2: Normative references'
+        url:  clause02.html
+      - ref: 'Clause 3: Terms and definitions'
+        url:  clause03.html
+      - ref: 'Clause 10: ECMAScript API'
+        url:  clause10.html

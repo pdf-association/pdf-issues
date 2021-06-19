@@ -1,21 +1,14 @@
 ---
-number: 7
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: 7
 title: Syntax
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Clause 7: Syntax</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
-
-<div class="iso32000">
-
-<h1>7. Syntax</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
 <h4>7.3.8.2 Stream extent</h4>
@@ -142,7 +135,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><p>
     (<i>Required</i>) If the crypt filter is referenced from <b>StmF</b> or <b>StrF</b> in the encryption dictionary, this entry shall be an array of byte strings,
     where each <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string shall be a binary-encoded CMS object that shall ...
-    <br/>...<br/>
+    <p>...</p>
     If the crypt filter is referenced from a <b>Crypt</b> filter decode parameter dictionary (see "Table 14 - Optional parameters for Crypt filters"),
     this entry shall be a <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string that shall be a binary-encoded CMS object that shall ...
     </p></td>
@@ -257,8 +250,5 @@ attributes" from some ancestor node of the page object. ...
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 18 June 2021</p>
-
-</body>
-</html>

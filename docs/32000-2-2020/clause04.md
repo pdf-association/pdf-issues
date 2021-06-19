@@ -1,22 +1,16 @@
 ---
-number: 4
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: 4
 title: Notation
 ---
 
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Clause 4: Notation</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
 
-<div class="iso32000">
-
-
-<h1>4. Notation</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
 <h2>4.1 General</h2>
@@ -36,8 +30,5 @@ Characters in text streams, as defined by 7.9.2, "String object types", are iden
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 6 June 2021</p>
-
-</body>
-</html>

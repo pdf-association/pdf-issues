@@ -1,8 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+title: PDF 2.0 Corrections
 ---
+
 <div class="github-wp">
 
 
@@ -32,7 +31,7 @@ Resolutions proposed here are <b>not</b> officially authorized by the ISO workin
 work in progress of each PDF-related ISO working group.
 </p>
 
-<h2>Issues Resolved</h2>
+<h2>Resolved Issues</h2>
 
 <p>
 The current set of resolved issues are presented as localized marked up changes
@@ -43,17 +42,13 @@ closed GitHub pdf-issues with a "proposed solution" label</a>.
 Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate where the resolution is being applied.
 </p>
 
-<h2>ISO 32000-2:2020 (PDF 2.0)</h2>
+<h3><a href="32000-2-2020/index.html" target="_parent">Resolved issues for ISO 32000-2:2020 (PDF 2.0)</a></h3>
+<h3><a href="19005-4-2020/index.html" target="_parent">Resolved issues for ISO 19005-4:2020 (PDF/A-4)</a></h3>
+<h3><a href="15930-9-2020/index.html" target="_parent">Resolved issues for ISO 15930-9:2020 (PDF/X-6)</a></h3>
+<h3><a href="16612-3-2020/index.html" target="_parent">Resolved issues for ISO 16612-3:2020 (PDF/VT-3)</a></h3>
+<h3><a href="21757-1-2020/index.html" target="_parent">Resolved issues for ISO 21757-1:2020 (ECMAScript for PDF 2.0)</a></h3>
 
-{% for clause in site.clauses %}
-  <h3>
-    <a href="{{ site.baseurl }}{{ clause.url }}">
-      {{ clause.number }} - {{ clause.title }}
-    </a>
-  </h3>
-{% endfor %}
-
-<br/><hr>
-<p class="footnote">Last modified: 7 June 2021</p>
+<hr>
+<p class="footnote">Last modified: 19 June 2021</p>
 
 </div>

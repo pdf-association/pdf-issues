@@ -1,22 +1,15 @@
 ---
-number: 8
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: 8
 title: Graphics
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Clause 8: Graphics</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
 
-<div class="iso32000">
-
-
-<h1>8. Graphics</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 <h2>8.2 Graphics objects</h2>
 
@@ -81,8 +74,11 @@ can support additional ones beyond those listed in the table above.
   <tr>
     <td><b>Intent</b></td>
     <td>name</td>
-    <td>...<br/><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></td>
+    <td>
+    	<p>...</p>
+    	<p><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+    	Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></p>
+    </td>
   </tr>
   <tr>
     <td><b>ImageMask</b></td>
@@ -96,32 +92,34 @@ can support additional ones beyond those listed in the table above.
   <tr>
     <td><b>Alternates</b></td>
     <td>array</td>
-    <td>...<br/><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></td>
+    <td>
+    	<p>...</p>
+    	<p><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></p></td>
   </tr>
   <tr>
     <td><b>SMask</b></td>
     <td>stream</td>
-    <td>...<br/><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></td>
+    <td><p>...</p><p><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></p></td>
   </tr>
   <tr>
     <td><b>Name</b></td>
     <td>name</td>
-    <td>...<br/><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></td>
+    <td><p>...</p><p><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></p></td>
   </tr>
   <tr>
     <td><b>StructParent</b></td>
     <td>integer</td>
-    <td>...<br/><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></td>
+    <td><p>...</p><p><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></p></td>
   </tr>
   <tr>
     <td><b>ID</b></td>
     <td>byte string</td>
-    <td>...<br/><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></td>
+    <td><p>...</p><p><span class="new-text">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+    Soft-mask images.<span class="new-tooltiptext">Issue #13</span></span></p></td>
   </tr>
 </table>
 
@@ -129,7 +127,7 @@ can support additional ones beyond those listed in the table above.
 <h3>8.9.7 Inline images</h3>
 
 
-...<br/>
+<p>...</p>
 
 <p>
 Inline image objects shall not be nested; that is, two <b>BI</b> operators shall not appear without an intervening <b>EI</b> to close the first object.
@@ -149,7 +147,7 @@ both an abbreviated key name and the corresponding full key name from Table 91 a
 precedence.<span class="new-tooltiptext">Issue #3</span></span> Entries other than those listed shall be ignored.
 </p>
 
-...<br/>
+<p>...</p>
 
 <p>
 <span class="deleted-text">NOTE 3 The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
@@ -161,14 +159,10 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 8.6.5.6 "Default colour spaces").<span class="new-tooltiptext">Issue #19</span></span>
 </p>
 
-...<br/>
-
+<p>...</p>
 
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 6 June 2021</p>
-
-</body>
-</html>

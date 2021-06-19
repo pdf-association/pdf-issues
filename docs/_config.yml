@@ -28,29 +28,8 @@ theme: jekyll-theme-minimal
 
 # plugins:
 #  - jekyll-feed
-  
+
 encoding: UTF-8
-
-include:
-  - _clauses
-
-collections:
-  clauses:
-    output: true
-    permalink: /:collection/:name
-    order:
-      - clause04.md
-      - clause07.md
-      - clause08.md
-      - clause09.md
-      - clause10.md
-      - clause12.md
-      - clause13.md
-      - clause13.md
-      - clauseAnnexA.md
-      - clauseAnnexL.md
-      - clauseAnnexQ.md
-  
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

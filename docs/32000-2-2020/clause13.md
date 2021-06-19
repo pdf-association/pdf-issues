@@ -1,22 +1,15 @@
 ---
-number: 13
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: 13
 title: Multimedia features
 ---
 
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ISO 32000-2:2020 Clause 13: Multimedia</title>
 {% include iso-style.html %}
-</head>
-<body>
+<div class="isostyle">
 
 
-<div class="iso32000">
-
-
-<h1>13. Multimedia features</h1>
+<h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
 <h3>13.6.3 3D streams</h3>
@@ -74,7 +67,7 @@ title: Multimedia features
 
 <h4>13.6.4.3 3D background dictionaries</h4>
 
-...<br/>
+<p>...</p>
 
 <p><i>New paragraph is added before existing NOTE:</i></p>
 
@@ -82,7 +75,7 @@ title: Multimedia features
 define appearance streams or how appearance streams would be rendered onto the page. They shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>,
 <b>BE</b>, <b>BM</b>, <b>CA</b> and <b>ca</b> keys from "Table 166 - Entries common to all annotation dictionaries".<span class="new-tooltiptext">Issue #39</span></span>
 
-...<br/>
+<p>...</p>
 
 
 <table>
@@ -140,7 +133,7 @@ define appearance streams or how appearance streams would be rendered onto the p
     <td><b>PV</b></td>
     <td>boolean</td>
     <td>
-    ...<br/>
+	<p>...</p>
     <p>Default value: <span class="deleted-text">false<span class="deleted-tooltiptext">Issue #50</span></span> <span class="new-text">true<span class="new-tooltiptext">Issue #50</span></span></p>
     </td>
   </tr>
@@ -205,8 +198,5 @@ define appearance streams or how appearance streams would be rendered onto the p
 </div>
 
 
-<br/><hr>
+<hr>
 <p class="footnote">Last modified: 18 June 2021</p>
-
-</body>
-</html>
