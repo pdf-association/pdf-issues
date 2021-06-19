@@ -18,7 +18,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}" target="_parent">{{ pg.ref }}</a></li>
+            <li><a href="{{ pg.url }}" target="github">{{ pg.ref }}</a></li>
            {% endfor %}
         {% endif %}
     {% endfor %}
