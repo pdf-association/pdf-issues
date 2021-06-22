@@ -186,7 +186,7 @@ define appearance streams or how appearance streams would be rendered onto the p
     </p>
     <p>
     <span class="new-text">NOTE the RichMedia asset itself is not referenced by name, however other assets may be referenced from the
-    RichMedia asset by name and thus need to in the <b>Assets</b> name tree.<span class="new-tooltiptext">Issue #58</span></span>
+    RichMedia asset by name and thus need to be in the <b>Assets</b> name tree.<span class="new-tooltiptext">Issue #58</span></span>
     </p>
     </td>
   </tr>
