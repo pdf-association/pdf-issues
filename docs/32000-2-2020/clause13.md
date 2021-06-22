@@ -157,10 +157,8 @@ define appearance streams or how appearance streams would be rendered onto the p
     <div class="new-text">
     <p>
     (<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in
-    the <b>Assets</b> name tree of the RichMediaContent dictionary.</p>
-    <p>
-    Default value: If the array has no elements, no script is executed.
-    </p>
+    the <b>Assets</b> name tree of the RichMediaContent dictionary. If the array has no elements, no script is executed.</p>
+    <p>Default value: an empty array.</p>
     <span class="new-tooltiptext">Issue #59</span></div>
     </td>
   </tr>
