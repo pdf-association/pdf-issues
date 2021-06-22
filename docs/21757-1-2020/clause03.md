@@ -14,11 +14,11 @@ title: Terms and definitions
 <h2>3.1<br/>ECMAscript</h2>
 
 <p>
-means of reference to ISO 22275 <span class="deleted-text">and ISO 22537<span class="deleted-tooltiptext">Issue #70</span></span>
+means of reference to ISO 22275 and ISO 22537 <span class="new-text"><i>(ISO 22537 ECMAScript for XML (E4X) support is deprecated in PDF 2.0)</i><span class="new-tooltiptext">Issue #70</span></span>
 </p>
 
 </div>
 
 
 <hr>
-<p class="footnote">Last modified: 19 June 2021</p>
+<p class="footnote">Last modified: 22 June 2021</p>
