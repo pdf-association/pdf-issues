@@ -34,6 +34,16 @@ title: Syntax
   </tr>
 </table>
 
+<h3>7.4.3 ASCII85Decode filter</h3>
+
+<p>...</p>
+
+<p>The following conditions shall never occur in a correctly encoded byte sequence:</p>
+<li>
+    <ul>The value represented by a group of 5 characters is greater than <span class="deleted-text">232<span class="deleted-tooltiptext">Issue #98</span></span><span class="new-text">2<sup>32</sup><span class="new-tooltiptext">Issue #98</span></span> - 1.</ul>
+    <ul>A <i>z</i> character occurs in the middle of a group.</ul>
+    <ul>A final partial group contains only one character.</ul>
+</li>
 
 <h3>7.4.9 JPXDecode filter</h3>
 
@@ -41,13 +51,23 @@ title: Syntax
 <p>...</p>
 
 <p>
-Data used in PDF image XObjects shall be limited to the JPX baseline set of features,  <span class="deleted-text">except for<span class="deleted-tooltiptext">
+Data used in PDF image XObjects shall be limited to the JPX baseline set of features, <span class="deleted-text">except for<span class="deleted-tooltiptext">
 Issue #29</span></span>
 <span class="new-text">excluding<span class="new-tooltiptext">Issue #29</span></span> enumerated colour space 19 (CIEJab).
 In addition, enumerated colour space 12 (CMYK), which is part of JPX but not JPX baseline, shall be supported in a PDF file. JPX file
 structures used in PDF files shall conform to the JPEG 2000 specification.
 </p>
 
+
+<p>...</p>
+
+<h3>7.6.3 General encryption algorithm</h3>
+
+<h4>7.6.3.1 General</h4>
+
+<p>...</p>
+
+<p>NOTE 1 The name RC4™ is a registered trademark of RSA Security Inc. and cannot be used by third parties creating implementations of the algorithm. Proprietary implementations of the RC4 encryption algorithm are available under license from RSA Security Inc. For licensing information, contact: <span class="deleted-text">RSA Security Inc. 2955 Campus Drive, Suite 400, San Mateo, CA 94403-2507, USA, or<span class="deleted-tooltiptext">Issue #95</span></span> <a href="http://www.rsasecurity.com/">http://www.rsasecurity.com/</a>.</p>
 
 <p>...</p>
 
@@ -132,13 +152,13 @@ there is no way to specify that metadata is to be left unencrypted in these case
   <tr>
     <td><b>Recipients</b></td>
     <td><span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string or array</td>
-    <td><p>
-    (<i>Required</i>) If the crypt filter is referenced from <b>StmF</b> or <b>StrF</b> in the encryption dictionary, this entry shall be an array of byte strings,
-    where each <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string shall be a binary-encoded CMS object that shall ...
+    <td>
+    <p>(<i>Required</i>) If the crypt filter is referenced from <b>StmF</b> or <b>StrF</b> in the encryption dictionary, this entry shall be an array of byte strings,
+    where each <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string shall be a binary-encoded CMS object that shall ...</p>
     <p>...</p>
-    If the crypt filter is referenced from a <b>Crypt</b> filter decode parameter dictionary (see "Table 14 - Optional parameters for Crypt filters"),
-    this entry shall be a <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string that shall be a binary-encoded CMS object that shall ...
-    </p></td>
+    <p>If the crypt filter is referenced from a <b>Crypt</b> filter decode parameter dictionary (see "Table 14 - Optional parameters for Crypt filters"),
+    this entry shall be a <span class="new-text">byte<span class="new-tooltiptext">Issue #16</span></span> string that shall be a binary-encoded CMS object that shall ...</p>
+    </td>
   </tr>
 </table>
 
@@ -188,16 +208,29 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
-<p>EXAMPLE A PDF dictionary containing key ‘Key’ with the value that is the text string "text‰" will look like</p>
+<p>EXAMPLE 1 A PDF dictionary containing key ‘Key’ with the value that is the text string "text‰" will look like</p>
 
 <code>
-&lt;&lt;/Key(text?)&gt;&gt;
+<span class="deleted-text">&lt;&lt;/Key(text?)&gt;&gt;<span class="deleted-tooltiptext">Issue #96</span></span><br/>
+<span class="new-text">&lt;&lt;/Key (text\213) &gt;&gt;<span class="new-tooltiptext">Issue #96</span></span>
 </code>
 
-<p>where the character '?' after the 'text' is represented by the hex code 8B<span class="new-text">h<span class="new-tooltiptext">Issue #75</span></span> (octal code 213 - that is according to "D.2 Latin character set and encodings").</p>
-
+<p>where <span class="deleted-text">the character '?' after the 'text' is represented by the hex code 8B<span class="new-text">h<span class="new-tooltiptext">Issue #75</span></span> (<span class="deleted-tooltiptext">Issue #96</span></span>octal code 213 <span class="deleted-text">- that<span class="deleted-tooltiptext">Issue #96</span></span> is according to "D.2 Latin character set and encodings"<span class="deleted-text">)<span class="deleted-tooltiptext">Issue #96</span></span>.</p>
 
 <p>...</p>
+
+<p>EXAMPLE 2 A PDF dictionary containing key ‘Key’ with the value that is the text string "тест" (that is what the word in Russian with the translation to English as ‘test’) will look like</p>
+
+<code>
+<span class="deleted-text">&lt;&lt;/Key(??????????)&gt;&gt;<span class="deleted-tooltiptext">Issue #96</span></span><br/>
+<span class="new-text">&lt;&lt;/Key &lt;FEFF0442043504410442&gt; &gt;&gt;<span class="new-tooltiptext">Issue #96</span></span>
+</code>
+
+<p><span class="deleted-text">where the characters in parentheses is the sequence of bytes with hex codes FE, FF, 04, 42, 04, 35, 04, 41, 04, 42.<span class="deleted-tooltiptext">Issue #96</span></span></p>
+
+<p>...</p>
+
+<p><span class="deleted-text">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.<span class="deleted-tooltiptext">Issue #96</span></span></p>
 
 
 <h3>7.10.3 Type 2 (exponential interpolation) functions</h3>
@@ -251,4 +284,4 @@ attributes" from some ancestor node of the page object. ...
 
 
 <hr>
-<p class="footnote">Last modified: 18 June 2021</p>
+<p class="footnote">Last modified: 9 July 2021</p>
