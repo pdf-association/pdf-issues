@@ -134,6 +134,26 @@ title: Interactive features
   </tr>
 </table>
 
+<p>
+<span class="deleted-text">A PDF reader shall render the appearance dictionary without regard to any other keys and values in the annotation dictionary and <span class="deleted-tooltiptext">Issue #34</span></span>
+<span class="new-text">When rendering the appearance dictionary, a PDF reader<span class="new-tooltiptext">Issue #34</span></span>
+
+shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>,
+<span class="deleted-text"><b>BM</b>,<span class="deleted-tooltiptext">Issue #34</span></span> 
+<b>CA</b>, <b>ca</b>, <b>H</b>, <b>DA</b>, <b>Q</b>, <b>DS</b>, <b>LE</b>, <b>LL</b>, <b>LLE</b>, 
+<span class="new-text"><b>MK</b>,<span class="new-tooltiptext">Issue #56</span></span>
+and <b>Sy</b> keys.
+</p>
+
+<p>
+<span class="new-text">NOTE 1 Some of these keys are only relevant to certain annotation subtypes as described in the following subclauses.<span class="new-tooltiptext">Issue #34</span></span> 
+</p>
+
+
+<p>
+NOTE <span class="new-text">2<span class="new-tooltiptext">Issue #34</span></span> Requiring an appearance dictionary for each annotation ensures the reliable rendering of the annotations. 
+<span class="new-text">When an appearance dictionary is not present, the rendered appearance will be implementation dependent.<span class="new-tooltiptext">Issue #34</span></span>
+</p>
 
 <h4>12.5.6.2 Markup annotations</h4>
 
@@ -177,6 +197,16 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
   </tr>
 </table>
 
+
+<h4>12.5.6.24 Projection annotations</h4>
+
+<p>A <i>projection annotation (PDF 2.0)</i> is a markup annotation subtype (see 12.5.6.2, "Markup annotations") that has much of the functionality of other markup annotations. 
+However, a projection annotation is only valid within the context of an associated run-time environment, such as an activated 3D model<span class="new-text">, and thus an <b>AP</b> dictionary is not required<span class="new-tooltiptext">Issue #94</span></span>.</p>
+
+<p>...</p>
+
+
+<p><span class="deleted-text">A projection annotation with a <b>Rect</b> entry that has zero height or zero width shall not have an <b>AP</b> dictionary.<span class="deleted-tooltiptext">Issue #42</span></span></p>
 
 <h3>12.7.4 Field dictionaries</h3>
 
@@ -317,4 +347,4 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 
 <hr>
-<p class="footnote">Last modified: 18 June 2021</p>
+<p class="footnote">Last modified: 9 July 2021</p>
