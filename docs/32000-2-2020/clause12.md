@@ -127,8 +127,8 @@ title: Interactive features
     <td><b>AP</b></td>
     <td>dictionary</td>
     <td>
-    (<i><span class="deleted-text">Optional<span class="deleted-tooltiptext">Issue #22</span></span>
-     <span class="new-text"><i>Required except for conditions listed below</i><span class="new-tooltiptext">Issue #22</span></span>; PDF 1.2</i>)
+    (<i><span class="deleted-text">Optional; PDF 1.2<span class="deleted-tooltiptext">Issue #22</span></span>
+     <span class="new-text">Required except for conditions listed below (PDF 2.0); optional in PDF 1.2 through PDF 1.7<span class="new-tooltiptext">Issue #22</span></span></i>)
      An appearance dictionary specifying how the annotation shall be presented visually on the page ...
     </td>
   </tr>
@@ -193,6 +193,26 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
     <p><span class="new-text">NOTE 1 When <b>QuadPoints</b> is used, the activation area and the visual appearance (including border) of the link annotation are not
     required to be the same.<span class="new-tooltiptext">Issue #17</span></span></p>
     <p>NOTE <span class="new-text">2<span class="new-tooltiptext">Issue #17</span></span> The last paragraph above was clarified in this document (2020).</p>
+    </td>
+  </tr>
+</table>
+
+
+<h4>12.5.6.6 Free text annotations</h4>
+
+<table>
+  <caption>Table 177 - Additional entries specific to a free text annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>DA</b></td>
+    <td>string</td>
+    <td>
+    <p>(<i>Required</i>) The default appearance string that shall be used in formatting the text (see 12.7.4.3, "Variable text").</p>
+    <p>The annotation dictionary's <b>AP</b> entry <span class="deleted-text">, if present,<span class="deleted-tooltiptext">Issue #42</span></span> shall take precedence over the <b>DA</b> entry (see "Table 170 - Entries in an appearance dictionary" and 12.5.5, "Appearance streams").</p>
     </td>
   </tr>
 </table>
