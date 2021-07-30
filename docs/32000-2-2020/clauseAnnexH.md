@@ -21,7 +21,7 @@ are individual members of the table of contents and/or lists of table of content
 
 <p><span class="new-text">NOTE the following example uses <b>Reference</b>, <b>TOC</b> and <b>TOCI</b> structure elements which are part of the <i>standard structure
 namespace for PDF 1.7</i> and are entirely valid for use in PDF 2.0 under the <i>default standard structure namespace</i> (see 14.8.6, "Standard structure namespaces").
-<span class="new-tooltiptext">Issue #62</span></span></p>
+<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/62" target="_blank">Issue #62</a></span></span></p>
 
 <p>...</p>
 

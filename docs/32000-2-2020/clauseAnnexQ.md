@@ -19,7 +19,7 @@ Since Annotations require an appearance stream which is drawn by a PDF processor
 that their presence may cause a page without any transparency to acquire some transparency. Therefore, all annotations object's
 in the page dictionary's <b>Annots</b> array shall have their appearance streams processed as a form XObject, according to Q.3, "Form XObjects".
 <span class="new-text">Any annotation that has a <b>BM</b> key (<i>PDF 2.0</i>) in the Annotation dictionary with a value other than <i>Normal</i>
-shall be considered to contain transparency (see "Table 166 - Entries common to all annotation dictionaries").<span class="new-tooltiptext">Issue #51</span></span>
+shall be considered to contain transparency (see "Table 166 - Entries common to all annotation dictionaries").<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/51" target="_blank">Issue #51</a></span></span>
 </p>
 
 </div>

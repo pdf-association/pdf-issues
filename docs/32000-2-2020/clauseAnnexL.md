@@ -15,12 +15,12 @@ title: (normative) Parent-child relationships between the standard structure ele
 <p>
 An informative matrix representation of Table L.2 is attached to the PDF of this document as "ISO32000-2_AnnexL_matrix-version2020.pdf" and
 in machine-readable form, as <span class="new-text">
-<a href="https://www.pdfa.org/norm-refs/ISO32000-2_AnnexL_matrix-version2020.xlsx">"ISO32000-2_AnnexL_matrix-version2020.xlsx</a><span class="new-tooltiptext">Issue #64</span></span>."
+<a href="https://www.pdfa.org/norm-refs/ISO32000-2_AnnexL_matrix-version2020.xlsx">"ISO32000-2_AnnexL_matrix-version2020.xlsx</a><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/64" target="_blank">Issue #64</a></span></span>."
 </p>
 
 <p>
 <span class="new-text">NOTE <b>Table</b> is now permitted as a child of <b>P</b>. <b>Table</b> is now indicated as a valid child of <b>P</b> with a 0..n relationship and,
-in the <b>Table</b> section, <b>P</b> is listed as a valid parent also with a 0..n relationship.<span class="new-tooltiptext">Issue #83</span></span>
+in the <b>Table</b> section, <b>P</b> is listed as a valid parent also with a 0..n relationship.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/83" target="_blank">Issue #83</a></span></span>
 </p>
 
 </div>

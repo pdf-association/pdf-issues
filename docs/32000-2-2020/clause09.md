@@ -83,8 +83,8 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
     <td>
     <p>...</p>
     <p>
-    <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
-    <b>Widths</b> array. <span class="new-text">The number <span class="new-tooltiptext">Issue #43</span></span><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    <span class="new-text">The number<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/43" target="_blank">Issue #43</a></span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <span class="new-text">The number <span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/43" target="_blank">Issue #43</a></span></span><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
     <p>...</p>
     </td>
@@ -95,12 +95,12 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
     <td>
     <p>...</p>
     <p>
-    <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
-    <b>Widths</b> array. <span class="new-text">The number<span class="new-tooltiptext">Issue #43</span></span> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    <span class="new-text">The number<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/43" target="_blank">Issue #43</a></span></span> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <span class="new-text">The number<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/43" target="_blank">Issue #43</a></span></span> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
     <p>
-    <span class="new-text">The numbers<span class="new-tooltiptext">Issue #43</span></span> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
-    and <span class="new-text">The numbers<span class="new-tooltiptext">Issue #43</span></span> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
+    <span class="new-text">The numbers<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/43" target="_blank">Issue #43</a></span></span> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
+    and <span class="new-text">The numbers<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/43" target="_blank">Issue #43</a></span></span> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
     </p>
     <p>...</p>
     </td>
@@ -109,15 +109,15 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 
 <p>EXAMPLE
 This example shows the definition of a Type 3 font with only two glyphs - a filled square and a filled triangle
-<span class="deleted-text">, selected by the character codes a and b<span class="deleted-tooltiptext">Issue #44</span></span>.
-<span class="new-text">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand<span class="new-tooltiptext">Issue #44</span></span>.
+<span class="deleted-text">, selected by the character codes a and b<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span>.
+<span class="new-text">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span>.
 "Figure 62 - Output from the example" shows the result of showing the string ( ababab ) using this font.
 </p>
 
 <code>
   <p>...</p>
-  <span class="deleted-text">%Type 3 font definition encoding two glyphs, 'a' and 'b'<span class="deleted-tooltiptext">Issue #44</span></span><br/>
-  <span class="new-text">%Type 3 font definition encoding the two glyphs square and triangle<span class="new-tooltiptext">Issue #44</span></span><br/>
+  <span class="deleted-text">%Type 3 font definition encoding two glyphs, 'a' and 'b'<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span><br/>
+  <span class="new-text">%Type 3 font definition encoding the two glyphs square and triangle<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span><br/>
   4 0 obj<br/>
   &nbsp;&nbsp;&nbsp;&lt;&lt;<br/>
   <p>...</p>
@@ -141,12 +141,12 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     <td><b>FontName</b></td>
     <td>name</td>
     <td>
-    (<i>Required <span class="new-text">for non-Type 3 fonts<span class="new-tooltiptext">Issue #11</span></span></i>)
+    (<i>Required <span class="new-text">for non-Type 3 fonts<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/11" target="_blank">Issue #11</a></span></span></i>)
     The PostScript name of the font. <span class="deleted-text">This name shall be the same as the value of <b>BaseFont</b>
-    in the font or CIDFont dictionary that refers to this font descriptor.<span class="deleted-tooltiptext">Issue #11</span></span>
+    in the font or CIDFont dictionary that refers to this font descriptor.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/11" target="_blank">Issue #11</a></span></span>
     <span class="new-text">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match
     the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font
-    or CIDFont dictionary that refers to this font descriptor.<span class="new-tooltiptext">Issue #11</span></span>
+    or CIDFont dictionary that refers to this font descriptor.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/11" target="_blank">Issue #11</a></span></span>
     </td>
   </tr>
 </table>
@@ -160,12 +160,12 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 <p>
 The key for each entry in an <b>FD</b> dictionary shall be the name of a class of glyphs - that is, a particular subset of the CIDFont's
 character collection. The entry's value shall be a font descriptor whose contents shall <span class="new-text">be a subset of the keys defined
-in "Table 120 - Entries common to all font descriptors" that<span class="new-tooltiptext">Issue #5</span></span> override the font-wide attributes for that
-class only. This font descriptor <span class="deleted-text">shall contain<span class="deleted-tooltiptext">Issue #5</span></span><span class="new-text">contains<span
-class="new-tooltiptext">Issue #5</span></span> entries for metric information only; it shall not include <b>FontFile</b>, <b>FontFile2</b>,
+in "Table 120 - Entries common to all font descriptors" that<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/5" target="_blank">Issue #5</a></span></span> override the font-wide attributes for that
+class only. This font descriptor <span class="deleted-text">shall contain<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/5" target="_blank">Issue #5</a></span></span><span class="new-text">contains<span
+class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/5" target="_blank">Issue #5</a></span></span> entries for metric information only; it shall not include <b>FontFile</b>, <b>FontFile2</b>,
 <b>FontFile3</b>, or any of the entries listed in <span class="deleted-text">"Table 120 - Entries common to all font descriptors"
-<span class="deleted-tooltiptext">Issue #5</span></span><span class="new-text">"Table 122 - Additional font descriptor entries for CIDFonts"
-<span class="new-tooltiptext">Issue #5</span></span>.
+<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/5" target="_blank">Issue #5</a></span></span><span class="new-text">"Table 122 - Additional font descriptor entries for CIDFonts"
+<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/5" target="_blank">Issue #5</a></span></span>.
 </p>
 
 <h3>9.10.3 ToUnicode CMaps</h3>
@@ -174,8 +174,8 @@ class="new-tooltiptext">Issue #5</span></span> entries for metric information on
 <p>EXAMPLE 2</p>
 <p style="margin-left: 40px;">...</p>
 <p style="margin-left: 40px;">Finally, the character code &lt;3A 51&gt; is mapped to the Unicode value
-<span class="deleted-text">UNICODE HAN CHARACTER 'U+2003E'<span class="deleted-tooltiptext">Issue #87</span></span>
-<span class="new-text">CJK UNIFIED IDEOGRAPH-2003E<span class="new-tooltiptext">Issue #87</span></span>
+<span class="deleted-text">UNICODE HAN CHARACTER 'U+2003E'<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/87" target="_blank">Issue #87</a></span></span>
+<span class="new-text">CJK UNIFIED IDEOGRAPH-2003E<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/87" target="_blank">Issue #87</a></span></span>
 (U+2003E), which is expressed by the byte sequence &lt;D840DC3E&gt; in UTF-16BE encoding.
 </p>
 

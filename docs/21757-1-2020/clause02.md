@@ -15,7 +15,7 @@ title: Normative references
 
 <p>ISO/IEC 22537:2006, <i>Information technology — ECMAScript for XML (E4X) specification</i></p>
 <p>
-  <span class="new-text">NOTE: E4X support is deprecated in PDF 2.0.<span class="deleted-tooltiptext">Issue #70</span></span>
+  <span class="new-text">NOTE: E4X support is deprecated in PDF 2.0.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/70" target="_blank">Issue #70</a></span></span>
 </p>
 
 </div>
