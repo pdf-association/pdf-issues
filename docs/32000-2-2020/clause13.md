@@ -11,6 +11,15 @@ title: Multimedia features
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
+<h2>13.1 General</h2>
+
+<p>This clause describes those features of PDF that support embedding and playing multimedia content. It contains the following subclauses:</p>
+<ul>
+<li>13.2, "Multimedia" describes the comprehensive set of multimedia capabilities that were introduced in PDF 1.5.</li>
+<li>13.3, "Sounds" and 13.4, "Movies" describe deprecated features superseded by 13.7, "<span class="new-text">Rich media".<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></li>
+<li>13.6, "3D Artwork" describes the capability of embedding three-dimensional graphics in a document, introduced in PDF 1.6.</li>
+<li>13.7, "<span class="new-text">Rich media" describes rich media annotations providing a common framework for video, audio, animations and other multimedia presentations.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></li>
+</ul>
 
 <h3>13.6.3 3D streams</h3>
 

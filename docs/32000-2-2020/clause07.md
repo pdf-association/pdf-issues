@@ -82,6 +82,13 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
   </tr>
 </table>
 
+<h3>7.5.4 Cross reference table</h3>
+
+<p>...</p>
+
+<p><span class="new-text">EXAMPLE 2 The cross-reference table sub-section line should have just a single SPACE between "0" and "6".<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></p>
+
+<p><span class="new-text">EXAMPLE 3 The cross-reference table first sub-section line should have just a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></p>
 
 
 <h3>7.6.3 General encryption algorithm</h3>
@@ -302,6 +309,24 @@ attributes" from some ancestor node of the page object. ...
   </tr>
 </table>
 
+
+<h3>7.12.2 Extensions dictionary</h3>
+
+<table>
+  <caption>Table 48 - Entries in an extensions dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Type</b></td>
+    <td>name</td>
+    <td>
+    (<i>Optional, shall be a direct <span class="deleted-text">objectif<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span> <span class="new-text">object if<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span> present</i>) The type of PDF object that this dictionary describes; if present, shall be <i>Extensions</i>.
+    </td>
+  </tr>
+</table>
 
 </div>
 
