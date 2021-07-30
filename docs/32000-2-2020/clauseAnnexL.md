@@ -18,8 +18,13 @@ in machine-readable form, as <span class="new-text">
 <a href="https://www.pdfa.org/norm-refs/ISO32000-2_AnnexL_matrix-version2020.xlsx">"ISO32000-2_AnnexL_matrix-version2020.xlsx</a><span class="new-tooltiptext">Issue #64</span></span>."
 </p>
 
+<p>
+<span class="new-text">NOTE <b>Table</b> is now permitted as a child of <b>P</b>. <b>Table</b> is now indicated as a valid child of <b>P</b> with a 0..n relationship and,
+in the <b>Table</b> section, <b>P</b> is listed as a valid parent also with a 0..n relationship.<span class="new-tooltiptext">Issue #83</span></span>
+</p>
+
 </div>
 
 
 <hr>
-<p class="footnote">Last modified: 24 May 2021</p>
+<p class="footnote">Last modified: 30 July 2021</p>

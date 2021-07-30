@@ -22,12 +22,27 @@ title: (informative) Operator Summary
     <th>Table</th>
   </tr>
   <tr>
+    <td><b>BMC</b></td>
+    <td></td>
+    <td>(<i>PDF 1.2</i>) Begin marked-content sequence</td>
+    <td>
+      <span class="deleted-text">"Table 351 - Entries in a data dictionary"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/108">Issue #108</a></span></span>
+      <span class="new-text">"Table 352 - Marked-content operators"<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/108">Issue #108</a></span></span>
+    </td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
     <td><b>c</b></td>
     <td><b>curveto</b></td>
     <td>Append curved segment to path (three control points)</td>
     <td>
-      <span class="deleted-text">"Table 60 - Clipping path operators"<span class="deleted-tooltiptext">Issue #75</span></span>
-      <span class="new-text">"Table 58 - Path construction operators"<span class="new-tooltiptext">Issue #75</span></span>
+      <span class="deleted-text">"Table 60 - Clipping path operators"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75">Issue #75</a></span></span>
+      <span class="new-text">"Table 58 - Path construction operators"<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75">Issue #75</a></span></span>
     </td>
   </tr>
 </table>
@@ -37,4 +52,4 @@ title: (informative) Operator Summary
 
 
 <hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: 30 July 2021</p>

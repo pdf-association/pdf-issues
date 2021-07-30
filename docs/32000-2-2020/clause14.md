@@ -42,6 +42,25 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 <span class="new-tooltiptext">Issue #69</span></span>
 </p>
 
+<h3>14.7.2 Structure hierarchy</h3>
+
+<p>...</p>
+
+<table>
+  <caption>Table 355 - Entries in a structure element dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>R</td>
+    <td>integer</td>
+    <td>(<i>Optional<span class="new-text">; deprecated in PDF 2.0<span class="new-tooltiptext">Issue #93</span></span></i>) The current revision number of this structure element (see 14.7.6.3, "Attribute revision numbers"). The value shall be a non-negative integer. Default value: 0.
+    </td>
+  </tr>
+</table>
+
 
 <h5>14.8.4.7.2 General inline level structure types</h5>
 
@@ -210,4 +229,4 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <hr>
-<p class="footnote">Last modified: 18 June 2021</p>
+<p class="footnote">Last modified: 30 July 2021</p>

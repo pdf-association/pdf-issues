@@ -46,6 +46,32 @@ title: Graphics
   </tr>
 </table>
 
+<h3>8.5.3 Path-painting operators</h3>
+
+<h4>8.5.3.1 General</h4>
+
+<p>...</p>
+
+<table>
+  <caption>Table 59 - Path-painting categories</caption>
+  <tr>
+    <th>Operands</th>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td><b>B</b></td>
+    <td>
+    <p>Fill and then stroke the path, using the non-zero winding number rule to determine the region to fill.
+    <span class="new-text">In the opaque imaging model, this<span class="new-tooltiptext">Issue #103</span></span>
+    <span class="deleted-text">This<span class="deleted-tooltiptext">Issue #103</span></span> operator shall produce the same result
+    as constructing two identical path objects, painting the first with <b>f</b> and the second with <b>S</b>.</p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
 
 <h4>8.6.5.8 Rendering Intents</h4>
 
@@ -165,4 +191,4 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 
 
 <hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: 30 July 2021</p>

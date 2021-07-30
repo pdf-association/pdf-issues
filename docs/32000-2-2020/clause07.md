@@ -47,7 +47,6 @@ title: Syntax
 
 <h3>7.4.9 JPXDecode filter</h3>
 
-
 <p>...</p>
 
 <p>
@@ -58,8 +57,32 @@ In addition, enumerated colour space 12 (CMYK), which is part of JPX but not JPX
 structures used in PDF files shall conform to the JPEG 2000 specification.
 </p>
 
+<p>...</p>
+
+<h2>7.5 File structure</h2>
 
 <p>...</p>
+
+<table>
+  <caption>Table 15 - Entries in the file trailer dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Prev</b></td>
+    <td>integer</td>
+    <td><p>
+    (<i>Optional; present only if the file has more than one cross-reference section; shall be a direct object</i>)
+    The byte offset from the beginning of the PDF file to the beginning of the previous cross-reference
+    <span class="deleted-text">stream<span class="deleted-tooltiptext">Issue #101</span></span>
+    <span class="new-text">section<span class="new-tooltiptext">Issue #101</span></span>.
+    </p></td>
+  </tr>
+</table>
+
+
 
 <h3>7.6.3 General encryption algorithm</h3>
 
@@ -284,4 +307,4 @@ attributes" from some ancestor node of the page object. ...
 
 
 <hr>
-<p class="footnote">Last modified: 9 July 2021</p>
+<p class="footnote">Last modified: 30 July 2021</p>
