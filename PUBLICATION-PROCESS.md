@@ -37,13 +37,19 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * The simulated "track changes" is achieved via inline `span class="new-text"` and `span class="deleted-text"`.
 
-* The coloured popup tooltips (which state the pdf-issues Issue number e.g. "Issue #123") is achieved via `span class="new-tooltiptext"` and `span class="deleted-tooltiptext"`. Implement as an inline span within the surrounding span of the "track changes".
+* The coloured popup tooltips (which state the pdf-issues Issue number and provide a clickable link back to GitHub e.g. "Issue #123") is achieved via `span class="new-tooltiptext"` and `span class="deleted-tooltiptext"`. Implement as an inline span within the surrounding span of the "track changes".
+
+   ```html
+   <span class="deleted-text">to-be-deleted<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/xx" target="_blank">Issue #xx</a></span></span>
+   ```
 
 * The "Last Modified" date at the end of each MD file needs to be changed manually (as this needs to be the edit time of substantive changes, not just when GH-Pages publishes everything)
 
 * A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
 
-```bundle exec jekyll serve```
+   ```
+   bundle exec jekyll serve
+   ```
 
 * Visually check the rendered HTML appearance via [127.0.0.1:4000](127.0.0.1:4000) (default local jekyll URL)
 
