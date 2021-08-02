@@ -2,10 +2,10 @@
 subset: PDF/VT-3
 isodoc: ISO 16612-3:2020
 isotitle: 'Graphic technology — Variable data exchange — Part 3: Using PDF/X-6 (PDF/VT-3)'
-title: Corrections
+title: PDF/VT-3 Corrections
 ---
 
-<h1>{{ page.isodoc }} {{ page.subset }} {{ page.title }}</h1>
+<h1>{{ page.isodoc }} {{ page.title }}</h1>
 
 <p>
 This is a placeholder for all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".

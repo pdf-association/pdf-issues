@@ -2,10 +2,10 @@
 subset: PDF/A-4
 isodoc: ISO 19005-4:2020
 isotitle: 'Document management — Electronic document file format for long-term preservation — Part 4: Use of ISO 32000-2 (PDF/A-4)'
-title: Corrections
+title: PDF/A-4 Corrections
 ---
 
-<h1>{{ page.isodoc }} {{ page.subset }} {{ page.title }}</h1>
+<h1>{{ page.isodoc }} {{ page.title }}</h1>
 
 <p>
 This is a placeholder for all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".

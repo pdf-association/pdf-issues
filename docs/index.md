@@ -1,11 +1,8 @@
 ---
-title: PDF 2.0 Corrections
+title: Overview
 ---
 
 <div class="github-wp">
-
-
-<h2>Background</h2>
 
 <p>
 This public repository is hosted by the <a href="https://www.pdfa.org" target="_parent">PDF Association</a> in order to provide all developers

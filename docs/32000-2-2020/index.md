@@ -1,11 +1,11 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-isotitle: 'Document management — Portable document format — Part 2: PDF 2.0'
-title: Corrections
+isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
+title: PDF 2.0 Corrections
 ---
 
-<h1>{{ page.isodoc }} {{ page.subset }} {{ page.title }}</h1>
+<h1>{{ page.isodoc }} {{ page.title }}</h1>
 
 <p>
 This is a placeholder for all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".

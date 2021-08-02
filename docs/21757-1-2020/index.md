@@ -2,10 +2,10 @@
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 isotitle: 'Document management — ECMAScript for PDF — Part 1: Use of ISO 32000-2 (PDF 2.0)'
-title: Corrections
+title: ECMAscript for PDF 2.0 Corrections
 ---
 
-<h1>{{ page.isodoc }} {{ page.subset }} {{ page.title }}</h1>
+<h1>{{ page.isodoc }} {{ page.title }}</h1>
 
 <p>
 This is a placeholder for all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".

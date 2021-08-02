@@ -2,10 +2,10 @@
 subset: PDF/X-6
 isodoc: ISO 15930-9:2020
 isotitle: 'Graphic technology - Prepress digital data exchange using PDF — Part 9: Complete exchange of printing data (PDF/X-6) and partial exchange of printing data with external profile reference (PDF/X-6p and PDF/X-6n)'
-title: Corrections
+title: PDF/X-6 Corrections
 ---
 
-<h1>{{ page.isodoc }} {{ page.subset }} {{ page.title }}</h1>
+<h1>{{ page.isodoc }} {{ page.title }}</h1>
 
 <p>
 This is a placeholder for all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
