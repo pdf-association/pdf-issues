@@ -13,18 +13,54 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: PDF 2.0 Issues
+
+title: Industry resolution for PDF 2.0-based issues
+
+author:
+  name: "Contact us"
+  email: info@pdfa.com
+  
+name: "Contact us"
 email: info@pdfa.com
+
 description: >- # this means to ignore newlines until "baseurl:"
   Industry-based resolutions for issues reported against all PDF 2.0 (ISO 32000-2:2020) related published ISO standards. 
-baseurl: /pdf-issues # the subpath of your site, e.g. /blog
-url: "https://pdf-association.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: PDFAssociation
-github_username:  pdf-association
 
+baseurl: /pdf-issues # the subpath of your site, e.g. /blog
+
+url: "https://pdf-association.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+logo: https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo.png
+
+twitter:
+    username: PDFAssociation
+github:
+    username:  pdf-association
+
+show_excerpts: false
+
+# See https://github.com/jekyll/minima
+minima:
+  date_format: "%e %B %Y"
+  social_links:
+    twitter: PDFassociation
+    github: pdf-association
+    facebook: PDFassociation
+    linkedin: pdf-association
+    youtube: ThePDFAssociation
+    
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+
+#theme: jekyll-theme-minimal
+theme: minima
+
+header_pages:
+    - 15930-9-2020/index.md
+    - 16612-3-2020/index.md
+    - 19005-4-2020/index.md
+    - 21757-1-2020/index.md
+    - 32000-2-2020/index.md
 
 # plugins:
 #  - jekyll-feed
