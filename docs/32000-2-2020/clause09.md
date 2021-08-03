@@ -26,7 +26,7 @@ title: Text
     <th>Value</th>
   </tr>
   <tr>
-    <td><b>FontDescritpor</b></td>
+    <td><b>FontDescriptor</b></td>
     <td>dictionary</td>
     <td>
     <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts; shall be an indirect reference</i>) A font descriptor describing the
