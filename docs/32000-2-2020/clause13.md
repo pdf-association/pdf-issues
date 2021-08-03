@@ -11,7 +11,7 @@ title: Multimedia features
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
-<h2>13.1 General</h2>
+<h2 id="H13.1">13.1 General</h2>
 
 <p>This clause describes those features of PDF that support embedding and playing multimedia content. It contains the following subclauses:</p>
 <ul>
@@ -21,13 +21,13 @@ title: Multimedia features
 <li>13.7, "<span class="new-text">Rich media" describes rich media annotations providing a common framework for video, audio, animations and other multimedia presentations.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></li>
 </ul>
 
-<h3>13.6.3 3D streams</h3>
+<h3 id="H13.6.3">13.6.3 3D streams</h3>
 
-<h4>13.3.6.1 General</h4>
+<h4 id="H13.3.6.1">13.3.6.1 General</h4>
 
 
 <table>
-  <caption>Table 311 - Entries in a 3D stream dictionary</caption>
+  <caption id="Table311">Table 311 - Entries in a 3D stream dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -49,12 +49,12 @@ title: Multimedia features
   </tr>
 </table>
 
-<h3>13.6.4 3D Views</h3>
+<h3 id="H13.6.4">13.6.4 3D Views</h3>
 
-<h4>13.6.4.1 General</h4>
+<h4 id="H13.6.4.1">13.6.4.1 General</h4>
 
 <table>
-  <caption>Table 315 - Entries in a 3D view dictionary</caption>
+  <caption id="Table315">Table 315 - Entries in a 3D view dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -74,7 +74,7 @@ title: Multimedia features
 </table>
 
 
-<h4>13.6.4.3 3D background dictionaries</h4>
+<h4 id="H13.6.4.3">13.6.4.3 3D background dictionaries</h4>
 
 <p>...</p>
 
@@ -88,7 +88,7 @@ define appearance streams or how appearance streams would be rendered onto the p
 
 
 <table>
-  <caption>Table 317 - Entries in a 3D background dictionary</caption>
+  <caption id="Table317">Table 317 - Entries in a 3D background dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -119,11 +119,11 @@ define appearance streams or how appearance streams would be rendered onto the p
 </table>
 
 
-<h3>13.6.4.6 3D cross section dictionaries</h3>
+<h4>13.6.4.6 3D cross section dictionaries</h4>
 
 
 <table>
-  <caption>Table 322 - Entries in a 3D cross section dictionary</caption>
+  <caption id="Table322">Table 322 - Entries in a 3D cross section dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -149,11 +149,11 @@ define appearance streams or how appearance streams would be rendered onto the p
 </table>
 
 
-<h5>13.7.2.2.2 RichMediaActivation dictionary</h5>
+<h5 id="H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</h5>
 
 
 <table>
-  <caption>Table 335 - Entries in a RichMediaActivation dictionary</caption>
+  <caption id="Table335">Table 335 - Entries in a RichMediaActivation dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -174,11 +174,11 @@ define appearance streams or how appearance streams would be rendered onto the p
 </table>
 
 
-<h5>13.7.2.3.4 RichMediaInstance dictionary</h5>
+<h5 id="H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</h5>
 
 
 <table>
-  <caption>Table 343 - Entries in a RichMediaInstance dictionary</caption>
+  <caption id="Table343">Table 343 - Entries in a RichMediaInstance dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>

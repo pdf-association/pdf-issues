@@ -11,12 +11,12 @@ title: Graphics
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
-<h2>8.2 Graphics objects</h2>
+<h2 id="H8.2">8.2 Graphics objects</h2>
 
 <p>...</p>
 
 <table>
-  <caption>Table 50 - Operator categories</caption>
+  <caption id="Table50">Table 50 - Operator categories</caption>
   <tr>
     <th>Category</th>
     <th>Operators</th>
@@ -46,14 +46,14 @@ title: Graphics
   </tr>
 </table>
 
-<h3>8.5.3 Path-painting operators</h3>
+<h3 id="H8.5.3">8.5.3 Path-painting operators</h3>
 
-<h4>8.5.3.1 General</h4>
+<h4 id="H8.5.3.1">8.5.3.1 General</h4>
 
 <p>...</p>
 
 <table>
-  <caption>Table 59 - Path-painting categories</caption>
+  <caption id="Table59">Table 59 - Path-painting categories</caption>
   <tr>
     <th>Operands</th>
     <th>Operator</th>
@@ -73,7 +73,7 @@ title: Graphics
 </table>
 
 
-<h4>8.6.5.8 Rendering Intents</h4>
+<h4 id="H8.6.5.8">8.6.5.8 Rendering Intents</h4>
 
 <p>...</p>
 
@@ -84,14 +84,14 @@ can support additional ones beyond those listed in the table above.
 </p>
 
 
-<h3>8.9.5 Image dictionaries</h3>
+<h3 id="H8.9.5">8.9.5 Image dictionaries</h3>
 
 
-<h4>8.9.5.1. General</h4>
+<h4 id="H8.9.5.1">8.9.5.1 General</h4>
 
 
 <table>
-  <caption>Table 87 - Additional entries specific to an image dictionary</caption>
+  <caption id="Table87">Table 87 - Additional entries specific to an image dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -150,7 +150,7 @@ can support additional ones beyond those listed in the table above.
 </table>
 
 
-<h3>8.9.7 Inline images</h3>
+<h3 id="H8.9.7">8.9.7 Inline images</h3>
 
 
 <p>...</p>

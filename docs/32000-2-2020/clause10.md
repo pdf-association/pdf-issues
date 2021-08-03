@@ -12,11 +12,11 @@ title: Rendering
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h4>10.6.5.6 Type 5 halftones</h4>
+<h4 id="H10.6.5.6">10.6.5.6 Type 5 halftones</h4>
 
 
 <table>
-  <caption>Table 132 - Entries in a Type 5 halftone dictionary</caption>
+  <caption id="Table132">Table 132 - Entries in a Type 5 halftone dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>

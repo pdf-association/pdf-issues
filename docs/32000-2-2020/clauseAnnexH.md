@@ -11,7 +11,7 @@ title: (informative) Example PDF files
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h2>H.8.2 Table of Contents</h2>
+<h2 id="HH.8.2">H.8.2 Table of Contents</h2>
 
 <p>
 The structure element's structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents.

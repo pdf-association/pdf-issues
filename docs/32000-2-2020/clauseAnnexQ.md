@@ -10,7 +10,7 @@ title: (normative) Method for determining transparency on a page
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
-<h2>Q.2. Page content</h2>
+<h2 id="HQ.2">Q.2. Page content</h2>
 
 <p>...</p>
 

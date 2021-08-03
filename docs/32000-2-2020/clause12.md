@@ -12,11 +12,11 @@ title: Interactive features
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h2>12.2 Viewer preferences</h2>
+<h2 id="H12.2">12.2 Viewer preferences</h2>
 
 
 <table>
-  <caption>Table 147 - Entries in a viewer preferences dictionary</caption>
+  <caption id="Table147">Table 147 - Entries in a viewer preferences dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -82,20 +82,20 @@ title: Interactive features
 </table>
 
 
-<h3>12.4.2 Page labels <span class="new-text"> and indices<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/73" target="_blank">Issue #73</a></span></span></h3>
+<h3 id="H12.4.2">12.4.2 Page labels <span class="new-text"> and indices<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/73" target="_blank">Issue #73</a></span></span></h3>
 
 
 <p>...</p>
 
 
-<h3>12.4.4 Presentations</h3>
+<h3 id="H12.4.4">12.4.4 Presentations</h3>
 
 
-<h4>12.4.4.1 General</h4>
+<h4 id="H12.4.4.1">12.4.4.1 General</h4>
 
 
 <table>
-  <caption>Table 164 - Entries in a transition dictionary</caption>
+  <caption id="Table164">Table 164 - Entries in a transition dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -113,11 +113,11 @@ title: Interactive features
 </table>
 
 
-<h3>12.5.2 Annotation dictionaries</h3>
+<h3 id="H12.5.2">12.5.2 Annotation dictionaries</h3>
 
 
 <table>
-  <caption>Table 166 - Entries common to all annotation dictionaries</caption>
+  <caption id="Table166">Table 166 - Entries common to all annotation dictionaries</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -155,7 +155,7 @@ NOTE <span class="new-text">2<span class="new-tooltiptext"><a href="https://gith
 <span class="new-text">When an appearance dictionary is not present, the rendered appearance will be implementation dependent.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/34" target="_blank">Issue #34</a></span></span>
 </p>
 
-<h4>12.5.6.2 Markup annotations</h4>
+<h4 id="H12.5.6.2">12.5.6.2 Markup annotations</h4>
 
 <p>...</p>
 
@@ -168,11 +168,11 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 <p>...</p>
 
 
-<h4>12.5.6.5 Link annotations</h4>
+<h4 id="H12.5.6.5">12.5.6.5 Link annotations</h4>
 
 
 <table>
-  <caption>Table 176 - Additional entries specific to a link annotation</caption>
+  <caption id="Table176">Table 176 - Additional entries specific to a link annotation</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -198,10 +198,10 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 </table>
 
 
-<h4>12.5.6.6 Free text annotations</h4>
+<h4 id="H12.5.6.6">12.5.6.6 Free text annotations</h4>
 
 <table>
-  <caption>Table 177 - Additional entries specific to a free text annotation</caption>
+  <caption id="Table177">Table 177 - Additional entries specific to a free text annotation</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -218,7 +218,7 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 </table>
 
 
-<h4>12.5.6.18 Screen annotations</h4>
+<h4 id="H12.5.6.18">12.5.6.18 Screen annotations</h4>
 
 <p>...</p>
 
@@ -232,7 +232,7 @@ appearance for a screen annotation that shall be used for printing and default d
 </ul>
 
 
-<h4>12.5.6.24 Projection annotations</h4>
+<h4 id="H12.5.6.24">12.5.6.24 Projection annotations</h4>
 
 <p>A <i>projection annotation (PDF 2.0)</i> is a markup annotation subtype (see 12.5.6.2, "Markup annotations") that has much of the functionality of other markup annotations.
 However, a projection annotation is only valid within the context of an associated run-time environment, such as an activated 3D model<span class="new-text">, and thus an <b>AP</b> dictionary is not required<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/94" target="_blank">Issue #94</a></span></span>.</p>
@@ -242,14 +242,14 @@ However, a projection annotation is only valid within the context of an associat
 
 <p><span class="deleted-text">A projection annotation with a <b>Rect</b> entry that has zero height or zero width shall not have an <b>AP</b> dictionary.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/42" target="_blank">Issue #42</a></span></span></p>
 
-<h3>12.7.4 Field dictionaries</h3>
+<h3 id="H12.7.4">12.7.4 Field dictionaries</h3>
 
 
-<h4>12.7.4.1 General</h4>
+<h4 id="H12.7.4.1">12.7.4.1 General</h4>
 
 
 <table>
-  <caption>Table 226 - Entries common to all field dictionaries</caption>
+  <caption id="Table226">Table 226 - Entries common to all field dictionaries</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -267,11 +267,11 @@ However, a projection annotation is only valid within the context of an associat
 </table>
 
 
-<h4>12.7.5.5 Signature Fields</h4>
+<h4 id="H12.7.5.5">12.7.5.5 Signature Fields</h4>
 
 
 <table>
-  <caption>Table 237 - Entries in a signature field seed value dictionary</caption>
+  <caption id="Table237">Table 237 - Entries in a signature field seed value dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -286,7 +286,7 @@ However, a projection annotation is only valid within the context of an associat
 </table>
 
 
-<h3>12.7.9 Non-interactive forms</h3>
+<h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
 
 <p>
@@ -295,7 +295,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </p>
 
 
-<h3>12.8.1 Signature Fields</h3>
+<h3 id="H12.8.1">12.8.1 Signature Fields</h3>
 
 <p>...</p>
 
@@ -312,7 +312,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 <p>A signature dictionary is used by all of these types of signatures.</p>
 
 <table>
-  <caption>Table 255 - Entries in a signature dictionary</caption>
+  <caption id="Table255">Table 255 - Entries in a signature dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -328,11 +328,11 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </table>
 
 
-<h4>12.8.2.4 FieldMDP</h4>
+<h4 id="H12.8.2.4">12.8.2.4 FieldMDP</h4>
 
 
 <table>
-  <caption>Table 259 - Entries in the FieldMDP transform parameters dictionary</caption>
+  <caption id="Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -349,14 +349,14 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </table>
 
 
-<h3>12.8.3 Signature interoperability</h3>
+<h3 id="H12.8.3">12.8.3 Signature interoperability</h3>
 
 
-<h4>12.8.3.1 General</h4>
+<h4 id="H12.8.3.1">12.8.3.1 General</h4>
 
 
 <table>
-  <caption>Table 260 - SubFilter value algorithm support</caption>
+  <caption id="Table260">Table 260 - SubFilter value algorithm support</caption>
   <tr>
     <th>SubFilter values</th>
     <th>adbe.pkcs7.detached,<br/>ETSI.CAdES.detached or<br/>ETSI.RFC3161</th>

@@ -12,7 +12,7 @@ title: Document interchange
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h2>14.5 Page-piece dictionaries</h2>
+<h2 id="H14.5">14.5 Page-piece dictionaries</h2>
 
 <p>
 As "Table 350 - Entries in a page-piece dictionary" shows, a page-piece dictionary may contain any number of entries,
@@ -22,7 +22,7 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
 </p>
 
 <table>
-  <caption>Table 350 - Entries in a page-piece dictionary</caption>
+  <caption id="Table350">Table 350 - Entries in a page-piece dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -42,12 +42,12 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 <span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/69" target="_blank">Issue #69</a></span></span>
 </p>
 
-<h3>14.7.2 Structure hierarchy</h3>
+<h3 id="H14.7.2">14.7.2 Structure hierarchy</h3>
 
 <p>...</p>
 
 <table>
-  <caption>Table 355 - Entries in a structure element dictionary</caption>
+  <caption id="Table355">Table 355 - Entries in a structure element dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -62,11 +62,11 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 </table>
 
 
-<h5>14.8.4.7.2 General inline level structure types</h5>
+<h5 id="H14.8.4.7.2">14.8.4.7.2 General inline level structure types</h5>
 
 
 <table>
-  <caption>Table 368 - General inline level structure types</caption>
+  <caption id="Table368">Table 368 - General inline level structure types</caption>
   <tr>
     <th>Structure Type</th>
     <th>Category</th>
@@ -87,11 +87,11 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 </table>
 
 
-<h5>14.8.4.8.3 Table structure types</h5>
+<h5 id="H14.8.4.8.3">14.8.4.8.3 Table structure types</h5>
 
 
 <table>
-  <caption>Table 371 - Table standard structure types</caption>
+  <caption id="Table371">Table 371 - Table standard structure types</caption>
   <tr>
     <th>Structure Type</th>
     <th>Category</th>
@@ -107,11 +107,11 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 </table>
 
 
-<h5>14.8.4.8.4 Caption structure types</h5>
+<h5 id="H14.8.4.8.4">14.8.4.8.4 Caption structure types</h5>
 
 
 <table>
-  <caption>Table 372 - Standard structure type Caption</caption>
+  <caption id="Table372">Table 372 - Standard structure type Caption</caption>
   <tr>
     <th>Structure Type</th>
     <th>Category</th>
@@ -135,7 +135,7 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 </table>
 
 
-<h4>14.8.6.1 Namespaces for standard structure types and attributes</h4>
+<h4 id="H14.8.6.1">14.8.6.1 Namespaces for standard structure types and attributes</h4>
 
 <p>...</p>
 
@@ -147,7 +147,7 @@ namespace for each element, if appropriate. However, structure elements types in
 <span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/8" target="_blank">Issue #8</a></span></span></p>
 
 
-<h4>14.8.6.2 Role maps and namespaces</h4>
+<h4 id="H14.8.6.2">14.8.6.2 Role maps and namespaces</h4>
 
 <p>...</p>
 
@@ -182,7 +182,7 @@ endobj<br/>
 </div>
 
 
-<h4>14.8.6.3 Other namespaces</h4>
+<h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
 
 <p>...</p>
 
@@ -196,7 +196,7 @@ endobj<br/>
 <p>...</p>
 
 
-<h4>14.12.4.2 Document part metadata</h4>
+<h4 id="H14.12.4.2">14.12.4.2 Document part metadata</h4>
 
 <p>...</p>
 
@@ -209,7 +209,7 @@ Other PDF value types shall not be used.
 </p>
 
 
-<h3>14.13.5 Associated files linked to graphics objects</h3>
+<h3 id="H14.13.5">14.13.5 Associated files linked to graphics objects</h3>
 
 
 <p>...</p>

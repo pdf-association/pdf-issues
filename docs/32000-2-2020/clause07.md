@@ -11,11 +11,11 @@ title: Syntax
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h4>7.3.8.2 Stream extent</h4>
+<h4 id="H7.3.8.2">7.3.8.2 Stream extent</h4>
 
 
 <table>
-  <caption>Table 5 - Entries common to all stream dictionaries</caption>
+  <caption id="Table5">Table 5 - Entries common to all stream dictionaries</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -34,7 +34,7 @@ title: Syntax
   </tr>
 </table>
 
-<h3>7.4.3 ASCII85Decode filter</h3>
+<h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
 
 <p>...</p>
 
@@ -45,7 +45,7 @@ title: Syntax
     <ul>A final partial group contains only one character.</ul>
 </li>
 
-<h3>7.4.9 JPXDecode filter</h3>
+<h3 id="H7.4.9">7.4.9 JPXDecode filter</h3>
 
 <p>...</p>
 
@@ -59,12 +59,12 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p>...</p>
 
-<h2>7.5 File structure</h2>
+<h2 id="H7.5">7.5 File structure</h2>
 
 <p>...</p>
 
 <table>
-  <caption>Table 15 - Entries in the file trailer dictionary</caption>
+  <caption id="Table15">Table 15 - Entries in the file trailer dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -82,7 +82,7 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
   </tr>
 </table>
 
-<h3>7.5.4 Cross reference table</h3>
+<h3 id="H7.5.4">7.5.4 Cross reference table</h3>
 
 <p>...</p>
 
@@ -91,9 +91,9 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 <p><span class="new-text">EXAMPLE 3 The cross-reference table first sub-section line should have just a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></p>
 
 
-<h3>7.6.3 General encryption algorithm</h3>
+<h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
 
-<h4>7.6.3.1 General</h4>
+<h4 id="H7.6.3.1">7.6.3.1 General</h4>
 
 <p>...</p>
 
@@ -101,9 +101,9 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p>...</p>
 
-<h3>7.6.4 Standard security handler</h3>
+<h3 id="H7.6.4">7.6.4 Standard security handler</h3>
 
-<h4>7.6.4.1 General</h4>
+<h4 id="H7.6.4.1">7.6.4.1 General</h4>
 
 <p>...</p>
 
@@ -115,7 +115,7 @@ The support shall be limited to the <b>Identity</b> crypt filter (see "Table 26 
 
 <p>...</p>
 
-<h5>7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
+<h5 id="H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
 
 <ol type="a" start="6">
 <li>
@@ -124,7 +124,7 @@ Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <span class="d
 </li>
 </ol>
 
-<h5>7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
+<h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
 <ol type="a" start="6">
 <li>
@@ -134,7 +134,7 @@ The result (16 bytes) is stored as the <b>Perms</b> string, and checked for vali
 </li>
 </ol>
 
-<h5>7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</h5>
+<h5 id="H7.6.4.4.12">7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</h5>
 
 <ol type="a" start="1">
 <li>
@@ -143,7 +143,7 @@ Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <span class="d
 </li>
 </ol>
 
-<h4>7.6.5.3 Public-key encryption algorithms</h4>
+<h4 id="H7.6.5.3">7.6.5.3 Public-key encryption algorithms</h4>
 
 <p><i>New notes added at the end of sub-clause 7.6.5.3:</i></p>
 
@@ -161,7 +161,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 </div>
 
 
-<h3>7.6.6 Crypt filters</h3>
+<h3 id="H7.6.6">7.6.6 Crypt filters</h3>
 
 <p>PDF 1.5 introduces crypt filters, which provide finer granularity control of encryption within a PDF file. The use of crypt filters involves the following structures:</p>
 
@@ -173,7 +173,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 <p>...</p>
 
 <table>
-  <caption>Table 27 - Additional crypt filter dictionary entries for public-key security handlers</caption>
+  <caption id="Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -193,11 +193,11 @@ there is no way to specify that metadata is to be left unencrypted in these case
 </table>
 
 
-<h4>7.7.3.3 Page objects</h4>
+<h4 id="H7.7.3.3">7.7.3.3 Page objects</h4>
 
 
 <table>
-  <caption>Table 31 - Entries in a page object</caption>
+  <caption id="Table31">Table 31 - Entries in a page object</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -216,7 +216,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 </table>
 
 
-<h3>7.8.3 Resource dictionaries</h3>
+<h3 id="H7.8.3">7.8.3 Resource dictionaries</h3>
 
 <p>...</p>
 
@@ -232,9 +232,9 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
-<h4>7.9.2.2 Text string type</h4>
+<h4 id="H7.9.2.2">7.9.2.2 Text string type</h4>
 
-<h5>7.9.2.2.1 General</h5>
+<h5 id="H7.9.2.2.1">7.9.2.2.1 General</h5>
 
 <p>...</p>
 
@@ -263,7 +263,7 @@ attributes" from some ancestor node of the page object. ...
 <p><span class="deleted-text">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span></p>
 
 
-<h3>7.10.3 Type 2 (exponential interpolation) functions</h3>
+<h3 id="H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</h3>
 
 
 <p>...</p>
@@ -281,11 +281,11 @@ attributes" from some ancestor node of the page object. ...
 <p>...</p>
 
 
-<h3>7.11.6 Collection items</h3>
+<h3 id="H7.11.6">7.11.6 Collection items</h3>
 
 
 <table>
-  <caption>Table 47 - Entries in a collection subitem dictionary</caption>
+  <caption id="Table47">Table 47 - Entries in a collection subitem dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -310,10 +310,10 @@ attributes" from some ancestor node of the page object. ...
 </table>
 
 
-<h3>7.12.2 Extensions dictionary</h3>
+<h3 id="H7.12.2">7.12.2 Extensions dictionary</h3>
 
 <table>
-  <caption>Table 48 - Entries in an extensions dictionary</caption>
+  <caption id="Table48">Table 48 - Entries in an extensions dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>

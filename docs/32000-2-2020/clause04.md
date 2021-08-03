@@ -13,7 +13,7 @@ title: Notation
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h2>4.1 General</h2>
+<h2 id="H4.1">4.1 General</h2>
 
 <p>...</p>
 

@@ -11,10 +11,10 @@ title: (informative) Operator Summary
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h2>A.2 PDF content stream operators</h2>
+<h2 id="HA.2">A.2 PDF content stream operators</h2>
 
 <table>
-  <caption>Table A.1 - PDF content stream operators</caption>
+  <caption id="TableA.1">Table A.1 - PDF content stream operators</caption>
   <tr>
     <th>Operator</th>
     <th>PostScript Equivalent</th>

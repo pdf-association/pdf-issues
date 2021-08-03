@@ -12,14 +12,14 @@ title: Text
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
 
-<h3>9.6.2 Type 1 fonts</h3>
+<h3 id="H9.6.2">9.6.2 Type 1 fonts</h3>
 
 
-<h4>9.6.2.1 General</h4>
+<h4 id="H9.6.2.1">9.6.2.1 General</h4>
 
 
 <table>
-  <caption>Table 109 - Entries in a Type 1 font dictionary</caption>
+  <caption id="Table109">Table 109 - Entries in a Type 1 font dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -51,7 +51,7 @@ descriptor data for those standard fonts for use in processing PDF files when th
 
 <p>...</p>
 
-<h4>9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</h4>
+<h4 id="H9.6.2.2">9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</h4>
 
 <p>...</p>
 
@@ -67,11 +67,11 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 <span class="deleted-tooltiptext">Issue #47 and #48</span></span></p>
 
 
-<h3>9.6.4 Type 3 fonts</h3>
+<h3 id="H9.6.4">9.6.4 Type 3 fonts</h3>
 
 
 <table>
-  <caption>Table 111 - Type 3 font operators</caption>
+  <caption id="Table111">Table 111 - Type 3 font operators</caption>
   <tr>
     <th>Operands</th>
     <th>Operator</th>
@@ -124,14 +124,14 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 </code>
 
 
-<h2>9.8 Font descriptors</h2>
+<h2 id="H9.8">9.8 Font descriptors</h2>
 
 
-<h3>9.8.1 General</h3>
+<h3 id="H9.8.1">9.8.1 General</h3>
 
 
 <table>
-  <caption>Table 120 - Entries common to all font descriptors</caption>
+  <caption id="Table120">Table 120 - Entries common to all font descriptors</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -152,7 +152,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 </table>
 
 
-<h4>9.8.3.3 FD</h4>
+<h4 id="H9.8.3.3">9.8.3.3 FD</h4>
 
 
 <p>...</p>
@@ -168,7 +168,7 @@ class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/i
 <span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/5" target="_blank">Issue #5</a></span></span>.
 </p>
 
-<h3>9.10.3 ToUnicode CMaps</h3>
+<h3 id="H9.10.3">9.10.3 ToUnicode CMaps</h3>
 
 <p>...</p>
 <p>EXAMPLE 2</p>
