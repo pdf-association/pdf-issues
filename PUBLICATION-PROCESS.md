@@ -37,12 +37,12 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * Anchor IDs are added to all headings (level 2 and greater) and all Table captions:
    - Heading IDs start with "H" and then have the precise heading numbering (or lettering for annexes)
-     ```
+     ```html
      <h4 id="H12.5.6.2">12.5.6.2 Markup annotations</h4>
      <h2 id="HH.8.2">H.8.2 Table of Contents</h2>
      ```
    - Table IDs are "Table" followed by the table number from the PDF specification (incl. letters for tables in annexes)
-     ```
+     ```html
      <caption id="Table50">Table 50 - Operator categories</caption>
      <caption id="TableA.1">Table A.1 - PDF content stream operators</caption>
      ```
@@ -62,6 +62,11 @@ This is a short description of what happens after the PDF Association PDF TWG ag
    ```
 
 * The "Last Modified" date at the end of each MD file needs to be changed manually (as this needs to be the edit time of substantive changes, not just when GH-Pages publishes everything)
+
+* To create an interactive index to all modified Tables within a standard, use this Linux CLI:
+   ```bash
+   $ grep --color=auto "<caption" *.md | sed -e 's/\(.*\.md\):.*id=\"\(.*\)\">\(Table .*\)<\/caption>/<li><a href=\"\1#\2">\3<\/a><\/li>/'
+   ```
 
 * A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
 
@@ -89,7 +94,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 For tweeting or other purposes, here are some basic starting points for automated bulk data extraction:
 
-```
+```bash
 curl -s -H "Accept: application/vnd.github.v3.html+json" https://api.github.com/repos/pdf-association/pdf-issues/issues | jq '.[] | { number, state, title }'
 curl -s -H "Accept: application/vnd.github.v3.html+json" https://api.github.com/repos/pdf-association/pdf-issues/issues?state=open\&labels=proposed%20solution | jq '.[] | { number, state, title }'
 
