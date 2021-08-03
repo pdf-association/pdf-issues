@@ -11,7 +11,7 @@ title: ECMAScript API
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>
 
-<h2>10.1 General</h2>
+<h2 id="10.1">10.1 General</h2>
 
 <p>...</p>
 
@@ -19,11 +19,11 @@ title: ECMAScript API
 <span class="deleted-text">More information regarding the ECMAScript core can be found in ISO/IEC 22537.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/70" target="_blank">Issue #70</a></span></span>
 </p>
 
-<h2>10.2 Annotation</h2>
+<h2 id="10.2">10.2 Annotation</h2>
 
 <p>...</p>
 
-<h3>10.2.2 Annotation types</h3>
+<h3 id="10.2.2">10.2.2 Annotation types</h3>
 
 <p>...</p>
 
@@ -45,7 +45,7 @@ title: ECMAScript API
 <p>...</p>
 
 <table>
-  <caption>Table 1 - Annotation types and their properties</caption>
+  <caption><a id="Table1">Table 1 - Annotation types and their properties</a></caption>
   <tr>
     <th>Annotation type</th>
     <th>Properties</th>
