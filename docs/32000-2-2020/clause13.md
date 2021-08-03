@@ -119,7 +119,7 @@ define appearance streams or how appearance streams would be rendered onto the p
 </table>
 
 
-<h4>13.6.4.6 3D cross section dictionaries</h4>
+<h4 is="H13.6.4.6">13.6.4.6 3D cross section dictionaries</h4>
 
 
 <table>
