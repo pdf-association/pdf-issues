@@ -65,7 +65,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * To create an interactive index to all modified Tables within a standard, use this Linux CLI:
    ```bash
-   $ grep --color=auto "<caption" *.md | sed -e 's/\(.*\.md\):.*id=\"\(.*\)\">\(Table .*\)<\/caption>/<li><a href=\"\1#\2">\3<\/a><\/li>/'
+   $ grep --color=auto "<caption" *.md | sed -e 's/\(.*\)\.md:.*id=\"\(.*\)\">\(Table .*\)<\/caption>/<li><a href=\"\1.html#\2">\3<\/a><\/li>/'
    ```
 
 * A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
