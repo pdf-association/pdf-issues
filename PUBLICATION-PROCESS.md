@@ -35,6 +35,24 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 * The heading `<hX>` tag in the `docs/_clause/<iso-standard>/clauseXXX.md` matches the nearest heading level in the ISO standard for each resolutions. If the heading title is something highly generic (e.g. X.Y.Z General) then also add the next highest heading (e.g. X.Y Topic) is added. This means heading numbers are not contiguous!!
 
+* Anchor IDs are added to all headings (level 2 and greater) and all Table captions:
+   - Heading IDs start with "H" and then have the precise heading numbering (or lettering for annexes)
+     ```
+     <h4 id="H12.5.6.2">12.5.6.2 Markup annotations</h4>
+     <h2 id="HH.8.2">H.8.2 Table of Contents</h2>
+     ```
+   - Table IDs are "Table" followed by the table number from the PDF specification (incl. letters for tables in annexes)
+     ```
+     <caption id="Table50">Table 50 - Operator categories</caption>
+     <caption id="TableA.1">Table A.1 - PDF content stream operators</caption>
+     ```
+
+* URLs can then be used to jump to a specific heading or table in a clause file:
+   ```
+   .../32000-2-2020/clause12.html#H12.5.6.2
+   .../32000-2-2020/clauseAnnexA.html#TableA.1
+   ```
+
 * The simulated "track changes" is achieved via inline `span class="new-text"` and `span class="deleted-text"`.
 
 * The coloured popup tooltips (which state the pdf-issues Issue number and provide a clickable link back to GitHub e.g. "Issue #123") is achieved via `span class="new-tooltiptext"` and `span class="deleted-tooltiptext"`. Implement as an inline span within the surrounding span of the "track changes".
