@@ -1,6 +1,6 @@
 ---
 title: Overview
-modified: 19 June 2021
+modified: 5 August 2021
 ---
 
 <div class="github-wp">
@@ -32,12 +32,12 @@ work in progress of each PDF-related ISO working group.
 <h2>Resolved Issues</h2>
 
 <p>
-The current set of resolved issues are presented as localized marked up changes
+The current set of resolved issues are presented as stylized marked up changes
 (<span style="background-color: lightyellow; color: green; position: relative; display: inline-block;">additions</span>
-and <span style="background-color: seashell; color: red; text-decoration: line-through; text-decoration-color: red; position: relative; display: inline-block;">deletions</span>) to the published wording in the relevant ISO standard organized by top level clause. Issue numbers (implemented here as popup tooltips) refer back to
+and <span style="background-color: seashell; color: red; text-decoration: line-through; text-decoration-color: red; position: relative; display: inline-block;">deletions</span>) to the published wording in the relevant ISO standard organized by clause number. Issue numbers will appear as popup tooltips when hovering over any addition or deletion and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
 closed GitHub pdf-issues with a "proposed solution" label</a>.
-Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate where the resolution is being applied.
+Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
 </p>
 
 <h3><a href="32000-2-2020/index.html"><img src="https://www.pdfa.org/wp-content/uploads/2021/07/iconPDF-2.0_50.png" alt="PDF 2.0 logo">Resolved issues for ISO 32000-2:2020 (PDF 2.0)</a></h3>
