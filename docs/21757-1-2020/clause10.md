@@ -4,7 +4,7 @@ isodoc: ISO 21757-1:2020
 clause: 10
 title: ECMAScript API
 ---
-
+<link rel="stylesheet" href="../includes/isostyle.css">
 <div class="isostyle">
 
 

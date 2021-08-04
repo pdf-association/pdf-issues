@@ -4,13 +4,13 @@
 
   /* Deeply nested headings get smaller than body text so fix */
   .isostyle h5 {
-    font-weight: 500; font-size: 16px;
+  	font-weight: 500; font-size: 16px;
   }
   .isostyle h6 {
-    font-weight: 500; font-size: 15px;
+  	font-weight: 500; font-size: 15px;
   }
   .isostyle h7 {
-    font-weight: 500; font-size: 15px;
+  	font-weight: 500; font-size: 15px;
   }
 
   .new-text {
@@ -112,13 +112,12 @@
 
   .isostyle code {
     font-family: monospace;
-    font-size: smaller;
+  	font-size: smaller;
   }
 
   .footnote {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 80%;
-    color: gray;
+  	font-family: Arial, Helvetica, sans-serif;
+  	text-align: center;
+  	font-size: 80%;
+  	color: gray;
   }
-  
