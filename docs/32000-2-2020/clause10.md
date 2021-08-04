@@ -9,9 +9,7 @@ modified: 16 February 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
-
-<h1>{{ page.clause }}. {{ page.title }}</h1>
-
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h4 id="H10.6.5.6">10.6.5.6 Type 5 halftones</h4>
 

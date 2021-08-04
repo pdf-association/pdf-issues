@@ -9,9 +9,7 @@ modified: 30 July 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
-
-<h1>{{ page.clause }}. {{ page.title }}</h1>
-
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="H14.5">14.5 Page-piece dictionaries</h2>
 

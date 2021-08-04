@@ -9,9 +9,7 @@ modified: 18 June 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
-
-<h1>{{ page.clause }}. {{ page.title }}</h1>
-
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h3 id="H9.6.2">9.6.2 Type 1 fonts</h3>
 

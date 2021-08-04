@@ -9,9 +9,7 @@ modified: 30 July 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
-
-<h1>{{ page.clause }}. {{ page.title }}</h1>
-
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="H12.2">12.2 Viewer preferences</h2>
 

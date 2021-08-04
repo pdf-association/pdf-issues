@@ -9,8 +9,7 @@ modified: 18 June 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
-
-<h1>{{ page.clause }}. {{ page.title }}</h1>
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="H13.1">13.1 General</h2>
 
