@@ -68,6 +68,11 @@ This is a short description of what happens after the PDF Association PDF TWG ag
    $ grep --color=auto "<caption" *.md | sed -e 's/\(.*\)\.md:.*id=\"\(.*\)\">\(Table .*\)<\/caption>/<li><a href=\"\1.html#\2">\3<\/a><\/li>/'
    ```
 
+- Each clause MD file also has a local index to subclauses with corrections. This index occurs before `<div class="iso-style">` so it is sytled differently. This is done by running the following Linux CLI against each clause MD file followed by a bit of hand editing:
+   ```bash
+   grep --color=auto -H "<h[2-9]" clauseXX.md | sed -e 's/^\(.*\)\.md:<h\([2-9]\) id=\"\(.*\)\">\(.*\)<\/h.>/\2 <li><a href=\"\1#\3\">\4<\/a>/'
+   ```
+
 - A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
 
    ```
