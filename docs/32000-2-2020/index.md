@@ -5,8 +5,6 @@ isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
 ---
 
-<h1>{{ page.isodoc }} {{ page.title }}</h1>
-
 <p>
 This is all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
 All issues related to {{ page.subset }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>.
@@ -18,7 +16,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></li>
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a> <span style="font-size: 10px;">(<i>Last modified: {{page.modified}}</i>)</span></li>
            {% endfor %}
         {% endif %}
     {% endfor %}
