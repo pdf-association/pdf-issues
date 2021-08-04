@@ -370,15 +370,17 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>...</td>
   </tr>
   <tr>
-    <td colspan="4"><p>...</p>
-    <sup>c</sup> The values <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> have been deprecated with PDF 2.0.<br/>
-    <p>...</p></td>
+    <td colspan="4">
+      <p>...</p>
+      <p><sup>c</sup> The values <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> have been deprecated with PDF 2.0.</p>
+      <p>...</p>
+    </td>
   </tr>
 </table>
 
 <p>
 <span class="new-text"><sup>Note that in Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</sup><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span>
-<p>
+</p>
 
 </div>
 

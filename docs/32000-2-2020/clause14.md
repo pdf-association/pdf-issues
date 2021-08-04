@@ -155,27 +155,27 @@ namespace for each element, if appropriate. However, structure elements types in
 <p>EXAMPLE:</p>
 <code>
 17 0 obj<br/>
-<<<br/>
+<< <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/Type /StructElem<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/S /section<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/P 5 0 R<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/NS 15 0 R<br/>
->><br/>
+>> <br/>
 endobj<br/>
 <br/>
 15 0 obj<br/>
-<<<br/>
+<< <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/Type /Namespace<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/NS (urn:uuid:A63861E-9F7-4FCB-9B27-C3BC8D9BFB06)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/RoleMapNS 16 0 R<br/>
->><br/>
+>> <br/>
 endobj<br/>
 <br/>
 16 0 obj<br/>
 << <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;/section [/H1 11 0 R]<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;...<br/>
->><br/>
+>> <br/>
 endobj<br/>
 </code>
 <span class="new-tooltiptext" target="_blank">Issue #65</span>

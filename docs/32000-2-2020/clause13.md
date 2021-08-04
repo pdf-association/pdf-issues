@@ -1,4 +1,4 @@
----
+is---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
@@ -119,7 +119,7 @@ define appearance streams or how appearance streams would be rendered onto the p
 </table>
 
 
-<h4 is="H13.6.4.6">13.6.4.6 3D cross section dictionaries</h4>
+<h4 id="H13.6.4.6">13.6.4.6 3D cross section dictionaries</h4>
 
 
 <table>
