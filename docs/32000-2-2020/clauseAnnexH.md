@@ -5,7 +5,7 @@ clause: Annex H
 title: (informative) Example PDF files
 ---
 
-{% include iso-style.html %}
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>

@@ -5,7 +5,7 @@ clause: 13
 title: Multimedia features
 ---
 
-{% include iso-style.html %}
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 

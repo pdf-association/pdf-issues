@@ -5,7 +5,7 @@ clause: 8
 title: Graphics
 ---
 
-{% include iso-style.html %}
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 

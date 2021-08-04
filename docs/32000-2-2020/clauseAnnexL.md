@@ -5,7 +5,7 @@ clause: Annex L
 title: (normative) Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0
 ---
 
-{% include iso-style.html %}
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 <h1>{{ page.clause }}. {{ page.title }}</h1>

@@ -5,7 +5,7 @@ clause: 14
 title: Document interchange
 ---
 
-{% include iso-style.html %}
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 

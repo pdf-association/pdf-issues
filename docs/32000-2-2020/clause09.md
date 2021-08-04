@@ -5,7 +5,7 @@ clause: 9
 title: Text
 ---
 
-{% include iso-style.html %}
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 
