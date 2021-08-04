@@ -4,7 +4,7 @@ isodoc: ISO 21757-1:2020
 clause: 2
 title: Normative references
 ---
-<link rel="stylesheet" href="../assets/isostyle.css">
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 
