@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
+modified: 30 July 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -386,4 +387,4 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 
 <hr>
-<p class="footnote">Last modified: 30 July 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

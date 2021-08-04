@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
+modified: 16 February 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -39,4 +40,4 @@ title: Rendering
 
 
 <hr>
-<p class="footnote">Last modified: 16 February 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

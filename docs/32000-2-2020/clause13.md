@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
+modified: 18 June 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -206,4 +207,4 @@ define appearance streams or how appearance streams would be rendered onto the p
 
 
 <hr>
-<p class="footnote">Last modified: 18 June 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

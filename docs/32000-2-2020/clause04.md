@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 4
 title: Notation
+modified: 6 June 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -30,4 +31,4 @@ Characters in text streams, as defined by 7.9.2, "String object types", are iden
 
 
 <hr>
-<p class="footnote">Last modified: 6 June 2021</p>
+<p class="footnote">Last modified: {{ page.modified }}</p>

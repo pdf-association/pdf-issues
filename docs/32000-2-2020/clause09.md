@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
+modified: 18 June 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -184,4 +185,4 @@ class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/i
 
 
 <hr>
-<p class="footnote">Last modified: 18 June 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
+modified: 30 July 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -191,4 +192,4 @@ resources in the <b>ColorSpace</b> subdictionary; they always identify the corre
 
 
 <hr>
-<p class="footnote">Last modified: 30 July 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

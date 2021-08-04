@@ -3,6 +3,7 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 clause: 3
 title: Terms and definitions
+modified: 22 June 2021
 ---
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
@@ -20,4 +21,4 @@ means of reference to ISO 22275 and ISO 22537 <span class="new-text"><i>(ISO 225
 
 
 <hr>
-<p class="footnote">Last modified: 22 June 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

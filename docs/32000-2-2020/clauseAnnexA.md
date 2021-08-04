@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex A
 title: (informative) Operator Summary
+modified: 30 July 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -52,4 +53,4 @@ title: (informative) Operator Summary
 
 
 <hr>
-<p class="footnote">Last modified: 30 July 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

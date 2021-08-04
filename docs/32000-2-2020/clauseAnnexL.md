@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex L
 title: (normative) Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0
+modified: 30 July 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -27,4 +28,4 @@ in the <b>Table</b> section, <b>P</b> is listed as a valid parent also with a 0.
 
 
 <hr>
-<p class="footnote">Last modified: 30 July 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

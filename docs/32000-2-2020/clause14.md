@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
+modified: 30 July 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -229,4 +230,4 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <hr>
-<p class="footnote">Last modified: 30 July 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

@@ -3,6 +3,7 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 clause: 10
 title: ECMAScript API
+modified: 19 June 2021
 ---
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
@@ -59,4 +60,4 @@ title: ECMAScript API
 
 
 <hr>
-<p class="footnote">Last modified: 19 June 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

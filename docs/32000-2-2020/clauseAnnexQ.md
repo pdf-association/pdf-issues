@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex Q
 title: (normative) Method for determining transparency on a page
+modified: 16 April 2021
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -26,4 +27,4 @@ shall be considered to contain transparency (see "Table 166 - Entries common to 
 
 
 <hr>
-<p class="footnote">Last modified: 16 April 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>
