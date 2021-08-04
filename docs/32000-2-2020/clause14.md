@@ -157,29 +157,29 @@ namespace for each element, if appropriate. However, structure elements types in
 <div class="new-text">
 <p>EXAMPLE:</p>
 <code>
-17 0 obj<br/>
-<< <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/Type /StructElem<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/S /section<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/P 5 0 R<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/NS 15 0 R<br/>
->> <br/>
-endobj<br/>
-<br/>
-15 0 obj<br/>
-<< <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/Type /Namespace<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/NS (urn:uuid:A63861E-9F7-4FCB-9B27-C3BC8D9BFB06)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/RoleMapNS 16 0 R<br/>
->> <br/>
-endobj<br/>
-<br/>
-16 0 obj<br/>
-<< <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;/section [/H1 11 0 R]<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;...<br/>
->> <br/>
-endobj<br/>
+17 0 obj
+<<
+   /Type /StructElem
+   /S /section
+   /P 5 0 R
+   /NS 15 0 R
+>>
+endobj
+
+15 0 obj
+<<
+   /Type /Namespace
+   /NS (urn:uuid:A63861E-9F7-4FCB-9B27-C3BC8D9BFB06)
+   /RoleMapNS 16 0 R
+>>
+endobj
+
+16 0 obj
+<<
+   /section [/H1 11 0 R]
+   ...
+>>
+endobj
 </code>
 <span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/65" target="_blank">Issue #65</a></span>
 </div>

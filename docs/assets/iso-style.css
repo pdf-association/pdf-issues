@@ -121,6 +121,9 @@
     font-family: monospace;
     font-size: smaller;
     background-color: transparent;
+    border: 0px;
+    padding: 0px 0px;
+    white-space: pre;
   }
 
   .footnote {

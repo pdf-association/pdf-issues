@@ -119,10 +119,9 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 
 <code>
   ...
-  <span class="deleted-text">%Type 3 font definition encoding two glyphs, 'a' and 'b'<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span><br/>
-  <span class="new-text">%Type 3 font definition encoding the two glyphs square and triangle<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span><br/>
-  4 0 obj<br/>
-  &nbsp;&nbsp;&nbsp;&lt;&lt;<br/>
+  <span class="deleted-text">%Type 3 font definition encoding two glyphs, 'a' and 'b'<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span>
+  <span class="new-text">%Type 3 font definition encoding the two glyphs square and triangle<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/44" target="_blank">Issue #44</a></span></span>
+  4 0 obj
   ...
 </code>
 

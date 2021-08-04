@@ -245,8 +245,8 @@ attributes" from some ancestor node of the page object. ...
 <p>EXAMPLE 1 A PDF dictionary containing key ‘Key’ with the value that is the text string "text‰" will look like</p>
 
 <code>
-<span class="deleted-text">&lt;&lt;/Key(text?)&gt;&gt;<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span><br/>
-<span class="new-text">&lt;&lt;/Key (text\213) &gt;&gt;<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>
+ <span class="deleted-text">&lt;&lt;/Key(text?)&gt;&gt;<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>
+ <span class="new-text">&lt;&lt;/Key (text\213) &gt;&gt;<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>
 </code>
 
 <p>where <span class="deleted-text">the character '?' after the 'text' is represented by the hex code 8B<span class="new-text">h<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75" target="_blank">Issue #75</a></span></span> (<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>octal code 213 <span class="deleted-text">- that<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span> is according to "D.2 Latin character set and encodings"<span class="deleted-text">)<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>.</p>
@@ -256,8 +256,8 @@ attributes" from some ancestor node of the page object. ...
 <p>EXAMPLE 2 A PDF dictionary containing key ‘Key’ with the value that is the text string "тест" (that is what the word in Russian with the translation to English as ‘test’) will look like</p>
 
 <code>
-<span class="deleted-text">&lt;&lt;/Key(??????????)&gt;&gt;<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span><br/>
-<span class="new-text">&lt;&lt;/Key &lt;FEFF0442043504410442&gt; &gt;&gt;<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>
+ <span class="deleted-text">&lt;&lt;/Key(??????????)&gt;&gt;<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>
+ <span class="new-text">&lt;&lt;/Key &lt;FEFF0442043504410442&gt; &gt;&gt;<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span>
 </code>
 
 <p><span class="deleted-text">where the characters in parentheses is the sequence of bytes with hex codes FE, FF, 04, 42, 04, 35, 04, 41, 04, 42.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/96" target="_blank">Issue #96</a></span></span></p>
