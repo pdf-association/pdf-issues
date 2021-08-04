@@ -23,5 +23,10 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% endfor %}
 </ul>
 
+<p>The following tables have all had corrections applied:</p>
+<ul>
+<li><a href="clause10.html#Table1">Table 1 - Annotation types and their properties</a></li>
+</ul>
+
 <hr>
 <p class="footnote">Last modified: 19 June 2021</p>
