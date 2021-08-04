@@ -7,6 +7,107 @@ modified: 30 July 2021
 ---
 
 <ul>
+  <li>7.3 Objects
+   <ul>
+    <li>7.3.8 Stream Objects
+      <li><a href="clause07#H7.3.8.2">7.3.8.2 Stream extent</a>
+      </li>
+    </li>
+   </ul>
+  </li>
+  <li>7.4 Filters
+   <ul>
+    <li><a href="clause07#H7.4.3">7.4.3 ASCII85Decode filter</a>
+    </li>
+    <li><a href="clause07#H7.4.9">7.4.9 JPXDecode filter</a>
+    </li>
+   </ul>
+  </li>
+  <li><a href="clause07#H7.5">7.5 File structure</a>
+   <ul>
+    <li><a href="clause07#H7.5.4">7.5.4 Cross reference table</a>
+    </li>
+   </ul>
+  </li>
+  <li>7.6 Encryption
+   <ul>
+    <li><a href="clause07#H7.6.3">7.6.3 General encryption algorithm</a>
+     <ul>
+      <li><a href="clause07#H7.6.3.1">7.6.3.1 General</a>
+      </li>
+     </ul>
+    </li>
+    <li><a href="clause07#H7.6.4">7.6.4 Standard security handler</a>
+     <ul>
+      <li><a href="clause07#H7.6.4.1">7.6.4.1 General</a>
+       <ul>
+        <li><a href="clause07#H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</a>
+        </li>
+        <li><a href="clause07#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
+        </li>
+        <li><a href="clause07#H7.6.4.4.12">7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    <li>7.6.5 Public-key security handlers
+     <ul>
+      <li><a href="clause07#H7.6.5.3">7.6.5.3 Public-key encryption algorithms</a>
+      </li>
+     </ul>
+    </li>
+    <li><a href="clause07#H7.6.6">7.6.6 Crypt filters</a>
+    </li>
+   </ul>
+  </li>
+  <li>7.7 Document structure
+   <ul>
+    <li>7.7.3 Page tree
+     <ul>
+      <li><a href="clause07#H7.7.3.3">7.7.3.3 Page objects</a>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>7.8 Content streams and resources
+   <ul>
+    <li><a href="clause07#H7.8.3">7.8.3 Resource dictionaries</a>
+    </li>
+   </ul>
+  </li>
+  <li>7.9 Common data structures
+   <ul>
+    <li>7.9.2 String object types
+     <ul>
+      <li><a href="clause07#H7.9.2.2">7.9.2.2 Text string type</a>
+       <ul>
+        <li><a href="clause07#H7.9.2.2.1">7.9.2.2.1 General</a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>7.10 Functions
+   <ul>
+    <li><a href="clause07#H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</a>
+    </li>
+   </ul>
+  </li>
+  <li>7.11 File specifications
+   <ul>
+    <li><a href="clause07#H7.11.6">7.11.6 Collection items</a>
+    </li>
+   </ul>
+  </li>
+  <li>7.12 Extensions dictionary
+   <ul>
+    <li><a href="clause07#H7.12.2">7.12.2 Extensions dictionary</a>
+    </li>
+   </ul>
+  </li>
 </ul>
 <hr>
 
