@@ -6,6 +6,12 @@ title: (normative) Method for determining transparency on a page
 modified: 16 April 2021
 ---
 
+<ul>
+   <li><a href="clauseAnnexQ#HQ.2">Q.2. Page content</a>
+   </li>
+</ul>
+<hr>
+
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 

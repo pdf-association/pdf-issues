@@ -7,7 +7,7 @@ modified: 30 July 2021
 ---
 
 <ul>
-  <li><a href="clauseAnnexH#HH.8">H.8 Structure elements examples</a>
+  <li>H.8 Structure elements examples
     <ul>
       <li><a href="clauseAnnexH#HH.8.2">H.8.2 Table of Contents</a>
       </li>
