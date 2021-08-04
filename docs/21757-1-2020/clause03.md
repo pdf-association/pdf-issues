@@ -4,7 +4,7 @@ isodoc: ISO 21757-1:2020
 clause: 3
 title: Terms and definitions
 ---
-
+<link rel="stylesheet" href="../assets/isostyle.css">
 <div class="isostyle">
 
 
