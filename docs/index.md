@@ -1,7 +1,9 @@
 ---
 title: Overview
+modified: 19 June 2021
 ---
 
+<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 <div class="github-wp">
 
 <p>
@@ -39,13 +41,13 @@ closed GitHub pdf-issues with a "proposed solution" label</a>.
 Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate where the resolution is being applied.
 </p>
 
-<h3><a href="32000-2-2020/index.html">Resolved issues for ISO 32000-2:2020 (PDF 2.0)</a></h3>
-<h3><a href="19005-4-2020/index.html">Resolved issues for ISO 19005-4:2020 (PDF/A-4)</a></h3>
-<h3><a href="15930-9-2020/index.html">Resolved issues for ISO 15930-9:2020 (PDF/X-6)</a></h3>
-<h3><a href="16612-3-2020/index.html">Resolved issues for ISO 16612-3:2020 (PDF/VT-3)</a></h3>
+<h3><a href="32000-2-2020/index.html"><img src="https://www.pdfa.org/wp-content/uploads/2021/07/iconPDF-2.0_50.png" alt="PDF 2.0 logo">Resolved issues for ISO 32000-2:2020 (PDF 2.0)</a></h3>
+<h3><a href="19005-4-2020/index.html"><img src="https://www.pdfa.org/wp-content/uploads/2021/07/iconPDFA_50.png" alt="PDF/A logo">Resolved issues for ISO 19005-4:2020 (PDF/A-4)</a></h3>
+<h3><a href="15930-9-2020/index.html"><img src="https://www.pdfa.org/wp-content/uploads/2021/07/iconPDFX_50.png" alt="PDF/X logo">Resolved issues for ISO 15930-9:2020 (PDF/X-6)</a></h3>
+<h3><a href="16612-3-2020/index.html"><img src="https://www.pdfa.org/wp-content/uploads/2021/07/iconPDFVT_50.png" alt="PDF/VT logo">Resolved issues for ISO 16612-3:2020 (PDF/VT-3)</a></h3>
 <h3><a href="21757-1-2020/index.html">Resolved issues for ISO 21757-1:2020 (ECMAScript for PDF 2.0)</a></h3>
 
 <hr>
-<p class="footnote">Last modified: 19 June 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>
 
 </div>
