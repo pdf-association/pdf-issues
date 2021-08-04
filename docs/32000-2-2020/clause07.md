@@ -10,8 +10,10 @@ modified: 30 July 2021
   <li>7.3 Objects
    <ul>
     <li>7.3.8 Stream Objects
+     <ul>
       <li><a href="clause07#H7.3.8.2">7.3.8.2 Stream extent</a>
       </li>
+     </ul>
     </li>
    </ul>
   </li>
