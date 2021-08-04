@@ -1,14 +1,17 @@
 <style>
   .isostyle {
     font-family: Cambria, Georgia, serif;
-  	font-size: larger;
   }
+
+  h5 h6 h7 { font-weight: 500; }
+
   .new-text {
     background-color: lightyellow;
     color: green;
     position: relative;
     display: inline-block;
   }
+
   .new-tooltiptext {
     font-family: Arial, Helvetica, sans-serif;
     visibility: hidden;
@@ -62,9 +65,11 @@
     left: 50%;
     margin-left: -50%;
   }
+
   .deleted-text .deleted-tooltiptext::after {
     content: "";
   }
+
   .deleted-text:hover .deleted-tooltiptext {
     visibility: visible;
     opacity: 1;
@@ -76,9 +81,11 @@
     border-collapse: collapse;
     border: 1px solid black;
   }
+
   caption {
     font-weight: bold;
   }
+
   th {
     text-align: left;
     border-collapse: collapse;
@@ -86,6 +93,7 @@
     border-top: solid thick;
     border-bottom: solid thick;
   }
+
   td {
     text-align: left;
     min-width: 50px;
@@ -93,9 +101,12 @@
     border-collapse: collapse;
     border: 1px solid black;
   }
+
   code {
+    font-family: monospace;
   	font-size: smaller;
   }
+
   .footnote {
   	font-family: Arial, Helvetica, sans-serif;
   	text-align: center;
