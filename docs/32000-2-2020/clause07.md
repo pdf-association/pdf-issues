@@ -147,11 +147,11 @@ modified: 30 July 2021
 <p>...</p>
 
 <p>The following conditions shall never occur in a correctly encoded byte sequence:</p>
-<li>
-    <ul>The value represented by a group of 5 characters is greater than <span class="deleted-text">232<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/98" target="_blank">Issue #98</a></span></span><span class="new-text">2<sup>32</sup><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/98" target="_blank">Issue #98</a></span></span> - 1.</ul>
-    <ul>A <i>z</i> character occurs in the middle of a group.</ul>
-    <ul>A final partial group contains only one character.</ul>
-</li>
+<ul>
+    <li>The value represented by a group of 5 characters is greater than <span class="deleted-text">232<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/98" target="_blank">Issue #98</a></span></span><span class="new-text">2<sup>32</sup><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/98" target="_blank">Issue #98</a></span></span> - 1.</li>
+    <li>A <i>z</i> character occurs in the middle of a group.</li>
+    <li>A final partial group contains only one character.</li>
+</ul>
 
 <h3 id="H7.4.9">7.4.9 JPXDecode filter</h3>
 
