@@ -7,8 +7,12 @@ modified: 30 July 2021
 ---
 
 <ul>
-    <li><a href="clauseAnnexH#HH.8.2">H.8.2 Table of Contents</a>
-    </li>
+  <li><a href="clauseAnnexH#HH.8">H.8 Structure elements examples</a>
+    <ul>
+      <li><a href="clauseAnnexH#HH.8.2">H.8.2 Table of Contents</a>
+      </li>
+    </ul>
+  </li>
 </ul>
 <hr>
 
@@ -17,7 +21,9 @@ modified: 30 July 2021
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<h2 id="HH.8.2">H.8.2 Table of Contents</h2>
+<h2 id="HH.8">H.8 Structure elements examples</h2>
+
+<h3 id="HH.8.2">H.8.2 Table of Contents</h3>
 
 <p>
 The structure element's structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents.

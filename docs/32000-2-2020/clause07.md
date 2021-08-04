@@ -6,6 +6,10 @@ title: Syntax
 modified: 30 July 2021
 ---
 
+<ul>
+</ul>
+<hr>
+
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 

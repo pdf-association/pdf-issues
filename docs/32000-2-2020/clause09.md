@@ -6,6 +6,10 @@ title: Text
 modified: 18 June 2021
 ---
 
+<ul>
+</ul>
+<hr>
+
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 

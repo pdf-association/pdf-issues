@@ -6,6 +6,12 @@ title: Notation
 modified: 6 June 2021
 ---
 
+<ul>
+    <li><a href="clause04#H4.1">4.1 General</a>
+    </li>
+</ul>
+<hr>
+
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
