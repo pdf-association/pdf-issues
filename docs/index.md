@@ -3,7 +3,6 @@ title: Overview
 modified: 19 June 2021
 ---
 
-<link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
 <div class="github-wp">
 
 <p>
