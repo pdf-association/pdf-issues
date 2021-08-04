@@ -178,7 +178,7 @@ endobj<br/>
 >> <br/>
 endobj<br/>
 </code>
-<span class="new-tooltiptext" target="_blank">Issue #65</span>
+<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/65" target="_blank">Issue #65</a></span>
 </div>
 
 

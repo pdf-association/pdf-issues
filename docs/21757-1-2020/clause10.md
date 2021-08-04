@@ -52,7 +52,7 @@ title: ECMAScript API
   </tr>
   <tr>
     <td>Sound<span class="new-text"><i>(deprecated in PDF 2.0)</i><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-    <td><tt style="font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</tt></td>
+    <td style="font-family: monospace; font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</td>
   </tr>
 </table>
 
