@@ -6,8 +6,22 @@ title: ECMAScript API
 modified: 19 June 2021
 ---
 <link rel="stylesheet" href="../assets/iso-style.css">
-<div class="isostyle">
 
+<ul>
+    <li>
+        <a href="clause10#10.1">10.1 General</a>
+    </li>
+    <li>
+        <a href="clause10#H10.2">10.2 Annotation</a>
+        <ul>
+            <li>
+                <a href="clause10#H10.2.2">10.2.2 Annotation types</a>
+            </li>
+        </ul>
+    </li>
+<ul>
+
+<div class="isostyle">
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
@@ -29,16 +43,16 @@ modified: 19 June 2021
 
 <table style="border: none;">
 <tr style="border: none;">
-	<td><span class="new-text">Sound<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-	<td><span class="new-text">Deprecated in ISO 32000-2<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><span class="new-text">Sound<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><span class="new-text">Deprecated in ISO 32000-2<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
 </tr>
 <tr style="border: none;">
-	<td><span class="deleted-text">PrinterMark<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-	<td><span class="deleted-text">Deprecated in ISO 32000-2<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><span class="deleted-text">PrinterMark<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><span class="deleted-text">Deprecated in ISO 32000-2<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
 </tr>
 <tr style="border: none;">
-	<td><span class="deleted-text">Screen<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-	<td><span class="deleted-text">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><span class="deleted-text">Screen<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><span class="deleted-text">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
 </tr>
 </table>
 
