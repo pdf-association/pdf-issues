@@ -6,6 +6,12 @@ title: (informative) Operator Summary
 modified: 30 July 2021
 ---
 
+<ul>
+    <li><a href="clauseAnnexA#HA.2">A.2 PDF content stream operators</a>
+    </li>
+</ul>
+<hr>
+
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 

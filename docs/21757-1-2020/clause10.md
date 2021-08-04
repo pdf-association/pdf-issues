@@ -5,7 +5,6 @@ clause: 10
 title: ECMAScript API
 modified: 19 June 2021
 ---
-<link rel="stylesheet" href="../assets/iso-style.css">
 
 <ul>
     <li>
@@ -22,6 +21,7 @@ modified: 19 June 2021
 </ul>
 <hr>
 
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
