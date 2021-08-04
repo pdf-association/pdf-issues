@@ -32,8 +32,6 @@ url: "https://pdf-association.github.io" # the base hostname & protocol for your
 
 logo: https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo.png
 
-google_analytics: UA-1991880-1
-
 twitter:
     username: PDFAssociation
 github:
@@ -43,6 +41,7 @@ show_excerpts: false
 
 # See https://github.com/jekyll/minima
 minima:
+  google_analytics: UA-1991880-1
   date_format: "%e %B %Y"
   social_links:
     twitter: PDFassociation
