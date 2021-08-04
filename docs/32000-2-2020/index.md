@@ -16,7 +16,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}">{{ pg.ref }}</a> <span style="font-size: 10px;">(<i>Last modified: {{page.modified}}</i>)</span></li>
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></li>
            {% endfor %}
         {% endif %}
     {% endfor %}

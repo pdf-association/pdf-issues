@@ -1,7 +1,7 @@
 ---
 subset: PDF/X-6
 isodoc: ISO 15930-9:2020
-isotitle: 'Graphic technology - Prepress digital data exchange using PDF — Part 9: Complete exchange of printing data (PDF/X-6) and partial exchange of printing data with external profile reference (PDF/X-6p and PDF/X-6n)'
+isotitle: 'Graphic technology - Prepress digital data exchange using PDF - Part 9: Complete exchange of printing data (PDF/X-6) and partial exchange of printing data with external profile reference (PDF/X-6p and PDF/X-6n)'
 title: PDF/X-6 Corrections
 ---
 
@@ -17,7 +17,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}">{{ pg.ref }}</a> <span style="font-size: 10px;">(<i>Last modified: {{page.modified}}</i>)</span></li>
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></li>
            {% endfor %}
         {% endif %}
     {% endfor %}

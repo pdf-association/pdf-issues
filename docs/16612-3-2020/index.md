@@ -1,7 +1,7 @@
 ---
 subset: PDF/VT-3
 isodoc: ISO 16612-3:2020
-isotitle: 'Graphic technology — Variable data exchange — Part 3: Using PDF/X-6 (PDF/VT-3)'
+isotitle: 'Graphic technology - Variable data exchange - Part 3: Using PDF/X-6 (PDF/VT-3)'
 title: PDF/VT-3 Corrections
 ---
 
@@ -17,7 +17,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}">{{ pg.ref }}</a> <span style="font-size: 10px;">(<i>Last modified: {{page.modified}}</i>)</span></li>
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></span></li>
            {% endfor %}
         {% endif %}
     {% endfor %}

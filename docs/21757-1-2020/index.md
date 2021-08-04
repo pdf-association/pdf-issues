@@ -1,7 +1,7 @@
 ---
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
-isotitle: 'Document management — ECMAScript for PDF — Part 1: Use of ISO 32000-2 (PDF 2.0)'
+isotitle: 'Document management - ECMAScript for PDF - Part 1: Use of ISO 32000-2 (PDF 2.0)'
 title: ECMAscript for PDF 2.0 Corrections
 ---
 
@@ -17,7 +17,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}">{{ pg.ref }}</a> <span style="font-size: 10px;">(<i>Last modified: {{page.modified}}</i>)</span></li>
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></li>
            {% endfor %}
         {% endif %}
     {% endfor %}

@@ -9,7 +9,7 @@ modified: 19 June 2021
 <div class="isostyle">
 
 
-<h1>{{ page.clause }}. {{ page.title }}</h1>
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="10.1">10.1 General</h2>
 
