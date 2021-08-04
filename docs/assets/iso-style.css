@@ -120,6 +120,7 @@
   .isostyle code {
     font-family: monospace;
     font-size: smaller;
+    background-color: transparent;
   }
 
   .footnote {
