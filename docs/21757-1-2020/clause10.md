@@ -9,7 +9,7 @@ modified: 19 June 2021
 <ul>
     <li><a href="clause10#10.1">10.1 General</a>
     </li>
-    <li><a href="clause10#H10.2">10.2 Annotation</a>
+    <li>10.2 Annotation
         <ul>
             <li><a href="clause10#H10.2.2">10.2.2 Annotation types</a>
             </li>
