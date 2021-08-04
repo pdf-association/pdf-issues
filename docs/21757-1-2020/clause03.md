@@ -5,7 +5,6 @@ clause: 3
 title: Terms and definitions
 ---
 
-{% include iso-style.html %}
 <div class="isostyle">
 
 

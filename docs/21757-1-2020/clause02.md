@@ -5,7 +5,6 @@ clause: 2
 title: Normative references
 ---
 
-{% include iso-style.html %}
 <div class="isostyle">
 
 

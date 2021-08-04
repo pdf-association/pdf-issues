@@ -5,7 +5,6 @@ clause: 10
 title: ECMAScript API
 ---
 
-{% include iso-style.html %}
 <div class="isostyle">
 
 
