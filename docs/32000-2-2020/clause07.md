@@ -52,6 +52,7 @@ modified: 30 July 2021
        </ul>
       </li>
      </ul>
+    </li>
     <li>7.6.5 Public-key security handlers
      <ul>
       <li><a href="clause07#H7.6.5.3">7.6.5.3 Public-key encryption algorithms</a>
