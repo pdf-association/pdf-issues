@@ -48,7 +48,6 @@
 
 <script>
 var lastTimeout;
-var trg = document.getElementById("issuelink");
 
 function getCoords(elem) { // crossbrowser version
     var box = elem.getBoundingClientRect();
@@ -67,6 +66,7 @@ function mouseEnter(obj) {
 	clearTimeout(lastTimeout)
 	var i = obj.getAttribute("issue");
 	var lnk = 'https://github.com/pdf-association/pdf-issues/issues/' + i;
+	var trg = document.getElementById("issuelink");
 	trg.innerHTML = '<a href="' + lnk + '" target="_blank">Issue #' + i + '</a>';
 	var box = getCoords(obj);
 	trg.style.left = Math.max(0, (box.left - 80)) + 'px';
@@ -76,6 +76,7 @@ function mouseEnter(obj) {
 }
 
 function hideIssue() { // after 3 second timeout
+	var trg = document.getElementById("issuelink");
 	trg.style.visibility = 'hidden';
 }
 </script>
