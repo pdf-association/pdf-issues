@@ -20,6 +20,10 @@ modified: 19 June 2021
 
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+	Issue #xxxx
+</div>
+
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
