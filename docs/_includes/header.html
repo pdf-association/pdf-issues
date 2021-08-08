@@ -51,10 +51,17 @@ var lastTimeout;
 
 function mouseEnter(obj) {
 	clearTimeout(lastTimeout)
-	var i = obj.getAttribute("issue");
-	var lnk = 'https://github.com/pdf-association/pdf-issues/issues/' + i;
+	var iss = obj.getAttribute("issue").split(',');
+	var s = "";
+	// Iterate over comma-separated issue numbers
+	for (let i in iss) {
+		if (s != "") {
+			s = s + "<br\>"; // add a linebreak between each URL
+		}
+		s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '">Issue #' + iss[i] + '</a>';
+	}
 	var trg = document.getElementById("issuelink");
-	trg.innerHTML = '<a href="' + lnk + '" target="_blank">Issue #' + i + '</a>';
+	trg.innerHTML = s;
 	var box = obj.getBoundingClientRect();
 	trg.style.left = Math.max(0, (box.left - 80)) + 'px';
 	trg.style.top  = Math.max(0, (box.top - 20)) + 'px';
