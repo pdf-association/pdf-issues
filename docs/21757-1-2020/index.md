@@ -29,4 +29,5 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 </ul>
 
 <hr>
+<link rel="stylesheet" href="../assets/iso-style.css">
 <p class="footnote">Last modified: 19 June 2021</p>
