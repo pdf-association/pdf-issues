@@ -49,26 +49,13 @@
 <script>
 var lastTimeout;
 
-function getCoords(elem) { // crossbrowser version
-    var box = elem.getBoundingClientRect();
-    var body = document.body;
-    var docEl = document.documentElement;
-    var scrollTop = window.pageYOffset || docEl.scrollTop || body.scrollTop;
-    var scrollLeft = window.pageXOffset || docEl.scrollLeft || body.scrollLeft;
-    var clientTop = docEl.clientTop || body.clientTop || 0;
-    var clientLeft = docEl.clientLeft || body.clientLeft || 0;
-    var top  = box.top; // +  scrollTop - clientTop;
-    var left = box.left; // + scrollLeft - clientLeft;
-    return { top: Math.round(top), left: Math.round(left) };
-}
-
 function mouseEnter(obj) {
 	clearTimeout(lastTimeout)
 	var i = obj.getAttribute("issue");
 	var lnk = 'https://github.com/pdf-association/pdf-issues/issues/' + i;
 	var trg = document.getElementById("issuelink");
 	trg.innerHTML = '<a href="' + lnk + '" target="_blank">Issue #' + i + '</a>';
-	var box = getCoords(obj);
+	var box = obj.getBoundingClientRect();
 	trg.style.left = Math.max(0, (box.left - 80)) + 'px';
 	trg.style.top  = Math.max(0, (box.top - 20)) + 'px';
 	trg.style.visibility = 'visible';
