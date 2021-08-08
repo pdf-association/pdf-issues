@@ -33,8 +33,9 @@ work in progress of each PDF-related ISO working group.
 <h2>Resolved Issues</h2>
 
 <p>
-The current set of resolved issues are present<ins title="Issue number with Git URL will appear">additions</ins>
-and <del title="Issue number with Git URL will appear">deletions</del>) to the published wording in the relevant ISO standard organized by clause number. Issue numbers will appear as popup tooltips when hovering over any addition or deletion and refer back to
+The current set of resolved issues are presented as <span class="isotyle"><ins title="Issue number with Git URL will appear">additions</ins>
+and <del title="Issue number with Git URL will appear">deletions</del></span>) to the published wording in the relevant ISO standard organized by clause number.
+GitHub Issue numbers will appear as popup tooltips when hovering over any addition or deletion and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
 closed GitHub pdf-issues with a "proposed solution" label</a>.
 Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
