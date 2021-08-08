@@ -20,7 +20,7 @@
   .isostyle .fixedpopup {
     visibility: hidden;
     position: fixed;
-    foat:right;
+    float:right;
     right: 10px;
     min-height: 16px;
     width: 86px;

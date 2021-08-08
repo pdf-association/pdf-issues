@@ -45,7 +45,7 @@ modified: 19 June 2021
     <td><ins onMousEenter="mouseEnter(this)" issue="82">Deprecated in ISO 32000-2</ins></td>
 </tr>
 <tr style="border: none;">
-    <td><del onMousEenter="mouseEnter(this)" issue="82">PrinterMark</del>></td>
+    <td><del onMousEenter="mouseEnter(this)" issue="82">PrinterMark</del></td>
     <td><del onMousEenter="mouseEnter(this)" issue="82">Deprecated in ISO 32000-2</del></td>
 </tr>
 <tr style="border: none;">
@@ -63,7 +63,7 @@ modified: 19 June 2021
     <th>Properties</th>
   </tr>
   <tr>
-    <td>Sound<ins onMousEenter="mouseEnter(this)" issue="82"><i>(deprecated in PDF 2.0)</i></ins></td>
+    <td>Sound <ins onMousEenter="mouseEnter(this)" issue="82"><i>(deprecated in PDF 2.0)</i></ins></td>
     <td style="font-family: monospace; font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</td>
   </tr>
 </table>
