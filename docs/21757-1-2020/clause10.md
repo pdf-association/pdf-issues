@@ -28,7 +28,7 @@ modified: 19 June 2021
 <p>...</p>
 
 <p>
-<span class="deleted-text">More information regarding the ECMAScript core can be found in ISO/IEC 22537.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/70" target="_blank">Issue #70</a></span></span>
+<del onMousEenter="mouseEnter(this)" issue="70">More information regarding the ECMAScript core can be found in ISO/IEC 22537.</del>
 </p>
 
 <h2 id="H10.2">10.2 Annotation</h2>
@@ -41,16 +41,16 @@ modified: 19 June 2021
 
 <table style="border: none;">
 <tr style="border: none;">
-    <td><span class="new-text">Sound<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-    <td><span class="new-text">Deprecated in ISO 32000-2<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><ins onMousEenter="mouseEnter(this)" issue="82">Sound</ins></td>
+    <td><ins onMousEenter="mouseEnter(this)" issue="82">Deprecated in ISO 32000-2</ins></td>
 </tr>
 <tr style="border: none;">
-    <td><span class="deleted-text">PrinterMark<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-    <td><span class="deleted-text">Deprecated in ISO 32000-2<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><del onMousEenter="mouseEnter(this)" issue="82">PrinterMark</del>></td>
+    <td><del onMousEenter="mouseEnter(this)" issue="82">Deprecated in ISO 32000-2</del></td>
 </tr>
 <tr style="border: none;">
-    <td><span class="deleted-text">Screen<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-    <td><span class="deleted-text">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><del onMousEenter="mouseEnter(this)" issue="82">Screen</del></td>
+    <td><del onMousEenter="mouseEnter(this)" issue="82">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)</del></td>
 </tr>
 </table>
 
@@ -63,7 +63,7 @@ modified: 19 June 2021
     <th>Properties</th>
   </tr>
   <tr>
-    <td>Sound<span class="new-text"><i>(deprecated in PDF 2.0)</i><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td>Sound<ins onMousEenter="mouseEnter(this)" issue="82"><i>(deprecated in PDF 2.0)</i></ins></td>
     <td style="font-family: monospace; font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</td>
   </tr>
 </table>

@@ -18,9 +18,9 @@ modified: 22 June 2021
 
 <p>...</p>
 
-<p>ISO/IEC 22537:2006, <i>Information technology — ECMAScript for XML (E4X) specification</i></p>
+<p>ISO/IEC 22537:2006, <i>Information technology - ECMAScript for XML (E4X) specification</i></p>
 <p>
-  <span class="new-text">NOTE: E4X support is deprecated in PDF 2.0.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/70" target="_blank">Issue #70</a></span></span>
+  <ins onMousEenter="mouseEnter(this)" issue="70">NOTE: E4X support is deprecated in PDF 2.0.</ins>
 </p>
 
 </div>

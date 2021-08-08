@@ -1,6 +1,41 @@
   .isostyle {
     font-family: Cambria, Georgia, serif;
   }
+  
+  /* use standardized HTML tags for deletions and insertions */ 
+  del {
+    background-color: seashell;
+    color: red;
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+  del:hover {background-color: #ffbfbf;}
+
+  ins {
+  	background-color: lightyellow;
+    color: green;
+  }
+  ins:hover {background-color: #ffff66;}
+  
+  .isostyle .fixedpopup {
+    visibility: hidden;
+    position: fixed;
+    foat:right;
+    right: 10px;
+    min-height: 16px;
+    width: 86px;
+    background-color: #f1f1f1;
+    vertical-align: center;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 1px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .fixedpopup a {
+  	font-family: Arial, Helvetica, sans-serif;
+  }
 
   /* Deeply nested headings get smaller than body text so fix */
   .isostyle h5 {
