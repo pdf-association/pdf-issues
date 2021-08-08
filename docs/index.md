@@ -3,7 +3,7 @@ title: Overview
 modified: 5 August 2021
 ---
 
-<link rel="stylesheet" href="../assets/iso-style.css">
+<link rel="stylesheet" href="assets/iso-style.css">
 <div class="github-wp">
 
 <p>
