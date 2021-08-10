@@ -3,6 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
+modified: 10 August 2021
 ---
 
 <p>
@@ -62,4 +63,5 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 </ul>
 
 <hr>
-<p class="footnote">Last modified: 19 June 2021</p>
+<link rel="stylesheet" href="../assets/iso-style.css">
+<p class="footnote">Last modified: {{ page.modified }}</p>

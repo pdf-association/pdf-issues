@@ -3,6 +3,7 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 isotitle: 'Document management - ECMAScript for PDF - Part 1: Use of ISO 32000-2 (PDF 2.0)'
 title: ECMAscript for PDF 2.0 Corrections
+modified: 10 August 2021
 ---
 
 <p>
@@ -30,4 +31,4 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 
 <hr>
 <link rel="stylesheet" href="../assets/iso-style.css">
-<p class="footnote">Last modified: 19 June 2021</p>
+<p class="footnote">Last modified: {{ page.modified }}</p>

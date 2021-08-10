@@ -3,6 +3,7 @@ subset: PDF/X-6
 isodoc: ISO 15930-9:2020
 isotitle: 'Graphic technology - Prepress digital data exchange using PDF - Part 9: Complete exchange of printing data (PDF/X-6) and partial exchange of printing data with external profile reference (PDF/X-6p and PDF/X-6n)'
 title: PDF/X-6 Corrections
+modified: 10 August 2021
 ---
 
 <p>
@@ -24,4 +25,5 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 </ul>
 
 <hr>
-<p class="footnote">Last modified: 19 June 2021</p>
+<link rel="stylesheet" href="../assets/iso-style.css">
+<p class="footnote">Last modified: {{ page.modified }}</p>
