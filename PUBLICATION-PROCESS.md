@@ -53,7 +53,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
    .../32000-2-2020/clauseAnnexA.html#TableA.1
    ```
 
-- The simulated "track changes" is achieved via inline `span class="new-text"` and `span class="deleted-text"` from `assets/iso-style.css`.
+- The simulated "track changes" is achieved via HTML5 `del` and `ins` tags, styled by CSS in `assets/iso-style.css`.
 
 - Each `clauseXXX.md` file needs to start with the following structure: a local ToC for just this clause (if required); the ISO stylesheet, the hidden `div` used to display the popups, a fake H1 for the start of the clause:
     ```html
@@ -77,7 +77,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 - The popup tooltips which state the pdf-issues Issue number and provide clickable URLs back to GitHub (e.g. "Issue #12") are achieved via `onMouseEnter` JavaScript that reads the custom attribute `issue` on the HTML5 `del` and `ins` tags. `del` tags occur first, then `ins` for changes on existing text. For changes with multiple Issues, comma separate the issue numbers (e.g. `issue="3,5,7"`). The JavaScript and CSS styling will then be merged by Jeykll.
 
    ```html
-   <del onMouseEnter="mouseEnter(this)" issue="12">to be deleted</del> ... <ins onMouseEnter="mouseEnter(this)" issue="34">to be inserted</ins>
+   <del onMouseEnter="mouseEnter(this)" data-issue="12">to be deleted</del> ... <ins onMouseEnter="mouseEnter(this)" data-issue="34">to be inserted</ins>
    ```
 
 - It is *very strongly* recommended that each edit, demarkated by `<del ... </del>` and `<ins ... </ins>` are each on a single line by themselves. This simplifies greps, sed, etc.
@@ -105,6 +105,10 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 - "View Page source" from inside various browsers (Edge, Chrome, FF, Safari for Mac users) and check for 'red' tags indicating issues (such as typos, missing or mismatched HTML tags, etc).
 
 - Upload each of the local HTML files produced by jekyll (in `/docs/_site/clause`) to the [W3C HTML Validator](https://validator.w3.org/nu/#file).
+   - Expected errors are:
+       1. A link element must not appear as a descendant of a body element unless the link element has an itemprop attribute or has a rel attribute whose value contains dns-prefetch, modulepreload, pingback, preconnect, prefetch, preload, prerender, or stylesheet.
+       1. Attribute `issue` not allowed on element `del` at this point.
+       1. Attribute `issue` not allowed on element `ins` at this point.
 
 - Each pdf-issue is then closed in GitHub, possibly with any additional comment if any unexpected issue or edit arose in implementing the PDF TWG recommendations.
 

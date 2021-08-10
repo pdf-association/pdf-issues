@@ -26,14 +26,14 @@ modified: 6 June 2021
 
 <p>
 Characters in text streams, as defined by 7.9.2, "String object types", are identified by their Unicode character name written in uppercase
-<del onMouseEnter="mouseEnter(this)" issue="75">in font</del> followed by a parenthetic four <ins onMouseEnter="mouseEnter(this)" issue="75">or five</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="75">in font</del> followed by a parenthetic four <ins onMouseEnter="mouseEnter(this)" data-issue="75">or five</ins>
 digit hexadecimal character code value with the prefix "U+" as shown in the example in this clause:
 </p>
 
 <p>...</p>
 
 <p>
-<ins onMouseEnter="mouseEnter(this)" issue="75">For consistency, consider that all 5 occurences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="75">For consistency, consider that all 5 occurences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
 </p>
 
 </div>

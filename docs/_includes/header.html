@@ -51,7 +51,7 @@ var lastTimeout;
 
 function mouseEnter(obj) {
 	clearTimeout(lastTimeout)
-	var iss = obj.getAttribute("issue").split(',');
+	var iss = obj.getAttribute("data-issue").split(',');
 	var s = "";
 	// Iterate over comma-separated issue numbers
 	for (let i in iss) {

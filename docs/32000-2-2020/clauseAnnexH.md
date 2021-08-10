@@ -35,7 +35,7 @@ are individual members of the table of contents and/or lists of table of content
 </p>
 
 <p>
-<ins onMouseEnter="mouseEnter(this)" issue="62">NOTE the following example uses <b>Reference</b>, <b>TOC</b> and <b>TOCI</b> structure elements which are
+<ins onMouseEnter="mouseEnter(this)" data-issue="62">NOTE the following example uses <b>Reference</b>, <b>TOC</b> and <b>TOCI</b> structure elements which are
 part of the <i>standard structure namespace for PDF 1.7</i> and are entirely valid for use in PDF 2.0 under the <i>default standard structure namespace</i>
 (see 14.8.6, "Standard structure namespaces").</ins>
 </p>

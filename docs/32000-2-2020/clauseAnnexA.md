@@ -35,8 +35,8 @@ modified: 30 July 2021
     <td></td>
     <td>(<i>PDF 1.2</i>) Begin marked-content sequence</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" issue="108">"Table 351 - Entries in a data dictionary"</del>
-      <ins onMouseEnter="mouseEnter(this)" issue="108">"Table 352 - Marked-content operators"</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="108">"Table 351 - Entries in a data dictionary"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="108">"Table 352 - Marked-content operators"</ins>
     </td>
   </tr>
   <tr>
@@ -50,8 +50,8 @@ modified: 30 July 2021
     <td><b>curveto</b></td>
     <td>Append curved segment to path (three control points)</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" issue="75">"Table 60 - Clipping path operators"</del>
-      <ins onMouseEnter="mouseEnter(this)" issue="75">"Table 58 - Path construction operators"</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="75">"Table 60 - Clipping path operators"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="75">"Table 58 - Path construction operators"</ins>
     </td>
   </tr>
 </table>

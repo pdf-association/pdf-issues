@@ -20,9 +20,9 @@ modified: 18 June 2021
 <p>This clause describes those features of PDF that support embedding and playing multimedia content. It contains the following subclauses:</p>
 <ul>
 <li>13.2, "Multimedia" describes the comprehensive set of multimedia capabilities that were introduced in PDF 1.5.</li>
-<li>13.3, "Sounds" and 13.4, "Movies" describe deprecated features superseded by 13.7, "<ins onMouseEnter="mouseEnter(this)" issue="109">Rich media".</ins></li>
+<li>13.3, "Sounds" and 13.4, "Movies" describe deprecated features superseded by 13.7, "<ins onMouseEnter="mouseEnter(this)" data-issue="109">Rich media".</ins></li>
 <li>13.6, "3D Artwork" describes the capability of embedding three-dimensional graphics in a document, introduced in PDF 1.6.</li>
-<li>13.7, "<ins onMouseEnter="mouseEnter(this)" issue="109">Rich media" describes rich media annotations providing a common framework for video, audio, animations and other multimedia presentations.</ins></li>
+<li>13.7, "<ins onMouseEnter="mouseEnter(this)" data-issue="109">Rich media" describes rich media annotations providing a common framework for video, audio, animations and other multimedia presentations.</ins></li>
 </ul>
 
 <h3 id="H13.6.3">13.6.3 3D streams</h3>
@@ -44,9 +44,9 @@ modified: 18 June 2021
     (<i>Optional, PDF 2.0</i>) The RGB colour space in which the 3D artwork's colour values are encoded. Valid values are the name
     <b>DeviceRGB</b>, an array specifying a valid <b>CalRGB</b> color space (see 8.6.5.3 "CalRGB colour spaces"), or an array specifying
     a valid RGB-based <b>ICCBased</b> color space (see 8.6.5.5 "ICCBased colour spaces").
-    <ins onMouseEnter="mouseEnter(this)" issue="18">If the name is <b>DeviceRGB</b> and the page where the annotation referencing the 3D stream is used has a <b>DefaultRGB</b> color space, then the <b>DefaultRGB</b> color space shall be used (see 8.6.5.6 Default colour spaces).</ins>
-    If this key is not present, the colour space for the 3D artwork colour values  <del onMouseEnter="mouseEnter(this)" issue="18">are</del>
-    <ins onMouseEnter="mouseEnter(this)" issue="18">is</ins> considered undefined and a PDF processor may choose any appropriate
+    <ins onMouseEnter="mouseEnter(this)" data-issue="18">If the name is <b>DeviceRGB</b> and the page where the annotation referencing the 3D stream is used has a <b>DefaultRGB</b> color space, then the <b>DefaultRGB</b> color space shall be used (see 8.6.5.6 Default colour spaces).</ins>
+    If this key is not present, the colour space for the 3D artwork colour values  <del onMouseEnter="mouseEnter(this)" data-issue="18">are</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="18">is</ins> considered undefined and a PDF processor may choose any appropriate
     RGB-based colour space, such as sRGB.
     </td>
   </tr>
@@ -69,7 +69,7 @@ modified: 18 June 2021
     <td>
     <p>...</p>
     <p>Default value: a projection dictionary where the value of <b>Subtype</b> is
-    <del onMouseEnter="mouseEnter(this)" issue="91"><i>Perspective</i></del><ins onMouseEnter="mouseEnter(this)" issue="91"><i>P</i> (perspective)</ins>,
+    <del onMouseEnter="mouseEnter(this)" data-issue="91"><i>Perspective</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="91"><i>P</i> (perspective)</ins>,
     the value of <b>FOV</b> is 90, and all other entries take their default values.
     </p>
     </td>
@@ -83,7 +83,7 @@ modified: 18 June 2021
 
 <p><i>New paragraph is added before existing NOTE:</i></p>
 
-<ins onMouseEnter="mouseEnter(this)" issue="39 ">PDF processors that render 3D data streams shall do so directly and without regard to keys and values in the annotation dictionary that define appearance streams or how appearance streams would be rendered onto the page. They shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>, <b>BM</b>, <b>CA</b> and <b>ca</b> keys from "Table 166 - Entries common to all annotation dictionaries".</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="39 ">PDF processors that render 3D data streams shall do so directly and without regard to keys and values in the annotation dictionary that define appearance streams or how appearance streams would be rendered onto the page. They shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>, <b>BM</b>, <b>CA</b> and <b>ca</b> keys from "Table 166 - Entries common to all annotation dictionaries".</ins>
 
 <p>...</p>
 
@@ -97,22 +97,22 @@ modified: 18 June 2021
   </tr>
   <tr>
     <td><b>CS</b></td>
-    <td>name <del onMouseEnter="mouseEnter(this)" issue="38">or array</del></td>
+    <td>name <del onMouseEnter="mouseEnter(this)" data-issue="38">or array</del></td>
     <td>
     <p>(<i>Optional</i>) The colour space of the background. The only valid value shall be the name <i>DeviceRGB</i>.</p>
     <p>Default value: <i>DeviceRGB</i>.</p>
-    <p><del onMouseEnter="mouseEnter(this)" issue="38">PDF consumers shall be prepared to encounter other values that may be supported in future versions of PDF.</del></p>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="38">PDF consumers shall be prepared to encounter other values that may be supported in future versions of PDF.</del></p>
     </td>
   </tr>
   <tr>
     <td><b>C</b></td>
-    <td><del onMouseEnter="mouseEnter(this)" issue="38">(various)</del>
-        <ins onMouseEnter="mouseEnter(this)" issue="38">array</ins>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="38">(various)</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="38">array</ins>
     </td>
     <td>
     <p>(<i>Optional</i>)
-    <ins onMouseEnter="mouseEnter(this)" issue="38">An array of 3 numbers in the range 0.0 to 1.0, representing the</ins>
-    <del onMouseEnter="mouseEnter(this)" issue="38">The</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="38">An array of 3 numbers in the range 0.0 to 1.0, representing the</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="38">The</del>
     colour of the background in the colour space defined by <b>CS</b>.</p>
     <p>Default value: an array [1 1 1] representing the colour white when the value of <b>CS</b> is <i>DeviceRGB</i>.</p>
     </td>
@@ -131,11 +131,11 @@ modified: 18 June 2021
     <th>Value</th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" issue="49"><b>IV</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" issue="49">boolean</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="49"><b>IV</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="49">boolean</ins></td>
     <td>
 	<p>
-	<ins onMouseEnter="mouseEnter(this)" issue="49">(<i>Optional</i>>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible. If <i>false</i>, then the cutting plane shall not be visible.<br/>Default value: <i>true</i></ins>
+	<ins onMouseEnter="mouseEnter(this)" data-issue="49">(<i>Optional</i>>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible. If <i>false</i>, then the cutting plane shall not be visible.<br/>Default value: <i>true</i></ins>
 	</p>
     </td>
   </tr>
@@ -144,7 +144,7 @@ modified: 18 June 2021
     <td>boolean</td>
     <td>
 	<p>...</p>
-    <p>Default value: <del onMouseEnter="mouseEnter(this)" issue="50">false</del> <ins onMouseEnter="mouseEnter(this)" issue="50">true</ins></p>
+    <p>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="50">false</del> <ins onMouseEnter="mouseEnter(this)" data-issue="50">true</ins></p>
     </td>
   </tr>
 </table>
@@ -161,10 +161,10 @@ modified: 18 June 2021
     <th>Value</th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" issue="59"><b>Scripts</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" issue="59">array</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="59"><b>Scripts</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="59">array</ins></td>
     <td>
-    <ins onMouseEnter="mouseEnter(this)" issue="59"><p>(<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in the <b>Assets</b> name tree of the RichMediaContent dictionary. If the array has no elements, no script is executed.</p><p>Default value: an empty array.</p></ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="59"><p>(<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in the <b>Assets</b> name tree of the RichMediaContent dictionary. If the array has no elements, no script is executed.</p><p>Default value: an empty array.</p></ins>
     </td>
   </tr>
 </table>
@@ -185,12 +185,12 @@ modified: 18 June 2021
     <td>dictionary</td>
     <td>
     <p>(<i>Required; PDF 2.0</i>) A dictionary that shall be an indirect object reference to a file specification dictionary that
-    <del onMouseEnter="mouseEnter(this)" issue="58">is also</del>
-    <ins onMouseEnter="mouseEnter(this)" issue="58">may also be</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="58">is also</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="58">may also be</ins>
     referenced in the <b>Assets</b> name tree specified in the RichMediaContent dictionary of the annotation.
     </p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" issue="58">NOTE the RichMedia asset itself is not referenced by name, however other assets may be referenced from the RichMedia asset by name and thus need to be in the <b>Assets</b> name tree.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="58">NOTE the RichMedia asset itself is not referenced by name, however other assets may be referenced from the RichMedia asset by name and thus need to be in the <b>Assets</b> name tree.</ins>
     </p>
     </td>
   </tr>

@@ -35,8 +35,8 @@ modified: 18 June 2021
     <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts; shall be an indirect reference</i>) A font descriptor describing the
     font's metrics other than its glyph widths (see 9.8, "Font descriptors").</p>
     <p>
-    <del onMouseEnter="mouseEnter(this)" issue="47,48">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see</del>
-    <ins onMouseEnter="mouseEnter(this)" issue="47,48">See also</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="47,48">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="47,48">See also</ins>
     9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".
     </p>
     </td>
@@ -45,8 +45,8 @@ modified: 18 June 2021
 
 
 <p>
-<del onMouseEnter="mouseEnter(this)" issue="47,48">PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font descriptor data for those standard fonts for use in processing PDF files when the entries are absent.</del>
-<ins onMouseEnter="mouseEnter(this)" issue="47,48">See also 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="47,48">PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font descriptor data for those standard fonts for use in processing PDF files when the entries are absent.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="47,48">See also 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".</ins>
 </p>
 
 
@@ -57,15 +57,15 @@ modified: 18 June 2021
 <p>...</p>
 
 <p>
-<ins onMouseEnter="mouseEnter(this)" issue="47,48">NOTE: </ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="47,48">NOTE: </ins>
 In PDF 1.0 to PDF 1.7, the <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> (see "Table 109 - Entries in a Type 1 font dictionary") were
 optional in Type 1 font dictionaries for the standard 14 fonts. PDF processors supporting PDF 1.0 to PDF 1.7 files
-<del onMouseEnter="mouseEnter(this)" issue="47,48">shall</del>
-<ins onMouseEnter="mouseEnter(this)" issue="47,48">are required to</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="47,48">shall</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="47,48">are required to</ins>
 have these fonts, or their font metrics and suitable substitution fonts available.</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" issue="47,48">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="47,48">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.</del>
 </p>
 
 
@@ -85,8 +85,8 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
     <td>
     <p>...</p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" issue="43">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
-    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" issue="43">The number </ins><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number </ins><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
     <p>...</p>
     </td>
@@ -97,12 +97,12 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
     <td>
     <p>...</p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" issue="43">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
-    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" issue="43">The number</ins> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number</ins> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" issue="43">The numbers</ins> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
-    and <ins onMouseEnter="mouseEnter(this)" issue="43">The numbers</ins> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
+    <ins onMouseEnter="mouseEnter(this)" data-issue="43">The numbers</ins> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
+    and <ins onMouseEnter="mouseEnter(this)" data-issue="43">The numbers</ins> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
     </p>
     <p>...</p>
     </td>
@@ -111,15 +111,15 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 
 <p>EXAMPLE
 This example shows the definition of a Type 3 font with only two glyphs - a filled square and a filled triangle
-<del onMouseEnter="mouseEnter(this)" issue="44">, selected by the character codes a and b</del>.
-<ins onMouseEnter="mouseEnter(this)" issue="44">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="44">, selected by the character codes a and b</del>.
+<ins onMouseEnter="mouseEnter(this)" data-issue="44">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand</ins>.
 "Figure 62 - Output from the example" shows the result of showing the string ( ababab ) using this font.
 </p>
 
 <code>
   ...
-  <del onMouseEnter="mouseEnter(this)" issue="44">%Type 3 font definition encoding two glyphs, 'a' and 'b'</del>
-  <ins onMouseEnter="mouseEnter(this)" issue="44">%Type 3 font definition encoding the two glyphs square and triangle</ins>
+  <del onMouseEnter="mouseEnter(this)" data-issue="44">%Type 3 font definition encoding two glyphs, 'a' and 'b'</del>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="44">%Type 3 font definition encoding the two glyphs square and triangle</ins>
   4 0 obj
   ...
 </code>
@@ -142,10 +142,10 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     <td><b>FontName</b></td>
     <td>name</td>
     <td>
-    (<i>Required <ins onMouseEnter="mouseEnter(this)" issue="11">for non-Type 3 fonts</ins></i>)
-    The PostScript name of the font. <del onMouseEnter="mouseEnter(this)" issue="11">This name shall be the same as the value of <b>BaseFont</b>
+    (<i>Required <ins onMouseEnter="mouseEnter(this)" data-issue="11">for non-Type 3 fonts</ins></i>)
+    The PostScript name of the font. <del onMouseEnter="mouseEnter(this)" data-issue="11">This name shall be the same as the value of <b>BaseFont</b>
     in the font or CIDFont dictionary that refers to this font descriptor.</del>
-    <ins onMouseEnter="mouseEnter(this)" issue="11">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary that refers to this font descriptor.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="11">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary that refers to this font descriptor.</ins>
     </td>
   </tr>
 </table>
@@ -159,14 +159,14 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 <p>
 The key for each entry in an <b>FD</b> dictionary shall be the name of a class of glyphs - that is, a particular subset of the CIDFont's
 character collection. The entry's value shall be a font descriptor whose contents shall
-<ins onMouseEnter="mouseEnter(this)" issue="5">be a subset of the keys defined in "Table 120 - Entries common to all font descriptors" that</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="5">be a subset of the keys defined in "Table 120 - Entries common to all font descriptors" that</ins>
 override the font-wide attributes for that class only. This font descriptor
-<del onMouseEnter="mouseEnter(this)" issue="5">shall contain</del>
-<ins onMouseEnter="mouseEnter(this)" issue="5">contains</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="5">shall contain</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="5">contains</ins>
 entries for metric information only; it shall not include <b>FontFile</b>, <b>FontFile2</b>,
 <b>FontFile3</b>, or any of the entries listed in
-<del onMouseEnter="mouseEnter(this)" issue="5">"Table 120 - Entries common to all font descriptors"</del>
-<ins onMouseEnter="mouseEnter(this)" issue="5">"Table 122 - Additional font descriptor entries for CIDFonts"</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="5">"Table 120 - Entries common to all font descriptors"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="5">"Table 122 - Additional font descriptor entries for CIDFonts"</ins>.
 </p>
 
 <h3 id="H9.10.3">9.10.3 ToUnicode CMaps</h3>
@@ -175,8 +175,8 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 <p>EXAMPLE 2</p>
 <p style="margin-left: 40px;">...</p>
 <p style="margin-left: 40px;">Finally, the character code &lt;3A 51&gt; is mapped to the Unicode value
-<del onMouseEnter="mouseEnter(this)" issue="87">UNICODE HAN CHARACTER 'U+2003E'</del>
-<ins onMouseEnter="mouseEnter(this)" issue="87">CJK UNIFIED IDEOGRAPH-2003E</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="87">UNICODE HAN CHARACTER 'U+2003E'</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="87">CJK UNIFIED IDEOGRAPH-2003E</ins>
 (U+2003E), which is expressed by the byte sequence &lt;D840DC3E&gt; in UTF-16BE encoding.
 </p>
 
