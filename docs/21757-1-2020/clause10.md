@@ -32,7 +32,7 @@ modified: 19 June 2021
 <p>...</p>
 
 <p>
-<del onMousEenter="mouseEnter(this)" issue="70">More information regarding the ECMAScript core can be found in ISO/IEC 22537.</del>
+<del onMouseEnter="mouseEnter(this)" issue="70">More information regarding the ECMAScript core can be found in ISO/IEC 22537.</del>
 </p>
 
 <h2 id="H10.2">10.2 Annotation</h2>
