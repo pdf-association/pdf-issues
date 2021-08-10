@@ -58,7 +58,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 - Each `clauseXXX.md` file needs to start with the following structure: a local ToC for just this clause (if required); the ISO stylesheet, the hidden `div` used to display the popups, a fake H1 for the start of the clause:
     ```html
 <ul>
-    <li><a href="clause04#H4.1">4.1 General</a></li>
+    <li><a href="#Hx.y.z">x.y.z AAA BBB CCC</a></li>
 </ul>
 <hr>
 

@@ -7,6 +7,76 @@ modified: 30 July 2021
 ---
 
 <ul>
+ <li><a href="#H12.2">12.2 Viewer preferences</a>
+ </li>
+ <li>12.4 Page-level navigation
+  <ul>
+   <li><a href="#H12.4.2">12.4.2 Page labels <ins onMouseEnter="mouseEnter(this)" data-issue="73"> and indices</ins></a>
+   </li>
+   <li>12.4.4 Presentations
+    <ul>
+     <li><a href="#H12.4.4.1">12.4.4.1 General</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>12.5 Annotations
+  <ul>
+   <li><a href="#H12.5.2">12.5.2 Annotation dictionaries</a>
+   </li>
+   <li>12.5.6 Annotation types
+    <ul>
+     <li><a href="#H12.5.6.2">12.5.6.2 Markup annotations</a>
+     </li>
+     <li><a href="#H12.5.6.5">12.5.6.5 Link annotations</a>
+     </li>
+     <li><a href="#H12.5.6.6">12.5.6.6 Free text annotations</a>
+     </li>
+     <li><a href="#H12.5.6.18">12.5.6.18 Screen annotations</a>
+     </li>
+     <li><a href="#H12.5.6.24">12.5.6.24 Projection annotations</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>12.7 Forms
+  <ul>
+   <li>12.7.4 Field dictionaries
+    <ul>
+     <li><a href="#H12.7.4.1">12.7.4.1 General</a>
+     </li>
+    </ul>
+   </li>
+   <li>12.7.5 Field types
+    <ul>
+     <li><a href="#H12.7.5.5">12.7.5.5 Signature Fields</a>
+     </li>
+    </ul>
+   </li>
+   <li><a href="#H12.7.9">12.7.9 Non-interactive forms</a>
+   </li>
+  </ul>
+ </li>
+ <li>12.8 Digital signatures
+  <ul>
+   <li><a href="#H12.8.1">12.8.1 Signature Fields</a>
+    <ul>
+     <li><a href="#H12.8.2.4">12.8.2.4 FieldMDP</a>
+     </li>
+    </ul>
+   </li>
+   <li>12.8.3 Signature interoperability
+    <ul>
+     <li><a href="#H12.8.3.1">12.8.3.1 General</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
 </ul>
 <hr>
 
