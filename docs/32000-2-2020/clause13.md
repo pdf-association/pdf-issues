@@ -7,6 +7,39 @@ modified: 18 June 2021
 ---
 
 <ul>
+ <li><a href="#H13.1">13.1 General</a>
+ </li>
+ <li>13.6 3D Artwork
+  <ul>
+   <li>13.6.3 3D streams
+   <ul>
+    <li><a href="#H13.3.6.1">13.3.6.1 General</a>
+    </li>
+   </ul>
+   <li>13.6.4 3D Views
+    <ul>
+     <li><a href="#H13.6.4.1">13.6.4.1 General</a>
+     </li>
+     <li><a href="#H13.6.4.3">13.6.4.3 3D background dictionaries</a>
+     </li>
+     <li><a href="#H13.6.4.6">13.6.4.6 3D cross section dictionaries</a>
+     </li>
+   <li>13.7 Rich media
+    <ul>
+     <li>13.7.2 RichMedia annotations
+      <ul>
+       <li>13.7.2.2 RichMediaSettings dictionary
+        <ul>
+         <li><a href="#H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</a>
+         </li>
+         <li><a href="#H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
 </ul>
 <hr>
 
