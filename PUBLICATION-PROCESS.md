@@ -58,7 +58,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 - The popup tooltips which state the pdf-issues Issue number and provide clickable URLs back to GitHub (e.g. "Issue #12") are achieved via `onMouseEnter` JavaScript that reads the custom attribute `issue` on the HTML5 `del` and `ins` tags. For changes with multiple Issues, comma separate the issue numbers (e.g. `issue="3,5,7"`). The JavaScript and CSS styling is merged by Jeykll.
 
    ```html
-   <del onMousEenter="mouseEnter(this)" issue="12">to be deleted</del> ... <ins onMousEenter="mouseEnter(this)" issue="34">to be inserted</ins>
+   <del onMouseEnter="mouseEnter(this)" issue="12">to be deleted</del> ... <ins onMouseEnter="mouseEnter(this)" issue="34">to be inserted</ins>
    ```
 
 - The "Last Modified" in the top Liquid metadata of each MD file needs to be changed manually (as this needs to be the edit time of substantive changes)

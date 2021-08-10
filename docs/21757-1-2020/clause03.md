@@ -24,7 +24,7 @@ modified: 22 June 2021
 <h2 id="H3.1">3.1<br/>ECMAscript</h2>
 
 <p>
-means of reference to ISO 22275 and ISO 22537 <ins onMousEenter="mouseEnter(this)" issue="70"><i>(ISO 22537 ECMAScript for XML (E4X) support is deprecated in PDF 2.0)</i></ins>
+means of reference to ISO 22275 and ISO 22537 <ins onMouseEnter="mouseEnter(this)" issue="70"><i>(ISO 22537 ECMAScript for XML (E4X) support is deprecated in PDF 2.0)</i></ins>
 </p>
 
 </div>
