@@ -33,7 +33,7 @@ digit hexadecimal character code value with the prefix "U+" as shown in the exam
 <p>...</p>
 
 <p>
-<span class="new-text">For consistency, consider that all 5 occurences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75" target="_blank">Issue #75</a></span></span>
+<ins onMouseEnter="mouseEnter(this)" issue="75">For consistency, consider that all 5 occurences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
 </p>
 
 </div>

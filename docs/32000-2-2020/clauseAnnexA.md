@@ -14,6 +14,9 @@ modified: 30 July 2021
 
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+	Issue #xxxx
+</div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
@@ -32,8 +35,8 @@ modified: 30 July 2021
     <td></td>
     <td>(<i>PDF 1.2</i>) Begin marked-content sequence</td>
     <td>
-      <span class="deleted-text">"Table 351 - Entries in a data dictionary"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/108">Issue #108</a></span></span>
-      <span class="new-text">"Table 352 - Marked-content operators"<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/108">Issue #108</a></span></span>
+      <del onMouseEnter="mouseEnter(this)" issue="108">"Table 351 - Entries in a data dictionary"</del>
+      <ins onMouseEnter="mouseEnter(this)" issue="108">"Table 352 - Marked-content operators"</ins>
     </td>
   </tr>
   <tr>
@@ -47,8 +50,8 @@ modified: 30 July 2021
     <td><b>curveto</b></td>
     <td>Append curved segment to path (three control points)</td>
     <td>
-      <span class="deleted-text">"Table 60 - Clipping path operators"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75">Issue #75</a></span></span>
-      <span class="new-text">"Table 58 - Path construction operators"<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75">Issue #75</a></span></span>
+      <del onMouseEnter="mouseEnter(this)" issue="75">"Table 60 - Clipping path operators"</del>
+      <ins onMouseEnter="mouseEnter(this)" issue="75">"Table 58 - Path construction operators"</ins>
     </td>
   </tr>
 </table>
