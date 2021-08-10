@@ -7,6 +7,37 @@ modified: 18 June 2021
 ---
 
 <ul>
+ <li>9.6 Simple fonts
+  <ul>
+   <li>9.6.2 Type 1 fonts
+    <ul>
+     <li><a href="#H9.6.2.1">9.6.2.1 General</a>
+     </li>
+     <li><a href="#H9.6.2.2">9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</a>
+     </li>
+    </uL
+   </li>
+   <li><a href="#H9.6.4">9.6.4 Type 3 fonts</a>
+   </li>
+  </ul>
+ </li>
+ <li>9.8 Font descriptors</a>
+  <ul>
+   <li><a href="#H9.8.1">9.8.1 General</a>
+   </li>
+   <li>9.8.3 Font descriptors for CIDFonts
+    <ul>
+     <li><a href="#H9.8.3.3">9.8.3.3 FD<a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>9.10 Extraction of text content
+  <ul>
+   <li><a href="#H9.10.3">9.10.3 ToUnicode CMaps</a>
+  </ul>
+ </li>
 </ul>
 <hr>
 
