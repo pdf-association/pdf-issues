@@ -76,8 +76,6 @@ modified: 30 July 2021
   </ul>
  </li>
 </ul>
-
-</ul>
 <hr>
 
 <link rel="stylesheet" href="../assets/iso-style.css">
