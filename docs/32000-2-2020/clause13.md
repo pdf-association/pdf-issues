@@ -12,10 +12,11 @@ modified: 18 June 2021
  <li>13.6 3D Artwork
   <ul>
    <li>13.6.3 3D streams
-   <ul>
-    <li><a href="#H13.3.6.1">13.3.6.1 General</a>
-    </li>
-   </ul>
+    <ul>
+     <li><a href="#H13.3.6.1">13.3.6.1 General</a>
+     </li>
+    </ul>
+   </li>
    <li>13.6.4 3D Views
     <ul>
      <li><a href="#H13.6.4.1">13.6.4.1 General</a>
@@ -24,6 +25,8 @@ modified: 18 June 2021
      </li>
      <li><a href="#H13.6.4.6">13.6.4.6 3D cross section dictionaries</a>
      </li>
+    </ul>
+   </li>
    <li>13.7 Rich media
     <ul>
      <li>13.7.2 RichMedia annotations
@@ -40,6 +43,8 @@ modified: 18 June 2021
      </li>
     </ul>
    </li>
+  </ul>
+ </li>
 </ul>
 <hr>
 
