@@ -58,7 +58,7 @@ function mouseEnter(obj) {
 		if (s != "") {
 			s = s + "<br\>"; // add a linebreak between each URL
 		}
-		s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '">Issue #' + iss[i] + '</a>';
+		s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
 	}
 	var trg = document.getElementById("issuelink");
 	trg.innerHTML = s;
