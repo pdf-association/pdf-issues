@@ -19,8 +19,8 @@ modified: 30 July 2021
 
 <p>
 As "Table 350 - Entries in a page-piece dictionary" shows, a page-piece dictionary may contain any number of entries,
-each <span class="deleted-text">keyed by<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/69" target="_blank">Issue #69</a></span></span>
-<span class="new-text">key should be a second-class name, or<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/69" target="_blank">Issue #69</a></span></span>
+each <del onMouseEnter="mouseEnter(this)" issue="69">keyed by</del>
+<ins onMouseEnter="mouseEnter(this)" issue="69">key should be a second-class name, or</ins>
 the name of a distinct PDF processor, or of a well-known data type recognised by a family of PDF processors.
 </p>
 
@@ -32,17 +32,15 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
     <th>Value</th>
   </tr>
   <tr>
-    <td>any valid second-class name <span class="new-text">(<i>recommended</i>), any conforming product name or well known data type<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/69" target="_blank">Issue #69</a></span></span></td>
+    <td>any valid second-class name <ins onMouseEnter="mouseEnter(this)" issue="69">(<i>recommended</i>), any conforming product name or well known data type</ins></td>
     <td>dictionary</td>
     <td>A data dictionary (see "Table 351 - Entries in a data dictionary").
     </td>
   </tr>
 </table>
 
-<p><span class="new-text">
-NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document
-upgrades to PDF 2.0, however second-class names are strongly recommend.
-<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/69" target="_blank">Issue #69</a></span></span>
+<p>
+<ins onMouseEnter="mouseEnter(this)" issue="69"> NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
 </p>
 
 <h3 id="H14.7.2">14.7.2 Structure hierarchy</h3>
@@ -59,7 +57,7 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
   <tr>
     <td>R</td>
     <td>integer</td>
-    <td>(<i>Optional<span class="new-text">; deprecated in PDF 2.0<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/93" target="_blank">Issue #93</a></span></span></i>) The current revision number of this structure element (see 14.7.6.3, "Attribute revision numbers"). The value shall be a non-negative integer. Default value: 0.
+    <td>(<i>Optional<ins onMouseEnter="mouseEnter(this)" issue="93">; deprecated in PDF 2.0</ins></i>) The current revision number of this structure element (see 14.7.6.3, "Attribute revision numbers"). The value shall be a non-negative integer. Default value: 0.
     </td>
   </tr>
 </table>
@@ -81,8 +79,8 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
     <td>
     <p>(<i>PDF 2.0</i>) Encloses content for the purpose of strong importance, seriousness or urgency for its contents.</p>
     <p>EXAMPLE 3 In this example the <b>Strong</b> element is used to denote the content
-    that <span class="deleted-text">the user is intended to read first<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/84" target="_blank">Issue #84</a></span></span>
-    <span class="new-text">is more important<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/84" target="_blank">Issue #84</a></span></span>:
+    that <del onMouseEnter="mouseEnter(this)" issue="84">the user is intended to read first</del>
+    <ins onMouseEnter="mouseEnter(this)" issue="84">is more important</ins>:
     </p>
     <p>...</p>
     </td>
@@ -104,7 +102,7 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
     <td><b>TR</b></td>
     <td>Internal to a <b>Table</b> structure</td>
     <td>
-    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<span class="new-text">or both<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/71" target="_blank">Issue #71</a></span></span> in a table.
+    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" issue="71">or both</ins> in a table.
     </td>
   </tr>
 </table>
@@ -129,10 +127,11 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
     The <b>Caption</b> shall be the first or the last structure element inside its parent structure element. The number of captions cannot exceed 1.
     </p>
     <p>While captions are often used with figures or formulas, they may be associated with any type of content.</p>
-    <p>NOTE <span class="new-text">1<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/35" target="_blank">Issue #35</a></span></span> In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each
+    <p>NOTE <ins onMouseEnter="mouseEnter(this)" issue="35">1</ins> In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each
     be accompanied by a caption, and the group of these images as a whole is accompanied by a caption as well.</p>
-    <p><span class="new-text">NOTE 2 If an <b>Artifact</b> structure element is present, and needs to be associated with a <b>Caption</b>, then the <b>Artifact</b>
-    structure element needs to be a descendent of the <b>Caption</b>.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/35" target="_blank">Issue #35</a></span></span></p>
+    <p>
+    <ins onMouseEnter="mouseEnter(this)" issue="35">NOTE 2 If an <b>Artifact</b> structure element is present, and needs to be associated with a <b>Caption</b>, then the <b>Artifact</b> structure element needs to be a descendent of the <b>Caption</b>.</ins>
+    </p>
     </td>
   </tr>
 </table>
@@ -144,17 +143,16 @@ upgrades to PDF 2.0, however second-class names are strongly recommend.
 
 <p>The term <i>standard structure namespaces</i> refers to either of the two namespaces defined above.</p>
 
-<p><span class="new-text">
-NOTE: Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom
-namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted.
-<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/8" target="_blank">Issue #8</a></span></span></p>
+<p>
+<ins onMouseEnter="mouseEnter(this)" issue="8"> NOTE: Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
+</p>
 
 
 <h4 id="H14.8.6.2">14.8.6.2 Role maps and namespaces</h4>
 
 <p>...</p>
 
-<div class="new-text">
+<ins onMouseEnter="mouseEnter(this)" issue="65">
 <p>EXAMPLE:</p>
 <code>
 17 0 obj
@@ -181,8 +179,7 @@ endobj
 >>
 endobj
 </code>
-<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/65" target="_blank">Issue #65</a></span>
-</div>
+</ins>
 
 
 <h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
@@ -192,8 +189,8 @@ endobj
 <p>NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
 
 <p>
-<span class="deleted-text">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/72" target="_blank">Issue #72</a></span></span>
-<span class="new-text">When including mathematics structured as MathML 3.0, the <b>math</b> structure element type, as defined in MathML 3.0, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML 3.0 namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/72" target="_blank">Issue #72</a></span></span>
+<del onMouseEnter="mouseEnter(this)" issue="72">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</del>
+<ins onMouseEnter="mouseEnter(this)" issue="72">When including mathematics structured as MathML 3.0, the <b>math</b> structure element type, as defined in MathML 3.0, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML 3.0 namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</ins>
 </p>
 
 <p>...</p>
@@ -205,9 +202,9 @@ endobj
 
 <p>
 The values of keys present in the DPM dictionary, or of any dictionary or array object present in the DPM dictionary, shall only be of type text string, date string,
-<span class="new-text">name,<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/86" target="_blank">Issue #86</a></span></span>
+<ins onMouseEnter="mouseEnter(this)" issue="86">name,</ins>
 array, dictionary, boolean, integer or real as defined in 7.3, "Objects".
-<span class="new-text">All key values that are PDF name objects, after expansion of character sequences escaped with a NUMBER SIGN (23h), if any, shall be valid UTF-8 character sequences.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/86" target="_blank">Issue #86</a></span></span>
+<ins onMouseEnter="mouseEnter(this)" issue="86">All key values that are PDF name objects, after expansion of character sequences escaped with a NUMBER SIGN (23h), if any, shall be valid UTF-8 character sequences.</ins>
 Other PDF value types shall not be used.
 </p>
 
@@ -219,8 +216,9 @@ Other PDF value types shall not be used.
 
 <p>
 The property list associated with the marked-content shall specify an array of file specification dictionaries to which
-the content is associated. The named resource in the <span class="deleted-text"><b>Property List</b><span class="deleted-tooltiptext">
-Issue #14</span></span> <span class="new-text"><i>property list</i><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/14" target="_blank">Issue #14</a></span></span>
+the content is associated. The named resource in the
+<del onMouseEnter="mouseEnter(this)" issue="14"><b>Property List</b></del>
+<ins onMouseEnter="mouseEnter(this)" issue="14"><i>property list</i></ins>
 (see 14.6.2, "Property lists") shall specify an array of file specification dictionaries to which the content is associated.
 The relationship that the associated files have to the PDF content is supplied by the AFRelationship key in each file specification dictionary.
 </p>

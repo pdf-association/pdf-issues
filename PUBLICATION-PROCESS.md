@@ -80,6 +80,8 @@ This is a short description of what happens after the PDF Association PDF TWG ag
    <del onMouseEnter="mouseEnter(this)" issue="12">to be deleted</del> ... <ins onMouseEnter="mouseEnter(this)" issue="34">to be inserted</ins>
    ```
 
+- It is *very strongly* recommended that each edit, demarkated by `<del ... </del>` and `<ins ... </ins>` are each on a single line by themselves. This simplifies greps, sed, etc.
+
 - The "Last Modified" in the top Liquid metadata of each MD file needs to be changed manually (as this needs to be the edit time of substantive changes)
 
 - To create an interactive index to all modified Tables within a standard, use this Linux CLI:

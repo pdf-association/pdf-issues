@@ -18,7 +18,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
             {% for pg in std.subfolderitems %}
-            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></span></li>
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></li>
            {% endfor %}
         {% endif %}
     {% endfor %}

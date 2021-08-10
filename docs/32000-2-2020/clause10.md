@@ -30,8 +30,8 @@ modified: 16 February 2021
     <td>dictionary or<br/>stream</td>
     <td>
     (<i>Required</i>) A halftone that shall be used for any colourant or colour component that does not have an entry of its own.
-    <span class="deleted-text">The value shall not be 5.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/12" target="_blank">Issue #12</a></span></span>
-    <span class="new-text">The halftone shall not be a Type 5 halftone.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/12" target="_blank">Issue #12</a></span></span>
+    <del onMouseEnter="mouseEnter(this)" issue="12">The value shall not be 5.</del>
+    <ins onMouseEnter="mouseEnter(this)" issue="12">The halftone shall not be a Type 5 halftone.</ins>
     If there are any nonprimary colourants, the default halftone shall have a transfer function.
     </td>
   </tr>
