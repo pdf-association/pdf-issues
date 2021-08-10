@@ -27,7 +27,7 @@ modified: 18 June 2021
    </li>
    <li>9.8.3 Font descriptors for CIDFonts
     <ul>
-     <li><a href="#H9.8.3.3">9.8.3.3 FD<a>
+     <li><a href="#H9.8.3.3">9.8.3.3 FD</a>
      </li>
     </ul>
    </li>
@@ -36,6 +36,7 @@ modified: 18 June 2021
  <li>9.10 Extraction of text content
   <ul>
    <li><a href="#H9.10.3">9.10.3 ToUnicode CMaps</a>
+   </li>
   </ul>
  </li>
 </ul>
