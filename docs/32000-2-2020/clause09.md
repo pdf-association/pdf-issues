@@ -15,7 +15,7 @@ modified: 18 June 2021
      </li>
      <li><a href="#H9.6.2.2">9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</a>
      </li>
-    </uL
+    </ul>
    </li>
    <li><a href="#H9.6.4">9.6.4 Type 3 fonts</a>
    </li>

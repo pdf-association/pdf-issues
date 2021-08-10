@@ -7,6 +7,61 @@ modified: 30 July 2021
 ---
 
 <ul>
+ <li><a href="#H14.5">14.5 Page-piece dictionaries</a>
+ </li>
+ <li>14.7 Logical structure
+  <ul>
+   <li><a href="#H14.7.2">14.7.2 Structure hierarchy</a>
+   </li>
+  </ul>
+ </li>
+ <li>14.8 Tagged PDF
+  <ul>
+   <li>14.8.4 Standard structure types
+    <ul>
+     <li>14.8.4.7 Inline level structure types
+      <ul>
+       <li><a href="#H14.8.4.7.2">14.8.4.7.2 General inline level structure types</a>
+       </li>
+      </ul>
+     </li>
+     <li>14.8.4.8 Other structure types
+      <ul>
+       <li><a href="#H14.8.4.8.3">14.8.4.8.3 Table structure types</a>
+       </li>
+       <li><a href="#H14.8.4.8.4">14.8.4.8.4 Caption structure types</a>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li>14.8.6 Standard structure namespaces
+    <ul>
+     <li><a href="#H14.8.6.1">14.8.6.1 Namespaces for standard structure types and attributes</a>
+     </li>
+     <li><a href="#H14.8.6.2">14.8.6.2 Role maps and namespaces</a>
+     </li>
+     <li><a href="#H14.8.6.3">14.8.6.3 Other namespaces</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>14.12 Document parts
+  <ul>
+   <li>14.12.4 Data structures
+    <ul>
+     <li><a href="#H14.12.4.2">14.12.4.2 Document part metadata</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>14.13 Associated files
+  <ul>
+   <li><a href="#H14.13.5">14.13.5 Associated files linked to graphics objects</a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <hr>
 
