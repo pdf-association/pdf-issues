@@ -14,6 +14,9 @@ modified: 6 June 2021
 
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+	Issue #xxxx
+</div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
@@ -22,7 +25,9 @@ modified: 6 June 2021
 <p>...</p>
 
 <p>
-Characters in text streams, as defined by 7.9.2, "String object types", are identified by their Unicode character name written in uppercase <span class="deleted-text">in font<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75" target="_blank">Issue #75</a></span></span> followed by a parenthetic four <span class="new-text">or five<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75" target="_blank">Issue #75</a></span></span> digit hexadecimal character code value with the prefix "U+" as shown in the example in this clause:
+Characters in text streams, as defined by 7.9.2, "String object types", are identified by their Unicode character name written in uppercase
+<del onMouseEnter="mouseEnter(this)" issue="75">in font</del> followed by a parenthetic four <ins onMouseEnter="mouseEnter(this)" issue="75">or five</ins>
+digit hexadecimal character code value with the prefix "U+" as shown in the example in this clause:
 </p>
 
 <p>...</p>

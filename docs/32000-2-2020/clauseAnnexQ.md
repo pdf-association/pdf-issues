@@ -14,6 +14,9 @@ modified: 16 April 2021
 
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+	Issue #xxxx
+</div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
@@ -25,8 +28,8 @@ modified: 16 April 2021
 Since Annotations require an appearance stream which is drawn by a PDF processor on top of the page content, it is possible
 that their presence may cause a page without any transparency to acquire some transparency. Therefore, all annotations object's
 in the page dictionary's <b>Annots</b> array shall have their appearance streams processed as a form XObject, according to Q.3, "Form XObjects".
-<span class="new-text">Any annotation that has a <b>BM</b> key (<i>PDF 2.0</i>) in the Annotation dictionary with a value other than <i>Normal</i>
-shall be considered to contain transparency (see "Table 166 - Entries common to all annotation dictionaries").<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/51" target="_blank">Issue #51</a></span></span>
+<ins onMouseEnter="mouseEnter(this)" issue="51">Any annotation that has a <b>BM</b> key (<i>PDF 2.0</i>) in the Annotation dictionary with a value other than <i>Normal</i>
+shall be considered to contain transparency (see "Table 166 - Entries common to all annotation dictionaries").</ins>
 </p>
 
 </div>
