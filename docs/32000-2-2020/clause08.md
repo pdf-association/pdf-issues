@@ -114,7 +114,7 @@ modified: 30 July 2021
 </table>
 
 
-<h4 id="H8.6.5.8">8.6.5.8 Rendering Intents</h4>
+<h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
 
 <p>...</p>
 
