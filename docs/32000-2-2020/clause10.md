@@ -7,6 +7,16 @@ modified: 16 February 2021
 ---
 
 <ul>
+    <li>10.6 Halftones
+     <ul>
+      <li>10.6.5 Halftone dictionaries
+       <ul>
+        <li><a href="#H10.6.5.6">10.6.5.6 Type 5 halftones</a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </li>
 </ul>
 <hr>
 

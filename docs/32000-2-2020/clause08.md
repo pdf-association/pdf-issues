@@ -7,6 +7,40 @@ modified: 30 July 2021
 ---
 
 <ul>
+ <li><a href="#H8.2">8.2 Graphics objects</a>
+ </li>
+ <li>8.5 Path construction and painting
+  <ul>
+   <li>8.5.3 Path-painting operators
+    <ul>
+     <li><a href="#H8.5.3.1">8.5.3.1 General</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>8.6 Colour spaces
+  <ul>
+   <li>8.6.5 CIE-Based colour spaces
+    <ul>
+     <li><a href="#H8.6.5.8">8.6.5.8 Rendering intents</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li>8.9 Images
+  <ul>
+   <li>8.9.5 Image dictionaries
+    <ul>
+     <li><a href="#H8.9.5.1">8.9.5.1 General</a>
+     </li>
+    </ul>
+   </li>
+   <li><a href="#H8.9.7">8.9.7 Inline images</a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <hr>
 

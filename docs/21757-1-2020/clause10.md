@@ -7,11 +7,11 @@ modified: 19 June 2021
 ---
 
 <ul>
-    <li><a href="clause10#10.1">10.1 General</a>
+    <li><a href="#H10.1">10.1 General</a>
     </li>
     <li>10.2 Annotation
         <ul>
-            <li><a href="clause10#H10.2.2">10.2.2 Annotation types</a>
+            <li><a href="#H10.2.2">10.2.2 Annotation types</a>
             </li>
         </ul>
     </li>
@@ -27,7 +27,7 @@ modified: 19 June 2021
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<h2 id="10.1">10.1 General</h2>
+<h2 id="H10.1">10.1 General</h2>
 
 <p>...</p>
 

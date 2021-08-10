@@ -7,7 +7,7 @@ modified: 6 June 2021
 ---
 
 <ul>
-    <li><a href="clause04#H4.1">4.1 General</a>
+    <li><a href="#H4.1">4.1 General</a>
     </li>
 </ul>
 <hr>
