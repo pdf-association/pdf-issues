@@ -28,5 +28,16 @@ Resolutions proposed here are **not** officially authorized by the [ISO working 
 
 A full list of all industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://www.pdfa.org/pdf-issues/](https://www.pdfa.org/pdf-issues/).
 
+## Directly referencing resolutions
+
+Errata can always be referred by the appropriate GitHub issue numbers(s). Resolutions are published to a set of static URLs at [https://www.pdfa.org/pdf-issues/](https://www.pdfa.org/pdf-issues/) of the form `<standard-number>/clause<clause-number>.html`. Each of these resolution pages also includes anchor pointss for all Headings (`Hx.y.z` anchors to heading X.Y.Z in the appropriate ISO standard) and Tables (`TableXXX` anchors to Table XXX in the appropriate ISO standard. This allows very precise linkages to the final resolution outcomes, without scrolling through long GitHub discussions.
+
+For example:
+
+- [https://pdfa.org/pdf-issues/21757-1-2020/](https://pdfa.org/pdf-issues/21757-1-2020/) links directly to every resolutions for ISO 21757-1:2020 ECMAscript for PDF 2.0.
+- [https://pdfa.org/pdf-issues/32000-2-2020/clauseAnnexQ.html](https://pdfa.org/pdf-issues/32000-2-2020/clauseAnnexQ.html) links directly to all resolutions in Annex Q *(normative) Method for determining transparency on a page* of ISO 32000-2:2020 (PDF 2.0).
+- [https://pdfa.org/pdf-issues/32000-2-2020/clause12.html#H12.5.6.5](https://pdfa.org/pdf-issues/32000-2-2020/clause12.html#H12.5.6.5) links directly to all resolutions in ISO 32000-2:2020 (PDF 2.0) clause 12.5.6.5 *Link annotations*.
+- [https://pdfa.org/pdf-issues/32000-2-2020/clause08.html#Table87](https://pdfa.org/pdf-issues/32000-2-2020/clause08.html#Table87) links directly to all resolutions in ISO 32000-2:2020 (PDF 2.0) Table 87 - *Additional entries specific to an image dictionary*.
+
 ## Legal
 In contributing to this GitHub repository, you acknowledge that all content you share may be reproduced in whole or in part in future PDF Association publications, ISO standards or other deliverables. It is your responsibility in submitting such content to ensure that the agreement of any copyright holder has been obtained. More information about ISO contribution processes can be found [here](https://www.iso.org/publication/PUB100037.html).
