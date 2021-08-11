@@ -1,20 +1,20 @@
 ---
 title: Overview
-modified: 5 August 2021
+modified: 11 August 2021
 ---
 
 <link rel="stylesheet" href="assets/iso-style.css">
 <div class="github-wp">
 
 <p>
-This public repository is hosted by the <a href="https://www.pdfa.org" target="_parent">PDF Association</a> in order to provide all developers
-a means of openly reporting issues against any published PDF 2.0 related standard for review and resolution by industry and ISO experts.
+The <a href="https://github.com/pdf-association/pdf-issues/">public GitHub repository "pdf-issues"</a> hosted by the <a href="https://www.pdfa.org">PDF Association</a>
+provides all developers a means of openly reporting issues against any published PDF 2.0 related standard for review and resolution by industry and ISO experts.
 All issues in PDF specifications are important, from minor typos and formatting issues, to
 larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry,
 PDF interoperability and implementation reliability will be improved.
 </p>
 
-<p>Issues in the following ISO publications may be reported here:</p>
+<p>Resolutions to issues in the following ISO publications are supported:</p>
 
 <ul>
 <li>PDF 2.0 [<a href="https://www.iso.org/standard/75839.html" target="_blank">ISO 32000-2:2020</a>]</li>
@@ -33,8 +33,8 @@ work in progress of each PDF-related ISO working group.
 <h2>Resolved Issues</h2>
 
 <p>
-The current set of resolved issues are presented as <span class="isotyle"><ins title="Issue number with Git URL will appear">additions</ins>
-and <del title="Issue number with Git URL will appear">deletions</del></span>) to the published wording in the relevant ISO standard organized by clause number.
+The current set of resolved issues are presented as <span class="isotyle"><ins title="GitHub Issue URL will appear">additions</ins>
+and <del title="GitHub Issue URL will appear">deletions</del></span>) to the published wording in the relevant ISO standard organized by clause number.
 GitHub Issue numbers will appear as popup tooltips when hovering over any addition or deletion and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
 closed GitHub pdf-issues with a "proposed solution" label</a>.
