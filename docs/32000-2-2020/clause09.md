@@ -21,7 +21,7 @@ modified: 18 June 2021
    </li>
   </ul>
  </li>
- <li>9.8 Font descriptors</a>
+ <li>9.8 Font descriptors
   <ul>
    <li><a href="#H9.8.1">9.8.1 General</a>
    </li>
