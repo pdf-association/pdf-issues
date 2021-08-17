@@ -33,13 +33,13 @@ modified: 30 July 2021
   </li>
   <li>7.6 Encryption
    <ul>
-    <li><a href="#H7.6.3">7.6.3 General encryption algorithm</a>
+    <li>7.6.3 General encryption algorithm
      <ul>
       <li><a href="#H7.6.3.1">7.6.3.1 General</a>
       </li>
      </ul>
     </li>
-    <li><a href="#H7.6.4">7.6.4 Standard security handler</a>
+    <li>7.6.4 Standard security handler
      <ul>
       <li><a href="#H7.6.4.1">7.6.4.1 General</a>
        <ul>
@@ -83,7 +83,7 @@ modified: 30 July 2021
    <ul>
     <li>7.9.2 String object types
      <ul>
-      <li><a href="#H7.9.2.2">7.9.2.2 Text string type</a>
+      <li>7.9.2.2 Text string type
        <ul>
         <li><a href="#H7.9.2.2.1">7.9.2.2.1 General</a>
         </li>

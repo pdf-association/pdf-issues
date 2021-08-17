@@ -30,6 +30,7 @@ modified: 30 July 2021
        <li><a href="#H14.8.4.8.3">14.8.4.8.3 Table structure types</a>
        </li>
        <li><a href="#H14.8.4.8.4">14.8.4.8.4 Caption structure types</a>
+       </li>
       </ul>
      </li>
     </ul>
