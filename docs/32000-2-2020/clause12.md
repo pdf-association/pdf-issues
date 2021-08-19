@@ -23,6 +23,8 @@ modified: 30 July 2021
  </li>
  <li>12.5 Annotations
   <ul>
+   <li><a href="#H12.5.1">12.5.1 General</a>
+   </li>
    <li><a href="#H12.5.2">12.5.2 Annotation dictionaries</a>
    </li>
    <li>12.5.6 Annotation types
@@ -186,6 +188,20 @@ modified: 30 July 2021
   </tr>
 </table>
 
+
+<h2 id="H12.5">12.5 Annotations</h2>
+
+<h3 id="H12.5.1">12.5.1 General</h3>
+
+<p>...</p>
+
+<p>
+These descriptions assume the page is being viewed in the orientation specified by the <b>Rotate</b> entry. Conceptually, the behaviour of each annotation type may be
+implemented by a software module called an annotation handler. A PDF processor shall provide annotation handlers for all of the conforming annotation types.
+The set of annotation types is extensible. An interactive PDF processor shall provide certain expected behaviour for all annotation types that it does not
+recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1">12.5.2, "Annotation dictionaries"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="1">12.5.5, "Appearance streams" and "Table 167 - Annotation flags" (bit positions 1 and 2)</ins>
+.</p>
 
 <h3 id="H12.5.2">12.5.2 Annotation dictionaries</h3>
 
