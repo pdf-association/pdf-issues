@@ -12,12 +12,12 @@
   del:hover {background-color: #ffbfbf;}
 
   ins {
-  	background-color: lightyellow;
+    background-color: lightyellow;
     color: green;
   }
   ins:hover {background-color: #ffff66;}
   
-  .isostyle .fixedpopup {
+  isostyle .fixedpopup {
     visibility: hidden;
     position: fixed;
     float:right;
@@ -33,13 +33,16 @@
     z-index: 1;
   }
   
-  a {
-  	color: mediumblue;
+  /* Intra-page navigation */
+  a { 
+     color: mediumblue; 
   }
-  
+  a:hover {
+     color: #d03f4e; font-weight: bold;
+  }
+
   .fixedpopup a {
-  	font-family: Arial, Helvetica, sans-serif;
-  	color: mediumblue;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   /* Deeply nested headings get smaller than body text so fix */
