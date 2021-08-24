@@ -1,9 +1,9 @@
   /* use standardized HTML tags for deletion and insertion markup */ 
   del {
     background-color: seashell;
-    color: red;
+    color: darkred;
     text-decoration: line-through;
-    text-decoration-color: red;
+    text-decoration-color: darkred;
   }
   del:hover { background-color: #ffbfbf; }
 
