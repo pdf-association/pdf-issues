@@ -1,23 +1,41 @@
-  .isostyle {
-    font-family: Cambria, Georgia, serif;
-  }
-  
-  /* use standardized HTML tags for deletions and insertions */ 
+  /* use standardized HTML tags for deletion and insertion markup */ 
   del {
     background-color: seashell;
     color: red;
     text-decoration: line-through;
     text-decoration-color: red;
   }
-  del:hover {background-color: #ffbfbf;}
+  del:hover { background-color: #ffbfbf; }
 
   ins {
     background-color: lightyellow;
     color: green;
   }
-  ins:hover {background-color: #ffff66;}
+  ins:hover { background-color: #ffff66; }
   
-  isostyle .fixedpopup {
+  /* URL links */
+  a { 
+     color: mediumblue; 
+  }
+  a:hover {
+     color: #d03f4e; 
+     font-weight: bold;
+  }
+
+  .footnote {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 80%;
+    color: gray;
+  }
+
+/* ISO style to mimic ISO documents */
+
+  .isostyle {
+    font-family: Cambria, Georgia, serif;
+  }
+  
+  .isostyle .fixedpopup {
     visibility: hidden;
     position: fixed;
     float:right;
@@ -33,14 +51,7 @@
     z-index: 1;
   }
   
-  /* Intra-page navigation */
-  a { 
-     color: mediumblue; 
-  }
-  a:hover {
-     color: #d03f4e; font-weight: bold;
-  }
-
+  /* Links to Issues in GitHub */
   .fixedpopup a {
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -97,11 +108,4 @@
     border: 0px;
     padding: 0px 0px;
     white-space: pre;
-  }
-
-  .footnote {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 80%;
-    color: gray;
   }
