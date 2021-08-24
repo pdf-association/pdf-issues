@@ -33,8 +33,13 @@
     z-index: 1;
   }
   
+  a {
+  	color: mediumblue;
+  }
+  
   .fixedpopup a {
   	font-family: Arial, Helvetica, sans-serif;
+  	color: mediumblue;
   }
 
   /* Deeply nested headings get smaller than body text so fix */
