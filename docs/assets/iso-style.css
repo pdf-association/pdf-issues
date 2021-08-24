@@ -10,6 +10,8 @@
   ins {
     background-color: lightyellow;
     color: green;
+    text-decoration-style: double;
+    text-decoration-color: green;
   }
   ins:hover { background-color: #ffff66; }
   
