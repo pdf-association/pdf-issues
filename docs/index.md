@@ -26,8 +26,8 @@ PDF interoperability and implementation reliability will be improved.
 
 <p>
 Resolutions proposed here are <b>not</b> officially authorized by the ISO working groups responsible for PDF 2.0 related standards
-(ISO TC 171 SC 2 and ISO TC 130 WG 2), and may be changed in future ISO publications. See <a href="https://www.pdfa.org/iso-status/" target="_parent">here</a> for details of current
-work in progress of each PDF-related ISO working group.
+(ISO TC 171 SC 2 and ISO TC 130 WG 2), and may be changed in future ISO publications. A complete list of all
+<a href="https://www.pdfa.org/iso-status/" target="_parent">current work in progress of each PDF-related ISO working group</a> is also maintained by the PDF Association.
 </p>
 
 <h2>Resolved Issues</h2>
