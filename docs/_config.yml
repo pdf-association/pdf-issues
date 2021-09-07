@@ -47,11 +47,15 @@ minima:
   google_analytics: UA-1991880-1
   date_format: "%e %B %Y"
   social_links:
-    twitter: PDFassociation
+    twitter: PDFAssociation
     github: pdf-association
     facebook: PDFassociation
     linkedin: pdf-association
     youtube: ThePDFAssociation
+    twitter:
+      username: PDFAssociation
+    github:
+      username: pdf-association
     
 # Build settings
 markdown: kramdown

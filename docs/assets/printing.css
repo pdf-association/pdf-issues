@@ -1,0 +1,8 @@
+  @media screen {
+    .onlyprint { display: none !important; }
+  }
+
+  @media print {
+    .onlyprint { display: block !important; }
+    .noprint   { visibility: none !important; }
+  }
