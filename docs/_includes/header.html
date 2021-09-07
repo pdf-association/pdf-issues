@@ -1,10 +1,10 @@
-<header class="site-header" style="border-top: none;">
+<header class="site-header noprint" style="border-top: none;">
 
 <link rel="icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-32x32.png" sizes="32x32" />
 <link rel="icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-192x192.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-180x180.png" />
 
-<div style="color: black; font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;">
+<div class="noprint" style="color:black; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;">
 	<table style="width: 100%; border: none; margin-bottom: 6px; padding: 0px; border-spacing: 0px; border-collapse: separate;" role="presentation">
 		<tr style="width: 33%; border: none">
 			<td style="border: none;">
@@ -49,6 +49,39 @@
 
 <script>
 var lastTimeout;
+
+window.addEventListener("load", function(){
+	var n = 0;
+	var s = "";
+	var iss;
+	var p;
+
+	var edits = document.getElementsByTagName('ins');
+	for (n = 0, nEdits = edits.length; n < nEdits; n++) {
+		iss = edits[n].getAttribute("data-issue").split(',');
+		for (let i in iss) {
+			s = "";
+			if (s != "") {
+				s = s + ", "; // add a gap between each URL
+			}
+			s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+		}
+		edits[n].insertAdjacentHTML("beforebegin", "<span class=\"permahint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
+	}
+
+	var edits = document.getElementsByTagName('del');
+	for (n = 0, nEdits = edits.length; n < nEdits; n++) {
+		iss = edits[n].getAttribute("data-issue").split(',');
+		for (let i in iss) {
+			s = "";
+			if (s != "") {
+				s = s + ", "; // add a gap between each URL
+			}
+			s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+		}
+		edits[n].insertAdjacentHTML("beforebegin", "<span class=\"permahint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
+	}
+});
 
 function mouseEnter(obj) {
 	clearTimeout(lastTimeout)

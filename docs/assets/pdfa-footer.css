@@ -1,3 +1,7 @@
+  @media print {
+    .noprint { visibility: none !important; }
+  }
+
   table tr:nth-child(even) {
   	background-color: initial; 
   }

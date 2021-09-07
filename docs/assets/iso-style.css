@@ -1,4 +1,8 @@
   /* use standardized HTML tags for deletion and insertion markup */ 
+  @media print {
+    .noprint { visibility: none !important; }
+  }
+
   del {
     background-color: seashell;
     color: darkred;
