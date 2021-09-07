@@ -59,27 +59,27 @@ window.addEventListener("load", function(){
 	var edits = document.getElementsByTagName('ins');
 	for (n = 0, nEdits = edits.length; n < nEdits; n++) {
 		iss = edits[n].getAttribute("data-issue").split(',');
+		s = "";
 		for (let i in iss) {
-			s = "";
 			if (s != "") {
 				s = s + ", "; // add a gap between each URL
 			}
 			s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
 		}
-		edits[n].insertAdjacentHTML("beforebegin", "<span class=\"permahint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
+		edits[n].insertAdjacentHTML("beforebegin", "<span style=\"onlyprint font-family:cursive;font-size:small\"> [" + s + "] </span>");
 	}
 
 	var edits = document.getElementsByTagName('del');
 	for (n = 0, nEdits = edits.length; n < nEdits; n++) {
 		iss = edits[n].getAttribute("data-issue").split(',');
+		s = "";
 		for (let i in iss) {
-			s = "";
 			if (s != "") {
 				s = s + ", "; // add a gap between each URL
 			}
 			s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
 		}
-		edits[n].insertAdjacentHTML("beforebegin", "<span class=\"permahint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
+		edits[n].insertAdjacentHTML("beforebegin", "<span style=\"onlyprint font-family:cursive;font-size:small\"> [" + s + "] </span>");
 	}
 });
 

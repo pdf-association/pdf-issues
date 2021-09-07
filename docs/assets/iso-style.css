@@ -1,8 +1,13 @@
-  /* use standardized HTML tags for deletion and insertion markup */ 
-  @media print {
-    .noprint { visibility: none !important; }
+  @media screen {
+    .onlyprint { display: none !important; }
   }
 
+  @media print {
+    .onlyprint { display: block !important; }
+    .noprint   { visibility: none !important; }
+  }
+
+  /* use standardized HTML tags for deletion and insertion markup */ 
   del {
     background-color: seashell;
     color: darkred;
