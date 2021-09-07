@@ -3,6 +3,11 @@
   }
 
   @media print {
+    header, footer { display: none !important; }
     .onlyprint { display: block !important; }
-    .noprint   { visibility: none !important; }
+    .noprint   { display: none !important; }
+  }
+  
+  @page {
+     margin: 2cm
   }
