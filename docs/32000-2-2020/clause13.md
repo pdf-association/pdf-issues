@@ -172,16 +172,16 @@ modified: 18 June 2021
     <th>Value</th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="49"><b>IV</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="49"><b>PV</b></ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="49">boolean</ins></td>
     <td>
 	<p>
-	<ins onMouseEnter="mouseEnter(this)" data-issue="49">(<i>Optional</i>>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible. If <i>false</i>, then the cutting plane shall not be visible.<br/>Default value: <i>true</i></ins>
+	<ins onMouseEnter="mouseEnter(this)" data-issue="49">(<i>Optional</i>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible. If <i>false</i>, then the cutting plane shall not be visible.<br/>Default value: <i>true</i></ins>
 	</p>
     </td>
   </tr>
   <tr>
-    <td><b>PV</b></td>
+    <td><b>IV</b></td>
     <td>boolean</td>
     <td>
 	<p>...</p>
