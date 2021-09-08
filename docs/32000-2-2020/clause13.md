@@ -130,16 +130,16 @@ define appearance streams or how appearance streams would be rendered onto the p
     <th>Value</th>
   </tr>
   <tr>
-    <td><span class="new-text"><b>IV</b><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/49" target="_blank">Issue #49</a></span></span></td>
+    <td><span class="new-text"><b>PV</b><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/49" target="_blank">Issue #49</a></span></span></td>
     <td><span class="new-text">boolean<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/49" target="_blank">Issue #49</a></span></span></td>
     <td>
-	<p><span class="new-text">(<i>Optional</i>>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible.
+	<p><span class="new-text">(<i>Optional</i>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible.
 	If <i>false</i>, then the cutting plane shall not be visible.<br/>
 	Default value: <i>true</i><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/49" target="_blank">Issue #49</a></span></span></p>
     </td>
   </tr>
   <tr>
-    <td><b>PV</b></td>
+    <td><b>IV</b></td>
     <td>boolean</td>
     <td>
 	<p>...</p>
