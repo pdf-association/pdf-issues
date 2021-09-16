@@ -102,7 +102,7 @@ The subsection shall begin with a line containing only two integers separated by
 
 <p>...</p>
 
-<p><span class="new-text">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.<a href="https://github.com/pdf-association/pdf-issues/issues/110" target="_blank">Issue #110</a></span></span></p>
+<p><span class="new-text">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/110" target="_blank">Issue #110</a></span></span></p>
 
 <p>...</p>
 
