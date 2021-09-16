@@ -86,10 +86,25 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p>...</p>
 
+<p>
+Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
+<span class="deleted-text">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/113" target="_blank">Issue #113</a></span></span>
+The subsection shall begin with a line containing only two integers separated by a SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
+</p>
+
+<p>...</p>
+
 <p><span class="new-text">EXAMPLE 2 The cross-reference table sub-section line should have just a single SPACE between "0" and "6".<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></p>
 
 <p><span class="new-text">EXAMPLE 3 The cross-reference table first sub-section line should have just a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/109" target="_blank">Issue #109</a></span></span></p>
 
+<h3>7.5.7 Object streams</h3>
+
+<p>...</p>
+
+<p><span class="new-text">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.<a href="https://github.com/pdf-association/pdf-issues/issues/110" target="_blank">Issue #110</a></span></span></p>
+
+<p>...</p>
 
 <h3>7.6.3 General encryption algorithm</h3>
 
@@ -192,6 +207,26 @@ there is no way to specify that metadata is to be left unencrypted in these case
   </tr>
 </table>
 
+
+<h3>7.7.2 Document catalog dictionary</h3>
+
+<table>
+  <caption id="Table29">Table 29 - Entries in the catalog dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Lang</b></td>
+    <td>text string</td>
+    <td>
+    <p>(<i>Optional; PDF 1.4</i>) A language identifier that shall specify the natural language for all text in the document except where overridden by language specifications for structure elements or marked-content (see 14.9.2, "Natural language specification"). If this entry is absent
+    <span class="new-text"> or invalid (see 14.9.2, "Natural language specification")<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/105" target="_blank">Issue #105</a></span></span>, the language shall be considered unknown.
+    </p>
+    </td>
+  </tr>
+</table>
 
 <h4>7.7.3.3 Page objects</h4>
 
