@@ -29,6 +29,8 @@ modified: 30 July 2021
    <ul>
     <li><a href="#H7.5.4">7.5.4 Cross reference table</a>
     </li>
+    <li><a href="#H7.5.7">7.5.7 Object streams</a>
+    </li>
    </ul>
   </li>
   <li>7.6 Encryption
@@ -65,6 +67,8 @@ modified: 30 July 2021
   </li>
   <li>7.7 Document structure
    <ul>
+    <li><a href="#H7.7.2">7.7.2 Document catalog dictionary</a>
+    </li>
     <li>7.7.3 Page tree
      <ul>
       <li><a href="#H7.7.3.3">7.7.3.3 Page objects</a>
@@ -198,10 +202,26 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p>...</p>
 
+<p>
+Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
+<del onMouseEnter="mouseEnter(this)" data-issue="113">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.</del>
+The subsection shall begin with a line containing only two integers separated by a SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
+</p>
+
+<p>...</p>
+
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 2 The cross-reference table sub-section line should have just a single SPACE between "0" and "6".</ins></p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 3 The cross-reference table first sub-section line should have just a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.</ins></p>
 
+
+<h3 id="H7.5.7">7.5.7 Object streams</h3>
+
+<p>...</p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins></p>
+
+<p>...</p>
 
 <h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
 
@@ -312,9 +332,31 @@ there is no way to specify that metadata is to be left unencrypted in these case
   </tr>
 </table>
 
+<h2 id="H7.7">7.7 Document structure</h2>
+
+<h3 id="H7.7.2">7.7.2 Document catalog dictionary</h3>
+
+<table>
+  <caption id="Table29">Table 29 - Entries in the catalog dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Lang</b></td>
+    <td>text string</td>
+    <td>
+    <p>(<i>Optional; PDF 1.4</i>) A language identifier that shall specify the natural language for all text in the document except where overridden by language specifications for structure elements or marked-content (see 14.9.2, "Natural language specification"). If this entry is absent
+    <ins onMouseEnter="mouseEnter(this)" data-issue="105"> or invalid (see 14.9.2, "Natural language specification")</ins>, the language shall be considered unknown.
+    </p>
+    </td>
+  </tr>
+</table>
+
+<h3 id="H7.7.3">7.7.3 Page tree</h3>
 
 <h4 id="H7.7.3.3">7.7.3.3 Page objects</h4>
-
 
 <table>
   <caption id="Table31">Table 31 - Entries in a page object</caption>
