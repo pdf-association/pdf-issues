@@ -231,7 +231,7 @@ The subsection shall begin with a line containing only two integers separated by
 
 <p>...</p>
 
-<p>NOTE 1 The name RC4™ is a registered trademark of RSA Security Inc. and cannot be used by third parties creating implementations of the algorithm. Proprietary implementations of the RC4 encryption algorithm are available under license from RSA Security Inc. For licensing information, contact: <del onMouseEnter="mouseEnter(this)" data-issue="95">RSA Security Inc. 2955 Campus Drive, Suite 400, San Mateo, CA 94403-2507, USA, or</del> <a href="http://www.rsasecurity.com/">http://www.rsasecurity.com/</a>.</p>
+<p class="hangingindent">NOTE 1 The name RC4&trade; is a registered trademark of RSA Security Inc. and cannot be used by third parties creating implementations of the algorithm. Proprietary implementations of the RC4 encryption algorithm are available under license from RSA Security Inc. For licensing information, contact: <del onMouseEnter="mouseEnter(this)" data-issue="95">RSA Security Inc. 2955 Campus Drive, Suite 400, San Mateo, CA 94403-2507, USA, or</del> <a href="http://www.rsasecurity.com/">http://www.rsasecurity.com/</a>.</p>
 
 <p>...</p>
 
@@ -440,7 +440,7 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
-<p><del onMouseEnter="mouseEnter(this)" data-issue="96">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.</del></p>
+<p class="hangingindent"><del onMouseEnter="mouseEnter(this)" data-issue="96">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.</del></p>
 
 
 <h3 id="H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</h3>

@@ -118,7 +118,7 @@ modified: 30 July 2021
 
 <p>...</p>
 
-<p>
+<p class="hangingindent">
 NOTE The exact set of rendering intents supported can vary from one output device to another; a particular device
 <del onMouseEnter="mouseEnter(this)" data-issue="63">does not have to support all PDF rendering intents and</del>
 can support additional ones beyond those listed in the table above.
@@ -220,7 +220,7 @@ Entries other than those listed shall be ignored.
 
 <p>...</p>
 
-<p>
+<p class="hangingindent">
 <del onMouseEnter="mouseEnter(this)" data-issue="19">
 NOTE 3 The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
 identify the corresponding colour spaces directly; they never refer to resources in the <b>ColorSpace</b> subdictionary.</del>

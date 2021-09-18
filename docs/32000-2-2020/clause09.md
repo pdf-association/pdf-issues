@@ -91,7 +91,7 @@ modified: 18 June 2021
 
 <p>...</p>
 
-<p>
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="47,48">NOTE: </ins>
 In PDF 1.0 to PDF 1.7, the <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> (see "Table 109 - Entries in a Type 1 font dictionary") were
 optional in Type 1 font dictionaries for the standard 14 fonts. PDF processors supporting PDF 1.0 to PDF 1.7 files

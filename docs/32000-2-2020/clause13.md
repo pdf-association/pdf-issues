@@ -230,7 +230,7 @@ modified: 18 June 2021
     <ins onMouseEnter="mouseEnter(this)" data-issue="58">may also be</ins>
     referenced in the <b>Assets</b> name tree specified in the RichMediaContent dictionary of the annotation.
     </p>
-    <p>
+    <p class="hangingindent">
     <ins onMouseEnter="mouseEnter(this)" data-issue="58">NOTE the RichMedia asset itself is not referenced by name, however other assets may be referenced from the RichMedia asset by name and thus need to be in the <b>Assets</b> name tree.</ins>
     </p>
     </td>

@@ -235,12 +235,12 @@ shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b
 and <b>Sy</b> keys.
 </p>
 
-<p>
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="34">NOTE 1 Some of these keys are only relevant to certain annotation subtypes as described in the following subclauses.</ins>
 </p>
 
 
-<p>
+<p class="hangingindent">
 NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34">2</ins> Requiring an appearance dictionary for each annotation ensures the reliable rendering of the annotations.
 <ins onMouseEnter="mouseEnter(this)" data-issue="34">When an appearance dictionary is not present, the rendered appearance will be implementation dependent.</ins>
 </p>
@@ -280,8 +280,8 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
     If this entry is not present, or the PDF processor does not recognise it, or if any coordinates in the <b>QuadPoints</b> array lie outside the region specified by
     <b>Rect</b> then the activation region for the link annotation shall be defined by its <b>Rect</b> entry.
     </p>
-    <p><ins onMouseEnter="mouseEnter(this)" data-issue="17">NOTE 1 When <b>QuadPoints</b> is used, the activation area and the visual appearance (including border) of the link annotation are not required to be the same.</ins></p>
-    <p>NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="17">2</ins> The last paragraph above was clarified in this document (2020).</p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="17">NOTE 1 When <b>QuadPoints</b> is used, the activation area and the visual appearance (including border) of the link annotation are not required to be the same.</ins></p>
+    <p class="hangingindent">NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="17">2</ins> The last paragraph above was clarified in this document (2020).</p>
     </td>
   </tr>
 </table>
@@ -369,8 +369,9 @@ However, a projection annotation is only valid within the context of an associat
   <tr>
     <td><b>AddRevInfo</b></td>
     <td>boolean</td>
-    <td>NOTE 3 <del onMouseEnter="mouseEnter(this)" data-issue="4"><i>adbe.pkcs7.detached</i></del> <ins onMouseEnter="mouseEnter(this)" data-issue="4"><i>adbe.x509.rsa_sha1</i></ins>
-    and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.</td>
+    <td><p  class="hangingindent">
+    NOTE 3 <del onMouseEnter="mouseEnter(this)" data-issue="4"><i>adbe.pkcs7.detached</i></del> <ins onMouseEnter="mouseEnter(this)" data-issue="4"><i>adbe.x509.rsa_sha1</i></ins>
+    and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.</p></td>
   </tr>
 </table>
 
@@ -411,7 +412,8 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>byte string or array</td>
     <td>
     <p>...</p>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="4">NOTE <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.</ins></td>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="4">NOTE <i>adbe.x509.rsa_sha1</i> and <i>adbe.pkcs7.sha1</i> are deprecated in PDF 2.0.</ins></p>
+    </td>
   </tr>
 </table>
 

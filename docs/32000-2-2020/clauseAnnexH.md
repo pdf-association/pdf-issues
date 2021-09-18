@@ -34,7 +34,7 @@ The <b>TOCI</b> value specifies an individual member of a table of contents. The
 are individual members of the table of contents and/or lists of table of contents items. (The trailing character in <b>TOCI</b> is an upper case "i".)
 </p>
 
-<p>
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="62">NOTE the following example uses <b>Reference</b>, <b>TOC</b> and <b>TOCI</b> structure elements which are
 part of the <i>standard structure namespace for PDF 1.7</i> and are entirely valid for use in PDF 2.0 under the <i>default standard structure namespace</i>
 (see 14.8.6, "Standard structure namespaces").</ins>

@@ -98,7 +98,7 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
   </tr>
 </table>
 
-<p>
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="69"> NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
 </p>
 
@@ -186,9 +186,9 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
     The <b>Caption</b> shall be the first or the last structure element inside its parent structure element. The number of captions cannot exceed 1.
     </p>
     <p>While captions are often used with figures or formulas, they may be associated with any type of content.</p>
-    <p>NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="35">1</ins> In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each
+    <p class="hangingindent">NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="35">1</ins> In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each
     be accompanied by a caption, and the group of these images as a whole is accompanied by a caption as well.</p>
-    <p>
+    <p class="hangingindent">
     <ins onMouseEnter="mouseEnter(this)" data-issue="35">NOTE 2 If an <b>Artifact</b> structure element is present, and needs to be associated with a <b>Caption</b>, then the <b>Artifact</b> structure element needs to be a descendent of the <b>Caption</b>.</ins>
     </p>
     </td>
@@ -202,7 +202,7 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
 
 <p>The term <i>standard structure namespaces</i> refers to either of the two namespaces defined above.</p>
 
-<p>
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="8"> NOTE: Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
 </p>
 
@@ -245,7 +245,7 @@ endobj
 
 <p>...</p>
 
-<p>NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
+<p class="hangingindent">NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="72">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</del>
