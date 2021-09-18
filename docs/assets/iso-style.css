@@ -69,13 +69,13 @@
 
   /* Deeply nested headings get smaller than body text so fix */
   .isostyle h5 {
-    font-weight: 500; font-size: 16px;
+    font-weight: 600; font-size: 16px;
   }
   .isostyle h6 {
-    font-weight: 500; font-size: 15px;
+    font-weight: 600; font-size: 15px;
   }
   .isostyle h7 {
-    font-weight: 500; font-size: 15px;
+    font-weight: 600; font-size: 15px;
   }
   
   /* Avoid dual H1 tags - but make it look like an ISO doc */
@@ -120,3 +120,8 @@
     padding: 0px 0px;
     white-space: pre;
   }
+  
+  .isostyle .hangingindent {
+    padding-left: 40px;
+    text-indent: -40px;
+} 
