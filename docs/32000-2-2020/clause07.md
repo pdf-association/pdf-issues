@@ -45,6 +45,8 @@ modified: 30 July 2021
      <ul>
       <li><a href="#H7.6.4.1">7.6.4.1 General</a>
        <ul>
+        <li><a href="#H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</a>
+        </li>
         <li><a href="#H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</a>
         </li>
         <li><a href="#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
@@ -255,7 +257,20 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p>...</p>
 
+<h5 id="H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</h5>
+
+<p>...</p>
+
+<p>NOTE 2  The first element of the ID array, as used in 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", step e, generally remains unchanged across revisions of a given document. However, since this is not guaranteed, use of the ID in computation of the file encryption key, as required when using <del onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.3, "Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</del> <ins onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</ins>, can complicate updates to the document. For this reason, security handlers are encouraged to use Algorithm 2.A or higher, which do not use the ID in file encryption key computation. <del onMouseEnter="mouseEnter(this)" data-issue="53">This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described below.</del>
+</p>
+
+<p>
+<ins onMouseEnter="mouseEnter(this)" data-issue="53">NOTE 3  This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described in 7.6.4.4, "Password algorithms".</ins>
+</p>
+
 <h5 id="H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
+
+<p>...</p<
 
 <ol type="a" start="6">
 <li>
@@ -263,6 +278,10 @@ Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <del onMouseEn
 and the file encryption key as the key. ...
 </li>
 </ol>
+
+<p>
+<ins onMouseEnter="mouseEnter(this)" data-issue="53">NOTE This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.3, "Algorithm 1.A: Encryption of data using the AES algorithms". Parts of this algorithm are also used in the algorithms described in 7.6.4.4, "Password algorithms".</ins>
+</p>
 
 <h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
