@@ -221,7 +221,7 @@ The subsection shall begin with a line containing only two integers separated by
 
 <p>...</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins></p>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins></p>
 
 <p>...</p>
 
@@ -261,10 +261,10 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p>...</p>
 
-<p style="hangingindent">NOTE 2  The first element of the ID array, as used in 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", step e, generally remains unchanged across revisions of a given document. However, since this is not guaranteed, use of the ID in computation of the file encryption key, as required when using <del onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.3, "Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</del> <ins onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</ins>, can complicate updates to the document. For this reason, security handlers are encouraged to use Algorithm 2.A or higher, which do not use the ID in file encryption key computation. <del onMouseEnter="mouseEnter(this)" data-issue="53">This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described below.</del>
+<p class="hangingindent">NOTE 2  The first element of the ID array, as used in 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", step e, generally remains unchanged across revisions of a given document. However, since this is not guaranteed, use of the ID in computation of the file encryption key, as required when using <del onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.3, "Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</del> <ins onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</ins>, can complicate updates to the document. For this reason, security handlers are encouraged to use Algorithm 2.A or higher, which do not use the ID in file encryption key computation. <del onMouseEnter="mouseEnter(this)" data-issue="53">This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described below.</del>
 </p>
 
-<p style="hangingindent">
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="53">NOTE 3  This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described in 7.6.4.4, "Password algorithms".</ins>
 </p>
 
@@ -279,7 +279,7 @@ and the file encryption key as the key. ...
 </li>
 </ol>
 
-<p style="hangingindent">
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="53">NOTE This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.3, "Algorithm 1.A: Encryption of data using the AES algorithms". Parts of this algorithm are also used in the algorithms described in 7.6.4.4, "Password algorithms".</ins>
 </p>
 
@@ -306,14 +306,14 @@ and the file encryption key as the key. ...
 <p><i>New notes added at the end of sub-clause 7.6.5.3:</i></p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="25">
-<p>NOTE 1: This means that step c) only applies when both of the following conditions are met:</p>
+<p class="hangingindent">NOTE 1: This means that step c) only applies when both of the following conditions are met:</p>
 
 <ul>
 <li>the key is being generated for the crypt filter named <i>DefaultCryptFilter</i> (i.e. the crypt filter used as the value for <b>StmF</b> in the encryption dictionary);</li>
 <li>the <b>EncryptMetadata</b> entry of the associated crypt filter dictionary is set to <i>false</i>.</li>
 </ul>
 
-<p>
+<p class="hangingindent">
 NOTE 2: Since crypt filters are not supported when <b>SubFilter</b> is set to <i>adbe.pkcs7.s3</i> or <i>adbe.pkcs7.s4</i> in the encryption dictionary,
 there is no way to specify that metadata is to be left unencrypted in these cases. In particular, step c) is always skipped for these <b>SubFilter</b> values.
 </p>
@@ -389,7 +389,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td>stream or array</td>
     <td>
     <p>(<i>Optional</i>) A content stream (see 7.8.2, "Content streams") that shall describe the contents of this page. If this entry is absent, the page shall be empty.</p>
-    <p><ins onMouseEnter="mouseEnter(this)" data-issue="81">NOTE: if the <b>Contents</b> key is not present, a <b>Resources</b> dictionary must still be present, either directly or through inheritance, in the pages tree.</ins></p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="81">NOTE: if the <b>Contents</b> key is not present, a <b>Resources</b> dictionary must still be present, either directly or through inheritance, in the pages tree.</ins></p>
     <p>...</p>
     </td>
   </tr>
