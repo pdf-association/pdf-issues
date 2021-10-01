@@ -56,11 +56,12 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 - The simulated "track changes" is achieved via HTML5 `del` and `ins` tags, styled by CSS in `assets/iso-style.css`.
 
 - Each `clauseXXX.md` file needs to start with the following structure: a local ToC for just this clause (if required); the ISO stylesheet, the hidden `div` used to display the popups, a fake H1 for the start of the clause:
-    ```html
+
+```html
 <ul>
-    <li><a href="#Hx.y.z">x.y.z AAA BBB CCC</a></li>
+	<li><a href="#Hx.y.z">x.y.z AAA BBB CCC</a></li>
 </ul>
-<hr>
+<hr>;
 
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
@@ -71,7 +72,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="H4.1">4.1 General</h2>
-    ```
+```
 
 
 - The popup tooltips which state the pdf-issues Issue number and provide clickable URLs back to GitHub (e.g. "Issue #12") are achieved via `onMouseEnter` JavaScript that reads the custom attribute `issue` on the HTML5 `del` and `ins` tags. `del` tags occur first, then `ins` for changes on existing text. For changes with multiple Issues, comma separate the issue numbers (e.g. `issue="3,5,7"`). The JavaScript and CSS styling will then be merged by Jeykll.
