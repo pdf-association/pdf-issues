@@ -207,14 +207,14 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 <p>
 Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
 <del onMouseEnter="mouseEnter(this)" data-issue="113">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.</del>
-The subsection shall begin with a line containing only two integers separated by a SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
+The subsection shall begin with a line containing only two integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
 </p>
 
 <p>...</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 2 The cross-reference table sub-section line should have just a single SPACE between "0" and "6".</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 2 The cross-reference table sub-section line requires a single SPACE between "0" and "6".</ins></p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 3 The cross-reference table first sub-section line should have just a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 3 The cross-reference table first sub-section line requires a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.</ins></p>
 
 
 <h3 id="H7.5.7">7.5.7 Object streams</h3>
