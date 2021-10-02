@@ -116,6 +116,8 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 - If there are any issues when incorporated into the iframes used by pdfa.org, also check the direct GitHub Jekkll site at [https://pdf-association.github.io/pdf-issues/](https://pdf-association.github.io/pdf-issues/)
 
+- And don't forget to update the [Arlington PDF Model](https://github.com/pdf-association/arlington-pdf-model) for any required edits. This will be in the `tsv/latest` folder but also the XML and TSV file sets for earlier PDF versions.
+
 # Scripting GitHub pdf-issues
 
 For tweeting or other purposes, here are some basic starting points for automated bulk data extraction:
