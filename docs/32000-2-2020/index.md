@@ -46,7 +46,9 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table177">Table 177 - Additional entries specific to a free text annotation</a></li>
 <li><a href="clause12.html#Table226">Table 226 - Entries common to all field dictionaries</a></li>
 <li><a href="clause12.html#Table237">Table 237 - Entries in a signature field seed value dictionary</a></li>
+<li><a href="clause12.html#Table239">Table 239 - Additional entries specific to a submit-form action</a></li>
 <li><a href="clause12.html#Table255">Table 255 - Entries in a signature dictionary</a></li>
+<li><a href="clause12.html#Table256">Table 256 - Entries in a signature reference dictionary</a></li>
 <li><a href="clause12.html#Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</a></li>
 <li><a href="clause12.html#Table260">Table 260 - SubFilter value algorithm support</a></li>
 <li><a href="clause13.html#Table311">Table 311 - Entries in a 3D stream dictionary</a></li>

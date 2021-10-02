@@ -57,6 +57,12 @@ modified: 30 July 2021
      </li>
     </ul>
    </li>
+   <li>12.7.6 Form actions
+    <ul>
+     <li><a href="#H12.7.6.2">12.7.6.2 Submit-form action</a>
+     </li>
+    </ul>
+   </li>
    <li><a href="#H12.7.9">12.7.9 Non-interactive forms</a>
    </li>
   </ul>
@@ -375,6 +381,32 @@ However, a projection annotation is only valid within the context of an associat
   </tr>
 </table>
 
+<h3 id="H12.7.6">12.7.6 Form actions</h3>
+
+<h4 id="H12.7.6.2">12.7.6.2 Submit-form action</h4>
+
+<table>
+  <caption id="Table239">Table 239 - Additional entries specific to a submit-form action</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Flags</b></td>
+    <td>integer</td>
+    <td>
+    <p>(<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="122">; inheritable</del></i>) ... </p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>CharSet</b></td>
+    <td>string</td>
+    <td>
+    <p>(<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="122">; inheritable</del></i>) ... </p>
+    </td>
+  </tr>
+</table>
 
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
@@ -408,6 +440,13 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>Filter</b></td>
+    <td>name</td>
+    <td>
+    <p>(<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="121">; inheritable</del></i>) ... </p>
+    </td>
+  </tr>
+  <tr>
     <td><b>Cert</b></td>
     <td>byte string or array</td>
     <td>
@@ -417,6 +456,23 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
   </tr>
 </table>
 
+<p>...</p>
+
+<table>
+  <caption id="Table256">Table 256 - Entries in a signature reference dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>DigestMethod</b></td>
+    <td>name</td>
+    <td>
+    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="171">Required</del><ins onMouseEnter="mouseEnter(this)" data-issue="171">Optional; deprecated in PDF 2.0</ins></i>) ... </p>
+    </td>
+  </tr>
+</table>
 
 <h4 id="H12.8.2.4">12.8.2.4 FieldMDP</h4>
 
