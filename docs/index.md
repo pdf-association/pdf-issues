@@ -3,7 +3,7 @@ title: Overview
 modified: 11 August 2021
 ---
 
-<link rel="stylesheet" href="assets/iso-style.css">
+<link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
 <div class="github-wp">
 
 <p>

@@ -66,5 +66,5 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 </ul>
 
 <hr>
-<link rel="stylesheet" href="../assets/iso-style.css">
+<link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
 <p class="footnote">Last modified: {{ page.modified }}</p>
