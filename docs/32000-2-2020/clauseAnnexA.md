@@ -3,18 +3,27 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex A
 title: (informative) Operator Summary
+modified: 30 July 2021
 ---
 
-{% include iso-style.html %}
+<ul>
+    <li><a href="clauseAnnexA#HA.2">A.2 PDF content stream operators</a>
+    </li>
+</ul>
+<hr>
+
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+	Issue #xxxx
+</div>
 
-<h1>{{ page.clause }}. {{ page.title }}</h1>
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-
-<h2>A.2 PDF content stream operators</h2>
+<h2 id="HA.2">A.2 PDF content stream operators</h2>
 
 <table>
-  <caption>Table A.1 - PDF content stream operators</caption>
+  <caption id="TableA.1">Table A.1 - PDF content stream operators</caption>
   <tr>
     <th>Operator</th>
     <th>PostScript Equivalent</th>
@@ -26,8 +35,8 @@ title: (informative) Operator Summary
     <td></td>
     <td>(<i>PDF 1.2</i>) Begin marked-content sequence</td>
     <td>
-      <span class="deleted-text">"Table 351 - Entries in a data dictionary"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/108">Issue #108</a></span></span>
-      <span class="new-text">"Table 352 - Marked-content operators"<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/108">Issue #108</a></span></span>
+      <del onMouseEnter="mouseEnter(this)" data-issue="108">"Table 351 - Entries in a data dictionary"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="108">"Table 352 - Marked-content operators"</ins>
     </td>
   </tr>
   <tr>
@@ -41,8 +50,8 @@ title: (informative) Operator Summary
     <td><b>curveto</b></td>
     <td>Append curved segment to path (three control points)</td>
     <td>
-      <span class="deleted-text">"Table 60 - Clipping path operators"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75">Issue #75</a></span></span>
-      <span class="new-text">"Table 58 - Path construction operators"<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/75">Issue #75</a></span></span>
+      <del onMouseEnter="mouseEnter(this)" data-issue="75">"Table 60 - Clipping path operators"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="75">"Table 58 - Path construction operators"</ins>
     </td>
   </tr>
 </table>
@@ -52,4 +61,4 @@ title: (informative) Operator Summary
 
 
 <hr>
-<p class="footnote">Last modified: 30 July 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>

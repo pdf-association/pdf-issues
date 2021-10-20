@@ -1,0 +1,127 @@
+  @media screen {
+    .onlyprint { display: none !important; }
+  }
+
+  @media print {
+    .onlyprint { display: block !important; }
+    .noprint   { visibility: none !important; }
+  }
+
+  /* use standardized HTML tags for deletion and insertion markup */ 
+  del {
+    background-color: seashell;
+    color: darkred;
+    text-decoration: line-through;
+    text-decoration-color: red;
+  }
+  del:hover { background-color: #ffbfbf; }
+
+  ins {
+    background-color: lightyellow;
+    color: green;
+    text-decoration-style: double;
+    text-decoration-color: green;
+  }
+  ins:hover { background-color: #ffff66; }
+  
+  /* URL links */
+  a { 
+     color: mediumblue; 
+  }
+  a:hover {
+     color: #d03f4e; 
+     font-weight: bold;
+  }
+
+  .footnote {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 80%;
+    color: #747474; /* darkish gray */
+  }
+
+/* ISO style to mimic ISO documents */
+
+  .isostyle {
+    font-family: Cambria, Georgia, serif;
+  }
+  
+  .isostyle .fixedpopup {
+    visibility: hidden;
+    position: fixed;
+    float:right;
+    right: 10px;
+    min-height: 16px;
+    width: 86px;
+    background-color: #f1f1f1;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 4px;
+    padding: 2px 1px;
+    box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links to Issues in GitHub */
+  .fixedpopup a {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Deeply nested headings get smaller than body text so fix */
+  .isostyle h5 {
+    font-weight: 600; font-size: 16px;
+  }
+  .isostyle h6 {
+    font-weight: 600; font-size: 15px;
+  }
+  .isostyle h7 {
+    font-weight: 600; font-size: 15px;
+  }
+  
+  /* Avoid dual H1 tags - but make it look like an ISO doc */
+  .fake-h1 {
+    font-weight: 400; 
+    font-size: 32px; 
+    margin-bottom: 15px;
+  }
+
+  .isostyle table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+  .isostyle caption {
+    font-weight: bold;
+  }
+
+  .isostyle th {
+    text-align: left;
+    border-collapse: collapse;
+    border: 1px solid black;
+    border-top: solid thick;
+    border-bottom: solid thick;
+  }
+
+  .isostyle td {
+    text-align: left;
+    min-width: 50px;
+    max-width: 500px;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+  .isostyle code {
+    font-family: monospace;
+    font-size: smaller;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 0px;
+    white-space: pre;
+  }
+  
+  .isostyle .hangingindent {
+    padding-left: 40px;
+    text-indent: -40px;
+  } 

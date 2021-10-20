@@ -1,0 +1,13 @@
+  @media print {
+    .noprint { visibility: none !important; }
+  }
+
+  table tr:nth-child(even) {
+  	background-color: initial; 
+  }
+  
+  table th, table td { 
+  	padding: 4px 4px; 
+  	border-spacing: 0px; 
+  	border-collapse: separate; 
+  } 

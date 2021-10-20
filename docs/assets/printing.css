@@ -1,0 +1,13 @@
+  @media screen {
+    .onlyprint { display: none !important; }
+  }
+
+  @media print {
+    header, footer { display: none !important; }
+    .onlyprint { display: block !important; }
+    .noprint   { display: none !important; }
+  }
+  
+  @page {
+     margin: 2cm
+  }

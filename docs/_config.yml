@@ -13,18 +13,59 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: PDF 2.0 Issues
-email: info@pdfa.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Industry-based resolutions for issues reported against all PDF 2.0 (ISO 32000-2:2020) related published ISO standards. 
-baseurl: /pdf-issues # the subpath of your site, e.g. /blog
-url: "https://pdf-association.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: PDFAssociation
-github_username:  pdf-association
 
+title: Industry resolutions for PDF 2.0-based issues
+
+author:
+  name: "info@pdfa.com"
+  email: info@pdfa.com
+  
+name: "info@pdfa.com"
+email: info@pdfa.com
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Industry-agreed resolutions for issues reported against all PDF 2.0 (ISO 32000-2:2020) related published ISO standards. 
+
+baseurl: / # the subpath of your site, e.g. /blog
+
+url: "https://pdf-issues.pdfa.org" # the base hostname & protocol for your site, e.g. http://example.com
+
+logo: https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo.png
+
+twitter:
+    username: PDFAssociation
+github:
+    username:  pdf-association
+
+show_excerpts: false
+
+#theme: jekyll-theme-minimal
+theme: minima
+
+# See https://github.com/jekyll/minima
+minima:
+  google_analytics: UA-1991880-1
+  date_format: "%e %B %Y"
+  social_links:
+    twitter: PDFAssociation
+    github: pdf-association
+    facebook: PDFassociation
+    linkedin: pdf-association
+    youtube: ThePDFAssociation
+    twitter:
+      username: PDFAssociation
+    github:
+      username: pdf-association
+    
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-minimal
+
+header_pages:
+    - 32000-2-2020/index.md
+    - 19005-4-2020/index.md
+    - 15930-9-2020/index.md
+    - 16612-3-2020/index.md
+    - 21757-1-2020/index.md
 
 # plugins:
 #  - jekyll-feed

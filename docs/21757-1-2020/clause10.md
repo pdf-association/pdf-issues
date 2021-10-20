@@ -3,56 +3,72 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 clause: 10
 title: ECMAScript API
+modified: 19 June 2021
 ---
 
-{% include iso-style.html %}
+<ul>
+    <li><a href="#H10.1">10.1 General</a>
+    </li>
+    <li>10.2 Annotation
+        <ul>
+            <li><a href="#H10.2.2">10.2.2 Annotation types</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<hr>
+
+<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+	Issue #xxxx
+</div>
 
 
-<h1>{{ page.clause }}. {{ page.title }}</h1>
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<h2>10.1 General</h2>
+<h2 id="H10.1">10.1 General</h2>
 
 <p>...</p>
 
 <p>
-<span class="deleted-text">More information regarding the ECMAScript core can be found in ISO/IEC 22537.<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/70" target="_blank">Issue #70</a></span></span>
+<del onMouseEnter="mouseEnter(this)" data-issue="70">More information regarding the ECMAScript core can be found in ISO/IEC 22537.</del>
 </p>
 
-<h2>10.2 Annotation</h2>
+<h2 id="H10.2">10.2 Annotation</h2>
 
 <p>...</p>
 
-<h3>10.2.2 Annotation types</h3>
+<h3 id="H10.2.2">10.2.2 Annotation types</h3>
 
 <p>...</p>
 
 <table style="border: none;">
 <tr style="border: none;">
-	<td><span class="new-text">Sound<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-	<td><span class="new-text">Deprecated in ISO 32000-2<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="82">Sound</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2</ins></td>
 </tr>
 <tr style="border: none;">
-	<td><span class="deleted-text">PrinterMark<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-	<td><span class="deleted-text">Deprecated in ISO 32000-2<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">PrinterMark</del></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2</del></td>
 </tr>
 <tr style="border: none;">
-	<td><span class="deleted-text">Screen<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-	<td><span class="deleted-text">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">Screen</del></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)</del></td>
 </tr>
 </table>
 
 <p>...</p>
 
 <table>
-  <caption>Table 1 - Annotation types and their properties</caption>
+  <caption id="Table1">Table 1 - Annotation types and their properties</caption>
   <tr>
     <th>Annotation type</th>
     <th>Properties</th>
   </tr>
   <tr>
-    <td>Sound<span class="new-text"><i>(deprecated in PDF 2.0)</i><span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/82" target="_blank">Issue #82</a></span></span></td>
-    <td><tt style="font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</tt></td>
+    <td>Sound <ins onMouseEnter="mouseEnter(this)" data-issue="82"><i>(deprecated in PDF 2.0)</i></ins></td>
+    <td style="font-family: monospace; font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</td>
   </tr>
 </table>
 
@@ -60,4 +76,4 @@ title: ECMAScript API
 
 
 <hr>
-<p class="footnote">Last modified: 19 June 2021</p>
+<p class="footnote">Last modified: {{page.modified}}</p>
