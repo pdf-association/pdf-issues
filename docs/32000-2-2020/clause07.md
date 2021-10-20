@@ -221,6 +221,7 @@ The subsection shall begin with a line containing only two integers separated by
 
 <p>...</p>
 
+
 <p>The following objects shall not be stored in an object stream:</p>
 
 <ul>
@@ -228,10 +229,6 @@ The subsection shall begin with a line containing only two integers separated by
   <li>An object representing the value of the <b>Length</b> entry in an object stream dictionary</li>
   <li><ins onMouseEnter="mouseEnter(this)" data-issue="114">Any entry's value in an <b>ObjStm</b> dictionary shall be either a direct object or an indirect uncompressed object.</ins></li>
 </ul>
-
-<p>...</p>
-
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins></p>
 
 <p>...</p>
 
@@ -281,6 +278,7 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 <h5 id="H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
 
 <p>...</p>
+
 
 <ol type="a" start="6">
 <li>
