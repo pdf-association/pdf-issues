@@ -24,20 +24,20 @@ Resolutions proposed here are **not** officially authorized by the [ISO working 
 1. Open a new GitHub Issue. Clearly explain the mistake you have found in a published ISO PDF 2.0-based standard, or the feature you would like to see in a future version.
 2. The community can discuss and contribute to open issues here in GitHub, and work towards a proposed resolution.
 3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for each proposed resolution. Issues related to PDF subset standards may also get passed on to other TWGs.
-4. Each issue will be updated with the agreed resolution and then Closed by moderators once the resolution is published at [https://www.pdfa.org/pdf-issues/](https://www.pdfa.org/pdf-issues/).
+4. Each issue will be updated with the agreed resolution and then Closed by moderators once the resolution is published at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
 
-A full list of all industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://www.pdfa.org/pdf-issues/](https://www.pdfa.org/pdf-issues/).
+A full list of all industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
 
 ## Directly referencing resolutions
 
-Errata can always be referred by the appropriate GitHub issue numbers(s). Resolutions are published to a set of static URLs at [https://www.pdfa.org/pdf-issues/](https://www.pdfa.org/pdf-issues/) of the form `<standard-number>/clause<clause-number>.html`. Each of these resolution pages also includes anchor points for all Headings (`#Hx.y.z` anchors to heading X.Y.Z in the appropriate ISO standard) and Tables (`#TableXXX` anchors to Table XXX in the appropriate ISO standard). This allows very precise linkages to final resolution outcomes, without scrolling through long technical GitHub discussions.
+Errata can always be referred by the appropriate GitHub issue numbers(s). Resolutions are published to a set of static URLs at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/) of the form `<standard-number>/clause<clause-number>.html`. Each of these resolution pages also includes anchor points for all Headings (`#Hx.y.z` anchors to heading X.Y.Z in the appropriate ISO standard) and Tables (`#TableXXX` anchors to Table XXX in the appropriate ISO standard). This allows very precise linkages to final resolution outcomes, without scrolling through long technical GitHub discussions.
 
 For example:
 
-- [https://pdfa.org/pdf-issues/21757-1-2020/](https://pdfa.org/pdf-issues/21757-1-2020/) links directly to every resolution in ISO 21757-1:2020 ECMAscript for PDF 2.0.
-- [https://pdfa.org/pdf-issues/32000-2-2020/clauseAnnexQ.html](https://pdfa.org/pdf-issues/32000-2-2020/clauseAnnexQ.html) links directly to all resolutions in Annex Q *(normative) Method for determining transparency on a page* of ISO 32000-2:2020 (PDF 2.0).
-- [https://pdfa.org/pdf-issues/32000-2-2020/clause12.html#H12.5.6.5](https://pdfa.org/pdf-issues/32000-2-2020/clause12.html#H12.5.6.5) links directly to all resolutions in ISO 32000-2:2020 (PDF 2.0) clause 12.5.6.5 *Link annotations*.
-- [https://pdfa.org/pdf-issues/32000-2-2020/clause08.html#Table87](https://pdfa.org/pdf-issues/32000-2-2020/clause08.html#Table87) links directly to all resolutions in ISO 32000-2:2020 (PDF 2.0) Table 87 - *Additional entries specific to an image dictionary*.
+- [https://pdf-issues.pdfa.org/21757-1-2020/](https://pdf-issues.pdfa.org/21757-1-2020/) links directly to every resolution in ISO 21757-1:2020 ECMAscript for PDF 2.0.
+- [https://pdf-issues.pdfa.org/32000-2-2020/clauseAnnexQ.html](https://pdf-issues.pdfa.org/32000-2-2020/clauseAnnexQ.html) links directly to all resolutions in Annex Q *(normative) Method for determining transparency on a page* of ISO 32000-2:2020 (PDF 2.0).
+- [https://pdf-issues.pdfa.org/32000-2-2020/clause12.html#H12.5.6.5](https://pdf-issues.pdfa.org/32000-2-2020/clause12.html#H12.5.6.5) links directly to all resolutions in ISO 32000-2:2020 (PDF 2.0) clause 12.5.6.5 *Link annotations*.
+- [https://pdf-issues.pdfa.org/32000-2-2020/clause08.html#Table87](https://pdf-issues.pdfa.org/32000-2-2020/clause08.html#Table87) links directly to all resolutions in ISO 32000-2:2020 (PDF 2.0) Table 87 - *Additional entries specific to an image dictionary*.
 
 ## Legal
 In contributing to this GitHub repository, you acknowledge that all content you share may be reproduced in whole or in part in future PDF Association publications, ISO standards or other deliverables. It is your responsibility in submitting such content to ensure that the agreement of any copyright holder has been obtained. More information about ISO contribution processes can be found [here](https://www.iso.org/publication/PUB100037.html).
