@@ -28,6 +28,8 @@ toc:
 
   - standard: ISO 19005-4:2020
     subfolderitems:
+      - ref: 'Clause 6: Technical requirements'
+        url:  clause06.html
 
   - standard: ISO 15930-9:2020
     subfolderitems:
