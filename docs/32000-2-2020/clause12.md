@@ -89,7 +89,7 @@ modified: 30 July 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
@@ -205,9 +205,8 @@ These descriptions assume the page is being viewed in the orientation specified 
 implemented by a software module called an annotation handler. A PDF processor shall provide annotation handlers for all of the conforming annotation types.
 The set of annotation types is extensible. An interactive PDF processor shall provide certain expected behaviour for all annotation types that it does not
 recognise, as documented in
-<span class="deleted-text">12.5.2, "Annotation dictionaries"<span class="deleted-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/1" target="_blank">Issue #1</a></span></span>
-<span class="new-text">12.5.5, "Appearance streams" and "Table 167 - Annotation flags" (bit positions 1 and 2)<span class="new-tooltiptext"><a href="https://github.com/pdf-association/pdf-issues/issues/1" target="_blank">Issue #1</a></span></span>
-.</p>
+<del onMouseEnter="mouseEnter(this)" data-issue="1">12.5.2, "Annotation dictionaries"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="1">12.5.5, "Appearance streams" and "Table 167 - Annotation flags" (bit positions 1 and 2)</ins>.</p>
 
 <h2 id="H12.5">12.5 Annotations</h2>
 
