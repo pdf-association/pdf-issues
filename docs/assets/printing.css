@@ -6,6 +6,10 @@
     header, footer { display: none !important; }
     .onlyprint { display: block !important; }
     .noprint   { display: none !important; }
+    h1         { page-break-before: always; }
+    h2         { page-break-after: avoid; }
+    h3         { page-break-after: avoid; }
+    p          { page-break-inside: avoid; }
   }
   
   @page {
