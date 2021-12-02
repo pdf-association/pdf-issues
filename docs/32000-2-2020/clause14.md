@@ -6,7 +6,7 @@ title: Document interchange
 modified: 30 July 2021
 ---
 
-<ul>
+<ul class="noprint">
  <li><a href="#H14.5">14.5 Page-piece dictionaries</a>
  </li>
  <li>14.7 Logical structure
@@ -69,7 +69,7 @@ modified: 30 July 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>

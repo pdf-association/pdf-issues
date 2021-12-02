@@ -6,7 +6,7 @@ title: Notation
 modified: 6 June 2021
 ---
 
-<ul>
+<ul class="noprint">
     <li><a href="#H4.1">4.1 General</a>
     </li>
 </ul>
@@ -15,7 +15,7 @@ modified: 6 June 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>

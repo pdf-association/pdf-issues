@@ -6,7 +6,7 @@ title: Syntax
 modified: 18 September 2021
 ---
 
-<ul>
+<ul class="noprint">
   <li>7.3 Objects
    <ul>
     <li>7.3.8 Stream Objects
@@ -123,7 +123,7 @@ modified: 18 September 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
@@ -437,7 +437,7 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
-<p>EXAMPLE 2 A PDF dictionary containing key ‘Key’ with the value that is the text string "тест" (that is what the word in Russian with the translation to English as ‘test’) will look like</p>
+<p>EXAMPLE 2 A PDF dictionary containing key ‘Key’ with the value that is the text string "????" (that is what the word in Russian with the translation to English as ‘test’) will look like</p>
 
 <code>
  <del onMouseEnter="mouseEnter(this)" data-issue="96">&lt;&lt;/Key(??????????)&gt;&gt;</del>

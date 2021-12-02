@@ -6,7 +6,7 @@ title: (normative) Method for determining transparency on a page
 modified: 16 April 2021
 ---
 
-<ul>
+<ul class="noprint">
    <li><a href="clauseAnnexQ#HQ.2">Q.2. Page content</a>
    </li>
 </ul>
@@ -15,7 +15,7 @@ modified: 16 April 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>

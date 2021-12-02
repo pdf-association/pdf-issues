@@ -6,7 +6,7 @@ title: Rendering
 modified: 16 February 2021
 ---
 
-<ul>
+<ul class="noprint">
     <li>10.6 Halftones
      <ul>
       <li>10.6.5 Halftone dictionaries
@@ -23,7 +23,7 @@ modified: 16 February 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>

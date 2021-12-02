@@ -6,7 +6,7 @@ title: Graphics
 modified: 30 July 2021
 ---
 
-<ul>
+<ul class="noprint">
  <li><a href="#H8.2">8.2 Graphics objects</a>
  </li>
  <li>8.5 Path construction and painting
@@ -47,7 +47,7 @@ modified: 30 July 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
@@ -142,9 +142,9 @@ can support additional ones beyond those listed in the table above.
     <td><b>Intent</b></td>
     <td>name</td>
     <td>
-    	<p>...</p>
-    	<p><ins onMouseEnter="mouseEnter(this)" data-issue="13">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-    	Soft-mask images.</ins></p>
+        <p>...</p>
+        <p><ins onMouseEnter="mouseEnter(this)" data-issue="13">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+        Soft-mask images.</ins></p>
     </td>
   </tr>
   <tr>
@@ -160,8 +160,8 @@ can support additional ones beyond those listed in the table above.
     <td><b>Alternates</b></td>
     <td>array</td>
     <td>
-    	<p>...</p>
-    	<p><ins onMouseEnter="mouseEnter(this)" data-issue="13">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
+        <p>...</p>
+        <p><ins onMouseEnter="mouseEnter(this)" data-issue="13">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
     Soft-mask images.</ins></p></td>
   </tr>
   <tr>

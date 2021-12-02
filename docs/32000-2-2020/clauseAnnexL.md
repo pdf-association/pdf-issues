@@ -6,14 +6,14 @@ title: (normative) Parent-child relationships between the standard structure ele
 modified: 30 July 2021
 ---
 
-<ul>
+<ul class="noprint">
 </ul>
 <hr>
 
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 

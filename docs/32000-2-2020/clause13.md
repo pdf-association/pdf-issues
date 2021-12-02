@@ -6,7 +6,7 @@ title: Multimedia features
 modified: 18 June 2021
 ---
 
-<ul>
+<ul class="noprint">
  <li><a href="#H13.1">13.1 General</a>
  </li>
  <li>13.6 3D Artwork

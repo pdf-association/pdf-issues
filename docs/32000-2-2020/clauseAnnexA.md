@@ -6,7 +6,7 @@ title: (informative) Operator Summary
 modified: 30 July 2021
 ---
 
-<ul>
+<ul class="noprint">
     <li><a href="clauseAnnexA#HA.2">A.2 PDF content stream operators</a>
     </li>
 </ul>
@@ -15,7 +15,7 @@ modified: 30 July 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
