@@ -7,7 +7,7 @@ modified: 10 August 2021
 ---
 
 <p>
-This is all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
+This document lists all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
 All issues related to {{ page.subset }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>
 with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aopen+is%3Aissue+label%3A%22ISO+21757-1%3A2020%22" target="_blank">{{ page.isodoc }}</a>'.
 </p>
@@ -24,7 +24,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% endfor %}
 </ul>
 
-<p>The following tables have all had corrections applied:</p>
+<p>The following tables have been corrected:</p>
 <ul>
 <li><a href="clause10.html#Table1">Table 1 - Annotation types and their properties</a></li>
 </ul>

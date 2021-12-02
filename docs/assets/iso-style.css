@@ -4,7 +4,9 @@
 
   @media print {
     .onlyprint { display: block !important; }
-    .noprint   { visibility: none !important; }
+    .noprint   { display: none  !important; }
+    .footnote  { display: none  !important; }
+
   }
 
   /* use standardized HTML tags for deletion and insertion markup */ 

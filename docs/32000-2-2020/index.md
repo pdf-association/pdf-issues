@@ -7,7 +7,7 @@ modified: 10 August 2021
 ---
 
 <p>
-This is all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
+This document lists all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
 All issues related to {{ page.subset }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>.
 </p>
 
@@ -23,7 +23,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
     {% endfor %}
 </ul>
 
-<p>The following tables have all had corrections applied:</p>
+<p>The following tables have been corrected:</p>
 <ul>
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
 <li><a href="clause07.html#Table15">Table 15 - Entries in the file trailer dictionary</a></li>

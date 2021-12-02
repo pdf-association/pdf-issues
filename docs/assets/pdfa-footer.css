@@ -1,5 +1,6 @@
   @media print {
-    .noprint { visibility: none !important; }
+    .noprint   { display: none !important; }
+    .footnote  { display: none !important; }
   }
 
   table tr:nth-child(even) {
