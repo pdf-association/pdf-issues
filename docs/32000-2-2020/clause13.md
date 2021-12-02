@@ -51,7 +51,7 @@ modified: 18 June 2021
 <link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+    Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
@@ -124,7 +124,7 @@ modified: 18 June 2021
 
 <p><i>New paragraph is added before existing NOTE:</i></p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="39 ">PDF processors that render 3D data streams shall do so directly and without regard to keys and values in the annotation dictionary that define appearance streams or how appearance streams would be rendered onto the page. They shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>, <b>BM</b>, <b>CA</b> and <b>ca</b> keys from "Table 166 - Entries common to all annotation dictionaries".</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="39">PDF processors that render 3D data streams shall do so directly and without regard to keys and values in the annotation dictionary that define appearance streams or how appearance streams would be rendered onto the page. They shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>, <b>BM</b>, <b>CA</b> and <b>ca</b> keys from "Table 166 - Entries common to all annotation dictionaries".</ins>
 
 <p>...</p>
 
@@ -175,16 +175,16 @@ modified: 18 June 2021
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="49"><b>PV</b></ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="49">boolean</ins></td>
     <td>
-	<p>
-	<ins onMouseEnter="mouseEnter(this)" data-issue="49">(<i>Optional</i>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible. If <i>false</i>, then the cutting plane shall not be visible.<br/>Default value: <i>true</i></ins>
-	</p>
+    <p>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="49">(<i>Optional</i>) A flag indicating the visibility of the cutting plane. If <i>true</i>, then the cutting plane shall be visible. If <i>false</i>, then the cutting plane shall not be visible.<br/>Default value: <i>true</i></ins>
+    </p>
     </td>
   </tr>
   <tr>
     <td><b>IV</b></td>
     <td>boolean</td>
     <td>
-	<p>...</p>
+    <p>...</p>
     <p>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="50">false</del> <ins onMouseEnter="mouseEnter(this)" data-issue="50">true</ins></p>
     </td>
   </tr>
