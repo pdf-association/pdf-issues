@@ -6,7 +6,7 @@ title: Interactive features
 modified: 30 July 2021
 ---
 
-<ul>
+<ul class="noprint">
  <li><a href="#H12.2">12.2 Viewer preferences</a>
  </li>
  <li>12.4 Page-level navigation
