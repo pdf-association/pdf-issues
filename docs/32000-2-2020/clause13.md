@@ -229,7 +229,7 @@ modified: 5 December 2021
 <h5 id="H13.7.2.3.1">13.7.2.3.1 General</h5>
 
 <table>
-  <caption id="Table343">Table 341 - Entries in a RichMediaContent dictionary</caption>
+  <caption id="Table341">Table 341 - Entries in a RichMediaContent dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
