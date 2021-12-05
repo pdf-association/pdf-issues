@@ -236,9 +236,17 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1">
     <td><b>AP</b></td>
     <td>dictionary</td>
     <td>
-    (<i><del onMouseEnter="mouseEnter(this)" data-issue="22">Optional; PDF 1.2</del>
-     <ins onMouseEnter="mouseEnter(this)" data-issue="22">Required except for conditions listed below (PDF 2.0); optional in PDF 1.2 through PDF 1.7</ins></i>)
-     An appearance dictionary specifying how the annotation shall be presented visually on the page ...
+    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="22">Optional; PDF 1.2</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="22">Required except for conditions listed below (PDF 2.0); optional in PDF 1.2 through PDF 1.7</ins></i>)
+    An appearance dictionary specifying how the annotation shall be presented visually on the page. A PDF writer shall include an appearance dictionary when writing or updating the PDF file except for the two cases listed below.</p>
+    <p>Every annotation (including those whose <b>Subtype</b> value is <i>Widget</i>, as used for form fields), except for the two cases listed below, shall have at least one appearance dictionary.</p>
+    <ul>
+      <li>Annotations where the value of the <b>Rect</b> key consists of an array where the value at index <del onMouseEnter="mouseEnter(this)" data-issue="124">1</del><ins onMouseEnter="mouseEnter(this)" data-issue="124">0</ins> is equal to the value at index <del onMouseEnter="mouseEnter(this)" data-issue="124">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="124">2</ins> and the value at index <del onMouseEnter="mouseEnter(this)" data-issue="124">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="124">1</ins> is equal to the value at index <del onMouseEnter="mouseEnter(this)" data-issue="124">4</del><ins onMouseEnter="mouseEnter(this)" data-issue="124">3</ins>.</li>
+    </ul>
+    <p class="hangingindent">NOTE (2020) The bullet point above was changed from "or" to "and" in this document to match requirements in other published ISO PDF standards (such as PDF/A). <ins onMouseEnter="mouseEnter(this)" data-issue="124">Array indices were also corrected to be zero-based as described in 3.2 "array object".</ins></p>
+    <ul>
+      <li>Annotations whose <b>Subtype</b> value is <i>Popup</i>, <i>Projection</i> or <i>Link</i>.</li>
+    </ul>
     </td>
   </tr>
 </table>
