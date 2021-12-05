@@ -106,6 +106,15 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 
 <h3 id="H9.6.4">9.6.4 Type 3 fonts</h3>
 
+<p>
+Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for other fonts simply contain information about the font and refer to a separate font program for the actual glyph descriptions; a Type 3 font dictionary contains the glyph descriptions. In Type 3 fonts, glyphs shall be defined by streams of PDF graphics <del onMouseEnter="mouseEnter(this)" data-issue="111">operators</del><ins onMouseEnter="mouseEnter(this)" data-issue="111">objects</ins>. These streams shall be associated with glyph names. A separate encoding entry shall map character codes to the appropriate glyph names for the glyphs.
+</p>
+
+<p>...</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects").</ins></p>
+
+<p>...</p>
 
 <table>
   <caption id="Table111">Table 111 - Type 3 font operators</caption>
