@@ -426,7 +426,7 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
-<p>EXAMPLE 1 A PDF dictionary containing key ‘Key’ with the value that is the text string "text‰" will look like</p>
+<p>EXAMPLE 1 A PDF dictionary containing key 'Key' with the value that is the text string "text&permil;" will look like</p>
 
 <code>
  <del onMouseEnter="mouseEnter(this)" data-issue="96">&lt;&lt;/Key(text?)&gt;&gt;</del>
@@ -437,7 +437,7 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
-<p>EXAMPLE 2 A PDF dictionary containing key ‘Key’ with the value that is the text string "????" (that is what the word in Russian with the translation to English as ‘test’) will look like</p>
+<p>EXAMPLE 2 A PDF dictionary containing key 'Key' with the value that is the text string "&#x442;&#x435;&#x441;&#x442;" (that is what the word in Russian with the translation to English as 'test') will look like</p>
 
 <code>
  <del onMouseEnter="mouseEnter(this)" data-issue="96">&lt;&lt;/Key(??????????)&gt;&gt;</del>
