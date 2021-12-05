@@ -112,7 +112,9 @@ Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for
 
 <p>...</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects").</ins></p>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects") subject to additional restrictions described in this clause. </ins></p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="111">Implementations also need to avoid potential infinite recursion if a Type 3 glyph description refers to itself directly or indirectly. The result in all such cases is implementation-dependent.</ins></p>
 
 <p>...</p>
 
