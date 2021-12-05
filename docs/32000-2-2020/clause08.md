@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 30 July 2021
+modified: 5 December 2021
 ---
 
 <ul class="noprint">
@@ -34,6 +34,8 @@ modified: 30 July 2021
    <li>8.9.5 Image dictionaries
     <ul>
      <li><a href="#H8.9.5.1">8.9.5.1 General</a>
+     </li>
+     <li><a href="#H8.9.5.4">8.9.5.4 Alternate images</a>
      </li>
     </ul>
    </li>
@@ -124,12 +126,9 @@ NOTE The exact set of rendering intents supported can vary from one output devic
 can support additional ones beyond those listed in the table above.
 </p>
 
-
 <h3 id="H8.9.5">8.9.5 Image dictionaries</h3>
 
-
 <h4 id="H8.9.5.1">8.9.5.1 General</h4>
-
 
 <table>
   <caption id="Table87">Table 87 - Additional entries specific to an image dictionary</caption>
@@ -194,6 +193,43 @@ can support additional ones beyond those listed in the table above.
   </tr>
 </table>
 
+<h4 id="H8.9.5.4">8.9.5.4 Alternate images</h4>
+
+<p>...</p>
+
+<p>In PDF 1.5, optional content (see 8.11, "Optional content") may be used to facilitate selection between alternate images. The following algorithm shall be used to determine which image, if any, shall be rendered:</p>
+
+<p class="hangingindent">NOTE (2020) The following algorithm was changed in this document to <del onMouseEnter="mouseEnter(this)" data-issue="79">reflect that <b>OC</b> processing has precedence over <b>DefaultForPrinting</b> functionality, and situations where no image is to be rendered</del><ins onMouseEnter="mouseEnter(this)" data-issue="79">clarify the relationship between optional content and <b>DefaultForPrinting</b></ins>.</p>
+
+<ol type="a">
+ <li value ="1">If the base image contains an <b>OC</b> <del onMouseEnter="mouseEnter(this)" data-issue="79">key then <b>DefaultForPrinting</b> shall be ignored on all <b>Alternates</b> entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="79">entry that specifies that the content is not visible, then nothing shall be shown</ins>.
+ <p/></li>
+
+ <li value ="2">If the base image contains an <b>OC</b> entry that specifies that the base image is visible, then the base image shall be rendered.
+ <p/></li>
+
+ <li value ="3" style="background-color: seashell; color: darkred; text-decoration: line-through; text-decoration-color: red;">
+ <del onMouseEnter="mouseEnter(this)" data-issue="79">If the base image contains an <b>OC</b> entry that specifies that the base image is not visible, then the list of alternate image dictionaries specified by the base image <b>Alternates</b> entry shall be examined in order, and the first entry not containing an <b>OC</b> key, or containing an <b>OC</b> entry specifying that the alternate image should be visible, shall be selected. Further, if this selected alternate image has an <b>OC</b> entry, then that <b>OC</b> entry shall also be processed to determine if the alternate image shall be rendered or not. If none of the alternate image dictionaries have an <b>OC</b> key, or none of the alternate image dictionaries with an <b>OC</b> entry specify that that alternate image is visible, then nothing shall be shown. <b>DefaultForPrinting</b> shall be ignored on all <b>Alternates</b> entries.</del>
+ <p/></li>
+
+ <li value="3" style="background-color: lightyellow; color: green; text-decoration-style: double; text-decoration-color: green;">
+ <ins onMouseEnter="mouseEnter(this)" data-issue="79">Otherwise if the PDF is being printed and any of the <b>Alternates</b> entries has <b>DefaultForPrinting</b> set to true, then that alternate image shall be printed.</ins>
+ <p/></li>
+
+ <li value ="4" style="background-color: seashell; color: darkred; text-decoration: line-through; text-decoration-color: red;">
+ <del onMouseEnter="mouseEnter(this)" data-issue="79">If the base image does not contain an <b>OC</b> key and the PDF is being printed then the first entry in the <b>Alternates</b> array of the base image that has <b>DefaultForPrinting</b> set to true shall be selected. Further, if this selected alternate image has an <b>OC</b> entry, then that <b>OC</b> entry shall also be processed to determine if the alternate image shall be printed or not. If no alternate image dictionary in the Alternates array has <b>DefaultForPrinting</b> set to true, then the base image shall be printed.</del>
+ <p/></li>
+
+ <li value="4" style="background-color: lightyellow; color: green; text-decoration-style: double; text-decoration-color: green;">
+ <ins onMouseEnter="mouseEnter(this)" data-issue="79">Otherwise, the list of alternates specified by the base image <b>Alternates</b> entry is examined, and the first alternate containing an <b>OC</b> entry specifying that its content is visible shall be shown (<b>Alternates</b> that have no <b>OC</b> entry shall not be shown.) Furthermore if the image dictionary that forms the value of the <b>Image</b> key of the selected alternate contains an <b>OC</b> entry, then that <b>OC</b> in the image dictionary shall not be examined.</ins>
+ <p/></li>
+
+ <li value="5" style="background-color: lightyellow; color: green; text-decoration-style: double; text-decoration-color: green;">
+ <ins onMouseEnter="mouseEnter(this)" data-issue="79">If steps c and d above do not identify an alternate to be rendered then the base image shall be rendered.</ins>
+ <p/></li>
+</ol>
+
+<p>...</p>
 
 <h3 id="H8.9.7">8.9.7 Inline images</h3>
 
