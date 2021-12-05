@@ -3,15 +3,23 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 30 July 2021
+modified: 5 December 2021
 ---
 
 <ul class="noprint">
  <li><a href="#H14.5">14.5 Page-piece dictionaries</a>
  </li>
+ <li>14.6 Marked content
+  <ul>
+   <li><a href="#H14.6.1">14.6.1 General</a>
+   </li>
+  </ul>
+ </li>
  <li>14.7 Logical structure
   <ul>
    <li><a href="#H14.7.2">14.7.2 Structure hierarchy</a>
+   </li>
+   <li><a href="#H14.7.3">14.7.3 Structure types</a>
    </li>
   </ul>
  </li>
@@ -99,8 +107,20 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
 </table>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="69"> NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="69">NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
 </p>
+
+<h2>14.6 Marked content</h2>
+
+<h3 id="H14.6.1">14.6.1 General</h3>
+
+<p>...</p>
+
+<p class="hangingindent">
+NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126">role mapped</ins>.
+</p>
+
+<h2 id="H14.7">14.7 Logical structure</h2>
 
 <h3 id="H14.7.2">14.7.2 Structure hierarchy</h3>
 
@@ -121,6 +141,17 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
   </tr>
 </table>
 
+<h3 id="H14.7.3">14.7.3 Structure types</h3>
+
+<p>...</p>
+
+<p>
+The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing structure element types <del onMouseEnter="mouseEnter(this)" data-issue="126">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126">role mapped</ins> to other structure element types. The corresponding value for each of these keys shall be a single name identifying the target structure element type.
+</p>
+
+<p>...</p>
+
+<h2 id="H14.8">14.8 Tagged PDF</h2>
 
 <h5 id="H14.8.4.7.2">14.8.4.7.2 General inline level structure types</h5>
 
@@ -161,7 +192,7 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
     <td><b>TR</b></td>
     <td>Internal to a <b>Table</b> structure</td>
     <td>
-    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" data-issue="71">or both</ins> in a table.
+    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" data-issue="71"> or both</ins> in a table.
     </td>
   </tr>
 </table>
