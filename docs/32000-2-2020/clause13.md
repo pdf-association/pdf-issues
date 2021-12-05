@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 18 June 2021
+modified: 5 December 2021
 ---
 
 <ul class="noprint">
@@ -34,6 +34,12 @@ modified: 18 June 2021
        <li>13.7.2.2 RichMediaSettings dictionary
         <ul>
          <li><a href="#H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</a>
+         </li>
+        </ul>
+       </li>
+       <li>13.7.2.3 RichMediaContent dictionary
+        <ul>
+         <li><a href="#H13.7.2.3.1">13.7.2.3.1 General</a>
          </li>
          <li><a href="#H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</a>
          </li>
@@ -202,6 +208,14 @@ modified: 18 June 2021
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>Views</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Optional; PDF 2.0</i>) An indirect object reference to a 3D view dictionary (see <del  onMouseEnter="mouseEnter(this)" data-issue="127">"Table 315 — Entries in a 3D view dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="127">13.7.2.3.5, "View dictionary"</ins> that shall also be referenced by the Views array within the annotation’s RichMediaContent dictionary (see "Table 341 — Entries in a RichMediaContent dictionary").</p>
+    <p>...</p>
+    </td>
+  </tr>
+  <tr>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="59"><b>Scripts</b></ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="59">array</ins></td>
     <td>
@@ -210,6 +224,26 @@ modified: 18 June 2021
   </tr>
 </table>
 
+<h4 id="H13.7.2.3">13.7.2.3 RichMediaContent dictionary</h4>
+
+<h5 id="H13.7.2.3.1">13.7.2.3.1 General</h5>
+
+<table>
+  <caption id="Table343">Table 341 - Entries in a RichMediaContent dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Views</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Optional; PDF 2.0</i>) An array where each element is an indirect object reference to a 3D view dictionary. See <del onMouseEnter="mouseEnter(this)" data-issue="127">"Table 315 — Entries in a 3D view dictionary" for the details of the entries of this dictionary</del><ins onMouseEnter="mouseEnter(this)" data-issue="127">13.7.2.3.5, "View dictionary"</ins>.</p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
 
 <h5 id="H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</h5>
 
@@ -237,9 +271,7 @@ modified: 18 June 2021
   </tr>
 </table>
 
-
 </div>
-
 
 <hr>
 <p class="footnote">Last modified: {{page.modified}}</p>
