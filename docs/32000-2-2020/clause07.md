@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 18 September 2021
+modified: 5 December 2021
 ---
 
 <ul class="noprint">
@@ -231,6 +231,10 @@ The subsection shall begin with a line containing only two integers separated by
 </ul>
 
 <p>...</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins>
+</p>
 
 <h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
 
