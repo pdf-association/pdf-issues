@@ -252,11 +252,10 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1">
 </table>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="34">A PDF reader shall render the appearance dictionary without regard to any other keys and values in the annotation dictionary and </del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="34">When rendering the appearance dictionary, a PDF reader</ins>
-
+<del onMouseEnter="mouseEnter(this)" data-issue="23,34">A PDF reader shall render the appearance dictionary without regard to any other keys and values in the annotation dictionary and </del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="23,34">When rendering the appearance dictionary, a PDF reader</ins>
 shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>,
-<del onMouseEnter="mouseEnter(this)" data-issue="34"><b>BM</b>,</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="23,34"><b>BM</b>,</del>
 <b>CA</b>, <b>ca</b>, <b>H</b>, <b>DA</b>, <b>Q</b>, <b>DS</b>, <b>LE</b>, <b>LL</b>, <b>LLE</b>,
 <ins onMouseEnter="mouseEnter(this)" data-issue="56"><b>MK</b>,</ins>
 and <b>Sy</b> keys.
@@ -490,7 +489,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td><b>DigestMethod</b></td>
     <td>name</td>
     <td>
-    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="171">Required</del><ins onMouseEnter="mouseEnter(this)" data-issue="171">Optional; deprecated in PDF 2.0</ins></i>) ... </p>
+    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="117">Required</del><ins onMouseEnter="mouseEnter(this)" data-issue="117">Optional; deprecated in PDF 2.0</ins></i>) ... </p>
     </td>
   </tr>
 </table>
