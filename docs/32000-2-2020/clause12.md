@@ -397,7 +397,7 @@ However, a projection annotation is only valid within the context of an associat
     <td><b>P</b></td>
     <td>number</td>
     <td>
-    <p>(<i>Optional; PDF 2.0</i>) The access permissions granted for this document. <ins onMouseEnter="mouseEnter(this)" data-issue="131">Changes to a PDF that are incremental updates which include only the data necessary to add DSS’s 12.8.4.3, "Document Security Store (DSS)" and/or document timestamps 12.8.5, "Document timestamp (DTS) dictionary" to the document shall not be considered as changes to the document as defined in the choices below.</ins><p>
+    <p>(<i>Optional; PDF 2.0</i>) The access permissions granted for this document. <ins onMouseEnter="mouseEnter(this)" data-issue="131">Changes to a PDF that are incremental updates which include only the data necessary to add DSS’s 12.8.4.3, "Document Security Store (DSS)" and/or document timestamps 12.8.5, "Document timestamp (DTS) dictionary" to the document shall not be considered as changes to the document as defined in the choices below.</ins></p>
     <p>...</p>
     </td>
   </tr>
