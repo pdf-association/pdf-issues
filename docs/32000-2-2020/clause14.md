@@ -192,7 +192,7 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     <td><b>TR</b></td>
     <td>Internal to a <b>Table</b> structure</td>
     <td>
-    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" data-issue="71"> or both</ins> in a table.
+    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" data-issue="45,71"> or both</ins> in a table.
     </td>
   </tr>
 </table>
