@@ -31,6 +31,10 @@ modified: 5 December 2021
       <ul>
        <li><a href="#H14.8.4.7.2">14.8.4.7.2 General inline level structure types</a>
        </li>
+       <li><a href="#H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133">14.8.4.7.3 Link elements</ins></a>
+       </li>
+       <li><a href="#H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133">4</ins> Ruby and warichu elements</a>
+       </li>
       </ul>
      </li>
      <li>14.8.4.8 Other structure types
@@ -176,6 +180,126 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     </td>
   </tr>
 </table>
+
+<h5 id="H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133">14.8.4.7.3 Link elements</ins></h5>
+
+<p>Tagged PDF link elements (standard structure type Link) use PDF's logical structure facilities to establish the association between content items and link annotations, providing functionality comparable to HTML hypertext links. The following items may be children of a link element:</p>
+
+<ul>
+<li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del></li>
+<li>One object reference (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133">annotations</ins> associated with the content</li>
+</ul>
+
+<p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action in a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+When a <b>Link</b> structure element describes a span of text to be associated with a link annotation and that span
+wraps from the end of one line to the beginning of another, the <b>Link</b> structure element shall include a single
+object reference that associates the span with the associated link annotation. Further, the link annotation shall
+use the <b>QuadPoint</b> entry to denote the active areas on the page.</ins></p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+EXAMPLE 1 The <b>Link</b> structure element references a link annotation that includes a <b>QuadPoint</b> entry that boxes the
+strings "with a" and "link". That is, the <b>QuadPoint</b> entry contains 16 numbers: the first 8 numbers describe
+a quadrilateral for "with a", and the next 8 describe a quadrilateral for "link".
+</ins></p>
+
+<p style="padding-left:40px;"><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+Here is some text <span style="color:blue;text-decoration:underline;">with a</span><br/>
+<span style="color:blue;text-decoration:underline;">link</span> inside.
+</ins></p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclose multiple link annotations is deprecated.
+</ins></p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133">EXAMPLE 2 Consider the following fragment of HTML code, which produces a line of text containing a hypertext link:</ins></p>
+
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+<code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;p&gt;
+            Here is some text &lt;a href="https://www.pdfa.org"&gt;with a link&lt;/a&gt; inside.
+        &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></ins></div>
+
+<br/>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133">This code sample shows an equivalent fragment of PDF using a link element, whose text it displays in blue and underlined.</ins></p>
+
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+<code>/P &lt;&lt; /MCID 0 &gt;&gt;                     % Marked-content sequence 0 (paragraph)
+  BDC                                % Begin marked-content sequence
+    BT                               % Begin text object
+      /T1_0 1 Tf                     % Set text font and size
+      14 0 0 14 10.000 753.976 Tm    % Set text matrix
+      0.0 0.0 0.0 rg                 % Set nonstroking colour to black
+      (Here is some text ) Tj        % Show text preceding link
+    ET                               % End text object
+  EMC                                % End marked-content sequence
+
+/Link &lt;&lt; /MCID 1 &gt;&gt;                  % Marked-content sequence 1 (link)
+  BDC                                % Begin marked-content sequence
+    0.7 w                            % Set line width
+    [ ] 0 d                          % Solid dash pattern
+    111.094 751.8587 m               % Move to beginning of underline
+    174.486 751.8587 l               % Draw underline
+    0.0 0.0 1.0 RG                   % Set stroking colour to blue
+    S                                % Stroke underline
+    BT                               % Begin text object
+      14 0 0 14 111.094 753.976 Tm   % Set text matrix
+      0.0 0.0 1.0 rg                 % Set nonstroking colour to blue
+      (with a link) Tj               % Show text of link
+    ET                               % End text object
+  EMC                                % End marked-content sequence
+
+/P &lt;&lt; /MCID 2 &gt;&gt;                     % Marked-content sequence 2 (paragraph)
+  BDC                                % Begin marked-content sequence
+    BT                               % Begin text object
+      14 0 0 14 174.486 753.976 Tm   % Set text matrix
+      0.0 0.0 0.0 rg                 % Set nonstroking colour to black
+      ( inside.) Tj                  % Show text following link
+    ET                               % End text object
+  EMC                                % End marked-content sequence
+</code></ins></div>
+
+<br/>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133">EXAMPLE 3 This example shows an excerpt from the associated logical structure hierarchy.</ins></p>
+
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133">
+<code>501 0 obj              % Structure element for paragraph
+&lt;&lt;  /Type /StructElem
+    /S /P
+    ...
+    /K [ 0             % Three children: marked-content sequence 0
+         502 0 R       % Link
+         2             % Marked-content sequence 2
+    ]
+&gt;&gt;
+endobj
+
+502 0 obj              % Structure element for link
+&lt;&lt;  /Type /StructElem
+    /S /Link
+    ...
+    /K [ 1             % Two children: marked-content sequence 1
+         503 0 R       % Object reference to link annotation
+    ]
+&gt;&gt;
+endobj
+
+503 0 obj              % Object reference to link annotation
+&lt;&lt;  /Type /OBJR
+    /Obj 600 0 R       % Link annotation (not shown)
+&gt;&gt;
+endobj
+</code></ins></div>
+<br/>
+
+<h5 id="H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133">4</ins> Ruby and warichu elements</h5>
+
+<p><i>(Clause is renumbered - existing text is unchanged)</i></p>
 
 
 <h5 id="H14.8.4.8.3">14.8.4.8.3 Table structure types</h5>
