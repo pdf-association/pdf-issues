@@ -3,7 +3,7 @@ subset: PDF/A-4
 isodoc: ISO 19005-4:2020
 clause: 6
 title: Technical requirements
-modified: 9 November 2021
+modified: 15 January 2022
 ---
 
 <ul>
@@ -14,6 +14,12 @@ modified: 9 November 2021
             <li><a href="#H6.2.9">6.2.9 Transparency</a>
             </li>
         </ul>
+    </li>
+    <li>6.7 Metadata
+     <ul>
+      <li><a href="#H6.7.3">6.7.3 Version identification</a>
+      </li>
+     </ul>
     </li>
    </ul>
   </li>
@@ -47,6 +53,35 @@ This requirement ensures that there is always an explicitly defined transparency
 </p>
 
 <p>...</p>
+
+<h2 id="H6.7">6.7 Metadata</h2>
+
+<h3 id="H6.7.3">6.7.3 Version identification</h3>
+
+<p>...</p>
+
+<p>The PDF/A identification schema defined in Table 2 uses the namespace URI http<del onMouseEnter="mouseEnter(this)" data-issue="123">s</del>://www.aiim.org/pdfa/ns/id/. The required schema namespace prefix is <b>pdfaid</b>.
+</p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="123">
+NOTE there was an error in a previous edition of this document and implementations may choose to accept "https" in addition to "http" for the namespace URI.
+</ins></p>
+
+<table>
+  <caption id="Table2">Table 2 - PDF/A identification schema</caption>
+  <tr>
+    <th>Property</th>
+    <th>Value type</th>
+    <th>Category</th>
+    <th>Explanation</th>
+  </tr>
+  <tr>
+    <td><b>pdfa<ins onMouseEnter="mouseEnter(this)" data-issue="123">id</ins>:conformance</b></td>
+    <td>Closed choice of Text</td>
+    <td>Internal</td>
+    <td>(Optional) PDF/A conformance level: E or F</td>
+  </tr>
+</table>
 
 </div>
 

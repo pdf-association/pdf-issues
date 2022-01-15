@@ -3,7 +3,7 @@ subset: PDF/A-4
 isodoc: ISO 19005-4:2020
 isotitle: 'Document management - Electronic document file format for long-term preservation - Part 4: Use of ISO 32000-2 (PDF/A-4)'
 title: PDF/A-4 Corrections
-modified: 10 August 2021
+modified: 15 January 2022
 ---
 
 <p>
@@ -22,6 +22,11 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
            {% endfor %}
         {% endif %}
     {% endfor %}
+</ul>
+
+<p>The following tables have been corrected:</p>
+<ul>
+<li><a href="clause06.html#Table2">Table 2 - PDF/A identification schema</a></li>
 </ul>
 
 <hr>
