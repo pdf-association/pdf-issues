@@ -187,7 +187,7 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <ul>
 <li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del></li>
-<li>One object reference (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133">annotations</ins> associated with the content</li>
+<li>Object references (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133">annotations</ins> associated with the content</li>
 </ul>
 
 <p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action in a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
@@ -210,7 +210,7 @@ Here is some text <span style="color:blue;text-decoration:underline;">with a</sp
 </ins></p>
 
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="133">
-NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclose multiple link annotations is deprecated.
+NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclose multiple link annotations on a single page is deprecated.
 </ins></p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133">EXAMPLE 2 Consider the following fragment of HTML code, which produces a line of text containing a hypertext link:</ins></p>
