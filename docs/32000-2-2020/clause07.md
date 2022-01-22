@@ -9,7 +9,13 @@ modified: 15 January 2022
 <ul class="noprint">
   <li>7.3 Objects
    <ul>
-    <li>7.3.8 Stream Objects
+    <li>7.3.4 String objects
+     <ul>
+      <li><a href="#H7.3.4.2">7.3.4.2 Literal strings</a>
+      </li>
+     </ul>
+    </li>
+    <li>7.3.8 Stream objects
      <ul>
       <li><a href="#H7.3.8.2">7.3.8.2 Stream extent</a>
       </li>
@@ -127,6 +133,17 @@ modified: 15 January 2022
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="H7.3">7.3 Objects</h2>
+
+<h3 id="H7.3".4>7.3.4 String objects</h3>
+
+<h4 id="H7.3.4.2">7.3.4.2 Literal strings</h4>
+
+<p>A <i>literal string</i> shall be written as an arbitrary number of characters enclosed in parentheses (LEFT PAREN<ins onMouseEnter="mouseEnter(this)" data-issue="143">T</ins>HESIS (28h) and RIGHT PARENTHESIS (29h)). Any characters may appear in a string except unbalanced parentheses and the backslash (REVERSE SOLIDUS (5Ch)), which shall be treated specially as described in this subclause. Balanced pairs of parentheses within a string require no special treatment.
+</p>
+
+<p>...</p>
 
 <h4 id="H7.3.8.2">7.3.8.2 Stream extent</h4>
 
