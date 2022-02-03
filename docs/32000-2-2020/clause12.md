@@ -188,25 +188,11 @@ modified: 5 December 2021
     <td><del onMouseEnter="mouseEnter(this)" data-issue="36">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="36">integer</ins> or name</td>
     <td>
       <p>...</p>
-      <p>If the value is a <del onMouseEnter="mouseEnter(this)" data-issue="36">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="36">integer</ins>, it shall be one of:</p>
+      <p>If the value is <del onMouseEnter="mouseEnter(this)" data-issue="36">a number</del><ins onMouseEnter="mouseEnter(this)" data-issue="36">an integer</ins>, it shall be one of:</p>
       <p>...</p>
     </td>
   </tr>
 </table>
-
-<h2>12.5 Annotations</h2>
-
-<h3>12.5.1 General</h3>
-
-<p>...</p>
-
-<p>
-These descriptions assume the page is being viewed in the orientation specified by the <b>Rotate</b> entry. Conceptually, the behaviour of each annotation type may be
-implemented by a software module called an annotation handler. A PDF processor shall provide annotation handlers for all of the conforming annotation types.
-The set of annotation types is extensible. An interactive PDF processor shall provide certain expected behaviour for all annotation types that it does not
-recognise, as documented in
-<del onMouseEnter="mouseEnter(this)" data-issue="1">12.5.2, "Annotation dictionaries"</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="1">12.5.5, "Appearance streams" and "Table 167 - Annotation flags" (bit positions 1 and 2)</ins>.</p>
 
 <h2 id="H12.5">12.5 Annotations</h2>
 
@@ -223,7 +209,6 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1">
 .</p>
 
 <h3 id="H12.5.2">12.5.2 Annotation dictionaries</h3>
-
 
 <table>
   <caption id="Table166">Table 166 - Entries common to all annotation dictionaries</caption>
@@ -283,9 +268,7 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 
 <p>...</p>
 
-
 <h4 id="H12.5.6.5">12.5.6.5 Link annotations</h4>
-
 
 <table>
   <caption id="Table176">Table 176 - Additional entries specific to a link annotation</caption>
@@ -312,7 +295,6 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
   </tr>
 </table>
 
-
 <h4 id="H12.5.6.6">12.5.6.6 Free text annotations</h4>
 
 <table>
@@ -332,7 +314,6 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
   </tr>
 </table>
 
-
 <h4 id="H12.5.6.18">12.5.6.18 Screen annotations</h4>
 
 <p>...</p>
@@ -346,7 +327,6 @@ appearance for a screen annotation that shall be used for printing and default d
 </li>
 </ul>
 
-
 <h4 id="H12.5.6.24">12.5.6.24 Projection annotations</h4>
 
 <p>A <i>projection annotation (PDF 2.0)</i> is a markup annotation subtype (see 12.5.6.2, "Markup annotations") that has much of the functionality of other markup annotations.
@@ -354,14 +334,11 @@ However, a projection annotation is only valid within the context of an associat
 
 <p>...</p>
 
-
 <p><del onMouseEnter="mouseEnter(this)" data-issue="42">A projection annotation with a <b>Rect</b> entry that has zero height or zero width shall not have an <b>AP</b> dictionary.</del></p>
 
 <h3 id="H12.7.4">12.7.4 Field dictionaries</h3>
 
-
 <h4 id="H12.7.4.1">12.7.4.1 General</h4>
-
 
 <table>
   <caption id="Table226">Table 226 - Entries common to all field dictionaries</caption>
@@ -380,7 +357,6 @@ However, a projection annotation is only valid within the context of an associat
     </td>
   </tr>
 </table>
-
 
 <h4 id="H12.7.5.5">12.7.5.5 Signature Fields</h4>
 
@@ -516,7 +492,6 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <h4 id="H12.8.2.4">12.8.2.4 FieldMDP</h4>
 
-
 <table>
   <caption id="Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</caption>
   <tr>
@@ -534,12 +509,9 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
   </tr>
 </table>
 
-
 <h3 id="H12.8.3">12.8.3 Signature interoperability</h3>
 
-
 <h4 id="H12.8.3.1">12.8.3.1 General</h4>
-
 
 <table>
   <caption id="Table260">Table 260 - SubFilter value algorithm support</caption>
