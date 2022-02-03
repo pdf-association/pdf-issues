@@ -299,7 +299,7 @@ endobj
 
 <h5 id="H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133">4</ins> Ruby and warichu elements</h5>
 
-<p><i>(Clause is renumbered - existing text is unchanged)</i></p>
+<p class="editornote">EDITOR NOTE: Clause is renumbered - existing text is unchanged.</p>
 
 
 <h5 id="H14.8.4.8.3">14.8.4.8.3 Table structure types</h5>
