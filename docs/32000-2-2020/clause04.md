@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 4
 title: Notation
-modified: 6 June 2021
+modified: 3 February 2022
 ---
 
 <ul class="noprint">
