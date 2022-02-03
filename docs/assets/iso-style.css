@@ -127,3 +127,10 @@
     padding-left: 40px;
     text-indent: -40px;
   } 
+
+  .isostyle .editornote {
+    font-weight: bold;
+    color: purple;
+    background-color: snow; 
+  }
+
