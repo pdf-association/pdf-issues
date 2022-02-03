@@ -3,11 +3,17 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 3 February 2022
+modified: 4 February 2022
 ---
 
 <ul class="noprint">
  <li><a href="#H12.2">12.2 Viewer preferences</a>
+ </li>
+ <li>12.3 Document-level navigation
+  <ul>
+   <li><a href="#H12.3.3">12.3.3 Document outline</a>
+   </li>
+  </ul>
  </li>
  <li>12.4 Page-level navigation
   <ul>
@@ -96,7 +102,6 @@ modified: 3 February 2022
 
 <h2 id="H12.2">12.2 Viewer preferences</h2>
 
-
 <table>
   <caption id="Table147">Table 147 - Entries in a viewer preferences dictionary</caption>
   <tr>
@@ -159,6 +164,35 @@ modified: 3 February 2022
     <br/>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="14"><b>CropBox</b></del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="14"><i>CropBox</i></ins>
     <br/>...
+    </td>
+  </tr>
+</table>
+
+<h2 id="H12.3">12.3 Document-level navigation</h2>
+
+<h3 id="#H12.3.3">12.3.3 Document outline</h3>
+
+<p>...</p><table>
+  <caption id="Table151">Table 151 - Entries in an outline item dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Prev</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Required for all but the first item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139">shall not be present on the first item at each level;</ins> 
+        shall be an indirect reference</i>) The previous item at this outline level.</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Next</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Required for all but the last item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139">shall not be present on the last item at each level;</ins>
+        shall be an indirect reference</i>) The next item at this outline level.</p>
     </td>
   </tr>
 </table>
