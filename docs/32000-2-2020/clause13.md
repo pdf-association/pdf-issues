@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 5 December 2021
+modified: 4 February 2022
 ---
 
 <ul class="noprint">
@@ -11,6 +11,8 @@ modified: 5 December 2021
  </li>
  <li>13.6 3D Artwork
   <ul>
+   <li><a href="#H13.6.2">13.6.2 3D annotations</a>
+   </li>
    <li>13.6.3 3D streams
     <ul>
      <li><a href="#H13.3.6.1">13.3.6.1 General</a>
@@ -72,6 +74,13 @@ modified: 5 December 2021
 <li>13.7, "<ins onMouseEnter="mouseEnter(this)" data-issue="109">Rich media" describes rich media annotations providing a common framework for video, audio, animations and other multimedia presentations.</ins></li>
 </ul>
 
+<h3 id="H13.6.2">13.6.2 3D annotations</h3>
+
+<p>
+3D annotations (<i>PDF 1.6</i>) are a way to include 3D artwork in PDF documents. Rich media annotations are another method (see <del onMouseEnter="mouseEnter(this)" data-issue="142">0 "<br/>
+Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Rich media"</ins>). "Table 309 — Additional entries specific to a 3D annotation" shows the entries specific to a 3D annotation dictionary. "Table 166 — Entries common to all annotation dictionaries" describes the entries common to all annotation dictionaries.
+</p>
+
 <h3 id="H13.6.3">13.6.3 3D streams</h3>
 
 <h4 id="H13.3.6.1">13.3.6.1 General</h4>
@@ -118,6 +127,14 @@ modified: 5 December 2021
     <p>Default value: a projection dictionary where the value of <b>Subtype</b> is
     <del onMouseEnter="mouseEnter(this)" data-issue="91"><i>Perspective</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="91"><i>P</i> (perspective)</ins>,
     the value of <b>FOV</b> is 90, and all other entries take their default values.
+    </p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>NA</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Optional; PDF 1.7; <del onMouseEnter="mouseEnter(this)" data-issue="150">meaningful only if <b>NR</b> is present</del></i>) An array ...
     </p>
     </td>
   </tr>
@@ -208,11 +225,11 @@ modified: 5 December 2021
     <th>Value</th>
   </tr>
   <tr>
-    <td><b>Views</b></td>
+    <td><b>View</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Optional; PDF 2.0</i>) An indirect object reference to a 3D view dictionary (see <del  onMouseEnter="mouseEnter(this)" data-issue="127">"Table 315 — Entries in a 3D view dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="127">13.7.2.3.5, "View dictionary"</ins> that shall also be referenced by the Views array within the annotation’s RichMediaContent dictionary (see "Table 341 — Entries in a RichMediaContent dictionary").</p>
-    <p>...</p>
+    <p>(<i>Optional; PDF 2.0</i>) An indirect object reference to a 3D view dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="127">"Table 315 — Entries in a 3D view dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="127">13.7.2.3.5, "View dictionary"</ins> that shall also be referenced by the <b>Views</b> array within the annotation’s RichMediaContent dictionary (see "Table 341 — Entries in a RichMediaContent dictionary").</p>
+    <p>Default value: The first element in the <b>Views</b> array of the <del onMouseEnter="mouseEnter(this)" data-issue="145">annotation specified in the RichMediaContent dictionary</del> <ins onMouseEnter="mouseEnter(this)" data-issue="145">RichMediaContent dictionary specified in the annotation</ins>. If a <b>Views</b> array does not exist, default values for the components of a 3D view dictionary (see "Table 344 — Additional entries in a 3D view dictionary") are used.</p>
     </td>
   </tr>
   <tr>
