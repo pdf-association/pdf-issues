@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 3 February 2022
+modified: 4 February 2022
 ---
 
 <ul class="noprint">
@@ -25,8 +25,10 @@ modified: 3 February 2022
  </li>
  <li>14.8 Tagged PDF
   <ul>
-   <li>14.8.4 Standard structure types
+   <li>14.8.4 Standard structure types</a>
     <ul>
+     <li><a href="#H14.8.4.4">14.8.4.4 Grouping level structure types</a>
+     </li>
      <li>14.8.4.7 Inline level structure types
       <ul>
        <li><a href="#H14.8.4.7.2">14.8.4.7.2 General inline level structure types</a>
@@ -156,6 +158,36 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 <p>...</p>
 
 <h2 id="H14.8">14.8 Tagged PDF</h2>
+
+<h3 id="H14.8.4">14.8.4 Standard structure types</h3>
+
+<h4 id="H14.8.4.4">14.8.4.4 Grouping level structure types</h4>
+
+<table>
+  <caption id="Table365">Table 365 - Grouping level structure types</caption>
+  <tr>
+    <th>Structure Type</th>
+    <th>Category</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>Part</b></td>
+    <td>Grouping</td>
+    <td>
+    <p>Encloses a grouping of structure elements without consideration for their hierarchy.</p>
+    <p class="hangingindent">
+    NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="141"><b>Part</b> is the semantic equivalent of <b>Div</b></del> <ins onMouseEnter="mouseEnter(this)" data-issue="141">The non-hierarchical aspect of <b>Part</b> is similar to <b>Div</b>. However, unlike <b>Div</b>, the grouping of elements enclosed in a <b>Part</b> structure element has semantic value.</ins>.
+    </p>
+    <p>A structure element with the type of <b>Part</b> shall inherit the containment requirements and limitations of its parent element. Where the parent element is itself a structure element of type <b>Part</b>, then the inheritance shall recurse to the first parent element whose type is not <b>Part</b>.</p>
+    <p class="hangingindent">
+    <ins onMouseEnter="mouseEnter(this)" data-issue="141">NOTE 2 The semantic value of a structure element of type <b>Part</b> is determined by the elements enclosed within, in addition to the grouping nature of <b>Part</b>.</ins>
+    </p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
+<h4 id="H14.8.4.7">14.8.4.7 Inline level structure types</h4>
 
 <h5 id="H14.8.4.7.2">14.8.4.7.2 General inline level structure types</h5>
 
