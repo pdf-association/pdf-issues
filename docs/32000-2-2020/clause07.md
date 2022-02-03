@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 3 February 2022
+modified: 4 February 2022
 ---
 
 <ul class="noprint">
@@ -36,6 +36,12 @@ modified: 3 February 2022
     <li><a href="#H7.5.4">7.5.4 Cross reference table</a>
     </li>
     <li><a href="#H7.5.7">7.5.7 Object streams</a>
+    </li>
+    <li>7.5.8 Cross-reference streams</a>
+     <ul>
+      <li><a href="#H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</a>
+      </li>
+     </ul>
     </li>
    </ul>
   </li>
@@ -221,10 +227,14 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p>...</p>
 
+<p class="hangingindent">
+NOTE 3 The subsection structure is useful for incremental updates, since it allows a new cross-reference section to be added to the PDF file, containing entries only for objects that have been added, modified or deleted. <del onMouseEnter="mouseEnter(this)" data-issue="147">This also means that cross reference subsections of incremental updates can never have an object number of zero.</del>
+<p>
+
 <p>
 Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
 <del onMouseEnter="mouseEnter(this)" data-issue="113">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.</del>
-The subsection shall begin with a line containing only two integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
+The subsection shall begin with a line containing only two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
 </p>
 
 <p>...</p>
@@ -256,6 +266,32 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins>
 </p>
+
+<p>...</p>
+
+<h3 id="H7.5.8">7.5.8 Cross-reference streams</h3>
+
+<h4 id="H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</h4>
+
+<p>...</p>
+
+<table>
+  <caption id="Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>XRefStm</b></td>
+    <td>integer</td>
+    <td><p>
+    (<i>Optional</i>) The byte offset
+    <del onMouseEnter="mouseEnter(this)" data-issue="146">in the decoded stream from the beginning of the PDF file of a cross-reference stream.</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="146">to the cross-reference stream, calculated from the beginning of the PDF file.</ins>.
+    </p></td>
+  </tr>
+</table>
 
 <p>...</p>
 

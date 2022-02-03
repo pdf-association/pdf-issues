@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 5 December 2021
+modified: 4 February 2022
 ---
 
 <p>
@@ -27,6 +27,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <ul>
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
 <li><a href="clause07.html#Table15">Table 15 - Entries in the file trailer dictionary</a></li>
+<li><a href="clause07.html#Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</a></li>
 <li><a href="clause07.html#Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</a></li>
 <li><a href="clause07.html#Table29">Table 29 - Entries in the catalog dictionary</a></li>
 <li><a href="clause07.html#Table31">Table 31 - Entries in a page object</a></li>
@@ -40,6 +41,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause09.html#Table120">Table 120 - Entries common to all font descriptors</a></li>
 <li><a href="clause10.html#Table132">Table 132 - Entries in a Type 5 halftone dictionary</a></li>
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
+<li><a href="clause12.html#Table151">Table 151 - Entries in an outline item dictionary</a></li>
 <li><a href="clause12.html#Table164">Table 164 - Entries in a transition dictionary</a></li>
 <li><a href="clause12.html#Table166">Table 166 - Entries common to all annotation dictionaries</a></li>
 <li><a href="clause12.html#Table176">Table 176 - Additional entries specific to a link annotation</a></li>
@@ -61,6 +63,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>
 <li><a href="clause14.html#Table350">Table 350 - Entries in a page-piece dictionary</a></li>
 <li><a href="clause14.html#Table355">Table 355 - Entries in a structure element dictionary</a></li>
+<li><a href="clause14.html#Table365">Table 365 - Grouping level structure types</a></li>
 <li><a href="clause14.html#Table368">Table 368 - General inline level structure types</a></li>
 <li><a href="clause14.html#Table371">Table 371 - Table standard structure types</a></li>
 <li><a href="clause14.html#Table372">Table 372 - Standard structure type Caption</a></li>
