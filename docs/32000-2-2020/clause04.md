@@ -32,8 +32,8 @@ digit hexadecimal character code value with the prefix "U+" as shown in the exam
 
 <p>...</p>
 
-<p class="editornote">
-<ins onMouseEnter="mouseEnter(this)" data-issue="75">EDITOR NOTE: for consistency, consider that all 5 occurrences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
+<p>
+<ins class="editornote" onMouseEnter="mouseEnter(this)" data-issue="75">EDITOR NOTE: for consistency, consider that all 5 occurrences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
 </p>
 
 </div>
