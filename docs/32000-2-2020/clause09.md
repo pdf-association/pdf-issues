@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 5 December 2021
+modified: 3 February 2022
 ---
 
 <ul class="noprint">
@@ -110,11 +110,15 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for other fonts simply contain information about the font and refer to a separate font program for the actual glyph descriptions; a Type 3 font dictionary contains the glyph descriptions. In Type 3 fonts, glyphs shall be defined by streams of PDF graphics <del onMouseEnter="mouseEnter(this)" data-issue="111">operators</del><ins onMouseEnter="mouseEnter(this)" data-issue="111">objects</ins>. These streams shall be associated with glyph names. A separate encoding entry shall map character codes to the appropriate glyph names for the glyphs.
 </p>
 
-<p>...</p>
+<p class="hangingindent">
+NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descriptions can contain arbitrary PDF graphics operators. However, Type 3 fonts have no hinting mechanism for improving output at small sizes or low resolutions.
+</p>
 
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects") subject to additional restrictions described in this clause. </ins></p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="111">Implementations also need to avoid potential infinite recursion if a Type 3 glyph description refers to itself directly or indirectly. The result in all such cases is implementation-dependent.</ins></p>
+
+<p class="editornote">EDITOR NOTE: remaining NOTEs in this clause will be renumbered appropriately.</p>
 
 <p>...</p>
 
