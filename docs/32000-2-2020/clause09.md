@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 3 February 2022
+modified: 4 February 2022
 ---
 
 <ul class="noprint">
@@ -171,6 +171,18 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
   <del onMouseEnter="mouseEnter(this)" data-issue="44">%Type 3 font definition encoding two glyphs, 'a' and 'b'</del>
   <ins onMouseEnter="mouseEnter(this)" data-issue="44">%Type 3 font definition encoding the two glyphs square and triangle</ins>
   4 0 obj
+     &lt;&lt;
+        /Type /Font
+        /Subtype /Type3
+        /FontBBox [-36 -36 786 786]
+        /FontMatrix [0.001 0 0 0.001 0 0]
+        /CharProcs 10 0 R
+        /Encoding 9 0 R
+        /FirstChar 97
+        /LastChar <del onMouseEnter="mouseEnter(this)" data-issue="144">144</del><ins onMouseEnter="mouseEnter(this)" data-issue="144">98</ins>
+        /Widths [1000 1000]
+     &gt;&gt;
+  endobj
   ...
 </code>
 
