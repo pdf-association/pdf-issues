@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 15 January 2022
+modified: 3 February 2022
 ---
 
 <ul class="noprint">
@@ -243,15 +243,21 @@ The subsection shall begin with a line containing only two integers separated by
 
 <ul>
   <li>...</li>
-  <li>An object representing the value of the <b>Length</b> entry in an object stream dictionary</li>
-  <li><ins onMouseEnter="mouseEnter(this)" data-issue="114">Any entry's value in an <b>ObjStm</b> dictionary shall be either a direct object or an indirect uncompressed object.</ins></li>
 </ul>
 
-<p>...</p>
+<p>
+<ins onMouseEnter="mouseEnter(this)" data-issue="114">Any entry's value in an <b>ObjStm</b> dictionary shall be either a direct object or an indirect uncompressed object.</ins>
+</p>
+
+<p class="hangingindent">
+NOTE 3 Indirect references to objects inside object streams use the normal syntax: for example, 14 0 R. Access to these objects requires a different way of storing cross-reference information; see 7.5.8, "Cross-reference streams". Use of compressed objects requires a PDF 1.5 PDF reader. However, compressed objects can be stored in a manner that a PDF 1.4 PDF reader can ignore.
+</p>
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins>
 </p>
+
+<p>...</p>
 
 <h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
 
