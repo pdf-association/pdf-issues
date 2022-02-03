@@ -55,6 +55,8 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 - The simulated "track changes" is achieved via HTML5 `del` and `ins` tags, styled by CSS in `assets/iso-style.css`.
 
+- Editor notes use `class="editornote"` and can use the `ins` tag if necessary to link to an issue.
+
 - Each `clauseXXX.md` file needs to start with the following structure: a local ToC for just this clause (if required); the ISO stylesheet, the hidden `div` used to display the popups, a fake H1 for the start of the clause:
 
 ```html
