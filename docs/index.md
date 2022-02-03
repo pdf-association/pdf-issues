@@ -33,11 +33,14 @@ Resolutions proposed here are <b>not</b> officially authorized by the ISO workin
 <h2>Resolved Issues</h2>
 
 <p>
-The current set of resolved issues are presented as <span class="isotyle"><ins title="GitHub Issue URL will appear">additions</ins>
-and <del title="GitHub Issue URL will appear">deletions</del></span>) to the published wording in the relevant ISO standard organized by clause number.
-GitHub Issue numbers will appear as popup tooltips when hovering over any addition or deletion and refer back to
+The current set of resolved issues are presented as <span class="isostyle">
+<ins title="GitHub Issue URL will appear">additions</ins>,
+<del title="GitHub Issue URL will appear">deletions</del> or
+<ins class="editornote" title="GitHub Issue URL will appear">editor notes</ins></span>
+to the published wording in the relevant ISO standard organized by clause number.
+GitHub Issue numbers will appear as popup tooltips when hovering over changes or inline when printed and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
-closed GitHub pdf-issues with a "proposed solution" label</a>.
+closed GitHub pdf-issues</a>.
 Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
 </p>
 
