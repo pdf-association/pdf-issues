@@ -3,7 +3,7 @@ subset: PDF/A-4
 isodoc: ISO 19005-4:2020
 clause: 6
 title: Technical requirements
-modified: 15 January 2022
+modified: 4 February 2022
 ---
 
 <ul>
@@ -13,6 +13,18 @@ modified: 15 January 2022
         <ul>
             <li><a href="#H6.2.9">6.2.9 Transparency</a>
             </li>
+        </ul>
+        <ul>
+          <li>6.2.10 Fonts
+            <ul>
+              <li>6.2.10.3 Composite Fonts
+                <ul>
+                  <li><a href="H6.2.10.3.1">6.2.10.3.1 General</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
     </li>
     <li>6.7 Metadata
@@ -53,6 +65,22 @@ This requirement ensures that there is always an explicitly defined transparency
 </p>
 
 <p>...</p>
+
+<h3 id="H6.2.10">6.2.10 Fonts</h3>
+
+<h4 id="H6.2.10.3">6.2.10.3 Composite Fonts</h4>
+
+<h5 id="H6.2.10.3.1">6.2.10.3.1 General</h5>
+
+<p>...</p>
+
+<ul>
+  <li>...</li>
+  <li>
+  Otherwise the corresponding values of the <b>Registry</b> and <b>Ordering</b> keys in both CIDSystemInfo dictionaries shall be identical, and the value of the <b>Supplement</b> key in the CIDSystemInfo dictionary of the CIDFont shall be <del onMouseEnter="mouseEnter(this)" data-issue="77">greater</del> <ins onMouseEnter="mouseEnter(this)" data-issue="77">less</ins> than or equal to the value of the <b>Supplement</b> key in the CIDSystemInfo dictionary of the CMap.
+  </li>
+</ul>
+
 
 <h2 id="H6.7">6.7 Metadata</h2>
 
