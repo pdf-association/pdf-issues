@@ -19,7 +19,7 @@ modified: 4 February 2022
             <ul>
               <li>6.2.10.3 Composite Fonts
                 <ul>
-                  <li><a href="H6.2.10.3.1">6.2.10.3.1 General</a>
+                  <li><a href="#H6.2.10.3.1">6.2.10.3.1 General</a>
                   </li>
                 </ul>
               </li>
