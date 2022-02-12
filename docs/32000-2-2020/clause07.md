@@ -202,6 +202,20 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <h2 id="H7.5">7.5 File structure</h2>
 
+<p>
+The trailer of a PDF file enables a PDF processor to quickly find the cross-reference table and certain
+special objects. PDF processors should read a PDF file from its end. The last line of the file shall contain
+only the end-of-file marker, %%EOF. The two preceding lines shall contain, one per line and in order,
+the keyword <b>startxref</b> and the byte offset
+<del onMouseEnter="mouseEnter(this)" data-issue="101">in the decoded stream</del> from the beginning of the PDF file to
+the beginning of the <b>xref</b> keyword in the last cross-reference section
+<ins onMouseEnter="mouseEnter(this)" data-issue="101">or the beginning of the previous cross-reference streams
+(see 7.5.8, "Cross-reference streams")</ins>. The <b>startxref</b> line shall be
+preceded by the trailer dictionary, consisting of the keyword trailer followed by a series of key-value
+pairs enclosed in double angle brackets (&lt;&lt;...&gt;&gt;) (using LESS-THAN SIGNs (3Ch) and GREATER-THAN
+SIGNs (3Eh)). Thus, the trailer has the following overall structure:
+</p>
+
 <p>...</p>
 
 <table>
