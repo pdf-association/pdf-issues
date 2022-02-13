@@ -211,7 +211,7 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p class="hangingindent">
 NOTE 3 The subsection structure is useful for incremental updates, since it allows a new cross-reference section to be added to the PDF file, containing entries only for objects that have been added, modified or deleted. <del onMouseEnter="mouseEnter(this)" data-issue="147">This also means that cross reference subsections of incremental updates can never have an object number of zero.</del>
-<p>
+</p>
 
 <p class="location">Change paragraph below NOTE 3 as follows:</p>
 
