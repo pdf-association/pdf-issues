@@ -32,7 +32,7 @@ Characters in text streams, as defined by 7.9.2, "String object types", are iden
 digit hexadecimal character code value with the prefix "U+" as shown in the example in this clause:
 </p>
 
-<p style="hangingindent">EXAMPLE  EN SPACE (U+2002)</p>
+<p class="hangingindent">EXAMPLE  EN SPACE (U+2002)</p>
 
 <p>
 <ins class="editornote" onMouseEnter="mouseEnter(this)" data-issue="75">EDITOR NOTE: for consistency, consider that all 5 occurrences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
