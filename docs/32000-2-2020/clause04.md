@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 4
 title: Notation
-modified: 3 February 2022
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -24,13 +24,15 @@ modified: 3 February 2022
 
 <p>...</p>
 
+<p class="location">Change last paragraph as follows:</p>
+
 <p>
 Characters in text streams, as defined by 7.9.2, "String object types", are identified by their Unicode character name written in uppercase
 <del onMouseEnter="mouseEnter(this)" data-issue="75">in font</del> followed by a parenthetic four <ins onMouseEnter="mouseEnter(this)" data-issue="75">or five</ins>
 digit hexadecimal character code value with the prefix "U+" as shown in the example in this clause:
 </p>
 
-<p>...</p>
+<p style="hangingindent">EXAMPLE  EN SPACE (U+2002)</p>
 
 <p>
 <ins class="editornote" onMouseEnter="mouseEnter(this)" data-issue="75">EDITOR NOTE: for consistency, consider that all 5 occurrences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>

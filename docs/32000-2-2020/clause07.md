@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 4 February 2022
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -142,9 +142,11 @@ modified: 4 February 2022
 
 <h2 id="H7.3">7.3 Objects</h2>
 
-<h3 id="H7.3".4>7.3.4 String objects</h3>
+<h3 id="H7.3.4">7.3.4 String objects</h3>
 
 <h4 id="H7.3.4.2">7.3.4.2 Literal strings</h4>
+
+<p class="location">Change first paragraph as follows:</p>
 
 <p>A <i>literal string</i> shall be written as an arbitrary number of characters enclosed in parentheses (LEFT PAREN<ins onMouseEnter="mouseEnter(this)" data-issue="143">T</ins>HESIS (28h) and RIGHT PARENTHESIS (29h)). Any characters may appear in a string except unbalanced parentheses and the backslash (REVERSE SOLIDUS (5Ch)), which shall be treated specially as described in this subclause. Balanced pairs of parentheses within a string require no special treatment.
 </p>
@@ -153,6 +155,7 @@ modified: 4 February 2022
 
 <h4 id="H7.3.8.2">7.3.8.2 Stream extent</h4>
 
+<p class="location">Change Table 5 as follows:</p>
 
 <table>
   <caption id="Table5">Table 5 - Entries common to all stream dictionaries</caption>
@@ -176,7 +179,7 @@ modified: 4 February 2022
 
 <h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
 
-<p>...</p>
+<p class="location">Change last bulleted list follows:</p>
 
 <p>The following conditions shall never occur in a correctly encoded byte sequence:</p>
 <ul>
@@ -187,7 +190,7 @@ modified: 4 February 2022
 
 <h3 id="H7.4.9">7.4.9 JPXDecode filter</h3>
 
-<p>...</p>
+<p class="location">Change paragraph below NOTE 5 as follows:</p>
 
 <p>
 Data used in PDF image XObjects shall be limited to the JPX baseline set of features,
@@ -201,6 +204,35 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 <p>...</p>
 
 <h2 id="H7.5">7.5 File structure</h2>
+
+<h3 id="H7.5.4">7.5.4 Cross reference table</h3>
+
+<p class="location">Change NOTE 3 as follows:</p>
+
+<p class="hangingindent">
+NOTE 3 The subsection structure is useful for incremental updates, since it allows a new cross-reference section to be added to the PDF file, containing entries only for objects that have been added, modified or deleted. <del onMouseEnter="mouseEnter(this)" data-issue="147">This also means that cross reference subsections of incremental updates can never have an object number of zero.</del>
+<p>
+
+<p class="location">Change paragraph below NOTE 3 as follows:</p>
+
+<p>
+Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
+<del onMouseEnter="mouseEnter(this)" data-issue="113">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.</del>
+The subsection shall begin with a line containing only two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
+</p>
+
+<p class="location">Change EXAMPLE 2 as follows:</p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 2 The cross-reference table sub-section line requires a single SPACE between "0" and "6".</ins></p>
+
+<p class="location">Change EXAMPLE 3 as follows:</p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 3 The cross-reference table first sub-section line requires a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.</ins></p>
+
+
+<h3 id="H7.5.5">7.5.5 File trailer</h3>
+
+<p class="location">Change first paragraph as follows:</p>
 
 <p>
 The trailer of a PDF file enables a PDF processor to quickly find the cross-reference table and certain
@@ -216,7 +248,7 @@ pairs enclosed in double angle brackets (&lt;&lt;...&gt;&gt;) (using LESS-THAN S
 SIGNs (3Eh)). Thus, the trailer has the following overall structure:
 </p>
 
-<p>...</p>
+<p class="location">Change Table 15 as follows:</p>
 
 <table>
   <caption id="Table15">Table 15 - Entries in the file trailer dictionary</caption>
@@ -237,31 +269,9 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
   </tr>
 </table>
 
-<h3 id="H7.5.4">7.5.4 Cross reference table</h3>
-
-<p>...</p>
-
-<p class="hangingindent">
-NOTE 3 The subsection structure is useful for incremental updates, since it allows a new cross-reference section to be added to the PDF file, containing entries only for objects that have been added, modified or deleted. <del onMouseEnter="mouseEnter(this)" data-issue="147">This also means that cross reference subsections of incremental updates can never have an object number of zero.</del>
-<p>
-
-<p>
-Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
-<del onMouseEnter="mouseEnter(this)" data-issue="113">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.</del>
-The subsection shall begin with a line containing only two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
-</p>
-
-<p>...</p>
-
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 2 The cross-reference table sub-section line requires a single SPACE between "0" and "6".</ins></p>
-
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 3 The cross-reference table first sub-section line requires a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.</ins></p>
-
-
 <h3 id="H7.5.7">7.5.7 Object streams</h3>
 
-<p>...</p>
-
+<p class="location">Append the following paragraph after the bulleted list as follows:</p>
 
 <p>The following objects shall not be stored in an object stream:</p>
 
@@ -277,6 +287,8 @@ The subsection shall begin with a line containing only two <ins onMouseEnter="mo
 NOTE 3 Indirect references to objects inside object streams use the normal syntax: for example, 14 0 R. Access to these objects requires a different way of storing cross-reference information; see 7.5.8, "Cross-reference streams". Use of compressed objects requires a PDF 1.5 PDF reader. However, compressed objects can be stored in a manner that a PDF 1.4 PDF reader can ignore.
 </p>
 
+<p class="location">Insert the following new NOTE 4 after NOTE 3 as follows:</p>
+
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="110">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins>
 </p>
@@ -287,7 +299,7 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 
 <h4 id="H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</h4>
 
-<p>...</p>
+<p class="location">Change Table 19 as follows:</p>
 
 <table>
   <caption id="Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</caption>
@@ -313,7 +325,7 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 
 <h4 id="H7.6.3.1">7.6.3.1 General</h4>
 
-<p>...</p>
+<p class="location">Change NOTE 1 as follows:</p>
 
 <p class="hangingindent">NOTE 1 The name RC4&trade; is a registered trademark of RSA Security Inc. and cannot be used by third parties creating implementations of the algorithm. Proprietary implementations of the RC4 encryption algorithm are available under license from RSA Security Inc. For licensing information, contact: <del onMouseEnter="mouseEnter(this)" data-issue="95">RSA Security Inc. 2955 Campus Drive, Suite 400, San Mateo, CA 94403-2507, USA, or</del> <a href="http://www.rsasecurity.com/">http://www.rsasecurity.com/</a>.</p>
 
@@ -323,7 +335,7 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 
 <h4 id="H7.6.4.1">7.6.4.1 General</h4>
 
-<p>...</p>
+<p class="location">Change the second paragraph above NOTE 2 as follows:</p>
 
 <p>
 If a security handler of revision 4 or 5 is specified, the standard security handler shall support crypt filters (see 7.6.6, "Crypt filters").
@@ -343,10 +355,12 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <h5 id="H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</h5>
 
-<p>...</p>
+<p class="location">Change NOTE 2 as follows:</p>
 
 <p class="hangingindent">NOTE 2  The first element of the ID array, as used in 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", step e, generally remains unchanged across revisions of a given document. However, since this is not guaranteed, use of the ID in computation of the file encryption key, as required when using <del onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.3, "Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</del> <ins onMouseEnter="mouseEnter(this)" data-issue="53">7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</ins>, can complicate updates to the document. For this reason, security handlers are encouraged to use Algorithm 2.A or higher, which do not use the ID in file encryption key computation. <del onMouseEnter="mouseEnter(this)" data-issue="53">This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described below.</del>
 </p>
+
+<p class="location">Insert new NOTE 3 immediately below NOTE 2 as follows:</p>
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="53">NOTE 3  This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described in 7.6.4.4, "Password algorithms".</ins>
@@ -354,8 +368,7 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <h5 id="H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</h5>
 
-<p>...</p>
-
+<p class="location">Insert new NOTE below bullet (f) as follows:</p>
 
 <ol type="a" start="6">
 <li>
@@ -370,6 +383,8 @@ and the file encryption key as the key. ...
 
 <h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
+<p class="location">Change bullet (f) as follows:</p>
+
 <ol type="a" start="6">
 <li>
 Encrypt the 16-byte block using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24">with an initialization vector of zero</del>,
@@ -378,6 +393,8 @@ using the file encryption key as the key. The result (16 bytes) is stored as the
 </ol>
 
 <h5 id="H7.6.4.4.12">7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</h5>
+
+<p class="location">Change bullet (a) as follows:</p>
 
 <ol type="a" start="1">
 <li>
@@ -388,7 +405,7 @@ and the file encryption key as the key. ...
 
 <h4 id="H7.6.5.3">7.6.5.3 Public-key encryption algorithms</h4>
 
-<p><i>New notes added at the end of sub-clause 7.6.5.3:</i></p>
+<p class="location">Add two new notes at the very end of the sub-clause as follows:</p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="25">
 <p class="hangingindent">NOTE 1: This means that step c) only applies when both of the following conditions are met:</p>
@@ -407,6 +424,8 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h3 id="H7.6.6">7.6.6 Crypt filters</h3>
 
+<p class="location">Change the first bullet in the sub-clause as follows:</p>
+
 <p>PDF 1.5 introduces crypt filters, which provide finer granularity control of encryption within a PDF file. The use of crypt filters involves the following structures:</p>
 
 <ul>
@@ -415,6 +434,8 @@ there is no way to specify that metadata is to be left unencrypted in these case
 </ul>
 
 <p>...</p>
+
+<p class="location">Change Table 27 as follows:</p>
 
 <table>
   <caption id="Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</caption>
@@ -440,6 +461,8 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h3 id="H7.7.2">7.7.2 Document catalog dictionary</h3>
 
+<p class="location">Change Table 29 as follows:</p>
+
 <table>
   <caption id="Table29">Table 29 - Entries in the catalog dictionary</caption>
   <tr>
@@ -463,6 +486,8 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h4 id="H7.7.3.3">7.7.3.3 Page objects</h4>
 
+<p class="location">Change Table 31 as follows:</p>
+
 <table>
   <caption id="Table31">Table 31 - Entries in a page object</caption>
   <tr>
@@ -484,7 +509,9 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h3 id="H7.8.3">7.8.3 Resource dictionaries</h3>
 
-<p>...</p>
+<p class="location">Change the first bullet in the first bulleted list as follows:</p>
+
+<p>A resource dictionary shall be associated with a content stream in one of the following ways:</p>
 
 <ul>
 <li>
@@ -495,14 +522,13 @@ attributes" from some ancestor node of the page object. ...
 </li>
 </ul>
 
-
 <p>...</p>
 
 <h4 id="H7.9.2.2">7.9.2.2 Text string type</h4>
 
 <h5 id="H7.9.2.2.1">7.9.2.2.1 General</h5>
 
-<p>...</p>
+<p class="location">Change EXAMPLE 1 as follows:</p>
 
 <p>EXAMPLE 1 A PDF dictionary containing key 'Key' with the value that is the text string "text&permil;" will look like</p>
 
@@ -515,6 +541,8 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
+<p class="location">Change EXAMPLE 2 as follows:</p>
+
 <p>EXAMPLE 2 A PDF dictionary containing key 'Key' with the value that is the text string "&#x442;&#x435;&#x441;&#x442;" (that is what the word in Russian with the translation to English as 'test') will look like</p>
 
 <code>
@@ -526,13 +554,14 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
+<p class="location">Delete NOTE 5 as follows:</p>
+
 <p class="hangingindent"><del onMouseEnter="mouseEnter(this)" data-issue="96">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.</del></p>
 
 
 <h3 id="H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</h3>
 
-
-<p>...</p>
+<p class="location">Change the paragraph below Table 40 as follows:</p>
 
 <p>Values of <b>Domain</b> shall constrain <i>x</i> in such a way that<ins onMouseEnter="mouseEnter(this)" data-issue="30">: </ins></p>
 
@@ -549,6 +578,7 @@ attributes" from some ancestor node of the page object. ...
 
 <h3 id="H7.11.6">7.11.6 Collection items</h3>
 
+<p class="location">Change Table 47 as follows:</p>
 
 <table>
   <caption id="Table47">Table 47 - Entries in a collection subitem dictionary</caption>
@@ -578,6 +608,8 @@ attributes" from some ancestor node of the page object. ...
 
 <h3 id="H7.12.2">7.12.2 Extensions dictionary</h3>
 
+<p class="location">Change Table 48 as follows:</p>
+
 <table>
   <caption id="Table48">Table 48 - Entries in an extensions dictionary</caption>
   <tr>
@@ -595,7 +627,6 @@ attributes" from some ancestor node of the page object. ...
 </table>
 
 </div>
-
 
 <hr>
 <p class="footnote">Last modified: {{page.modified}}</p>

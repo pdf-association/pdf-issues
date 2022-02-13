@@ -135,3 +135,9 @@
     text-decoration: initial;
   }
 
+  .isostyle .location {
+    font-style: italic;
+    color: DimGrey;
+    font-size: 80%;
+  }
+  
