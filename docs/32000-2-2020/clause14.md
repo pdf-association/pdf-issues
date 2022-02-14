@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 4 February 2022
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -90,12 +90,19 @@ modified: 4 February 2022
 
 <h2 id="H14.5">14.5 Page-piece dictionaries</h2>
 
+<p class="location">Change the paragraph above Table 350 as follows:</p>
+
 <p>
 As "Table 350 - Entries in a page-piece dictionary" shows, a page-piece dictionary may contain any number of entries,
 each <del onMouseEnter="mouseEnter(this)" data-issue="69">keyed by</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="69">key should be a second-class name, or</ins>
 the name of a distinct PDF processor, or of a well-known data type recognised by a family of PDF processors.
+The value associated with each key shall be a data dictionary containing the private data that shall be used by the PDF processor.
+The <b>Private</b> entry may have a value of any data type, but typically it is a dictionary containing all of the private
+data needed by the PDF processor other than the actual content of the document, page, or form.
 </p>
+
+<p class="location">Change Table 350 as follows:</p>
 
 <table>
   <caption id="Table350">Table 350 - Entries in a page-piece dictionary</caption>
@@ -112,6 +119,8 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
   </tr>
 </table>
 
+<p class="location">Insert new NOTE below Table 350 as follows:</p>
+
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="69">NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
 </p>
@@ -120,7 +129,7 @@ the name of a distinct PDF processor, or of a well-known data type recognised by
 
 <h3 id="H14.6.1">14.6.1 General</h3>
 
-<p>...</p>
+<p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
 NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126">role mapped</ins>.
@@ -130,7 +139,7 @@ NOTE 3 The tag operand of marked-content operators have no relationship to Tagge
 
 <h3 id="H14.7.2">14.7.2 Structure hierarchy</h3>
 
-<p>...</p>
+<p class="location">Change Table 355 as follows:</p>
 
 <table>
   <caption id="Table355">Table 355 - Entries in a structure element dictionary</caption>
@@ -149,7 +158,7 @@ NOTE 3 The tag operand of marked-content operators have no relationship to Tagge
 
 <h3 id="H14.7.3">14.7.3 Structure types</h3>
 
-<p>...</p>
+<p class="location">Change the third paragraph as follows:</p>
 
 <p>
 The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing structure element types <del onMouseEnter="mouseEnter(this)" data-issue="126">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126">role mapped</ins> to other structure element types. The corresponding value for each of these keys shall be a single name identifying the target structure element type.
@@ -162,6 +171,8 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 <h3 id="H14.8.4">14.8.4 Standard structure types</h3>
 
 <h4 id="H14.8.4.4">14.8.4.4 Grouping level structure types</h4>
+
+<p class="location">Change Table 365 as follows:</p>
 
 <table>
   <caption id="Table365">Table 365 - Grouping level structure types</caption>
@@ -191,6 +202,7 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <h5 id="H14.8.4.7.2">14.8.4.7.2 General inline level structure types</h5>
 
+<p class="location">Change Table 368 as follows:</p>
 
 <table>
   <caption id="Table368">Table 368 - General inline level structure types</caption>
@@ -212,6 +224,8 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     </td>
   </tr>
 </table>
+
+<p class="location">Insert a new clause heading below NOTE 1 and modify text as follows:</p>
 
 <h5 id="H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133">14.8.4.7.3 Link elements</ins></h5>
 
@@ -336,6 +350,7 @@ endobj
 
 <h5 id="H14.8.4.8.3">14.8.4.8.3 Table structure types</h5>
 
+<p class="location">Change Table 371 as follows:</p>
 
 <table>
   <caption id="Table371">Table 371 - Table standard structure types</caption>
@@ -356,6 +371,7 @@ endobj
 
 <h5 id="H14.8.4.8.4">14.8.4.8.4 Caption structure types</h5>
 
+<p class="location">Change Table 372 as follows:</p>
 
 <table>
   <caption id="Table372">Table 372 - Standard structure type Caption</caption>
@@ -385,18 +401,18 @@ endobj
 
 <h4 id="H14.8.6.1">14.8.6.1 Namespaces for standard structure types and attributes</h4>
 
-<p>...</p>
+<p class="location">Insert a new NOTE 2 after the last paragraph as follows:</p>
 
 <p>The term <i>standard structure namespaces</i> refers to either of the two namespaces defined above.</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="8"> NOTE: Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="8"> NOTE 2 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
 </p>
 
 
 <h4 id="H14.8.6.2">14.8.6.2 Role maps and namespaces</h4>
 
-<p>...</p>
+<p class="location">Insert a new EXAMPLE at the end of the subclause as follows:</p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="65">
 <p>EXAMPLE:</p>
@@ -430,7 +446,7 @@ endobj
 
 <h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
 
-<p>...</p>
+<p class="location">Replace the paragraph below NOTE 1 as follows:</p>
 
 <p class="hangingindent">NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
 
@@ -444,7 +460,7 @@ endobj
 
 <h4 id="H14.12.4.2">14.12.4.2 Document part metadata</h4>
 
-<p>...</p>
+<p class="location">Change the last paragraph as follows:</p>
 
 <p>
 The values of keys present in the DPM dictionary, or of any dictionary or array object present in the DPM dictionary, shall only be of type text string, date string,
@@ -457,8 +473,7 @@ Other PDF value types shall not be used.
 
 <h3 id="H14.13.5">14.13.5 Associated files linked to graphics objects</h3>
 
-
-<p>...</p>
+<p class="location">Change the paragraph below NOTE 3 as follows:</p>
 
 <p>
 The property list associated with the marked-content shall specify an array of file specification dictionaries to which
