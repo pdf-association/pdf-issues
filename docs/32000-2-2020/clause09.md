@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 4 February 2022
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -52,9 +52,9 @@ modified: 4 February 2022
 
 <h3 id="H9.6.2">9.6.2 Type 1 fonts</h3>
 
-
 <h4 id="H9.6.2.1">9.6.2.1 General</h4>
 
+<p class="location">Change Table 109 as follows:</p>
 
 <table>
   <caption id="Table109">Table 109 - Entries in a Type 1 font dictionary</caption>
@@ -78,6 +78,7 @@ modified: 4 February 2022
   </tr>
 </table>
 
+<p class="location">Change the paragraph below Table 109 as follows:</p>
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="47,48">PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font descriptor data for those standard fonts for use in processing PDF files when the entries are absent.</del>
@@ -89,7 +90,7 @@ modified: 4 February 2022
 
 <h4 id="H9.6.2.2">9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</h4>
 
-<p>...</p>
+<p class="location">Change the second paragraph to a NOTE and modify as follows:</p>
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="47,48">NOTE: </ins>
@@ -99,12 +100,16 @@ optional in Type 1 font dictionaries for the standard 14 fonts. PDF processors s
 <ins onMouseEnter="mouseEnter(this)" data-issue="47,48">are required to</ins>
 have these fonts, or their font metrics and suitable substitution fonts available.</p>
 
+<p class="location">Delete the last paragraph as follows:</p>
+
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="47,48">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.</del>
 </p>
 
 
 <h3 id="H9.6.4">9.6.4 Type 3 fonts</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
 
 <p>
 Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for other fonts simply contain information about the font and refer to a separate font program for the actual glyph descriptions; a Type 3 font dictionary contains the glyph descriptions. In Type 3 fonts, glyphs shall be defined by streams of PDF graphics <del onMouseEnter="mouseEnter(this)" data-issue="111">operators</del><ins onMouseEnter="mouseEnter(this)" data-issue="111">objects</ins>. These streams shall be associated with glyph names. A separate encoding entry shall map character codes to the appropriate glyph names for the glyphs.
@@ -114,6 +119,8 @@ Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for
 NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descriptions can contain arbitrary PDF graphics operators. However, Type 3 fonts have no hinting mechanism for improving output at small sizes or low resolutions.
 </p>
 
+<p class="location">Insert a new NOTE 2 and a new paragraph below NOTE 1 as follows:</p>
+
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects") subject to additional restrictions described in this clause. </ins></p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="111">Implementations also need to avoid potential infinite recursion if a Type 3 glyph description refers to itself directly or indirectly. The result in all such cases is implementation-dependent.</ins></p>
@@ -121,6 +128,8 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
 <p class="editornote">EDITOR NOTE: remaining NOTEs in this clause will be renumbered appropriately.</p>
 
 <p>...</p>
+
+<p class="location">Change Table 111 as follows:</p>
 
 <table>
   <caption id="Table111">Table 111 - Type 3 font operators</caption>
@@ -159,6 +168,8 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
   </tr>
 </table>
 
+<p class="location">Change the EXAMPLE below Table 111 as follows:</p>
+
 <p>EXAMPLE
 This example shows the definition of a Type 3 font with only two glyphs - a filled square and a filled triangle
 <del onMouseEnter="mouseEnter(this)" data-issue="44">, selected by the character codes a and b</del>.
@@ -192,6 +203,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 
 <h3 id="H9.8.1">9.8.1 General</h3>
 
+<p class="location">Change Table 120 as follows:</p>
 
 <table>
   <caption id="Table120">Table 120 - Entries common to all font descriptors</caption>
@@ -215,8 +227,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 
 <h4 id="H9.8.3.3">9.8.3.3 FD</h4>
 
-
-<p>...</p>
+<p class="location">Change the second paragraph below EXAMPLE 1 as follows:</p>
 
 <p>
 The key for each entry in an <b>FD</b> dictionary shall be the name of a class of glyphs - that is, a particular subset of the CIDFont's
@@ -233,7 +244,8 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 
 <h3 id="H9.10.3">9.10.3 ToUnicode CMaps</h3>
 
-<p>...</p>
+<p class="location">Change the last paragraph in EXAMPLE 2 as follows:</p>
+
 <p>EXAMPLE 2</p>
 <p style="margin-left: 40px;">...</p>
 <p style="margin-left: 40px;">Finally, the character code &lt;3A 51&gt; is mapped to the Unicode value

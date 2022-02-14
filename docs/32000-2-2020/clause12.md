@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 4 February 2022
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -102,6 +102,8 @@ modified: 4 February 2022
 
 <h2 id="H12.2">12.2 Viewer preferences</h2>
 
+<p class="location">Change Table 147 as follows:</p>
+
 <table>
   <caption id="Table147">Table 147 - Entries in a viewer preferences dictionary</caption>
   <tr>
@@ -172,7 +174,9 @@ modified: 4 February 2022
 
 <h3 id="#H12.3.3">12.3.3 Document outline</h3>
 
-<p>...</p><table>
+<p class="location">Change Table 151 as follows:</p>
+
+<table>
   <caption id="Table151">Table 151 - Entries in an outline item dictionary</caption>
   <tr>
     <th>Key</th>
@@ -183,7 +187,7 @@ modified: 4 February 2022
     <td><b>Prev</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required for all but the first item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139">shall not be present on the first item at each level;</ins> 
+    <p>(<i>Required for all but the first item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139">shall not be present on the first item at each level;</ins>
         shall be an indirect reference</i>) The previous item at this outline level.</p>
     </td>
   </tr>
@@ -197,9 +201,11 @@ modified: 4 February 2022
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Change the title of clause 12.4.2 as follows:</p>
 
 <h3 id="H12.4.2">12.4.2 Page labels <ins onMouseEnter="mouseEnter(this)" data-issue="73"> and indices</ins></h3>
-
 
 <p>...</p>
 
@@ -209,6 +215,7 @@ modified: 4 February 2022
 
 <h4 id="H12.4.4.1">12.4.4.1 General</h4>
 
+<p class="location">Change Table 164 as follows:</p>
 
 <table>
   <caption id="Table164">Table 164 - Entries in a transition dictionary</caption>
@@ -232,7 +239,7 @@ modified: 4 February 2022
 
 <h3 id="H12.5.1">12.5.1 General</h3>
 
-<p>...</p>
+<p class="location">Change the last paragraph as follows:</p>
 
 <p>
 These descriptions assume the page is being viewed in the orientation specified by the <b>Rotate</b> entry. Conceptually, the behaviour of each annotation type may be
@@ -243,6 +250,8 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1">
 .</p>
 
 <h3 id="H12.5.2">12.5.2 Annotation dictionaries</h3>
+
+<p class="location">Change Table 166 as follows:</p>
 
 <table>
   <caption id="Table166">Table 166 - Entries common to all annotation dictionaries</caption>
@@ -270,6 +279,8 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1">
   </tr>
 </table>
 
+<p class="location">Change the paragraph and NOTEs below Table 166 as follows:</p>
+
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="23,34">A PDF reader shall render the appearance dictionary without regard to any other keys and values in the annotation dictionary and </del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="23,34">When rendering the appearance dictionary, a PDF reader</ins>
@@ -292,7 +303,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34">2</ins> Requiring an a
 
 <h4 id="H12.5.6.2">12.5.6.2 Markup annotations</h4>
 
-<p>...</p>
+<p class="location">Change the paragraph below NOTE 1 as follows:</p>
 
 <p>
 When
@@ -303,6 +314,8 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 <p>...</p>
 
 <h4 id="H12.5.6.5">12.5.6.5 Link annotations</h4>
+
+<p class="location">Change Table 176 as follows:</p>
 
 <table>
   <caption id="Table176">Table 176 - Additional entries specific to a link annotation</caption>
@@ -331,6 +344,8 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 
 <h4 id="H12.5.6.6">12.5.6.6 Free text annotations</h4>
 
+<p class="location">Change Table 177 as follows:</p>
+
 <table>
   <caption id="Table177">Table 177 - Additional entries specific to a free text annotation</caption>
   <tr>
@@ -350,7 +365,7 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 
 <h4 id="H12.5.6.18">12.5.6.18 Screen annotations</h4>
 
-<p>...</p>
+<p class="location">Change the last bullet below Table 190 as follows:</p>
 
 <ul>
 <li>...</li>
@@ -363,16 +378,22 @@ appearance for a screen annotation that shall be used for printing and default d
 
 <h4 id="H12.5.6.24">12.5.6.24 Projection annotations</h4>
 
+<p class="location">Change the first paragraph as follows:</p>
+
 <p>A <i>projection annotation (PDF 2.0)</i> is a markup annotation subtype (see 12.5.6.2, "Markup annotations") that has much of the functionality of other markup annotations.
 However, a projection annotation is only valid within the context of an associated run-time environment, such as an activated 3D model<ins onMouseEnter="mouseEnter(this)" data-issue="94">, and thus an <b>AP</b> dictionary is not required</ins>.</p>
 
 <p>...</p>
+
+<p class="location">Delete the last paragraph as follows:</p>
 
 <p><del onMouseEnter="mouseEnter(this)" data-issue="42">A projection annotation with a <b>Rect</b> entry that has zero height or zero width shall not have an <b>AP</b> dictionary.</del></p>
 
 <h3 id="H12.7.4">12.7.4 Field dictionaries</h3>
 
 <h4 id="H12.7.4.1">12.7.4.1 General</h4>
+
+<p class="location">Change Table 226 as follows:</p>
 
 <table>
   <caption id="Table226">Table 226 - Entries common to all field dictionaries</caption>
@@ -394,7 +415,7 @@ However, a projection annotation is only valid within the context of an associat
 
 <h4 id="H12.7.5.5">12.7.5.5 Signature Fields</h4>
 
-<p>...</p>
+<p class="location">Change Table 236 as follows:</p>
 
 <table>
   <caption id="Table236">Table 236 - Entries in a signature field lock dictionary</caption>
@@ -415,6 +436,8 @@ However, a projection annotation is only valid within the context of an associat
 
 <p>...</p>
 
+<p class="location">Change Table 237 as follows:</p>
+
 <table>
   <caption id="Table237">Table 237 - Entries in a signature field seed value dictionary</caption>
   <tr>
@@ -434,6 +457,8 @@ However, a projection annotation is only valid within the context of an associat
 <h3 id="H12.7.6">12.7.6 Form actions</h3>
 
 <h4 id="H12.7.6.2">12.7.6.2 Submit-form action</h4>
+
+<p class="location">Change Table 239 as follows:</p>
 
 <table>
   <caption id="Table239">Table 239 - Additional entries specific to a submit-form action</caption>
@@ -460,6 +485,7 @@ However, a projection annotation is only valid within the context of an associat
 
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
+<p class="location">Change the first paragraph as follows:</p>
 
 <p>
 Unlike interactive forms, non-interactive forms do not use widget annotations but are represented with page content. Non-interactive forms are defined by the
@@ -469,7 +495,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <h3 id="H12.8.1">12.8.1 Signature Fields</h3>
 
-<p>...</p>
+<p class="location">Change the list item below NOTE 2 as follows:</p>
 
 <p>A PDF document may contain the following standard types of signatures:</p>
 <ul>
@@ -481,6 +507,8 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </ul>
 
 <p>A signature dictionary is used by all of these types of signatures.</p>
+
+<p class="location">Change Table 255 as follows:</p>
 
 <table>
   <caption id="Table255">Table 255 - Entries in a signature dictionary</caption>
@@ -508,6 +536,8 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <p>...</p>
 
+<p class="location">Change Table 256 as follows:</p>
+
 <table>
   <caption id="Table256">Table 256 - Entries in a signature reference dictionary</caption>
   <tr>
@@ -525,6 +555,8 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </table>
 
 <h4 id="H12.8.2.4">12.8.2.4 FieldMDP</h4>
+
+<p class="location">Change Table 259 as follows:</p>
 
 <table>
   <caption id="Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</caption>
@@ -546,6 +578,8 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 <h3 id="H12.8.3">12.8.3 Signature interoperability</h3>
 
 <h4 id="H12.8.3.1">12.8.3.1 General</h4>
+
+<p class="location">Change Table 260 as follows:</p>
 
 <table>
   <caption id="Table260">Table 260 - SubFilter value algorithm support</caption>
@@ -570,9 +604,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
   </tr>
 </table>
 
-<p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="109"><sup>Note that in Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</sup></ins>
-</p>
+<p class="editornote">EDITOR NOTE: Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</p>
 
 </div>
 
