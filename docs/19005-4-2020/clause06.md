@@ -53,12 +53,14 @@ modified: 14 February 2022
 
 <h3 id="H6.2.9">6.2.9 Transparency</h3>
 
-<p class="location">Insert a new NOTE 2 after the existing NOTE (renumbered) as follows:</p>
+<p class="location">Change the second paragraph as follows:</p>
 
 <p class="hangingindent">
 NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="104">1</ins>
 This requirement ensures that there is always an explicitly defined transparency blending space specified for any content which has associated transparency.
 </p>
+
+<p class="location">Insert a new NOTE 2 after the existing NOTE (renumbered) as follows:</p>
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="104">Note 2 Page transparency can be determined as defined in ISO 32000-2:2020, Annex Q.</ins>

@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex H
 title: (informative) Example PDF files
-modified: 30 July 2021
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -27,6 +27,8 @@ modified: 30 July 2021
 <h2 id="HH.8">H.8 Structure elements examples</h2>
 
 <h3 id="HH.8.2">H.8.2 Table of Contents</h3>
+
+<p class="location">Insert a new NOTE after the first paragraph as follows:</p>
 
 <p>
 The structure element's structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents.

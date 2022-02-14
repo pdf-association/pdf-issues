@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex Q
 title: (normative) Method for determining transparency on a page
-modified: 16 April 2021
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -22,7 +22,7 @@ modified: 16 April 2021
 
 <h2 id="HQ.2">Q.2. Page content</h2>
 
-<p>...</p>
+<p class="location">Change the last paragraph as follows:</p>
 
 <p>
 Since Annotations require an appearance stream which is drawn by a PDF processor on top of the page content, it is possible
@@ -33,7 +33,6 @@ shall be considered to contain transparency (see "Table 166 - Entries common to 
 </p>
 
 </div>
-
 
 <hr>
 <p class="footnote">Last modified: {{page.modified}}</p>

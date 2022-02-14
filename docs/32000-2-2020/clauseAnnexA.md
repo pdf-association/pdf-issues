@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex A
 title: (informative) Operator Summary
-modified: 30 July 2021
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -21,6 +21,8 @@ modified: 30 July 2021
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="HA.2">A.2 PDF content stream operators</h2>
+
+<p class="location">Change Table A.1 as follows:</p>
 
 <table>
   <caption id="TableA.1">Table A.1 - PDF content stream operators</caption>

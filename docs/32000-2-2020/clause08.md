@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 5 December 2021
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -56,7 +56,7 @@ modified: 5 December 2021
 
 <h2 id="H8.2">8.2 Graphics objects</h2>
 
-<p>...</p>
+<p class="location">Change Table 50 as follows:</p>
 
 <table>
   <caption id="Table50">Table 50 - Operator categories</caption>
@@ -93,7 +93,7 @@ modified: 5 December 2021
 
 <h4 id="H8.5.3.1">8.5.3.1 General</h4>
 
-<p>...</p>
+<p class="location">Change Table 59 as follows:</p>
 
 <table>
   <caption id="Table59">Table 59 - Path-painting categories</caption>
@@ -118,7 +118,7 @@ modified: 5 December 2021
 
 <h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
 
-<p>...</p>
+<p class="location">Change the NOTE below Table 69 as follows:</p>
 
 <p class="hangingindent">
 NOTE The exact set of rendering intents supported can vary from one output device to another; a particular device
@@ -129,6 +129,8 @@ can support additional ones beyond those listed in the table above.
 <h3 id="H8.9.5">8.9.5 Image dictionaries</h3>
 
 <h4 id="H8.9.5.1">8.9.5.1 General</h4>
+
+<p class="location">Change Table 87 as follows:</p>
 
 <table>
   <caption id="Table87">Table 87 - Additional entries specific to an image dictionary</caption>
@@ -195,7 +197,7 @@ can support additional ones beyond those listed in the table above.
 
 <h4 id="H8.9.5.4">8.9.5.4 Alternate images</h4>
 
-<p>...</p>
+<p class="location">Change the list below Table 89 as follows:</p>
 
 <p>In PDF 1.5, optional content (see 8.11, "Optional content") may be used to facilitate selection between alternate images. The following algorithm shall be used to determine which image, if any, shall be rendered:</p>
 
@@ -233,8 +235,7 @@ can support additional ones beyond those listed in the table above.
 
 <h3 id="H8.9.7">8.9.7 Inline images</h3>
 
-
-<p>...</p>
+<p class="location">Change the paragraphs below Table 90 as follows:</p>
 
 <p>
 Inline image objects shall not be nested; that is, two <b>BI</b> operators shall not appear without an intervening <b>EI</b> to close the first object.
@@ -256,9 +257,11 @@ Entries other than those listed shall be ignored.
 
 <p>...</p>
 
-<p class="hangingindent">
+<p class="location">Replace NOTE 3 as follows:</p>
+
+<p class="hangingindent">NOTE 3
 <del onMouseEnter="mouseEnter(this)" data-issue="19">
-NOTE 3 The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
+The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
 identify the corresponding colour spaces directly; they never refer to resources in the <b>ColorSpace</b> subdictionary.</del>
 
 

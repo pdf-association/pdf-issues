@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
-modified: 16 February 2021
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -30,6 +30,7 @@ modified: 16 February 2021
 
 <h4 id="H10.6.5.6">10.6.5.6 Type 5 halftones</h4>
 
+<p class="location">Change Table 132 as follows:</p>
 
 <table>
   <caption id="Table132">Table 132 - Entries in a Type 5 halftone dictionary</caption>
