@@ -3,7 +3,7 @@ subset: PDF/A-4
 isodoc: ISO 19005-4:2020
 clause: 6
 title: Technical requirements
-modified: 4 February 2022
+modified: 14 February 2022
 ---
 
 <ul>
@@ -53,7 +53,7 @@ modified: 4 February 2022
 
 <h3 id="H6.2.9">6.2.9 Transparency</h3>
 
-<p>...</p>
+<p class="location">Insert a new NOTE 2 after the existing NOTE (renumbered) as follows:</p>
 
 <p class="hangingindent">
 NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="104">1</ins>
@@ -72,7 +72,7 @@ This requirement ensures that there is always an explicitly defined transparency
 
 <h5 id="H6.2.10.3.1">6.2.10.3.1 General</h5>
 
-<p>...</p>
+<p class="location">Change the last bullet as follows:</p>
 
 <ul>
   <li>...</li>
@@ -86,7 +86,7 @@ This requirement ensures that there is always an explicitly defined transparency
 
 <h3 id="H6.7.3">6.7.3 Version identification</h3>
 
-<p>...</p>
+<p class="location">Add a new NOTE before Table 2 as follows:</p>
 
 <p>The PDF/A identification schema defined in Table 2 uses the namespace URI http<del onMouseEnter="mouseEnter(this)" data-issue="123">s</del>://www.aiim.org/pdfa/ns/id/. The required schema namespace prefix is <b>pdfaid</b>.
 </p>
@@ -94,6 +94,8 @@ This requirement ensures that there is always an explicitly defined transparency
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="123">
 NOTE there was an error in a previous edition of this document and implementations may choose to accept "https" in addition to "http" for the namespace URI.
 </ins></p>
+
+<p class="location">Change Table 2 as follows:</p>
 
 <table>
   <caption id="Table2">Table 2 - PDF/A identification schema</caption>

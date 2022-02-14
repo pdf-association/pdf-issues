@@ -3,7 +3,7 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 clause: 10
 title: ECMAScript API
-modified: 19 June 2021
+modified: 14 February 2022
 ---
 
 <ul>
@@ -29,7 +29,7 @@ modified: 19 June 2021
 
 <h2 id="H10.1">10.1 General</h2>
 
-<p>...</p>
+<p class="location">Delete the last paragraph as follows:</p>
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="70">More information regarding the ECMAScript core can be found in ISO/IEC 22537.</del>
@@ -41,24 +41,24 @@ modified: 19 June 2021
 
 <h3 id="H10.2.2">10.2.2 Annotation types</h3>
 
-<p>...</p>
+<p class="location">Change the list as follows:</p>
 
 <table style="border: none;">
 <tr style="border: none;">
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="82">Sound</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2</ins></td>
+    <td style="border: none;"><ins onMouseEnter="mouseEnter(this)" data-issue="82">Sound</ins></td>
+    <td style="border: none;"><ins onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2</ins></td>
 </tr>
 <tr style="border: none;">
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">PrinterMark</del></td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2</del></td>
+    <td style="border: none;"><del onMouseEnter="mouseEnter(this)" data-issue="82">PrinterMark</del></td>
+    <td style="border: none;"><del onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2</del></td>
 </tr>
 <tr style="border: none;">
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">Screen</del></td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)</del></td>
+    <td style="border: none;"><del onMouseEnter="mouseEnter(this)" data-issue="82">Screen</del></td>
+    <td style="border: none;"><del onMouseEnter="mouseEnter(this)" data-issue="82">Deprecated in ISO 32000-2 (replaced by the <b>AnnotRichMedia</b> annotation)</del></td>
 </tr>
 </table>
 
-<p>...</p>
+<p class="location">Change Table 1 as follows:</p>
 
 <table>
   <caption id="Table1">Table 1 - Annotation types and their properties</caption>
