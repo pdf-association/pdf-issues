@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 4 February 2022
+modified: 14 February 2022
 ---
 
 <ul class="noprint">
@@ -66,6 +66,8 @@ modified: 4 February 2022
 
 <h2 id="H13.1">13.1 General</h2>
 
+<p class="location">Change the bulleted list below the first paragraph as follows:</p>
+
 <p>This clause describes those features of PDF that support embedding and playing multimedia content. It contains the following subclauses:</p>
 <ul>
 <li>13.2, "Multimedia" describes the comprehensive set of multimedia capabilities that were introduced in PDF 1.5.</li>
@@ -76,6 +78,8 @@ modified: 4 February 2022
 
 <h3 id="H13.6.2">13.6.2 3D annotations</h3>
 
+<p class="location">Change the first paragraph as follows:</p>
+
 <p>
 3D annotations (<i>PDF 1.6</i>) are a way to include 3D artwork in PDF documents. Rich media annotations are another method (see <del onMouseEnter="mouseEnter(this)" data-issue="142">0 "<br/>
 Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Rich media"</ins>). "Table 309 — Additional entries specific to a 3D annotation" shows the entries specific to a 3D annotation dictionary. "Table 166 — Entries common to all annotation dictionaries" describes the entries common to all annotation dictionaries.
@@ -85,6 +89,7 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 
 <h4 id="H13.3.6.1">13.3.6.1 General</h4>
 
+<p class="location">Change Table 311 as follows:</p>
 
 <table>
   <caption id="Table311">Table 311 - Entries in a 3D stream dictionary</caption>
@@ -111,6 +116,8 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 <h3 id="H13.6.4">13.6.4 3D Views</h3>
 
 <h4 id="H13.6.4.1">13.6.4.1 General</h4>
+
+<p class="location">Change Table 315 as follows:</p>
 
 <table>
   <caption id="Table315">Table 315 - Entries in a 3D view dictionary</caption>
@@ -143,14 +150,13 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 
 <h4 id="H13.6.4.3">13.6.4.3 3D background dictionaries</h4>
 
-<p>...</p>
-
-<p><i>New paragraph is added before existing NOTE:</i></p>
+<p class="location">Insert the following new paragraph before the existing NOTE:</p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="39">PDF processors that render 3D data streams shall do so directly and without regard to keys and values in the annotation dictionary that define appearance streams or how appearance streams would be rendered onto the page. They shall ignore the values of the <b>C</b>, <b>IC</b>, <b>Border</b>, <b>BS</b>, <b>BE</b>, <b>BM</b>, <b>CA</b> and <b>ca</b> keys from "Table 166 - Entries common to all annotation dictionaries".</ins>
 
 <p>...</p>
 
+<p class="location">Change Table 317 as follows:</p>
 
 <table>
   <caption id="Table317">Table 317 - Entries in a 3D background dictionary</caption>
@@ -186,6 +192,7 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 
 <h4 id="H13.6.4.6">13.6.4.6 3D cross section dictionaries</h4>
 
+<p class="location">Change Table 322 as follows:</p>
 
 <table>
   <caption id="Table322">Table 322 - Entries in a 3D cross section dictionary</caption>
@@ -216,6 +223,7 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 
 <h5 id="H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</h5>
 
+<p class="location">Change Table 335 as follows:</p>
 
 <table>
   <caption id="Table335">Table 335 - Entries in a RichMediaActivation dictionary</caption>
@@ -245,6 +253,8 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 
 <h5 id="H13.7.2.3.1">13.7.2.3.1 General</h5>
 
+<p class="location">Change Table 341 as follows:</p>
+
 <table>
   <caption id="Table341">Table 341 - Entries in a RichMediaContent dictionary</caption>
   <tr>
@@ -264,6 +274,7 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
 
 <h5 id="H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</h5>
 
+<p class="location">Change Table 343 as follows:</p>
 
 <table>
   <caption id="Table343">Table 343 - Entries in a RichMediaInstance dictionary</caption>
