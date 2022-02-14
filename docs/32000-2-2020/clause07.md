@@ -476,7 +476,8 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td>
     <p>(<i>Optional; PDF 1.4</i>) A language identifier that shall specify the natural language for all text in the document except where overridden by language specifications for structure elements or marked-content (see 14.9.2, "Natural language specification"). If this entry is absent
     <ins onMouseEnter="mouseEnter(this)" data-issue="105"> or invalid (see 14.9.2, "Natural language specification")</ins>, the language shall be considered unknown.
-    </p><ins onMouseEnter="mouseEnter(this)" data-issue="135">NOTE All text in a document includes PDF text strings (see 7.9.2.2 "Text string type") as well as textual content.</ins><p>
+    </p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="135">NOTE All text in a document includes PDF text strings (see 7.9.2.2 "Text string type") as well as textual content.</ins>
     </p>
     </td>
   </tr>
