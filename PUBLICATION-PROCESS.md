@@ -57,6 +57,8 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 - Editor notes use `class="editornote"` and can use the `ins` tag if necessary to link to an issue.
 
+- Descriptive location statements (where abouts in the relevant standard each specific edit is made) are needed for ISO Amendments. These use `<p class="location">...</p>` and tend to be of the form "Change Table XX as follows:", "Delete the third paragraph below ...", "Insert a new NOTE above ...", etc.
+
 - Each `clauseXXX.md` file needs to start with the following structure: a local ToC for just this clause (if required); the ISO stylesheet, the hidden `div` used to display the popups, a fake H1 for the start of the clause:
 
 ```html
