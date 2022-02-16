@@ -221,6 +221,17 @@ Each cross-reference subsection shall contain entries for a contiguous range of 
 The subsection shall begin with a line containing only two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
 </p>
 
+<p class="location">Change various paragraphs below EXAMPLE 1 as follows:</p>
+
+<p>...</p>
+<p>where:</p>
+
+<p><i>nnnnnnnnnn</i> shall be a 10-digit byte offset in the <del onMouseEnter="mouseEnter(this)" data-issue="101">decoded stream</del> <ins onMouseEnter="mouseEnter(this)" data-issue="101">PDF file</ins></p>
+
+<p>...</p>
+
+<p>The byte offset in the <del onMouseEnter="mouseEnter(this)" data-issue="101">decoded stream</del> <ins onMouseEnter="mouseEnter(this)" data-issue="101">PDF file</ins> shall be a 10-digit number, padded with leading zeros if necessary, giving the number of bytes from the beginning of the PDF file to the beginning of the object. ... </p>
+
 <p class="location">Change EXAMPLE 2 as follows:</p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="109">EXAMPLE 2 The cross-reference table sub-section line requires a single SPACE between "0" and "6".</ins></p>
