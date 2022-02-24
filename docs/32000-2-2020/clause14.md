@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 14 February 2022
+modified: 25 February 2022
 ---
 
 <ul class="noprint">
@@ -25,7 +25,7 @@ modified: 14 February 2022
  </li>
  <li>14.8 Tagged PDF
   <ul>
-   <li>14.8.4 Standard structure types</a>
+   <li>14.8.4 Standard structure types
     <ul>
      <li><a href="#H14.8.4.4">14.8.4.4 Grouping level structure types</a>
      </li>
