@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 14 February 2022
+modified: 25 February 2022
 ---
 
 <ul class="noprint">
@@ -233,6 +233,15 @@ modified: 14 February 2022
       <p>...</p>
     </td>
   </tr>
+  <td><b>M</b></td>
+  <td>name</td>
+  <td>
+   <p>(<i>Optional; Split, Box and Fly transition styles only</i>) The direction of motion for the specified transition effect:</p>
+   <p><i>I</i> Inward from the edges of the page (<del onMouseEnter="mouseEnter(this)" data-issue="75">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75">uppercase</ins> i)</p>
+   <p><i>O</i> Outward from the centre of the page (<del onMouseEnter="mouseEnter(this)" data-issue="75">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75">uppercase</ins> o)</p>
+   <p>Default value: <i>I</i>.</p>
+  </td>
+</tr>
 </table>
 
 <h2 id="H12.5">12.5 Annotations</h2>

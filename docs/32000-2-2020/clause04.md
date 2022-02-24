@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 4
 title: Notation
-modified: 14 February 2022
+modified: 25 February 2022
 ---
 
 <ul class="noprint">
@@ -24,6 +24,14 @@ modified: 14 February 2022
 
 <p>...</p>
 
+<p class="location">Change paragraph below NOTE 2 as follows:</p>
+
+<p>
+Token characters used to delimit objects and describe the structure of PDF files, as defined in 7.2, "Lexical conventions", shall be identified by their INCITS 4-1986 (R2017) (ASCII 7-bit USA codes) character name written in <del onMouseEnter="mouseEnter(this)" data-issue="75">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75">uppercase</ins> followed by a parenthetic two digit hexadecimal character value with the suffix "h".
+</p>
+
+<p>...</p>
+
 <p class="location">Change last paragraph as follows:</p>
 
 <p>
@@ -33,10 +41,6 @@ digit hexadecimal character code value with the prefix "U+" as shown in the exam
 </p>
 
 <p class="hangingindent">EXAMPLE  EN SPACE (U+2002)</p>
-
-<p>
-<ins class="editornote" onMouseEnter="mouseEnter(this)" data-issue="75">EDITOR NOTE: for consistency, consider that all 5 occurrences of "upper case" should be considered as "uppercase" throughout ISO 32000-2.</ins>
-</p>
 
 </div>
 

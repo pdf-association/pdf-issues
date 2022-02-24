@@ -3,13 +3,15 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex H
 title: (informative) Example PDF files
-modified: 14 February 2022
+modified: 25 February 2022
 ---
 
 <ul class="noprint">
   <li>H.8 Structure elements examples
     <ul>
       <li><a href="clauseAnnexH#HH.8.2">H.8.2 Table of Contents</a>
+      </li>
+      <li><a href="clauseAnnexH#HH.8.3">H.8.3 Hierarchical lists</a>
       </li>
     </ul>
   </li>
@@ -28,6 +30,14 @@ modified: 14 February 2022
 
 <h3 id="HH.8.2">H.8.2 Table of Contents</h3>
 
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The structure element’s structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents. The<b>TOCI</b> value specifies an individual member of a table of contents. The <b>TOC</b> value specifies a list made up of other table of contents items that are individual members of the table of contents and/or lists of table of contents items. (The trailing character in <b>TOCI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75">uppercase</ins> "i".)
+</p>
+
+<p>...</p>
+
 <p class="location">Insert a new NOTE after the first paragraph as follows:</p>
 
 <p>
@@ -43,6 +53,14 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 </p>
 
 <p>...</p>
+
+<h3 id="HH.8.3">H.8.3 Hierarchical lists</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The structure element’s structure type entry ()<b>S</b>) may have values that establish hierarchical relationships between entries in a list. The <b>LI</b> value specifies an individual list entry. The <b>L</b> value specifies a list made up of individual list entries and/or lists of list entries. The trailing character in <b>LI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75">uppercase</ins> "i".
+</p>
 
 </div>
 
