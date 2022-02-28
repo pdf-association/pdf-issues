@@ -35,6 +35,8 @@ modified: 14 February 2022
    <ul>
     <li><a href="#H7.5.4">7.5.4 Cross reference table</a>
     </li>
+    <li><a href="#H7.5.5">7.5.5 File trailer</a>
+    </li>
     <li><a href="#H7.5.7">7.5.7 Object streams</a>
     </li>
     <li>7.5.8 Cross-reference streams</a>
