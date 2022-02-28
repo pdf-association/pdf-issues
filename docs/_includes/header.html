@@ -6,19 +6,19 @@
 <link rel="apple-touch-icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-180x180.png" />
 
 <div class="noprint" style="color:black; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;">
-	<table style="width: 100%; border: none; margin-bottom: 6px; padding: 0px; border-spacing: 0px; border-collapse: separate;" role="presentation">
-		<tr style="width: 33%; border: none">
-			<td style="border: none;">
-				<img loading="lazy" src="https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo-300x141.png" alt="PDF Association logo" width="140">
-			</td>
-			<td style="border: none; background: rgba(150, 0, 0, 0.80); color: white; text-align: center;">
-    			<h1><a style="color:white;" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-			</td>
-			<td style="border: none; width: 20%; background: rgba(150, 0, 0, 0.80); text-align:right">
-				 <a href="https://www.pdfa.org/member-area/"><img style="-webkit-filter: unset; filter: unset; border: 2px outset #C5C5C5; border-radius: 6px; margin-top: 6px; margin-bottom: 6px; margin-right: 50px; height: 71px; !important;" src="https://www.pdfa.org/wp-content/uploads/2020/05/member-area-col-216x300.jpg" width="50" alt="Member Area logo"></a>
-			</td>
-		</tr>
-	</table>
+    <table style="width: 100%; border: none; margin-bottom: 6px; padding: 0px; border-spacing: 0px; border-collapse: separate;" role="presentation">
+        <tr style="width: 33%; border: none">
+            <td style="border: none;">
+                <img loading="lazy" src="https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo-300x141.png" alt="PDF Association logo" width="140">
+            </td>
+            <td style="border: none; background: rgba(150, 0, 0, 0.80); color: white; text-align: center;">
+                <h1><a style="color:white;" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+            </td>
+            <td style="border: none; width: 20%; background: rgba(150, 0, 0, 0.80); text-align:right">
+                 <a href="https://www.pdfa.org/member-area/"><img style="-webkit-filter: unset; filter: unset; border: 2px outset #C5C5C5; border-radius: 6px; margin-top: 6px; margin-bottom: 6px; margin-right: 50px; height: 71px; !important;" src="https://www.pdfa.org/wp-content/uploads/2020/05/member-area-col-216x300.jpg" width="50" alt="Member Area logo"></a>
+            </td>
+        </tr>
+    </table>
 
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
@@ -52,61 +52,61 @@
 var lastTimeout;
 
 window.addEventListener("load", function(){
-	var n = 0;
-	var s = "";
-	var iss;
-	var p;
+    var n = 0;
+    var s = "";
+    var iss;
+    var p;
 
-	var edits = document.getElementsByTagName('ins');
-	for (n = 0, nEdits = edits.length; n < nEdits; n++) {
-		iss = edits[n].getAttribute("data-issue").split(',');
-		s = "";
-		for (let i in iss) {
-			if (s != "") {
-				s = s + ", "; // add a gap between each URL
-			}
-			s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
-		}
-		edits[n].insertAdjacentHTML("beforebegin", "<span class=\"onlyprint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
-	}
+    var edits = document.getElementsByTagName('ins');
+    for (n = 0, nEdits = edits.length; n < nEdits; n++) {
+        iss = edits[n].getAttribute("data-issue").split(',');
+        s = "";
+        for (let i in iss) {
+            if (s != "") {
+                s = s + ", "; // add a gap between each URL
+            }
+            s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+        }
+        // edits[n].insertAdjacentHTML("beforebegin", "<span class=\"onlyprint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
+    }
 
-	var edits = document.getElementsByTagName('del');
-	for (n = 0, nEdits = edits.length; n < nEdits; n++) {
-		iss = edits[n].getAttribute("data-issue").split(',');
-		s = "";
-		for (let i in iss) {
-			if (s != "") {
-				s = s + ", "; // add a gap between each URL
-			}
-			s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
-		}
-		edits[n].insertAdjacentHTML("beforebegin", "<span class=\"onlyprint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
-	}
+    var edits = document.getElementsByTagName('del');
+    for (n = 0, nEdits = edits.length; n < nEdits; n++) {
+        iss = edits[n].getAttribute("data-issue").split(',');
+        s = "";
+        for (let i in iss) {
+            if (s != "") {
+                s = s + ", "; // add a gap between each URL
+            }
+            s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+        }
+        // edits[n].insertAdjacentHTML("beforebegin", "<span class=\"onlyprint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
+    }
 });
 
 function mouseEnter(obj) {
-	clearTimeout(lastTimeout)
-	var iss = obj.getAttribute("data-issue").split(',');
-	var s = "";
-	// Iterate over comma-separated issue numbers
-	for (let i in iss) {
-		if (s != "") {
-			s = s + "<br\>"; // add a linebreak between each URL
-		}
-		s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
-	}
-	var trg = document.getElementById("issuelink");
-	trg.innerHTML = s;
-	var box = obj.getBoundingClientRect();
-	trg.style.left = Math.max(0, (box.left - 80)) + 'px';
-	trg.style.top  = Math.max(0, (box.top - 20)) + 'px';
-	trg.style.visibility = 'visible';
-	lastTimeout = setTimeout(hideIssue, 3000);
+    clearTimeout(lastTimeout)
+    var iss = obj.getAttribute("data-issue").split(',');
+    var s = "";
+    // Iterate over comma-separated issue numbers
+    for (let i in iss) {
+        if (s != "") {
+            s = s + "<br\>"; // add a linebreak between each URL
+        }
+        s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+    }
+    var trg = document.getElementById("issuelink");
+    trg.innerHTML = s;
+    var box = obj.getBoundingClientRect();
+    trg.style.left = Math.max(0, (box.left - 80)) + 'px';
+    trg.style.top  = Math.max(0, (box.top - 20)) + 'px';
+    trg.style.visibility = 'visible';
+    lastTimeout = setTimeout(hideIssue, 3000);
 }
 
 function hideIssue() { // after 3 second timeout
-	var trg = document.getElementById("issuelink");
-	trg.style.visibility = 'hidden';
+    var trg = document.getElementById("issuelink");
+    trg.style.visibility = 'hidden';
 }
 </script>
 

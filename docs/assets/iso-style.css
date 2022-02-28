@@ -6,7 +6,7 @@
     .onlyprint { display: block !important; }
     .noprint   { display: none  !important; }
     .footnote  { display: none  !important; }
-
+    .fixedpopup { display: none  !important; }
   }
 
   /* use standardized HTML tags for deletion and insertion markup */ 
