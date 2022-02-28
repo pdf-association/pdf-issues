@@ -420,20 +420,19 @@ and the file encryption key as the key. ...
 
 <p class="location">Add two new notes at the very end of the sub-clause as follows:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="25">
-<p class="hangingindent">NOTE 1: This means that step c) only applies when both of the following conditions are met:</p>
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="25">NOTE 1: This means that step c) only applies when both of the following conditions are met:</ins></p>
 
 <ul>
-<li>the key is being generated for the crypt filter named <i>DefaultCryptFilter</i> (i.e. the crypt filter used as the value for <b>StmF</b> in the encryption dictionary);</li>
-<li>the <b>EncryptMetadata</b> entry of the associated crypt filter dictionary is set to <i>false</i>.</li>
+<li><ins onMouseEnter="mouseEnter(this)" data-issue="25">the key is being generated for the crypt filter named <i>DefaultCryptFilter</i> (i.e. the crypt filter used as the value for <b>StmF</b> in the encryption dictionary);</ins></li>
+<li><ins onMouseEnter="mouseEnter(this)" data-issue="25">the <b>EncryptMetadata</b> entry of the associated crypt filter dictionary is set to <i>false</i>.</ins></li>
 </ul>
 
 <p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="25">
 NOTE 2: Since crypt filters are not supported when <b>SubFilter</b> is set to <i>adbe.pkcs7.s3</i> or <i>adbe.pkcs7.s4</i> in the encryption dictionary,
 there is no way to specify that metadata is to be left unencrypted in these cases. In particular, step c) is always skipped for these <b>SubFilter</b> values.
-</p>
-</ins>
-
+</ins></p>
 
 <h3 id="H7.6.6">7.6.6 Crypt filters</h3>
 
