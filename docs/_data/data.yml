@@ -11,6 +11,8 @@ toc:
         url:  clause09.html
       - ref: 'Clause 10: Rendering'
         url:  clause10.html
+      - ref: 'Clause 11: Transparency'
+        url:  clause11.html
       - ref: 'Clause 12: Interactive features'
         url:  clause12.html
       - ref: 'Clause 13: Multimedia features'
@@ -19,6 +21,8 @@ toc:
         url:  clause14.html
       - ref: 'Annex A: Operator Summary'
         url:  clauseAnnexA.html
+      - ref: 'Annex F: Linearized PDF'
+        url:  clauseAnnexF.html
       - ref: 'Annex H: Example PDF files'
         url:  clauseAnnexH.html
       - ref: 'Annex L: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0'
