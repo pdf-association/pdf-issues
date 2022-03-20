@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 14 February 2022
+modified: 20 March 2022
 ---
 
 <ul class="noprint">
@@ -39,7 +39,7 @@ modified: 14 February 2022
     </li>
     <li><a href="#H7.5.7">7.5.7 Object streams</a>
     </li>
-    <li>7.5.8 Cross-reference streams</a>
+    <li>7.5.8 Cross-reference streams
      <ul>
       <li><a href="#H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</a>
       </li>
@@ -566,6 +566,12 @@ attributes" from some ancestor node of the page object. ...
 <p><del onMouseEnter="mouseEnter(this)" data-issue="96">where the characters in parentheses is the sequence of bytes with hex codes FE, FF, 04, 42, 04, 35, 04, 41, 04, 42.</del></p>
 
 <p>...</p>
+
+<p class="location">Change NOTE 4 as follows:</p>
+
+<p class="hangingindent">NOTE 4 This mechanism precludes beginning a string using <b>PDFDocEncoding</b>
+with the three characters <del onMouseEnter="mouseEnter(this)" data-issue="161">dieresis</del><ins onMouseEnter="mouseEnter(this)" data-issue="161">idieresis</ins>,
+guillemotright, questiondown, which is unlikely to be a meaningful beginning of a word or phrase.</p>
 
 <p class="location">Delete NOTE 5 as follows:</p>
 
