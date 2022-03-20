@@ -172,7 +172,7 @@ modified: 25 February 2022
 
 <h2 id="H12.3">12.3 Document-level navigation</h2>
 
-<h3 id="#H12.3.3">12.3.3 Document outline</h3>
+<h3 id="H12.3.3">12.3.3 Document outline</h3>
 
 <p class="location">Change Table 151 as follows:</p>
 
