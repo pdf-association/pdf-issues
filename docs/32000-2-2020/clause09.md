@@ -63,8 +63,9 @@ modified: 20 March 2022
 <p class="location">Change 4th paragraph below Figure 61 as follows:</p>
 
 <p>
-The strings shall conform to the syntax for string objects. When a string is
-written by enclosing the data in parentheses, bytes whose values are equal to
+The strings shall conform to the syntax for string objects
+<ins onMouseEnter="mouseEnter(this)" data-issue="165">(see 7.3.4.2, "Literal strings")</ins>.
+When a string is written by enclosing the data in parentheses, bytes whose values are equal to
 those of the ASCII characters
 <ins onMouseEnter="mouseEnter(this)" data-issue="165">CARRIAGE RETURN (0Dh),</ins>
 LEFT PARENTHESIS (28h), RIGHT PARENTHESIS (29h),
