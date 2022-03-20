@@ -3,10 +3,16 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 14 February 2022
+modified: 20 March 2022
 ---
 
 <ul class="noprint">
+ <li>9.4 Text objects
+  <ul>
+   <li><a href="H9.4.3">9.4.3 Text-showing operators</a>
+   </li>
+  </ul>
+ </li>
  <li>9.6 Simple fonts
   <ul>
    <li>9.6.2 Type 1 fonts
@@ -49,6 +55,28 @@ modified: 14 February 2022
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="#H9.4">9.4 Text objects</h2>
+
+<h3 id="#H9.4.3">9.4.3 Text-showing operators</h3>
+
+<p class="location">Change 4th paragraph below Figure 61 as follows:</p>
+
+<p>
+The strings shall conform to the syntax for string objects. When a string is
+written by enclosing the data in parentheses, bytes whose values are equal to
+those of the ASCII characters
+<ins onMouseEnter="mouseEnter(this)" data-issue="165">CARRIAGE RETURN (0Dh),</ins>
+LEFT PARENTHESIS (28h), RIGHT PARENTHESIS (29h),
+and REVERSE SOLIDUS (5Ch) (backslash) shall be preceded by a REVERSE SOLIDUS)
+character. All other byte values between 0 and 255 may be used in a string object.
+These rules apply to each individual byte in a string object, whether the string
+is interpreted by the text-showing operators as single-byte or multiple-byte
+character codes.
+</p>
+
+<p>...</p>
+
 
 <h3 id="H9.6.2">9.6.2 Type 1 fonts</h3>
 
