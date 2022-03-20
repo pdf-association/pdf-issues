@@ -3,11 +3,21 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 14 February 2022
+modified: 20 March 2022
 ---
 
 <ul class="noprint">
  <li><a href="#H8.2">8.2 Graphics objects</a>
+ </li>
+ <li>8.4 Graphics state
+  <ul>
+   <li>8.4.3 Details of graphics state parameters
+    <ul>
+     <li><a href="#H8.4.3.5">Miter limit</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
  </li>
  <li>8.5 Path construction and painting
   <ul>
@@ -88,6 +98,28 @@ modified: 14 February 2022
     </td>
   </tr>
 </table>
+
+<h2 id="H8.4">8.4 Graphics state</h2>
+
+<h3 id="H8.4.3">8.4.3 Details of graphics state parameters</h3>
+
+<h4 id="H8.4.3.5">8.4.3.5 Mitre limit</h4>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+When two line segments meet at a sharp angle and mitered joins have been specified as the
+line join style, it is possible for the miter to extend far beyond the thickness of the
+line stroking the path. The miter limit
+<ins onMouseEnter="mouseEnter(this)" data-issue="154">shall be a number greater than or equal to 1.0 and</ins>
+shall impose a maximum on the ratio of the miter length to the line width (see
+"Figure 15 — Miter length"). When the limit is exceeded, the join is converted from
+a miter to a bevel.
+</p>
+
+<p>...</p>
+
+<h2 id="H8.5">8.5 Path constructing and painting</h2>
 
 <h3 id="H8.5.3">8.5.3 Path-painting operators</h3>
 
