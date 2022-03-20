@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 4 February 2022
+modified: 20 March 2022
 ---
 
 <p>
@@ -40,6 +40,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause09.html#Table111">Table 111 - Type 3 font operators</a></li>
 <li><a href="clause09.html#Table120">Table 120 - Entries common to all font descriptors</a></li>
 <li><a href="clause10.html#Table132">Table 132 - Entries in a Type 5 halftone dictionary</a></li>
+<li><a href="clause11.html#Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</a></li>
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
 <li><a href="clause12.html#Table151">Table 151 - Entries in an outline item dictionary</a></li>
 <li><a href="clause12.html#Table164">Table 164 - Entries in a transition dictionary</a></li>
@@ -68,6 +69,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table371">Table 371 - Table standard structure types</a></li>
 <li><a href="clause14.html#Table372">Table 372 - Standard structure type Caption</a></li>
 <li><a href="clauseAnnexA.html#TableA.1">Table A.1 - PDF content stream operators</a></li>
+<li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>
 </ul>
 
 <hr>
