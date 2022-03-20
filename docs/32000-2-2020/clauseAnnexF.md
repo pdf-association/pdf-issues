@@ -9,7 +9,7 @@ modified: 20 March 2022
 <ul class="noprint">
     <li>F.3 Linearized PDF document structure
      <ul>
-      <li><a href="HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
+      <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
       </li>
      </ul>
     </li>

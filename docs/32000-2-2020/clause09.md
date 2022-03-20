@@ -9,7 +9,7 @@ modified: 20 March 2022
 <ul class="noprint">
  <li>9.4 Text objects
   <ul>
-   <li><a href="H9.4.3">9.4.3 Text-showing operators</a>
+   <li><a href="#H9.4.3">9.4.3 Text-showing operators</a>
    </li>
   </ul>
  </li>

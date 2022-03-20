@@ -7,7 +7,7 @@ modified: 14 February 2022
 ---
 
 <ul class="noprint">
-   <li><a href="clauseAnnexQ#HQ.2">Q.2. Page content</a>
+   <li><a href="#HQ.2">Q.2. Page content</a>
    </li>
 </ul>
 <hr>

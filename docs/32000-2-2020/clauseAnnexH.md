@@ -9,9 +9,9 @@ modified: 25 February 2022
 <ul class="noprint">
   <li>H.8 Structure elements examples
     <ul>
-      <li><a href="clauseAnnexH#HH.8.2">H.8.2 Table of Contents</a>
+      <li><a href="#HH.8.2">H.8.2 Table of Contents</a>
       </li>
-      <li><a href="clauseAnnexH#HH.8.3">H.8.3 Hierarchical lists</a>
+      <li><a href="#HH.8.3">H.8.3 Hierarchical lists</a>
       </li>
     </ul>
   </li>

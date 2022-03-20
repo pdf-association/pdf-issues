@@ -7,7 +7,7 @@ modified: 14 February 2022
 ---
 
 <ul class="noprint">
-    <li><a href="clauseAnnexA#HA.2">A.2 PDF content stream operators</a>
+    <li><a href="#HA.2">A.2 PDF content stream operators</a>
     </li>
 </ul>
 <hr>
