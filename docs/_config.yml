@@ -14,17 +14,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Industry resolutions for PDF 2.0-based issues
+title: Errata for PDF ISO standards
 
 author:
   name: "info@pdfa.com"
   email: info@pdfa.com
-  
+
 name: "info@pdfa.com"
 email: info@pdfa.com
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Industry-agreed resolutions for issues reported against all PDF 2.0 (ISO 32000-2:2020) related published ISO standards. 
+  Industry-agreed resolutions for errata reported against published ISO PDF standards.
 
 baseurl: / # the subpath of your site, e.g. /blog
 
@@ -56,7 +56,7 @@ minima:
       username: PDFAssociation
     github:
       username: pdf-association
-    
+
 # Build settings
 markdown: kramdown
 
