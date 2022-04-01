@@ -40,7 +40,7 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
   <ul>
    <li>PDF/A-4 (ISO 19005-4:2020) - <a href="19005-4-2020/index.html"><i>Resolved errata</i></a></li>
    <li>PDF/A-3 (ISO 19005-3:2012) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
-   <li>PDF/A-2 (ISO 19005-1:2011) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
+   <li>PDF/A-2 (ISO 19005-2:2011) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
    <li>PDF/A-1 (ISO 19005-1:2005) - see <a href="https://www.pdfa.org/resource/pdfa-1-technical-notes/" target="_blank">PDF/A-1 Technical Notes</a> and <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
   </ul>
 
