@@ -1,8 +1,8 @@
 # PDF 2.0 Issues
 
-![PDF support](https://img.shields.io/badge/PDF-2.0-blue)
+![PDF support](https://img.shields.io/badge/PDF-1.7%2C2.0-blue)
 &nbsp;&nbsp;&nbsp;
-![PDF subsets](https://img.shields.io/badge/PDF%20subsets-PDF%2FA--4%2CPDF%2FX--6%2CPDF%2FVT--3-blue)
+![PDF subsets](https://img.shields.io/badge/PDF%20subsets-PDF%2FA%2CPDF%2FX%2CPDF%2FVT%2CPDF%2FR-blue)
 &nbsp;&nbsp;&nbsp;
 ![LinkedIn](https://img.shields.io/static/v1?style=social&label=LinkedIn&logo=linkedin&message=PDF-Association)
 &nbsp;&nbsp;&nbsp;
