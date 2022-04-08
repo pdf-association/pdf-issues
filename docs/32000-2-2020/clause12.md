@@ -49,6 +49,16 @@ modified: 25 February 2022
    </li>
   </ul>
  </li>
+ <li>12.6 Actions
+  <ul>
+   <li>12.6.4 Action types
+    <ul>
+     <li><a href="#H12.6.4.2">12.6.4.2 Go-To actions</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
  <li>12.7 Forms
   <ul>
    <li>12.7.4 Field dictionaries
@@ -397,6 +407,36 @@ However, a projection annotation is only valid within the context of an associat
 <p class="location">Delete the last paragraph as follows:</p>
 
 <p><del onMouseEnter="mouseEnter(this)" data-issue="42">A projection annotation with a <b>Rect</b> entry that has zero height or zero width shall not have an <b>AP</b> dictionary.</del></p>
+
+
+
+<h2 id="H12.6">Actions</h2>
+
+<h3 id="H12.6.4">Action types</h3>
+
+<h4 id="H12.6.4.2">Go-To actions</h4>
+
+<p class="location">Change Table 202 as follows:</p>
+
+<table>
+  <caption id="Table202">Table 202 - Additional entries specific to a go-to action</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>D</b></td>
+    <td>name, byte string, or array</td>
+    <td>
+     <p>(<i>Required</i>) The <ins onMouseEnter="mouseEnter(this)" data-issue="140">explicit destination or named</ins> destination to jump to (see 12.3.2, "Destinations").
+     </p>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="H12.7">Forms</h2>
 
 <h3 id="H12.7.4">12.7.4 Field dictionaries</h3>
 
