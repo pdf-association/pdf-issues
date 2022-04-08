@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 14 February 2022
+modified: 8 April 2022
 ---
 
 <ul class="noprint">
@@ -261,6 +261,15 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
     <th>Key</th>
     <th>Type</th>
     <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Configurations</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="166">Optional</del><ins onMouseEnter="mouseEnter(this)" data-issue="166">
+    Required</ins>; PDF 2.0</i>) A <ins onMouseEnter="mouseEnter(this)" data-issue="166">non-empty</ins> array where each element is
+    an indirect object reference to a RichMediaConfiguration dictionary.</p>
+    </td>
   </tr>
   <tr>
     <td><b>Views</b></td>
