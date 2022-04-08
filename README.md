@@ -10,13 +10,65 @@
 &nbsp;&nbsp;&nbsp;
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCJL_M0VH2lm65gvGVarUTKQ?style=social)
 
-This public repository is hosted by the [PDF Association](https://www.pdfa.org) to provide developers with a means of openly reporting issues against any of the latest published PDF 2.0-based ISO standards for review and resolution by industry experts. All issues in PDF specifications are important, from minor typos and formatting issues, to larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry, PDF interoperability and implementation reliability will be improved. This repo supports issues logged against all published PDF 2.0-based ISO standards:
+This public GitHub repository "pdf-issues" is hosted by the <a href="https://www.pdfa.org">PDF Association</a> and
+provides all developers a means of openly reporting errata against ISO PDF related standards for review and resolution by industry and ISO experts.
+All issues in ISO PDF related standards are important, from minor typos and formatting issues, to
+larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry,
+PDF interoperability and implementation reliability will be improved.
 
-* PDF 2.0 ([ISO 32000-2:2020](https://www.iso.org/standard/75839.html))
-* PDF/A-4 ([ISO 19005-4:2020](https://www.iso.org/standard/71832.html))
-* PDF/X-6 ([ISO 15930-9:2020](https://www.iso.org/standard/77103.html))
-* PDF/VT-3 ([ISO 16612-3:2020](https://www.iso.org/standard/75218.html))
-* ECMAScript for PDF 2.0 ([ISO 21757-1:2020](https://www.iso.org/standard/71559.html))
+The current set of resolved errata are presented as 
+<span style="background-color:lightyellow;color:green;text-decoration-style:double;text-decoration-color:green;">additions</span>,
+<span style="background-color:seashell;color:darkred;text-decoration:line-through;text-decoration-color:red;">deletions</span> or
+<soan style="font-weight:bold;color:purple;background-color:snow;text-decoration initial">editor notes</span>
+to the published wording in the relevant ISO standard organized by clause number.
+GitHub Issue numbers will appear as popup tooltips when hovering over changes or inline when printed and refer back to
+<a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
+closed GitHub pdf-issues</a>.
+Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
+
+Errata in the following ISO publications are supported:
+
+### Core PDF technologies
+  <ul>
+   <li>PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-32000-pdf/" target="_blank">ISO 32000-2:2020</a>) - <a href="https://pdf-issues.pdfa.org/32000-2-2020/index.html"><i>Resolved errata</i></a></li>
+   <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="https://pdf-issues.pdfa.org/21757-1-2020/index.html"><i>Resolved errata</i></a></li>
+   <li>XFDF 3.0 (<a href="https://www.pdfa.org/resource/iso-19444-xfdf/" target="_blank">ISO 19444-1:2019</a>)</li>
+  </ul>
+
+### <a href="https://www.pdfa.org/resource/iso-19005-pdfa/" target="_blank">PDF/A (ISO 19005) - PDF for long-term preservation</a>
+  <ul>
+   <li>PDF/A-4 (ISO 19005-4:2020) - <a href="https://pdf-issues.pdfa.org/19005-4-2020/index.html"><i>Resolved errata</i></a></li>
+   <li>PDF/A-3 (ISO 19005-3:2012) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
+   <li>PDF/A-2 (ISO 19005-2:2011) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
+   <li>PDF/A-1 (ISO 19005-1:2005) - see <a href="https://www.pdfa.org/resource/pdfa-1-technical-notes/" target="_blank">PDF/A-1 Technical Notes</a> and <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a></li>
+  </ul>
+
+### <a href="https://www.pdfa.org/resource/iso-15930-pdfx/" target="_blank">PDF/X (ISO 15930) - PDF for prepress digital data exchange</a>
+   <ul>
+    <li>PDF/X-6 (ISO 15930-9:2020) - <a href="https://pdf-issues.pdfa.org/15930-9-2020/index.html"><i>Resolved errata</i></a></li>
+    <li>PDF/X-5 (ISO 15930-8:2010)</li>
+    <li>PDF/X-4 (ISO 15930-7:2010)</li>
+    <li>PDF/X-3 (ISO 15930-6:2003)</li>
+   </ul>
+   
+### <a href="https://www.pdfa.org/resource/iso-16612-pdfvt/" target="_blank">PDF/VT (ISO 16612) - PDF for variable data &amp; transactional printing</a>
+   <ul>
+    <li>PDF/VT-3 (ISO 16612-3:2020) - <a href="https://pdf-issues.pdfa.org/16612-3-2020/index.html"><i>Resolved Errata</i></a></li>
+    <li>PDF/VT-2 (ISO 16612-2:2010)</li>
+   </ul>
+
+### <a href="https://www.pdfa.org/resource/iso-14289-pdfua/" target="_blank">PDF/UA (ISO 14289) - PDF for universal accessibility</a>
+   <ul>
+    <li>PDF/UA-1 (ISO 14289-1:2014)</li>
+   </ul>
+
+### Other ISO PDF publications
+  <ul>
+   <li><a href="https://www.pdfa.org/resource/iso-23504-pdfr/" target="_blank">PDF/R-1 (ISO 23504-1:2020)- PDF for raster image transport and storage</a></li>
+  </ul>
+
+<p>Errata on PDF 1.7 (ISO 32000-1:2008) and withdrawn ISO publications are <b>not</b> supported.
+The PDF Association maintains a <a href="https://www.pdfa.org/index-of-pdf-related-iso-publications/">full list of all PDF-related ISO publications</a>.</p>
 
 Resolutions proposed here are **not** officially authorized by the [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/) and may get changed by future ISO publications.
 
