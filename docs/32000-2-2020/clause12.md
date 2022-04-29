@@ -85,8 +85,16 @@ modified: 8 April 2022
  </li>
  <li>12.8 Digital signatures
   <ul>
-   <li><a href="#H12.8.1">12.8.1 Signature Fields</a>
+   <li><a href="#H12.8.1">12.8.1 General</a>
+   </li>
+   <li>12.8.2 Transform methods
     <ul>
+     <li>12.8.2.2 DocMDP
+      <ul>
+       <li><a href="#H12.8.2.2.2">12.8.2.2.2 Validating signatures that use the DocMDP transform method</a>
+       </li>
+      </ul>
+     </li>
      <li><a href="#H12.8.2.4">12.8.2.4 FieldMDP</a>
      </li>
     </ul>
@@ -410,11 +418,11 @@ However, a projection annotation is only valid within the context of an associat
 
 
 
-<h2 id="H12.6">Actions</h2>
+<h2 id="H12.6">12.6 Actions</h2>
 
-<h3 id="H12.6.4">Action types</h3>
+<h3 id="H12.6.4">12.6.4 Action types</h3>
 
-<h4 id="H12.6.4.2">Go-To actions</h4>
+<h4 id="H12.6.4.2">12.6.4.2 Go-To actions</h4>
 
 <p class="location">Change Table 202 as follows:</p>
 
@@ -542,7 +550,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </p>
 
 
-<h3 id="H12.8.1">12.8.1 Signature Fields</h3>
+<h3 id="H12.8.1">12.8.1 General</h3>
 
 <p class="location">Change the list item below NOTE 2 as follows:</p>
 
@@ -599,6 +607,30 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>name</td>
     <td>
     <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="117">Required</del><ins onMouseEnter="mouseEnter(this)" data-issue="117">Optional; deprecated in PDF 2.0</ins></i>) ... </p>
+    </td>
+  </tr>
+</table>
+
+<h3 id="H12.8.2">12.8.2 Transform methods</h3>
+
+<h4 id="H12.8.2.2">12.8.2.2 DocMDP</h4>
+
+<h5 id="H12.8.2.2.2">12.8.2.2.2 Validating signatures that use the DocMDP transform method</h5>
+
+<p class="location">Change Table 257 as follows:</p>
+
+<table>
+  <caption id="Table257">Table 257 - Entries in the DocMDP transform parameters dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>P</b></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="152">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="152">integer</ins></td>
+    <td>
+    <p>...</p>
     </td>
   </tr>
 </table>

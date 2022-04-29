@@ -56,9 +56,9 @@ modified: 20 March 2022
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<h2 id="#H9.4">9.4 Text objects</h2>
+<h2 id="H9.4">9.4 Text objects</h2>
 
-<h3 id="#H9.4.3">9.4.3 Text-showing operators</h3>
+<h3 id="H9.4.3">9.4.3 Text-showing operators</h3>
 
 <p class="location">Change 4th paragraph below Figure 61 as follows:</p>
 
@@ -249,6 +249,13 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     The PostScript name of the font. <del onMouseEnter="mouseEnter(this)" data-issue="11">This name shall be the same as the value of <b>BaseFont</b>
     in the font or CIDFont dictionary that refers to this font descriptor.</del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="11">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary that refers to this font descriptor.</ins>
+    </td>
+  </tr>
+  <tr>
+    <td><b>FontWeight</b></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="152">number</del> <ins onMouseEnter="mouseEnter(this)" data-issue="152">integer</ins></td>
+    <td>
+    <p>...</p>
     </td>
   </tr>
 </table>

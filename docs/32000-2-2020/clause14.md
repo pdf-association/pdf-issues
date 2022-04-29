@@ -49,6 +49,16 @@ modified: 25 February 2022
      </li>
     </ul>
    </li>
+   <li>14.8.5 Standard structure attributes
+    <ul>
+     <li>14.8.5.4 Layout attributes
+      <ul>
+       <li><a href="#H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
    <li>14.8.6 Standard structure namespaces
     <ul>
      <li><a href="#H14.8.6.1">14.8.6.1 Namespaces for standard structure types and attributes</a>
@@ -125,7 +135,7 @@ data needed by the PDF processor other than the actual content of the document, 
 <ins onMouseEnter="mouseEnter(this)" data-issue="69">NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
 </p>
 
-<h2>14.6 Marked content</h2>
+<h2 id="H14.6">14.6 Marked content</h2>
 
 <h3 id="H14.6.1">14.6.1 General</h3>
 
@@ -399,6 +409,33 @@ endobj
 </table>
 
 
+<h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
+
+<h4 id="H14.8.5.4">14.8.5.4 Layout attributes</h4>
+
+<h5 id="H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</h5>
+
+<p class="location">Change Table 380 as follows:</p>
+
+<table>
+  <caption id="Table380">Table 380 - Standard layout attributes specific to inline-level structure elements</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>GlyphOrientationVertical</b></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="152">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="152">integer</ins> or name</td>
+    <td>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
+<h3 id="H14.8.6">14.8.6 Standard structure namespaces</h3>
+
 <h4 id="H14.8.6.1">14.8.6.1 Namespaces for standard structure types and attributes</h4>
 
 <p class="location">Insert a new NOTE 2 after the last paragraph as follows:</p>
@@ -406,7 +443,7 @@ endobj
 <p>The term <i>standard structure namespaces</i> refers to either of the two namespaces defined above.</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="8"> NOTE 2 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="8">NOTE 2 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
 </p>
 
 

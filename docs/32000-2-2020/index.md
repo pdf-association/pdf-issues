@@ -54,6 +54,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table239">Table 239 - Additional entries specific to a submit-form action</a></li>
 <li><a href="clause12.html#Table255">Table 255 - Entries in a signature dictionary</a></li>
 <li><a href="clause12.html#Table256">Table 256 - Entries in a signature reference dictionary</a></li>
+<li><a href="clause12.html#Table257">Table 257 - Entries in the DocMDP transform parameters dictionary</a></li>
 <li><a href="clause12.html#Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</a></li>
 <li><a href="clause12.html#Table260">Table 260 - SubFilter value algorithm support</a></li>
 <li><a href="clause13.html#Table311">Table 311 - Entries in a 3D stream dictionary</a></li>
@@ -69,6 +70,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table368">Table 368 - General inline level structure types</a></li>
 <li><a href="clause14.html#Table371">Table 371 - Table standard structure types</a></li>
 <li><a href="clause14.html#Table372">Table 372 - Standard structure type Caption</a></li>
+<li><a href="clause14.html#Table380">Table 380 - Standard layout attributes specific to inline-level structure elements</a></li>
 <li><a href="clauseAnnexA.html#TableA.1">Table A.1 - PDF content stream operators</a></li>
 <li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>
 </ul>
