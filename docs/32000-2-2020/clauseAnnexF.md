@@ -26,7 +26,7 @@ modified: 20 March 2022
 
 <h2 id="HF.3">F.3 Linearized PDF document structure</h2>
 
-<h3 id="HF.3.3">Linearization parameter dictionary (Part 2)</h3>
+<h3 id="HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</h3>
 
 <p class="location">Change Table F.1 as follows:</p>
 
