@@ -509,6 +509,15 @@ However, a projection annotation is only valid within the context of an associat
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>DigestMethod</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Optional; PDF 1.7</i>) An <ins onMouseEnter="mouseEnter(this)" data-issue="159">unordered</ins> array of names indicating acceptable digest algorithms to use while signing. <del onMouseEnter="mouseEnter(this)" data-issue="159">The value</del><ins onMouseEnter="mouseEnter(this)" data-issue="159">Array values</ins> shall be <i>SHA1</i> (<i>deprecated with PDF 2.0</i>), <i>SHA256</i>, <i>SHA384</i>, <i>SHA512</i> <del onMouseEnter="mouseEnter(this)" data-issue="159">and</del><ins onMouseEnter="mouseEnter(this)" data-issue="159">or</ins> <i>RIPEMD160</i>. The default value is implementation-specific.
+    </p>
+    <p>...</p>
+    </td>
+  </tr>
+  <tr>
     <td><b>AddRevInfo</b></td>
     <td>boolean</td>
     <td><p  class="hangingindent">
@@ -555,7 +564,7 @@ However, a projection annotation is only valid within the context of an associat
 <p class="location">Change the last paragraph as follows:</p>
 
 <p>
-FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176">application/fdf, or the deprecated alias</ins> application/vnd.fdf. 
+FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176">application/fdf, or the deprecated alias</ins> application/vnd.fdf.
 On the Microsoft Windows &trade; and UNIX platforms, FDF files shall have the extension .fdf; on Mac OS, they shall have file type 'FDF'.
 </p>
 
