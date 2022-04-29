@@ -79,6 +79,12 @@ modified: 8 April 2022
      </li>
     </ul>
    </li>
+   <li>12.7.8 Form data format
+    <ul>
+     <li><a href="#H12.7.8.1">12.7.8.1 General</a>
+     </li>
+    </ul>
+   </li>
    <li><a href="#H12.7.9">12.7.9 Non-interactive forms</a>
    </li>
   </ul>
@@ -539,6 +545,19 @@ However, a projection annotation is only valid within the context of an associat
     </td>
   </tr>
 </table>
+
+<h3 id="H12.7.8">12.7.8 Forms data format</h3>
+
+<h4 id="H12.7.8.1">12.7.8.1 General</h4>
+
+<p>...</p>
+
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176">application/fdf, or the deprecated alias</ins> application/vnd.fdf. 
+On the Microsoft Windows &trade; and UNIX platforms, FDF files shall have the extension .fdf; on Mac OS, they shall have file type 'FDF'.
+</p>
 
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
