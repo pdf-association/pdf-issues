@@ -121,6 +121,12 @@ modified: 20 March 2022
   </li>
   <li>7.11 File specifications
    <ul>
+    <li>7.11.4 Embedded file streams
+     <ul>
+      <li><a href="#H7.11.4.1">7.11.4.1 General</a>
+      </li>
+     </ul>
+    </li>
     <li><a href="#H7.11.6">7.11.6 Collection items</a>
     </li>
    </ul>
@@ -594,6 +600,30 @@ guillemotright, questiondown, which is unlikely to be a meaningful beginning of 
 
 <p>...</p>
 
+<h3 id="H7.11.4">7.11.4 Embedded file streams</h3>
+
+<h4 id="H7.11.4.1">7.11.4.1 General</h4>
+
+<p class="location">Change Table 44 as follows:</p>
+
+<table>
+  <caption id="Table44">Table 44 - Additional entries in an embedded file stream dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Subtype</b></td>
+    <td>name</td>
+    <td>
+    <p>
+    (<i>Optional, required in the case of an embedded file stream used as an associated file
+    <ins onMouseEnter="mouseEnter(this)" data-issue="156">(see 14.13 "Associated files") or as an asset of a RichMedia annotation (see "13.7 Rich media")</ins></i>) ...
+    </p>
+    </td>
+  </tr>
+</table>
 
 <h3 id="H7.11.6">7.11.6 Collection items</h3>
 

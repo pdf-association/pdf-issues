@@ -31,6 +31,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</a></li>
 <li><a href="clause07.html#Table29">Table 29 - Entries in the catalog dictionary</a></li>
 <li><a href="clause07.html#Table31">Table 31 - Entries in a page object</a></li>
+<li><a href="clause07.html#Table44">Table 44 - Additional entries in an embedded file stream dictionary</a></li>
 <li><a href="clause07.html#Table47">Table 47 - Entries in a collection subitem dictionary</a></li>
 <li><a href="clause07.html#Table48">Table 48 - Entries in an extensions dictionary</a></li>
 <li><a href="clause08.html#Table50">Table 50 - Operator categories</a></li>
@@ -61,6 +62,8 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table315">Table 315 - Entries in a 3D view dictionary</a></li>
 <li><a href="clause13.html#Table317">Table 317 - Entries in a 3D background dictionary</a></li>
 <li><a href="clause13.html#Table322">Table 322 - Entries in a 3D cross section dictionary</a></li>
+<li><a href="clause13.html#Table323">Table 323 - Entries in a 3D node dictionary</a></li>
+<li><ins onMouseEnter="mouseEnter(this)" data-issue="156"><a href="clause13.html#Table323a">Table 323a - Interpretation of 3D Node Subtype entry</a></ins></li>
 <li><a href="clause13.html#Table335">Table 335 - Entries in a RichMediaActivation dictionary</a></li>
 <li><a href="clause13.html#Table341">Table 341 - Entries in a RichMediaContent dictionary</a></li>
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>
