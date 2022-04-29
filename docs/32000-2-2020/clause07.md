@@ -286,6 +286,13 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
     <ins onMouseEnter="mouseEnter(this)" data-issue="101">section</ins>.
     </p></td>
   </tr>
+  <tr>
+    <td><b>Info</b></td>
+    <td>dictionary</td>
+    <td><p>
+    (<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    </p></td>
+  </tr>
 </table>
 
 <h3 id="H7.5.7">7.5.7 Object streams</h3>
@@ -489,6 +496,27 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>Dests</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 1.1<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    </td>
+  </tr>
+  <tr>
+    <td><b>Outlines</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    </td>
+  </tr>
+  <tr>
+    <td><b>Threads</b></td>
+    <td>array</td>
+    <td>
+    (<i>Optional; PDF 1.1<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    </td>
+  </tr>
+  <tr>
     <td><b>Lang</b></td>
     <td>text string</td>
     <td>
@@ -521,6 +549,13 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <p>(<i>Optional</i>) A content stream (see 7.8.2, "Content streams") that shall describe the contents of this page. If this entry is absent, the page shall be empty.</p>
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="81">NOTE: if the <b>Contents</b> key is not present, a <b>Resources</b> dictionary must still be present, either directly or through inheritance, in the pages tree.</ins></p>
     <p>...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>ID</b></td>
+    <td>byte string</td>
+    <td>
+    (<i>Optional; PDF 1.3<del onMouseEnter="mouseEnter(this)" data-issue="106">; indirect reference preferred</del></i>) ...
     </td>
   </tr>
 </table>
