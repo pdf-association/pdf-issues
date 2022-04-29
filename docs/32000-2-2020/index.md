@@ -53,6 +53,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table236">Table 236 - Entries in a signature field lock dictionary</a></li>
 <li><a href="clause12.html#Table237">Table 237 - Entries in a signature field seed value dictionary</a></li>
 <li><a href="clause12.html#Table239">Table 239 - Additional entries specific to a submit-form action</a></li>
+<li><a href="clause12.html#Table242">Table 242 - Flag for reset-form actions</a></li>
 <li><a href="clause12.html#Table255">Table 255 - Entries in a signature dictionary</a></li>
 <li><a href="clause12.html#Table256">Table 256 - Entries in a signature reference dictionary</a></li>
 <li><a href="clause12.html#Table257">Table 257 - Entries in the DocMDP transform parameters dictionary</a></li>

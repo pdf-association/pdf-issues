@@ -77,6 +77,8 @@ modified: 8 April 2022
     <ul>
      <li><a href="#H12.7.6.2">12.7.6.2 Submit-form action</a>
      </li>
+     <li><a href="#H12.7.6.3">12.7.6.3 Reset-form action</a>
+     </li>
     </ul>
    </li>
    <li>12.7.8 Form data format
@@ -554,6 +556,32 @@ However, a projection annotation is only valid within the context of an associat
     </td>
   </tr>
 </table>
+
+<h4 id="H12.7.6.3">12.7.6.3 Reset-form action</h4>
+
+<p class="location">Change Table 242 as follows:</p>
+
+<table>
+  <caption id="Table242">Table 242 - Flag for reset-form actions</caption>
+  <tr>
+    <th>Bit position</th>
+    <th>Name</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Include/Exclude</td>
+    <td>
+    <p>
+    If clear, the <b>Fields</b> array (see "Table 241 — Additional entries specific to a reset-form action") specifies which fields to reset.
+    (All descendants of the specified fields in the field hierarchy are reset as well.) If set, the <b>Fields</b> array indicates which fields
+    to exclude from resetting; that is, all fields in the document’s interactive form shall be reset <i>except</i> those listed in the <b>Fields</b> array.
+    <ins onMouseEnter="mouseEnter(this)" data-issue="174">(All descendants of the specified fields in the field hierarchy are also exempt from being reset.)</ins>
+    </p>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H12.7.8">12.7.8 Forms data format</h3>
 
