@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex F
 title: (normative) Linearized PDF
-modified: 20 March 2022
+modified: 29 April 2022
 ---
 
 <ul class="noprint">
