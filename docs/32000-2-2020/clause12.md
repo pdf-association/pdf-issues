@@ -592,9 +592,15 @@ However, a projection annotation is only valid within the context of an associat
 <p class="location">Change the last paragraph as follows:</p>
 
 <p>
-FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176">application/fdf, or the deprecated alias</ins> application/vnd.fdf.
-On the Microsoft Windows &trade; and UNIX platforms, FDF files shall have the extension .fdf; on Mac OS, they shall have file type 'FDF'.
+FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176"><code>application/fdf</code>, or the deprecated alias</ins> <code>application/vnd.fdf</code>.
+On the Microsoft Windows&trade; and UNIX platforms, FDF files shall have the extension <code>.fdf</code>; on Mac OS, they shall have file type 'FDF'.
 </p>
+
+<p class="location">Add the following NOTE after the last paragraph:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="176">
+NOTE See <a href="https://www.iana.org/assignments/media-types/application/fdf">https://www.iana.org/assignments/media-types/application/fdf</a> for more information.
+</ins></p>
 
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
