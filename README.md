@@ -16,17 +16,18 @@ All issues in ISO PDF related standards are important, from minor typos and form
 larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry,
 PDF interoperability and implementation reliability will be improved.
 
-The current set of resolved errata are presented as 
+The current set of resolved errata are presented as
 <span style="background-color:lightyellow;color:green;text-decoration-style:double;text-decoration-color:green;">additions</span>,
 <span style="background-color:seashell;color:darkred;text-decoration:line-through;text-decoration-color:red;">deletions</span> or
-<soan style="font-weight:bold;color:purple;background-color:snow;text-decoration initial">editor notes</span>
+<span style="font-weight:bold;color:purple;background-color:snow;text-decoration initial">editor notes</span>
 to the published wording in the relevant ISO standard organized by clause number.
-GitHub Issue numbers will appear as popup tooltips when hovering over changes or inline when printed and refer back to
+GitHub Issue numbers will appear as popup tooltips when hovering over changes and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
-closed GitHub pdf-issues</a>.
-Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
+closed GitHub pdf-issues</a>. If a small ISO logo is also shown ![ISO logo](docs/assets/Logo-ISO-small.png), then that errata has been approved by the appropriate [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/).
 
-Errata in the following ISO publications are supported:
+Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to understand how the resolution is being applied.
+
+Errata in the following published ISO publications are supported:
 
 ### Core PDF technologies
   <ul>
@@ -50,7 +51,7 @@ Errata in the following ISO publications are supported:
     <li>PDF/X-4 (ISO 15930-7:2010)</li>
     <li>PDF/X-3 (ISO 15930-6:2003)</li>
    </ul>
-   
+
 ### <a href="https://www.pdfa.org/resource/iso-16612-pdfvt/" target="_blank">PDF/VT (ISO 16612) - PDF for variable data &amp; transactional printing</a>
    <ul>
     <li>PDF/VT-3 (ISO 16612-3:2020) - <a href="https://pdf-issues.pdfa.org/16612-3-2020/index.html"><i>Resolved Errata</i></a></li>
@@ -70,7 +71,7 @@ Errata in the following ISO publications are supported:
 <p>Errata on PDF 1.7 (ISO 32000-1:2008) and withdrawn ISO publications are <b>not</b> supported.
 The PDF Association maintains a <a href="https://www.pdfa.org/index-of-pdf-related-iso-publications/">full list of all PDF-related ISO publications</a>.</p>
 
-Resolutions proposed here are **not** officially authorized by the [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/) and may get changed by future ISO publications.
+Not all resolutions proposed here are officially authorized by the [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/) and may get changed when reviewed by the ISO working group.
 
 ## A Simple Process
 1. Open a new GitHub Issue. Clearly explain the mistake you have found in a published ISO PDF 2.0-based standard, or the feature you would like to see in a future version.
@@ -78,7 +79,7 @@ Resolutions proposed here are **not** officially authorized by the [ISO working 
 3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for each proposed resolution. Issues related to PDF subset standards may also get passed on to other TWGs.
 4. Each issue will be updated with the agreed resolution and then Closed by moderators once the resolution is published at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
 
-A full list of all industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
+A full list of all ISO and industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
 
 ## Directly referencing resolutions
 
