@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 29 April 2022
+modified: 9 May 2022
 ---
 
 <ul class="noprint">
@@ -104,8 +104,8 @@ modified: 29 April 2022
 
 <p>
 As "Table 350 - Entries in a page-piece dictionary" shows, a page-piece dictionary may contain any number of entries,
-each <del onMouseEnter="mouseEnter(this)" data-issue="69">keyed by</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="69">key should be a second-class name, or</ins>
+each <del onMouseEnter="mouseEnter(this)" data-issue="69" data-iso="approved">keyed by</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="69" data-iso="approved">key should be a second-class name, or</ins>
 the name of a distinct PDF processor, or of a well-known data type recognised by a family of PDF processors.
 The value associated with each key shall be a data dictionary containing the private data that shall be used by the PDF processor.
 The <b>Private</b> entry may have a value of any data type, but typically it is a dictionary containing all of the private
@@ -122,7 +122,7 @@ data needed by the PDF processor other than the actual content of the document, 
     <th>Value</th>
   </tr>
   <tr>
-    <td>any valid second-class name <ins onMouseEnter="mouseEnter(this)" data-issue="69">(<i>recommended</i>), any conforming product name or well known data type</ins></td>
+    <td>any valid second-class name <ins onMouseEnter="mouseEnter(this)" data-issue="69" data-iso="approved">(<i>recommended</i>), any conforming product name or well known data type</ins></td>
     <td>dictionary</td>
     <td>A data dictionary (see "Table 351 - Entries in a data dictionary").
     </td>
@@ -132,7 +132,7 @@ data needed by the PDF processor other than the actual content of the document, 
 <p class="location">Insert new NOTE below Table 350 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="69">NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="69" data-iso="approved">NOTE: the definition of page-piece dictionary keys was updated to also support the same definition as in ISO 32000-1:2008 to allow easier document upgrades to PDF 2.0, however second-class names are strongly recommend.</ins>
 </p>
 
 <h2 id="H14.6">14.6 Marked content</h2>
@@ -142,7 +142,7 @@ data needed by the PDF processor other than the actual content of the document, 
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126">role mapped</ins>.
+NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.
 </p>
 
 <h2 id="H14.7">14.7 Logical structure</h2>
@@ -161,7 +161,7 @@ NOTE 3 The tag operand of marked-content operators have no relationship to Tagge
   <tr>
     <td>R</td>
     <td>integer</td>
-    <td>(<i>Optional<ins onMouseEnter="mouseEnter(this)" data-issue="93">; deprecated in PDF 2.0</ins></i>) The current revision number of this structure element (see 14.7.6.3, "Attribute revision numbers"). The value shall be a non-negative integer. Default value: 0.
+    <td>(<i>Optional<ins onMouseEnter="mouseEnter(this)" data-issue="93" data-iso="approved">; deprecated in PDF 2.0</ins></i>) The current revision number of this structure element (see 14.7.6.3, "Attribute revision numbers"). The value shall be a non-negative integer. Default value: 0.
     </td>
   </tr>
 </table>
@@ -171,7 +171,7 @@ NOTE 3 The tag operand of marked-content operators have no relationship to Tagge
 <p class="location">Change the third paragraph as follows:</p>
 
 <p>
-The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing structure element types <del onMouseEnter="mouseEnter(this)" data-issue="126">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126">role mapped</ins> to other structure element types. The corresponding value for each of these keys shall be a single name identifying the target structure element type.
+The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing structure element types <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins> to other structure element types. The corresponding value for each of these keys shall be a single name identifying the target structure element type.
 </p>
 
 <p>...</p>
@@ -227,8 +227,8 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     <td>
     <p>(<i>PDF 2.0</i>) Encloses content for the purpose of strong importance, seriousness or urgency for its contents.</p>
     <p>EXAMPLE 3 In this example the <b>Strong</b> element is used to denote the content
-    that <del onMouseEnter="mouseEnter(this)" data-issue="84">the user is intended to read first</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="84">is more important</ins>:
+    that <del onMouseEnter="mouseEnter(this)" data-issue="84" data-iso="approved">the user is intended to read first</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="84" data-iso="approved">is more important</ins>:
     </p>
     <p>...</p>
     </td>
@@ -373,7 +373,7 @@ endobj
     <td><b>TR</b></td>
     <td>Internal to a <b>Table</b> structure</td>
     <td>
-    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" data-issue="45,71"> or both</ins> in a table.
+    A row of table header cells (<b>TH</b>) or table data cells (<b>TD</b>)<ins onMouseEnter="mouseEnter(this)" data-issue="45,71" data-iso="approved,approved"> or both</ins> in a table.
     </td>
   </tr>
 </table>
@@ -399,10 +399,10 @@ endobj
     The <b>Caption</b> shall be the first or the last structure element inside its parent structure element. The number of captions cannot exceed 1.
     </p>
     <p>While captions are often used with figures or formulas, they may be associated with any type of content.</p>
-    <p class="hangingindent">NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="35">1</ins> In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each
+    <p class="hangingindent">NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="35" data-iso="approved">1</ins> In principle, captions can appear in a nested fashion. For example, several smaller images belonging to a group of images can each
     be accompanied by a caption, and the group of these images as a whole is accompanied by a caption as well.</p>
     <p class="hangingindent">
-    <ins onMouseEnter="mouseEnter(this)" data-issue="35">NOTE 2 If an <b>Artifact</b> structure element is present, and needs to be associated with a <b>Caption</b>, then the <b>Artifact</b> structure element needs to be a descendent of the <b>Caption</b>.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="35" data-iso="approved">NOTE 2 If an <b>Artifact</b> structure element is present, and needs to be associated with a <b>Caption</b>, then the <b>Artifact</b> structure element needs to be a descendent of the <b>Caption</b>.</ins>
     </p>
     </td>
   </tr>
@@ -443,7 +443,7 @@ endobj
 <p>The term <i>standard structure namespaces</i> refers to either of the two namespaces defined above.</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="8">NOTE 2 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="8" data-iso="approved">NOTE 2 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
 </p>
 
 
@@ -451,7 +451,7 @@ endobj
 
 <p class="location">Insert a new EXAMPLE at the end of the subclause as follows:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="65">
+<ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">
 <p>EXAMPLE:</p>
 <code>
 17 0 obj
@@ -488,8 +488,8 @@ endobj
 <p class="hangingindent">NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="72">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="72">When including mathematics structured as MathML 3.0, the <b>math</b> structure element type, as defined in MathML 3.0, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML 3.0 namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="72" data-iso="approved">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="72" data-iso="approved">When including mathematics structured as MathML 3.0, the <b>math</b> structure element type, as defined in MathML 3.0, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML 3.0 namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</ins>
 </p>
 
 <p>...</p>
@@ -501,9 +501,9 @@ endobj
 
 <p>
 The values of keys present in the DPM dictionary, or of any dictionary or array object present in the DPM dictionary, shall only be of type text string, date string,
-<ins onMouseEnter="mouseEnter(this)" data-issue="86">name,</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="86" data-iso="approved">name,</ins>
 array, dictionary, boolean, integer or real as defined in 7.3, "Objects".
-<ins onMouseEnter="mouseEnter(this)" data-issue="86">All key values that are PDF name objects, after expansion of character sequences escaped with a NUMBER SIGN (23h), if any, shall be valid UTF-8 character sequences.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="86" data-iso="approved">All key values that are PDF name objects, after expansion of character sequences escaped with a NUMBER SIGN (23h), if any, shall be valid UTF-8 character sequences.</ins>
 Other PDF value types shall not be used.
 </p>
 
@@ -515,8 +515,8 @@ Other PDF value types shall not be used.
 <p>
 The property list associated with the marked-content shall specify an array of file specification dictionaries to which
 the content is associated. The named resource in the
-<del onMouseEnter="mouseEnter(this)" data-issue="14"><b>Property List</b></del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="14"><i>property list</i></ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>Property List</b></del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>property list</i></ins>
 (see 14.6.2, "Property lists") shall specify an array of file specification dictionaries to which the content is associated.
 The relationship that the associated files have to the PDF content is supplied by the AFRelationship key in each file specification dictionary.
 </p>

@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
-modified: 14 February 2022
+modified: 9 May 2022
 ---
 
 <ul class="noprint">
@@ -44,8 +44,8 @@ modified: 14 February 2022
     <td>dictionary or<br/>stream</td>
     <td>
     (<i>Required</i>) A halftone that shall be used for any colourant or colour component that does not have an entry of its own.
-    <del onMouseEnter="mouseEnter(this)" data-issue="12">The value shall not be 5.</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="12">The halftone shall not be a Type 5 halftone.</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="12" data-iso="approved">The value shall not be 5.</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="12" data-iso="approved">The halftone shall not be a Type 5 halftone.</ins>
     If there are any nonprimary colourants, the default halftone shall have a transfer function.
     </td>
   </tr>

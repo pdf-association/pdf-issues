@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex A
 title: (informative) Operator Summary
-modified: 14 February 2022
+modified: 9 May 2022
 ---
 
 <ul class="noprint">
@@ -37,8 +37,8 @@ modified: 14 February 2022
     <td></td>
     <td>(<i>PDF 1.2</i>) Begin marked-content sequence</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="108">"Table 351 - Entries in a data dictionary"</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="108">"Table 352 - Marked-content operators"</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="108" data-iso="approved">"Table 351 - Entries in a data dictionary"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="108" data-iso="approved">"Table 352 - Marked-content operators"</ins>
     </td>
   </tr>
   <tr>
@@ -52,8 +52,8 @@ modified: 14 February 2022
     <td><b>curveto</b></td>
     <td>Append curved segment to path (three control points)</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="75">"Table 60 - Clipping path operators"</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="75">"Table 58 - Path construction operators"</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">"Table 60 - Clipping path operators"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">"Table 58 - Path construction operators"</ins>
     </td>
   </tr>
 </table>

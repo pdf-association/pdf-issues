@@ -9,7 +9,7 @@
     .fixedpopup { display: none  !important; }
   }
 
-  /* use standardized HTML tags for deletion and insertion markup */ 
+  /* use standardized HTML tags for deletion and insertion markup */
   del {
     background-color: seashell;
     color: darkred;
@@ -25,13 +25,13 @@
     text-decoration-color: green;
   }
   ins:hover { background-color: #ffff66; }
-  
+
   /* URL links */
-  a { 
-     color: mediumblue; 
+  a {
+     color: mediumblue;
   }
   a:hover {
-     color: #d03f4e; 
+     color: #d03f4e;
      font-weight: bold;
   }
 
@@ -47,14 +47,14 @@
   .isostyle {
     font-family: Cambria, Georgia, serif;
   }
-  
+
   .isostyle .fixedpopup {
     visibility: hidden;
     position: fixed;
     float:right;
     right: 10px;
-    min-height: 16px;
-    width: 86px;
+    min-height: 18px;
+    min-width: 116px;
     background-color: #f1f1f1;
     vertical-align: middle;
     text-align: center;
@@ -63,7 +63,7 @@
     box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
+
   /* Links to Issues in GitHub */
   .fixedpopup a {
     font-family: Arial, Helvetica, sans-serif;
@@ -79,11 +79,11 @@
   .isostyle h7 {
     font-weight: 600; font-size: 15px;
   }
-  
+
   /* Avoid dual H1 tags - but make it look like an ISO doc */
   .fake-h1 {
-    font-weight: 400; 
-    font-size: 32px; 
+    font-weight: 400;
+    font-size: 32px;
     margin-bottom: 15px;
   }
 
@@ -122,16 +122,16 @@
     padding: 0px 0px;
     white-space: pre;
   }
-  
+
   .isostyle .hangingindent {
     padding-left: 40px;
     text-indent: -40px;
-  } 
+  }
 
   .isostyle .editornote {
     font-weight: bold;
     color: purple;
-    background-color: snow; 
+    background-color: snow;
     text-decoration: initial;
   }
 
@@ -140,4 +140,3 @@
     color: DimGrey;
     font-size: 80%;
   }
-  

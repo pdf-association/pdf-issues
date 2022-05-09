@@ -3,7 +3,7 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 clause: 3
 title: Terms and definitions
-modified: 14 February 2022
+modified: 9 May 2022
 ---
 
 <ul>
@@ -26,7 +26,7 @@ modified: 14 February 2022
 <p class="location">Change the definition for 3.1 ECMAscript as follows:</p>
 
 <p>
-means of reference to ISO 22275 and ISO 22537 <ins onMouseEnter="mouseEnter(this)" data-issue="70"><i>(ISO 22537 ECMAScript for XML (E4X) support is deprecated in PDF 2.0)</i></ins>
+means of reference to ISO 22275 and ISO 22537 <ins onMouseEnter="mouseEnter(this)" data-issue="70" data-iso="approved"><i>(ISO 22537 ECMAScript for XML (E4X) support is deprecated in PDF 2.0)</i></ins>
 </p>
 
 </div>

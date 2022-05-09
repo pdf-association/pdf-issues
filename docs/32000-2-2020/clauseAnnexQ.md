@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex Q
 title: (normative) Method for determining transparency on a page
-modified: 14 February 2022
+modified: 9 May 2022
 ---
 
 <ul class="noprint">
@@ -28,7 +28,7 @@ modified: 14 February 2022
 Since Annotations require an appearance stream which is drawn by a PDF processor on top of the page content, it is possible
 that their presence may cause a page without any transparency to acquire some transparency. Therefore, all annotations object's
 in the page dictionary's <b>Annots</b> array shall have their appearance streams processed as a form XObject, according to Q.3, "Form XObjects".
-<ins onMouseEnter="mouseEnter(this)" data-issue="51">Any annotation that has a <b>BM</b> key (<i>PDF 2.0</i>) in the Annotation dictionary with a value other than <i>Normal</i>
+<ins onMouseEnter="mouseEnter(this)" data-issue="51" data-iso="approved">Any annotation that has a <b>BM</b> key (<i>PDF 2.0</i>) in the Annotation dictionary with a value other than <i>Normal</i>
 shall be considered to contain transparency (see "Table 166 - Entries common to all annotation dictionaries").</ins>
 </p>
 

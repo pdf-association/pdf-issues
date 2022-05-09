@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 29 April 2022
+modified: 9 May 2022
 ---
 
 <ul class="noprint">
@@ -99,8 +99,8 @@ character codes.
     <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts; shall be an indirect reference</i>) A font descriptor describing the
     font's metrics other than its glyph widths (see 9.8, "Font descriptors").</p>
     <p>
-    <del onMouseEnter="mouseEnter(this)" data-issue="47,48">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="47,48">See also</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">See also</ins>
     9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".
     </p>
     </td>
@@ -110,8 +110,8 @@ character codes.
 <p class="location">Change the paragraph below Table 109 as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="47,48">PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font descriptor data for those standard fonts for use in processing PDF files when the entries are absent.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="47,48">See also 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font descriptor data for those standard fonts for use in processing PDF files when the entries are absent.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">See also 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".</ins>
 </p>
 
 
@@ -122,17 +122,17 @@ character codes.
 <p class="location">Change the second paragraph to a NOTE and modify as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="47,48">NOTE: </ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">NOTE: </ins>
 In PDF 1.0 to PDF 1.7, the <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> (see "Table 109 - Entries in a Type 1 font dictionary") were
 optional in Type 1 font dictionaries for the standard 14 fonts. PDF processors supporting PDF 1.0 to PDF 1.7 files
-<del onMouseEnter="mouseEnter(this)" data-issue="47,48">shall</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="47,48">are required to</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">shall</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">are required to</ins>
 have these fonts, or their font metrics and suitable substitution fonts available.</p>
 
 <p class="location">Delete the last paragraph as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="47,48">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.</del>
 </p>
 
 
@@ -141,7 +141,7 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for other fonts simply contain information about the font and refer to a separate font program for the actual glyph descriptions; a Type 3 font dictionary contains the glyph descriptions. In Type 3 fonts, glyphs shall be defined by streams of PDF graphics <del onMouseEnter="mouseEnter(this)" data-issue="111">operators</del><ins onMouseEnter="mouseEnter(this)" data-issue="111">objects</ins>. These streams shall be associated with glyph names. A separate encoding entry shall map character codes to the appropriate glyph names for the glyphs.
+Type 3 fonts differ from the other fonts supported by PDF. Font dictionaries for other fonts simply contain information about the font and refer to a separate font program for the actual glyph descriptions; a Type 3 font dictionary contains the glyph descriptions. In Type 3 fonts, glyphs shall be defined by streams of PDF graphics <del onMouseEnter="mouseEnter(this)" data-issue="111" data-iso="approved">operators</del><ins onMouseEnter="mouseEnter(this)" data-issue="111" data-iso="approved">objects</ins>. These streams shall be associated with glyph names. A separate encoding entry shall map character codes to the appropriate glyph names for the glyphs.
 </p>
 
 <p class="hangingindent">
@@ -150,9 +150,9 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
 
 <p class="location">Insert a new NOTE 2 and a new paragraph below NOTE 1 as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects") subject to additional restrictions described in this clause. </ins></p>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="111" data-iso="approved">NOTE 2 Type 3 glyphs can use any PDF operator from any operator category (see "Table 50 - Operator categories" and "Figure 9 - Graphics objects") subject to additional restrictions described in this clause. </ins></p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="111">Implementations also need to avoid potential infinite recursion if a Type 3 glyph description refers to itself directly or indirectly. The result in all such cases is implementation-dependent.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="111" data-iso="approved">Implementations also need to avoid potential infinite recursion if a Type 3 glyph description refers to itself directly or indirectly. The result in all such cases is implementation-dependent.</ins></p>
 
 <p class="editornote">EDITOR NOTE: remaining NOTEs in this clause will be renumbered appropriately.</p>
 
@@ -173,8 +173,8 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
     <td>
     <p>...</p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
-    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number </ins><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="43" data-iso="approved">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" data-issue="43" data-iso="approved">The number </ins><i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
     <p>...</p>
     </td>
@@ -185,12 +185,12 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
     <td>
     <p>...</p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
-    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" data-issue="43">The number</ins> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="43" data-iso="approved">The number</ins> <i>w<sub>x</sub></i> denotes the horizontal displacement in the glyph coordinate system; it shall be consistent with the corresponding width in the font's
+    <b>Widths</b> array. <ins onMouseEnter="mouseEnter(this)" data-issue="43" data-iso="approved">The number</ins> <i>w<sub>y</sub></i> shall be 0 (see 9.2.4, "Glyph positioning and metrics").
     </p>
     <p>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="43">The numbers</ins> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
-    and <ins onMouseEnter="mouseEnter(this)" data-issue="43">The numbers</ins> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
+    <ins onMouseEnter="mouseEnter(this)" data-issue="43" data-iso="approved">The numbers</ins> <i>ll<sub>x</sub></i> and <i>ll<sub>y</sub></i> denote the coordinates of the lower-left corner,
+    and <ins onMouseEnter="mouseEnter(this)" data-issue="43" data-iso="approved">The numbers</ins> <i>ur<sub>x</sub></i> and <i>ur<sub>y</sub></i> denote the upper-right corner, of the glyph bounding box. ...
     </p>
     <p>...</p>
     </td>
@@ -201,15 +201,15 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
 
 <p>EXAMPLE
 This example shows the definition of a Type 3 font with only two glyphs - a filled square and a filled triangle
-<del onMouseEnter="mouseEnter(this)" data-issue="44">, selected by the character codes a and b</del>.
-<ins onMouseEnter="mouseEnter(this)" data-issue="44">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="44" data-iso="approved">, selected by the character codes a and b</del>.
+<ins onMouseEnter="mouseEnter(this)" data-issue="44" data-iso="approved">at positions 97 and 98 of the font's <b>Encoding</b> (corresponding to 'a' and 'b' in PDFDocEncoding) in the <b>Tj</b> string operand</ins>.
 "Figure 62 - Output from the example" shows the result of showing the string ( ababab ) using this font.
 </p>
 
 <code>
   ...
-  <del onMouseEnter="mouseEnter(this)" data-issue="44">%Type 3 font definition encoding two glyphs, 'a' and 'b'</del>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="44">%Type 3 font definition encoding the two glyphs square and triangle</ins>
+  <del onMouseEnter="mouseEnter(this)" data-issue="44" data-iso="approved">%Type 3 font definition encoding two glyphs, 'a' and 'b'</del>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="44" data-iso="approved">%Type 3 font definition encoding the two glyphs square and triangle</ins>
   4 0 obj
      &lt;&lt;
         /Type /Font
@@ -245,10 +245,10 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     <td><b>FontName</b></td>
     <td>name</td>
     <td>
-    (<i>Required <ins onMouseEnter="mouseEnter(this)" data-issue="11">for non-Type 3 fonts</ins></i>)
-    The PostScript name of the font. <del onMouseEnter="mouseEnter(this)" data-issue="11">This name shall be the same as the value of <b>BaseFont</b>
+    (<i>Required <ins onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">for non-Type 3 fonts</ins></i>)
+    The PostScript name of the font. <del onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">This name shall be the same as the value of <b>BaseFont</b>
     in the font or CIDFont dictionary that refers to this font descriptor.</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="11">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary that refers to this font descriptor.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary that refers to this font descriptor.</ins>
     </td>
   </tr>
   <tr>
@@ -268,14 +268,14 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 <p>
 The key for each entry in an <b>FD</b> dictionary shall be the name of a class of glyphs - that is, a particular subset of the CIDFont's
 character collection. The entry's value shall be a font descriptor whose contents shall
-<ins onMouseEnter="mouseEnter(this)" data-issue="5">be a subset of the keys defined in "Table 120 - Entries common to all font descriptors" that</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="5" data-iso="approved">be a subset of the keys defined in "Table 120 - Entries common to all font descriptors" that</ins>
 override the font-wide attributes for that class only. This font descriptor
-<del onMouseEnter="mouseEnter(this)" data-issue="5">shall contain</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="5">contains</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="5" data-iso="approved">shall contain</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="5" data-iso="approved">contains</ins>
 entries for metric information only; it shall not include <b>FontFile</b>, <b>FontFile2</b>,
 <b>FontFile3</b>, or any of the entries listed in
-<del onMouseEnter="mouseEnter(this)" data-issue="5">"Table 120 - Entries common to all font descriptors"</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="5">"Table 122 - Additional font descriptor entries for CIDFonts"</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="5" data-iso="approved">"Table 120 - Entries common to all font descriptors"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="5" data-iso="approved">"Table 122 - Additional font descriptor entries for CIDFonts"</ins>.
 </p>
 
 <h3 id="H9.10.3">9.10.3 ToUnicode CMaps</h3>
@@ -285,8 +285,8 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 <p>EXAMPLE 2</p>
 <p style="margin-left: 40px;">...</p>
 <p style="margin-left: 40px;">Finally, the character code &lt;3A 51&gt; is mapped to the Unicode value
-<del onMouseEnter="mouseEnter(this)" data-issue="87">UNICODE HAN CHARACTER 'U+2003E'</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="87">CJK UNIFIED IDEOGRAPH-2003E</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="87" data-iso="approved">UNICODE HAN CHARACTER 'U+2003E'</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="87" data-iso="approved">CJK UNIFIED IDEOGRAPH-2003E</ins>
 (U+2003E), which is expressed by the byte sequence &lt;D840DC3E&gt; in UTF-16BE encoding.
 </p>
 

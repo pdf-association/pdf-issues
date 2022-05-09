@@ -55,30 +55,50 @@ window.addEventListener("load", function(){
     var n = 0;
     var s = "";
     var iss;
+    var iso = null;
     var p;
 
     var edits = document.getElementsByTagName('ins');
     for (n = 0, nEdits = edits.length; n < nEdits; n++) {
         iss = edits[n].getAttribute("data-issue").split(',');
+        if (edits[n].getAttribute("data-iso") != null) {
+            iso = edits[n].getAttribute("data-iso").split(',');
+            if (iss.length != iso.length) {
+                console.log("Insertion data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+            }
+        }
         s = "";
         for (let i in iss) {
             if (s != "") {
                 s = s + ", "; // add a gap between each URL
             }
-            s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+            if ((iso != null) && (iso.length > i) && (iso[i] == "approved")) {
+                s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+            }
+            s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue&nbsp;#' + iss[i] + '</a>';
         }
         // edits[n].insertAdjacentHTML("beforebegin", "<span class=\"onlyprint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
     }
 
     var edits = document.getElementsByTagName('del');
+    iso = null;
     for (n = 0, nEdits = edits.length; n < nEdits; n++) {
         iss = edits[n].getAttribute("data-issue").split(',');
+        if (edits[n].getAttribute("data-iso") != null) {
+            iso = edits[n].getAttribute("data-iso").split(',');
+            if ((iso != null) && (iss.length != iso.length)) {
+                console.log("Deletion data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+            }
+        }
         s = "";
         for (let i in iss) {
             if (s != "") {
                 s = s + ", "; // add a gap between each URL
             }
-            s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+            if ((iso != null) && (iso.length > i) && (iso[i] == "approved")) {
+                s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+            }
+            s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue&nbsp;#' + iss[i] + '</a>';
         }
         // edits[n].insertAdjacentHTML("beforebegin", "<span class=\"onlyprint\" style=\"font-family:cursive;font-size:small\"> [" + s + "] </span>");
     }
@@ -87,13 +107,23 @@ window.addEventListener("load", function(){
 function mouseEnter(obj) {
     clearTimeout(lastTimeout)
     var iss = obj.getAttribute("data-issue").split(',');
+    var iso = null;
+    if (obj.getAttribute("data-iso") != null) {
+        iso = obj.getAttribute("data-iso").split(',');
+        if ((iso != null) && (iss.length != iso.length)) {
+            console.log("data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+        }
+    }
     var s = "";
     // Iterate over comma-separated issue numbers
     for (let i in iss) {
         if (s != "") {
             s = s + "<br\>"; // add a linebreak between each URL
         }
-        s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue #' + iss[i] + '</a>';
+        if ((iso != null) && (iso.length > i) && (iso[i] == "approved")) {
+            s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+        }
+        s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue&nbsp;#' + iss[i] + '</a>';
     }
     var trg = document.getElementById("issuelink");
     trg.innerHTML = s;
