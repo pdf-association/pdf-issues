@@ -78,14 +78,23 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 <h2 id="H4.1">4.1 General</h2>
 ```
 
-
-- The popup tooltips which state the pdf-issues Issue number and provide clickable URLs back to GitHub (e.g. "Issue #12") are achieved via `onMouseEnter` JavaScript that reads the custom attribute `issue` on the HTML5 `del` and `ins` tags. `del` tags occur first, then `ins` for changes on existing text. For changes with multiple Issues, comma separate the issue numbers (e.g. `issue="3,5,7"`). The JavaScript and CSS styling will then be merged by Jeykll.
+- The popup tooltips which state the pdf-issues Issue number and provide clickable URLs back to GitHub (e.g. "Issue #12") are achieved via `onMouseEnter` JavaScript that reads the custom attribute `data-issue` on the HTML5 `del` and `ins` tags. `del` tags occur first, then `ins` for changes on existing text. For changes with multiple Issues, comma separate the issue numbers (e.g. `issue="3,5,7"`). If the Errata is ISO approved, then set the custom attribute `data-iso` to the string `"approved"`. The JavaScript and CSS styling will then be merged by Jeykll.
 
    ```html
    <del onMouseEnter="mouseEnter(this)" data-issue="12">to be deleted</del> ... <ins onMouseEnter="mouseEnter(this)" data-issue="34">to be inserted</ins>
+   <del onMouseEnter="mouseEnter(this)" data-issue="12" data-iso="approved">to be deleted</del> ... <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">to be inserted</ins>
    ```
 
-- It is *very strongly* recommended that each edit, demarkated by `<del ... </del>` and `<ins ... </ins>` are each on a single line by themselves. This simplifies greps, sed, etc.
+- It is *very strongly* recommended that each edit, demarcated by `<del ... </del>` and `<ins ... </ins>` are each on a single line by themselves. This simplifies greps, sed, etc.
+
+- It is *required* that by `<del ... </del>` and `<ins ... </ins>` tags are entirely on the same line and not split across lines. This allows scripted updating of the ISO approval status.
+
+- To check the ISO status of each errata, use the following `grep` - if `data-iso="approved"` is shown then it is ISO approved; if is not shown then it is not:
+
+```bash
+grep -o "data-[a-z]*\=\"[a-z0-9,]*\"" *.md
+```
+- To update the ISO status of errata, do a search and replace on `data-issue"123"` with `data-issue"123" data-iso="approved"` or `data-issue"12,34"` with `data-issue"12,34" data-iso="approved,approved"`. The custom attribute `data-iso` must be the same length as the `data-issue` custom attribute!
 
 - The "Last Modified" in the top Liquid metadata of each MD file needs to be changed manually (as this needs to be the edit time of substantive changes)
 
