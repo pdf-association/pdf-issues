@@ -438,48 +438,105 @@ endobj
 
 <h4 id="H14.8.6.1">14.8.6.1 Namespaces for standard structure types and attributes</h4>
 
-<p class="location">Insert a new NOTE 2 after the last paragraph as follows:</p>
+<p class="location">Modify the paragraph above the current NOTE as follows:</p>
+
+<p>
+To facilitate conversion of documents created against versions of the PDF standard earlier than PDF 2.0, the
+<i>default standard structure namespace</i> shall be "http://iso.org/pdf/ssn".
+<del onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">When a namespace is not explicitly specified for a given structure element or attribute, it shall be assumed to be within this default standard structure namespace.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">When a structure element does not have a specified namespace, after transitively applying any role map present (see 14.8.6.2, "Role maps and namespaces"), the final element type shall be considered to be within the default standard structure namespace and shall be one of the standard structure types defined in the default standard structure namespace.</ins>
+</p>
+
+<p class="location">Add a new NOTE 1 above the current NOTE as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="approved">NOTE 1 The original structure type is still considered to be in an undefined namespace, which means it is exempt from restrictions on role mapping within the same namespace.</ins>
+</p>
+
+<p class="editornote">EDITOR NOTE: the current note is renumbered as NOTE 2.</p>
+
+<p class="location">Insert a new NOTE 3 after the last paragraph as follows:</p>
 
 <p>The term <i>standard structure namespaces</i> refers to either of the two namespaces defined above.</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="8" data-iso="approved">NOTE 2 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="8" data-iso="approved">NOTE 3 Namespaces are designed to provide greater interchange of PDFs including logical structure, providing a means to identify the custom namespace for each element, if appropriate. However, structure elements types in undefined namespaces continue to be permitted. </ins>
 </p>
 
 
 <h4 id="H14.8.6.2">14.8.6.2 Role maps and namespaces</h4>
 
-<p class="location">Insert a new EXAMPLE at the end of the subclause as follows:</p>
+<p>...</p>
+
+<p class="location">Modify the 2nd bullet in the bulleted list as follows:</p>
+
+<p>In a tagged PDF, all structure elements shall be in at least one of the standard structure namespaces or in a namespace identified in 14.8.6.3, “Other namespaces”. An element shall be considered to be in one of these namespaces if:<p>
+
+<ul>
+<li>they directly identify one of these namespaces through their NS entry;</li>
+<li>they are in the default standard structure namespace <ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">(after any role mapping)</ins>;</li>
+<li>...</li>
+</ul>
+
+<p class="location">Insert a new EXAMPLE 1 at the end of the subclause as follows:</p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">
-<p>EXAMPLE:</p>
+<p>EXAMPLE 1: use of namespaces</p>
 <code>
 17 0 obj
-<<
+&lt;&lt;
    /Type /StructElem
    /S /section
    /P 5 0 R
    /NS 15 0 R
->>
+&gt;&gt;
 endobj
 
 15 0 obj
-<<
+&lt;&lt;
    /Type /Namespace
    /NS (urn:uuid:A63861E-9F7-4FCB-9B27-C3BC8D9BFB06)
    /RoleMapNS 16 0 R
->>
+&gt;&gt;
 endobj
 
 16 0 obj
-<<
+&lt;&lt;
    /section [/H1 11 0 R]
    ...
->>
+&gt;&gt;
 endobj
 </code>
 </ins>
 
+<p class="location">Insert a new EXAMPLE 2 at the end of the subclause as follows:</p>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">
+<p>EXAMPLE 2: Role mapping of structure elements with no explicitly identified namespace</p>
+<code>
+13 0 obj % A structure tree with a role map for elements within an undefined namespace
+&lt;&lt;
+   /Type /StructTreeRoot
+   /RoleMap &lt;&lt; % The "Global" role map is applied to elements in an undefined namespace.
+     /Foo /Bar % The element type "Foo" in an undefined namespace maps to "Bar".
+     /Bar /P   % The "Bar" element in an undefined namespace maps to P, which is defined in
+               % the default standard structure namespace. This means that elements of
+               % type "Foo" transitively map to "P" through the "Bar" element type.
+   &gt;&gt;
+   ...
+&gt;&gt;
+endobj
+
+14 0 obj % A structure element with an undefined namespace of structure type "Foo"
+&lt;&lt;
+    /Type /StructElem % Structure Element with no defined namespace.
+    /S /Foo           % The "Foo" element has an undefined namespace and isn't defined in either
+                      % the PDF 1.7 or PDF 2.0 namespaces.
+    ...
+&gt;&gt;
+endobj
+</code>
+</ins>
 
 <h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
 
