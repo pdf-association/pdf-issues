@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 9 May 2022
+modified: 20 May 2022
 ---
 
 <ul class="noprint">
@@ -24,6 +24,16 @@ modified: 9 May 2022
     </ul>
    </li>
    <li><a href="#H9.6.4">9.6.4 Type 3 fonts</a>
+   </li>
+  </ul>
+ </li>
+ <li>9.7 Composite fonts
+  <ul>
+   <li>9.7.4 CIDFonts
+    <ul>
+     <li><a href="#H9.7.4.1">9.7.4.1 General</a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -96,8 +106,8 @@ character codes.
     <td><b>FontDescriptor</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts; shall be an indirect reference</i>) A font descriptor describing the
-    font's metrics other than its glyph widths (see 9.8, "Font descriptors").</p>
+    <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>)
+    A font descriptor describing the font's metrics other than its glyph widths (see 9.8, "Font descriptors").</p>
     <p>
     <del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see</del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">See also</ins>
@@ -113,7 +123,6 @@ character codes.
 <del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">PDF versions 1.0 to 1.7 did not require Type 1 font dictionaries to include <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b> and <b>FontDescriptor</b> entries as described in 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)". For compatibility reasons PDF processors shall provide glyph widths and font descriptor data for those standard fonts for use in processing PDF files when the entries are absent.</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">See also 9.6.2.2, "Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)".</ins>
 </p>
-
 
 <p>...</p>
 
@@ -155,6 +164,27 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="111" data-iso="approved">Implementations also need to avoid potential infinite recursion if a Type 3 glyph description refers to itself directly or indirectly. The result in all such cases is implementation-dependent.</ins></p>
 
 <p class="editornote">EDITOR NOTE: remaining NOTEs in this clause will be renumbered appropriately.</p>
+
+<p>...</p>
+
+<p class="location">Change Table 110 as follows:</p>
+
+<table>
+  <caption id="Table110">Table 110 - Entries in a Type 3 font dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>FontDescriptor</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Required in Tagged PDF documents<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    </p>
+    </td>
+  </tr>
+</table>
 
 <p>...</p>
 
@@ -227,8 +257,33 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 </code>
 
 
-<h2 id="H9.8">9.8 Font descriptors</h2>
+<h2 id="H9.7">9.7 Composite fonts</h2>
 
+<h3 id="H9.7.4">9.7.4 CIDFonts</h3>
+
+<h4 id="H9.7.4.1">9.7.4.1 General</h4>
+
+<p class="location">Change Table 115 as follows:</p>
+
+<table>
+  <caption id="Table115">Table 115 - Entries in a CIDFont dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>FontDescriptor</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    </p>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="H9.8">9.8 Font descriptors</h2>
 
 <h3 id="H9.8.1">9.8.1 General</h3>
 

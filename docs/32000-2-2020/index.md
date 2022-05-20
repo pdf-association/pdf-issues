@@ -38,7 +38,9 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause08.html#Table59">Table 59 - Path-painting categories</a></li>
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>
 <li><a href="clause09.html#Table109">Table 109 - Entries in a Type 1 font dictionary</a></li>
+<li><a href="clause09.html#Table110">Table 110 - Entries in a Type 3 font dictionary</a></li>
 <li><a href="clause09.html#Table111">Table 111 - Type 3 font operators</a></li>
+<li><a href="clause09.html#Table115">Table 115 - Entries in a CIDFont dictionary</a></li>
 <li><a href="clause09.html#Table120">Table 120 - Entries common to all font descriptors</a></li>
 <li><a href="clause10.html#Table132">Table 132 - Entries in a Type 5 halftone dictionary</a></li>
 <li><a href="clause11.html#Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</a></li>
