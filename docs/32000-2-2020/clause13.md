@@ -9,6 +9,16 @@ modified: 20 May 2022
 <ul class="noprint">
  <li><a href="#H13.1">13.1 General</a>
  </li>
+ <li>13.2 Multimedia
+  <ul>
+   <li>13.2.4 Media clip objects
+    <ul>
+     <li><a href="#H13.2.4.2">13.2.4.2 Media clip data</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
  <li>13.6 3D Artwork
   <ul>
    <li><a href="#H13.6.2">13.6.2 3D annotations</a>
@@ -81,6 +91,37 @@ modified: 20 May 2022
 <li>13.6, "3D Artwork" describes the capability of embedding three-dimensional graphics in a document, introduced in PDF 1.6.</li>
 <li>13.7, "<ins onMouseEnter="mouseEnter(this)" data-issue="109" data-iso="approved">Rich media" describes rich media annotations providing a common framework for video, audio, animations and other multimedia presentations.</ins></li>
 </ul>
+
+<h2 id="H13.2">13.2 Multimedia</h2>
+
+<h3 id="H13.2.4">13.2.4 Media clip objects</h3>
+
+<h4 id="H13.2.4.2">13.2.4.2 Media clip data</h4>
+
+<p class="location">Change Table 285 as follows:</p>
+
+<table>
+  <caption id="Table285">Table 285 - Additional entries in a media clip data dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>MH</b></td>
+    <td>dictionary</td>
+    <td>
+     <p>(<i>Optional</i>) A dictionary whose entries (see
+     <del onMouseEnter="mouseEnter(this)" data-issue="179">"Table 287 — Entries in a media clip data MH/BE dictionary"</del>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="179">"Table 289 — Entries in a media clip section MH/BE dictionary"</ins>) 
+     shall be honoured for the media clip data to be considered viable.
+     </p>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="H13.6">13.6 3D Artwork</h2>
 
 <h3 id="H13.6.2">13.6.2 3D annotations</h3>
 

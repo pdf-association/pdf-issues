@@ -59,6 +59,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table257">Table 257 - Entries in the DocMDP transform parameters dictionary</a></li>
 <li><a href="clause12.html#Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</a></li>
 <li><a href="clause12.html#Table260">Table 260 - SubFilter value algorithm support</a></li>
+<li><a href="clause13.html#Table285">Table 285 - Additional entries in a media clip data dictionary</a></li>
 <li><a href="clause13.html#Table311">Table 311 - Entries in a 3D stream dictionary</a></li>
 <li><a href="clause13.html#Table315">Table 315 - Entries in a 3D view dictionary</a></li>
 <li><a href="clause13.html#Table317">Table 317 - Entries in a 3D background dictionary</a></li>
