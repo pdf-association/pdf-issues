@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 9 May 2022
+modified: 20 May 2022
 ---
 
 <ul class="noprint">
@@ -514,9 +514,16 @@ However, a projection annotation is only valid within the context of an associat
     <td><b>DigestMethod</b></td>
     <td>array</td>
     <td>
-    <p>(<i>Optional; PDF 1.7</i>) An <ins onMouseEnter="mouseEnter(this)" data-issue="159">unordered</ins> array of names indicating acceptable digest algorithms to use while signing. <del onMouseEnter="mouseEnter(this)" data-issue="159">The value</del><ins onMouseEnter="mouseEnter(this)" data-issue="159">Array values</ins> shall be <i>SHA1</i> (<i>deprecated with PDF 2.0</i>), <i>SHA256</i>, <i>SHA384</i>, <i>SHA512</i> <del onMouseEnter="mouseEnter(this)" data-issue="159">and</del><ins onMouseEnter="mouseEnter(this)" data-issue="159">or</ins> <i>RIPEMD160</i>. The default value is implementation-specific.
+    <p>(<i>Optional; PDF 1.7</i>) An <ins onMouseEnter="mouseEnter(this)" data-issue="159">unordered</ins> array of names indicating acceptable digest
+    algorithms to use while signing. <del onMouseEnter="mouseEnter(this)" data-issue="159">The value
+    </del><ins onMouseEnter="mouseEnter(this)" data-issue="159">Array values</ins> shall be <i>SHA1</i> (<i>deprecated with PDF 2.0</i>), <i>SHA256</i>,
+    <i>SHA384</i>, <i>SHA512</i> <del onMouseEnter="mouseEnter(this)" data-issue="159">and</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="159">or</ins> <i>RIPEMD160</i>. The default value is implementation-specific.
     </p>
-    <p>...</p>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="158">This property is only applicable if the digital credential signing contains RSA public/private
+    keys. If it contains DSA public/private keys, the digest algorithm is always SHA-1 and this attribute shall be ignored.</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="158">Some signature mechanisms require a specific digest function to be used. In such cases, the value of this entry shall be ignored.</ins>
+    </p>
     </td>
   </tr>
   <tr>
