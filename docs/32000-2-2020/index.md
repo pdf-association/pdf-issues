@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 29 April 2022
+modified: 20 May 2022
 ---
 
 <p>
@@ -65,6 +65,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table322">Table 322 - Entries in a 3D cross section dictionary</a></li>
 <li><a href="clause13.html#Table323">Table 323 - Entries in a 3D node dictionary</a></li>
 <li><ins onMouseEnter="mouseEnter(this)" data-issue="156"><a href="clause13.html#Table323a">Table 323a - Interpretation of 3D Node Subtype entry</a></ins></li>
+<li><a href="clause13.html#Table333">Table 333 - Additional entries specific to a RichMedia annotation</a></li>
 <li><a href="clause13.html#Table335">Table 335 - Entries in a RichMediaActivation dictionary</a></li>
 <li><a href="clause13.html#Table341">Table 341 - Entries in a RichMediaContent dictionary</a></li>
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>

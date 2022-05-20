@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 9 May 2022
+modified: 20 May 2022
 ---
 
 <ul class="noprint">
@@ -35,8 +35,12 @@ modified: 9 May 2022
     <ul>
      <li>13.7.2 RichMedia annotations
       <ul>
+       <li><a href="#H13.7.2.1">13.7.2.1 General</a>
+       </li>
        <li>13.7.2.2 RichMediaSettings dictionary
         <ul>
+         <li><a href="#H13.7.2.2.1">13.7.2.2.1 General</a>
+         </li>
          <li><a href="#H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</a>
          </li>
         </ul>
@@ -305,6 +309,59 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142">13.7 "Ric
    </td>
   </tr>
 </table>
+
+<h3 id="H13.7.2">RichMedia annotations</h3>
+
+<h4 id="H13.7.2.1">General</h4>
+
+<p class="location">Modify the first paragraph as follows:</p>
+
+<p>
+The annotation subtype <i>RichMedia</i> shares many low-level structural similarities with the 3D Artwork
+defined in 13.6, "3D Artwork". At the top level, the <i>rich media annotation</i> has two primary custom structures.
+The <i>RichMediaSettings dictionary</i> <del onMouseEnter="mouseEnter(this)" data-issue="163">is</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="163">, if present, shall be</ins> unique to each annotation,
+while the <i>RichMediaContent dictionary</i> can be shared across rich-media annotations.
+</p>
+
+<p>...</p>
+
+<p class="location">Change Table 333 as follows:</p>
+
+<table>
+  <caption id="Table333">Table 333 - Additional entries specific to a RichMedia annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>RichMediaSettings</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Optional; PDF 2.0</i>) A RichMediaSettings dictionary that <ins onMouseEnter="mouseEnter(this)" data-issue="163">shall be unique to each annotation and</ins>
+    stores conditions and responses that determine when the annotation should be activated and deactivated by an interactive
+    PDF processor and the initial state of artwork in those states. See "Table 334 — Entries in a RichMediaSettings dictionary".
+    </p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
+<h4 id="H13.7.2.2">RichMediaSettings dictionary</h4>
+
+<h5 id="H13.7.2.2.1">13.7.2.2.1 General</h5>
+
+<p class="location">Modify the first paragraph as follows:</p>
+
+<p>
+The <i>RichMediaSettings dictionary</i> has a purpose similar to that of the 3D activation dictionary ("Table 310 — Entries in a 3D
+activation dictionary") with the 3D Annotation described in 13.6.2, "3D Annotations". The RichMediaSettings dictionary stores the
+conditions and responses that occur in response to certain events, such as activation and deactivation of the annotation, and contains two dictionaries.
+<ins onMouseEnter="mouseEnter(this)" data-issue="163">It shall be unique to each annotation.</ins>
+"Table 334 — Entries in a RichMediaSettings dictionary" gives the details of the content of this dictionary.
+</p>
 
 
 <h5 id="H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</h5>
