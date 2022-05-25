@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 9 May 2022
+modified: 25 May 2022
 ---
 
 <ul class="noprint">
@@ -292,13 +292,10 @@ Entries other than those listed shall be ignored.
 <p class="location">Replace NOTE 3 as follows:</p>
 
 <p class="hangingindent">NOTE 3
-<del onMouseEnter="mouseEnter(this)" data-issue="19" data-iso="approved">
-The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) always
-identify the corresponding colour spaces directly; they never refer to resources in the <b>ColorSpace</b> subdictionary.</del>
-
-
-<ins onMouseEnter="mouseEnter(this)" data-issue="19" data-iso="approved">The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>) never refer to resources in the <b>ColorSpace</b> subdictionary; they always identify the corresponding colour spaces either directly or via a default colour space (see
-8.6.5.6 "Default colour spaces").</ins>
+The names <b>DeviceGray</b>, <b>DeviceRGB</b>, and <b>DeviceCMYK</b> (as well as their abbreviations <b>G</b>, <b>RGB</b>, and <b>CMYK</b>)
+<del onMouseEnter="mouseEnter(this)" data-issue="19" data-iso="approved">always identify the corresponding colour spaces directly; they never refer to resources in the <b>ColorSpace</b> subdictionary.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="19" data-iso="approved">never refer to resources in the <b>ColorSpace</b> subdictionary; they always identify
+the corresponding colour spaces either directly or via a default colour space (see 8.6.5.6 "Default colour spaces").</ins>
 </p>
 
 <p>...</p>
