@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 9 May 2022
+modified: 25 May 2022
 ---
 
 <ul class="noprint">
@@ -340,7 +340,7 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
     <td><p>
     (<i>Optional</i>) The byte offset
     <del onMouseEnter="mouseEnter(this)" data-issue="146">in the decoded stream from the beginning of the PDF file of a cross-reference stream.</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="146">to the cross-reference stream, calculated from the beginning of the PDF file.</ins>.
+    <ins onMouseEnter="mouseEnter(this)" data-issue="146">to the cross-reference stream, calculated from the beginning of the PDF file.</ins>
     </p></td>
   </tr>
 </table>
@@ -383,7 +383,7 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p class="location">Change NOTE 2 as follows:</p>
 
-<p class="hangingindent">NOTE 2  The first element of the ID array, as used in 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", step e, generally remains unchanged across revisions of a given document. However, since this is not guaranteed, use of the ID in computation of the file encryption key, as required when using <del onMouseEnter="mouseEnter(this)" data-issue="53" data-iso="approved">7.6.4.3.3, "Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</del> <ins onMouseEnter="mouseEnter(this)" data-issue="53" data-iso="approved">7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)"</ins>, can complicate updates to the document. For this reason, security handlers are encouraged to use Algorithm 2.A or higher, which do not use the ID in file encryption key computation. <del onMouseEnter="mouseEnter(this)" data-issue="53" data-iso="approved">This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described below.</del>
+<p class="hangingindent">NOTE 2  The first element of the ID array, as used in 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", step e, generally remains unchanged across revisions of a given document. However, since this is not guaranteed, use of the ID in computation of the file encryption key, as required when using <del onMouseEnter="mouseEnter(this)" data-issue="53" data-iso="approved">7.6.4.3.3, "Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</del>Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)", can complicate updates to the document. For this reason, security handlers are encouraged to use Algorithm 2.A or higher, which do not use the ID in file encryption key computation. <del onMouseEnter="mouseEnter(this)" data-issue="53" data-iso="approved">This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms". Parts of this algorithm are also used in the algorithms described below.</del>
 </p>
 
 <p class="location">Insert new NOTE 3 immediately below NOTE 2 as follows:</p>
