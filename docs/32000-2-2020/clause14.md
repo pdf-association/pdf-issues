@@ -470,7 +470,7 @@ To facilitate conversion of documents created against versions of the PDF standa
 
 <p class="location">Modify the 2nd bullet in the bulleted list as follows:</p>
 
-<p>In a tagged PDF, all structure elements shall be in at least one of the standard structure namespaces or in a namespace identified in 14.8.6.3, “Other namespaces”. An element shall be considered to be in one of these namespaces if:<p>
+<p>In a tagged PDF, all structure elements shall be in at least one of the standard structure namespaces or in a namespace identified in 14.8.6.3, “Other namespaces”. An element shall be considered to be in one of these namespaces if:</p>
 
 <ul>
 <li>they directly identify one of these namespaces through their NS entry;</li>
