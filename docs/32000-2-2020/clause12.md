@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 20 May 2022
+modified: 26 May 2022
 ---
 
 <ul class="noprint">
@@ -144,7 +144,7 @@ modified: 20 May 2022
     (<i>Optional; PDF 1.4; deprecated in PDF 2.0</i>) The name of the page boundary representing the area of a page that shall be
     displayed when viewing the document on the screen. The value is the key designating the relevant page boundary in the page object
     (see <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">7.7.3, "Page tree"</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object</ins> and 14.11.2, "Page boundaries").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object"</ins> and 14.11.2, "Page boundaries").
     If the specified page boundary is not defined in the page object, its default value shall be used, as specified in "Table 31 - Entries in a page object".
     <br/>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>CropBox</b></del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>CropBox</i></ins>
@@ -159,7 +159,7 @@ modified: 20 May 2022
     displayed to which the contents of a page shall be clipped when viewing the document on the screen. The value is the key designating
     the relevant page boundary in the page object
     (see <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">7.7.3, "Page tree"</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object</ins> and 14.11.2, "Page boundaries").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object"</ins> and 14.11.2, "Page boundaries").
     If the specified page boundary is not defined in the page object, its default value shall be used, as specified in "Table 31 - Entries in a page object".
     <br/>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>CropBox</b></del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>CropBox</i></ins>
@@ -173,7 +173,7 @@ modified: 20 May 2022
     (<i>Optional; PDF 1.4; deprecated in PDF 2.0</i>) The name of the page boundary representing the area of a page that shall be
     rendered when printing the document. The value is the key designating the relevant page boundary in the page object
     (see <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">7.7.3, "Page tree"</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object</ins> and 14.11.2, "Page boundaries").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object"</ins> and 14.11.2, "Page boundaries").
     If the specified page boundary is not defined in the page object, its default value shall be used, as specified in "Table 31 - Entries in a page object".
     <br/>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>CropBox</b></del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>CropBox</i></ins>
@@ -187,7 +187,7 @@ modified: 20 May 2022
     (<i>Optional; PDF 1.4; deprecated in PDF 2.0</i>) The name of the page boundary to which the contents of the page shall be clipped
     when printing the document. The value is the key designating the relevant page boundary in the page object
     (see <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">7.7.3, "Page tree"</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object</ins> and 14.11.2, "Page boundaries").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">"Table 31 - entries in a page object"</ins> and 14.11.2, "Page boundaries").
     If the specified page boundary is not defined in the page object, its default value shall be used, as specified in "Table 31 - Entries in a page object".
     <br/>Default value: <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>CropBox</b></del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>CropBox</i></ins>
@@ -251,6 +251,16 @@ modified: 20 May 2022
     <th>Value</th>
   </tr>
   <tr>
+   <td><b>M</b></td>
+   <td>name</td>
+   <td>
+    <p>(<i>Optional; Split, Box and Fly transition styles only</i>) The direction of motion for the specified transition effect:</p>
+    <p><i>I</i> Inward from the edges of the page (<del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> i)</p>
+    <p><i>O</i> Outward from the centre of the page (<del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> o)</p>
+    <p>Default value: <i>I</i>.</p>
+   </td>
+  </tr>
+  <tr>
     <td><b>Di</b></td>
     <td><del onMouseEnter="mouseEnter(this)" data-issue="36" data-iso="approved">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="36" data-iso="approved">integer</ins> or name</td>
     <td>
@@ -259,15 +269,6 @@ modified: 20 May 2022
       <p>...</p>
     </td>
   </tr>
-  <td><b>M</b></td>
-  <td>name</td>
-  <td>
-   <p>(<i>Optional; Split, Box and Fly transition styles only</i>) The direction of motion for the specified transition effect:</p>
-   <p><i>I</i> Inward from the edges of the page (<del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> i)</p>
-   <p><i>O</i> Outward from the centre of the page (<del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> o)</p>
-   <p>Default value: <i>I</i>.</p>
-  </td>
-</tr>
 </table>
 
 <h2 id="H12.5">12.5 Annotations</h2>
