@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 9 May 2022
+modified: 26 May 2022
 ---
 
 <ul class="noprint">
@@ -480,7 +480,7 @@ To facilitate conversion of documents created against versions of the PDF standa
 
 <p class="location">Insert a new EXAMPLE 1 at the end of the subclause as follows:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">
 <p>EXAMPLE 1: use of namespaces</p>
 <code>
 17 0 obj
@@ -506,12 +506,11 @@ endobj
    ...
 &gt;&gt;
 endobj
-</code>
-</ins>
+</code></ins></div>
 
 <p class="location">Insert a new EXAMPLE 2 at the end of the subclause as follows:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">
 <p>EXAMPLE 2: Role mapping of structure elements with no explicitly identified namespace</p>
 <code>
 13 0 obj % A structure tree with a role map for elements within an undefined namespace
@@ -535,8 +534,7 @@ endobj
     ...
 &gt;&gt;
 endobj
-</code>
-</ins>
+</code></ins></div>
 
 <h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
 
