@@ -343,7 +343,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 
 <p>
 When
-<ins onMouseEnter="mouseEnter(this)" data-issue="90">providing the <b>Contents</b> key, if</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="90" data-iso="approved">providing the <b>Contents</b> key, if</ins>
 separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, for example, a LINE FEED character (0Ah).
 </p>
 
@@ -417,7 +417,7 @@ appearance for a screen annotation that shall be used for printing and default d
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>A <i>projection annotation (PDF 2.0)</i> is a markup annotation subtype (see 12.5.6.2, "Markup annotations") that has much of the functionality of other markup annotations.
-However, a projection annotation is only valid within the context of an associated run-time environment, such as an activated 3D model<ins onMouseEnter="mouseEnter(this)" data-issue="94">, and thus an <b>AP</b> dictionary is not required</ins>.</p>
+However, a projection annotation is only valid within the context of an associated run-time environment, such as an activated 3D model<ins onMouseEnter="mouseEnter(this)" data-issue="94" data-iso="approved">, and thus an <b>AP</b> dictionary is not required</ins>.</p>
 
 <p>...</p>
 
