@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex H
 title: (informative) Example PDF files
-modified: 9 May 2022
+modified: 26 May 2022
 ---
 
 <ul class="noprint">
@@ -36,15 +36,7 @@ modified: 9 May 2022
 The structure element’s structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents. The<b>TOCI</b> value specifies an individual member of a table of contents. The <b>TOC</b> value specifies a list made up of other table of contents items that are individual members of the table of contents and/or lists of table of contents items. (The trailing character in <b>TOCI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".)
 </p>
 
-<p>...</p>
-
 <p class="location">Insert a new NOTE after the first paragraph as follows:</p>
-
-<p>
-The structure element's structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents.
-The <b>TOCI</b> value specifies an individual member of a table of contents. The <b>TOC</b> value specifies a list made up of other table of contents items that
-are individual members of the table of contents and/or lists of table of contents items. (The trailing character in <b>TOCI</b> is an upper case "i".)
-</p>
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="62" data-iso="approved">NOTE the following example uses <b>Reference</b>, <b>TOC</b> and <b>TOCI</b> structure elements which are
