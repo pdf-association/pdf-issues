@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 25 May 2022
+modified: 1 June 2022
 ---
 
 <ul class="noprint">
@@ -260,7 +260,7 @@ only the end-of-file marker, %%EOF. The two preceding lines shall contain, one p
 the keyword <b>startxref</b> and the byte offset
 <del onMouseEnter="mouseEnter(this)" data-issue="101" data-iso="approved">in the decoded stream</del> from the beginning of the PDF file to
 the beginning of the <b>xref</b> keyword in the last cross-reference section
-<ins onMouseEnter="mouseEnter(this)" data-issue="101" data-iso="approved">or the beginning of the previous cross-reference streams
+<ins onMouseEnter="mouseEnter(this)" data-issue="101" data-iso="approved">or the beginning of the previous cross-reference stream
 (see 7.5.8, "Cross-reference streams")</ins>. The <b>startxref</b> line shall be
 preceded by the trailer dictionary, consisting of the keyword trailer followed by a series of key-value
 pairs enclosed in double angle brackets (&lt;&lt;...&gt;&gt;) (using LESS-THAN SIGNs (3Ch) and GREATER-THAN
@@ -547,7 +547,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td>stream or array</td>
     <td>
     <p>(<i>Optional</i>) A content stream (see 7.8.2, "Content streams") that shall describe the contents of this page. If this entry is absent, the page shall be empty.</p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="81" data-iso="approved">NOTE: if the <b>Contents</b> key is not present, a <b>Resources</b> dictionary must still be present, either directly or through inheritance, in the pages tree.</ins></p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="81" data-iso="approved">NOTE If the <b>Contents</b> key is not present, a <b>Resources</b> dictionary must still be present, either directly or through inheritance, in the pages tree.</ins></p>
     <p>...</p>
     </td>
   </tr>
