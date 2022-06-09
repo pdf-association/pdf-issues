@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 26 May 2022
+modified: 10 June 2022
 ---
 
 <ul class="noprint">
@@ -84,6 +84,12 @@ modified: 26 May 2022
    <li>12.7.8 Form data format
     <ul>
      <li><a href="#H12.7.8.1">12.7.8.1 General</a>
+     </li>
+     <li>12.7.8.3 FDF catalog
+      <ul>
+       <li><a href="#H12.7.8.3.1">12.7.8.3.1 General</a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -609,6 +615,26 @@ On the Microsoft Windows&trade; and UNIX platforms, FDF files shall have the ext
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="176">
 NOTE See <a href="https://www.iana.org/assignments/media-types/application/fdf">https://www.iana.org/assignments/media-types/application/fdf</a> for more information.
 </ins></p>
+
+<h4 id="H12.7.8.3">12.7.8.3 FDF catalog</h4>
+
+<h5 id="H12.7.8.3.1">12.7.8.3.1 General</h5>
+
+<p class="location">Change the paragraph below Table 246 as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="173">Although deprecated in PDF 2.0</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="173">Although FDF file encryption is deprecated in PDF 2.0</ins>,
+embedded FDF files specified in the FDF dictionary’s <b>EmbeddedFDFs</b> entry may be encrypted.
+Besides the usual entries for an embedded file stream, the stream dictionary representing such an encrypted FDF file shall contain the
+additional entry shown in "Table 247 — Additional entry in an embedded file stream dictionary for an encrypted FDF file" to identify
+the revision number of the FDF encryption algorithm used to encrypt the file. Although the FDF encryption mechanism is separate from
+the one for PDF file encryption described in 7.6, "Encryption" revision 1 (the only one defined) uses a similar RC4 encryption
+algorithm based on a 40-bit encryption key. The key shall be computed by means of an MD5 hash, using a padded user-supplied password
+as input. The computation shall be identical to steps (a) and (b) of the
+"Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)" in 7.6.4.3,
+"File encryption key algorithm"; the first 5 bytes of the result shall be the file encryption key for the embedded FDF file.
+</p>
 
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
