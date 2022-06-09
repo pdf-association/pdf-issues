@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 1 June 2022
+modified: 10 June 2022
 ---
 
 <ul class="noprint">
@@ -303,7 +303,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     (<i>Required <ins onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">for non-Type 3 fonts</ins></i>)
     The PostScript name of the font. <del onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">This name shall be the same as the value of <b>BaseFont</b>
     in the font or CIDFont dictionary that refers to this font descriptor.</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or <b>CIDFont dictionary that refers to this font descriptor.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="11" data-iso="approved">For Type 3 fonts that include a <b>Name</b> entry in the Type 3 font dictionary, this name shall match the value of that key. For all fonts other than Type 3 this name shall be the same as the value of <b>BaseFont</b> in the font or CIDFont dictionary that refers to this font descriptor.</ins>
     </td>
   </tr>
   <tr>
