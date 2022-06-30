@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 10 June 2022
+modified: 1 July 2022
 ---
 
 <ul class="noprint">
@@ -11,6 +11,12 @@ modified: 10 June 2022
  </li>
  <li>12.3 Document-level navigation
   <ul>
+   <li>12.3.2 Destinations
+    <ul>
+     <li><a href="#H12.3.2.4">12.3.2.4 Named destinations</a>
+     </li>
+    </ul>
+   </li>
    <li><a href="#H12.3.3">12.3.3 Document outline</a>
    </li>
   </ul>
@@ -203,6 +209,26 @@ modified: 10 June 2022
 </table>
 
 <h2 id="H12.3">12.3 Document-level navigation</h2>
+
+<h3 id="H12.3.2">12.3.2 Destinations</h3>
+
+<h4 id="H12.3.2.4">12.3.2.4 Named destinations</h4>
+
+<p class="location">Change paragraph below NOTE 1 as follows:</p>
+
+<p>
+In PDF 1.1, the correspondence between name objects and destinations shall be defined by the <b>Dests</b> entry in the document
+catalog dictionary (see 7.7.2, "Document catalog dictionary"). The value of this entry shall be a dictionary in which each key
+is a destination name and the corresponding value is either<del onMouseEnter="mouseEnter(this)" data-issue="162">an array defining the destination, using the syntax shown in
+"Table 149 — Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
+an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162">:</ins>
+</p>
+<ins onMouseEnter="mouseEnter(this)" data-issue="162">
+ <ul>
+  <li>an array defining the destination, using the syntax shown in "Table 149 — Destination syntax", or</li>
+  <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry, as defined in "Table 202 — Additional entries specific to a go-to action".</li>
+ </ul>
+</ins>
 
 <h3 id="H12.3.3">12.3.3 Document outline</h3>
 
