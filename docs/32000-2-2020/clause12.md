@@ -127,6 +127,12 @@ modified: 1 July 2022
    </li>
   </ul>
  </li>
+ <li>12.11 Document requirements
+  <ul>
+   <li><a href="#H12.11.1">12.11.1 General</a>
+   </li>
+  </ul>
+ </li>
 </ul>
 <hr>
 
@@ -808,6 +814,56 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </table>
 
 <p class="editornote">EDITOR NOTE: Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</p>
+
+<h2 id="H12.11">12.11 Document requirements</h2>
+
+<h3 id="H12.11.1">12.11.1 General</h3>
+
+<p class="location">Change Table 273 as follows:</p>
+
+<table>
+  <caption id="Table273">Table 273 - Entries common to all requirement dictionaries</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>S</b></td>
+    <td>name</td>
+    <td>
+    <p>(<i>Required</i>) The type of requirement that this dictionary describes.
+    See <del onMouseEnter="mouseEnter(this)" data-issue="187">"Table 276 — Entries in a requirement handler dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="187">"Table 275 — Requirement types"</ins> for valid values.</p>
+    </td>
+  </tr>
+</table>
+
+<p class="location">Change the paragraph after Table 273 as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="187">
+There are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements (i.e., value of the <b>S</b> key). These are described in "Table 274 — Entries for specific types of requirements".
+</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="187">
+In addition to the keys in "Table 273 - Entries common to all requirement dictionaries", there are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements as specified by the value of the <b>S</b> key. These are described in "Table 274 — Additional entries for specific types of requirements".
+</ins>
+</p>
+
+<p class="location">Re-caption Table 274 as follows:</p>
+
+<table>
+  <caption id="Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187">Additional entries</ins> for specific types of requirements</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>...</b></td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
 
 </div>
 
