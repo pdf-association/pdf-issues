@@ -430,6 +430,10 @@ endobj
     <td><b>Placement</b></td>
     <td>name</td>
     <td>
+    <p>
+     (<i>Optional; not inheritable</i>) The positioning of the element with respect to the enclosing reference area and other content
+     <ins onMouseEnter="mouseEnter(this)" data-issue="189">(see 14.8.3.3, "Progression direction")</ins>. The value shall be one of the following:
+    </p>
     <p>...</p>
     <p>Default value: <i>Block</i> for BLSEs, <i>Inline</i> for ILSEs.</p>
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188">
@@ -441,6 +445,19 @@ endobj
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188">
     EXAMPLE 2 A <b>Figure</b> structure element occurring within a <b>Sect</b> structure element is an BLSE, and therefore has a default value of <i>Block</i>.
     </ins></p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>WritingMode</b></td>
+    <td>name</td>
+    <td>
+     <p>
+     (<i>Optional; inheritable</i>) Indicates the directions of layout progression inside Block Level Structure Elements (BLSEs) (inline progression)
+     and regarding the sequence of BLSEs (block progression)
+     <ins onMouseEnter="mouseEnter(this)" data-issue="189">(see 14.8.3.3, "Progression direction")</ins>.
+     <b>WritingMode</b> may be used as an attribute for any structure element. The value shall be one of the following:
+     </p>
+     <p>...</p>
     </td>
   </tr>
 </table>
