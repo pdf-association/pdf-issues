@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 10 June 2022
+modified: 1 July 2022
 ---
 
 <ul class="noprint">
@@ -311,7 +311,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     <td><del onMouseEnter="mouseEnter(this)" data-issue="152">number</del> <ins onMouseEnter="mouseEnter(this)" data-issue="152">integer</ins></td>
     <td>
     <p>...</p>
-    <p style="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="178">NOTE The definition of <b>FontWeight</b> in PDF matches the
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="178">NOTE The definition of <b>FontWeight</b> in PDF matches the
     CSS <code>font-weight</code> property, but may be more constrained than font weights used by various font formats.</ins>
     </p>
     </td>
