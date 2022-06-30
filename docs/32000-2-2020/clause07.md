@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 1 June 2022
+modified: 1 July 2022
 ---
 
 <ul class="noprint">
@@ -457,6 +457,30 @@ there is no way to specify that metadata is to be left unencrypted in these case
   <li>The encryption dictionary (see "Table 20 - Entries common to all encryption dictionaries") contains entries that enumerate the crypt filters in the document (<b>CF</b>) and specify which ones are used by default to decrypt all the streams (<b>StmF</b>) and strings (<b>StrF</b>) in the document. In addition, the value of the V entry shall be 4 <ins onMouseEnter="mouseEnter(this)" data-issue="74" data-iso="approved">or 5</ins> to use crypt filters.
   </li>
 </ul>
+
+<p>...</p>
+
+<p class="location">Change Table 25 as follows:</p>
+
+<table>
+  <caption id="Table25">Table 25 - Entries common to all crypt filter dictionaries</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Length</b></td>
+    <td>integer</td>
+    <td>
+    <p>(<i>Required; deprecated in PDF 2.0</i>) ...</p>
+    <p>
+      When <b>CFM</b> is <i>AESV2</i>, the <b>Length</b> key shall have the value of 128<ins onMouseEnter="mouseEnter(this)" data-issue="184"> for public-key security handlers, and 16 for the standard security handler</ins>.
+      When <b>CFM</b> is <i>AESV3</i>, the <b>Length</b> key shall have a value of 256<ins onMouseEnter="mouseEnter(this)" data-issue="184"> for public-key security handlers, and 32 for the standard security handler</ins>.
+    </p>
+    </td>
+  </tr>
+</table>
 
 <p>...</p>
 
