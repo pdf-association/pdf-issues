@@ -81,6 +81,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table368">Table 368 - General inline level structure types</a></li>
 <li><a href="clause14.html#Table371">Table 371 - Table standard structure types</a></li>
 <li><a href="clause14.html#Table372">Table 372 - Standard structure type Caption</a></li>
+<li><a href="clause14.html#Table378">Table 378 - Standard layout attributes common to all standard structure types</a></li>
 <li><a href="clause14.html#Table380">Table 380 - Standard layout attributes specific to inline-level structure elements</a></li>
 <li><a href="clauseAnnexA.html#TableA.1">Table A.1 - PDF content stream operators</a></li>
 <li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>

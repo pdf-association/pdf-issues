@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 26 May 2022
+modified: 1 July 2022
 ---
 
 <ul class="noprint">
@@ -53,6 +53,8 @@ modified: 26 May 2022
     <ul>
      <li>14.8.5.4 Layout attributes
       <ul>
+       <li><a href="#H14.8.5.4.2">14.8.5.4.2 General layout attributes</a>
+       </li>
        <li><a href="#H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</a>
        </li>
       </ul>
@@ -412,6 +414,37 @@ endobj
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
 
 <h4 id="H14.8.5.4">14.8.5.4 Layout attributes</h4>
+
+<h5 id="H14.8.5.4.2">14.8.5.4.2 General layout attributes</h5>
+
+<p class="location">Change Table 378 as follows:</p>
+
+<table>
+  <caption id="Table378">Table 378 - Standard layout attributes common to all standard structure types</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Placement</b></td>
+    <td>name</td>
+    <td>
+    <p>...</p>
+    <p>Default value: <i>Block</i> for BLSEs, <i>Inline</i> for ILSEs.</p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188">
+    NOTE The default value depends on the context in which the structure element is used (see 14.8.4.1, "General").
+    </ins></p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188">
+    EXAMPLE 1 A <b>Figure</b> structure element occurring within a <b>P</b> structure element is an ILSE, and therefore has a default value of <i>Inline</i>.
+    </ins></p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188">
+    EXAMPLE 2 A <b>Figure</b> structure element occurring within a <b>Sect</b> structure element is an BLSE, and therefore has a default value of <i>Block</i>.
+    </ins></p>
+    </td>
+  </tr>
+</table>
+
 
 <h5 id="H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</h5>
 
