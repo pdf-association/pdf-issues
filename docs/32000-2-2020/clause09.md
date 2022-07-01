@@ -316,6 +316,17 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     </p>
     </td>
   </tr>
+  <tr>
+    <td><b>Descent</b></td>
+    <td>number</td>
+    <td>
+    <p>(<i>Required, except for Type 3 fonts</i>) The maximum depth below the baseline reached by glyphs in this font.
+    The value shall be a <del onMouseEnter="mouseEnter(this)" data-issue="190">negative</del> number <ins onMouseEnter="mouseEnter(this)" data-issue="190">less than or equal to zero</ins>.
+    </p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="190">NOTE While different font programs may define descender metrics using either positive or negative numbers (e.g. <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/os2#uswindescent">OpenType usWinDescent</a>), PDF always expects negative values.   
+    </ins></p>
+    </td>
+  </tr>
 </table>
 
 
