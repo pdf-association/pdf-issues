@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 1 July 2022
+modified: 22 July 2022
 ---
 
 <ul class="noprint">
@@ -75,6 +75,12 @@ modified: 1 July 2022
    </li>
    <li>12.7.5 Field types
     <ul>
+     <li>12.7.5.2 Button fields
+      <ul>
+       <li><a href="#H12.7.5.2.4">12.7.5.2.4 Radio buttons</a>
+       </li>
+      </ul>
+     </li>
      <li><a href="#H12.7.5.5">12.7.5.5 Signature Fields</a>
      </li>
     </ul>
@@ -517,7 +523,26 @@ However, a projection annotation is only valid within the context of an associat
   </tr>
 </table>
 
-<h4 id="H12.7.5.5">12.7.5.5 Signature Fields</h4>
+<h3 id="H12.7.5">12.7.5 Field types</h3>
+
+<h4 id="H12.7.5.2">12.7.5.2 Button fields</h4>
+
+<h5 id="H12.7.5.2.4">12.7.5.2.4 Radio buttons</h5>
+
+<p>...</p>
+
+<p class="location">Change the third paragraph as follows:</p>
+
+<p>
+The <b>Kids</b> entry in the radio button field’s field dictionary (see "Table 226 — Entries common to all field dictionaries") holds an
+array of widget annotations representing the individual buttons in the set. The parent field’s <b>V</b> entry holds a name object
+corresponding to the appearance state of whichever child field is currently in the on state; the default value for this entry is <b>Off</b>.
+<ins onMouseEnter="mouseEnter(this)" data-issue="170">The appearance for the off state is optional but, if present, shall be stored in the appearance dictionary under the name <b>Off</b>.</ins>
+The value of the <b>V</b> key shall also be the value of the <b>AS</b> key. If they are not equal, then the value of the <b>AS</b> key
+shall be used instead of the <b>V</b> key to determine which appearance to use.
+</p>
+
+<h4 id="H12.7.5.5">12.7.5.5 Signature fields</h4>
 
 <p class="location">Change Table 236 as follows:</p>
 
