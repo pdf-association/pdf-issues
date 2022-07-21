@@ -3,10 +3,16 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 1 July 2022
+modified: 22 July 2022
 ---
 
 <ul class="noprint">
+  <li>7.2 Lexical conventions
+   <ul>
+   <li><a href="#H7.2.2">7.2.2 Representation</a>
+   </li>
+   </ul>
+  </li>
   <li>7.3 Objects
    <ul>
     <li>7.3.4 String objects
@@ -147,6 +153,27 @@ modified: 1 July 2022
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="H7.2">7.2 Lexical conventions</h2>
+
+<h3 id="H7.2.2">7.2.2 Representation</h3>
+
+<p class="location">Change the first paragraph and the 3rd (last) bullet in the subsequent list as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="193">A non-encrypted PDF file can be entirely represented using byte values corresponding to the visible
+printable subset of the ASCII character set defined in INCITS 4-1986 (R2017), plus white-space characters.
+However, a</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="193">A</ins> PDF file is not restricted to the ASCII character set; it may contain arbitrary bytes, subject to the following considerations:
+</p>
+
+<ul>
+ <li>...</li>
+ <li>...</li>
+ <li>A PDF file <del onMouseEnter="mouseEnter(this)" data-issue="193">containing binary data</del> shall be transported as a binary file rather than as a text file to ensure that all bytes of the file are faithfully preserved.</li>
+</ul>
+
+<p>...</p>
 
 <h2 id="H7.3">7.3 Objects</h2>
 
