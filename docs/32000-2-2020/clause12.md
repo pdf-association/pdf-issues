@@ -137,6 +137,8 @@ modified: 22 July 2022
   <ul>
    <li><a href="#H12.11.1">12.11.1 General</a>
    </li>
+   <li><a href="#H12.11.2">12.11.2 Requirement types</a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -887,6 +889,36 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
     <td><b>...</b></td>
     <td>...</td>
     <td>...</td>
+  </tr>
+</table>
+
+<h3 id="H12.11.2">12.11.2 Requirement types</h3>
+
+<p class="location">Change Table 275 as follows:</p>
+
+<table>
+  <caption id="Table275">Table 275 - Requirement types</caption>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>U3D</b></td>
+    <td>
+     <p>Requires support for 3D data streams conforming to the U3D specification. This <del onMouseEnter="mouseEnter(this)" data-issue="195">shall apply</del>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="195">applies</ins>
+     to the use of U3D in either 3D (13.6.3, "3D streams") or RichMedia annotations (13.7.2.2, "RichMediaSettings dictionary"). This also includes support for associated ECMAScripts.</p>
+     <p>...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>PRC</b></td>
+    <td>
+     <p>Requires support for 3D data streams conforming to the PRC specification. This <del onMouseEnter="mouseEnter(this)" data-issue="195">shall apply</del>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="195">applies</ins>
+     to the use of PRC in either 3D (13.6.3, "3D streams") or RichMedia annotations (13.7.2.2, "RichMediaSettings dictionary"). This also includes support for associated ECMAScripts.</p>
+     <p>...</p>
+    </td>
   </tr>
 </table>
 
