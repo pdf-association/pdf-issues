@@ -79,7 +79,13 @@ modified: 22 July 2022
     </li>
     <li>7.6.5 Public-key security handlers
      <ul>
-      <li><a href="#H7.6.5.3">7.6.5.3 Public-key encryption algorithms</a>
+      <li>7.6.5.1 General
+      </li>
+      <li><a href="#H7.6.5.2">7.6.5.2 Public-key encryption dictionary</a>
+      </li>
+      <li><a href="#H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3 Public-key encryption permissions</ins></a>
+      </li>
+      <li><a href="#H7.6.5.4"><del onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3</del><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.4</ins> Public-key encryption algorithms</a>
       </li>
      </ul>
     </li>
@@ -456,7 +462,33 @@ and the file encryption key as the key. ...
 </li>
 </ol>
 
-<h4 id="H7.6.5.3">7.6.5.3 Public-key encryption algorithms</h4>
+<h3 id="H7.6.5">7.6.5 Public-key security handlers</h3>
+
+<h4 id="H7.6.5.1">7.6.5.1 General</h4>
+
+<p>...</p>
+
+<h4 id="H7.6.5.2">7.6.5.2 Public-key security dictionary</h4>
+
+<p>...</p>
+
+<p class="location">Insert a new subclause heading immediately below the NOTE below Table 23 as follows:</p>
+
+<h4 id="H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3 Public-key security permissions</ins></h4>
+
+<p class="editornote">EDITOR NOTE: current text and Table 24 remain unchanged.</p>
+
+<p class="location">Renumber the next clause appropriately:</p>
+
+<h4 id="H7.6.5.4"><del onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3</del><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.4</ins> Public-key encryption algorithms</h4>
+
+<p class="location">Change the second bullet as follows:</p>
+
+<ul>
+ <li>...</li>
+ <li>A 4-byte value defining the permissions, most significant byte first. See <ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3, "Public-key security permissions" and</ins> "Table 24 — Public-key security handler user access permissions" for the possible permission values.</li>
+ <li>...</li>
+</ul>
 
 <p class="location">Add two new notes at the very end of the sub-clause as follows:</p>
 
