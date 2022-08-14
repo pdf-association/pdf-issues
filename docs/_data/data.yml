@@ -1,6 +1,12 @@
 toc:
   - standard: ISO 32000-2:2020
     subfolderitems:
+      - ref: 'Introduction'
+        url:  clause00.html
+      - ref: 'Clause 2: Normative references'
+        url:  clause02.html
+      - ref: 'Clause 3: Terms and definitions'
+        url:  clause03.html
       - ref: 'Clause 4: Notation'
         url:  clause04.html
       - ref: 'Clause 7: Syntax'

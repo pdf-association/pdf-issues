@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 25 May 2022
+modified: 14 August 2022
 ---
 
 <ul class="noprint">
@@ -33,6 +33,8 @@ modified: 25 May 2022
   <ul>
    <li>8.6.5 CIE-Based colour spaces
     <ul>
+     <li><a href="#H8.6.5.5">8.6.5.5 ICCBased colour spaces</a>
+     </li>
      <li><a href="#H8.6.5.8">8.6.5.8 Rendering intents</a>
      </li>
     </ul>
@@ -148,9 +150,52 @@ a miter to a bevel.
 </table>
 
 
-<h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
+<h4 id="H8.6.5.5">8.6.5.5 ICCBased colour spaces</h4>
 
+<p class="location">Change the first paragraph as follows:</p>
+<p>
+<b>ICCBased</b> colour spaces (<i>PDF 1.3</i>) shall be based on a cross-platform colour profile as defined by the International Color Consortium (ICC). Unlike the <b>CalGray</b>, <b>CalRGB</b>, and <b>Lab</b> colour spaces, which are characterised by entries in the colour space dictionary, an <b>ICCBased</b> colour space shall be characterised by a sequence of bytes in a standard format. Details of the profile format can be found in the ICC specification<ins onMouseEnter="mouseEnter(this)" data-issue="181">s</ins>.
+</p>
+
+<p class="location">Replace the paragraph before Table 66 and Table 66 as follows:</p>
+
+<p>
+"Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181">ICC Specification versions supported by ICC based colour spaces" shows the versions of the ICC specification on which the
+<b>ICCBased</b> colour spaces that PDF versions 1.3 and later shall use. (Earlier versions of the ICC specification shall also be supported.)</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="181">ICC profile versions supported by <b>ICCBased</b> colour spaces" lists the ICC profile versions as specified in the ICC header that shall be supported.</ins>
+</p>
+
+<table>
+  <caption id="Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></caption>
+  <tr>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="181">ICC profile header version</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="181">ICC Specification</ins></th>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181">2.<i>x.y.z</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181">"<i>Specification ICC.1:2001-04 - File Format for Color Profiles [REVISION of ICC.1:1998-09]</i>"</ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181">4.<i>x.y.z</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181">ISO 15076-1, <i>Image technology colour management – Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
+  </tr>
+</table>
+
+<p class="location">Change the bulleted list below Table 66 as follows:</p>
+
+<p>PDF processors shall follow these guidelines for writing and rendering ICC based color spaces:<p>
+
+<ul>
+<li>A PDF reader shall support <del onMouseEnter="mouseEnter(this)" data-issue="181">ICC.1:2010 as required by PDF 2.0</del><ins onMouseEnter="mouseEnter(this)" data-issue="181">both ICC profile header version 2.x and 4.x profiles</ins>, which will enable it to properly render all embedded ICC profiles regardless of the PDF version.</li>
+<li>A PDF reader shall always process an embedded ICC profile according to the <del onMouseEnter="mouseEnter(this)" data-issue="181">corresponding version of the PDF</del><ins onMouseEnter="mouseEnter(this)" data-issue="181">ICC specification</ins> being processed as shown in <del onMouseEnter="mouseEnter(this)" data-issue="181">"ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181">"Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces"</ins> above; it shall not substitute the alternate colour space in these cases.</li>
+<li>A PDF writer should use ICC <del onMouseEnter="mouseEnter(this)" data-issue="181">1:2010</del> profiles<ins onMouseEnter="mouseEnter(this)" data-issue="181"> conforming to ISO 15076</ins>. It may embed profiles conforming to an earlier or later ICC version.</li>
+<li>...</li>
+</ul>
+
+
+<h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
 <p class="location">Change the NOTE below Table 69 as follows:</p>
+
 
 <p class="hangingindent">
 NOTE The exact set of rendering intents supported can vary from one output device to another; a particular device

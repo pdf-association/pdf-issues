@@ -3,10 +3,16 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
-modified: 9 May 2022
+modified: 14 August 2022
 ---
 
 <ul class="noprint">
+    <li>10.3 CIE-Based colour to device colour
+     <ul>
+      <li><a href="#H10.3.1">10.3.1 General</a>
+      </li>
+     </ul>
+    </li>
     <li>10.6 Halftones
      <ul>
       <li>10.6.5 Halftone dictionaries
@@ -27,6 +33,24 @@ modified: 9 May 2022
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="H10.3">10.3 CIE-Based colour to device colour</h2>
+
+<h3 id="H10.3.1">10.3.1 General</h3>
+
+<p>...</p>
+
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+Conversion from a CIE-based source colour to a CIE-based destination colour shall be performed based on <del onMouseEnter="mouseEnter(this)" data-issue="181">ISO 15076-1:2010 (ICC.1:2010)</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="181">the appropriate ICC specification (see "Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces")</ins>.
+</p>
+
+
+<h2 id="H10.6">10.6 Halftones</h2>
+
+<h3 id="H10.6.5">10.6.5 Halftone dictionaries</h3>
 
 <h4 id="H10.6.5.6">10.6.5.6 Type 5 halftones</h4>
 
