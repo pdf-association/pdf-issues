@@ -55,3 +55,5 @@ toc:
         url:  clause03.html
       - ref: 'Clause 10: ECMAScript API'
         url:  clause10.html
+      - ref: 'Clause 12: Object overview'
+        url:  clause12.html
