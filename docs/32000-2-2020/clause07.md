@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 22 July 2022
+modified: 2 Sept 2022
 ---
 
 <ul class="noprint">
@@ -55,6 +55,8 @@ modified: 22 July 2022
   </li>
   <li>7.6 Encryption
    <ul>
+    <li><a href="#H7.6.2">7.6.2 Application of encryption</a>
+    </li>
     <li>7.6.3 General encryption algorithm
      <ul>
       <li><a href="#H7.6.3.1">7.6.3.1 General</a>
@@ -380,7 +382,25 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 
 <p>...</p>
 
+<h3 id="H7.6.2">7.6.2 Application of encryption</h3>
+
 <h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
+
+<p class="location">Add new NOTE 1 after the 4th bullet in the first bulleted list below the first paragraph as follows:</p>
+
+<p>Encryption applies to all strings and streams in the document's PDF file, with the following exceptions:</p>
+
+<ul>
+<li>...</li>
+<li>Any hexadecimal strings representing the value of the Contents key in a Signature dictionary</li>
+</ul>
+
+<p class="hangingindent" style="margin-left: 40px"><ins onMouseEnter="mouseEnter(this)" data-issue="211">NOTE 1 For the signature schemes enumerated in ISO 32000-1 and in this document,
+the value of the <b>Contents</b> key in a Signature dictionary is always a hexadecimal string (see "Table 255 — Entries in a signature dictionary").</ins></p>
+
+<p>Encryption is not applied to other object types such as integers and boolean values, which are used primarily to convey information about the document's structure rather than its contents. ...</p>
+
+<p>...</p>
 
 <h4 id="H7.6.3.1">7.6.3.1 General</h4>
 
