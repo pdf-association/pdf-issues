@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 22 July 2022
+modified: 14 Oct 2022
 ---
 
 <ul class="noprint">
@@ -80,6 +80,8 @@ modified: 22 July 2022
        <li><a href="#H12.7.5.2.4">12.7.5.2.4 Radio buttons</a>
        </li>
       </ul>
+     </li>
+     <li><a href="#H12.7.5.3">12.7.5.3 Text fields</a>
      </li>
      <li><a href="#H12.7.5.5">12.7.5.5 Signature Fields</a>
      </li>
@@ -543,6 +545,29 @@ corresponding to the appearance state of whichever child field is currently in t
 The value of the <b>V</b> key shall also be the value of the <b>AS</b> key. If they are not equal, then the value of the <b>AS</b> key
 shall be used instead of the <b>V</b> key to determine which appearance to use.
 </p>
+
+<h4 id="H12.7.5.3">12.7.5.3 Text fields</h4>
+
+<p class="location">Change Table 232 as follows:</p>
+
+<table>
+  <caption id="Table232">Table 232 - Additional entry specific to a text field</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>MaxLen</b></td>
+    <td>integer</td>
+    <td>
+    <p>(<i>Optional; inheritable</i>) <ins onMouseEnter="mouseEnter(this)" data-issue="191">An integer value greater than or equal to zero that is the</ins>
+        <del onMouseEnter="mouseEnter(this)" data-issue="191">The</del> maximum length of the field’s text, in characters.
+    </p>
+    </td>
+  </tr>
+</table>
+
 
 <h4 id="H12.7.5.5">12.7.5.5 Signature fields</h4>
 

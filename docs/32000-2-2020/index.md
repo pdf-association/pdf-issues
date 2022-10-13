@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 14 August 2022
+modified: 14 October 2022
 ---
 
 <p>
@@ -54,6 +54,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table177">Table 177 - Additional entries specific to a free text annotation</a></li>
 <li><a href="clause12.html#Table202">Table 202 - Additional entries specific to a go-to action</a></li>
 <li><a href="clause12.html#Table226">Table 226 - Entries common to all field dictionaries</a></li>
+<li><a href="clause12.html#Table232">Table 232 - Additional entry specific to a text field</a></li>
 <li><a href="clause12.html#Table236">Table 236 - Entries in a signature field lock dictionary</a></li>
 <li><a href="clause12.html#Table237">Table 237 - Entries in a signature field seed value dictionary</a></li>
 <li><a href="clause12.html#Table239">Table 239 - Additional entries specific to a submit-form action</a></li>
