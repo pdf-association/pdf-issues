@@ -23,7 +23,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
     {% endfor %}
 </ul>
 
-<p>The following tables have been corrected:</p>
+<p>The following tables have all been corrected:</p>
 <ul>
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
 <li><a href="clause07.html#Table15">Table 15 - Entries in the file trailer dictionary</a></li>
@@ -32,6 +32,8 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</a></li>
 <li><a href="clause07.html#Table29">Table 29 - Entries in the catalog dictionary</a></li>
 <li><a href="clause07.html#Table31">Table 31 - Entries in a page object</a></li>
+<li><a href="clause07.html#Table32">Table 32 - Entries in the name dictionary</a></li>
+<li><a href="clause07.html#Table36">Table 36 - Entries in a name tree node dictionary</a></li>
 <li><a href="clause07.html#Table44">Table 44 - Additional entries in an embedded file stream dictionary</a></li>
 <li><a href="clause07.html#Table47">Table 47 - Entries in a collection subitem dictionary</a></li>
 <li><a href="clause07.html#Table48">Table 48 - Entries in an extensions dictionary</a></li>
@@ -68,6 +70,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table273">Table 273 - Entries common to all requirement dictionaries</a></li>
 <li><a href="clause12.html#Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187">Additional entries</ins> for specific types of requirements</a></li>
 <li><a href="clause12.html#Table275">Table 275 - Requirement types</a></li>
+<li><a href="clause13.html#Table275">Table 277 - Entries common to all rendition dictionaries</a></li>
 <li><a href="clause13.html#Table285">Table 285 - Additional entries in a media clip data dictionary</a></li>
 <li><a href="clause13.html#Table311">Table 311 - Entries in a 3D stream dictionary</a></li>
 <li><a href="clause13.html#Table315">Table 315 - Entries in a 3D view dictionary</a></li>

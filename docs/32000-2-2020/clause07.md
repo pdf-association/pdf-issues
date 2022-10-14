@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 2 Sept 2022
+modified: 14 October 2022
 ---
 
 <ul class="noprint">
@@ -105,6 +105,8 @@ modified: 2 Sept 2022
       </li>
      </ul>
     </li>
+    <li><a href="#H7.7.4">7.7.4 Name dictionary</a>
+    </li>
    </ul>
   </li>
   <li>7.8 Content streams and resources
@@ -124,6 +126,8 @@ modified: 2 Sept 2022
        </ul>
       </li>
      </ul>
+    </li>
+    <li><a href="#H7.9.6">7.9.6 Name trees</a>
     </li>
    </ul>
   </li>
@@ -664,6 +668,87 @@ there is no way to specify that metadata is to be left unencrypted in these case
 </table>
 
 
+<h3 id="H7.7.4">7.7.4 Name dictionary</h3>
+
+<p>...</p>
+
+<p class="location">Change all occurrences of "name string" to "string" in Table 32 as follows:</p>
+
+<table>
+  <caption id="Table32">Table 32 - Entries in the name dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Dests</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.2</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to destinations (see 12.3.2.4, "Named destinations").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>AP</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to annotation appearance streams (see 12.5.5, "Appearance streams").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>JavaScript</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to document-level
+       ECMAScript actions (see 12.6.4.17, "ECMAScript actions").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Pages</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to visible
+       pages for use in interactive forms (see 12.7.7, "Named pages").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Templates</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to invisible
+       (template) pages for use in interactive forms (see 12.7.7, "Named pages").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>EmbeddedFiles</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.4</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to file
+       specifications for embedded file streams (see 7.11.4, "Embedded file streams"). ...</p>
+    <p>(<i>PDF 2.0</i>) For unencrypted wrapper documents for an encrypted payload document (see 7.6.7, "Unencrypted wrapper document") the
+       <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings provided in this tree shall not contain or be derived from
+       the encrypted payload document’s actual file name. ...</p>
+    </td>
+  </tr>  
+  <tr>
+    <td><b>AlternatePresentations</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.4</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to alternate presentations (see 13.5, "Alternate presentations").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Renditions</b></td>
+    <td>name tree</td>
+    <td>
+    <p>(<i>Optional; PDF 1.5</i>) A name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings
+       (which shall have <del onMouseEnter="mouseEnter(this)" data-issue="214">Unicode</del>
+       <ins onMouseEnter="mouseEnter(this)" data-issue="214">a UTF-16BE</ins> encoding) to rendition objects (see 13.2.3, "Renditions").</p>
+    </td>
+  </tr>
+</table>
+
+
 <h3 id="H7.8.3">7.8.3 Resource dictionaries</h3>
 
 <p class="location">Change the first bullet in the first bulleted list as follows:</p>
@@ -681,6 +766,8 @@ attributes" from some ancestor node of the page object. ...
 
 <p>...</p>
 
+<h2 id="H7.9">7.9 Common data structures</h2>
+<h3 id="H7.9.2">7.9.2 String object types</h3>
 <h4 id="H7.9.2.2">7.9.2.2 Text string type</h4>
 
 <h5 id="H7.9.2.2.1">7.9.2.2.1 General</h5>
@@ -722,6 +809,43 @@ guillemotright, questiondown, which is unlikely to be a meaningful beginning of 
 <p class="hangingindent"><del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.</del></p>
 
 
+<h3 id="H7.9.6">7.9.6 Name trees</h3>
+
+<p>...</p>
+
+<p class="location">Change Table 36 as follows:</p>
+
+<table>
+  <caption id="Table36">Table 36 - Entries in a name tree node dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Names</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Root and leaf nodes only; required in leaf nodes; present in the root node if and only if <b>Kids</b> is not present</i>) Shall be an array of the form</p>
+    <p>[<i>key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> ...key<sub>n</sub> value<sub>n</sub></i>]</p>
+    <p>where each <i>key<sub>i</sub></i> shall be a string and the corresponding <i>value<sub>i</sub></i> shall be the
+      object associated with that key. The keys shall be sorted <del onMouseEnter="mouseEnter(this)" data-issue="214">in lexical order</del>, as described below.</p>
+    </td>
+  </tr>
+</table>
+
+
+<p class="location">Change the paragraph below Table 36 as follows:</p>
+
+<p>The <b>Kids</b> entries in the root and intermediate nodes define the tree’s structure by identifying the immediate children of each node.
+The <b>Names</b> entries in the leaf (or root) nodes shall contain the tree’s keys and their associated values, arranged in key-value pairs and shall be sorted
+<del onMouseEnter="mouseEnter(this)" data-issue="214">lexically</del> in ascending order by key. Shorter keys shall appear before longer ones beginning with the same byte sequence.
+Any encoding of the keys may be used as long as it is self-consistent; keys shall be compared for equality on a simple byte-by-byte basis.
+</p>
+
+<p>...</p>
+
+<h2 id="H7.10">7.10 Functions</h2>
 <h3 id="H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</h3>
 
 <p class="location">Change the paragraph below Table 40 as follows:</p>

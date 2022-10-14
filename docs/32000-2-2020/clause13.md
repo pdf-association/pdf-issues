@@ -11,6 +11,12 @@ modified: 20 May 2022
  </li>
  <li>13.2 Multimedia
   <ul>
+   <li>13.2.3 Renditions
+    <ul>
+     <li><a href="#H13.2.3.1">13.2.3.1 General</a>
+     </li>
+    </ul>
+   </li>
    <li>13.2.4 Media clip objects
     <ul>
      <li><a href="#H13.2.4.2">13.2.4.2 Media clip data</a>
@@ -41,27 +47,27 @@ modified: 20 May 2022
      </li>
     </ul>
    </li>
-   <li>13.7 Rich media
+  </ul>
+ </li>
+ <li>13.7 Rich media
+  <ul>
+   <li>13.7.2 RichMedia annotations
     <ul>
-     <li>13.7.2 RichMedia annotations
+     <li><a href="#H13.7.2.1">13.7.2.1 General</a>
+     </li>
+     <li>13.7.2.2 RichMediaSettings dictionary
       <ul>
-       <li><a href="#H13.7.2.1">13.7.2.1 General</a>
+       <li><a href="#H13.7.2.2.1">13.7.2.2.1 General</a>
        </li>
-       <li>13.7.2.2 RichMediaSettings dictionary
-        <ul>
-         <li><a href="#H13.7.2.2.1">13.7.2.2.1 General</a>
-         </li>
-         <li><a href="#H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</a>
-         </li>
-        </ul>
+       <li><a href="#H13.7.2.2.2">13.7.2.2.2 RichMediaActivation dictionary</a>
        </li>
-       <li>13.7.2.3 RichMediaContent dictionary
-        <ul>
-         <li><a href="#H13.7.2.3.1">13.7.2.3.1 General</a>
-         </li>
-         <li><a href="#H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</a>
-         </li>
-        </ul>
+      </ul>
+     </li>
+     <li>13.7.2.3 RichMediaContent dictionary
+      <ul>
+       <li><a href="#H13.7.2.3.1">13.7.2.3.1 General</a>
+       </li>
+       <li><a href="#H13.7.2.3.4">13.7.2.3.4 RichMediaInstance dictionary</a>
        </li>
       </ul>
      </li>
@@ -70,6 +76,7 @@ modified: 20 May 2022
   </ul>
  </li>
 </ul>
+
 <hr>
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -93,9 +100,31 @@ modified: 20 May 2022
 </ul>
 
 <h2 id="H13.2">13.2 Multimedia</h2>
+<h3 id="H13.2.3">13.2.3 Renditions</h3>
+<h4 id="H13.2.3.1">13.2.3.1 General</h4>
+
+<p class="location">Change Table 277 as follows:</p>
+
+<table>
+  <caption id="Table277">Table 277 - Entries common to all rendition dictionaries</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>N</b></td>
+    <td>text string</td>
+    <td>
+     <p>(<i>Optional</i>) A <del onMouseEnter="mouseEnter(this)" data-issue="214">Unicode</del><ins onMouseEnter="mouseEnter(this)" data-issue="214">UTF-16BE</ins>-encoded
+         text string specifying the name of the rendition for use in a user interface and for name tree lookup by ECMAScript actions.
+     </p>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H13.2.4">13.2.4 Media clip objects</h3>
-
 <h4 id="H13.2.4.2">13.2.4.2 Media clip data</h4>
 
 <p class="location">Change Table 285 as follows:</p>
@@ -113,7 +142,7 @@ modified: 20 May 2022
     <td>
      <p>(<i>Optional</i>) A dictionary whose entries (see
      <del onMouseEnter="mouseEnter(this)" data-issue="179">"Table 287 — Entries in a media clip data MH/BE dictionary"</del>
-     <ins onMouseEnter="mouseEnter(this)" data-issue="179">"Table 289 — Entries in a media clip section MH/BE dictionary"</ins>) 
+     <ins onMouseEnter="mouseEnter(this)" data-issue="179">"Table 289 — Entries in a media clip section MH/BE dictionary"</ins>)
      shall be honoured for the media clip data to be considered viable.
      </p>
     </td>

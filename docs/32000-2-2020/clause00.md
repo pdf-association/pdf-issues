@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 0
 title: Introduction
-modified: 14 August 2022
+modified: 14 October 2022
 ---
 
 <ul class="noprint">
@@ -19,6 +19,10 @@ modified: 14 August 2022
 </div>
 
 <p class="fake-h1">{{ page.title }}</p>
+
+
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/214">Errata #214</a>, all occurrences of
+the term "name string" are replaced by just "string" throughout ISO 32000-2:2020.</p>
 
 <p>...</p>
 
