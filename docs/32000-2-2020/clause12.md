@@ -133,6 +133,8 @@ modified: 14 Oct 2022
      </li>
     </ul>
    </li>
+   <li><a href="#H12.8.6">12.8.6 Permissions</a>
+   </li>
   </ul>
  </li>
  <li>12.11 Document requirements
@@ -867,8 +869,35 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <p class="editornote">EDITOR NOTE: Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</p>
 
-<h2 id="H12.11">12.11 Document requirements</h2>
 
+<h3 id="H12.8.6">12.8.6 Permissions</h3>
+
+<p class="location">Change Table 263 as follows:</p>
+
+<table>
+  <caption id="Table263">Table 263 - Entries in a permissions dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>DocMDP</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Optional</i>) An indirect reference to a signature dictionary (see "Table 255 — Entries in a signature dictionary").
+    This dictionary shall contain a <b>Reference</b> entry that shall be
+    <ins onMouseEnter="mouseEnter(this)" data-issue="218"> an array with at least one entry, exactly one of which is</ins>
+    a signature reference dictionary (see "Table 255 — Entries in a signature dictionary") that has a <b>DocMDP</b> transform method (see 12.8.2.2, "DocMDP") and corresponding transform parameters.
+    </p>
+    <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
+
+<h2 id="H12.11">12.11 Document requirements</h2>
 <h3 id="H12.11.1">12.11.1 General</h3>
 
 <p class="location">Change Table 273 as follows:</p>
