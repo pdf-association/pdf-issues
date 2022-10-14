@@ -73,6 +73,16 @@ modified: 1 July 2022
    </li>
   </ul>
  </li>
+ <li>14.10 Web capture
+  <ul>
+   <li>14.10.5 Source information
+    <ul>
+     <li><a href="#H14.10.5.3">14.10.5.3 Command dictionaries</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
  <li>14.12 Document parts
   <ul>
    <li>14.12.4 Data structures
@@ -599,7 +609,34 @@ endobj
 
 <p>...</p>
 
+<h2 id="H14.10">14.10 Web capture</h2>
+<h3 id="H14.10.5">14.10.5 Source information</h3>
+<h4 id="H14.10.5.3">14.10.5.3 Command dictionaries</h4>
 
+<p class="location">Change Table 393 as follows:</p>
+
+<table>
+  <caption id="Table393">Table 393 - Entries in a Web Capture command dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>F</b></td>
+    <td>integer</td>
+    <td>
+    <p>(<i>Optional</i>) A set of flags specifying various characteristics of the command (see
+        <del onMouseEnter="mouseEnter(this)" data-issue="222">"Table 393 - Entries in a Web Capture command dictionary"</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="222">"Table 394 - Web Capture command flags"</ins>). Default value: 0.
+    </p>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="H14.12">14.12 Document parts</h2>
+<h3 id="H14.12.4">14.12.4 Data structures</h3>
 <h4 id="H14.12.4.2">14.12.4.2 Document part metadata</h4>
 
 <p class="location">Change the last paragraph as follows:</p>
@@ -612,7 +649,7 @@ array, dictionary, boolean, integer or real as defined in 7.3, "Objects".
 Other PDF value types shall not be used.
 </p>
 
-
+<h2 id="H14.13">14.13 Associated files</h2>
 <h3 id="H14.13.5">14.13.5 Associated files linked to graphics objects</h3>
 
 <p class="location">Change the paragraph below NOTE 3 as follows:</p>
