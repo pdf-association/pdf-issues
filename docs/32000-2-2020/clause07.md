@@ -285,7 +285,8 @@ The subsection shall begin with a line containing only two <ins onMouseEnter="mo
 
 <p class="location">Change EXAMPLE 3 as follows:</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="109" data-iso="approved">EXAMPLE 3 The cross-reference table first sub-section line requires a single SPACE between "0" and "1". The typeface of this example should be all monospaced and with single SPACEs between all cross-reference fields, and thus all fields vertically aligned.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="109" data-iso="approved">EXAMPLE 3 The cross-reference table first sub-section line requires a single SPACE between "0" and "1".</ins></p>
+<p class="editornote">EDITOR NOTE: The typeface of Example 3 should be all monospaced and with single SPACEs between all cross-reference fields, and thus all cross-reference data fields vertically aligned.</p>
 
 
 <h3 id="H7.5.5">7.5.5 File trailer</h3>
