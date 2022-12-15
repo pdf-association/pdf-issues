@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 14 October 2022
+modified: 16 December 2022
 ---
 
 <ul class="noprint">
@@ -152,6 +152,8 @@ modified: 14 October 2022
   <li>7.12 Extensions dictionary
    <ul>
     <li><a href="#H7.12.2">7.12.2 Extensions dictionary</a>
+    </li>
+    <li><a href="#H7.12.5">7.12.5 ExtensionLevel</a>
     </li>
    </ul>
   </li>
@@ -937,6 +939,14 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     </td>
   </tr>
 </table>
+
+<h3 id="H7.12.5">7.12.5 ExtensionLevel</h3>
+
+<p class="location">Change the paragraph as follows:</p>
+
+<p>The value of the <b>ExtensionLevel</b> entry shall be an integer, which shall be interpreted with respect to the <b>BaseVersion</b> value.
+If a developer has released multiple extensions against the same <b>BaseVersion</b> value, they <del onMouseEnter="mouseEnter(this)" data-issue="239">shall</del><ins onMouseEnter="mouseEnter(this)" data-issue="239">should</ins> be ordered over time and the <b>ExtensionLevel</b> numbers <del onMouseEnter="mouseEnter(this)" data-issue="239">shall be a monotonically increasing sequence</del><ins onMouseEnter="mouseEnter(this)" data-issue="239">should increase</ins> over time.
+</p>
 
 </div>
 
