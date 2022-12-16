@@ -203,6 +203,11 @@ a miter to a bevel.
 <li>...</li>
 </ul>
 
+<p class="location">Add a new NOTE 2 below NOTE 1 and above Table 67 as follows:</p>
+
+<p class="hangingindent">
+NOTE 2 ICC profiles can contain private tags. This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.
+</p>
 
 <h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
 <p class="location">Change the NOTE below Table 69 as follows:</p>
