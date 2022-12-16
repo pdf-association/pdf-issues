@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 1 July 2022
+modified: 16 December 2022
 ---
 
 <ul class="noprint">
@@ -53,6 +53,8 @@ modified: 1 July 2022
     <ul>
      <li>14.8.5.4 Layout attributes
       <ul>
+       <li><a href="#H14.8.5.4.1">14.8.5.4.1 General</a>
+       </li>
        <li><a href="#H14.8.5.4.2">14.8.5.4.2 General layout attributes</a>
        </li>
        <li><a href="#H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</a>
@@ -424,6 +426,34 @@ endobj
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
 
 <h4 id="H14.8.5.4">14.8.5.4 Layout attributes</h4>
+
+<h5 id="H14.8.5.4.1">14.8.5.4.1 General</h5>
+
+<p class="location">Change Table 377 as follows:</p>
+
+<table>
+  <caption id="Table377">Table 377 - Standard layout attributes</caption>
+  <tr>
+    <th>Structure Elements</th>
+    <th>Attributes</th>
+    <th>Inheritable</th>
+  </tr>
+  <tr>
+    <td><b><del onMouseEnter="mouseEnter(this)" data-issue="223">Vertical text</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="223">Any structure element containing text whose inline-progression direction is top to bottom or bottom to top.</ins>
+    </b></td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td><b><ins onMouseEnter="mouseEnter(this)" data-issue="223">RB, RT, EP (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223">)</ins>
+    </b></td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
+
+<p>...</p>
 
 <h5 id="H14.8.5.4.2">14.8.5.4.2 General layout attributes</h5>
 
