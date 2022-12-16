@@ -606,6 +606,13 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>Extensions</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="242">shall be a direct object;</ins> ISO 32000-1</i>) ...
+    </td>
+  </tr>
+  <tr>
     <td><b>Dests</b></td>
     <td>dictionary</td>
     <td>
