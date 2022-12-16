@@ -365,7 +365,7 @@ the corresponding colour spaces either directly or via a default colour space (s
 
 <h3>8.11.4 Configuring optional content</h3>
 
-<h4 id="H8.11.4.3">8.11.4.3 Optional content configuration dictionaries<//h4>
+<h4 id="H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</h4>
  
 <p class="location">Change Table 99 as follows:</p>
 
