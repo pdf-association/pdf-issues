@@ -764,6 +764,16 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     </td>
   </tr>
   <tr>
+    <td><b>SubFilter</b></td>
+    <td>name</td>
+    <td>
+    <p>...</p>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="219">(<i>PDF 1.6</i>)</del> The following values for public-key cryptographic signatures should be used: <i>adbe.x509.rsa_sha1</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.3)</ins>, <i>adbe.pkcs7.detached</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.3)</ins>, <i>adbe.pkcs7.sha1</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.4)</ins>, <i>ETSI.CAdES.detached</i> (PDF 2.0) and <i>ETSI.RFC3161</i> (PDF 2.0).
+    </p>
+    <p>...</p>
+    </td>
+  </tr>
+  <tr>
     <td><b>Cert</b></td>
     <td>byte string or array</td>
     <td>

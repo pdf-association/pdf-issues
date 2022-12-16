@@ -499,6 +499,14 @@ and the file encryption key as the key. ...
 
 <p>...</p>
 
+<p class="location">Change the paragraph below the NOTE as follows:</p>
+
+<p>
+Permitted values of the <b>SubFilter</b> entry for use with conforming public-key security handlers are <i>adbe.pkcs7.s3</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.3)</ins>, <i>adbe.pkcs7.s4</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.4)</ins>, which shall be used when not using crypt filters (see 7.6.6, "Crypt filters") and <i>adbe.pkcs7.s5</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.5)</ins>, which shall be used when using crypt filters.
+</p>
+
+<p>...</p>
+
 <p class="location">Insert a new subclause heading immediately below the NOTE below Table 23 as follows:</p>
 
 <h4 id="H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3 Public-key security permissions</ins></h4>
