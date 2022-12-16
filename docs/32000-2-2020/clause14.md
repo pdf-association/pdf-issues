@@ -57,11 +57,11 @@ modified: 16 December 2022
    </li>
    <li>14.8.5 Standard structure attributes
     <ul>
-     <li><a href="#H14.8.5.1">14.8.5.1 General
+     <li><a href="#H14.8.5.1">14.8.5.1 General</a>
      </li>
      <li><a href="#H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attribute owners</a>
      </li>
-     <li><a href="#H14.8.5.3">14.8.5.3 Attribute values and inheritance
+     <li><a href="#H14.8.5.3">14.8.5.3 Attribute values and inheritance</a>
      </li>
      <li>14.8.5.4 Layout attributes
       <ul>
@@ -454,7 +454,7 @@ endobj
 <p class="location">Change reference to subclause 14.8.5.2 in sixth paragraph as follows:</p>
 
 <p>
-In addition to the standard structure attributes described in 14.8.5.2, "Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins>attribute owners" there are several other optional entries – <b>Lang</b>, <b>Alt</b>, <b>ActualText</b>, and <b>E</b> – that are described in 14.9, "Repurposing and accessibility support" but are useful to other PDF consumers as well. They appear in the following places in a PDF file (rather than in attribute dictionaries):
+In addition to the standard structure attributes described in 14.8.5.2, "Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attribute owners" there are several other optional entries – <b>Lang</b>, <b>Alt</b>, <b>ActualText</b>, and <b>E</b> – that are described in 14.9, "Repurposing and accessibility support" but are useful to other PDF consumers as well. They appear in the following places in a PDF file (rather than in attribute dictionaries):
 </p>
 
 <ul>
