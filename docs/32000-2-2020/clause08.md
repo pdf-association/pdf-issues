@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 14 August 2022
+modified: 16 December 2022
 ---
 
 <ul class="noprint">
@@ -55,7 +55,18 @@ modified: 14 August 2022
    </li>
   </ul>
  </li>
+ <li>8.11 Optional Content
+  <ul>
+   <li>8.11.4 Configuring optional content
+    <ul>
+     <li><a href="#H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
 </ul>
+
 <hr>
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -345,8 +356,40 @@ the corresponding colour spaces either directly or via a default colour space (s
 
 <p>...</p>
 
-</div>
+<h2>8.11 Optional Content</h2>
 
+<h3>8.11.4 Configuring optional content</h3>
+
+<h4 id="H8.11.4.3">8.11.4.3 Optional content configuration dictionaries<//h4>
+ 
+<p class="location">Change Table 99 as follows:</p>
+
+<table>
+  <caption id="Table99">Table 99 - Entries in an optional content configuration dictionary</caption>
+  <tr>
+    <th><b>Key</b></th>
+    <th><b>Type</b></th>
+    <th><b>Value</b></th>
+  </tr>
+  <tr>
+    <td><b>RBGroups</b></td>
+    <td>array</td>
+    <td>
+     <p>
+      (<i>Optional</i>) An array consisting of one or more arrays<del onMouseEnter="mouseEnter(this)" data-issue="225">, each of which</del><ins onMouseEnter="mouseEnter(this)" data-issue="225">. Each of the inner arrays</ins> represents a collection of optional content groups whose states shall be intended to follow a radio button paradigm. That is, the state of at most one optional content group in each <ins onMouseEnter="mouseEnter(this)" data-issue="225">inner</ins> array shall be <b>ON</b> at a time. If one group is turned <b>ON</b>, all others shall be turned <b>OFF</b>. However, turning a group from <b>ON</b> to <b>OFF</b> does not force any other group to be turned <b>ON</b>. <ins onMouseEnter="mouseEnter(this)" data-issue="225">None of the inner array elements shall be an empty array.</ins> 
+      </p>
+      <p>
+      <del onMouseEnter="mouseEnter(this)" data-issue="225">An empty array [] explicitly indicates that no such collections exist.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="225">If the value of <b>RBGroups</b> is an empty array [], then this explicitly indicates that no such collections exist.</ins>
+      </p>
+      <p>
+      In the default configuration dictionary, the default value <ins onMouseEnter="mouseEnter(this)" data-issue="225">for <b>RBGroups</b></ins> shall be an empty array; in other configuration dictionaries, the default is the <b>RBGroups</b> value from the default configuration dictionary.     
+      </p>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 <hr>
 <p class="footnote">Last modified: {{page.modified}}</p>

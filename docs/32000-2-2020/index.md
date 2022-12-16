@@ -41,6 +41,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause08.html#Table59">Table 59 - Path-painting categories</a></li>
 <li><a href="clause08.html#Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></a></li>
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>
+<li><a href="clause08.html#Table99">Table 99 - Entries in an optional content configuration dictionary</a></li>
 <li><a href="clause09.html#Table109">Table 109 - Entries in a Type 1 font dictionary</a></li>
 <li><a href="clause09.html#Table110">Table 110 - Entries in a Type 3 font dictionary</a></li>
 <li><a href="clause09.html#Table111">Table 111 - Type 3 font operators</a></li>
