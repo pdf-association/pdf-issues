@@ -25,6 +25,12 @@ modified: 16 December 2022
  </li>
  <li>14.8 Tagged PDF
   <ul>
+   <li>14.8.3 Basic layout model
+    <ul>
+     <li><a href="#H14.8.3.3">14.8.3.3 Progression direction</a>
+     </li>
+    </ul>
+   </li>
    <li>14.8.4 Standard structure types
     <ul>
      <li><a href="#H14.8.4.4">14.8.4.4 Grouping level structure types</a>
@@ -51,6 +57,12 @@ modified: 16 December 2022
    </li>
    <li>14.8.5 Standard structure attributes
     <ul>
+     <li><a href="#H14.8.5.1">14.8.5.1 General
+     </li>
+     <li><a href="#H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attribute owners</a>
+     </li>
+     <li><a href="#H14.8.5.3">14.8.5.3 Attribute values and inheritance
+     </li>
      <li>14.8.5.4 Layout attributes
       <ul>
        <li><a href="#H14.8.5.4.1">14.8.5.4.1 General</a>
@@ -191,6 +203,18 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 <p>...</p>
 
 <h2 id="H14.8">14.8 Tagged PDF</h2>
+
+<h2>14.8.3 Basic layout model</h2>
+
+<h3 id="H14.8.3.3">14.8.3.3 Progression direction</h3>
+
+<p class="location">Change first paragraph as follows:</p>
+
+<p>
+The meaning of the terms block-progression direction and inline-progression direction depends on the writing system in use, as specified by the standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attribute <b>WritingMode</b> (see 14.8.5.4.2, "General Layout Attributes"). In Western writing systems, the block direction is from top to bottom and the inline direction is from left to right. Other writing systems use different directions for laying out content.
+</p>
+
+<p>...</p>
 
 <h3 id="H14.8.4">14.8.4 Standard structure types</h3>
 
@@ -424,6 +448,42 @@ endobj
 
 
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
+
+<h4 id="H14.8.5.1">14.8.5.1 General</h4>
+
+<p class="location">Change reference to subclause 14.8.5.2 in sixth paragraph as follows:</p>
+
+<p>
+In addition to the standard structure attributes described in 14.8.5.2, "Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins>attribute owners" there are several other optional entries – <b>Lang</b>, <b>Alt</b>, <b>ActualText</b>, and <b>E</b> – that are described in 14.9, "Repurposing and accessibility support" but are useful to other PDF consumers as well. They appear in the following places in a PDF file (rather than in attribute dictionaries):
+</p>
+
+<ul>
+  <li>...</li>
+</ul>
+
+<p class="location">Change title of subclause 14.8.5.2 as follows:</p>
+
+<h4 id="H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attribute owners</h4>
+
+<p class="location">Change first paragraph as follows:</p>
+
+<p>
+Each attribute object has an owner, specified by the object's <b>O</b> entry, or, if the value of <b>O</b> is <i>NSO</i>, by the object’s <b>NS</b> entry, which determines the interpretation of the attributes defined in the object's dictionary. Multiple owners may define like-named attributes with different value types or interpretations. Tagged PDF defines a set of standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attribute owners as shown in "Table 376 — Standard structure attribute owners".
+</p>
+
+<p>...</p>
+
+<h4 id="H14.8.5.3">14.8.5.3 Attribute values and inheritance</h4>
+
+<p>...</p>
+
+<p class="location">Change NOTE 1 as follows:</p>
+
+<p class="hangingindent">
+NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(this)" data-issue="224">structure</ins> attributes in this subclause specifies whether their values are inheritable
+</p>
+
+<p>...</p>
 
 <h4 id="H14.8.5.4">14.8.5.4 Layout attributes</h4>
 
