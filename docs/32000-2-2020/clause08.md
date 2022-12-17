@@ -194,7 +194,7 @@ a miter to a bevel.
 
 <p class="location">Change the bulleted list below Table 66 as follows:</p>
 
-<p>PDF processors shall follow these guidelines for writing and rendering ICC based color spaces:<p>
+<p>PDF processors shall follow these guidelines for writing and rendering ICC based color spaces:</p>
 
 <ul>
 <li>A PDF reader shall support <del onMouseEnter="mouseEnter(this)" data-issue="181">ICC.1:2010 as required by PDF 2.0</del><ins onMouseEnter="mouseEnter(this)" data-issue="181">both ICC profile header version 2.x and 4.x profiles</ins>, which will enable it to properly render all embedded ICC profiles regardless of the PDF version.</li>
