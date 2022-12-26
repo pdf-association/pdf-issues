@@ -74,10 +74,10 @@ modified: 1 July 2022
 
 <p>
 The strings shall conform to the syntax for string objects
-<ins onMouseEnter="mouseEnter(this)" data-issue="165">(see 7.3.4.2, "Literal strings")</ins>.
+<ins onMouseEnter="mouseEnter(this)" data-issue="165" data-iso="submitted">(see 7.3.4.2, "Literal strings")</ins>.
 When a string is written by enclosing the data in parentheses, bytes whose values are equal to
 those of the ASCII characters
-<ins onMouseEnter="mouseEnter(this)" data-issue="165">CARRIAGE RETURN (0Dh),</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="165" data-iso="submitted">CARRIAGE RETURN (0Dh),</ins>
 LEFT PARENTHESIS (28h), RIGHT PARENTHESIS (29h),
 and REVERSE SOLIDUS (5Ch) (backslash) shall be preceded by a REVERSE SOLIDUS)
 character. All other byte values between 0 and 255 may be used in a string object.
@@ -106,7 +106,7 @@ character codes.
     <td><b>FontDescriptor</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>)
+    <p>(<i>Required; optional in PDF 1.0-1.7 for the standard 14 fonts<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>)
     A font descriptor describing the font's metrics other than its glyph widths (see 9.8, "Font descriptors").</p>
     <p>
     <del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">For the standard 14 fonts, the entries <b>FirstChar</b>, <b>LastChar</b>, <b>Widths</b>, and <b>FontDescriptor</b> shall either all be present or all be absent. Ordinarily, these dictionary keys may be absent; specifying them enables a standard font to be overridden; see</del>
@@ -180,7 +180,7 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
     <td><b>FontDescriptor</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required in Tagged PDF documents<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    <p>(<i>Required in Tagged PDF documents<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>) ...
     </p>
     </td>
   </tr>
@@ -249,7 +249,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
         /CharProcs 10 0 R
         /Encoding 9 0 R
         /FirstChar 97
-        /LastChar <del onMouseEnter="mouseEnter(this)" data-issue="144">144</del><ins onMouseEnter="mouseEnter(this)" data-issue="144">98</ins>
+        /LastChar <del onMouseEnter="mouseEnter(this)" data-issue="144" data-iso="submitted">144</del><ins onMouseEnter="mouseEnter(this)" data-issue="144" data-iso="submitted">98</ins>
         /Widths [1000 1000]
      &gt;&gt;
   endobj
@@ -276,7 +276,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     <td><b>FontDescriptor</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    <p>(<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>) ...
     </p>
     </td>
   </tr>
@@ -308,10 +308,10 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
   </tr>
   <tr>
     <td><b>FontWeight</b></td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="152">number</del> <ins onMouseEnter="mouseEnter(this)" data-issue="152">integer</ins></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="submitted">number</del> <ins onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="submitted">integer</ins></td>
     <td>
     <p>...</p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="178">NOTE The definition of <b>FontWeight</b> in PDF matches the
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="178" data-iso="submitted">NOTE The definition of <b>FontWeight</b> in PDF matches the
     CSS <code>font-weight</code> property, but may be more constrained than font weights used by various font formats.</ins>
     </p>
     </td>
@@ -321,9 +321,9 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     <td>number</td>
     <td>
     <p>(<i>Required, except for Type 3 fonts</i>) The maximum depth below the baseline reached by glyphs in this font.
-    The value shall be a <del onMouseEnter="mouseEnter(this)" data-issue="190">negative</del> number <ins onMouseEnter="mouseEnter(this)" data-issue="190">less than or equal to zero</ins>.
+    The value shall be a <del onMouseEnter="mouseEnter(this)" data-issue="190" data-iso="submitted">negative</del> number <ins onMouseEnter="mouseEnter(this)" data-issue="190" data-iso="submitted">less than or equal to zero</ins>.
     </p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="190">NOTE While different font programs may define descender metrics using either positive or negative numbers (e.g. <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/os2#uswindescent">OpenType usWinDescent</a>), PDF always expects negative values.   
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="190" data-iso="submitted">NOTE While different font programs may define descender metrics using either positive or negative numbers (e.g. <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/os2#uswindescent">OpenType usWinDescent</a>), PDF always expects negative values.   
     </ins></p>
     </td>
   </tr>

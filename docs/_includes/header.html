@@ -72,8 +72,13 @@ window.addEventListener("load", function(){
             if (s != "") {
                 s = s + ", "; // add a gap between each URL
             }
-            if ((iso != null) && (iso.length > i) && (iso[i] == "approved")) {
-                s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+            if ((iso != null) && (iso.length > i)) {
+                if (iso[i] == "approved") {
+                    s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+                }
+                else if (iso[i] == "submitted") {
+                    s = s + '<img src="../assets/Logo-ISO-submitted-small.png" alt="ISO submitted" style="height:15px">&nbsp;';
+                }
             }
             s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue&nbsp;#' + iss[i] + '</a>';
         }
@@ -95,8 +100,13 @@ window.addEventListener("load", function(){
             if (s != "") {
                 s = s + ", "; // add a gap between each URL
             }
-            if ((iso != null) && (iso.length > i) && (iso[i] == "approved")) {
-                s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+            if ((iso != null) && (iso.length > i)) {
+                if (iso[i] == "approved") {
+                    s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+                }
+                else if (iso[i] == "submitted") {
+                    s = s + '<img src="../assets/Logo-ISO-submitted-small.png" alt="ISO submitted" style="height:15px">&nbsp;';
+                }
             }
             s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue&nbsp;#' + iss[i] + '</a>';
         }
@@ -120,8 +130,13 @@ function mouseEnter(obj) {
         if (s != "") {
             s = s + "<br\>"; // add a linebreak between each URL
         }
-        if ((iso != null) && (iso.length > i) && (iso[i] == "approved")) {
-            s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+        if ((iso != null) && (iso.length > i)) {
+            if (iso[i] == "approved") {
+                s = s + '<img src="../assets/Logo-ISO-small.png" alt="ISO approved" style="height:15px">&nbsp;';
+            }
+            else if (iso[i] == "submitted") {
+                s = s + '<img src="../assets/Logo-ISO-submitted-small.png" alt="ISO submitted" style="height:15px">&nbsp;';
+            }
         }
         s = s + '<a href="https://github.com/pdf-association/pdf-issues/issues/' + iss[i] + '" target="_blank">Issue&nbsp;#' + iss[i] + '</a>';
     }

@@ -43,8 +43,8 @@ modified: 14 August 2022
 <p class="location">Change the last paragraph as follows:</p>
 
 <p>
-Conversion from a CIE-based source colour to a CIE-based destination colour shall be performed based on <del onMouseEnter="mouseEnter(this)" data-issue="181">ISO 15076-1:2010 (ICC.1:2010)</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="181">the appropriate ICC specification (see "Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces")</ins>.
+Conversion from a CIE-based source colour to a CIE-based destination colour shall be performed based on <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ISO 15076-1:2010 (ICC.1:2010)</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">the appropriate ICC specification (see "Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces")</ins>.
 </p>
 
 

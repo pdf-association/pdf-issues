@@ -23,7 +23,7 @@ The current set of resolved errata are presented as
 to the published wording in the relevant ISO standard organized by clause number.
 GitHub Issue numbers will appear as popup tooltips when hovering over changes and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
-closed GitHub pdf-issues</a>. If a small ISO logo is also shown ![ISO logo](docs/assets/Logo-ISO-small.png), then that errata has been approved by the appropriate [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/).
+closed GitHub pdf-issues</a>. If a small blue ISO logo is also shown ![ISO approved logo](docs/assets/Logo-ISO-small.png), then that errata has been approved by the appropriate [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/). If a small gray ISO logo is also shown ![ISO submitted logo](docs/assets/Logo-ISO-submitted-small.png), then that errata has been submitted to the appropriate ISO working group and is waiting for approval. If no logo is shown then the errata has been resolved by the PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) and has not yet been submitted for ratification by ISO.
 
 Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to understand how the resolution is being applied.
 
@@ -68,7 +68,7 @@ Errata in the following published ISO publications are supported:
    <li><a href="https://www.pdfa.org/resource/iso-23504-pdfr/" target="_blank">PDF/R-1 (ISO 23504-1:2020)- PDF for raster image transport and storage</a></li>
   </ul>
 
-<p>Errata on PDF 1.7 (ISO 32000-1:2008) and withdrawn ISO publications are <b>not</b> supported.
+<p>Errata on PDF 1.7 (ISO 32000-1:2008) and withdrawn ISO publications are <b>not</b> supported - refer to ISO 32000-2 instead.
 The PDF Association maintains a <a href="https://www.pdfa.org/index-of-pdf-related-iso-publications/">full list of all PDF-related ISO publications</a>.</p>
 
 Not all resolutions proposed here are officially authorized by the [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/) and may get changed when reviewed by the ISO working group.
@@ -78,6 +78,7 @@ Not all resolutions proposed here are officially authorized by the [ISO working 
 2. The community can discuss and contribute to open issues here in GitHub, and work towards a proposed resolution.
 3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for each proposed resolution. Issues related to PDF subset standards may also get passed on to other TWGs.
 4. Each issue will be updated with the agreed resolution and then Closed by moderators once the resolution is published at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
+5. At some later time, some errata may be passed to the appropriate ISO working group for formal ratification.
 
 A full list of all ISO and industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
 

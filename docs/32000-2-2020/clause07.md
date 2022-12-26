@@ -85,9 +85,9 @@ modified: 16 December 2022
       </li>
       <li><a href="#H7.6.5.2">7.6.5.2 Public-key encryption dictionary</a>
       </li>
-      <li><a href="#H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3 Public-key encryption permissions</ins></a>
+      <li><a href="#H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.3 Public-key encryption permissions</ins></a>
       </li>
-      <li><a href="#H7.6.5.4"><del onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3</del><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.4</ins> Public-key encryption algorithms</a>
+      <li><a href="#H7.6.5.4"><del onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.3</del><ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.4</ins> Public-key encryption algorithms</a>
       </li>
      </ul>
     </li>
@@ -175,16 +175,16 @@ modified: 16 December 2022
 <p class="location">Change the first paragraph and the 3rd (last) bullet in the subsequent list as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="193">A non-encrypted PDF file can be entirely represented using byte values corresponding to the visible
+<del onMouseEnter="mouseEnter(this)" data-issue="193" data-iso="submitted">A non-encrypted PDF file can be entirely represented using byte values corresponding to the visible
 printable subset of the ASCII character set defined in INCITS 4-1986 (R2017), plus white-space characters.
 However, a</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="193">A</ins> PDF file is not restricted to the ASCII character set; it may contain arbitrary bytes, subject to the following considerations:
+<ins onMouseEnter="mouseEnter(this)" data-issue="193" data-iso="submitted">A</ins> PDF file is not restricted to the ASCII character set; it may contain arbitrary bytes, subject to the following considerations:
 </p>
 
 <ul>
  <li>...</li>
  <li>...</li>
- <li>A PDF file <del onMouseEnter="mouseEnter(this)" data-issue="193">containing binary data</del> shall be transported as a binary file rather than as a text file to ensure that all bytes of the file are faithfully preserved.</li>
+ <li>A PDF file <del onMouseEnter="mouseEnter(this)" data-issue="193" data-iso="submitted">containing binary data</del> shall be transported as a binary file rather than as a text file to ensure that all bytes of the file are faithfully preserved.</li>
 </ul>
 
 <p>...</p>
@@ -259,7 +259,7 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 The subsection structure is useful for incremental updates, since it allows a new cross-reference section to be added to the PDF file, containing entries only for objects that have been added, modified or deleted. <del onMouseEnter="mouseEnter(this)" data-issue="147">This also means that cross reference subsections of incremental updates can never have an object number of zero.</del>
+NOTE 3 The subsection structure is useful for incremental updates, since it allows a new cross-reference section to be added to the PDF file, containing entries only for objects that have been added, modified or deleted. <del onMouseEnter="mouseEnter(this)" data-issue="147" data-iso="submitted">This also means that cross reference subsections of incremental updates can never have an object number of zero.</del>
 </p>
 
 <p class="location">Change paragraph below NOTE 3 as follows:</p>
@@ -267,7 +267,7 @@ NOTE 3 The subsection structure is useful for incremental updates, since it allo
 <p>
 Each cross-reference subsection shall contain entries for a contiguous range of object numbers.
 <del onMouseEnter="mouseEnter(this)" data-issue="113" data-iso="approved">Each cross-reference subsection shall contain entries for a contiguous range of object numbers.</del>
-The subsection shall begin with a line containing only two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two <ins onMouseEnter="mouseEnter(this)" data-issue="147">non-negative</ins> integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
+The subsection shall begin with a line containing only two <ins onMouseEnter="mouseEnter(this)" data-issue="147" data-iso="submitted">non-negative</ins> integers separated by a single SPACE (20h) and terminated by an end-of-line marker (see 7.2.3, "Character set"). The two <ins onMouseEnter="mouseEnter(this)" data-issue="147" data-iso="submitted">non-negative</ins> integers denote (respectively) the object number of the first object in this subsection and the number of entries in the subsection.
 </p>
 
 <p class="location">Change various paragraphs below EXAMPLE 1 as follows:</p>
@@ -332,7 +332,7 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
     <td><b>Info</b></td>
     <td>dictionary</td>
     <td><p>
-    (<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    (<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>) ...
     </p></td>
   </tr>
 </table>
@@ -381,8 +381,8 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
     <td>integer</td>
     <td><p>
     (<i>Optional</i>) The byte offset
-    <del onMouseEnter="mouseEnter(this)" data-issue="146">in the decoded stream from the beginning of the PDF file of a cross-reference stream.</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="146">to the cross-reference stream, calculated from the beginning of the PDF file.</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="146" data-iso="submitted">in the decoded stream from the beginning of the PDF file of a cross-reference stream.</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="146" data-iso="submitted">to the cross-reference stream, calculated from the beginning of the PDF file.</ins>
     </p></td>
   </tr>
 </table>
@@ -402,7 +402,7 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 <li>Any hexadecimal strings representing the value of the Contents key in a Signature dictionary</li>
 </ul>
 
-<p class="hangingindent" style="margin-left: 40px"><ins onMouseEnter="mouseEnter(this)" data-issue="211">NOTE 1 For the signature schemes enumerated in ISO 32000-1 and in this document,
+<p class="hangingindent" style="margin-left: 40px"><ins onMouseEnter="mouseEnter(this)" data-issue="211" data-iso="submitted">NOTE 1 For the signature schemes enumerated in ISO 32000-1 and in this document,
 the value of the <b>Contents</b> key in a Signature dictionary is always a hexadecimal string (see "Table 255 — Entries in a signature dictionary").</ins></p>
 
 <p>Encryption is not applied to other object types such as integers and boolean values, which are used primarily to convey information about the document's structure rather than its contents. ...</p>
@@ -502,26 +502,26 @@ and the file encryption key as the key. ...
 <p class="location">Change the paragraph below the NOTE as follows:</p>
 
 <p>
-Permitted values of the <b>SubFilter</b> entry for use with conforming public-key security handlers are <i>adbe.pkcs7.s3</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.3)</ins>, <i>adbe.pkcs7.s4</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.4)</ins>, which shall be used when not using crypt filters (see 7.6.6, "Crypt filters") and <i>adbe.pkcs7.s5</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.5)</ins>, which shall be used when using crypt filters.
+Permitted values of the <b>SubFilter</b> entry for use with conforming public-key security handlers are <i>adbe.pkcs7.s3</i><ins onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted"> (PDF 1.3)</ins>, <i>adbe.pkcs7.s4</i><ins onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted"> (PDF 1.4)</ins>, which shall be used when not using crypt filters (see 7.6.6, "Crypt filters") and <i>adbe.pkcs7.s5</i><ins onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted"> (PDF 1.5)</ins>, which shall be used when using crypt filters.
 </p>
 
 <p>...</p>
 
 <p class="location">Insert a new subclause heading immediately below the NOTE below Table 23 as follows:</p>
 
-<h4 id="H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3 Public-key security permissions</ins></h4>
+<h4 id="H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.3 Public-key security permissions</ins></h4>
 
 <p class="editornote">EDITOR NOTE: current text and Table 24 remain unchanged.</p>
 
 <p class="location">Renumber the next clause appropriately:</p>
 
-<h4 id="H7.6.5.4"><del onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3</del><ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.4</ins> Public-key encryption algorithms</h4>
+<h4 id="H7.6.5.4"><del onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.3</del><ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.4</ins> Public-key encryption algorithms</h4>
 
 <p class="location">Change the second bullet as follows:</p>
 
 <ul>
  <li>...</li>
- <li>A 4-byte value defining the permissions, most significant byte first. See <ins onMouseEnter="mouseEnter(this)" data-issue="196">7.6.5.3, "Public-key security permissions" and</ins> "Table 24 — Public-key security handler user access permissions" for the possible permission values.</li>
+ <li>A 4-byte value defining the permissions, most significant byte first. See <ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="submitted">7.6.5.3, "Public-key security permissions" and</ins> "Table 24 — Public-key security handler user access permissions" for the possible permission values.</li>
  <li>...</li>
 </ul>
 
@@ -569,8 +569,8 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td>
     <p>(<i>Required; deprecated in PDF 2.0</i>) ...</p>
     <p>
-      When <b>CFM</b> is <i>AESV2</i>, the <b>Length</b> key shall have the value of 128<ins onMouseEnter="mouseEnter(this)" data-issue="184"> for public-key security handlers, and 16 for the standard security handler</ins>.
-      When <b>CFM</b> is <i>AESV3</i>, the <b>Length</b> key shall have a value of 256<ins onMouseEnter="mouseEnter(this)" data-issue="184"> for public-key security handlers, and 32 for the standard security handler</ins>.
+      When <b>CFM</b> is <i>AESV2</i>, the <b>Length</b> key shall have the value of 128<ins onMouseEnter="mouseEnter(this)" data-issue="184" data-iso="submitted"> for public-key security handlers, and 16 for the standard security handler</ins>.
+      When <b>CFM</b> is <i>AESV3</i>, the <b>Length</b> key shall have a value of 256<ins onMouseEnter="mouseEnter(this)" data-issue="184" data-iso="submitted"> for public-key security handlers, and 32 for the standard security handler</ins>.
     </p>
     </td>
   </tr>
@@ -617,28 +617,28 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>Extensions</b></td>
     <td>dictionary</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="242">shall be a direct object;</ins> ISO 32000-1</i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="242" data-iso="submitted">shall be a direct object;</ins> ISO 32000-1</i>) ...
     </td>
   </tr>
   <tr>
     <td><b>Dests</b></td>
     <td>dictionary</td>
     <td>
-    (<i>Optional; PDF 1.1<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    (<i>Optional; PDF 1.1<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>) ...
     </td>
   </tr>
   <tr>
     <td><b>Outlines</b></td>
     <td>dictionary</td>
     <td>
-    (<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    (<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>) ...
     </td>
   </tr>
   <tr>
     <td><b>Threads</b></td>
     <td>array</td>
     <td>
-    (<i>Optional; PDF 1.1<del onMouseEnter="mouseEnter(this)" data-issue="106">; shall be an indirect reference</del></i>) ...
+    (<i>Optional; PDF 1.1<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; shall be an indirect reference</del></i>) ...
     </td>
   </tr>
   <tr>
@@ -648,7 +648,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <p>(<i>Optional; PDF 1.4</i>) A language identifier that shall specify the natural language for all text in the document except where overridden by language specifications for structure elements or marked-content (see 14.9.2, "Natural language specification"). If this entry is absent
     <ins onMouseEnter="mouseEnter(this)" data-issue="105" data-iso="approved"> or invalid (see 14.9.2, "Natural language specification")</ins>, the language shall be considered unknown.
     </p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="135">NOTE All text in a document includes PDF text strings (see 7.9.2.2 "Text string type") as well as textual content.</ins>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="135" data-iso="submitted">NOTE All text in a document includes PDF text strings (see 7.9.2.2 "Text string type") as well as textual content.</ins>
     </p>
     </td>
   </tr>
@@ -680,7 +680,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>ID</b></td>
     <td>byte string</td>
     <td>
-    (<i>Optional; PDF 1.3<del onMouseEnter="mouseEnter(this)" data-issue="106">; indirect reference preferred</del></i>) ...
+    (<i>Optional; PDF 1.3<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; indirect reference preferred</del></i>) ...
     </td>
   </tr>
 </table>
@@ -703,21 +703,21 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>Dests</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.2</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to destinations (see 12.3.2.4, "Named destinations").</p>
+    <p>(<i>Optional; PDF 1.2</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to destinations (see 12.3.2.4, "Named destinations").</p>
     </td>
   </tr>
   <tr>
     <td><b>AP</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to annotation appearance streams (see 12.5.5, "Appearance streams").</p>
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to annotation appearance streams (see 12.5.5, "Appearance streams").</p>
     </td>
   </tr>
   <tr>
     <td><b>JavaScript</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to document-level
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to document-level
        ECMAScript actions (see 12.6.4.17, "ECMAScript actions").</p>
     </td>
   </tr>
@@ -725,7 +725,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>Pages</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to visible
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to visible
        pages for use in interactive forms (see 12.7.7, "Named pages").</p>
     </td>
   </tr>
@@ -733,7 +733,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>Templates</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to invisible
+    <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to invisible
        (template) pages for use in interactive forms (see 12.7.7, "Named pages").</p>
     </td>
   </tr>
@@ -741,10 +741,10 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>EmbeddedFiles</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.4</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to file
+    <p>(<i>Optional; PDF 1.4</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to file
        specifications for embedded file streams (see 7.11.4, "Embedded file streams"). ...</p>
     <p>(<i>PDF 2.0</i>) For unencrypted wrapper documents for an encrypted payload document (see 7.6.7, "Unencrypted wrapper document") the
-       <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings provided in this tree shall not contain or be derived from
+       <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings provided in this tree shall not contain or be derived from
        the encrypted payload document’s actual file name. ...</p>
     </td>
   </tr>  
@@ -752,16 +752,16 @@ there is no way to specify that metadata is to be left unencrypted in these case
     <td><b>AlternatePresentations</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.4</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings to alternate presentations (see 13.5, "Alternate presentations").</p>
+    <p>(<i>Optional; PDF 1.4</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings to alternate presentations (see 13.5, "Alternate presentations").</p>
     </td>
   </tr>
   <tr>
     <td><b>Renditions</b></td>
     <td>name tree</td>
     <td>
-    <p>(<i>Optional; PDF 1.5</i>) A name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214">name</del> strings
-       (which shall have <del onMouseEnter="mouseEnter(this)" data-issue="214">Unicode</del>
-       <ins onMouseEnter="mouseEnter(this)" data-issue="214">a UTF-16BE</ins> encoding) to rendition objects (see 13.2.3, "Renditions").</p>
+    <p>(<i>Optional; PDF 1.5</i>) A name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">name</del> strings
+       (which shall have <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">Unicode</del>
+       <ins onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">a UTF-16BE</ins> encoding) to rendition objects (see 13.2.3, "Renditions").</p>
     </td>
   </tr>
 </table>
@@ -819,7 +819,7 @@ attributes" from some ancestor node of the page object. ...
 <p class="location">Change NOTE 4 as follows:</p>
 
 <p class="hangingindent">NOTE 4 This mechanism precludes beginning a string using <b>PDFDocEncoding</b>
-with the three characters <del onMouseEnter="mouseEnter(this)" data-issue="161">dieresis</del><ins onMouseEnter="mouseEnter(this)" data-issue="161">idieresis</ins>,
+with the three characters <del onMouseEnter="mouseEnter(this)" data-issue="161" data-iso="submitted">dieresis</del><ins onMouseEnter="mouseEnter(this)" data-issue="161" data-iso="submitted">idieresis</ins>,
 guillemotright, questiondown, which is unlikely to be a meaningful beginning of a word or phrase.</p>
 
 <p class="location">Delete NOTE 5 as follows:</p>
@@ -847,7 +847,7 @@ guillemotright, questiondown, which is unlikely to be a meaningful beginning of 
     <p>(<i>Root and leaf nodes only; required in leaf nodes; present in the root node if and only if <b>Kids</b> is not present</i>) Shall be an array of the form</p>
     <p>[<i>key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> ...key<sub>n</sub> value<sub>n</sub></i>]</p>
     <p>where each <i>key<sub>i</sub></i> shall be a string and the corresponding <i>value<sub>i</sub></i> shall be the
-      object associated with that key. The keys shall be sorted <del onMouseEnter="mouseEnter(this)" data-issue="214">in lexical order</del>, as described below.</p>
+      object associated with that key. The keys shall be sorted <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">in lexical order</del>, as described below.</p>
     </td>
   </tr>
 </table>
@@ -857,7 +857,7 @@ guillemotright, questiondown, which is unlikely to be a meaningful beginning of 
 
 <p>The <b>Kids</b> entries in the root and intermediate nodes define the tree’s structure by identifying the immediate children of each node.
 The <b>Names</b> entries in the leaf (or root) nodes shall contain the tree’s keys and their associated values, arranged in key-value pairs and shall be sorted
-<del onMouseEnter="mouseEnter(this)" data-issue="214">lexically</del> in ascending order by key. Shorter keys shall appear before longer ones beginning with the same byte sequence.
+<del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">lexically</del> in ascending order by key. Shorter keys shall appear before longer ones beginning with the same byte sequence.
 Any encoding of the keys may be used as long as it is self-consistent; keys shall be compared for equality on a simple byte-by-byte basis.
 </p>
 
@@ -899,7 +899,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     <td>
     <p>
     (<i>Optional, required in the case of an embedded file stream used as an associated file
-    <ins onMouseEnter="mouseEnter(this)" data-issue="156">(see 14.13 "Associated files") or as an asset of a RichMedia annotation (see "13.7 Rich media")</ins></i>) ...
+    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">(see 14.13 "Associated files") or as an asset of a RichMedia annotation (see "13.7 Rich media")</ins></i>) ...
     </p>
     </td>
   </tr>
@@ -960,7 +960,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 <p class="location">Change the paragraph as follows:</p>
 
 <p>The value of the <b>ExtensionLevel</b> entry shall be an integer, which shall be interpreted with respect to the <b>BaseVersion</b> value.
-If a developer has released multiple extensions against the same <b>BaseVersion</b> value, they <del onMouseEnter="mouseEnter(this)" data-issue="239">shall</del><ins onMouseEnter="mouseEnter(this)" data-issue="239">should</ins> be ordered over time and the <b>ExtensionLevel</b> numbers <del onMouseEnter="mouseEnter(this)" data-issue="239">shall be a monotonically increasing sequence</del><ins onMouseEnter="mouseEnter(this)" data-issue="239">should increase</ins> over time.
+If a developer has released multiple extensions against the same <b>BaseVersion</b> value, they <del onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="submitted">shall</del><ins onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="submitted">should</ins> be ordered over time and the <b>ExtensionLevel</b> numbers <del onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="submitted">shall be a monotonically increasing sequence</del><ins onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="submitted">should increase</ins> over time.
 </p>
 
 </div>

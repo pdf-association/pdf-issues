@@ -237,11 +237,11 @@ modified: 14 Oct 2022
 <p>
 In PDF 1.1, the correspondence between name objects and destinations shall be defined by the <b>Dests</b> entry in the document
 catalog dictionary (see 7.7.2, "Document catalog dictionary"). The value of this entry shall be a dictionary in which each key
-is a destination name and the corresponding value is either<del onMouseEnter="mouseEnter(this)" data-issue="162">an array defining the destination, using the syntax shown in
+is a destination name and the corresponding value is either<del onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="submitted">an array defining the destination, using the syntax shown in
 "Table 149 — Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
-an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162">:</ins>
+an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="submitted">:</ins>
 </p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="162">
+<ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="submitted">
  <ul>
   <li>an array defining the destination, using the syntax shown in "Table 149 — Destination syntax", or</li>
   <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry, as defined in "Table 202 — Additional entries specific to a go-to action".</li>
@@ -263,7 +263,7 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
     <td><b>Prev</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required for all but the first item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139">shall not be present on the first item at each level;</ins>
+    <p>(<i>Required for all but the first item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139" data-iso="submitted">shall not be present on the first item at each level;</ins>
         shall be an indirect reference</i>) The previous item at this outline level.</p>
     </td>
   </tr>
@@ -271,7 +271,7 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
     <td><b>Next</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Required for all but the last item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139">shall not be present on the last item at each level;</ins>
+    <p>(<i>Required for all but the last item at each level; <ins onMouseEnter="mouseEnter(this)" data-issue="139" data-iso="submitted">shall not be present on the last item at each level;</ins>
         shall be an indirect reference</i>) The next item at this outline level.</p>
     </td>
   </tr>
@@ -496,7 +496,7 @@ However, a projection annotation is only valid within the context of an associat
     <td><b>D</b></td>
     <td>name, byte string, or array</td>
     <td>
-     <p>(<i>Required</i>) The <ins onMouseEnter="mouseEnter(this)" data-issue="140">explicit destination or named</ins> destination to jump to (see 12.3.2, "Destinations").
+     <p>(<i>Required</i>) The <ins onMouseEnter="mouseEnter(this)" data-issue="140" data-iso="submitted">explicit destination or named</ins> destination to jump to (see 12.3.2, "Destinations").
      </p>
     </td>
   </tr>
@@ -543,7 +543,7 @@ However, a projection annotation is only valid within the context of an associat
 The <b>Kids</b> entry in the radio button field’s field dictionary (see "Table 226 — Entries common to all field dictionaries") holds an
 array of widget annotations representing the individual buttons in the set. The parent field’s <b>V</b> entry holds a name object
 corresponding to the appearance state of whichever child field is currently in the on state; the default value for this entry is <b>Off</b>.
-<ins onMouseEnter="mouseEnter(this)" data-issue="170">The appearance for the off state is optional but, if present, shall be stored in the appearance dictionary under the name <b>Off</b>.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="170" data-iso="submitted">The appearance for the off state is optional but, if present, shall be stored in the appearance dictionary under the name <b>Off</b>.</ins>
 The value of the <b>V</b> key shall also be the value of the <b>AS</b> key. If they are not equal, then the value of the <b>AS</b> key
 shall be used instead of the <b>V</b> key to determine which appearance to use.
 </p>
@@ -563,8 +563,8 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
     <td><b>MaxLen</b></td>
     <td>integer</td>
     <td>
-    <p>(<i>Optional; inheritable</i>) <ins onMouseEnter="mouseEnter(this)" data-issue="191">An integer value greater than or equal to zero that is the</ins>
-        <del onMouseEnter="mouseEnter(this)" data-issue="191">The</del> maximum length of the field’s text, in characters.
+    <p>(<i>Optional; inheritable</i>) <ins onMouseEnter="mouseEnter(this)" data-issue="191" data-iso="submitted">An integer value greater than or equal to zero that is the</ins>
+        <del onMouseEnter="mouseEnter(this)" data-issue="191" data-iso="submitted">The</del> maximum length of the field’s text, in characters.
     </p>
     </td>
   </tr>
@@ -607,15 +607,15 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
     <td><b>DigestMethod</b></td>
     <td>array</td>
     <td>
-    <p>(<i>Optional; PDF 1.7</i>) An <ins onMouseEnter="mouseEnter(this)" data-issue="159">unordered</ins> array of names indicating acceptable digest
-    algorithms to use while signing. <del onMouseEnter="mouseEnter(this)" data-issue="159">The value
-    </del><ins onMouseEnter="mouseEnter(this)" data-issue="159">Array values</ins> shall be <i>SHA1</i> (<i>deprecated with PDF 2.0</i>), <i>SHA256</i>,
-    <i>SHA384</i>, <i>SHA512</i> <del onMouseEnter="mouseEnter(this)" data-issue="159">and</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="159">or</ins> <i>RIPEMD160</i>. The default value is implementation-specific.
+    <p>(<i>Optional; PDF 1.7</i>) An <ins onMouseEnter="mouseEnter(this)" data-issue="159" data-iso="submitted">unordered</ins> array of names indicating acceptable digest
+    algorithms to use while signing. <del onMouseEnter="mouseEnter(this)" data-issue="159" data-iso="submitted">The value
+    </del><ins onMouseEnter="mouseEnter(this)" data-issue="159" data-iso="submitted">Array values</ins> shall be <i>SHA1</i> (<i>deprecated with PDF 2.0</i>), <i>SHA256</i>,
+    <i>SHA384</i>, <i>SHA512</i> <del onMouseEnter="mouseEnter(this)" data-issue="159" data-iso="submitted">and</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="159" data-iso="submitted">or</ins> <i>RIPEMD160</i>. The default value is implementation-specific.
     </p>
-    <p><del onMouseEnter="mouseEnter(this)" data-issue="158">This property is only applicable if the digital credential signing contains RSA public/private
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="158" data-iso="submitted">This property is only applicable if the digital credential signing contains RSA public/private
     keys. If it contains DSA public/private keys, the digest algorithm is always SHA-1 and this attribute shall be ignored.</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="158">Some signature mechanisms require a specific digest function to be used. In such cases, the value of this entry shall be ignored.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="158" data-iso="submitted">Some signature mechanisms require a specific digest function to be used. In such cases, the value of this entry shall be ignored.</ins>
     </p>
     </td>
   </tr>
@@ -676,7 +676,7 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
     If clear, the <b>Fields</b> array (see "Table 241 — Additional entries specific to a reset-form action") specifies which fields to reset.
     (All descendants of the specified fields in the field hierarchy are reset as well.) If set, the <b>Fields</b> array indicates which fields
     to exclude from resetting; that is, all fields in the document’s interactive form shall be reset <i>except</i> those listed in the <b>Fields</b> array.
-    <ins onMouseEnter="mouseEnter(this)" data-issue="174">(All descendants of the specified fields in the field hierarchy are also exempt from being reset.)</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="174" data-iso="submitted">(All descendants of the specified fields in the field hierarchy are also exempt from being reset.)</ins>
     </p>
     </td>
   </tr>
@@ -692,13 +692,13 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
 <p class="location">Change the last paragraph as follows:</p>
 
 <p>
-FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176"><code>application/fdf</code>, or the deprecated alias</ins> <code>application/vnd.fdf</code>.
+FDF shall use the MIME media type <ins onMouseEnter="mouseEnter(this)" data-issue="176" data-iso="submitted"><code>application/fdf</code>, or the deprecated alias</ins> <code>application/vnd.fdf</code>.
 On the Microsoft Windows&trade; and UNIX platforms, FDF files shall have the extension <code>.fdf</code>; on Mac OS, they shall have file type 'FDF'.
 </p>
 
 <p class="location">Add the following NOTE after the last paragraph:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="176">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="176" data-iso="submitted">
 NOTE See <a href="https://www.iana.org/assignments/media-types/application/fdf">https://www.iana.org/assignments/media-types/application/fdf</a> for more information.
 </ins></p>
 
@@ -709,8 +709,8 @@ NOTE See <a href="https://www.iana.org/assignments/media-types/application/fdf">
 <p class="location">Change the paragraph below Table 246 as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="173">Although deprecated in PDF 2.0</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="173">Although FDF file encryption is deprecated in PDF 2.0</ins>,
+<del onMouseEnter="mouseEnter(this)" data-issue="173" data-iso="submitted">Although deprecated in PDF 2.0</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="173" data-iso="submitted">Although FDF file encryption is deprecated in PDF 2.0</ins>,
 embedded FDF files specified in the FDF dictionary’s <b>EmbeddedFDFs</b> entry may be encrypted.
 Besides the usual entries for an embedded file stream, the stream dictionary representing such an encrypted FDF file shall contain the
 additional entry shown in "Table 247 — Additional entry in an embedded file stream dictionary for an encrypted FDF file" to identify
@@ -768,7 +768,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>name</td>
     <td>
     <p>...</p>
-    <p><del onMouseEnter="mouseEnter(this)" data-issue="219">(<i>PDF 1.6</i>)</del> The following values for public-key cryptographic signatures should be used: <i>adbe.x509.rsa_sha1</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.3)</ins>, <i>adbe.pkcs7.detached</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.3)</ins>, <i>adbe.pkcs7.sha1</i><ins onMouseEnter="mouseEnter(this)" data-issue="219"> (PDF 1.4)</ins>, <i>ETSI.CAdES.detached</i> (PDF 2.0) and <i>ETSI.RFC3161</i> (PDF 2.0).
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted">(<i>PDF 1.6</i>)</del> The following values for public-key cryptographic signatures should be used: <i>adbe.x509.rsa_sha1</i><ins onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted"> (PDF 1.3)</ins>, <i>adbe.pkcs7.detached</i><ins onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted"> (PDF 1.3)</ins>, <i>adbe.pkcs7.sha1</i><ins onMouseEnter="mouseEnter(this)" data-issue="219" data-iso="submitted"> (PDF 1.4)</ins>, <i>ETSI.CAdES.detached</i> (PDF 2.0) and <i>ETSI.RFC3161</i> (PDF 2.0).
     </p>
     <p>...</p>
     </td>
@@ -820,7 +820,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
   </tr>
   <tr>
     <td><b>P</b></td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="152">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="152">integer</ins></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="submitted">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="submitted">integer</ins></td>
     <td>
     <p>...</p>
     </td>
@@ -897,7 +897,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>
     <p>(<i>Optional</i>) An indirect reference to a signature dictionary (see "Table 255 — Entries in a signature dictionary").
     This dictionary shall contain a <b>Reference</b> entry that shall be
-    <ins onMouseEnter="mouseEnter(this)" data-issue="218"> an array with at least one entry, exactly one of which is</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="218" data-iso="submitted"> an array with at least one entry, exactly one of which is</ins>
     a signature reference dictionary (see "Table 255 — Entries in a signature dictionary") that has a <b>DocMDP</b> transform method (see 12.8.2.2, "DocMDP") and corresponding transform parameters.
     </p>
     <p>...</p>
@@ -924,7 +924,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
     <td>name</td>
     <td>
     <p>(<i>Required</i>) The type of requirement that this dictionary describes.
-    See <del onMouseEnter="mouseEnter(this)" data-issue="187">"Table 276 — Entries in a requirement handler dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="187">"Table 275 — Requirement types"</ins> for valid values.</p>
+    See <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">"Table 276 — Entries in a requirement handler dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">"Table 275 — Requirement types"</ins> for valid values.</p>
     </td>
   </tr>
 </table>
@@ -932,10 +932,10 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 <p class="location">Change the paragraph after Table 273 as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="187">
+<del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">
 There are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements (i.e., value of the <b>S</b> key). These are described in "Table 274 — Entries for specific types of requirements".
 </del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="187">
+<ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">
 In addition to the keys in "Table 273 - Entries common to all requirement dictionaries", there are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements as specified by the value of the <b>S</b> key. These are described in "Table 274 — Additional entries for specific types of requirements".
 </ins>
 </p>
@@ -943,7 +943,7 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
 <p class="location">Re-caption Table 274 as follows:</p>
 
 <table>
-  <caption id="Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187">Additional entries</ins> for specific types of requirements</caption>
+  <caption id="Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">Additional entries</ins> for specific types of requirements</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -969,8 +969,8 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
   <tr>
     <td><b>U3D</b></td>
     <td>
-     <p>Requires support for 3D data streams conforming to the U3D specification. This <del onMouseEnter="mouseEnter(this)" data-issue="195">shall apply</del>
-     <ins onMouseEnter="mouseEnter(this)" data-issue="195">applies</ins>
+     <p>Requires support for 3D data streams conforming to the U3D specification. This <del onMouseEnter="mouseEnter(this)" data-issue="195" data-iso="submitted">shall apply</del>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="195" data-iso="submitted">applies</ins>
      to the use of U3D in either 3D (13.6.3, "3D streams") or RichMedia annotations (13.7.2.2, "RichMediaSettings dictionary"). This also includes support for associated ECMAScripts.</p>
      <p>...</p>
     </td>
@@ -978,8 +978,8 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
   <tr>
     <td><b>PRC</b></td>
     <td>
-     <p>Requires support for 3D data streams conforming to the PRC specification. This <del onMouseEnter="mouseEnter(this)" data-issue="195">shall apply</del>
-     <ins onMouseEnter="mouseEnter(this)" data-issue="195">applies</ins>
+     <p>Requires support for 3D data streams conforming to the PRC specification. This <del onMouseEnter="mouseEnter(this)" data-issue="195" data-iso="submitted">shall apply</del>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="195" data-iso="submitted">applies</ins>
      to the use of PRC in either 3D (13.6.3, "3D streams") or RichMedia annotations (13.7.2.2, "RichMediaSettings dictionary"). This also includes support for associated ECMAScripts.</p>
      <p>...</p>
     </td>

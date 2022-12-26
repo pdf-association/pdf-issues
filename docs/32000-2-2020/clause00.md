@@ -21,7 +21,7 @@ modified: 14 October 2022
 <p class="fake-h1">{{ page.title }}</p>
 
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/214">Errata #214</a>, all occurrences of
+<p class="editornote" data-issue="214" data-iso="submitted">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/214">Errata #214</a>, all occurrences of
 the term "name string" are replaced by just "string" throughout ISO 32000-2:2020.</p>
 
 <p>...</p>
@@ -33,7 +33,7 @@ the term "name string" are replaced by just "string" throughout ISO 32000-2:2020
 <ul>
 <li>...</li>
 <li>
-<del onMouseEnter="mouseEnter(this)" data-issue="181">ISO 15076-1:2010 dated reference for ICC.1 can be supplemented by the Errata list and approved revisions available from the ICC website (http://color.org/icc_specs2.xalter) – see 8.6.5.5, "ICCBased colour spaces";</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ISO 15076-1:2010 dated reference for ICC.1 can be supplemented by the Errata list and approved revisions available from the ICC website (http://color.org/icc_specs2.xalter) – see 8.6.5.5, "ICCBased colour spaces";</del>
 </li>
 <li>...</li>
 </ul>

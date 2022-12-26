@@ -110,13 +110,14 @@ grep -o "data-[a-z]*\=\"[a-z0-9,]*\"" *.md
 
 - A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
 
-   ```
+   ```bash
    bundle exec jekyll serve
    ```
 
 - Visually check the rendered HTML appearance via [127.0.0.1:4000](127.0.0.1:4000) (default local jekyll URL)
 
-- "View Page source" from inside various browsers (Edge, Chrome, FF, Safari for Mac users) and check for 'red' tags indicating issues (such as typos, missing or mismatched HTML tags, etc).
+- "View Page source" from inside various browsers (Edge, Chrome, FireFox, Safari for Mac users) and check for 'red' tags indicating issues when viewing page source (such as typos, missing or mismatched HTML tags, etc).
+   - Common mistakes are mistyped tags and missing closing tags, which means at the bottom of each page "\<div>" might be visible in the page content, or the local ToC has "\<ul>" or "\<li>" visible.
 
 - Upload each of the local HTML files produced by jekyll (in `/docs/_site/clause`) to the [W3C HTML Validator](https://validator.w3.org/nu/#file).
    - Expected errors and warnings are:
@@ -130,6 +131,48 @@ grep -o "data-[a-z]*\=\"[a-z0-9,]*\"" *.md
 - If there are any issues when incorporated into the iframes used by pdfa.org, also check the direct GitHub Jekkll site at [https://pdf-association.github.io/pdf-issues/](https://pdf-association.github.io/pdf-issues/)
 
 - And don't forget to update the [Arlington PDF Model](https://github.com/pdf-association/arlington-pdf-model) for any required edits. This will be in the `tsv/latest` folder but also the XML and TSV file sets for earlier PDF versions.
+
+# Making a subset of resolved errata for review by ISO
+
+The goal is to create a subset of all closed Errata that are ready for ISO WG8 technical review ([using this query](https://github.com/pdf-association/pdf-issues/issues?q=is%3Aissue+is%3Aclosed+-label%3A%22ISO+approved%22+-label%3Awontfix)) that can be saved to PDF from a web browser using the equivalent of https://pdf-issues.pdfa.org. This relies on Jekyll and [iso-styles.css](assets/iso-style.css) `@media print` to produce something approximating an MSWord "track changes" document. Once the PDF is exported from a browser (_Chrome and FireFox are slightly different!_), then those same Errata need to be re-labelled `ISO submitted` ([this query](https://github.com/pdf-association/pdf-issues/issues?q=is%3Aissue+is%3Aclosed+label%3A%22ISO+submitted%22)) and the master MD files have `data-iso="submitted"` to the appropriate `<del` or `<ins` opening tag. 
+
+```bash
+# Make sure all errata have a data-iso="submitted" or data-iso="approved" attribute.
+# Any later errata resolutions by the PDF Association PDF TWG will not have a data-iso attribute.
+grep -o "data-issue=\"[0-9,]*\"[^>]*>" clauseXX.md
+```
+
+Once appproved by ISO with possible tweaks to wording, etc. then those Errata need to be re-labelled `ISO approved` in GitHub ([this query](https://github.com/pdf-association/pdf-issues/issues?q=is%3Aissue+is%3Aclosed+label%3A%22ISO+approved%22+)) and the master MD files have `data-iso="approved"` to the appropriate `<del` or `<ins` opening tag. 
+
+All resolved Errata are in the closed state in GitHub. Errata that are labelled "Won't fix" or are already labelled "ISO approved" must also be ignored.
+
+```bash
+cd ./docs
+
+# We don't care about index.md which is just convenience for web navigation
+rm 32000-2-2020/index.md
+
+# List the Errata numbers that will be include - confirm with GitHub browser query
+curl -s -H "Accept: application/vnd.github+json" https://api.github.com/search/issues?q=is:closed+is:issue+-label:wontfix,\"ISO%20approved\"+repo:pdf-association/pdf-issues\&per_page=90 | jq ".items[] | .number"
+
+# Find out the ISO 32000-2:2020 clauses - any clause NOT included can be deleted
+curl -s -H "Accept: application/vnd.github+json" https://api.github.com/search/issues?q=is:closed+is:issue+-label:wontfix,\"ISO%20approved\"+repo:pdf-association/pdf-issues\&per_page=90 | jq ".items[] | .number" | sed -re "s/^([0-9]+)/grep --files-with-matches 'data-issue=\\\\\"[0-9,]\*\1' .\/32000-2-2020\/\*.md/" > clauses.sh
+./clauses.sh | sort -u
+
+# Manually delete clauses that are NOT relevant to errata for ISO review
+ls 32000-2-2020/
+rm 32000-2-2020/xxxx.md
+
+# For each clause, work out which edits need to be kept and then manually delete ALL OTHER EDITS in each MD file.
+# Repeat the following commands for each clause.
+curl -s -H "Accept: application/vnd.github+json" https://api.github.com/search/issues?q=is:closed+is:issue+-label:wontfix,\"ISO%20approved\"+repo:pdf-association/pdf-issues\&per_page=90 | jq ".items[] | .number" | sed -re "s/^([0-9]+)/grep --with-filename --line-number 'data-issue=\\\\\"[0-9,]\*\1' .\/32000-2-2020\/clauseXX.md/" > clauseXX.sh
+./clauseXX.sh
+
+# From docs folder
+bundle install
+bundle exec jekyll serve
+```
+
 
 # Scripting GitHub pdf-issues
 
