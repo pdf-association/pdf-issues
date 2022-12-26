@@ -206,7 +206,7 @@ a miter to a bevel.
 <p class="location">Add a new NOTE 2 below NOTE 1 and above Table 67 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">NOTE 2 ICC profiles can contain private tags. This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="228" data-iso="submitted">NOTE 2 ICC profiles can contain private tags. This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.</ins>
 </p>
 
 <h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
