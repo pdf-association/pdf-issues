@@ -235,7 +235,7 @@ The meaning of the terms block-progression direction and inline-progression dire
     <td>
     <p>Encloses a grouping of structure elements without consideration for their hierarchy.</p>
     <p class="hangingindent">
-    NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted"><b>Part</b> is the semantic equivalent of <b>Div</b></del> <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted">The non-hierarchical aspect of <b>Part</b> is similar to <b>Div</b>. However, unlike <b>Div</b>, the grouping of elements enclosed in a <b>Part</b> structure element has semantic value.</ins>.
+    NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted"><b>Part</b> is the semantic equivalent of <b>Div</b></del> <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted">The non-hierarchical aspect of <b>Part</b> is similar to <b>Div</b>. However, unlike <b>Div</b>, the grouping of elements enclosed in a <b>Part</b> structure element has semantic value</ins>.
     </p>
     <p>A structure element with the type of <b>Part</b> shall inherit the containment requirements and limitations of its parent element. Where the parent element is itself a structure element of type <b>Part</b>, then the inheritance shall recurse to the first parent element whose type is not <b>Part</b>.</p>
     <p class="hangingindent">

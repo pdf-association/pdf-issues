@@ -31,7 +31,7 @@ modified: 20 May 2022
    </li>
    <li>13.6.3 3D streams
     <ul>
-     <li><a href="#H13.3.6.1">13.3.6.1 General</a>
+     <li><a href="#H13.6.3.1">13.6.3.1 General</a>
      </li>
     </ul>
    </li>
@@ -163,7 +163,7 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
 
 <h3 id="H13.6.3">13.6.3 3D streams</h3>
 
-<h4 id="H13.3.6.1">13.3.6.1 General</h4>
+<h4 id="H13.6.3.1">13.6.3.1 General</h4>
 
 <p class="location">Change Table 311 as follows:</p>
 
