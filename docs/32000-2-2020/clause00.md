@@ -24,6 +24,9 @@ modified: 14 October 2022
 <p class="editornote" data-issue="214" data-iso="submitted">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/214">Errata #214</a>, all occurrences of
 the term "name string" are replaced by just "string" throughout ISO 32000-2:2020.</p>
 
+<p class="editornote" data-issue="259">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/259">Errata #259</a>, all descriptive occurrences of
+the word "miter" (US spelling) are replaced by the International English spelling "mitre" throughout ISO 32000-2:2020.</p>
+
 <p>...</p>
 
 <h2 id="H0.4">0.4 Changes introduced in ISO 32000-2:2020</h2>
