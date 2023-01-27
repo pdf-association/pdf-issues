@@ -38,6 +38,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table47">Table 47 - Entries in a collection subitem dictionary</a></li>
 <li><a href="clause07.html#Table48">Table 48 - Entries in an extensions dictionary</a></li>
 <li><a href="clause08.html#Table50">Table 50 - Operator categories</a></li>
+<li><a href="clause08.html#Table52">Table 52 - Device-dependent graphics state parameters</a></li>
 <li><a href="clause08.html#Table59">Table 59 - Path-painting categories</a></li>
 <li><a href="clause08.html#Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></a></li>
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>

@@ -11,6 +11,8 @@ modified: 16 December 2022
  </li>
  <li>8.4 Graphics state
   <ul>
+   <li><a href="#H8.4.1">8.4.1 General</a>
+   </li>
    <li>8.4.3 Details of graphics state parameters
     <ul>
      <li><a href="#H8.4.3.5">Miter limit</a>
@@ -113,6 +115,28 @@ modified: 16 December 2022
 </table>
 
 <h2 id="H8.4">8.4 Graphics state</h2>
+
+<h3 id="H8.4.1">8.4.1 General</h3>
+
+<p class="location">Add the following row to Table 52 below the Haftone entry as follows:</p>
+
+<table>
+  <caption id="Table52">Table 52 - Device-dependent graphics state parameters</caption>
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="260">halftone origin</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="260">array</ins></td>
+    <td>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="260">
+    (<i>PDF 2.0</i>) The X and Y coordinates of the halftone origin. Initial value: a PDF reader shall initialise this to a suitable device dependent value.
+    </ins>
+    </td>
+  </tr>
+</table>
 
 <h3 id="H8.4.3">8.4.3 Details of graphics state parameters</h3>
 
