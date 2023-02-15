@@ -341,15 +341,17 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">U3D</ins></td>
    <td>
    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
-    The <b>Subtype</b> of the corresponding 3D Stream shall be <i>U3D</i> (see Table 311 "Entries in a 3D stream dictionary") then the value of the
-    <b>N</b> entry shall correspond to the field Node block name, specified in the Universal 3D file format (ECMA-363).
+    The <b>Subtype</b> of the corresponding 3D Stream shall be <i>U3D</i> (see Table 311 "Entries in a 3D stream dictionary") and the value of the
+    <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall correspond to the field Node block name, 
+    specified in the Universal 3D file format (ECMA-363).
     </ins>
    </td>
    <td>
    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
     (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary")
-    shall be the registered IANA MIME media type for U3D "<code>model/u3d</code>" (when expressed as a PDF name is <i>model#2Fu3d</i>) then the value of
-    the <b>N</b> entry shall correspond to the field Node block name, specified in the Universal 3D file format (ECMA-363).
+    shall be the registered IANA MIME media type for U3D "<code>model/u3d</code>" (when expressed as a PDF name is <i>model#2Fu3d</i>) and the value of
+    the <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall correspond to the field Node block name,
+    specified in the Universal 3D file format (ECMA-363).
    </ins>
    </td>
   </tr>
@@ -357,13 +359,15 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">PRC (<i>PDF 2.0</i>)</ins></td>
    <td>
    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
-    (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding 3D Stream shall be <i>PRC</i> (see Table 311 "Entries in a 3D stream dictionary") then the value of the
-    <b>N</b> entry shall be the Unique Identifier (UUID) as specified in ISO 14739-1.
+    (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding 3D Stream shall be <i>PRC</i> (see Table 311 "Entries in a 3D stream dictionary") and the value of the
+    <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall be the Unique Identifier (UUID) as specified 
+    in ISO 14739-1.
    </ins>
    </td>
    <td>
    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
-    (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary") shall be the registered IANA MIME media type for PRC "<code>model/prc</code>" (when expressed as a PDF name is <i>model#2Fprc</i>) then the value of the <b>N</b> entry shall be the Unique Identifier (UUID) as specified in ISO 14739-1.
+    (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary") 
+    shall be the registered IANA MIME media type for PRC "<code>model/prc</code>" (when expressed as a PDF name is <i>model#2Fprc</i>) and the value of the <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall be the Unique Identifier (UUID) as specified in ISO 14739-1.
    </ins>
    </td>
   </tr>
@@ -374,7 +378,8 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
     (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary") shall be one of the
     registered IANA MIME media types for STEP ("<code>model/step</code>", "<code>model/step+xml</code>", "<code>model/step+zip</code>", "<code>model/step-xml+zip</code>")
-    then the value of the <b>N</b> entry shall be the unique identifier (UUID), specified in the STEP AP 242 stream.
+    and the value of the <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall be the unique identifier 
+    (UUID), specified in the STEP AP 242 stream.
    </ins>
    </td>
   </tr>
