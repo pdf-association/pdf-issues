@@ -10,6 +10,18 @@
 &nbsp;&nbsp;&nbsp;
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCJL_M0VH2lm65gvGVarUTKQ?style=social)
 
+## Stats
+
+![Open Errata](https://img.shields.io/github/issues/pdf-association/pdf-issues)
+&nbsp;&nbsp;&nbsp;
+![Closed Errata](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues)
+&nbsp;&nbsp;&nbsp;
+![ISO Approved Errata](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues/ISO%20approved)
+&nbsp;&nbsp;&nbsp;
+![ISO Submitted Errata](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues/ISO%20submitted)
+
+## About
+
 This public GitHub repository "pdf-issues" is hosted by the <a href="https://www.pdfa.org">PDF Association</a> and
 provides all developers a means of openly reporting errata against ISO PDF related standards for review and resolution by industry and ISO experts.
 All issues in ISO PDF related standards are important, from minor typos and formatting issues, to
