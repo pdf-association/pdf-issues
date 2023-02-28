@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 14 Oct 2022
+modified: 1 April 2023
 ---
 
 <ul class="noprint">
@@ -715,7 +715,8 @@ embedded FDF files specified in the FDF dictionary’s <b>EmbeddedFDFs</b> entry
 Besides the usual entries for an embedded file stream, the stream dictionary representing such an encrypted FDF file shall contain the
 additional entry shown in "Table 247 — Additional entry in an embedded file stream dictionary for an encrypted FDF file" to identify
 the revision number of the FDF encryption algorithm used to encrypt the file. Although the FDF encryption mechanism is separate from
-the one for PDF file encryption described in 7.6, "Encryption" revision 1 (the only one defined) uses a similar RC4 encryption
+the one for PDF file encryption described in 7.6, "Encryption"<ins onMouseEnter="mouseEnter(this)" data-issue="264" data-iso="submitted">,</ins>
+revision 1 (the only one defined) uses a similar RC4 encryption
 algorithm based on a 40-bit encryption key. The key shall be computed by means of an MD5 hash, using a padded user-supplied password
 as input. The computation shall be identical to steps (a) and (b) of the
 "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)" in 7.6.4.3,
