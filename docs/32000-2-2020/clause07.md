@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 16 December 2022
+modified: 8 March 2023
 ---
 
 <ul class="noprint">
@@ -47,6 +47,8 @@ modified: 16 December 2022
     </li>
     <li>7.5.8 Cross-reference streams
      <ul>
+      <li><a href="#H7.5.8.2">7.5.8.2 Cross-reference stream dictionary</a>
+      </li>
       <li><a href="#H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</a>
       </li>
      </ul>
@@ -364,6 +366,26 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 <p>...</p>
 
 <h3 id="H7.5.8">7.5.8 Cross-reference streams</h3>
+
+<h4 id="H7.5.8.2">7.5.8.2 Cross-reference stream dictionary</h4>
+
+<p>...</p>
+
+<p class="location">Change the first bullet point as follows:</p>
+<ul>
+<li>
+The values of all entries shown in "Table 17 - Additional entries specific to a cross-reference
+stream dictionary" shall be direct objects; indirect references shall not be permitted. For arrays
+(the <b>Index</b> and <b>W</b> entries), all of their elements shall be direct objects as well. 
+<del onMouseEnter="mouseEnter(this)" data-issue="246">If the stream is encoded, the <b>Filter</b> and <b>DecodeParms</b> 
+entries in "Table 5 - Entries common to all stream dictionaries" shall also be direct objects.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="246">The values of all entries shown in "Table 5 - Entries common to 
+all stream dictionaries" shall also be direct objects. For arrays, all array elements shall be direct objects and for 
+dictionaries, all key values shall be direct objects as well. The <b>F</b> entry defined in Table 5 shall not be used.</ins> 
+</li>
+<li>...</li>
+</ul>
+
 
 <h4 id="H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</h4>
 
