@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 20 May 2022
+modified: 10 March 2023
 ---
 
 <ul class="noprint">
@@ -135,6 +135,16 @@ modified: 20 May 2022
     <th>Key</th>
     <th>Type</th>
     <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>CT</b></td>
+    <td>ASCII string</td>
+    <td>
+    <p>(<i>Optional; shall not be present for form XObjects</i>) An ASCII string identifying the type of data in <b>D</b>. The string 
+    <del onMouseEnter="mouseEnter(this)" data-issue="257">should</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="257">shall</ins> 
+    conform to the content type specification described in <i>Internet RFC 2045</i>.</p>
+    </td>
   </tr>
   <tr>
     <td><b>MH</b></td>
