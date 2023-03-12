@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 8 March 2023
+modified: 13 March 2023
 ---
 
 <ul class="noprint">
@@ -99,6 +99,8 @@ modified: 8 March 2023
   </li>
   <li>7.7 Document structure
    <ul>
+    <li><a href="#H7.7.1">7.7.1 General</a>
+    </li>
     <li><a href="#H7.7.2">7.7.2 Document catalog dictionary</a>
     </li>
     <li>7.7.3 Page tree
@@ -624,7 +626,28 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h2 id="H7.7">7.7 Document structure</h2>
 
+<h3 id="H7.7.1">7.7.1 General</h3>
+
+<p class="location">Move Figure 5 from subclause 7.7.2 to after the first paragraph, and update Figure 5 as follows:</p>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="261"> 
+  <figure>
+    <img src="../assets/figure5-document-structure.svg" alt="Updated Figure 5 - Structure of a PDF document, additionally showing Document Part in PDF DOM">
+    <figcaption>Figure 5 - Structure of a PDF document</figcaption>
+  </figure>
+</ins>
+
 <h3 id="H7.7.2">7.7.2 Document catalog dictionary</h3>
+
+<p>...</p>
+
+<p class="location">Move Figure 5 - Structure of a PDF document from here to subclause 7.7.1:</p>
+
+<del onMouseEnter="mouseEnter(this)" data-issue="261"> 
+  <figure>
+    <figcaption>Figure 5 - Structure of a PDF document</figcaption>
+  </figure>
+</del>
 
 <p class="location">Change Table 29 as follows:</p>
 
