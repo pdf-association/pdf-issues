@@ -20,9 +20,32 @@ The current set of resolved errata are presented as <span class="isostyle">
 <del title="GitHub Issue URL will appear">deletions</del> or
 <ins class="editornote" title="GitHub Issue URL will appear">editor notes</ins></span>
 to the published wording in the relevant ISO standard organized by clause number.
-GitHub Issue numbers will appear as popup tooltips when hovering over changes or inline when printed and refer back to
+GitHub Issue numbers and ISO status will appear as popup tooltips when hovering over changes or inline when printed and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
 closed GitHub pdf-issues</a>.
+</p>
+
+<ul>
+  <li>
+  If a small blue ISO logo is also shown <img href="./assets/Logo-ISO-small.png" alt="Small blue ISO logo">, then that errata has been approved by both the PDF Association's appropriate TWG and the appropriate <a href="https://www.pdfa.org/iso-status/">ISO working group responsible for PDF</a>. 
+    <ul>
+      <li>For ISO 32000-2:2020 (PDF 2.0), this means the resolution will be included in the forthcoming <a href="https://www.iso.org/standard/85145.html">Amendment 1</a>.</li>
+    </ul>
+  </li>
+
+  <li>
+  If a small gray ISO logo is also shown <img href="./assets/Logo-ISO-submitted-small.png" alt="Small gray ISO logo">, then that errata has been approved by the appropriate <a href="https://www.pdfa.org/community/">PDF Association technical working group</a> and submitted to the appropriate <a href="https://www.pdfa.org/iso-status/">ISO working group responsible</a> and is waiting for approval. 
+    <ul>
+      <li>For ISO 32000-2:2020 (PDF 2.0), these errata have been technically approved by ISO TC 171 SC 2 WG 8, but do not yet have an identified ISO document.</li>
+    </ul>
+  </li>
+
+  <li>
+  If no ISO logo is shown then the errata has been resolved by the appropriate <a href="https://www.pdfa.org/community/">PDF Association technical working group</a> but has not yet been submitted to ISO for ratification.
+  </li>
+</ul>
+
+<p>
 Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
 </p>
 
