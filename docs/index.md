@@ -32,6 +32,10 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
  <h3><b>Core PDF technologies</b></h3>
   <ul>
    <li>PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-32000-pdf/" target="_blank">ISO 32000-2:2020</a>) - <a href="32000-2-2020/index.html"><i>Resolved errata</i></a></li>
+     <ul>
+       <li><a href="https://www.pdfa.org/resource/iso-ts-32001/" target="_blank">ISO/TS 32001:2020 Document management — Portable Document Format — Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0)</a></li>
+       <li><a href="https://www.pdfa.org/resource/iso-ts-32002/" target="_blank">ISO/TS 32002:2020 Document management — Portable Document Format — Extensions to Digital Signatures in ISO 32000-2 (PDF 2.0)</a></li>
+    </ul>
    <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="21757-1-2020/index.html"><i>Resolved errata</i></a></li>
    <li>XFDF 3.0 (<a href="https://www.pdfa.org/resource/iso-19444-xfdf/" target="_blank">ISO 19444-1:2019</a>)</li>
   </ul>
