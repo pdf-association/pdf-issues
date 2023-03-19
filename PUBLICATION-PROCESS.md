@@ -108,10 +108,13 @@ grep -o "data-[a-z]*\=\"[a-z0-9,]*\"" *.md
    grep --color=auto -H "<h[2-9]" clauseXX.md | sed -e 's/^\(.*\)\.md:<h\([2-9]\) id=\"\(.*\)\">\(.*\)<\/h.>/\2 <li><a href=\"\1#\3\">\4<\/a>/'
    ```
 
-- A local version of GH-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll):
+- A local version of GitHub-Pages and Jekyll is used to check data entry and appearance before pushing to Github. See [GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll). Current environment is Windows with Ruby 3.2.1, gem 3.4.8 and bundler 2.4.8 as well as the latest version of all gems:
 
    ```bash
    bundle exec jekyll serve
+   
+   # Or if things are going wrong...
+   bundle exec jekyll serve --safe --trace --verbose
    ```
 
 - Visually check the rendered HTML appearance via [127.0.0.1:4000](127.0.0.1:4000) (default local jekyll URL)
@@ -122,7 +125,7 @@ grep -o "data-[a-z]*\=\"[a-z0-9,]*\"" *.md
 - Upload each of the local HTML files produced by jekyll (in `/docs/_site/clause`) to the [W3C HTML Validator](https://validator.w3.org/nu/#file).
    - Expected errors and warnings are:
        1. Errors (3): A link element must not appear as a descendant of a body element unless the link element has an itemprop attribute or has a rel attribute whose value contains dns-prefetch, modulepreload, pingback, preconnect, prefetch, preload, prerender, or stylesheet.
-       1. Warning: Consider using the `h1` element as a top-level heading only (all `h1` elements are treated as top-level headings by many screen readers and other tools).
+       2. Warning: Consider using the `h1` element as a top-level heading only (all `h1` elements are treated as top-level headings by many screen readers and other tools).
 
 - Each pdf-issue is then closed in GitHub, possibly with any additional comment if any unexpected issue or edit arose in implementing the PDF TWG recommendations.
 
@@ -168,7 +171,7 @@ rm 32000-2-2020/xxxx.md
 curl -s -H "Accept: application/vnd.github+json" https://api.github.com/search/issues?q=is:closed+is:issue+-label:wontfix,\"ISO%20approved\"+repo:pdf-association/pdf-issues\&per_page=90 | jq ".items[] | .number" | sed -re "s/^([0-9]+)/grep --with-filename --line-number 'data-issue=\\\\\"[0-9,]\*\1' .\/32000-2-2020\/clauseXX.md/" > clauseXX.sh
 ./clauseXX.sh
 
-# From docs folder
+# From ./docs folder
 bundle install
 bundle exec jekyll serve
 ```
