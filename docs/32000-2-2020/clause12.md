@@ -61,6 +61,8 @@ modified: 1 April 2023
     <ul>
      <li><a href="#H12.6.4.2">12.6.4.2 Go-To actions</a>
      </li>
+     <li><a href="#H12.6.4.16">12.6.4.16 Go-To-3D-View actions</a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -502,6 +504,28 @@ However, a projection annotation is only valid within the context of an associat
   </tr>
 </table>
 
+<h4 id="H12.6.4.16">12.6.4.16 Go-To-3D-View actions</h4>
+
+<p class="location">Change Table 220 as follows:</p>
+
+<table>
+  <caption id="Table220">Table 220 - Additional entries specific to a go-to-3D-view action</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>S</b></td>
+    <td>name</td>
+    <td>
+     <p>(<i>Required</i>) The type of action that this dictionary describes; shall be <i>GoTo3DView</i> for a
+      <del onMouseEnter="mouseEnter(this)" data-issue="265">transition</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="265">Go-To-3D-View</ins>
+      action.</p>
+    </td>
+  </tr>
+</table>
 
 <h2 id="H12.7">Forms</h2>
 
