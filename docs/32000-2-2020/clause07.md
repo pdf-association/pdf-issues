@@ -139,6 +139,12 @@ modified: 13 March 2023
    <ul>
     <li><a href="#H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</a>
     </li>
+    <li>7.10.5 Type 4 (PostScript calculator) functions
+     <ul>
+      <li><a href="#H7.10.5.2">7.10.5.2 Operators and operands</a>
+      </li>
+     </ul>
+    </li>
    </ul>
   </li>
   <li>7.11 File specifications
@@ -922,8 +928,29 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 
 <p>Typically, <b>Domain</b> is declared as [0.0 1.0], and <b>N</b> is a positive number. To clip the output to a specified range the <b>Range</b> attribute shall be used.</p>
 
-
 <p>...</p>
+
+<h3 id="H7.10.5">7.10.5 Type 4 (PostScript calculator) functions</h3>
+
+<h4 id="H7.10.5.2">7.10.5 Operators and operands</h4>
+
+<p class="location">Change Table 42 as follows:</p>
+
+<table>
+  <caption id="Table42">Table 42 - Operators in Type 4 functions</caption>
+  <tr>
+    <th>Operator Type</th>
+    <th>Operators</th>
+  </tr>
+  <tr>
+    <td>Conditional operators</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="269"><code>If</code></del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="269"><code>if</code></ins> 
+      <code>ifelse</code>
+    </td>
+  </tr>
+</table>
 
 <h3 id="H7.11.4">7.11.4 Embedded file streams</h3>
 

@@ -34,6 +34,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table31">Table 31 - Entries in a page object</a></li>
 <li><a href="clause07.html#Table32">Table 32 - Entries in the name dictionary</a></li>
 <li><a href="clause07.html#Table36">Table 36 - Entries in a name tree node dictionary</a></li>
+<li><a href="clause07.html#Table42">Table 42 - Operators in Type 4 functions</a></li>
 <li><a href="clause07.html#Table44">Table 44 - Additional entries in an embedded file stream dictionary</a></li>
 <li><a href="clause07.html#Table47">Table 47 - Entries in a collection subitem dictionary</a></li>
 <li><a href="clause07.html#Table48">Table 48 - Entries in an extensions dictionary</a></li>
