@@ -15,6 +15,12 @@ modified: 14 February 2022
             </li>
         </ul>
     </li>
+    <li>10.3 AnnotRichMedia
+        <ul>
+            <li><a href="#H10.3.2">10.3.2 AnnotRichMedia properties</a>
+            </li>
+        </ul>
+    </li>
 </ul>
 <hr>
 
@@ -71,6 +77,32 @@ modified: 14 February 2022
     <td style="font-family: monospace; font-size: smaller;">author, borderEffectIntensity, borderEffectStyle, contents, creationDate, delay, hidden, inReplyTo, intent, lock, modDate, name, noView, opacity, page, point, print, readOnly, rect, refType, richContents, rotate, seqNum, soundIcon, strokeColor, style, subject, toggleNoView, type, width</td>
   </tr>
 </table>
+
+<h2 id="H10.3">10.3 AnnotRichMedia</h2>
+
+<h3 id="H10.3.2">10.3.2 AnnotRichMedia</h3>
+
+<p class="location">Change Table 3 as follows:</p>
+
+<table>
+  <caption id="Table3">Table 3 - AnnotRichMedia object properties</caption>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Access</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="266">rec:</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="266">rect</ins>
+    </td>
+    <td>Array</td>
+    <td>R/W</td>
+    <td>...</td>
+  </tr>
+</table>
+
 
 </div>
 

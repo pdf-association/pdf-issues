@@ -27,6 +27,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 <p>The following tables have been corrected:</p>
 <ul>
 <li><a href="clause10.html#Table1">Table 1 - Annotation types and their properties</a></li>
+<li><a href="clause10.html#Table3">Table 3 - AnnotRichMedia object properties</a></li>
 </ul>
 
 <hr>
