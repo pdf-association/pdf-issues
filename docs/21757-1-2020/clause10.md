@@ -10,16 +10,30 @@ modified: 14 February 2022
     <li><a href="#H10.1">10.1 General</a>
     </li>
     <li>10.2 Annotation
-        <ul>
-            <li><a href="#H10.2.2">10.2.2 Annotation types</a>
-            </li>
-        </ul>
+      <ul>
+        <li><a href="#H10.2.2">10.2.2 Annotation types</a>
+        </li>
+      </ul>
     </li>
     <li>10.3 AnnotRichMedia
-        <ul>
-            <li><a href="#H10.3.2">10.3.2 AnnotRichMedia properties</a>
+      <ul>
+        <li><a href="#H10.3.2">10.3.2 AnnotRichMedia properties</a>
+        </li>
+      </ul>
+    </li>
+    <li>10.32 SOAP
+      <ul>
+        <li>10.32.3 SOAP methods
+          <ul>
+            <li>10.32.3.5 request(...)
+              <ul>
+                <li><a href="#H10.32.3.5.1">10.32.3.5.1 oRequest Parameter Details</a>
+                </li>
+              </ul>
             </li>
-        </ul>
+          </ul>
+        </li>
+      </ul>
     </li>
 </ul>
 <hr>
@@ -103,6 +117,32 @@ modified: 14 February 2022
   </tr>
 </table>
 
+<h2 id="H10.32">10.32 SOAP</h2>
+
+<h3 id="H10.32.3">10.32.3 SOAP methods</h3>
+
+<h4 id="H10.32.3.5">10.32.3.5 request(...)</h4>
+
+<h5 id="H10.32.3.5.1">10.32.3.5.1 oRequest Parameter Details</h5>
+
+<p class="location">Change Table 89 as follows:</p>
+
+<table>
+  <caption id="Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268">properties</ins></caption>
+  <tr>
+    <th>
+    <del onMouseEnter="mouseEnter(this)" data-issue="268">Parameter</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="268">Property</ins>
+    </th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+</table>
 
 </div>
 
