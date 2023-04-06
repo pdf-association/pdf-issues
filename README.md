@@ -10,6 +10,8 @@
 &nbsp;&nbsp;&nbsp;
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCJL_M0VH2lm65gvGVarUTKQ?style=social)
 
+Get your [zero-cost copy of ISO 32000-2 now](https://www.pdfa.org/announcing-no-cost-access-to-iso-32000-2-pdf-2-0/)! Includes ISO-approved errata and new PDF 2.0 crypto extensions.
+
 ## Stats
 
 ![Open Errata](https://img.shields.io/github/issues/pdf-association/pdf-issues)
