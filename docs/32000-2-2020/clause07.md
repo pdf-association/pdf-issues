@@ -129,6 +129,8 @@ modified: 9 May 2023
         </li>
        </ul>
       </li>
+      <li><a href="#H7.9.2.4">7.9.2.4 Byte string type</a>
+      </li>
      </ul>
     </li>
     <li><a href="#H7.9.6">7.9.6 Name trees</a>
@@ -899,6 +901,36 @@ guillemotright, questiondown, which is unlikely to be a meaningful beginning of 
 <p class="location">Delete NOTE 5 as follows:</p>
 
 <p class="hangingindent"><del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">NOTE 5  It is important not to confuse UTF-16BE with UCS2 (i.e. wchar_t). UTF-16 is not a fixed width encoding scheme.</del></p>
+
+
+<h4 id="H7.9.2.4">7.9.2.4 Byte string type</h4>
+
+<p class="location">Change the first paragraph as follows, including adding an EXAMPLE and a new NOTE:</p>
+
+<p>
+The byte string type shall be used for binary data that shall be represented as a series of bytes, where each byte may be any value representable in 8 bits.
+Byte string type is a subtype of string type. 
+<del onMouseEnter="mouseEnter(this)" data-issue="276">For example, byte strings are used to define a file identifier (see 14.4, "File identifiers") that is specified in ID entry of PDF file trailer
+(see "Table 15 — Entries in the file trailer dictionary").In such case byte string is written in hexadecimal form (see 7.3.4.3, "Hexadecimal strings") and looks like<br/>
+<code>&lt;B6FB54F3F8554D478DC874F11DAD0F11&gt;</code>
+</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="276">Unless otherwise stated in this document, a byte string may be either a literal string (see 7.3.4.2, "Literal strings") or a hexadecimal string (see 7.3.4.3, "Hexadecimal strings").</ins>
+</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="276">EXAMPLE Byte strings are used to define a file identifier (see 14.4, "File identifiers") 
+that are specified in the <b>ID</b> entry of the PDF file trailer (see "Table 15 — Entries in the file trailer dictionary"). 
+If written in hexadecimal form, an <b>ID</b> array entry looks like:<br/><br/>
+<code>&lt;B6FB54F3F8554D478DC874F11DAD0F11&gt;</code></ins>
+</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="276">NOTE 1 The <b>Contents</b> entry of a Signature dictionary can be required to be a hexadecimal string (see "Table 255 - Entries in a signature dictionary").</ins>
+</p>
+
+<p>
+NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276">2</ins> The string can represent characters but the encoding is not known. The bytes of the string do not have to represent characters.
+</p>
 
 
 <h3 id="H7.9.6">7.9.6 Name trees</h3>
