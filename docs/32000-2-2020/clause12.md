@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 1 April 2023
+modified: 9 May 2023
 ---
 
 <ul class="noprint">
@@ -168,6 +168,22 @@ modified: 1 April 2023
     <th>Key</th>
     <th>Type</th>
     <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>NonFullScreenPageMode</b></td>
+    <td>name</td>
+    <td>
+     <p>(<i>Optional</i>) The document’s page mode, specifying how to display the document on exiting full-screen mode:</p>
+     <ul>
+       <li><i>UseNone</i> Neither document outline nor thumbnail images visible</li>
+       <li><i>UseOutlines</i> Document outline visible</li>
+       <li><i>UseThumbs</i> Thumbnail images visible</li>
+       <li><i>UseOC</i> Optional content group panel visible</li>
+       <li><ins onMouseEnter="mouseEnter(this)" data-issue="275"><i>UseAttachments (PDF 2.0)</i> Attachments panel visible</ins></li>
+     </ul>
+     <p>This entry is meaningful only if the value of the <b>PageMode</b> entry in the catalog dictionary (see 7.7.2, "Document catalog dictionary") 
+     is <i>FullScreen</i>; it shall be ignored otherwise. Default value: <i>UseNone</i>.</p>
+    </td>
   </tr>
   <tr>
     <td><b>ViewArea</b></td>
