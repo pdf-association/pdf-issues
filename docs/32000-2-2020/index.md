@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 14 October 2022
+modified: 9 May 2023
 ---
 
 <p>
@@ -33,6 +33,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table29">Table 29 - Entries in the catalog dictionary</a></li>
 <li><a href="clause07.html#Table31">Table 31 - Entries in a page object</a></li>
 <li><a href="clause07.html#Table32">Table 32 - Entries in the name dictionary</a></li>
+<li><a href="clause07.html#Table34">Table 34 - Entries in a resource dictionary</a></li>
 <li><a href="clause07.html#Table36">Table 36 - Entries in a name tree node dictionary</a></li>
 <li><a href="clause07.html#Table42">Table 42 - Operators in Type 4 functions</a></li>
 <li><a href="clause07.html#Table44">Table 44 - Additional entries in an embedded file stream dictionary</a></li>

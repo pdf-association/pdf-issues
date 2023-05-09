@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 13 March 2023
+modified: 9 May 2023
 ---
 
 <ul class="noprint">
@@ -834,6 +834,29 @@ attributes" from some ancestor node of the page object. ...
 </ul>
 
 <p>...</p>
+
+<p class="location">Change Table 34 as follows:</p>
+
+<table>
+  <caption id="Table34">Table 34 - Entries in resource dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>ColorSpace</b></td>
+    <td>dictionary</td>
+    <td>
+    <p>(<i>Optional</i>) A dictionary that maps each resource name to either the name of a 
+    <del onMouseEnter="mouseEnter(this)" data-issue="280">device-dependent colour space</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="280">colour space with no additional parameters (<b>DeviceGray</b>, <b>DeviceRGB</b>, <b>DeviceCMYK</b>, or <b>Pattern</b>),</ins>     
+    or an array describing a colour space (see 8.6, "Colour spaces").
+    </p>
+    </td>
+  </tr>
+</table>
+
 
 <h2 id="H7.9">7.9 Common data structures</h2>
 <h3 id="H7.9.2">7.9.2 String object types</h3>
