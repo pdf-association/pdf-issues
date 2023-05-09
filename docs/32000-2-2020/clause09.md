@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 1 July 2022
+modified: 9 May 2023
 ---
 
 <ul class="noprint">
@@ -32,6 +32,12 @@ modified: 1 July 2022
    <li>9.7.4 CIDFonts
     <ul>
      <li><a href="#H9.7.4.1">9.7.4.1 General</a>
+     </li>
+    </ul>
+   </li>
+   <li>9.7.5 CMaps
+    <ul>
+     <li><a href="#H9.7.5.2">9.7.5.2 Predefined CMaps</a>
      </li>
     </ul>
    </li>
@@ -281,6 +287,24 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
     </td>
   </tr>
 </table>
+
+<h3 id="H9.7.5">9.7.5 CMaps</h3>
+
+<h4 id="H9.7.5.2">9.7.5.2 Predefined CMaps</h4>
+
+<p class="location">Change the paragraph after Table 117 as follows:</p>
+
+<p>
+A PDF processor shall support Adobe-CNS1-7, Adobe-GB1-5, Adobe-Japan1-7 and Adobe-KR-9 character collections.
+<del onMouseEnter="mouseEnter(this)" data-issue="278">".</del> 
+Adobe-Japan2-0 and Adobe-Korea1-2 are deprecated in this document (2020). As noted in 9.7.3, "CIDSystemInfo dictionaries", a character collection is identified
+by registry, ordering, and supplement number, and supplements are cumulative; that is, a higher-numbered supplement includes the CIDs contained in
+lower-numbered supplements, as well as some additional CIDs. Consequently, text encoded according to the predefined CMaps for a given PDF version shall be 
+valid when interpreted by a PDF processor supporting the same or a later PDF version. When interpreted by a PDF processor supporting an earlier PDF version,
+such text causes an error if a CMap is encountered that is not predefined for that PDF version. If character codes are encountered that were added in
+a higher-numbered supplement than the one corresponding to the supported PDF version, no characters are displayed for those codes; see 9.7.6.3, 
+"Handling undefined characters".
+</p>
 
 
 <h2 id="H9.8">9.8 Font descriptors</h2>
