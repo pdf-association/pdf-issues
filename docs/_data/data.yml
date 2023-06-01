@@ -27,6 +27,8 @@ toc:
         url:  clause14.html
       - ref: 'Annex A: Operator Summary'
         url:  clauseAnnexA.html
+      - ref: 'Annex D: Character sets and encodings'
+        url:  clauseAnnexD.html
       - ref: 'Annex F: Linearized PDF'
         url:  clauseAnnexF.html
       - ref: 'Annex H: Example PDF files'
