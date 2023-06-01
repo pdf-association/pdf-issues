@@ -534,6 +534,11 @@ However, a projection annotation is only valid within the context of an associat
 
 <h4 id="H12.6.4.16">12.6.4.16 Go-To-3D-View actions</h4>
 
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>A <i>go-to-3D-view action</i> (<i>PDF 1.6</i>) identifies a 3D <ins onMouseEnter="mouseEnter(this)" data-issue="282">or RichMedia</ins> annotation and specifies a view for the annotation to use (see 13.6, "3D Artwork"). 
+"Table 220 — Additional entries specific to a go-to-3D-view action" shows the entries in a go-to-3D-view action dictionary.</p>
+
 <p class="location">Change Table 220 as follows:</p>
 
 <table>
@@ -553,7 +558,29 @@ However, a projection annotation is only valid within the context of an associat
       action.</p>
     </td>
   </tr>
+  <tr>
+    <td><b>V</b></td>
+    <td>(various)</td>
+    <td>
+      <p>(<i>Required</i>) The view to use. It may be one of the following types:</p>
+      <ul>
+       <li>A 3D view dictionary (see 13.6.4, "3D views").</li>
+       <li>An integer specifying an index into the <b>VA</b> array in the <b>3D</b> stream (see "Table 311 — Entries in a 3D stream dictionary")
+       <ins onMouseEnter="mouseEnter(this)" data-issue="282">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
+       </li>
+       <li>A text string matching the <b>IN</b> entry in one of the views in the <b>VA</b> array (see "Table 315 — Entries in a 3D view dictionary")
+       <ins onMouseEnter="mouseEnter(this)" data-issue="282">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
+       </li>
+       <li>A name that indicates the first (<b>F</b>), last (<b>L</b>), next (<b>N</b>), previous (<b>P</b>), or default (<b>D</b>) entries in the <b>VA</b> 
+       <ins onMouseEnter="mouseEnter(this)" data-issue="282">or <b>Views</b></ins>
+       array; see discussion following this Table.
+       </li>
+      </ul>
+    </td>
+  </tr>
 </table>
+
+<p>...</p>
 
 <h2 id="H12.7">Forms</h2>
 
