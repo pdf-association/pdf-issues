@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 9 May 2023
+modified: 2 June 2023
 ---
 
 <ul class="noprint">
@@ -259,10 +259,10 @@ is a destination name and the corresponding value is either<del onMouseEnter="mo
 "Table 149 — Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
 an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="submitted">:</ins>
 </p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="submitted">
+<ins onMouseEnter="mouseEnter(this)" data-issue="162,288" data-iso="submitted">
  <ul>
   <li>an array defining the destination, using the syntax shown in "Table 149 — Destination syntax", or</li>
-  <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry, as defined in "Table 202 — Additional entries specific to a go-to action".</li>
+  <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry. See "Table 202 — Additional entries specific to a go-to action", "Table 203 - Additional entries specific to a remote go-to action" and "Table 204 - Additional entries specific to an embedded go-to action".</li>
  </ul>
 </ins>
 
