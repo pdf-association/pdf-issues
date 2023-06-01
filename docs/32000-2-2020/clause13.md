@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 10 March 2023
+modified: 2 June 2023
 ---
 
 <ul class="noprint">
@@ -44,6 +44,16 @@ modified: 10 March 2023
      <li><a href="#H13.6.4.6">13.6.4.6 3D cross section dictionaries</a>
      </li>
      <li><a href="#H13.6.4.7">13.6.4.7 3D node dictionaries</a>
+     </li>
+    </ul>
+   </li>
+   <li>13.6.7 Persistence of 3D measurements and markups
+    <ul>
+     <li>13.6.7.3 3D measurement/markup dictionary
+      <ul>
+       <li><a href="#H13.6.7.3.6">13.6.7.3.6 3D comment note</a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -394,6 +404,34 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    </td>
   </tr>
 </table>
+
+<h3 id="H13.6.7">13.6.7 Persistence of 3D measurements and markups</h3>
+
+<h4 id="H13.6.7.3">13.6.7.3 3D measurement/markup dictionary</h4>
+
+<h5 id="H13.6.7.3.6">13.6.7.3.6 3D comment note</h5>
+
+<p class="location">Modify Table 331 as follows:</p>
+
+<table>
+  <caption id="Table331">Table 331 - Additional entries in a 3D measurement/markup dictionary for a 3D comment note</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>S</b></td>
+    <td>dictionary</td>
+    <td>
+      (<i>Optional; PDF 2.0</i>) A comment reference is an indirect reference to a projection annotation that may be associated with this 3D measurement. 
+      <del onMouseEnter="mouseEnter(this)" data-issue="283">See "Table 341 — Entries in a RichMediaContent dictionary".</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="283">See 13.6.7.4, "3D measurements and projection annotations" .</ins>
+    </td>
+  </tr>
+</table>
+
+
 
 <h3 id="H13.7.2">RichMedia annotations</h3>
 
