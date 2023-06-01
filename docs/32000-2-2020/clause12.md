@@ -381,6 +381,18 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1" 
     </ul>
     </td>
   </tr>
+  <tr>
+    <td><b>Border</b></td>
+    <td>array</td>
+    <td>
+      <p>...</p>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="287">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry shall be ignored.</ins>
+      <p class="hanging-indent">
+      NOTE (<i>PDF 1.2</i>) The dictionaries for some annotation types (such as free text and polygon annotations) can include the <b>BS</b> entry. That entry specifies a border style dictionary that has more
+      settings than the array specified for the <b>Border</b> entry. <del onMouseEnter="mouseEnter(this)" data-issue="287">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry is ignored.</del>
+      </p>
+    </td>
+  </tr>
 </table>
 
 <p class="location">Change the paragraph and NOTEs below Table 166 as follows:</p>
