@@ -21,7 +21,7 @@ modified: 2 June 2023
 <p class="location">Add a new bibliographic entry as follows:</p>
 
 <p>
-[50] Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial"
+[50] Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial", (<a href="https://pdfa.org/norm-refs/5411.ToUnicode.pdf">https://pdfa.org/norm-refs/5411.ToUnicode.pdf</a>)
 </p>
 
 </div>
