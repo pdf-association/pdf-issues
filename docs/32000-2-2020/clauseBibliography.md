@@ -1,0 +1,30 @@
+---
+subset: PDF 2.0
+isodoc: ISO 32000-2:2020
+clause: Bibliography
+title: Bibliography
+modified: 2 June 2023
+---
+
+<ul class="noprint">
+</ul>
+<hr>
+
+<link rel="stylesheet" href="../assets/iso-style.css">
+<div class="isostyle">
+<div class="fixedpopup" id="issuelink">
+    Issue #xxxx
+</div>
+
+<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<p class="location">Add a new bibliographic entry as follows:</p>
+
+<p>
+[50] Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial"
+</p>
+
+</div>
+
+<hr>
+<p class="footnote">Last modified: {{page.modified}}</p>

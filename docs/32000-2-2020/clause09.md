@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 9 May 2023
+modified: 2 June 2023
 ---
 
 <ul class="noprint">
@@ -383,6 +383,16 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 (U+2003E), which is expressed by the byte sequence &lt;D840DC3E&gt; in UTF-16BE encoding.
 </p>
 
+
+<p class="location">Add the following note below the third paragraph below EXAMPLE 2 as follows:</p>
+
+<p>...</p>
+<p>In this case, the last byte of the string shall be incremented for each consecutive code in the source code range.</p>
+<p>When defining ranges of this type, the value of the last byte in the string shall be less than or equal to 255 - (<i>srcCode2 - srcCode1</i>). This ensures that the last byte of the string shall not be incremented past 255; otherwise, the result of mapping is undefined.</p>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="277">
+<p class="hanging-indent">NOTE the above requirements are specific to PDF and are not described in Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial".<p>
+</ins>
 
 </div>
 
