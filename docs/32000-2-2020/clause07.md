@@ -39,6 +39,8 @@ modified: 9 May 2023
   </li>
   <li><a href="#H7.5">7.5 File structure</a>
    <ul>
+    <li><a href="#H7.5.2">7.5.2 File header</a>
+    </li>
     <li><a href="#H7.5.4">7.5.4 Cross reference table</a>
     </li>
     <li><a href="#H7.5.5">7.5.5 File trailer</a>
@@ -265,6 +267,17 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 <p>...</p>
 
 <h2 id="H7.5">7.5 File structure</h2>
+
+<h3 id="H7.5.2">7.5.2 File header</h3>
+
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+If a PDF file contains binary data, as most do (see 7.2, "Lexical conventions"), the header line shall be immediately followed by a 
+<del onMouseEnter="mouseEnter(this)" data-issue="272">comment line containing</del> <ins onMouseEnter="mouseEnter(this)" data-issue="272">line containing only a comment that starts with</ins> 
+at least four binary characters–that is, characters whose codes are 128 or greater.
+This ensures proper behaviour of file transfer applications that inspect data near the beginning of a file to determine whether to treat the file’s contents as text or as binary.
+</p>
 
 <h3 id="H7.5.4">7.5.4 Cross reference table</h3>
 
