@@ -61,6 +61,8 @@ modified: 2 June 2023
     <ul>
      <li><a href="#H12.6.4.2">12.6.4.2 Go-To actions</a>
      </li>
+     <li><a href="#H12.6.4.8">12.6.4.8 URI actions</a>
+     </li>
      <li><a href="#H12.6.4.16">12.6.4.16 Go-To-3D-View actions</a>
      </li>
     </ul>
@@ -531,6 +533,15 @@ However, a projection annotation is only valid within the context of an associat
     </td>
   </tr>
 </table>
+
+<h4 id="H12.6.4.8">12.6.4.16 URI actions</h4>
+
+<p class="location">Note the following Editor Note that is inserted below Example 2:</p>
+
+<p class ="editornote">
+EDITOR NOTE: The remaining text in subclause 12.6.4.16 about <b>Base</b> and the URI dictionary (including Table 211 and NOTE) applies to all relative URIs in a PDF document and is not limited to only URI actions as is currently implied. 
+A future edition of ISO 32000 will move this text into a new subclause and update many other locations throughout ISO 32000 so this is entirely clear. See details described in <a href="https://github.com/pdf-association/pdf-issues/issues/256">Errata #256</a>.
+<p>
 
 <h4 id="H12.6.4.16">12.6.4.16 Go-To-3D-View actions</h4>
 
