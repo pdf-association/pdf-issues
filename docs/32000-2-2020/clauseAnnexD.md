@@ -41,7 +41,7 @@ modified: 2 June 2023
     <td>0x16</td>
     <td>0026</td>
     <td><del onMouseEnter="mouseEnter(this)" data-issue="285">U+0017</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285">U+0016</ins></td>
-    <td>(END OF TRANSMISSION BLOCK)</td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="285">(END OF TRANSMISSION BLOCK)</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285">(SYNCHRONOUS IDLE)</ins></td>
     <td>U</td>
   </tr>
 </table>
