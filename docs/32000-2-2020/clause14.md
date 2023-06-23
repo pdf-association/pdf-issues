@@ -178,8 +178,23 @@ data needed by the PDF processor other than the actual content of the document, 
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.
+NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not 
+<del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.
 </p>
+
+<p>...</p>
+
+<p class="location">Change the paragraph below Table 352 as follows:</p>
+
+<p>
+When the marked-content operators <b>BMC</b>, <b>BDC</b>, and <b>EMC</b> are combined with the text object operators <b>BT</b> and <b>ET</b>
+(see 9.4, "Text objects")
+<ins onMouseEnter="mouseEnter(this)" data-issue="302">; the compatibility operators <b>BX</b> and <b>EX</b> (see "Table 33 - Compatibility operators");
+or the graphics state save and restore operators <b>q</b> and <b>Q</b> (see "Table 56 - Graphics state operators")</ins>, each pair of matching
+operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="mouseEnter(this)" data-issue="302">or </del><b>BT</b>…<b>ET</b>
+<ins onMouseEnter="mouseEnter(this)" data-issue="302"><b>BX</b>…<b>EX</b> or <b>q</b>…<b>Q</b></ins>) shall be properly (separately) nested. ...
+</p>
+
 
 <h2 id="H14.7">14.7 Logical structure</h2>
 
