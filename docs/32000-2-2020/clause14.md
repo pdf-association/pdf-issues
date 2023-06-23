@@ -165,6 +165,16 @@ data needed by the PDF processor other than the actual content of the document, 
 
 <h3 id="H14.6.1">14.6.1 General</h3>
 
+<p class="location">Delete NOTE 1 as follows:</p>
+
+<p class="hangingindent">
+<del onMouseEnter="mouseEnter(this)" data-issue="303">NOTE 1 This is a sequence not simply of bytes in the content stream but of complete graphics objects. Each object is fully qualified by the parameters of the graphics state in which it is rendered.</del>
+</p>
+
+<p class="editornote">EDITOR NOTE: notes in subclause 14.6.1 will be renumbered.</p>
+
+<p>...</p>
+
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
