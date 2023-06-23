@@ -27,6 +27,12 @@ modified: 23 June 2023
    </li>
    <li><a href="#H14.7.3">14.7.3 Structure types</a>
    </li>
+   <li>14.7.6 Structure attributes
+    <ul>
+     <li><a href="#H14.7.6.2">14.7.6.2 Attribute classes</a>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
  <li>14.8 Tagged PDF
@@ -261,6 +267,17 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 </p>
 
 <p>...</p>
+
+<h3 id="H14.7.6">14.7.6 Structure attributes</h3>
+
+<h4 id="H14.7.6.2">14.7.6.2 Attribute classes</h4>
+
+<p class="location">Add a new NOTE after the last paragraph as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="254">NOTE If a class identified through the <b>C</b> entry is not present in the <b>ClassMap</b>, 
+it is an empty class, which defines no additional attributes.</ins>
+<p>
 
 <h2 id="H14.8">14.8 Tagged PDF</h2>
 
