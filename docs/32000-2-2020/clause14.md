@@ -184,6 +184,24 @@ NOTE 3 The tag operand of marked-content operators have no relationship to Tagge
 
 <p>...</p>
 
+<p class="location">Change Table 352 as follows:</p>
+
+<table>
+  <caption id="Table352">Table 352 -Marked content operators</caption>
+  <tr>
+    <th>Operands</th>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="301"><i>Tag</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="301"><i>tag</i></ins></td>
+    <td><b>BMC</b></td>
+    <td>Begin a marked-content sequence terminated by a balancing <b>EMC</b> operator. <i>tag</i> shall be a name object indicating the role or significance of the sequence.</td>
+  </tr>
+</table>
+
+
+
 <p class="location">Change the paragraph below Table 352 as follows:</p>
 
 <p>
@@ -191,8 +209,7 @@ When the marked-content operators <b>BMC</b>, <b>BDC</b>, and <b>EMC</b> are com
 (see 9.4, "Text objects")
 <ins onMouseEnter="mouseEnter(this)" data-issue="302">; the compatibility operators <b>BX</b> and <b>EX</b> (see "Table 33 - Compatibility operators");
 or the graphics state save and restore operators <b>q</b> and <b>Q</b> (see "Table 56 - Graphics state operators")</ins>, each pair of matching
-operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="mouseEnter(this)" data-issue="302">or </del><b>BT</b>…<b>ET</b>
-<ins onMouseEnter="mouseEnter(this)" data-issue="302"><b>BX</b>…<b>EX</b> or <b>q</b>…<b>Q</b></ins>) shall be properly (separately) nested. ...
+operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="mouseEnter(this)" data-issue="302">or </del><b>BT</b>…<b>ET</b><ins onMouseEnter="mouseEnter(this)" data-issue="302">, <b>BX</b>…<b>EX</b> or <b>q</b>…<b>Q</b></ins>) shall be properly (separately) nested. ...
 </p>
 
 

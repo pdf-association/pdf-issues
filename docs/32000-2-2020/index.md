@@ -89,6 +89,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table341">Table 341 - Entries in a RichMediaContent dictionary</a></li>
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>
 <li><a href="clause14.html#Table350">Table 350 - Entries in a page-piece dictionary</a></li>
+<li><a href="clause14.html#Table352">Table 352 - Marked content operators</a></li>
 <li><a href="clause14.html#Table355">Table 355 - Entries in a structure element dictionary</a></li>
 <li><a href="clause14.html#Table365">Table 365 - Grouping level structure types</a></li>
 <li><a href="clause14.html#Table368">Table 368 - General inline level structure types</a></li>
