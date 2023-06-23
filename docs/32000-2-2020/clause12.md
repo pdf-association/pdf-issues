@@ -458,6 +458,13 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
     <p class="hangingindent">NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="17" data-iso="approved">2</ins> The last paragraph above was clarified in this document (2020).</p>
     </td>
   </tr>
+  <tr>
+    <td><b>BS</b></td>
+    <td>dictionary</td>
+    <td>
+      <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299">1.3</ins>)</i>...
+    </td>
+  </tr>
 </table>
 
 <h4 id="H12.5.6.6">12.5.6.6 Free text annotations</h4>
@@ -477,6 +484,13 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
     <td>
     <p>(<i>Required</i>) The default appearance string that shall be used in formatting the text (see 12.7.4.3, "Variable text").</p>
     <p>The annotation dictionary's <b>AP</b> entry <del onMouseEnter="mouseEnter(this)" data-issue="42" data-iso="approved">, if present,</del> shall take precedence over the <b>DA</b> entry (see "Table 170 - Entries in an appearance dictionary" and 12.5.5, "Appearance streams").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>BS</b></td>
+    <td>dictionary</td>
+    <td>
+      <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299">1.3</ins>)</i>...
     </td>
   </tr>
 </table>
