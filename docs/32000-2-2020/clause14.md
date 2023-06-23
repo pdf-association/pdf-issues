@@ -272,6 +272,19 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <h4 id="H14.7.6.2">14.7.6.2 Attribute classes</h4>
 
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+The <b>C</b> entry in a structure element dictionary (see "Table 355 — Entries in a structure element dictionary") shall contain a class name or
+an array of class names (typically accompanied by revision numbers as well; see 14.7.6.3, "Attribute revision numbers"). For each class named in
+the <b>C</b> entry, the corresponding attribute object or objects shall be considered to be attached to the given structure element, along with
+those identified in the element’s <b>A</b> entry. 
+<ins onMouseEnter="mouseEnter(this)" data-issue="289">Attribute objects included through a class and through an array of classes within the <b>C</b>
+entry may have the value of <b>O</b> and <b>NS</b> repeated. If a given attribute is specified more than once across the attribute objects, the later
+(in array order) shall take precedence.</ins>
+If both the <b>A</b> and <b>C</b> entries are present and a given attribute is specified by both, the one specified by the <b>A</b> entry shall take precedence.
+</p>
+
 <p class="location">Add a new NOTE after the last paragraph as follows:</p>
 
 <p class="hangingindent">
