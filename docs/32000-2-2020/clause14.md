@@ -563,6 +563,14 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
 
 <p>...</p>
 
+<p class="location">Add a new NOTE after the current note below Table 376 as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="286">NOTE The attribute owner, defined through the <b>O</b> and <b>NS</b> entries in the attribute object, define an owner for each attribute, but do not provide information on transformation of those attributes into other formats. When considering formats such as HTML and MathML, attributes would be transformed to meet the syntactic requirements of those formats.</ins>
+<p>
+
+<p>...</p>
+
 <h4 id="H14.8.5.3">14.8.5.3 Attribute values and inheritance</h4>
 
 <p>...</p>
