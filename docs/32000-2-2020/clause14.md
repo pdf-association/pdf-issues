@@ -7,6 +7,12 @@ modified: 16 December 2022
 ---
 
 <ul class="noprint">
+ <li>14.3 Metadata
+  <ul>
+   <li><a href="#H14.3.2">14.3.2 Metadata streams</a>
+   </li>
+  </ul>
+ </li>
  <li><a href="#H14.5">14.5 Page-piece dictionaries</a>
  </li>
  <li>14.6 Marked content
@@ -123,6 +129,18 @@ modified: 16 December 2022
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="H14.3">14.3 Metadata</h2>
+
+<h3 id="H14.3.2">14.3.2 Metadata streams</h3>
+
+<p class="location">Change the paragraph below Table 347 as follows:</p>
+
+<p>
+The contents of a metadata stream shall be the metadata represented in Extensible Markup Language (XML) and the grammar of the XML representing the metadata shall be defined according to the extensible metadata platform specification (ISO 16684-1). 
+<ins onMouseEnter="mouseEnter(this)" data-issue="296">All XMP metadata in PDF shall be encoded as UTF-8.</ins>
+</p>
+
 
 <h2 id="H14.5">14.5 Page-piece dictionaries</h2>
 
