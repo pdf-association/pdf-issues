@@ -97,7 +97,7 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
   <h3><b>Other ISO PDF publications</b></h3>
   <ul>
    <li><a href="https://www.pdfa.org/resource/iso-23504-pdfr/" target="_blank"><b>PDF/R-1</b> - ISO 23504-1:2020 PDF for raster image transport and storage</a></li>
-   <li><a href="https://pdfa.org/resource/3d-formats/" target="_blank"><b>PRC</b> - ISO 14739-1:2014 Document management — 3D use of Product Representation Compact (PRC) format — Part 1: PRC 10001</a>
+   <li><a href="https://pdfa.org/resource/3d-formats/" target="_blank"><b>PRC</b> - ISO 14739-1:2014 Document management — 3D use of Product Representation Compact (PRC) format — Part 1: PRC 10001</a></li>
   </ul>
 
 <p>Errata on PDF 1.7 (ISO 32000-1:2008) and withdrawn ISO publications are <b>not</b> supported.
