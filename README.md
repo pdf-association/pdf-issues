@@ -18,6 +18,8 @@ Get your [zero-cost copy of ISO 32000-2 now](https://www.pdfa.org/announcing-no-
 &nbsp;&nbsp;&nbsp;
 ![Closed Errata](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues)
 &nbsp;&nbsp;&nbsp;
+![ISO 32000-2 Amd1](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues/ISO%2032000-2%20Amd1)
+&nbsp;&nbsp;&nbsp;
 ![ISO Approved Errata](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues/ISO%20approved)
 &nbsp;&nbsp;&nbsp;
 ![ISO Submitted Errata](https://img.shields.io/github/issues-closed-raw/pdf-association/pdf-issues/ISO%20submitted)
