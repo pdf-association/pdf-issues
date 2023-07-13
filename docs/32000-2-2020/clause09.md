@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 2 June 2023
+modified: 14 July 2023
 ---
 
 <ul class="noprint">
@@ -190,7 +190,25 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
     </p>
     </td>
   </tr>
+  <tr>
+    <td><b>Resources</b></td>
+    <td>dictionary</td>
+    <td>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="128">(<i>Optional but should be used; PDF 1.2</i>) A list of the named resources, such as fonts and images, required by the glyph descriptions in this font (see 7.8.3, "Resource dictionaries"). 
+    If any glyph descriptions refer to named resources but this dictionary is absent, the names shall be looked up in the resource dictionary of the page on which the font is used.</del><br/>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="128">(<i>Optional; PDF 1.2</i>) Named resources, such as fonts and images, directly required by the glyph description content streams of this Type 3 font (see 7.8.3, "Resource dictionaries").</ins>
+    </p>
+    </td>
+  </tr>
 </table>
+
+<p class="location">Change bullet (d) in the list below Table 110 as follows:</p>
+
+<ol type="a" start="4">
+ <li><del onMouseEnter="mouseEnter(this)" data-issue="128">If any glyph descriptions refer to named resources they shall be looked up in the <b>Resources</b> entry of the Type 3 font dictionary. If any glyph descriptions refer to named resources but this dictionary is absent, the names shall be looked up in the resource dictionary of the page on which the font is used.</del><br/>
+ <ins onMouseEnter="mouseEnter(this)" data-issue="128">If a glyph description content stream refers to named resources they shall be looked up in the designated resource dictionary as described in subclause 7.8.3 "Resource dictionaries".</ins>
+ </li>
+</ol>
 
 <p>...</p>
 

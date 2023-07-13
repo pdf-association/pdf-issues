@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 9 May 2023
+modified: 14 July 2023
 ---
 
 <ul class="noprint">
@@ -15,6 +15,8 @@ modified: 9 May 2023
   </li>
   <li>7.3 Objects
    <ul>
+    <li><a href="#H7.3.3">7.3.3 Numeric objects</a>
+    </li>
     <li>7.3.4 String objects
      <ul>
       <li><a href="#H7.3.4.2">7.3.4.2 Literal strings</a>
@@ -117,6 +119,8 @@ modified: 9 May 2023
   </li>
   <li>7.8 Content streams and resources
    <ul>
+    <li><a href="#H7.8.2">7.8.2 Content streams</a>
+    </li>
     <li><a href="#H7.8.3">7.8.3 Resource dictionaries</a>
     </li>
    </ul>
@@ -153,6 +157,8 @@ modified: 9 May 2023
   </li>
   <li>7.11 File specifications
    <ul>
+    <li><a href="#H7.11.3">7.11.3 File specification dictionaries</a>
+    </li>
     <li>7.11.4 Embedded file streams
      <ul>
       <li><a href="#H7.11.4.1">7.11.4.1 General</a>
@@ -204,6 +210,22 @@ However, a</del>
 <p>...</p>
 
 <h2 id="H7.3">7.3 Objects</h2>
+
+<h3 id="H7.3.3">7.3.3 Numeric objects</h3>
+
+<p class="location">Change EXAMPLE 1 as follows:</p>
+
+<p>EXAMPLE 1 Integer objects</p>
+<code class="hangingindent">123   43445   +17   -98   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300">00987</ins></code>
+
+<p>...</p>
+
+<p class="location">Change EXAMPLE 2 as follows:</p>
+
+<p>EXAMPLE 2 Real objects</p>
+<code class="hangingindent">34.5   -3.62   +123.6   4.   -.002   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300" >009.87</ins></code>
+
+<p>...</p>
 
 <h3 id="H7.3.4">7.3.4 String objects</h3>
 
@@ -833,20 +855,78 @@ there is no way to specify that metadata is to be left unencrypted in these case
 </table>
 
 
+<h3 id="H7.8.2">7.8.2 Content streams</h3>
+
+<p class="location">Change the paragraph above Table 33 as follows:</p>
+
+<p>
+Ordinarily, when a PDF reader encounters an operator in a content stream that it does not recognise, an error shall occur. A pair of compatibility
+operators, <b>BX</b> and <b>EX</b> (<i>PDF 1.1</i>), shall modify this behaviour (see "Table 33 — Compatibility operators"). These operators shall
+occur in pairs and may be nested. They bracket a compatibility section, a portion of a content stream within which unrecognised operators shall be
+ignored without error. This mechanism enables a PDF processor to use operators defined in later versions of PDF without sacrificing compatibility
+with older applications. It should be used only in cases where ignoring such newer operators is the appropriate thing to do. The <b>BX</b> and 
+<b>EX</b> operators are not themselves part of any graphics object (see 8.2, "Graphics objects") or of the graphics state (8.4, "Graphics state").
+<ins onMouseEnter="mouseEnter(this)" data-issue="302">
+All pairs of matching operators (marked-content operators <b>BMC</b>, <b>BDC</b>, and <b>EMC</b> (see 14.6, "Marked content"); text object operators
+<b>BT</b> and <b>ET</b> (see 9.4, "Text objects"); the compatibility operators <b>BX</b> and <b>EX</b> (see "Table 33 - Compatibility operators")
+and the graphics state save and restore operators <b>q</b> and <b>Q</b> (see "Table 56 - Graphics state operators")) shall be properly (separately)
+nested.</ins>
+</p>
+
+
 <h3 id="H7.8.3">7.8.3 Resource dictionaries</h3>
 
-<p class="location">Change the first bullet in the first bulleted list as follows:</p>
+<p class="location">Change the bulleted list below EXAMPLE 1 as follows:</p>
 
 <p>A resource dictionary shall be associated with a content stream in one of the following ways:</p>
 
 <ul>
-<li>
-For a content stream that is the value of a page's <b>Contents</b> entry
-<del onMouseEnter="mouseEnter(this)" data-issue="9" data-iso="approved">(or is an element of an array that is the value of that entry)</del>, the resource dictionary shall
-be designated by the page dictionary's <b>Resources</b> entry or is inherited, as described under 7.7.3.4, "Inheritance of page
-attributes" from some ancestor node of the page object. ...
-</li>
+  <li>
+  For a content stream that is the value of a page's <b>Contents</b> entry
+  <del onMouseEnter="mouseEnter(this)" data-issue="9" data-iso="approved">(or is an element of an array that is the value of that entry)</del>,
+  the resource dictionary shall be designated by the page dictionary's <b>Resources</b> entry or is inherited, as described under 
+  7.7.3.4, "Inheritance of page attributes" from some ancestor node of the page object. PDF writers should not use this inheritance feature
+  of PDF as its use can cause undue complexity for a PDF reader. A PDF writer should only include resource definitions for resources that are 
+  actually referenced by the content streams of the associated page in the <b>Resources</b> dictionary. If the content streams of multiple
+  pages require exactly the same set of resources, a single <b>Resources</b> dictionary may be shared between them by using indirect references.
+  If each page requires different sets of resources, then each should be written with its own <b>Resources</b> dictionary.
+  </li>
+  <li>
+    <del onMouseEnter="mouseEnter(this)" data-issue="128">
+      Content streams that define the glyph descriptions of a Type 3 font shall include a <b>Resources</b> entry in the Type 3 font dictionary specifying all the resources used by all the content streams in the <b>CharProcs</b> dictionary of a Type 3 font.
+    </del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="128">
+      <p>If a glyph description content stream in the <b>CharProcs</b> entry of a Type 3 font uses named resources directly then those resources shall be present in the resource dictionary designated by the first <b>Resources</b> entry found in the following search order:
+      </p>
+      <ol>
+        <li>the stream dictionary of that glyph description content stream;</li>
+        <li>the parent Type 3 font dictionary that contained the <b>CharProcs</b> entry with the glyph description content stream;</li>
+      </ol>
+      <p>If there is no <b>Resources</b> dictionary explicitly associated with the Type 3 glyph description content stream or Type 3 font dictionary:</p>
+      <ol start="3">
+        <li>the parent page dictionary on which the Type 3 font is used;</li>
+        <li>resource inheritance from ancestor nodes of the parent page dictionary (see 7.7.3.4 "Inheritance of page attributes").</li>
+      </ol>
+      <p class="hanging-indent">NOTE 2: Named resources referenced by a resource, such as an XObject referenced from a glyph description content stream, would be included in the <b>Resources</b> dictionary of that resource rather than in the designated resource dictionary of the glyph description content stream.</p>
+    </ins>
+  </li>
+  <li>
+    For other types of content streams, a PDF writer shall include a <b>Resources</b> entry in the stream's dictionary specifying a resource dictionary which contains all named resources used by that
+    content stream. This shall apply to content streams that define form XObjects (see "Table 93 — Additional entries specific to a Type 1 form dictionary"), 
+    patterns (see "Table 74 — Additional entries specific to a Type 1 pattern dictionary"), and annotation appearances (see 12.5.5 "Appearance streams").
+  </li>
+  <li>
+    <del onMouseEnter="mouseEnter(this)" data-issue="128">PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in all form XObjects and Type 3 fonts used on a page. 
+    All resources that are referenced from those forms and fonts shall be inherited from the resource dictionary of the page on which they are used.</del>
+  </li>
 </ul>
+
+<p class="hanging-indent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="128">
+NOTE 3 PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in form XObjects, Type 3 glyph descriptions or annotation appearance streams used on a page. 
+Those earlier versions state that resources that were referenced from those content streams can be inherited from the resource dictionary of the page on which they are used.
+</ins>
+</p>
 
 <p>...</p>
 
@@ -1019,6 +1099,33 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     </td>
   </tr>
 </table>
+
+<h2 id="H7.11">7.11 File specifications</h2>
+
+<h3 id="H7.11.3">7.11.3 File specification dictionaries</h3>
+
+<p class="location">Change Table 43 as follows:</p>
+
+<table>
+  <caption id="Table43">Table 43 - Entries in a file specification dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Type</b></td>
+    <td>name</td>
+    <td>
+    <p>
+      (<i>Required if an <b>EF</b>, <b>EP</b> or <b>RF</b> entry is present; recommended always<ins onMouseEnter="mouseEnter(this)" data-issue="298">; PDF 1.3</ins></i>)
+      The type of PDF object that this dictionary describes; shall be <i>Filespec</i> for a file specification dictionary.
+    </p>
+    </td>
+  </tr>
+</table>
+ 
+
 
 <h3 id="H7.11.4">7.11.4 Embedded file streams</h3>
 
