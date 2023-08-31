@@ -58,7 +58,23 @@ Errata in the following published ISO publications are supported:
 
 ### Core PDF technologies
   <ul>
-   <li>PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-32000-pdf/" target="_blank">ISO 32000-2:2020</a>) - <a href="https://pdf-issues.pdfa.org/32000-2-2020/index.html"><i>Resolved errata</i></a></li>
+   <li>PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-32000-pdf/" target="_blank">ISO 32000-2:2020</a>) - <a href="https://pdf-issues.pdfa.org/32000-2-2020/index.html"><i>Resolved errata</i></a>
+   <ul>
+     <li>
+     ISO/TS 32001 <a href="https://www.pdfa.org/resource/iso-ts-32001/">Extensions to Hash Algorithm Support in PDF 2.0</a>	
+     </li>
+     <li>ISO/TS 32002 <a href="https://www.pdfa.org/resource/iso-ts-32002">Extensions to Digital Signatures in PDF 2.0</a>
+     </li>
+     <li>ISO/TS 24064 <a href="https://pdfa.org/resource/iso-ts-24064/">RichMedia annotations with STEP AP 242 3D for PDF 2.0</a>
+     </li>
+     <li>ISO/TS 32003 <a href="https://pdfa.org/resource/iso-ts-32003-aes-gcm/">Adding support of AES-GCM in PDF 2.0</a>
+     </li>
+     <li>ISO/TS 32004 <a href="https://pdfa.org/resource/iso-ts-32004-integrity-protection/">Integrity protection in encrypted documents in PDF 2.0</a>
+     </li>
+     <li>ISO/TS 32005 <a href="https://pdfa.org/resource/iso-32005/">PDF 1.7 and 2.0 structure namespace inclusion in PDF 2.0</a>
+     </li>
+   </ul>
+   </li>
    <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="https://pdf-issues.pdfa.org/21757-1-2020/index.html"><i>Resolved errata</i></a></li>
    <li>XFDF 3.0 (<a href="https://www.pdfa.org/resource/iso-19444-xfdf/" target="_blank">ISO 19444-1:2019</a>)</li>
   </ul>
