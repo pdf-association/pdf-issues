@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 14 July 2023
+modified: 15 September 2023
 ---
 
 <ul class="noprint">
@@ -38,6 +38,13 @@ modified: 14 July 2023
    <li>9.7.5 CMaps
     <ul>
      <li><a href="#H9.7.5.2">9.7.5.2 Predefined CMaps</a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+   <li>9.7.6 Type 0 font dictionaries
+    <ul>
+     <li><a href="#H9.7.6.1">9.7.6.1 General</a>
      </li>
     </ul>
    </li>
@@ -324,6 +331,31 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
 "Handling undefined characters".
 </p>
 
+
+<h3 id="H9.7.6">9.7.6 Type 0 font dictionaries</h3>
+
+<h4 id="H9.7.6.1">9.7.6.1 General</h4>
+
+<p class="location">Change Table 119 as follows:</p>
+
+<table>
+  <caption id="Table119">Table 119 - Entries in a Type 0 font dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>ToUnicode</b></td>
+    <td>stream</td>
+    <td>
+    <i>(Optional)</i> A stream containing a CMap file that maps character codes to Unicode values (see 
+    <del onMouseEnter="mouseEnter(this)" data-issue="324">9.9.2, "Font subsets"</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="324">9.10, "Extraction of Text Content"</ins>
+    ).
+    </td>
+  </tr>
+</table>
 
 <h2 id="H9.8">9.8 Font descriptors</h2>
 
