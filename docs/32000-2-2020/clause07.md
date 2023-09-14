@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 14 July 2023
+modified: 15 September 2023
 ---
 
 <ul class="noprint">
@@ -738,6 +738,13 @@ there is no way to specify that metadata is to be left unencrypted in these case
     </p>
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="135" data-iso="submitted">NOTE All text in a document includes PDF text strings (see 7.9.2.2 "Text string type") as well as textual content.</ins>
     </p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>StructTreeRoot</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="348">; shall be an indirect reference</ins></i>) ...
     </td>
   </tr>
 </table>
