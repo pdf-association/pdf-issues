@@ -47,6 +47,8 @@ modified: 15 September 2023
     </li>
     <li><a href="#H7.5.5">7.5.5 File trailer</a>
     </li>
+    <li><a href="#H7.5.6">7.5.6 Incremental updates</a>
+    </li>
     <li><a href="#H7.5.7">7.5.7 Object streams</a>
     </li>
     <li>7.5.8 Cross-reference streams
@@ -383,6 +385,22 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
     </p></td>
   </tr>
 </table>
+
+<h3 id="H7.5.6">7.5.6 Incremental updates</h3>
+
+<p>...</p>
+
+<p class="location">Change NOTE 1 as follows:</p>
+
+<p style="hangingindent">
+NOTE 1 The main advantage to updating a PDF file in this way is that small changes to a large document can be saved quickly 
+<del onMouseEnter="mouseEnter(this)" data-issue="341">. There are additional advantages such as when editing a document across an HTTP connection or using OLE embedding (a Microsoft WindowsTM specific technology)</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="341">, or when</ins>
+a PDF processor cannot overwrite the contents of the original PDF file. 
+Incremental updates are used to save changes to documents in these contexts.
+<p>
+
+<p>...</p>
 
 <h3 id="H7.5.7">7.5.7 Object streams</h3>
 
@@ -914,7 +932,7 @@ nested.</ins>
         <li>the parent page dictionary on which the Type 3 font is used;</li>
         <li>resource inheritance from ancestor nodes of the parent page dictionary (see 7.7.3.4 "Inheritance of page attributes").</li>
       </ol>
-      <p class="hanging-indent">NOTE 2: Named resources referenced by a resource, such as an XObject referenced from a glyph description content stream, would be included in the <b>Resources</b> dictionary of that resource rather than in the designated resource dictionary of the glyph description content stream.</p>
+      <p class="hangingindent">NOTE 2: Named resources referenced by a resource, such as an XObject referenced from a glyph description content stream, would be included in the <b>Resources</b> dictionary of that resource rather than in the designated resource dictionary of the glyph description content stream.</p>
     </ins>
   </li>
   <li>
@@ -928,7 +946,7 @@ nested.</ins>
   </li>
 </ul>
 
-<p class="hanging-indent">
+<p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="128">
 NOTE 3 PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in form XObjects, Type 3 glyph descriptions or annotation appearance streams used on a page. 
 Those earlier versions state that resources that were referenced from those content streams can be inherited from the resource dictionary of the page on which they are used.
