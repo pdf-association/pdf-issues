@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 16 December 2022
+modified: 15 September 2023
 ---
 
 <ul class="noprint">
@@ -52,6 +52,10 @@ modified: 16 December 2022
      <li><a href="#H8.9.5.4">8.9.5.4 Alternate images</a>
      </li>
     </ul>
+   </li>
+   <li>8.9.6 Masked images
+     <li><a href="#H8.9.6.2">8.9.6.2 Stencil masking</a>
+     </li>
    </li>
    <li><a href="#H8.9.7">8.9.7 Inline images</a>
    </li>
@@ -349,6 +353,25 @@ can support additional ones beyond those listed in the table above.
 </ol>
 
 <p>...</p>
+
+
+<h3 id="H8.9.6">8.9.6 Masked images</h3>
+
+<h4 id="H8.9.6.2">8.9.6.2 Stencil masking</h4>
+
+<p>...</p>
+
+<p class="location">Change the NOTE as follows:</p>
+
+<p class="hangingindent">
+NOTE One of the most important uses of stencil masking is for painting character glyphs represented as bitmaps. Using such a glyph as a stencil mask transfers only its "black" bits to the page, leaving the "white" bits (which are really just background) unchanged. For reasons discussed in 
+<del onMouseEnter="mouseEnter(this)" data-issue="333">9.6.5.3, "Encodings for Type 3 fonts"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="333">9.6.4, "Type 3 fonts"</ins>
+, an image mask, rather than an image, 
+<del onMouseEnter="mouseEnter(this)" data-issue="333">need almost always be used to paint glyph bitmaps</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="333">is normally used to paint glyph bitmaps</ins>.
+<p>
+
 
 <h3 id="H8.9.7">8.9.7 Inline images</h3>
 
