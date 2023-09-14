@@ -409,7 +409,7 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 <p>When defining ranges of this type, the value of the last byte in the string shall be less than or equal to 255 - (<i>srcCode2 - srcCode1</i>). This ensures that the last byte of the string shall not be incremented past 255; otherwise, the result of mapping is undefined.</p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="277">
-<p class="hanging-indent">NOTE the above requirements are specific to PDF and are not described in Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial".<p>
+<p class="hangingindent">NOTE the above requirements are specific to PDF and are not described in Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial".<p>
 </ins>
 
 </div>
