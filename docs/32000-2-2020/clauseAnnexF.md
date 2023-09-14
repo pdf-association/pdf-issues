@@ -3,12 +3,14 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex F
 title: (normative) Linearized PDF
-modified: 29 April 2022
+modified: 15 September 2023
 ---
 
 <ul class="noprint">
     <li>F.3 Linearized PDF document structure
      <ul>
+      <li><a href="#HF.3.2">F.3.2 Header (Part 1)</a>
+      </li>
       <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
       </li>
      </ul>
@@ -25,6 +27,20 @@ modified: 29 April 2022
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="HF.3">F.3 Linearized PDF document structure</h2>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The Linearized PDF file shall begin with the standard header line (see 7.5.2, "File header"). Linearization is independent of PDF version number and may be applied to any PDF file of version 
+<del onMouseEnter="mouseEnter(this)" data-issue="331">1.1</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="331">1.2</ins> 
+or greater.
+</p>
+
+<p>...</p>
+
+
+<h3 id="HF.3.2">F.3.2 Header (Part 1)</h3>
 
 <h3 id="HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</h3>
 
