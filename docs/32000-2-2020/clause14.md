@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 23 June 2023
+modified: 15 September 2023
 ---
 
 <ul class="noprint">
@@ -26,6 +26,12 @@ modified: 23 June 2023
    <li><a href="#H14.7.2">14.7.2 Structure hierarchy</a>
    </li>
    <li><a href="#H14.7.3">14.7.3 Structure types</a>
+   </li>
+   <li>14.7.5 Structure content
+    <ul>
+     <li><a href="#H14.7.5.3">14.7.5.3 PDF objects as content items</a>
+     </li>
+    </ul>
    </li>
    <li>14.7.6 Structure attributes
     <ul>
@@ -267,6 +273,32 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 </p>
 
 <p>...</p>
+
+
+<h3 id="H14.7.5">14.7.5 Structure content</h3>
+
+<h4 id="H14.7.5.3">14.7.5.3 PDF objects as content items</h4>
+
+<p class="location">Change Table 358 as follows:</p>
+
+<table>
+  <caption id="Table358">Table 358 - Entries in an object reference dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Pg</b></td>
+    <td>Dictionary</td>
+    <td>
+      <i>(Optional; shall be an indirect reference)</i> The page object of the page on which the object shall be rendered. This entry overrides any <b>Pg</b> entry in the structure element containing the object reference; it shall be 
+      <del onMouseEnter="mouseEnter(this)" data-issue="339">used</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="339">required</ins> 
+      if the structure element has no such entry.
+    </td>
+  </tr>
+</table>
 
 <h3 id="H14.7.6">14.7.6 Structure attributes</h3>
 
