@@ -41,6 +41,10 @@ modified: 15 September 2023
      </li>
     </ul>
    </li>
+   <li>8.6.6 Special colour spaces
+     <li><a href="#H8.6.6.5">8.6.6.5 DeviceN colour spaces</a>
+     </li>
+   </li>
   </ul>
  </li>
  <li>8.9 Images
@@ -246,6 +250,35 @@ NOTE The exact set of rendering intents supported can vary from one output devic
 <del onMouseEnter="mouseEnter(this)" data-issue="63" data-iso="approved">does not have to support all PDF rendering intents and</del>
 can support additional ones beyond those listed in the table above.
 </p>
+
+
+
+<h3 id="H8.6.6">8.6.6 Special colour spaces</h3>
+
+<h4 id="H8.6.6.5">8.6.6.5 DeviceN colour spaces</h4>
+
+<p>...</p>
+
+<p class="location">Change the paragraph this is 2 paragraphs above NOTE 4 as follows:</p>
+
+<p>
+The component names shall all be different from one another, except for the name <b>None</b>, which may be repeated as described later in this subclause. 
+<ins onMouseEnter="mouseEnter(this)" data-issue="309">The special name <b>None</b> shall not be used in <b>DeviceN</b> colour spaces that have the <b>NChannel</b> subtype</ins>
+The special name <b>All</b>, used by <b>Separation</b> colour spaces, shall not be used. The names <b>Cyan</b>, <b>Magenta</b>, <b>Yellow</b> and <b>Black</b> are reserved to name the subtractive process colourants of a CMYK device.
+</p>
+
+<p>...</p>
+
+<p class="location">Change the paragraph below NOTE 6 as follows:</p>
+
+<p>
+The colour component name <b>None</b>
+<del onMouseEnter="mouseEnter(this)" data-issue="309">, which may be present only for <b>DeviceN</b> colour spaces that do not have the <b>NChannel</b> subtype,</del> 
+indicates that the corresponding colour component shall never be painted on the page, as in a <b>Separation</b> colour space for the <b>None</b> colourant. When a <b>DeviceN</b> colour space is painting the named device colourants directly, colour components corresponding to <b>None</b> colourants shall be discarded. However, when the <b>DeviceN</b> colour space reverts to its alternate colour space, those components shall be passed to the tint transformation function, which may use them as desired.
+</p>
+
+
+<h2 id="H8.9">Images</h2>
 
 <h3 id="H8.9.5">8.9.5 Image dictionaries</h3>
 
