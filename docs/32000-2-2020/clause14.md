@@ -91,6 +91,8 @@ modified: 6 October 2023
        </li>
       </ul>
      </li>
+     <li><a href="#H14.8.5.5">14.8.5.5 List attributes</a>
+     </li>
     </ul>
    </li>
    <li>14.8.6 Standard structure namespaces
@@ -713,6 +715,34 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     </td>
   </tr>
 </table>
+
+<h4 id="H14.8.5.5">14.8.5.5 List attributes</h4>
+
+<p class="location">Change Table 382 as follows:</p>
+
+<table>
+  <caption id="Table380">Table 382 - Standard list attributes</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>ContinuedList</b></td>
+    <td>boolean</td>
+    <td>
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346">not inheritable;</ins> PDF 2.0</i>) ...
+    </td>
+  </tr>
+  <tr>
+    <td><b>ContinuedFrom</b></td>
+    <td>ID (byte string)</td>
+    <td>
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346">not inheritable;</ins> PDF 2.0</i>) ...
+    </td>
+  </tr>
+</table>
+
 
 
 <h3 id="H14.8.6">14.8.6 Standard structure namespaces</h3>

@@ -105,6 +105,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table377">Table 377 - Standard layout attributes</a></li>
 <li><a href="clause14.html#Table378">Table 378 - Standard layout attributes common to all standard structure types</a></li>
 <li><a href="clause14.html#Table380">Table 380 - Standard layout attributes specific to inline-level structure elements</a></li>
+<li><a href="clause14.html#Table382">Table 382 - Standard list attributes</a></li>
 <li><a href="clause14.html#Table393">Table 393 - Entries in a Web Capture command dictionary</a></li>
 <li><a href="clauseAnnexA.html#TableA.1">Table A.1 - PDF content stream operators</a></li>
 <li><a href="clauseAnnexD.html#TableD.3">Table D.3 - PDFDocEncoding character set</a></li>
