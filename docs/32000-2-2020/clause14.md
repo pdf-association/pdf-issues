@@ -93,6 +93,8 @@ modified: 6 October 2023
      </li>
      <li><a href="#H14.8.5.5">14.8.5.5 List attributes</a>
      </li>
+     <li><a href="#H14.8.5.8">14.8.5.8 Artifact attributes</a>
+     </li>
     </ul>
    </li>
    <li>14.8.6 Standard structure namespaces
@@ -721,7 +723,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 <p class="location">Change Table 382 as follows:</p>
 
 <table>
-  <caption id="Table380">Table 382 - Standard list attributes</caption>
+  <caption id="Table382">Table 382 - Standard list attributes</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -742,6 +744,47 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     </td>
   </tr>
 </table>
+
+
+<h4 id="H14.8.5.8">14.8.5.8 Attribute attributes</h4>
+
+<p class="location">Change Table 385 as follows:</p>
+
+<table>
+  <caption id="Table385">Table 385 - Standard artifact attributes</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Type</b></td>
+    <td>name</td>
+    <td>
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    </td>
+  </tr>
+  <tr>
+    <td><b>BBox</b></td>
+    <td>rectangle</td>
+    <td>
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    </td>
+  </tr>
+  <tr>
+    <td><b>Subtype</b></td>
+    <td>name</td>
+    <td>
+    (<i>Optional; <del onMouseEnter="mouseEnter(this)" data-issue="347">PDF 1.7</del><ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    </td>
+  </tr>
+</table>
+
+<p class="location">Insert a new NOTE below Table 385 as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="347">NOTE: the meaning of the keys <b>Type</b> and <b>Subtype</b> in "Table 382 - Standard artifact attributes" do not follow the documented conventions described in 7.3.7, "Dictionary objects". This is due to alignment of "Table 382 - Standard artifact attributes" (<i>PDF 2.0</i>) with the previously existing "Table 363 - Property list entries for artifacts".</ins>
+</p>
 
 
 
