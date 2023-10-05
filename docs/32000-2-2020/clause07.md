@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 15 September 2023
+modified: 6 October 2023
 ---
 
 <ul class="noprint">
@@ -241,6 +241,12 @@ However, a</del>
 <p>...</p>
 
 <h4 id="H7.3.8.2">7.3.8.2 Stream extent</h4>
+
+<p class="location">Insert a new NOTE immediately after the first paragraph and before the EXAMPLE as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="319">NOTE: The 'encoded data' of a stream encompasses all enveloping markers of the encoding, e.g. end-of-data markers, if the encoding scheme uses them.</ins>
+</p>
 
 <p class="location">Change Table 5 as follows:</p>
 
