@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 15 September 2023
+modified: 6 October 2023
 ---
 
 <ul class="noprint">
@@ -635,6 +635,15 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
     (<i><del onMouseEnter="mouseEnter(this)" data-issue="28" data-iso="approved">Required</del>
         <ins onMouseEnter="mouseEnter(this)" data-issue="28" data-iso="approved">Optional</ins></i>)
     The partial field name (see 12.7.4.2, "Field names").
+    </td>
+  </tr>
+  <tr>
+    <td><b>AA</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 1.2</i>) An additional-actions dictionary defining the field’s behaviour in response to various trigger events (see 12.6.3, "Trigger events"). This entry has exactly the same meaning as the <b>AA</b> entry in 
+    <del onMouseEnter="mouseEnter(this)" data-issue="313">an annotation dictionary (see 12.5.2, "Annotation dictionaries")</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="313">a Widget annotation dictionary (see 12.5.6.19, "Widget annotations")</ins>.
     </td>
   </tr>
 </table>
