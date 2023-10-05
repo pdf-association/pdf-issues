@@ -463,6 +463,22 @@ Entries other than those listed shall be ignored.
 
 <p>...</p>
 
+<p class="location">Change Table 91 as follows:</p>
+
+<table>
+  <caption id="Table91">Table 91 - Entries in an inline image object</caption>
+  <tr>
+    <th><b>Full Name</b></th>
+    <th><b>Abbreviation</b></th>
+  </tr>
+  <tr>
+    <td><b>Interpolate</b></td>
+    <td><b>I</b> (uppercase <del onMouseEnter="mouseEnter(this)" data-issue="306">I</del><ins onMouseEnter="mouseEnter(this)" data-issue="306">i</ins>)</td>
+  </tr>
+</table>
+
+<p>...</p>
+
 <p class="location">Replace NOTE 3 as follows:</p>
 
 <p class="hangingindent">NOTE 3
