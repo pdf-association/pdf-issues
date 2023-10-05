@@ -64,7 +64,9 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table177">Table 177 - Additional entries specific to a free text annotation</a></li>
 <li><a href="clause12.html#Table202">Table 202 - Additional entries specific to a go-to action</a></li>
 <li><a href="clause12.html#Table220">Table 220 - Additional entries specific to a go-to-3D-view action</a></li>
+<li><a href="clause12.html#Table224">Table 224 - Entries in the interactive form dictionary</a></li>
 <li><a href="clause12.html#Table226">Table 226 - Entries common to all field dictionaries</a></li>
+<li><a href="clause12.html#Table228">Table 228 - Additional entries common to all fields containing variable text</a></li>
 <li><a href="clause12.html#Table232">Table 232 - Additional entry specific to a text field</a></li>
 <li><a href="clause12.html#Table236">Table 236 - Entries in a signature field lock dictionary</a></li>
 <li><a href="clause12.html#Table237">Table 237 - Entries in a signature field seed value dictionary</a></li>

@@ -71,9 +71,13 @@ modified: 6 October 2023
  </li>
  <li>12.7 Forms
   <ul>
+   <li><a href="#H12.7.3">12.7.3 Interactive form dictionary</a>
+   </li>
    <li>12.7.4 Field dictionaries
     <ul>
      <li><a href="#H12.7.4.1">12.7.4.1 General</a>
+     </li>
+     <li><a href="#H12.7.4.3">12.7.4.3 Variable text</a>
      </li>
     </ul>
    </li>
@@ -486,7 +490,7 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
   </tr>
   <tr>
     <td><b>DA</b></td>
-    <td>string</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string</td>
     <td>
     <p>(<i>Required</i>) The default appearance string that shall be used in formatting the text (see 12.7.4.3, "Variable text").</p>
     <p>The annotation dictionary's <b>AP</b> entry <del onMouseEnter="mouseEnter(this)" data-issue="42" data-iso="approved">, if present,</del> shall take precedence over the <b>DA</b> entry (see "Table 170 - Entries in an appearance dictionary" and 12.5.5, "Appearance streams").</p>
@@ -613,7 +617,30 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 
 <p>...</p>
 
-<h2 id="H12.7">Forms</h2>
+
+
+<h2 id="H12.7">12.7 Forms</h2>
+
+<h3 id="H12.7.3">12.7.3 Interactive form dictionary</h3>
+
+<p class="location">Change Table 224 as follows:</p>
+
+<table>
+  <caption id="Table224">Table 224 - Entries in the interactive form dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>DA</b></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string</td>
+    <td>
+    (<i>Optional</i>) A document-wide default value for the <b>DA</b> attribute of variable text fields (see 12.7.4.3, "Variable text").
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H12.7.4">12.7.4 Field dictionaries</h3>
 
@@ -647,6 +674,41 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
     </td>
   </tr>
 </table>
+
+<h4 id="H12.7.4.3">12.7.4.3 Variable text</h4>
+
+<p class="location">Change Table 228 as follows:</p>
+
+<table>
+  <caption id="Table228">Table 228 - Additional entries common to all fields containing variable text</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>DA</b></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string</td>
+    <td>
+    (<i>Required; inheritable</i>) The default appearance string containing a sequence of valid page-content graphics or text state operators that define such properties as the field’s text size and colour.
+    </td>
+  </tr>
+</table>
+
+<p>...</p>
+
+<p class="location">Change the first two paragraphs below the EXAMPLE as follows:</p>
+
+<p>
+The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string (<b>DA</b>) contains any graphics state or text state operators needed to establish the graphics state parameters, such as text size and colour, for displaying the field’s variable text. Only operators that are allowed within text objects shall occur in this <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string (see "Figure 9 — Graphics objects"). At a minimum, the <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string shall include a <b>Tf</b> (text font) operator along with its two operands, <i>font</i> and <i>size</i>. The specified font value shall match a resource name in the <b>Font</b> entry of the default resource dictionary (referenced from the <b>DR</b> entry of the interactive form dictionary; see "Table 224 — Entries in the interactive form dictionary"). A zero value for <i>size</i> means that the font shall be <i>auto-sized</i>: its size shall be computed as an implementation dependent function.
+</p>
+
+<p>
+The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string shall contain at most one <b>Tm</b> (text matrix) operator. If this operator is present, the interactive PDF processor shall replace the horizontal and vertical translation components with positioning values it determines to be appropriate, based on the field value, the quadding (<b>Q</b>) attribute, and any layout rules it employs. If the default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string contains no <b>Tm</b> operator, the viewer shall insert one in the appearance stream (with appropriate horizontal and vertical translation components) after the default appearance string and before the text-positioning and text-showing operators for the variable text.
+</p>
+
+<p>...</p>
+
 
 <h3 id="H12.7.5">12.7.5 Field types</h3>
 
