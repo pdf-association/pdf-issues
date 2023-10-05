@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 15 September 2023
+modified: 6 October 2023
 ---
 
 <ul class="noprint">
@@ -308,7 +308,8 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <p>
 The <b>C</b> entry in a structure element dictionary (see "Table 355 — Entries in a structure element dictionary") shall contain a class name or
-an array of class names (typically accompanied by revision numbers as well; see 14.7.6.3, "Attribute revision numbers"). For each class named in
+an array of class names 
+(<del onMouseEnter="mouseEnter(this)" data-issue="305">typically</del><ins onMouseEnter="mouseEnter(this)" data-issue="305">possibly</ins> accompanied by revision numbers as well <ins onMouseEnter="mouseEnter(this)" data-issue="305"></i>(deprecated in PDF 2.0)</i></ins>; see 14.7.6.3, "Attribute revision numbers"). For each class named in
 the <b>C</b> entry, the corresponding attribute object or objects shall be considered to be attached to the given structure element, along with
 those identified in the element’s <b>A</b> entry. 
 <ins onMouseEnter="mouseEnter(this)" data-issue="289">Attribute objects included through a class and through an array of classes within the <b>C</b>
