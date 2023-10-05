@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 15 September 2023
+modified: 6 October 2023
 ---
 
 <ul class="noprint">
@@ -44,6 +44,16 @@ modified: 15 September 2023
    <li>8.6.6 Special colour spaces
      <li><a href="#H8.6.6.5">8.6.6.5 DeviceN colour spaces</a>
      </li>
+   </li>
+  </ul>
+ </li>
+ <li>8.7 Patterns
+  <ul>
+   <li>8.7.3 Tiling patterns
+    <ul>
+     <li><a href="#H8.7.3.1">8.7.3.1 General</a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -278,7 +288,30 @@ indicates that the corresponding colour component shall never be painted on the 
 </p>
 
 
-<h2 id="H8.9">Images</h2>
+
+<h2 id="H8.7">8.7 Patterns</h2>
+
+<h3 id="H8.7.1">8.7.1 General</h3>
+
+<p class="location">Change the caption of Table 74 as follows:</p>
+
+<table>
+  <caption id="Table74">Table 74 - Additional entries specific to a Type 1 pattern <ins onMouseEnter="mouseEnter(this)" data-issue="294">stream</ins> dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+   <td>...</td>
+   <td>...</td>
+   <td>...</td>
+  </tr>
+</table>
+
+
+
+<h2 id="H8.9">8.9 Images</h2>
 
 <h3 id="H8.9.5">8.9.5 Image dictionaries</h3>
 

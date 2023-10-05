@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 15 September 2023
+modified: 6 October 2023
 ---
 
 <p>
@@ -44,6 +44,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause08.html#Table52">Table 52 - Device-dependent graphics state parameters</a></li>
 <li><a href="clause08.html#Table59">Table 59 - Path-painting categories</a></li>
 <li><a href="clause08.html#Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></a></li>
+<li><a href="clause08.html#Table74">Table 74 - Additional entries specific to a Type 1 pattern <ins onMouseEnter="mouseEnter(this)" data-issue="294">stream</ins> dictionary</a></li>
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>
 <li><a href="clause08.html#Table99">Table 99 - Entries in an optional content configuration dictionary</a></li>
 <li><a href="clause09.html#Table109">Table 109 - Entries in a Type 1 font dictionary</a></li>
