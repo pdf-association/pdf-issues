@@ -35,6 +35,8 @@ modified: 6 October 2023
    </li>
    <li>14.7.6 Structure attributes
     <ul>
+     <li><a href="#H14.7.6.1">14.7.6.1 General</a>
+     </li>
      <li><a href="#H14.7.6.2">14.7.6.2 Attribute classes</a>
      </li>
     </ul>
@@ -311,6 +313,46 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 </table>
 
 <h3 id="H14.7.6">14.7.6 Structure attributes</h3>
+
+<h4 id="H14.7.6.1">14.7.6.1 General</h4>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+A PDF processor that processes logical structure may attach additional information, called attributes, to any structure element. The attribute
+information shall be held in one or more attribute objects associated with the structure element. An attribute object shall be a dictionary or
+stream that includes an <b>O</b> entry (see "Table 360 — Entries common to all attribute object dictionaries") identifying the
+<del onMouseEnter="mouseEnter(this)" data-issue="354">conforming product that owns</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="354">owner of</ins> the attribute information. 
+Other entries, except the <b>NS</b> entry, shall represent the attributes: the keys shall be attribute names, and values shall be the corresponding
+attribute values. To facilitate the interchange of content among conforming products, PDF defines a set of standard structure attributes identified
+by specific standard owners; see 14.8.5, "Standard structure attributes". In addition, attributes may be used to represent user properties (see 
+14.7.6.4, "User properties").
+</p>
+
+<p class="location">Change Table 360 as follows:</p>
+
+<table>
+  <caption id="Table360">Table 360- Entries common to all attribute object dictionaries</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>O</b></td>
+    <td>name</td>
+    <td>
+    (<i>Required</i>) The name of the 
+    <del onMouseEnter="mouseEnter(this)" data-issue="354">PDF processor creating</del> 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="354">owner of</ins> 
+    the attribute data. The value shall either be 
+    <del onMouseEnter="mouseEnter(this)" data-issue="354">a</del> <i>NSO</i>, <i>UserProperties</i> (see "Table 361 — Additional entries in an attribute object dictionary for user properties"), one of the values from 14.8.5, "Standard structure attributes", or conform to the guidelines described in Annex E, "Extending PDF".
+    <p>If the value for the <b>O</b> entry is <i>NSO</i> then the <b>NS</b> entry shall be present, and shall identify the owner of the attribute object.</p>
+    </td>
+  </tr>
+</table>
+
 
 <h4 id="H14.7.6.2">14.7.6.2 Attribute classes</h4>
 
