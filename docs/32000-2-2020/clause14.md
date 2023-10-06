@@ -606,6 +606,29 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
 
 <p>...</p>
 
+<p class="location">Change Table 376 as follows:</p>
+
+<table>
+  <caption id="Table376">Table 376 - Standard structure attribute owners</caption>
+  <tr>
+    <th>Owner value for the attribute object’s O entry</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>CSS-1</b></td>
+    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357">version</del><ins onMouseEnter="mouseEnter(this)" data-issue="357">level</ins> 1</td>
+  </tr>
+  <tr>
+    <td><b>CSS-2</b></td>
+    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357">version 2.1</del><ins onMouseEnter="mouseEnter(this)" data-issue="357">level 2, revision 1</ins></td>
+  </tr>
+  <tr>
+    <td><b>CSS-3</b></td>
+    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357">version</del><ins onMouseEnter="mouseEnter(this)" data-issue="357">level</ins> 3</td>
+  </tr>
+</table>
+
+
 <p class="location">Add a new NOTE after the current note below Table 376 as follows:</p>
 
 <p class="hangingindent">
