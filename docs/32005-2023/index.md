@@ -1,0 +1,28 @@
+---
+isodoc: ISO/TS 32005:2023
+isotitle: 'Document management -- Portable Document Format -- PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2'
+title: ISO/TS 32005:2023 - PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2
+modified: 6 October 2023
+---
+
+<p>
+This is a placeholder for all industry-approved corrections to <a href="https://pdfa.org/resource/iso-32005/" target="_blank">"{{ page.isodoc }} <i>{{ page.isotitle }}</i>"</a>.
+All issues related to {{ page.isodoc }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>
+with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aissue+label%3A%22ISO%2FTS+32005%22" target="_blank">ISO/TS 32005</a>'.
+</p>
+
+<p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
+
+<ul>
+    {% for std in site.data.data.toc %}
+         {% if std.standard == page.isodoc %}
+            {% for pg in std.subfolderitems %}
+            <li><a href="{{ pg.url }}">{{ pg.ref }}</a></li>
+           {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<hr>
+<link rel="stylesheet" href="../assets/iso-style.css">
+<p class="footnote">Last modified: {{ page.modified }}</p>

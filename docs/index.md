@@ -57,10 +57,12 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
    <li>PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-32000-pdf/" target="_blank">ISO 32000-2:2020</a>) - <a href="32000-2-2020/index.html"><i>Resolved errata</i></a></li>
    <li>ISO Technical Specification (TS) extensions to PDF 2.0:
      <ul>
-       <li><a href="https://www.pdfa.org/resource/iso-ts-32001/" target="_blank">ISO/TS 32001:2022 Document management — Portable Document Format — Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0)</a></li>
+       <li>ISO/TS 32001:2022 Document management — Portable Document Format — Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0) - <a href="32001-2022/index.html"><i>Resolved errata</i></a></li>
        <li><a href="https://www.pdfa.org/resource/iso-ts-32002/" target="_blank">ISO/TS 32002:2022 Document management — Portable Document Format — Extensions to Digital Signatures in ISO 32000-2 (PDF 2.0)</a></li>
        <li><a href="https://pdfa.org/resource/iso-ts-24064/" target="_blank">ISO/TS 24064:2023 Document management — Portable document format — RichMedia annotations conforming to the ISO 10303-242 (STEP AP 242) specification</a></li>
        <li><a href="https://pdfa.org/resource/iso-ts-32003-aes-gcm/" target="_blank">ISO/TS 32003:2023 Document management — Portable Document Format — Adding support of AES-GCM in PDF 2.0</a></li>
+       <li><a href="https://pdfa.org/resource/iso-ts-32004-integrity-protection/" target="_blank">ISO/TS 32004:2023 Portable Document Format — Integrity protection in encrypted documents in PDF 2.0</a></li>
+       <li>ISO/TS 32005:2023 Document management — Portable Document Format — PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2 - <a href="32005-2023/index.html"><i>Resolved errata</i></a></li>
     </ul>
     </li>
    <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="21757-1-2020/index.html"><i>Resolved errata</i></a></li>

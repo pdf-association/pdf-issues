@@ -63,3 +63,9 @@ toc:
         url:  clause10.html
       - ref: 'Clause 12: Object overview'
         url:  clause12.html
+
+  - standard: ISO/TS 32001:2022
+    subfolderitems:
+
+  - standard: ISO/TS 32005:2023
+    subfolderitems:
