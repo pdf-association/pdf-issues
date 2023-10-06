@@ -109,6 +109,12 @@ modified: 6 October 2023
    </li>
   </ul>
  </li>
+ <li>14.9 Repurposing and accessibility support
+  <ul>
+   <li>><a href="#H14.9.4">14.9.4 Replacement text</a>
+   </li>
+  </ul>
+ </li>
  <li>14.10 Web capture
   <ul>
    <li>14.10.5 Source information
@@ -902,6 +908,24 @@ endobj
 </p>
 
 <p>...</p>
+
+<h2 id="H14.9">14.9 Repurposing and accessibility support</h2>
+
+<h3 id="H14.9.4">14.9.4 Replacement text</h3>
+
+<p>...</p>
+
+<p class="location">Correct the EXAMPLE as follows:</p>
+
+<code class="hangingindent">
+(Dru) Tj
+/Span
+    &lt;&lt;<del onMouseEnter="mouseEnter(this)" data-issue="356">/Actual Text</del><ins onMouseEnter="mouseEnter(this)" data-issue="356">/ActualText</ins> (c)&gt;&gt;
+    BDC
+        (k-) Tj
+    EMC
+(ker) '
+</code>
 
 <h2 id="H14.10">14.10 Web capture</h2>
 <h3 id="H14.10.5">14.10.5 Source information</h3>
