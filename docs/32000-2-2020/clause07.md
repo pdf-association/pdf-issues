@@ -129,6 +129,8 @@ modified: 6 October 2023
   </li>
   <li>7.9 Common data structures
    <ul>
+    <li><a href="#H7.9.1">7.9.1 General</a>
+    </li>
     <li>7.9.2 String object types
      <ul>
       <li>7.9.2.2 Text string type
@@ -985,7 +987,164 @@ Those earlier versions state that resources that were referenced from those cont
 
 
 <h2 id="H7.9">7.9 Common data structures</h2>
+
+<h3 id="H7.9.1">7.9.1 General</h3>
+
+<p class="location">Replace Table 35 with the following table and NOTE:</p>
+
+<table>
+  <caption id="Table35">Table 35 - PDF data types <ins onMouseEnter="mouseEnter(this)" data-issue="322">(informative)</ins></caption>
+  <tr>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Subclause</th>
+  </tr>
+  <tr>
+    <td>ASCII string</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Bytes containing ASCII characters</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object containing bytes encoded as ASCII characters.</ins>
+    </td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4</ins><br/>7.9.2</td>
+  </tr>
+  <tr>
+    <td>array</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">An</ins> array object.</td>
+    <td>7.3.6</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A Boolean object.</ins></td>
+    <td>7.3.2</td>
+  </tr>
+  <tr>
+    <td>byte string</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">A series of bytes that shall represent characters or other binary data. If such a type represents characters, the encoding shall be determined by the context.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object containing bytes where the encoding is determined by the context.</ins>
+    </td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4</ins><br/>7.9.2<br/>7.9.2.4</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Date (ASCII string)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object that represents a date.</ins>
+    </td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4<br/>7.9.2</ins><br/>7.9.4</td>
+  </tr>
+  <tr>
+    <td>dictionary</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> dictionary object.</td>
+    <td>7.3.7</td>
+  </tr>
+  <tr>
+    <td>file specification</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> file specification (dictionary or string)</td>
+    <td>7.11</td>
+  </tr>
+  <tr>
+    <td>function</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Function (dictionary or stream)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A function object (dictionary or stream) that represents a parameterised function, including mathematical formulas or sampled representations with arbitrary resolution.</ins>
+    </td>
+    <td>7.10</td>
+  </tr>
+  <tr>
+    <td>integer</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">An</ins> integer number <ins onMouseEnter="mouseEnter(this)" data-issue="322">object</ins></td>
+    <td>7.3.3</td>
+  </tr>
+  <tr>
+    <td>name</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> name object</td>
+    <td>7.3.5</td>
+  </tr>
+  <tr>
+    <td>name tree</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Name tree (dictionary)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A name tree data structure (dictionary)</ins>
+    </td>
+    <td>7.9.6</td>
+  </tr>
+  <tr>
+    <td>null</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">The</ins> null object</td>
+    <td>7.3.9</td>
+  </tr>
+  <tr>
+    <td>number</td>
+    <td>
+      <p>
+        <del onMouseEnter="mouseEnter(this)" data-issue="322">Number</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="322">A numeric object</ins> (integer or real).
+      </p> 
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="322">NOTE: the term "real" may also be used in this specification to represent a numeric object.</ins></p> 
+    </td>
+    <td>7.3.3</td>
+  </tr>
+  <tr>
+    <td>number tree</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Number tree (dictionary)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A number tree data structure (dictionary)</ins>
+    </td>
+    <td>7.9.7</td>
+  </tr>
+  <tr>
+    <td>PDFDocEncoded string</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Bytes containing a string that shall be encoded using PDFDocEncoding</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A type of text string containing information intended to be human-readable that is encoded using the single-byte PDFDocEncoding.</ins>
+    </td>
+    <td>7.9.2<br/>7.9.2.3</td>
+  </tr>
+  <tr>
+    <td>rectangle</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Rectangle (array)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A rectangle (array with 4 numeric elements)</ins>
+    </td>
+    <td>7.9.5</td>
+  </tr>
+  <tr>
+    <td>stream</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> stream object <ins onMouseEnter="mouseEnter(this)" data-issue="322">(including the stream extent dictionary)</ins></td>
+    <td>7.3.8</td>
+  </tr>
+  <tr>
+    <td>string</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Any string that is not a text string. Beginning with PDF 1.7, this type is further qualified as the types: ASCII string and byte string.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object that may be further qualified as either a text string, an ASCII string, or a byte string.</ins>
+    </td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4</ins><br/>7.9.2</td>
+  </tr>
+  <tr>
+    <td>text string</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322">Bytes that represent characters that shall be encoded using either PDFDocEncoding, UTF-16BE or UTF-8 (as defined in 7.9.2.2, "Text string type".)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A type of string object containing information that is intended to be human-readable, and that is encoded as either PDFDocEncoding, UTF-16BE, or UTF-8 (<i>PDF 2.0</i>)</ins>
+    </td>
+    <td>7.9.2<br/>7.9.2.2</td>
+  </tr>
+  <tr>
+    <td>text stream</td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> text stream <ins onMouseEnter="mouseEnter(this)" data-issue="322">object (including the stream extent dictionary)</ins>
+    </td>
+    <td>7.9.3</td>
+  </tr>  
+</table>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="322">NOTE: unless otherwise stated in this specification, all string objects may be written as either a literal string or a hexadecimal string as described in "7.3.4 - String objects".</ins>
+</p>
+
 <h3 id="H7.9.2">7.9.2 String object types</h3>
+
 <h4 id="H7.9.2.2">7.9.2.2 Text string type</h4>
 
 <h5 id="H7.9.2.2.1">7.9.2.2.1 General</h5>
