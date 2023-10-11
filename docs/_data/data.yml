@@ -66,6 +66,8 @@ toc:
 
   - standard: ISO/TS 32001:2022
     subfolderitems:
+      - ref: 'Clause 5: Digital signature enhancements'
+        url:  clause05.html
 
   - standard: ISO/TS 32005:2023
     subfolderitems:
