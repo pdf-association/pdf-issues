@@ -24,6 +24,10 @@ modified: 15 October 2023
 
 <p class="location">Change Table 5 as follows:</p>
 
+<p class="editornote">
+EDITOR NOTE: the corrected hierarchical inclusion rules in Table 5 are also <a href="https://pdfa.org/resource/iso-ts-32005-hierarchical-inclusion-rules/" target="_blank">available as a spreadsheet</a> that was not included in the ISO/TS 32005:2023 publication.
+</p>
+
 <table>
   <caption id="Table35">Table 5 - Parent-child relationships between the PDF 1.7 elements and PDF 2.0 elements</caption>
   <tr>
