@@ -23,6 +23,11 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
     {% endfor %}
 </ul>
 
+<p>The following tables have all been corrected:</p>
+<ul>
+<li><a href="clause07.html#Table5">Table 5 - Parent-child relationships between the PDF 1.7 elements and PDF 2.0 elements</a></li>
+</ul>
+
 <hr>
 <link rel="stylesheet" href="../assets/iso-style.css">
 <p class="footnote">Last modified: {{ page.modified }}</p>
