@@ -36,6 +36,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table34">Table 34 - Entries in a resource dictionary</a></li>
 <li><a href="clause07.html#Table35">Table 35 - PDF data types <ins onMouseEnter="mouseEnter(this)" data-issue="322">(informative)</ins></a></li>
 <li><a href="clause07.html#Table36">Table 36 - Entries in a name tree node dictionary</a></li>
+<li><a href="clause07.html#Table37">Table 37 - Entries in a number tree node dictionary</a></li>
 <li><a href="clause07.html#Table42">Table 42 - Operators in Type 4 functions</a></li>
 <li><a href="clause07.html#Table43">Table 43 - Entries in a file specification dictionary</a></li>
 <li><a href="clause07.html#Table44">Table 44 - Additional entries in an embedded file stream dictionary</a></li>

@@ -145,6 +145,8 @@ modified: 24 October 2023
     </li>
     <li><a href="#H7.9.6">7.9.6 Name trees</a>
     </li>
+    <li><a href="#H7.9.7">7.9.7 Number trees</a>
+    </li>
    </ul>
   </li>
   <li>7.10 Functions
@@ -1285,7 +1287,8 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276">2</ins> The string ca
     <p>(<i>Root and leaf nodes only; required in leaf nodes; present in the root node if and only if <b>Kids</b> is not present</i>) Shall be an array of the form</p>
     <p>[<i>key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> ...key<sub>n</sub> value<sub>n</sub></i>]</p>
     <p>where each <i>key<sub>i</sub></i> shall be a string and the corresponding <i>value<sub>i</sub></i> shall be the
-      object associated with that key. The keys shall be sorted <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">in lexical order</del>, as described below.</p>
+      object associated with that key. The keys shall be sorted <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">in lexical order</del>, as described below. 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="307">Keys shall not be the <b>null</b> object.</ins></p>
     </td>
   </tr>
 </table>
@@ -1300,6 +1303,32 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 </p>
 
 <p>...</p>
+
+<h3 id="H7.9.7">7.9.7 Number trees</h3>
+
+<p class="location">Change Table 37 as follows:</p>
+
+<table>
+  <caption id="Table37">Table 37 - Entries in a number tree node dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Nums</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Root and leaf nodes only; shall be required in leaf nodes; present in the root node if and only if <b>Kids</b> is not present</i>) Shall be an array of the form</p>
+    <p>[<i>key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> ...key<sub>n</sub> value<sub>n</sub></i>]</p>
+    <p>where each <i>key<sub>i</sub></i> shall is an integer and the corresponding <i>value<sub>i</sub></i> shall be the
+      object associated with that key. The keys shall be sorted in numerical order, analogously to the arrangement of keys in a name tree as described in 7.9.6, "Name trees".
+      <ins onMouseEnter="mouseEnter(this)" data-issue="307">Keys shall not be the <b>null</b> object.</ins></p>
+    </td>
+  </tr>
+</table>
+
+
 
 <h2 id="H7.10">7.10 Functions</h2>
 <h3 id="H7.10.3">7.10.3 Type 2 (exponential interpolation) functions</h3>
