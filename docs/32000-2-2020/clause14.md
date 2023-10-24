@@ -211,22 +211,33 @@ data needed by the PDF processor other than the actual content of the document, 
 
 <h3 id="H14.6.1">14.6.1 General</h3>
 
-<p class="location">Delete NOTE 1 as follows:</p>
+<p class="editornote">EDITOR NOTE: notes in subclause 14.6.1 will be renumbered.</p>
+
+<p class="location">Delete NOTE 1 (<i>original numbering</i>) as follows:</p>
 
 <p class="hangingindent">
 <del onMouseEnter="mouseEnter(this)" data-issue="303">NOTE 1 This is a sequence not simply of bytes in the content stream but of complete graphics objects. Each object is fully qualified by the parameters of the graphics state in which it is rendered.</del>
 </p>
 
-<p class="editornote">EDITOR NOTE: notes in subclause 14.6.1 will be renumbered.</p>
-
 <p>...</p>
 
-<p class="location">Change NOTE 3 (<i>original numbering</i>) as follows:</p>
+<p class="location">Change the paragraph below NOTE 2 (<i>original numbering</i>) as follows:</p>
+
+<p>
+All marked-content operators except <b>EMC</b> shall take a <i>tag</i> operand indicating the role or significance of the marked-content element to the PDF processor.
+<del onMouseEnter="mouseEnter(this)" data-issue="334">All such tags should have second-class names registered with ISO</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="334">For tags not defined in either ISO publications or Logical Structure (see 14.7, "Logical structure"), those tags should use second-class names</ins>
+(see Annex E, "Extending PDF") to avoid conflicts between different applications marking the same content stream.
+In addition to the tag operand, the <b>DP</b> and <b>BDC</b> operators shall specify a property list containing further information associated with the marked-content. Property lists are discussed further in 14.6.2, "Property lists".
+</p>
+
+<p class="location">Delete NOTE 3 (<i>original numbering</i>) as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not 
-<del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="334">NOTE 3 The <i>tag</i> operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.</del>
 </p>
+
+<p>...</p>
 
 <p class="location">Change the paragraph below NOTE 3 (<i>original numbering</i>) as follows:</p>
 
@@ -243,22 +254,80 @@ Marked-content sequences may be nested one within another, but each sequence sha
 <p class="location">Change Table 352 as follows:</p>
 
 <table>
-  <caption id="Table352">Table 352 -Marked content operators</caption>
+  <caption id="Table352">Table 352 - Marked content operators</caption>
   <tr>
     <th>Operands</th>
     <th>Operator</th>
     <th>Description</th>
   </tr>
   <tr>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="301"><i>Tag</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="301"><i>tag</i></ins></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="301"><i>Tag</i></del> <ins onMouseEnter="mouseEnter(this)" data-issue="301"><i>tag</i></ins></td>
     <td><b>BMC</b></td>
-    <td>Begin a marked-content sequence terminated by a balancing <b>EMC</b> operator. <i>tag</i> shall be a name object indicating the role or significance of the sequence.</td>
+    <td>Begin a marked-content sequence terminated by a balancing <b>EMC</b> operator. <i>tag</i> shall be a name object indicating the role or significance of the sequence.
+    </td>
   </tr>
 </table>
 
+<p class="location">Add a new table and informative NOTE below Table 352 as follows:</p>
+
+<table>
+  <caption id="Table352a"><ins onMouseEnter="mouseEnter(this)" data-issue="334">Table 352a - Marked content tags defined in PDF 2.0 (<i>informative</i>)</ins></caption>
+  <tr>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF feature</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF version</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334">Subclause</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334"><i>tag</i></ins></th>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Associated files</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 2.0</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.13.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>AF</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Artifacts</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 2.0</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.8.2.2.2</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Artifact</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Optional content</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">8.11.3.2</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>OC</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Reverse order show strings</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.4</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.8.2.5.3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>ReversedChars</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Alternate description</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Replacement text</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.4</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.4</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Expansion of abbreviations and acronyms</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+  </tr>
+</table>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="334">NOTE: PDF 1.7 defined various clipping related tags (see 14.6.3, "Clip tags" in ISO 32000-1:2008) and a <b>TagSuspect</b> tag (see 14.8.2.3, "Page Content Order" in ISO 32000-1:2008) which were intentionally removed in PDF 2.0.</ins>
+<p>
 
 
-<p class="location">Change the paragraph below Table 352 as follows:</p>
+<p class="location">Change the paragraph below new Table 352a as follows:</p>
 
 <p>
 When the marked-content operators <b>BMC</b>, <b>BDC</b>, and <b>EMC</b> are combined with the text object operators <b>BT</b> and <b>ET</b>
@@ -283,7 +352,7 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <th>Value</th>
   </tr>
   <tr>
-    <td><b>K</b></td>
+    <td><b>K</b></ins></td>
     <td>dictionary or array</td>
     <td>
     (<i>Optional</i>) The immediate child or children of the structure tree root in the structure hierarchy. The value 

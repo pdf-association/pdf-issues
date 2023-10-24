@@ -98,6 +98,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>
 <li><a href="clause14.html#Table350">Table 350 - Entries in a page-piece dictionary</a></li>
 <li><a href="clause14.html#Table352">Table 352 - Marked content operators</a></li>
+<li><a href="clause14.html#Table352a"><ins onMouseEnter="mouseEnter(this)" data-issue="334">Table 352a - Marked content tags defined in PDF 2.0 (<i>informative</i>)</ins></a></li>
 <li><a href="clause14.html#Table354">Table 354 - Entries in the structure tree root</a></li>
 <li><a href="clause14.html#Table355">Table 355 - Entries in a structure element dictionary</a></li>
 <li><a href="clause14.html#Table358">Table 358 - Entries in an object reference dictionary</a></li>
