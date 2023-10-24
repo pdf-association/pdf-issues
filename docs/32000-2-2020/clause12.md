@@ -454,6 +454,15 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 
 <p>...</p>
 
+<p class="location">Change the paragraph below Table 172 as follows:</p>
+
+<p>
+In <del onMouseEnter="mouseEnter(this)" data-issue="297">PDF 1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="297">PDF 1.5</ins>, a set 
+of annotations may be grouped so that they function as a single unit when a user interacts with them. 
+The group consists of a primary annotation, which shall not have an <b>IRT</b> entry, and one or more subordinate annotations, which shall have
+an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins onMouseEnter="mouseEnter(this)" data-issue="297"><i>(PDF 1.6)</i></ins> entry whose value is <i>Group</i>.
+</p>
+
 <h4 id="H12.5.6.5">12.5.6.5 Link annotations</h4>
 
 <p class="location">Change Table 176 as follows:</p>
