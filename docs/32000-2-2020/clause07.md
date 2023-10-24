@@ -325,6 +325,19 @@ This ensures proper behaviour of file transfer applications that inspect data ne
 
 <h3 id="H7.5.4">7.5.4 Cross reference table</h3>
 
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The cross-reference table contains information that permits random access to indirect objects within the PDF file so that the entire PDF file need not be read to locate any particular object. The table <del onMouseEnter="mouseEnter(this)" data-issue="149">shall contain</del><ins onMouseEnter="mouseEnter(this)" data-issue="149">comprises</ins> a one-line entry for each indirect object, specifying the byte offset of that object within the body of the PDF file. Beginning with PDF 1.5, some or all of the cross-reference information may alternatively be contained in cross-reference streams; see 7.5.8, "Cross-reference streams".
+</p>
+
+<p class="location">Change NOTE 1 as follows and move NOTE 1 below the second paragraph:</p>
+
+<p class="hangingindent">
+NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="149">The cross-reference table is</del><ins onMouseEnter="mouseEnter(this)" data-issue="149">Cross-reference sections are</ins> the only part of a PDF file with a fixed format, which permits entries in <del onMouseEnter="mouseEnter(this)" data-issue="149">the table</del><ins onMouseEnter="mouseEnter(this)" data-issue="149">sections</ins> to be accessed randomly.
+</p>
+
+
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
@@ -386,6 +399,19 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
     <th>Key</th>
     <th>Type</th>
     <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Size</b></td>
+    <td>integer</td>
+    <td>
+      <p>
+        (<i>Required; shall not be an indirect reference</i>) 
+        <del onMouseEnter="mouseEnter(this)" data-issue="149">The total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value shall be 1 greater than the highest object number defined in the PDF file.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="149">This value shall be 1 greater than the highest object number defined in the PDF file.</ins>
+      </p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149">NOTE 1: this is equivalent to the total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
+      <p>Any object in a cross-reference section whose number is greater than this value shall be ignored and defined to be missing by a PDF reader.</p>
+    </td>
   </tr>
   <tr>
     <td><b>Prev</b></td>
