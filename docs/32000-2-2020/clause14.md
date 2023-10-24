@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 6 October 2023
+modified: 24 October 2023
 ---
 
 <ul class="noprint">
@@ -217,11 +217,21 @@ data needed by the PDF processor other than the actual content of the document, 
 
 <p>...</p>
 
-<p class="location">Change NOTE 3 as follows:</p>
+<p class="location">Change NOTE 3 (<i>original numbering</i>) as follows:</p>
 
 <p class="hangingindent">
 NOTE 3 The tag operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not 
 <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.
+</p>
+
+<p class="location">Change the paragraph below NOTE 3 (<i>original numbering</i>) as follows:</p>
+
+<p>
+Marked-content operators may appear only 
+<del onMouseEnter="mouseEnter(this)" data-issue="335">between graphics objects in the content stream</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="335">at the content stream level or within a text object as shown in "Figure 9 — Graphics objects".</ins>. 
+<del onMouseEnter="mouseEnter(this)" data-issue="335">They may not occur within a graphics object or between a graphics state operator and its operands.</del> 
+Marked-content sequences may be nested one within another, but each sequence shall be entirely contained within a single content stream. "Table 352 — Marked-content operators" summarises the marked-content operators.
 </p>
 
 <p>...</p>
