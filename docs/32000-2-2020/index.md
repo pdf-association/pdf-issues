@@ -112,6 +112,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table382">Table 382 - Standard list attributes</a></li>
 <li><a href="clause14.html#Table385">Table 385 - Standard artifact attributes</a></li>
 <li><a href="clause14.html#Table393">Table 393 - Entries in a Web Capture command dictionary</a></li>
+<li><a href="clause14.html#Table409">Table 409 - Entries in a DPart dictionary</a></li>
 <li><a href="clauseAnnexA.html#TableA.1">Table A.1 - PDF content stream operators</a></li>
 <li><a href="clauseAnnexD.html#TableD.3">Table D.3 - PDFDocEncoding character set</a></li>
 <li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>

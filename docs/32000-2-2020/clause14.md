@@ -133,6 +133,8 @@ modified: 24 October 2023
   <ul>
    <li>14.12.4 Data structures
     <ul>
+     <li><a href="#H14.12.4.1">14.12.4.1 General</a>
+     </li>
      <li><a href="#H14.12.4.2">14.12.4.2 Document part metadata</a>
      </li>
     </ul>
@@ -1119,7 +1121,38 @@ endobj
 
 
 <h2 id="H14.12">14.12 Document parts</h2>
+
 <h3 id="H14.12.4">14.12.4 Data structures</h3>
+
+<h4 id="H14.12.4.1">14.12.4.1 General</h4>
+
+<p class="location">Change Table 409 as follows:</p>
+
+<table>
+  <caption id="Table409">Table 409 - Entries in a DPart dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Metadata</b></td>
+    <td>stream</td>
+    <td>
+      <p>
+        <del onMouseEnter="mouseEnter(this)" data-issue="290">(<i>Optional; PDF 2.0; shall be an indirect reference</i>) A metadata stream that shall contain metadata for this document part (see 14.3.2, "Metadata streams").</del>
+      </p>
+      <p>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="290">XMP metadata streams (see 14.3.2, "Metadata streams") shall not be used in <b>DPart</b> dictionaries.</ins>
+      </p>
+      <p class="hangingindent">
+        <ins onMouseEnter="mouseEnter(this)" data-issue="290">NOTE: the <b>Metadata</b> key was allowed in earlier editions of PDF 2.0.</ins>
+      </p>
+    </td>
+  </tr>
+</table>
+
+
 <h4 id="H14.12.4.2">14.12.4.2 Document part metadata</h4>
 
 <p class="location">Change the last paragraph as follows:</p>
