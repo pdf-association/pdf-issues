@@ -63,6 +63,8 @@ modified: 24 October 2023
     <ul>
      <li><a href="#H12.6.4.2">12.6.4.2 Go-To actions</a>
      </li>
+     <li><a href="#H12.6.4.4">12.6.4.4 Embedded Go-To actions</a>
+     </li>
      <li><a href="#H12.6.4.8">12.6.4.8 URI actions</a>
      </li>
      <li><a href="#H12.6.4.16">12.6.4.16 Go-To-3D-View actions</a>
@@ -579,6 +581,31 @@ However, a projection annotation is only valid within the context of an associat
     </td>
   </tr>
 </table>
+
+
+<h4 id="H12.6.4.4">12.6.4.4 Embedded Go-To actions</h4>
+
+<p class="location">Change Table 205 as follows:</p>
+
+<table>
+  <caption id="Table205">Table 205 - Entries specific to a target dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>P</b></td>
+    <td>integer or byte string</td>
+    <td>
+     <p>...</p>
+     <p class="hangingindent">
+     <ins onMouseEnter="mouseEnter(this)" data-issue="258">NOTE: Although normally named destinations can also be specified by the use of a name object, that particular usage of them is not provided for in this case.</ins>
+     </p>
+    </td>
+  </tr>
+</table>
+
 
 <h4 id="H12.6.4.8">12.6.4.16 URI actions</h4>
 
