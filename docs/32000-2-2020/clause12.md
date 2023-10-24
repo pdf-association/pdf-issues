@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 6 October 2023
+modified: 24 October 2023
 ---
 
 <ul class="noprint">
@@ -24,6 +24,8 @@ modified: 6 October 2023
  <li>12.4 Page-level navigation
   <ul>
    <li><a href="#H12.4.2">12.4.2 Page labels <ins onMouseEnter="mouseEnter(this)" data-issue="73" data-iso="approved"> and indices</ins></a>
+   </li>
+   <li><a href="#H12.4.3">12.4.3 Articles</a>
    </li>
    <li>12.4.4 Presentations
     <ul>
@@ -316,8 +318,19 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 <p>...</p>
 
 
-<h3 id="H12.4.4">12.4.4 Presentations</h3>
+<h3 id="H12.4.3">12.4.3 Articles</h3>
 
+<p>...</p>
+
+<p class="location">Change the paragraph before Table 162 as follows:</p>
+
+<p>
+The optional <b>Threads</b> entry in the document catalog dictionary (see 7.7.2, "Document catalog dictionary") holds an array of thread dictionaries ("Table 162 — Entries in a thread dictionary") defining the document’s articles. Each individual bead within a thread shall be represented by a bead dictionary ("Table 163 — Entries in a bead dictionary"). The thread dictionary’s <b>F</b> entry shall refer to the first bead in the thread; the beads shall be chained together sequentially in a doubly linked list through their <b>N</b> (next) and <b>V</b> (previous) entries. In addition, for each page on which article beads appear, the page object (see 7.7.3, "Page tree") shall contain a <b>B</b> entry whose value is an array of indirect references to the beads on the page, 
+in <del onMouseEnter="mouseEnter(this)" data-issue="320">drawing</del><ins onMouseEnter="mouseEnter(this)" data-issue="320">reading</ins> order.
+</p>
+
+
+<h3 id="H12.4.4">12.4.4 Presentations</h3>
 
 <h4 id="H12.4.4.1">12.4.4.1 General</h4>
 

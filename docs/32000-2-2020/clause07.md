@@ -816,6 +816,17 @@ there is no way to specify that metadata is to be left unencrypted in these case
     (<i>Optional; PDF 1.3<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="submitted">; indirect reference preferred</del></i>) ...
     </td>
   </tr>
+  <tr>
+    <td><b>B</b></td>
+    <td>array</td>
+    <td>
+    (<i>Optional; PDF 1.1; recommended if the page contains article beads</i>) An array that shall contain indirect references to all article beads 
+    appearing on the page (see 12.4.3, "Articles"). The beads shall be listed in the array in 
+    <del onMouseEnter="mouseEnter(this)" data-issue="320">natural</del> reading order. 
+    Objects of <b>Type</b> <i>Template</i> shall have no <b>B</b> key.
+    <p>...</p>
+    </td>
+  </tr>
 </table>
 
 
