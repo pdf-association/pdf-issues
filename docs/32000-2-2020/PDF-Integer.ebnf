@@ -1,0 +1,3 @@
+@startebnf
+PDF_IntegerObject = [ ( "+" | "-" ) ], {DecimalDigit}-;
+@endebnf

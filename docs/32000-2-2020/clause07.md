@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 6 October 2023
+modified: 24 October 2023
 ---
 
 <ul class="noprint">
@@ -217,12 +217,24 @@ However, a</del>
 
 <h3 id="H7.3.3">7.3.3 Numeric objects</h3>
 
+<p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 1:</p>
+
+<img src="PDF-Integer-EBNF.svg" alt="EBNF railroad diagram for PDF integer object">
+<a href="PDF-Integer.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+
+
 <p class="location">Change EXAMPLE 1 as follows:</p>
 
 <p>EXAMPLE 1 Integer objects</p>
 <code class="hangingindent">123   43445   +17   -98   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300">00987</ins></code>
 
 <p>...</p>
+
+<p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 2:</p>
+
+<img src="PDF-Real-EBNF.svg" alt="EBNF railroad diagram for PDF real object">
+<a href="PDF-Real.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+
 
 <p class="location">Change EXAMPLE 2 as follows:</p>
 
