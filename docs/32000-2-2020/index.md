@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 6 October 2023
+modified: 24 October 2023
 ---
 
 <p>
@@ -97,6 +97,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>
 <li><a href="clause14.html#Table350">Table 350 - Entries in a page-piece dictionary</a></li>
 <li><a href="clause14.html#Table352">Table 352 - Marked content operators</a></li>
+<li><a href="clause14.html#Table354">Table 354 - Entries in the structure tree root</a></li>
 <li><a href="clause14.html#Table355">Table 355 - Entries in a structure element dictionary</a></li>
 <li><a href="clause14.html#Table358">Table 358 - Entries in an object reference dictionary</a></li>
 <li><a href="clause14.html#Table360">Table 360 - Entries common to all attribute object dictionaries</a></li>

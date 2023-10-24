@@ -31,6 +31,8 @@ modified: 24 October 2023
     <ul>
      <li><a href="#H14.7.5.3">14.7.5.3 PDF objects as content items</a>
      </li>
+     <li><a href="#H14.7.5.4">14.7.5.4 Finding structure elements from content items</a>
+     </li>
     </ul>
    </li>
    <li>14.7.6 Structure attributes
@@ -269,6 +271,42 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
 
 <h3 id="H14.7.2">14.7.2 Structure hierarchy</h3>
 
+<p class="location">Change Table 354 as follows:</p>
+
+<table>
+  <caption id="Table354">Table 354 - Entries in the structure tree root</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>K</b></td>
+    <td>dictionary or array</td>
+    <td>
+    (<i>Optional</i>) The immediate child or children of the structure tree root in the structure hierarchy. The value 
+    <del onMouseEnter="mouseEnter(this)" data-issue="308">may</del><ins onMouseEnter="mouseEnter(this)" data-issue="308">shall</ins>
+    be either a dictionary representing a single structure element or an array of such dictionaries. 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="308">Values or array elements shall not be <b>null</b>.</ins>
+    </td>
+  </tr>
+  <tr>
+    <td><b>ParentTree</b></td>
+    <td>number tree</td>
+    <td>
+    (<i>Required if any structure element contains content items</i>) A number tree (see 7.9.7, "Number trees") used in finding the structure elements to which content items belong. 
+    Each integer key in the number tree shall correspond to a single page of the document or to an individual object (such as an annotation or an XObject) that is a content item in its own right. 
+    The integer key shall be the value of the <b>StructParent</b> or <b>StructParents</b> entry in that object (see 14.7.5.4, "Finding structure elements from content items"). 
+    The form of the associated value shall depend on the nature of the object: 
+    For an object that is a content item in its own right, the value shall be an indirect reference to the object’s parent element (the structure element that contains it as a content item). 
+    For a page object or content stream containing marked-content sequences that are content items, the value shall be an array of references to the parent elements of those marked-content sequences. 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="308">This array may contain elements that are <b>null</b>.</ins> 
+    See 14.7.5.4, "Finding structure elements from content items" for further discussion.
+    </td>
+  </tr>
+</table>
+
+
 <p class="location">Change Table 355 as follows:</p>
 
 <table>
@@ -279,9 +317,42 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <th>Value</th>
   </tr>
   <tr>
-    <td>R</td>
+    <td><b>R</b></td>
     <td>integer</td>
     <td>(<i>Optional<ins onMouseEnter="mouseEnter(this)" data-issue="93" data-iso="approved">; deprecated in PDF 2.0</ins></i>) The current revision number of this structure element (see 14.7.6.3, "Attribute revision numbers"). The value shall be a non-negative integer. Default value: 0.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Ref</b></td>
+    <td>array</td>
+    <td>
+      <p>...</p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">The array shall not contain elements that are <b>null</b>.</ins></p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>K</b></td>
+    <td>(various)</td>
+    <td>
+    <p>(<i>Optional</i>) The children of this structure element <ins onMouseEnter="mouseEnter(this)" data-issue="308">(shall not be <b>null</b>)</ins>.
+    The value of this entry may be one of the following objects or an array consisting of one or more of the following objects in any combination:</p>
+    <p>...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>A</b></td>
+    <td>(various)</td>
+    <td>
+      <p>...</p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">Attribute objects and revisions shall not be <b>null</b>.</ins></p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>C</b></td>
+    <td>name or array</td>
+    <td>
+      <p>...</p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">Attribute class names and revisions shall not be <b>null</b>.</ins></p>
     </td>
   </tr>
 </table>
@@ -321,6 +392,25 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     </td>
   </tr>
 </table>
+
+<h4 id="H14.7.5.4">14.7.5.4 Finding structure elements from content items</h4>
+
+<p class="location">Change the second bullet point as follows:</p>
+
+<ul>
+ <li>...</li>
+ <li>
+ For a content stream containing marked-content sequences that are content items, the value shall be an array of indirect references to the sequences’ parent structure elements <ins onMouseEnter="mouseEnter(this)" data-issue="308">or <b>null</b> for unused marked content identifiers (MCIDs) or those that do not have a structural parent</ins>. 
+ The array element corresponding to each sequence shall be found by using the sequence’s marked-content identifier <ins onMouseEnter="mouseEnter(this)" data-issue="308">(MCID)</ins> as a zero-based index into the array.
+ </li>
+</ul>
+
+<p class="location">Add a new NOTE 2 below existing NOTE as follows (existing NOTE to be renumbered as NOTE 1):</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="308">NOTE 2: MCIDs are scoped by content stream and must start at zero, so the same MCID may reappear across pages or XObjects. Thus ensuring MCIDs are contiguous for any given page allows for efficient creation of <b>StructParents</b> without excessive <b>null</b> objects in the structure tree root <b>ParentTree</b> number-tree.</ins>
+</p>
+
 
 <h3 id="H14.7.6">14.7.6 Structure attributes</h3>
 
