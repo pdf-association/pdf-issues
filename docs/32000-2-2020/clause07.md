@@ -831,6 +831,36 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <h3 id="H7.7.3">7.7.3 Page tree</h3>
 
+<h4 id="H7.7.3.2">7.7.3.2 Page tree nodes</h4>
+
+<p class="location">Change Table 30 as follows:</p>
+
+<table>
+  <caption id="Table30">Table 30 - Required entries in a page tree node</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Kids</b></td>
+    <td>array</td>
+    <td>
+    (<i>Required</i>) An array of indirect references to the immediate children of this node. The children shall only be page objects or other page tree nodes
+    <ins onMouseEnter="mouseEnter(this)" data-issue="271">(<b>null</b> entries shall not be present). The length of the array shall be at least one</ins>.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Count</b></td>
+    <td>integer</td>
+    <td>
+    (<i>Required</i>) The number of leaf nodes (page objects) that are descendants of this node within the page tree <ins onMouseEnter="mouseEnter(this)" data-issue="271">which shall be 1 or greater</ins>.
+    <p class="hangingindent">NOTE Since the number of pages descendent from a Pages dictionary can be accurately determined by examining the tree itself using the <b>Kids</b> arrays, the <b>Count</b> entry is redundant.</p>
+    <p>A PDF writer shall ensure that the value of the <b>Count</b> key is consistent with the number of entries in the <b>Kids</b> array and its descendants which definitively determines the number of descendant pages.</p>
+    </td>
+  </tr>
+</table>
+
 <h4 id="H7.7.3.3">7.7.3.3 Page objects</h4>
 
 <p class="location">Change Table 31 as follows:</p>
