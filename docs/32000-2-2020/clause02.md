@@ -14,6 +14,12 @@ modified: 14 August 2022
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies <ins onMouseEnter="mouseEnter(this)" data-issue="57">(including any amendments)</ins>. For undated references, the latest edition of the referenced document (including any amendments or corrigenda) applies.
+</p>
+
 <p>...</p>
 
 <p class="location">Change the reference to ISO 15076-1 to an undated reference as follows:</p>
