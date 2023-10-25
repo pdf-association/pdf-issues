@@ -288,7 +288,21 @@ However, a</del>
 
 <h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
 
-<p class="location">Change last bulleted list follows:</p>
+<p class="location">Change the second paragraph as follows:</p>
+
+<p>
+The ASCII base-85 encoding shall use the ASCII characters ! through u ((21h) - (75h)) and the character z (7Ah), with the 2-character sequence ~> (7Eh)(3Eh) as its EOD marker. The <b>ASCII85Decode</b> filter shall ignore all white-space characters (see 7.2, "Lexical conventions"). 
+<ins onMouseEnter="mouseEnter(this)" data-issue="293">If the <b>ASCII85Decode</b> filter encounters the character ~ in its input, the next character shall be > and the filter will reach EOD. Any other characters shall cause an error.</ins>
+Any other characters, and any character sequences that represent impossible combinations in the ASCII base-85 encoding, shall cause an error.
+</p>
+
+<p class="location">Insert a new NOTE below the second paragraph as follows:</p>
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="293">NOTE: the Adobe PostScript Language Reference Manual (PLRM), Third Edition, clause 3.13.3 defines the above parsing and error requirements for the ASCII base-85 EOD ~> marker.</ins> 
+</p>
+
+
+<p class="location">Change last bulleted list as follows:</p>
 
 <p>The following conditions shall never occur in a correctly encoded byte sequence:</p>
 <ul>
