@@ -69,7 +69,7 @@ modified: 15 September 2023
     spaces, as well as the special colour spaces <b>Pattern</b>, <b>Indexed</b>, <b>Separation</b>, and <b>DeviceN</b>.
     Device colour spaces shall be subject to remapping according to the <b>DefaultGray</b>, <b>DefaultRGB</b>, and
     <b>DefaultCMYK</b> entries in the <b>ColorSpace</b> subdictionary of the current resource dictionary
-    <ins onMouseEnter="mouseEnter(this)" data-issue="134" data-iso="submitted">of the transparency group XObject</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="134" data-iso="approved">of the transparency group XObject</ins>
     (see 8.6.5.6, "Default colour spaces").
     </p>
     <p>...</p>

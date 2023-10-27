@@ -166,7 +166,7 @@ modified: 6 October 2023
 When two line segments meet at a sharp angle and mitered joins have been specified as the
 line join style, it is possible for the miter to extend far beyond the thickness of the
 line stroking the path. The miter limit
-<ins onMouseEnter="mouseEnter(this)" data-issue="154" data-iso="submitted">shall be a number greater than or equal to 1.0 and</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="154" data-iso="approved">shall be a number greater than or equal to 1.0 and</ins>
 shall impose a maximum on the ratio of the miter length to the line width (see
 "Figure 15 — Miter length"). When the limit is exceeded, the join is converted from
 a miter to a bevel.
@@ -207,30 +207,30 @@ a miter to a bevel.
 
 <p class="location">Change the first paragraph as follows:</p>
 <p>
-<b>ICCBased</b> colour spaces (<i>PDF 1.3</i>) shall be based on a cross-platform colour profile as defined by the International Color Consortium (ICC). Unlike the <b>CalGray</b>, <b>CalRGB</b>, and <b>Lab</b> colour spaces, which are characterised by entries in the colour space dictionary, an <b>ICCBased</b> colour space shall be characterised by a sequence of bytes in a standard format. Details of the profile format can be found in the ICC specification<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">s</ins>.
+<b>ICCBased</b> colour spaces (<i>PDF 1.3</i>) shall be based on a cross-platform colour profile as defined by the International Color Consortium (ICC). Unlike the <b>CalGray</b>, <b>CalRGB</b>, and <b>Lab</b> colour spaces, which are characterised by entries in the colour space dictionary, an <b>ICCBased</b> colour space shall be characterised by a sequence of bytes in a standard format. Details of the profile format can be found in the ICC specification<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">s</ins>.
 </p>
 
 <p class="location">Replace the paragraph before Table 66 and Table 66 as follows:</p>
 
 <p>
-"Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC Specification versions supported by ICC based colour spaces" shows the versions of the ICC specification on which the
+"Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC Specification versions supported by ICC based colour spaces" shows the versions of the ICC specification on which the
 <b>ICCBased</b> colour spaces that PDF versions 1.3 and later shall use. (Earlier versions of the ICC specification shall also be supported.)</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC profile versions supported by <b>ICCBased</b> colour spaces" lists the ICC profile versions as specified in the ICC header that shall be supported.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC profile versions supported by <b>ICCBased</b> colour spaces" lists the ICC profile versions as specified in the ICC header that shall be supported.</ins>
 </p>
 
 <table>
-  <caption id="Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></caption>
+  <caption id="Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></caption>
   <tr>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC profile header version</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC Specification</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC profile header version</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC Specification</ins></th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">2.<i>x.y.z</i></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">"<i>Specification ICC.1:2001-04 - File Format for Color Profiles [REVISION of ICC.1:1998-09]</i>"</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">2.<i>x.y.z</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"<i>Specification ICC.1:2001-04 - File Format for Color Profiles [REVISION of ICC.1:1998-09]</i>"</ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">4.<i>x.y.z</i></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ISO 15076-1, <i>Image technology colour management – Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">4.<i>x.y.z</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1, <i>Image technology colour management – Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
   </tr>
 </table>
 
@@ -239,16 +239,16 @@ a miter to a bevel.
 <p>PDF processors shall follow these guidelines for writing and rendering ICC based color spaces:</p>
 
 <ul>
-<li>A PDF reader shall support <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC.1:2010 as required by PDF 2.0</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">both ICC profile header version 2.x and 4.x profiles</ins>, which will enable it to properly render all embedded ICC profiles regardless of the PDF version.</li>
-<li>A PDF reader shall always process an embedded ICC profile according to the <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">corresponding version of the PDF</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC specification</ins> being processed as shown in <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">"ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">"Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces"</ins> above; it shall not substitute the alternate colour space in these cases.</li>
-<li>A PDF writer should use ICC <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">1:2010</del> profiles<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted"> conforming to ISO 15076</ins>. It may embed profiles conforming to an earlier or later ICC version.</li>
+<li>A PDF reader shall support <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC.1:2010 as required by PDF 2.0</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">both ICC profile header version 2.x and 4.x profiles</ins>, which will enable it to properly render all embedded ICC profiles regardless of the PDF version.</li>
+<li>A PDF reader shall always process an embedded ICC profile according to the <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">corresponding version of the PDF</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC specification</ins> being processed as shown in <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces"</ins> above; it shall not substitute the alternate colour space in these cases.</li>
+<li>A PDF writer should use ICC <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">1:2010</del> profiles<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved"> conforming to ISO 15076</ins>. It may embed profiles conforming to an earlier or later ICC version.</li>
 <li>...</li>
 </ul>
 
 <p class="location">Add a new NOTE 2 below NOTE 1 and above Table 67 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="228" data-iso="submitted">NOTE 2 ICC profiles can contain private tags. This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="228" data-iso="approved">NOTE 2 ICC profiles can contain private tags. This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.</ins>
 </p>
 
 <h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
@@ -510,14 +510,14 @@ the corresponding colour spaces either directly or via a default colour space (s
     <td>array</td>
     <td>
      <p>
-      (<i>Optional</i>) An array consisting of one or more arrays<del onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">, each of which</del><ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">. Each of the inner arrays</ins> represents a collection of optional content groups whose states shall be intended to follow a radio button paradigm. That is, the state of at most one optional content group in each <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">inner</ins> array shall be <b>ON</b> at a time. If one group is turned <b>ON</b>, all others shall be turned <b>OFF</b>. However, turning a group from <b>ON</b> to <b>OFF</b> does not force any other group to be turned <b>ON</b>. <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">None of the inner array elements shall be an empty array.</ins> 
+      (<i>Optional</i>) An array consisting of one or more arrays<del onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">, each of which</del><ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">. Each of the inner arrays</ins> represents a collection of optional content groups whose states shall be intended to follow a radio button paradigm. That is, the state of at most one optional content group in each <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">inner</ins> array shall be <b>ON</b> at a time. If one group is turned <b>ON</b>, all others shall be turned <b>OFF</b>. However, turning a group from <b>ON</b> to <b>OFF</b> does not force any other group to be turned <b>ON</b>. <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">None of the inner array elements shall be an empty array.</ins> 
       </p>
       <p>
-      <del onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">An empty array [] explicitly indicates that no such collections exist.</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">If the value of <b>RBGroups</b> is an empty array [], then this explicitly indicates that no such collections exist.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">An empty array [] explicitly indicates that no such collections exist.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">If the value of <b>RBGroups</b> is an empty array [], then this explicitly indicates that no such collections exist.</ins>
       </p>
       <p>
-      In the default configuration dictionary, the default value <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="submitted">for <b>RBGroups</b></ins> shall be an empty array; in other configuration dictionaries, the default is the <b>RBGroups</b> value from the default configuration dictionary.     
+      In the default configuration dictionary, the default value <ins onMouseEnter="mouseEnter(this)" data-issue="225" data-iso="approved">for <b>RBGroups</b></ins> shall be an empty array; in other configuration dictionaries, the default is the <b>RBGroups</b> value from the default configuration dictionary.     
       </p>
     </td>
   </tr>

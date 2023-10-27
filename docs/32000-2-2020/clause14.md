@@ -61,9 +61,9 @@ modified: 24 October 2023
       <ul>
        <li><a href="#H14.8.4.7.2">14.8.4.7.2 General inline level structure types</a>
        </li>
-       <li><a href="#H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">14.8.4.7.3 Link elements</ins></a>
+       <li><a href="#H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">14.8.4.7.3 Link elements</ins></a>
        </li>
-       <li><a href="#H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">4</ins> Ruby and warichu elements</a>
+       <li><a href="#H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">4</ins> Ruby and warichu elements</a>
        </li>
       </ul>
      </li>
@@ -81,7 +81,7 @@ modified: 24 October 2023
     <ul>
      <li><a href="#H14.8.5.1">14.8.5.1 General</a>
      </li>
-     <li><a href="#H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="submitted">structure</ins> attribute owners</a>
+     <li><a href="#H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute owners</a>
      </li>
      <li><a href="#H14.8.5.3">14.8.5.3 Attribute values and inheritance</a>
      </li>
@@ -557,7 +557,7 @@ it is an empty class, which defines no additional attributes.</ins>
 <p class="location">Change first paragraph as follows:</p>
 
 <p>
-The meaning of the terms block-progression direction and inline-progression direction depends on the writing system in use, as specified by the standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="submitted">structure</ins> attribute <b>WritingMode</b> (see 14.8.5.4.2, "General Layout Attributes"). In Western writing systems, the block direction is from top to bottom and the inline direction is from left to right. Other writing systems use different directions for laying out content.
+The meaning of the terms block-progression direction and inline-progression direction depends on the writing system in use, as specified by the standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute <b>WritingMode</b> (see 14.8.5.4.2, "General Layout Attributes"). In Western writing systems, the block direction is from top to bottom and the inline direction is from left to right. Other writing systems use different directions for laying out content.
 </p>
 
 <p>...</p>
@@ -581,11 +581,11 @@ The meaning of the terms block-progression direction and inline-progression dire
     <td>
     <p>Encloses a grouping of structure elements without consideration for their hierarchy.</p>
     <p class="hangingindent">
-    NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted"><b>Part</b> is the semantic equivalent of <b>Div</b></del> <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted">The non-hierarchical aspect of <b>Part</b> is similar to <b>Div</b>. However, unlike <b>Div</b>, the grouping of elements enclosed in a <b>Part</b> structure element has semantic value</ins>.
+    NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="approved"><b>Part</b> is the semantic equivalent of <b>Div</b></del> <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="approved">The non-hierarchical aspect of <b>Part</b> is similar to <b>Div</b>. However, unlike <b>Div</b>, the grouping of elements enclosed in a <b>Part</b> structure element has semantic value</ins>.
     </p>
     <p>A structure element with the type of <b>Part</b> shall inherit the containment requirements and limitations of its parent element. Where the parent element is itself a structure element of type <b>Part</b>, then the inheritance shall recurse to the first parent element whose type is not <b>Part</b>.</p>
     <p class="hangingindent">
-    <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="submitted">NOTE 2 The semantic value of a structure element of type <b>Part</b> is determined by the elements enclosed within, in addition to the grouping nature of <b>Part</b>.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="approved">NOTE 2 The semantic value of a structure element of type <b>Part</b> is determined by the elements enclosed within, in addition to the grouping nature of <b>Part</b>.</ins>
     </p>
     <p>...</p>
     </td>
@@ -621,41 +621,41 @@ The meaning of the terms block-progression direction and inline-progression dire
 
 <p class="location">Insert a new clause heading below NOTE 1 and modify text as follows:</p>
 
-<h5 id="H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">14.8.4.7.3 Link elements</ins></h5>
+<h5 id="H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">14.8.4.7.3 Link elements</ins></h5>
 
 <p>Tagged PDF link elements (standard structure type Link) use PDF's logical structure facilities to establish the association between content items and link annotations, providing functionality comparable to HTML hypertext links. The following items may be children of a link element:</p>
 
 <ul>
-<li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del></li>
-<li>Object references (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">annotations</ins> associated with the content</li>
+<li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del></li>
+<li>Object references (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotations</ins> associated with the content</li>
 </ul>
 
-<p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action in a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
+<p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action in a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 When a <b>Link</b> structure element describes a span of text to be associated with a link annotation and that span
 wraps from the end of one line to the beginning of another, the <b>Link</b> structure element shall include a single
 object reference that associates the span with the associated link annotation. Further, the link annotation shall
 use the <b>QuadPoint</b> entry to denote the active areas on the page.</ins></p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 EXAMPLE 1 The <b>Link</b> structure element references a link annotation that includes a <b>QuadPoint</b> entry that boxes the
 strings "with a" and "link". That is, the <b>QuadPoint</b> entry contains 16 numbers: the first 8 numbers describe
 a quadrilateral for "with a", and the next 8 describe a quadrilateral for "link".
 </ins></p>
 
-<p style="padding-left:40px;"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<p style="padding-left:40px;"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 Here is some text <span style="color:blue;text-decoration:underline;">with a</span><br/>
 <span style="color:blue;text-decoration:underline;">link</span> inside.
 </ins></p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclose multiple link annotations on a single page is deprecated.
 </ins></p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">EXAMPLE 2 Consider the following fragment of HTML code, which produces a line of text containing a hypertext link:</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 2 Consider the following fragment of HTML code, which produces a line of text containing a hypertext link:</ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 <code>&lt;html&gt;
     &lt;body&gt;
         &lt;p&gt;
@@ -666,9 +666,9 @@ NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclo
 </code></ins></div>
 
 <br/>
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">This code sample shows an equivalent fragment of PDF using a link element, whose text it displays in blue and underlined.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">This code sample shows an equivalent fragment of PDF using a link element, whose text it displays in blue and underlined.</ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 <code>/P &lt;&lt; /MCID 0 &gt;&gt;                     % Marked-content sequence 0 (paragraph)
   BDC                                % Begin marked-content sequence
     BT                               % Begin text object
@@ -705,9 +705,9 @@ NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclo
 </code></ins></div>
 
 <br/>
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">EXAMPLE 3 This example shows an excerpt from the associated logical structure hierarchy.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 3 This example shows an excerpt from the associated logical structure hierarchy.</ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 <code>501 0 obj              % Structure element for paragraph
 &lt;&lt;  /Type /StructElem
     /S /P
@@ -737,7 +737,7 @@ endobj
 </code></ins></div>
 <br/>
 
-<h5 id="H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="submitted">4</ins> Ruby and warichu elements</h5>
+<h5 id="H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">4</ins> Ruby and warichu elements</h5>
 
 <p class="editornote">EDITOR NOTE: Clause is renumbered - existing text is unchanged.</p>
 
@@ -800,7 +800,7 @@ endobj
 <p class="location">Change reference to subclause 14.8.5.2 in sixth paragraph as follows:</p>
 
 <p>
-In addition to the standard structure attributes described in 14.8.5.2, "Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="submitted">structure</ins> attribute owners" there are several other optional entries – <b>Lang</b>, <b>Alt</b>, <b>ActualText</b>, and <b>E</b> – that are described in 14.9, "Repurposing and accessibility support" but are useful to other PDF consumers as well. They appear in the following places in a PDF file (rather than in attribute dictionaries):
+In addition to the standard structure attributes described in 14.8.5.2, "Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute owners" there are several other optional entries – <b>Lang</b>, <b>Alt</b>, <b>ActualText</b>, and <b>E</b> – that are described in 14.9, "Repurposing and accessibility support" but are useful to other PDF consumers as well. They appear in the following places in a PDF file (rather than in attribute dictionaries):
 </p>
 
 <ul>
@@ -809,12 +809,12 @@ In addition to the standard structure attributes described in 14.8.5.2, "Standar
 
 <p class="location">Change title of subclause 14.8.5.2 as follows:</p>
 
-<h4 id="H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="submitted">structure</ins> attribute owners</h4>
+<h4 id="H14.8.5.2">14.8.5.2 Standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute owners</h4>
 
 <p class="location">Change first paragraph as follows:</p>
 
 <p>
-Each attribute object has an owner, specified by the object's <b>O</b> entry, or, if the value of <b>O</b> is <i>NSO</i>, by the object’s <b>NS</b> entry, which determines the interpretation of the attributes defined in the object's dictionary. Multiple owners may define like-named attributes with different value types or interpretations. Tagged PDF defines a set of standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="submitted">structure</ins> attribute owners as shown in "Table 376 — Standard structure attribute owners".
+Each attribute object has an owner, specified by the object's <b>O</b> entry, or, if the value of <b>O</b> is <i>NSO</i>, by the object’s <b>NS</b> entry, which determines the interpretation of the attributes defined in the object's dictionary. Multiple owners may define like-named attributes with different value types or interpretations. Tagged PDF defines a set of standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute owners as shown in "Table 376 — Standard structure attribute owners".
 </p>
 
 <p>...</p>
@@ -857,7 +857,7 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
 <p class="location">Change NOTE 1 as follows:</p>
 
 <p class="hangingindent">
-NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="submitted">structure</ins> attributes in this subclause specifies whether their values are inheritable
+NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attributes in this subclause specifies whether their values are inheritable
 </p>
 
 <p>...</p>
@@ -876,14 +876,14 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <th>Inheritable</th>
   </tr>
   <tr>
-    <td><b><del onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="submitted">Vertical text</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="submitted">Any structure element containing text whose inline-progression direction is top to bottom or bottom to top.</ins>
+    <td><b><del onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Vertical text</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Any structure element containing text whose inline-progression direction is top to bottom or bottom to top.</ins>
     </b></td>
     <td>...</td>
     <td>...</td>
   </tr>
   <tr>
-    <td><b><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="submitted">RB, RT, EP (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="submitted">)</ins>
+    <td><b><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">RB, RT, EP (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">)</ins>
     </b></td>
     <td>...</td>
     <td>...</td>
@@ -909,17 +909,17 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td>
     <p>
      (<i>Optional; not inheritable</i>) The positioning of the element with respect to the enclosing reference area and other content
-     <ins onMouseEnter="mouseEnter(this)" data-issue="189" data-iso="submitted">(see 14.8.3.3, "Progression direction")</ins>. The value shall be one of the following:
+     <ins onMouseEnter="mouseEnter(this)" data-issue="189" data-iso="approved">(see 14.8.3.3, "Progression direction")</ins>. The value shall be one of the following:
     </p>
     <p>...</p>
     <p>Default value: <i>Block</i> for BLSEs, <i>Inline</i> for ILSEs.</p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188" data-iso="submitted">
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188" data-iso="approved">
     NOTE The default value depends on the context in which the structure element is used (see 14.8.4.1, "General").
     </ins></p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188" data-iso="submitted">
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188" data-iso="approved">
     EXAMPLE 1 A <b>Figure</b> structure element occurring within a <b>P</b> structure element is an ILSE, and therefore has a default value of <i>Inline</i>.
     </ins></p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188" data-iso="submitted">
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="188" data-iso="approved">
     EXAMPLE 2 A <b>Figure</b> structure element occurring within a <b>Sect</b> structure element is an BLSE, and therefore has a default value of <i>Block</i>.
     </ins></p>
     </td>
@@ -931,7 +931,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
      <p>
      (<i>Optional; inheritable</i>) Indicates the directions of layout progression inside Block Level Structure Elements (BLSEs) (inline progression)
      and regarding the sequence of BLSEs (block progression)
-     <ins onMouseEnter="mouseEnter(this)" data-issue="189" data-iso="submitted">(see 14.8.3.3, "Progression direction")</ins>.
+     <ins onMouseEnter="mouseEnter(this)" data-issue="189" data-iso="approved">(see 14.8.3.3, "Progression direction")</ins>.
      <b>WritingMode</b> may be used as an attribute for any structure element. The value shall be one of the following:
      </p>
      <p>...</p>
@@ -953,7 +953,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
   </tr>
   <tr>
     <td><b>GlyphOrientationVertical</b></td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="submitted">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="submitted">integer</ins> or name</td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="approved">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="approved">integer</ins> or name</td>
     <td>
     <p>...</p>
     </td>
@@ -1181,8 +1181,8 @@ endobj
     <td>integer</td>
     <td>
     <p>(<i>Optional</i>) A set of flags specifying various characteristics of the command (see
-        <del onMouseEnter="mouseEnter(this)" data-issue="222" data-iso="submitted">"Table 393 - Entries in a Web Capture command dictionary"</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="222" data-iso="submitted">"Table 394 - Web Capture command flags"</ins>). Default value: 0.
+        <del onMouseEnter="mouseEnter(this)" data-issue="222" data-iso="approved">"Table 393 - Entries in a Web Capture command dictionary"</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="222" data-iso="approved">"Table 394 - Web Capture command flags"</ins>). Default value: 0.
     </p>
     </td>
   </tr>

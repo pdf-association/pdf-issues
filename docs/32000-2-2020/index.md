@@ -46,7 +46,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause08.html#Table50">Table 50 - Operator categories</a></li>
 <li><a href="clause08.html#Table52">Table 52 - Device-dependent graphics state parameters</a></li>
 <li><a href="clause08.html#Table59">Table 59 - Path-painting categories</a></li>
-<li><a href="clause08.html#Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="submitted">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></a></li>
+<li><a href="clause08.html#Table66">Table 66 - <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC profile versions supported by <b>ICCBased</b> colour spaces</ins></a></li>
 <li><a href="clause08.html#Table74">Table 74 - Additional entries specific to a Type 1 pattern <ins onMouseEnter="mouseEnter(this)" data-issue="294">stream</ins> dictionary</a></li>
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>
 <li><a href="clause08.html#Table91">Table 91 - Entries in an inline image object</a></li>
@@ -83,7 +83,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table260">Table 260 - SubFilter value algorithm support</a></li>
 <li><a href="clause12.html#Table263">Table 263 - Entries in a permissions dictionary</a></li>
 <li><a href="clause12.html#Table273">Table 273 - Entries common to all requirement dictionaries</a></li>
-<li><a href="clause12.html#Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="submitted">Additional entries</ins> for specific types of requirements</a></li>
+<li><a href="clause12.html#Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">Additional entries</ins> for specific types of requirements</a></li>
 <li><a href="clause12.html#Table275">Table 275 - Requirement types</a></li>
 <li><a href="clause13.html#Table277">Table 277 - Entries common to all rendition dictionaries</a></li>
 <li><a href="clause13.html#Table285">Table 285 - Additional entries in a media clip data dictionary</a></li>
@@ -92,7 +92,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table317">Table 317 - Entries in a 3D background dictionary</a></li>
 <li><a href="clause13.html#Table322">Table 322 - Entries in a 3D cross section dictionary</a></li>
 <li><a href="clause13.html#Table323">Table 323 - Entries in a 3D node dictionary</a></li>
-<li><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted"><a href="clause13.html#Table323a">Table 323a - Interpretation of 3D Node Subtype entry</a></ins></li>
+<li><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved"><a href="clause13.html#Table323a">Table 323a - Interpretation of 3D Node Subtype entry</a></ins></li>
 <li><a href="clause13.html#Table331">Table 331 - Additional entries in a 3D measurement/markup dictionary for a 3D comment note</a></li>
 <li><a href="clause13.html#Table333">Table 333 - Additional entries specific to a RichMedia annotation</a></li>
 <li><a href="clause13.html#Table335">Table 335 - Entries in a RichMediaActivation dictionary</a></li>

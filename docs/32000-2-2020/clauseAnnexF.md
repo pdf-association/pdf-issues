@@ -58,7 +58,7 @@ or greater.
     <td>number</td>
     <td>
       <p>(<i>Required</i>) A version identification for the linearized format.
-      <ins onMouseEnter="mouseEnter(this)" data-issue="153" data-iso="submitted">As usual, a change in the integer part
+      <ins onMouseEnter="mouseEnter(this)" data-issue="153" data-iso="approved">As usual, a change in the integer part
       indicates an incompatible change in the linearized format. A change in the fractional part
       indicates an upward-compatible change. The current version is 1.0.</ins>
       </p>

@@ -126,7 +126,7 @@ modified: 2 June 2023
     <td><b>N</b></td>
     <td>text string</td>
     <td>
-     <p>(<i>Optional</i>) A <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">Unicode</del><ins onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="submitted">UTF-16BE</ins>-encoded
+     <p>(<i>Optional</i>) A <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">Unicode</del><ins onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">UTF-16BE</ins>-encoded
          text string specifying the name of the rendition for use in a user interface and for name tree lookup by ECMAScript actions.
      </p>
     </td>
@@ -161,8 +161,8 @@ modified: 2 June 2023
     <td>dictionary</td>
     <td>
      <p>(<i>Optional</i>) A dictionary whose entries (see
-     <del onMouseEnter="mouseEnter(this)" data-issue="179" data-iso="submitted">"Table 287 — Entries in a media clip data MH/BE dictionary"</del>
-     <ins onMouseEnter="mouseEnter(this)" data-issue="179" data-iso="submitted">"Table 289 — Entries in a media clip section MH/BE dictionary"</ins>)
+     <del onMouseEnter="mouseEnter(this)" data-issue="179" data-iso="approved">"Table 287 — Entries in a media clip data MH/BE dictionary"</del>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="179" data-iso="approved">"Table 289 — Entries in a media clip section MH/BE dictionary"</ins>)
      shall be honoured for the media clip data to be considered viable.
      </p>
     </td>
@@ -177,8 +177,8 @@ modified: 2 June 2023
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-3D annotations (<i>PDF 1.6</i>) are a way to include 3D artwork in PDF documents. Rich media annotations are another method (see <del onMouseEnter="mouseEnter(this)" data-issue="142" data-iso="submitted">0 "<br/>
-Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso="submitted">13.7 "Rich media"</ins>). "Table 309 — Additional entries specific to a 3D annotation" shows the entries specific to a 3D annotation dictionary. "Table 166 — Entries common to all annotation dictionaries" describes the entries common to all annotation dictionaries.
+3D annotations (<i>PDF 1.6</i>) are a way to include 3D artwork in PDF documents. Rich media annotations are another method (see <del onMouseEnter="mouseEnter(this)" data-issue="142" data-iso="approved">0 "<br/>
+Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso="approved">13.7 "Rich media"</ins>). "Table 309 — Additional entries specific to a 3D annotation" shows the entries specific to a 3D annotation dictionary. "Table 166 — Entries common to all annotation dictionaries" describes the entries common to all annotation dictionaries.
 </p>
 
 <h3 id="H13.6.3">13.6.3 3D streams</h3>
@@ -237,7 +237,7 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
     <td><b>NA</b></td>
     <td>array</td>
     <td>
-    <p>(<i>Optional; PDF 1.7; <del onMouseEnter="mouseEnter(this)" data-issue="150" data-iso="submitted">meaningful only if <b>NR</b> is present</del></i>) An array ...
+    <p>(<i>Optional; PDF 1.7; <del onMouseEnter="mouseEnter(this)" data-issue="150" data-iso="approved">meaningful only if <b>NR</b> is present</del></i>) An array ...
     </p>
     </td>
   </tr>
@@ -333,14 +333,14 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
     <td>text string</td>
     <td>
     <p>
-    (<i>Required</i>) The name of the node being described by the node dictionary. All names in the node dictionary shall be unique. Interpretation of this entry shall depend upon the 3D format <del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">specified in the Subtype entry in "Table 311 — Entries in a 3D stream dictionary" as described below:</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">and annotation type as defined in Table 323a below.</ins>
+    (<i>Required</i>) The name of the node being described by the node dictionary. All names in the node dictionary shall be unique. Interpretation of this entry shall depend upon the 3D format <del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">specified in the Subtype entry in "Table 311 — Entries in a 3D stream dictionary" as described below:</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">and annotation type as defined in Table 323a below.</ins>
     </p>
-    <p><del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted"><i>U3D</i> If the <b>Subtype</b> of the corresponding 3D Stream is <i>U3D</i>, this entry shall correspond to the field Node block name, specified in the Universal 3D file format.</del>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved"><i>U3D</i> If the <b>Subtype</b> of the corresponding 3D Stream is <i>U3D</i>, this entry shall correspond to the field Node block name, specified in the Universal 3D file format.</del>
     </p>
-    <p><del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted"><i>PRC</i> (<i>PDF 2.0</i>) If the <b>Subtype</b> of the corresponding 3D Stream is <i>PRC</i>, this entry shall be the Unique Identifier (UUID) as specified in ISO 14739-1.</del>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved"><i>PRC</i> (<i>PDF 2.0</i>) If the <b>Subtype</b> of the corresponding 3D Stream is <i>PRC</i>, this entry shall be the Unique Identifier (UUID) as specified in ISO 14739-1.</del>
     </p>
-    <p class="hangingindent">NOTE 1 When comparing this entry to node names for a particular<del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted"> convention (such as Universal 3D or PRC)</del><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">3D model format</ins>, PDF processors will need to translate between the PDF text encoding used by PDF and the character encoding specified in the stream specified in the 3D stream.
+    <p class="hangingindent">NOTE 1 When comparing this entry to node names for a particular<del onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved"> convention (such as Universal 3D or PRC)</del><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">3D model format</ins>, PDF processors will need to translate between the PDF text encoding used by PDF and the character encoding specified in the stream specified in the 3D stream.
     </p>
     <p class="hangingindent">NOTE 2 The description of the value of the <b>N</b> key was clarified in this document (2020).
     </p>
@@ -351,23 +351,23 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
 <p class="location">Insert this new table below Table 323:</p>
 
 <table>
-  <caption id="Table323a"><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">Table 323a - Interpretation of 3D Node Subtype entry</ins></caption>
+  <caption id="Table323a"><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">Table 323a - Interpretation of 3D Node Subtype entry</ins></caption>
   <tr>
     <th>3D model format</th>
     <th>When using a 3D annotation</th>
     <th>When using a RichMedia annotation (<i>PDF 2.0</i>)</th>
   </tr>
   <tr>
-   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">U3D</ins></td>
+   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">U3D</ins></td>
    <td>
-   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
+   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">
     The <b>Subtype</b> of the corresponding 3D Stream shall be <i>U3D</i> (see Table 311 "Entries in a 3D stream dictionary") and the value of the
     <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall correspond to the field Node block name, 
     specified in the Universal 3D file format (ECMA-363).
     </ins>
    </td>
    <td>
-   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
+   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">
     (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary")
     shall be the registered IANA MIME media type for U3D "<code>model/u3d</code>" (when expressed as a PDF name is <i>model#2Fu3d</i>) and the value of
     the <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall correspond to the field Node block name,
@@ -376,26 +376,26 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    </td>
   </tr>
   <tr>
-   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">PRC (<i>PDF 2.0</i>)</ins></td>
+   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">PRC (<i>PDF 2.0</i>)</ins></td>
    <td>
-   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
+   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">
     (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding 3D Stream shall be <i>PRC</i> (see Table 311 "Entries in a 3D stream dictionary") and the value of the
     <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall be the Unique Identifier (UUID) as specified 
     in ISO 14739-1.
    </ins>
    </td>
    <td>
-   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
+   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">
     (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary") 
     shall be the registered IANA MIME media type for PRC "<code>model/prc</code>" (when expressed as a PDF name is <i>model#2Fprc</i>) and the value of the <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall be the Unique Identifier (UUID) as specified in ISO 14739-1.
    </ins>
    </td>
   </tr>
   <tr>
-   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">STEP (<i>PDF 2.0; see ISO/TS 24064</i>)</ins></td>
-   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">Prohibited.</ins></td>
+   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">STEP (<i>PDF 2.0; see ISO/TS 24064</i>)</ins></td>
+   <td><ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">Prohibited.</ins></td>
    <td>
-   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="submitted">
+   <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">
     (<i>PDF 2.0</i>) The <b>Subtype</b> of the corresponding Embedded File Specification dictionary (see Table 44 "Additional entries in an embedded file stream dictionary") shall be one of the
     registered IANA MIME media types for STEP ("<code>model/step</code>", "<code>model/step+xml</code>", "<code>model/step+zip</code>", "<code>model/step-xml+zip</code>")
     and the value of the <b>N</b> entry in the 3D node dictionary (see Table 323 "Entries in a 3D node dictionary") shall be the unique identifier 
@@ -442,8 +442,8 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
 <p>
 The annotation subtype <i>RichMedia</i> shares many low-level structural similarities with the 3D Artwork
 defined in 13.6, "3D Artwork". At the top level, the <i>rich media annotation</i> has two primary custom structures.
-The <i>RichMediaSettings dictionary</i> <del onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="submitted">is</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="submitted">, if present, shall be</ins> unique to each annotation,
+The <i>RichMediaSettings dictionary</i> <del onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="approved">is</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="approved">, if present, shall be</ins> unique to each annotation,
 while the <i>RichMediaContent dictionary</i> can be shared across rich-media annotations.
 </p>
 
@@ -462,7 +462,7 @@ while the <i>RichMediaContent dictionary</i> can be shared across rich-media ann
     <td><b>RichMediaSettings</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Optional; PDF 2.0</i>) A RichMediaSettings dictionary that <ins onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="submitted">shall be unique to each annotation and</ins>
+    <p>(<i>Optional; PDF 2.0</i>) A RichMediaSettings dictionary that <ins onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="approved">shall be unique to each annotation and</ins>
     stores conditions and responses that determine when the annotation should be activated and deactivated by an interactive
     PDF processor and the initial state of artwork in those states. See "Table 334 — Entries in a RichMediaSettings dictionary".
     </p>
@@ -482,7 +482,7 @@ while the <i>RichMediaContent dictionary</i> can be shared across rich-media ann
 The <i>RichMediaSettings dictionary</i> has a purpose similar to that of the 3D activation dictionary ("Table 310 — Entries in a 3D
 activation dictionary") with the 3D Annotation described in 13.6.2, "3D Annotations". The RichMediaSettings dictionary stores the
 conditions and responses that occur in response to certain events, such as activation and deactivation of the annotation, and contains two dictionaries.
-<ins onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="submitted">It shall be unique to each annotation.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="163" data-iso="approved">It shall be unique to each annotation.</ins>
 "Table 334 — Entries in a RichMediaSettings dictionary" gives the details of the content of this dictionary.
 </p>
 
@@ -503,7 +503,7 @@ conditions and responses that occur in response to certain events, such as activ
     <td>dictionary</td>
     <td>
     <p>(<i>Optional; PDF 2.0</i>) An indirect object reference to a 3D view dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="127" data-iso="approved">"Table 315 — Entries in a 3D view dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="127" data-iso="approved">13.7.2.3.5, "View dictionary"</ins> that shall also be referenced by the <b>Views</b> array within the annotation’s RichMediaContent dictionary (see "Table 341 — Entries in a RichMediaContent dictionary").</p>
-    <p>Default value: The first element in the <b>Views</b> array of the <del onMouseEnter="mouseEnter(this)" data-issue="145" data-iso="submitted">annotation specified in the RichMediaContent dictionary</del> <ins onMouseEnter="mouseEnter(this)" data-issue="145" data-iso="submitted">RichMediaContent dictionary specified in the annotation</ins>. If a <b>Views</b> array does not exist, default values for the components of a 3D view dictionary (see "Table 344 — Additional entries in a 3D view dictionary") are used.</p>
+    <p>Default value: The first element in the <b>Views</b> array of the <del onMouseEnter="mouseEnter(this)" data-issue="145" data-iso="approved">annotation specified in the RichMediaContent dictionary</del> <ins onMouseEnter="mouseEnter(this)" data-issue="145" data-iso="approved">RichMediaContent dictionary specified in the annotation</ins>. If a <b>Views</b> array does not exist, default values for the components of a 3D view dictionary (see "Table 344 — Additional entries in a 3D view dictionary") are used.</p>
     </td>
   </tr>
   <tr>
@@ -532,9 +532,9 @@ conditions and responses that occur in response to certain events, such as activ
     <td><b>Configurations</b></td>
     <td>array</td>
     <td>
-    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="166" data-iso="submitted">Optional</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="166" data-iso="submitted">Required</ins>;
-    PDF 2.0</i>) A <ins onMouseEnter="mouseEnter(this)" data-issue="166" data-iso="submitted">non-empty</ins> array where each element is
+    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="166" data-iso="approved">Optional</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="166" data-iso="approved">Required</ins>;
+    PDF 2.0</i>) A <ins onMouseEnter="mouseEnter(this)" data-issue="166" data-iso="approved">non-empty</ins> array where each element is
     an indirect object reference to a RichMediaConfiguration dictionary.</p>
     </td>
   </tr>
