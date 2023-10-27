@@ -42,12 +42,8 @@ GitHub Issue numbers will appear as popup tooltips when hovering over changes an
 closed GitHub pdf-issues</a>. 
 
 * If a small blue ISO logo is also shown ![ISO approved logo](docs/assets/Logo-ISO-small.png), then that errata has been approved by both the PDF Association's appropriate TWG and the appropriate [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/). 
-    - For ISO 32000-2:2020 (PDF 2.0), this means the resolution will be included in the forthcoming [Amendment 1](https://www.iso.org/standard/85145.html). Amendment 1 includes [these 89 closed errata labelled with "ISO 32000-2 Amd1"](https://github.com/pdf-association/pdf-issues/issues?q=is%3Aissue+label%3A%22ISO+32000-2+Amd1%22+). 
-
 
 * If a small gray ISO logo is also shown ![ISO submitted logo](docs/assets/Logo-ISO-submitted-small.png), then that errata has been approved by the PDF Association's appropriate TWG and submitted to the appropriate ISO working group and is waiting for approval. 
-    - For ISO 32000-2:2020 (PDF 2.0), these errata have been technically approved by ISO TC 171 SC 2 WG 8, but do not yet have an identified ISO document.
-
 
 * If no ISO logo is shown then the errata has been resolved by the PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) but has not yet been submitted to ISO for ratification.
 

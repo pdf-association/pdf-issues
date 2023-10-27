@@ -47,25 +47,18 @@ XFDF/FDF designed for a "master" ISO publication to suit whatever an national bo
 
 ## Additional notes related to ISO Amendments
 
-- we do not know how long an ISO Amendment document can be. ISO has the right to not permit an Amendment.
-   - _current expectation is about 60 pages, including ISO front matter!_
+- ISO Amendment documents have to be _very_ short. As WG8 learned, if it is too long ISO has the right to not permit an Amendment.
+   - _current expectation is less than 8-10 pages, including ISO front matter!_
 
-- ISO Amendments require "location statements" prior to each errata. These have now
-been added and published to https://pdf-issues.pdfa.org.
-   - this also increases the length of an ISO Amendment.
+- ISO Amendments require "location statements" prior to each fully reiterated errata. 
+   - _this increases the length of an ISO Amendment_.
 
-- we do not know if ISO will accept our pseudo "track changes" colored markup style which makes changes more visually apparent than the simplistic RICE model of "_change X to Y_"
-   - but this does also increase the length of an ISO Amendment.
+- ISO do not permit the pseudo "track changes" colored markup shown at https://pdf-issues.pdfa.org/ but insteasd require explicit location statements "_change X to Y_"
+   - _this increases the length of an ISO Amendment_.
 
-- ISO Amendments are NOT allowed to have a Table of Contents. This has been confirmed.
+- ISO Amendments are **NOT** allowed to have a Table of Contents. This has been confirmed.
    - This is _unlike_ the original 1,000 page ISO 32000-2:2020 PDF and the utility ToCs published at the top of each HTML page for top level clauses to https://pdf-issues.pdfa.org (as well as a list of Tables that have been updated at https://pdf-issues.pdfa.org/32000-2-2020/) so navigating such a large number of errata will be extremely difficult!
 
 - ISO Amendments are **not** free, unlike previous Technical Corrigenda.
 
 - ISO Directives state can only do a maximum of 2 ISO Amendments per ISO publication.
-
-## Deadlines
-
-- a draft ISO Amendment for consideration during the May 2022 WG8 meeting (and that could form the basis for a PDAM ballot) is desired by the end of March 2022, pending response from ISO to the questions above.
-
-- Both [ISO 14289-2](https://www.iso.org/standard/82278.html) (PDF/UA-2) and [ISO/TS 32005](https://www.iso.org/standard/45878.html) "_PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2_" require some current and pending "industry approved" errata to be ISO approved, so that can officially normatively reference them.
