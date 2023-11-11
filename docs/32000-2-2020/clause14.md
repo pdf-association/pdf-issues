@@ -324,7 +324,7 @@ Marked-content sequences may be nested one within another, but each sequence sha
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="334">NOTE: PDF 1.7 defined various clipping related tags (see 14.6.3, "Clip tags" in ISO 32000-1:2008) and a <b>TagSuspect</b> tag (see 14.8.2.3, "Page Content Order" in ISO 32000-1:2008) which were intentionally removed in PDF 2.0.</ins>
-<p>
+</p>
 
 
 <p class="location">Change the paragraph below new Table 352a as follows:</p>
@@ -352,7 +352,7 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <th>Value</th>
   </tr>
   <tr>
-    <td><b>K</b></ins></td>
+    <td><b>K</b></td> 
     <td>dictionary or array</td>
     <td>
     (<i>Optional</i>) The immediate child or children of the structure tree root in the structure hierarchy. The value 
@@ -546,13 +546,13 @@ If both the <b>A</b> and <b>C</b> entries are present and a given attribute is s
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="254">NOTE If a class identified through the <b>C</b> entry is not present in the <b>ClassMap</b>, 
 it is an empty class, which defines no additional attributes.</ins>
-<p>
+</p>
 
 <h2 id="H14.8">14.8 Tagged PDF</h2>
 
-<h2>14.8.3 Basic layout model</h2>
+<h3 id="H14.8.3">14.8.3 Basic layout model</h3>
 
-<h3 id="H14.8.3.3">14.8.3.3 Progression direction</h3>
+<h4 id="H14.8.3.3">14.8.3.3 Progression direction</h4>
 
 <p class="location">Change first paragraph as follows:</p>
 
@@ -846,7 +846,7 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="286">NOTE The attribute owner, defined through the <b>O</b> and <b>NS</b> entries in the attribute object, define an owner for each attribute, but do not provide information on transformation of those attributes into other formats. When considering formats such as HTML and MathML, attributes would be transformed to meet the syntactic requirements of those formats.</ins>
-<p>
+</p>
 
 <p>...</p>
 
