@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 6 October 2023
+modified: 17 November 2023
 ---
 
 <ul class="noprint">
@@ -18,6 +18,8 @@ modified: 6 October 2023
      <li><a href="#H8.4.3.5">Miter limit</a>
      </li>
     </ul>
+   </li>
+   <li><a href="#H8.4.5">8.4.5 Graphics state parameter dictionaries</a>
    </li>
   </ul>
  </li>
@@ -173,6 +175,28 @@ a miter to a bevel.
 </p>
 
 <p>...</p>
+
+<h3 id="H8.4.5">8.4.5 Graphics state parameter dictionaries</h3>
+
+<p class="location">Change Table 57 as follows:</p>
+
+<table>
+  <caption id="Table57">Table 57 - Entries in a graphics state parameter dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>UseBlackPtComp</b></td>
+    <td>name</td>
+    <td>
+      <p>...</p>
+      <p><del onMouseEnter="mouseEnter(this)" data-issue="360">The default value is: <i>Default</i>.</del></p>
+    </td>
+  </tr>
+</table>
+
 
 <h2 id="H8.5">8.5 Path constructing and painting</h2>
 
