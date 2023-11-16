@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 24 October 2023
+modified: 17 November 2023
 ---
 
 <ul class="noprint">
@@ -126,6 +126,12 @@ modified: 24 October 2023
      <li><a href="#H14.10.5.3">14.10.5.3 Command dictionaries</a>
      </li>
     </ul>
+   </li>
+  </ul>
+ </li>
+ <li>14.11 Prepress support
+  <ul>
+   <li><a href="#H14.11.7">14.11.7 Open prepress interface (OPI)</a>
    </li>
   </ul>
  </li>
@@ -1164,7 +1170,9 @@ endobj
 </code>
 
 <h2 id="H14.10">14.10 Web capture</h2>
+
 <h3 id="H14.10.5">14.10.5 Source information</h3>
+
 <h4 id="H14.10.5.3">14.10.5.3 Command dictionaries</h4>
 
 <p class="location">Change Table 393 as follows:</p>
@@ -1183,6 +1191,40 @@ endobj
     <p>(<i>Optional</i>) A set of flags specifying various characteristics of the command (see
         <del onMouseEnter="mouseEnter(this)" data-issue="222" data-iso="approved">"Table 393 - Entries in a Web Capture command dictionary"</del>
         <ins onMouseEnter="mouseEnter(this)" data-issue="222" data-iso="approved">"Table 394 - Web Capture command flags"</ins>). Default value: 0.
+    </p>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="H14.11">14.11 Prepress support</h2>
+
+<h3 id="H14.11.7">14.11.7 Open prepress interface (OPI)</h3>
+
+<p class="location">Change Table 407 as follows:</p>
+
+<table>
+  <caption id="Table407">Table 407 - Entries in a version 2.0 OPI dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>OPI Comment</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Inks</b></td>
+    <td>name or array</td>
+    <td>%%ImageInks</td>
+    <td>
+    <p>
+      (<i>Optional</i>) A name object or array specifying the colourants to be applied to the image. 
+      The value may be the name full_color or registration or an array of the form
+    </p>
+    <code>[/monochrome name1  tint1…namen tintn]</code>
+    <p>
+      where each <i>name</i> is a string representing the name of a colourant and each <i>tint</i> is a 
+      <del onMouseEnter="mouseEnter(this)" data-issue="358">real</del>
+      number in the range 0.0 to 1.0 specifying the concentration of that colourant to be applied.
     </p>
     </td>
   </tr>

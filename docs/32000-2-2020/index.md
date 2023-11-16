@@ -83,6 +83,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table259">Table 259 - Entries in the FieldMDP transform parameters dictionary</a></li>
 <li><a href="clause12.html#Table260">Table 260 - SubFilter value algorithm support</a></li>
 <li><a href="clause12.html#Table263">Table 263 - Entries in a permissions dictionary</a></li>
+<li><a href="clause12.html#Table269">Table 269 - Additional entries in a geospatial measure dictionary</a></li>
 <li><a href="clause12.html#Table273">Table 273 - Entries common to all requirement dictionaries</a></li>
 <li><a href="clause12.html#Table274">Table 274 - <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">Additional entries</ins> for specific types of requirements</a></li>
 <li><a href="clause12.html#Table275">Table 275 - Requirement types</a></li>
@@ -117,6 +118,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table382">Table 382 - Standard list attributes</a></li>
 <li><a href="clause14.html#Table385">Table 385 - Standard artifact attributes</a></li>
 <li><a href="clause14.html#Table393">Table 393 - Entries in a Web Capture command dictionary</a></li>
+<li><a href="clause14.html#Table407">Table 407 - Entries in a version 2.0 OPI dictionary</a></li>
 <li><a href="clause14.html#Table409">Table 409 - Entries in a DPart dictionary</a></li>
 <li><a href="clauseAnnexA.html#TableA.1">Table A.1 - PDF content stream operators</a></li>
 <li><a href="clauseAnnexD.html#TableD.3">Table D.3 - PDFDocEncoding character set</a></li>

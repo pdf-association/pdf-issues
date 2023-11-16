@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 24 October 2023
+modified: 17 November 2023
 ---
 
 <ul class="noprint">
@@ -151,6 +151,8 @@ modified: 24 October 2023
  </li>
  <li>12.10 Geospatial features
   <ul>
+   <li><a href="#H12.10.2">12.10.2 Geospatial measure dictionary</a>
+   </li>
    <li><a href="#H12.10.3">12.10.3 Geographic coordinate system dictionary</a>
    </li>
   </ul>
@@ -1138,6 +1140,35 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 
 <h2 id="H12.10">12.10 Geospatial features</h2>
+
+<h3 id="H12.10.2">12.10.2 Geospatial measure dictionary</h3>
+
+<p class="location">Change Table 269 as follows:</p>
+
+<table>
+  <caption id="Table269">Table 269 - Additional entries in a geospatial measure dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>PCSM</b></td>
+    <td>array</td>
+    <td>
+    <p>(<i>Optional; PDF 2.0</i>) A 12-element transformation matrix of 
+    <del onMouseEnter="mouseEnter(this)" data-issue="358">real</del> 
+    numbers, defining the transformation from XObject position coordinates to projected coordinate system. 
+    If <b>GCS</b> is a geographic coordinate system dictionary then <b>PCSM</b> should be ignored and <b>GTPS</b> used instead.
+    If <b>PCSM</b> is present, it has priority over <b>GPTS</b>, and <b>GPTS</b> values may be ignored. This priority provides backward compatibility.
+    </p>
+    <p class="hangingindent">
+    NOTE 3 PCSM is an acronym for "Projected Coordinate System Matrix".
+    </p>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H12.10.3">12.10.3 Geographic coordinate system dictionary</h3>
 
