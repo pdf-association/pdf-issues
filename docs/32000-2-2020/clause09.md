@@ -3,12 +3,14 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 15 September 2023
+modified: 8 December 2023
 ---
 
 <ul class="noprint">
  <li>9.4 Text objects
   <ul>
+   <li><a href="#H9.4.2">9.4.2 Text-positioning operators</a>
+   </li>
    <li><a href="#H9.4.3">9.4.3 Text-showing operators</a>
    </li>
   </ul>
@@ -80,6 +82,30 @@ modified: 15 September 2023
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <h2 id="H9.4">9.4 Text objects</h2>
+
+<h3 id="H9.4.2">9.4.2 Text-positioning operators</h3>
+
+<p class="location">Change Table 106 as follows:</p>
+
+<table>
+  <caption id="Table106">Table 106 - Text-positioning operators</caption>
+  <tr>
+    <th>Operands</th>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>&#8212;</b></td>
+    <td><b>T*</b></td>
+    <td>
+    <p>Move to the start of the next line. This operator has the same effect as the code</p>
+    <p>
+      0 <i>-T<sub>l</sub></i> <del onMouseEnter="mouseEnter(this)" data-issue="373"><b>TD</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="373"><b>Td</b></ins>  
+    </p>
+    <p>where <i>T<sub>l</sub></i> denotes the current leading parameter in the text state. The negative of <i>T<sub>l</sub></i> is used here because <i>T<sub>l</sub></i> is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.</p>
+    </td>
+  </tr>
+</table>
 
 <h3 id="H9.4.3">9.4.3 Text-showing operators</h3>
 

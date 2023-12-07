@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 17 November 2023
+modified: 8 December 2023
 ---
 
 <p>
@@ -52,6 +52,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>
 <li><a href="clause08.html#Table91">Table 91 - Entries in an inline image object</a></li>
 <li><a href="clause08.html#Table99">Table 99 - Entries in an optional content configuration dictionary</a></li>
+<li><a href="clause09.html#Table106">Table 106 - Table 106 — Text-positioning operators</a></li>
 <li><a href="clause09.html#Table109">Table 109 - Entries in a Type 1 font dictionary</a></li>
 <li><a href="clause09.html#Table110">Table 110 - Entries in a Type 3 font dictionary</a></li>
 <li><a href="clause09.html#Table111">Table 111 - Type 3 font operators</a></li>
