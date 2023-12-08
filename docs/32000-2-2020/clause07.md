@@ -143,6 +143,8 @@ modified: 8 December 2023
       </li>
      </ul>
     </li>
+    <li><a href="#H7.9.4">7.9.4 Dates</a>
+    </li>
     <li><a href="#H7.9.6">7.9.6 Name trees</a>
     </li>
     <li><a href="#H7.9.7">7.9.7 Number trees</a>
@@ -1341,6 +1343,27 @@ If written in hexadecimal form, an <b>ID</b> array entry looks like:<br/><br/>
 NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276">2</ins> The string can represent characters but the encoding is not known. The bytes of the string do not have to represent characters.
 </p>
 
+
+<h3 id="H7.9.4">7.9.4 Dates</h3>
+
+<p>...</p>
+
+<p class="location">Change the last paragraph before the EXAMPLE as follows:</p>
+
+<p>
+The prefix “D:” shall be present, the year field (YYYY) shall be present and all other fields may be
+present but only if all of their preceding fields are also present. The APOSTROPHE following the hour
+offset field (HH) shall only be present if the HH field is present. The minute offset field (mm) shall only
+be present if the APOSTROPHE following the hour offset field (HH) is present. The default values for MM and
+DD shall be both 01; all other numerical fields shall default to zero values. A PLUS SIGN as the value of
+the O field signifies that local time is now and later than UT, a HYPHEN-MINUS signifies that local time is
+earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equal to UT. If no UT information is specified, 
+<del onMouseEnter="mouseEnter(this)" data-issue="251">the relationship of the specified time to UT shall be considered to be GMT.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="251">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins> 
+Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.
+</p>
+
+<p>...</p>
 
 <h3 id="H7.9.6">7.9.6 Name trees</h3>
 
