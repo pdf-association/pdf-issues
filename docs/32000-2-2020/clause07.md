@@ -487,13 +487,13 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
 
 <p class="location">Change NOTE 1 as follows:</p>
 
-<p style="hangingindent">
+<p class="hangingindent">
 NOTE 1 The main advantage to updating a PDF file in this way is that small changes to a large document can be saved quickly 
 <del onMouseEnter="mouseEnter(this)" data-issue="341">. There are additional advantages such as when editing a document across an HTTP connection or using OLE embedding (a Microsoft WindowsTM specific technology)</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="341">, or when</ins>
 a PDF processor cannot overwrite the contents of the original PDF file. 
 Incremental updates are used to save changes to documents in these contexts.
-<p>
+</p>
 
 <p>...</p>
 
