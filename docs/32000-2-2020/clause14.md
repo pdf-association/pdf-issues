@@ -3,10 +3,12 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 17 November 2023
+modified: 8 December 2023
 ---
 
 <ul class="noprint">
+ <li><a href="#H14.2">14.2 Procedure sets</a>
+ </li>
  <li>14.3 Metadata
   <ul>
    <li><a href="#H14.3.2">14.3.2 Metadata streams</a>
@@ -163,6 +165,14 @@ modified: 17 November 2023
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="H14.2">14.2 Procedure sets</h2>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+This feature has been <del onMouseEnter="mouseEnter(this)" data-issue="367">deprecated</del><ins onMouseEnter="mouseEnter(this)" data-issue="367">considered unnecessary</ins> since PDF 1.4 <ins onMouseEnter="mouseEnter(this)" data-issue="367"> and was deprecated in PDF 2.0</ins>.
+</p>
 
 <h2 id="H14.3">14.3 Metadata</h2>
 
