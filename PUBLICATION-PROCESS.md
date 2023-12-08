@@ -123,9 +123,11 @@ grep -o "data-[a-z]*\=\"[a-z0-9,]*\"" *.md
    - Common mistakes are mistyped tags and missing closing tags, which means at the bottom of each page "\<div>" might be visible in the page content, or the local ToC has "\<ul>" or "\<li>" visible.
 
 - Upload each of the local HTML files produced by jekyll (in `/docs/_site/clause`) to the [W3C HTML Validator](https://validator.w3.org/nu/#file).
-   - Expected errors and warnings are:
+   - Expected errors and warnings caused by Jekyll are:
        1. Errors (3): A link element must not appear as a descendant of a body element unless the link element has an itemprop attribute or has a rel attribute whose value contains dns-prefetch, modulepreload, pingback, preconnect, prefetch, preload, prerender, or stylesheet.
        2. Warning: Consider using the `h1` element as a top-level heading only (all `h1` elements are treated as top-level headings by many screen readers and other tools).
+
+- Check for missing or mismatched HTML tag pairs. This is often shown as a `</div>` at the very bottom of a page, or other closing HTML tags appearing in content. Because of Jekyll the simplest way is to grep for HMTL open and closing tags and try to work out which tag is missing/incorrect... 
 
 - Each pdf-issue is then closed in GitHub, possibly with any additional comment if any unexpected issue or edit arose in implementing the PDF TWG recommendations.
 
