@@ -117,7 +117,7 @@ modified: 8 December 2023
  </li>
  <li>14.9 Repurposing and accessibility support
   <ul>
-   <li>><a href="#H14.9.4">14.9.4 Replacement text</a>
+   <li><a href="#H14.9.4">14.9.4 Replacement text</a>
    </li>
   </ul>
  </li>
@@ -1167,12 +1167,36 @@ endobj
 
 <p>...</p>
 
+<p class="location">Add a new EXAMPLE above the existing EXAMPLE and number as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="364">
+EXAMPLE 1 This example shows the use of replacement text to indicate the correct character content
+in a case where the SPACE character does not appear in the text content.</ins>
+</p>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="364">
+<code class="hangingindent">
+/Span &lt;&lt; /ActualText (Missing ) &gt;&gt; BDC   % add missing space character
+    (Missing) Tj
+EMC
+44 0 Td   % Simulate space by moving the drawing position
+(space) Tj
+</code>
+</ins>
+
 <p class="location">Correct the EXAMPLE as follows:</p>
+
+<p class="hangingindent">
+EXAMPLE <ins onMouseEnter="mouseEnter(this)" data-issue="364">2</ins> This example shows the use of
+replacement text to indicate the correct character content in a case where hyphenation changes 
+the spelling of a word (in German, up until spelling reforms, the word "Drucker" when hyphenated 
+was rendered as "Druk-" and "ker").
+</p>
 
 <code class="hangingindent">
 (Dru) Tj
 /Span
-    &lt;&lt;<del onMouseEnter="mouseEnter(this)" data-issue="356">/Actual Text</del><ins onMouseEnter="mouseEnter(this)" data-issue="356">/ActualText</ins> (c)&gt;&gt;
+    &lt;&lt; <del onMouseEnter="mouseEnter(this)" data-issue="356">/Actual Text</del><ins onMouseEnter="mouseEnter(this)" data-issue="356">/ActualText</ins> (c) &gt;&gt;
     BDC
         (k-) Tj
     EMC
