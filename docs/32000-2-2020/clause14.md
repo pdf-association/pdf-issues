@@ -117,6 +117,12 @@ modified: 8 December 2023
  </li>
  <li>14.9 Repurposing and accessibility support
   <ul>
+   <li>14.9.2 Natural language specification
+    <ul>
+     <li><a href="#H14.9.2.2">14.9.2.2 Language identifiers</a>
+     </li>
+    </ul>
+   </li>
    <li><a href="#H14.9.4">14.9.4 Replacement text</a>
    </li>
   </ul>
@@ -1163,6 +1169,17 @@ endobj
 
 <h2 id="H14.9">14.9 Repurposing and accessibility support</h2>
 
+<h3 id="H14.9.2">14.9.2 Natural language specification</h3>
+
+<h4 id="H14.9.2.2">14.9.2.2 Language identifiers</h4>
+
+<p class="location">Add a new NOTE below the last bullet point as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="330">
+NOTE: <b>Lang</b> entries are defined as text strings which include Unicode-encoded strings as shown in "Figure 7 - Relationship between string types". <b>Lang</b> entry text strings can be represented as either literal strings or hexadecimal strings (see 7.3.4, "String objects").
+</ins></p>
+
+
 <h3 id="H14.9.4">14.9.4 Replacement text</h3>
 
 <p>...</p>
@@ -1171,8 +1188,8 @@ endobj
 
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="364">
 EXAMPLE 1 This example shows the use of replacement text to indicate the correct character content
-in a case where the SPACE character does not appear in the text content.</ins>
-</p>
+in a case where the SPACE character does not appear in the text content.
+</ins></p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="364">
 <code class="hangingindent">
