@@ -7,6 +7,12 @@ modified: 8 December 2023
 ---
 
 <ul class="noprint">
+ <li>9.3 Text state parameters and operators
+  <ul>
+   <li><a href="#H9.3.6">9.3.6 Text rendering mode</a>
+   </li>
+  </ul>
+ </li>
  <li>9.4 Text objects
   <ul>
    <li><a href="#H9.4.2">9.4.2 Text-positioning operators</a>
@@ -80,6 +86,22 @@ modified: 8 December 2023
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2>9.3 Text state parameters and operators</h2>
+
+<h3 id="H9.3.6">9.3.6 Text rendering mode</h3>
+
+<p class="location">Change NOTE 3 as follows:</p>
+
+<p class="hangingindent">
+NOTE 3 Certain degenerate glyph sub-paths that are not visible when filled can become apparent when stroking, e.g., a zero<ins onMouseEnter="mouseEnter(this)" data-issue="372">-length</ins> line with round end caps will paint a circle according to the current stroke width.
+</p>
+
+<p class="location">Change the paragraph below NOTE 3 as follows:</p>
+
+<p>
+The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" data-issue="372"><b>Tm</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="372"><i>T<sub>m</sub></i></ins> shall be updated for each glyph drawn when using text rendering mode 3 or 7 in exactly the same way as would be done for other text rendering modes.
+</p>
 
 <h2 id="H9.4">9.4 Text objects</h2>
 
