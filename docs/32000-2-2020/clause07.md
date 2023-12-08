@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 24 October 2023
+modified: 8 December 2023
 ---
 
 <ul class="noprint">
@@ -214,6 +214,37 @@ However, a</del>
 </ul>
 
 <p>...</p>
+
+<p class="location">Change Table 2 and add the footnote below Table 2 as follows:</p>
+
+<table>
+  <caption id="Table2">Table 2 - Delimiter characters</caption>
+  <tr>
+    <th>Glyph</th>
+    <th>Decimal</th>
+    <th>Hexadecimal</th>
+    <th>Octal</th>
+    <th>Name</th>
+  </tr>
+  <tr>
+    <td>{</td>
+    <td>123</td>
+    <td>7B</td>
+    <td>173</td>
+    <td>LEFT CURLY BRACKET <ins onMouseEnter="mouseEnter(this)" data-issue="365"><sup>a</sup></ins></td>
+  </tr>
+  <tr>
+    <td>}</td>
+    <td>125</td>
+    <td>7D</td>
+    <td>175</td>
+    <td>RIGHT CURLY BRACKET <ins onMouseEnter="mouseEnter(this)" data-issue="365"><sup>a</sup></ins></td>
+  </tr>
+</table>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="365">
+(a) The delimiter characters { and } (LEFT CURLY BRACE (7Bh) and RIGHT CURLY BRACE (7Dh)) are additional delimiter characters only within Type 4 PostScript calculator functions (see 7.10.5 "Type 4 (PostScript calculator) functions").
+</ins><p>
 
 <h2 id="H7.3">7.3 Objects</h2>
 
