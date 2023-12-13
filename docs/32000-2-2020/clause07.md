@@ -254,9 +254,10 @@ However, a</del>
 
 <p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 1:</p>
 
+<ins onMouseEnter="mouseEnter(this)" data-issue="327">
 <img src="PDF-Integer-EBNF.svg" alt="EBNF railroad diagram for PDF integer object">
 <a href="PDF-Integer.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
-
+</ins>
 
 <p class="location">Change EXAMPLE 1 as follows:</p>
 
@@ -267,9 +268,10 @@ However, a</del>
 
 <p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 2:</p>
 
+<ins onMouseEnter="mouseEnter(this)" data-issue="327">
 <img src="PDF-Real-EBNF.svg" alt="EBNF railroad diagram for PDF real object">
 <a href="PDF-Real.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
-
+</ins>
 
 <p class="location">Change EXAMPLE 2 as follows:</p>
 
