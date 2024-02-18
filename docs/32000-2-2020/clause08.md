@@ -13,6 +13,8 @@ modified: 18 February 2024
   <ul>
    <li><a href="#H8.4.1">8.4.1 General</a>
    </li>
+   <li><a href="#H8.4.2">8.4.2 Graphics state stack</a>
+   </li>
    <li>8.4.3 Details of graphics state parameters
     <ul>
      <li><a href="#H8.4.3.5">Miter limit</a>
@@ -166,6 +168,17 @@ modified: 18 February 2024
     </td>
   </tr>
 </table>
+
+
+<h3 id="H8.4.2">8.4.2 Graphics state stack</h3>
+
+<p class="location">Append a new sentence to the last paragraph as follows:</p>
+
+<p>
+Occurrences of the <b>q</b> and <b>Q</b> operators shall be balanced within a given content stream (or within the sequence of streams specified in a page dictionary’s <b>Contents</b> array).
+<ins onMouseEnter="mouseEnter(this)" data-issue="368">See 9.4.1, "General" for additional information that must be managed as part of the graphics state stack when <b>q</b> and <b>Q</b> operators occur within text objects.</ins>
+</p>
+
 
 <h3 id="H8.4.3">8.4.3 Details of graphics state parameters</h3>
 

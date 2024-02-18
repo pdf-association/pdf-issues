@@ -17,6 +17,8 @@ modified: 18 February 2024
  </li>
  <li>9.4 Text objects
   <ul>
+   <li><a href="#H9.4.1">9.4.1 General</a>
+   </li>
    <li><a href="#H9.4.2">9.4.2 Text-positioning operators</a>
    </li>
    <li><a href="#H9.4.3">9.4.3 Text-showing operators</a>
@@ -142,10 +144,19 @@ NOTE 3 Certain degenerate glyph sub-paths that are not visible when filled can b
 <p class="location">Change the paragraph below NOTE 3 as follows:</p>
 
 <p>
-The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" data-issue="372"><b>Tm</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="372"><i>T<sub>m</sub></i></ins> shall be updated for each glyph drawn when using text rendering mode 3 or 7 in exactly the same way as would be done for other text rendering modes.
+The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" data-issue="372"><b>Tm</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="372"><i>𝑇<sub>m</sub></i></ins> shall be updated for each glyph drawn when using text rendering mode 3 or 7 in exactly the same way as would be done for other text rendering modes.
 </p>
 
 <h2 id="H9.4">9.4 Text objects</h2>
+
+<h3 id="H9.4.1">9.4.1 General</h3>
+
+<p class="location">Append the following paragraph to this sub-clause as follows:</p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="368">
+Within a text object, the graphics state stack operators <b>q</b> and <b>Q</b> (see 8.4.2, "Graphics state stack") shall additionally push and pop 𝑇<sub>m</sub> and 𝑇<sub>lm</sub> as part of the graphics state stack.
+</ins></p>
+
 
 <h3 id="H9.4.2">9.4.2 Text-positioning operators</h3>
 
@@ -164,9 +175,9 @@ The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" dat
     <td>
     <p>Move to the start of the next line. This operator has the same effect as the code</p>
     <p>
-      0 <i>-T<sub>l</sub></i> <del onMouseEnter="mouseEnter(this)" data-issue="373"><b>TD</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="373"><b>Td</b></ins>  
+      0 <i>-𝑇<sub>l</sub></i> <del onMouseEnter="mouseEnter(this)" data-issue="373"><b>TD</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="373"><b>Td</b></ins>  
     </p>
-    <p>where <i>T<sub>l</sub></i> denotes the current leading parameter in the text state. The negative of <i>T<sub>l</sub></i> is used here because <i>T<sub>l</sub></i> is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.</p>
+    <p>where <i>𝑇<sub>l</sub></i> denotes the current leading parameter in the text state. The negative of <i>𝑇<sub>l</sub></i> is used here because <i>𝑇<sub>l</sub></i> is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.</p>
     </td>
   </tr>
 </table>
