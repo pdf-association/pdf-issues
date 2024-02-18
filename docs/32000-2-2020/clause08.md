@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 17 November 2023
+modified: 18 February 2024
 ---
 
 <ul class="noprint">
@@ -18,6 +18,8 @@ modified: 17 November 2023
      <li><a href="#H8.4.3.5">Miter limit</a>
      </li>
     </ul>
+   </li>
+   <li><a href="#H8.4.4">8.4.4 Graphics state operators</a>
    </li>
    <li><a href="#H8.4.5">8.4.5 Graphics state parameter dictionaries</a>
    </li>
@@ -148,6 +150,13 @@ modified: 17 November 2023
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>flatness</b></td>
+    <td>number</td>
+    <td>
+    The precision with which curves shall be rendered on the output device (see 10.7.2, "Flatness tolerance"). The value of this parameter <del onMouseEnter="mouseEnter(this)" data-issue="371">(positive number)</del> gives the maximum error tolerance, measured in output device pixels; smaller numbers give smoother curves at the expense of more computation and memory use. Initial value: <i>1.0</i>.
+    </td>
+  </tr>
+  <tr>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="260">halftone origin</ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="260">array</ins></td>
     <td>
@@ -175,6 +184,27 @@ a miter to a bevel.
 </p>
 
 <p>...</p>
+
+<h3 id="H8.4.4">8.4.4 Graphics state operators</h3>
+
+<p class="location">Change Table 56 as follows:</p>
+
+<table>
+  <caption id="Table56">Table 56 - Graphics state operators</caption>
+  <tr>
+    <th>Operands</th>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><i>flatness</i></td>
+    <td><b>i</b></td>
+    <td>
+      Set the flatness tolerance in the graphics state (see 10.7.2, "Flatness tolerance"). <del onMouseEnter="mouseEnter(this)" data-issue="371"><i>flatness</i> is a number in the range 0 to 100; a value of 0 shall specify the output device’s default flatness tolerance.</del>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H8.4.5">8.4.5 Graphics state parameter dictionaries</h3>
 
@@ -460,7 +490,7 @@ NOTE One of the most important uses of stencil masking is for painting character
 , an image mask, rather than an image, 
 <del onMouseEnter="mouseEnter(this)" data-issue="333">need almost always be used to paint glyph bitmaps</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="333">is normally used to paint glyph bitmaps</ins>.
-<p>
+</p>
 
 
 <h3 id="H8.9.7">8.9.7 Inline images</h3>

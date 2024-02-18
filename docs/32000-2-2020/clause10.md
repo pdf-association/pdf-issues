@@ -3,26 +3,32 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
-modified: 14 August 2022
+modified: 18 February 2024
 ---
 
 <ul class="noprint">
-    <li>10.3 CIE-Based colour to device colour
-     <ul>
-      <li><a href="#H10.3.1">10.3.1 General</a>
-      </li>
-     </ul>
+  <li>10.3 CIE-Based colour to device colour
+    <ul>
+    <li><a href="#H10.3.1">10.3.1 General</a>
     </li>
-    <li>10.6 Halftones
-     <ul>
-      <li>10.6.5 Halftone dictionaries
-       <ul>
-        <li><a href="#H10.6.5.6">10.6.5.6 Type 5 halftones</a>
-        </li>
-       </ul>
+    </ul>
+  </li>
+  <li>10.6 Halftones
+    <ul>
+    <li>10.6.5 Halftone dictionaries
+      <ul>
+      <li><a href="#H10.6.5.6">10.6.5.6 Type 5 halftones</a>
       </li>
-     </ul>
+      </ul>
     </li>
+    </ul>
+  </li>
+  <li>10.7 Scan conversion details
+   <ul>
+    <li><a href="#H10.7.2">10.7.2 Flatness tolerance</a>
+    </li>
+   </ul>
+  </li>
 </ul>
 <hr>
 
@@ -75,6 +81,18 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
   </tr>
 </table>
 
+
+<h2 id="H10.7">10.7 Scan conversion details</h2>
+
+<h3 id="H10.7.2">10.7.2 Flatness tolerance</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The <i>flatness tolerance</i> controls the maximum permitted distance in device pixels between the mathematically correct path and an approximation constructed from straight line segments, as shown in "Figure 69 — Flatness tolerance". Flatness may be specified as the operand of the <b>i</b> operator (see "Table 56 — Graphics state operators") or as the value of the <b>FL</b> entry in a graphics state parameter dictionary (see "Table 57 — Entries in a graphics state parameter dictionary"). 
+<del onMouseEnter="mouseEnter(this)" data-issue="371">It shall be a positive number.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="371">It shall be a number in the range 0 to 100 inclusive, where a value of 0 shall specify the output device’s default flatness tolerance. The value indicates the maximum error tolerance measured in output device pixels.</ins>
+</p>
 
 </div>
 
