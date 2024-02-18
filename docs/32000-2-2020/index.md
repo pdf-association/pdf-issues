@@ -52,6 +52,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause08.html#Table74">Table 74 - Additional entries specific to a Type 1 pattern <ins onMouseEnter="mouseEnter(this)" data-issue="294">stream</ins> dictionary</a></li>
 <li><a href="clause08.html#Table87">Table 87 - Additional entries specific to an image dictionary</a></li>
 <li><a href="clause08.html#Table91">Table 91 - Entries in an inline image object</a></li>
+<li><a href="clause08.html#Table93">Table 93 - Additional entries specific to a Type 1 form dictionary</a></li>
 <li><a href="clause08.html#Table99">Table 99 - Entries in an optional content configuration dictionary</a></li>
 <li><a href="clause09.html#Table106">Table 106 - Table 106 — Text-positioning operators</a></li>
 <li><a href="clause09.html#Table109">Table 109 - Entries in a Type 1 font dictionary</a></li>

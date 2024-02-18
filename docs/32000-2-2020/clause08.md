@@ -81,6 +81,12 @@ modified: 18 February 2024
    </li>
   </ul>
  </li>
+ <li>8.10 Form XObjects
+  <ul>
+   <li><a href="#H8.10.2">8.10.2 Form dictionaries</a>
+   </li>
+  </ul>
+ </li>
  <li>8.11 Optional Content
   <ul>
    <li>8.11.4 Configuring optional content
@@ -557,9 +563,43 @@ the corresponding colour spaces either directly or via a default colour space (s
 
 <p>...</p>
 
-<h2>8.11 Optional Content</h2>
+<h2 id="H8.10">8.10 Form XObjects</h2>
 
-<h3>8.11.4 Configuring optional content</h3>
+<h3 id="H8.10.2">8.10.2 Form dictionaries</h3>
+
+<p class="location">Change Table 93 as follows:</p>
+
+<table>
+  <caption id="Table93">Table 93 - Additional entries specific to a Type 1 form dictionary</caption>
+  <tr>
+    <th><b>Key</b></th>
+    <th><b>Type</b></th>
+    <th><b>Value</b></th>
+  </tr>
+  <tr>
+    <td><b>Resources</b></td>
+    <td>dictionary</td>
+    <td>
+     <p>
+       <i>(<del onMouseEnter="mouseEnter(this)" data-issue="292">Optional but strongly recommended</del> <ins onMouseEnter="mouseEnter(this)" data-issue="292">Sometimes required</ins>; PDF 1.2)</i> A dictionary specifying any resources (such as fonts and images) required by the form XObject (see 7.8, "Content streams and resources").
+     </p>
+     <p><del onMouseEnter="mouseEnter(this)" data-issue="292">
+      In a PDF whose version is 1.1 and earlier, all named resources used in the form XObject shall be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appear in the resource dictionary of the form XObject. These resources should also be specified in the form XObject’s resource dictionary as well, to determine which resources are used inside the form XObject. If a resource is included in both dictionaries, it shall have the same name in both locations.
+    </del></p>
+    <p>
+      In PDF 1.2 and later versions, <del onMouseEnter="mouseEnter(this)" data-issue="292">form XObjects may be independent of the content streams in which they appear, and this is strongly recommended although not required</del><ins onMouseEnter="mouseEnter(this)" data-issue="292">it is strongly recommended that form XObjects be independent of the content streams in which they appear; from PDF 2.0 this is required</ins>. In an independent form XObject, the resource dictionary of the form XObject is required and shall contain all named resources used by the form XObject. These resources shall not be promoted to the outer content stream’s resource dictionary, although that stream’s resource dictionary refers to the form XObject.
+     </p>
+     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="292">
+      NOTE In PDF 1.1 and earlier, all named resources used in the form XObject were defined to be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appeared in the resource dictionary of the form XObject. These resources also needed to be specified in the form XObject’s resource dictionary as well, to determine which resources were used inside the form XObject. If a resource was included in both dictionaries, it needed to have the same name in both locations.
+    </ins></p>
+    </td>
+  </tr>
+</table>
+
+
+<h2 id="H8.11">8.11 Optional Content</h2>
+
+<h3 id="H8.11.4">8.11.4 Configuring optional content</h3>
 
 <h4 id="H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</h4>
  
