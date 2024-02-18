@@ -107,22 +107,22 @@ The scaling shall apply to the horizontal coordinate in text space, independentl
 <p class="location">Update Figure 58 as follows:</p>
 
 <figure>
-    <table style="width:fit-content">
+    <table style="width:fit-content;">
     <tr>
-      <td>
+      <td style="vertical-align:middle;">
         <p><ins onMouseEnter="mouseEnter(this)" data-issue="376">100 <b>Tz</b></ins></p>
         <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376">100</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376">1.0</ins> (default)</p>
       </td>
-      <td>
+      <td style="vertical-align:middle;">
         <p style="font-size:360%; transform:translate(68px,0); -webkit-transform:translate(68px,0); display:inline-block;">Word</p>
       </td>
     </tr>
     <tr>
-      <td>
+      <td style="vertical-align:middle;">
         <p><ins onMouseEnter="mouseEnter(this)" data-issue="376">50 <b>Tz</b></ins></p>
         <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376">50</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376">0.5</ins></p>
       </td>
-      <td>
+      <td style="vertical-align:middle;">
         <p style="font-size:360%; transform:scale(0.5,1); -webkit-transform:scale(0.5,1); display:inline-block;">WordWord</p>
       </td>
     </tr>

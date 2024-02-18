@@ -109,6 +109,7 @@
 
   .isostyle td {
     text-align: left;
+    vertical-align:top;
     min-width: 50px;
     max-width: 500px;
     border-collapse: collapse;
