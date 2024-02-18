@@ -81,6 +81,13 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Delete the paragraph below the bulleted list (above EXAMPLE) as follows:</p>
+
+<p><del onMouseEnter="mouseEnter(this)" data-issue="311">
+When a halftone dictionary of some other Type appears as the value of an entry in a Type 5 halftone dictionary, it shall apply only to the single colourant or colour component named by that entry’s key. This is in contrast to such a dictionary’s being used as the current halftone parameter in the graphics state, which shall apply to all colour components. If nonprimary colourants are requested when the current halftone is defined by any means other than a Type 5 halftone dictionary, the gray halftone screen and transfer function shall be used for all such colourants.
+</del></p>
 
 <h2 id="H10.7">10.7 Scan conversion details</h2>
 
