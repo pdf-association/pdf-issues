@@ -608,6 +608,14 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Add a new NOTE to the very end of clause 9.8.1 as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="337">NOTE: if the font descriptor is for an embedded font, then all fields of the descriptor are for that specific embedded (full or subset) font program. If it is for a referenced (non-embedded) font, then it applies to the source material found by the PDF Writer at the time of PDF creation.</ins>
+</p>
+
 
 <h4 id="H9.8.3.3">9.8.3.3 FD</h4>
 
