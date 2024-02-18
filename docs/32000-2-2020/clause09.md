@@ -3,12 +3,14 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 8 December 2023
+modified: 18 February 2024
 ---
 
 <ul class="noprint">
  <li>9.3 Text state parameters and operators
   <ul>
+   <li><a href="#H9.3.4">9.3.4 Horizontal scaling</a>
+   </li>
    <li><a href="#H9.3.6">9.3.6 Text rendering mode</a>
    </li>
   </ul>
@@ -18,6 +20,8 @@ modified: 8 December 2023
    <li><a href="#H9.4.2">9.4.2 Text-positioning operators</a>
    </li>
    <li><a href="#H9.4.3">9.4.3 Text-showing operators</a>
+   </li>
+   <li><a href="#H9.4.4">9.4.4 Text space details</a>
    </li>
   </ul>
  </li>
@@ -49,7 +53,6 @@ modified: 8 December 2023
      </li>
     </ul>
    </li>
-  </ul>
    <li>9.7.6 Type 0 font dictionaries
     <ul>
      <li><a href="#H9.7.6.1">9.7.6.1 General</a>
@@ -86,6 +89,45 @@ modified: 8 December 2023
 </div>
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h3 id="H9.3.4">9.3.4 Horizontal scaling</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The horizontal scaling parameter, 𝑇<sub>h</sub>, adjusts the width of glyphs by stretching or compressing them in the horizontal direction. Its value 
+<ins onMouseEnter="mouseEnter(this)" data-issue="376">is the normalized value of the operand to the <b>Tz</b> operator which</ins> 
+shall be specified as a percentage of the normal width of the glyphs, with 100 being the normal width 
+<ins onMouseEnter="mouseEnter(this)" data-issue="376">of 100%, representing a scaling value of 1.0 for 𝑇<sub>h</sub></ins>. 
+The scaling shall apply to the horizontal coordinate in text space, independently of the writing mode. It shall affect both the glyph’s shape and its horizontal displacement (that is, its displacement vector). If the writing mode is horizontal, it shall also affect the spacing parameters 𝑇<sub>c</sub> and 𝑇<sub>w</sub>, as well as any positioning adjustments performed by the <b>TJ</b> operator. "Figure 58 — Horizontal scaling" shows the effect of horizontal scaling.
+</p>
+
+<p class="location">Update Figure 58 as follows:</p>
+
+<figure>
+    <table style="width:fit-content">
+    <tr>
+      <td>
+        <p><ins onMouseEnter="mouseEnter(this)" data-issue="376">100 <b>Tz</b></ins></p>
+        <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376">100</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376">1.0</ins> (default)</p>
+      </td>
+      <td>
+        <p style="font-size:360%; transform:translate(68px,0); -webkit-transform:translate(68px,0); display:inline-block;">Word</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><ins onMouseEnter="mouseEnter(this)" data-issue="376">50 <b>Tz</b></ins></p>
+        <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376">50</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376">0.5</ins></p>
+      </td>
+      <td>
+        <p style="font-size:360%; transform:scale(0.5,1); -webkit-transform:scale(0.5,1); display:inline-block;">WordWord</p>
+      </td>
+    </tr>
+    </table>
+  <figcaption>Figure 58 — Horizontal scaling</figcaption>
+</figure>
+
 
 <h2>9.3 Text state parameters and operators</h2>
 
@@ -148,6 +190,110 @@ character codes.
 </p>
 
 <p>...</p>
+
+
+<h3 id="H9.4.4">9.4.4 Text space details</h3>
+
+<p class="location">Change NOTE 2 into normative text as follows:</p>
+
+<p><del onMouseEnter="mouseEnter(this)" data-issue="376">NOTE 2</del> Conceptually, the entire transformation from text space to device space can be represented by a text rendering matrix, 𝑇<sub>𝑟𝑚</sub>:
+</p>
+<p style="text-align:center">
+<math xmlns="https://www.w3.org/1998/Math/MathML">
+ <msub>
+  <mrow>
+   <mi>T</mi>
+  </mrow>
+  <mrow>
+   <mi>rm</mi>
+  </mrow>
+ </msub>
+ <mo>=</mo>
+ <mrow>
+   <mo fence="true" stretchy="true">[</mo>
+   <mtable>
+    <mtr>
+     <mtd>
+      <msub>
+       <mrow>
+        <mi>T</mi>
+       </mrow>
+       <mrow>
+        <mi>fs</mi>
+       </mrow>
+      </msub>
+      <mo>×</mo>
+      <msub>
+       <mrow>
+        <mi>T</mi>
+       </mrow>
+       <mrow>
+        <mi>h</mi>
+       </mrow>
+      </msub>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <msub>
+       <mrow>
+        <mi>T</mi>
+       </mrow>
+       <mrow>
+        <mi>fs</mi>
+       </mrow>
+      </msub>
+     </mtd>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+    </mtr>
+    <mtr>
+     <mtd>
+      <mn>0</mn>
+     </mtd>
+     <mtd>
+      <msub>
+       <mrow>
+        <mi>T</mi>
+       </mrow>
+       <mrow>
+        <mi>rise</mi>
+       </mrow>
+      </msub>
+     </mtd>
+     <mtd>
+      <mn>1</mn>
+     </mtd>
+    </mtr>
+   </mtable>
+   <mo fence="true" stretchy="true">]</mo>
+ </mrow>
+ <mo>×</mo>
+  <msub>
+   <mrow>
+    <mi>T</mi>
+   </mrow>
+   <mrow>
+    <mi>m</mi>
+   </mrow>
+  </msub>
+ <mo>×</mo>
+ <mi>CTM</mi>
+</math>
+</p>
+<p>
+𝑇<sub>𝑟𝑚</sub> is a temporary matrix; conceptually, it is recomputed before each glyph is painted during a text-showing operation.
+</p>
 
 
 <h3 id="H9.6.2">9.6.2 Type 1 fonts</h3>
@@ -489,7 +635,7 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 <p>When defining ranges of this type, the value of the last byte in the string shall be less than or equal to 255 - (<i>srcCode2 - srcCode1</i>). This ensures that the last byte of the string shall not be incremented past 255; otherwise, the result of mapping is undefined.</p>
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="277">
-<p class="hangingindent">NOTE the above requirements are specific to PDF and are not described in Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial".<p>
+<p class="hangingindent">NOTE the above requirements are specific to PDF and are not described in Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial".</p>
 </ins>
 
 </div>
