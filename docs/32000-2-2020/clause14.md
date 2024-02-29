@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 8 December 2023
+modified: 1 March 2024
 ---
 
 <ul class="noprint">
@@ -1330,15 +1330,104 @@ Other PDF value types shall not be used.
 <h2 id="H14.13">14.13 Associated files</h2>
 <h3 id="H14.13.5">14.13.5 Associated files linked to graphics objects</h3>
 
+<p>...</p>
+
+<p class="location">Change the paragraph below NOTE 2 as follows:</p>
+
+<p>
+Unlike other types of marked-content tags, the <b>DP</b> or <b>MP</b> marked-content operators shall not be used with the <b>AF</b> tag when that tag is used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374">ies</ins>.
+</p>
+
+<p class="location">Change NOTE 3 as follows:</p>
+
+<p class="hangingindent">
+NOTE 3 The combination of a <b>DP</b> or <b>MP</b> operator with an <b>AF</b> tag (when used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374">ies</ins>) is forbidden, as these operators only mark a single point and thus don’t enable connections between any specific sequence of content operators and their associated file.
+</p>
+
 <p class="location">Change the paragraph below NOTE 3 as follows:</p>
 
 <p>
-The property list associated with the marked-content shall specify an array of file specification dictionaries to which
-the content is associated. The named resource in the
+The property list associated with the marked-content shall specify 
+<ins onMouseEnter="mouseEnter(this)" data-issue="374">a dictionary with an <b>MCAF</b> entry defining</ins>
+an array of file specification dictionaries
+<ins onMouseEnter="mouseEnter(this)" data-issue="374">(see 7.11.3, "File specification dictionaries")</ins>
+to which the content is associated. The named resource in the
 <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>Property List</b></del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>property list</i></ins>
-(see 14.6.2, "Property lists") shall specify an array of file specification dictionaries to which the content is associated.
-The relationship that the associated files have to the PDF content is supplied by the AFRelationship key in each file specification dictionary.
+(see 14.6.2, "Property lists") shall specify 
+<del onMouseEnter="mouseEnter(this)" data-issue="374">an array of file specification dictionaries</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="374">this dictionary</ins>
+to which the content is associated.
+The relationship that the associated files have to the PDF content is supplied by the <b>AFRelationship</b> key in each file specification dictionary
+<ins onMouseEnter="mouseEnter(this)" data-issue="374">in the array</ins>
+.
+</p>
+
+<p class="location">Insert a new Table, NOTE 4 and EXAMPLE below the paragraph below NOTE 3 as follows:</p>
+
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="374">
+NOTE 4 As defined in Table 34 and section 14.6.2, “Property Lists”, a marked-content property list is always a dictionary. Furthermore, entries in associated file file specification dictionaries require the use of an indirect reference to the embedded file stream and,
+since indirect references are not permitted in content streams, named property resources must always be used.
+</ins>
+</p>
+
+<table>
+  <caption id="Table409a"><ins onMouseEnter="mouseEnter(this)" data-issue="374">Table 409a - Property list entries for associated files</ins></caption>
+  <tr>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374">Key</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374">Type</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374">Value</ins></th>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374"><b>MCAF</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374">array</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374">
+      <i>(Optional, PDF 2.0)</i> An array of one or more file specification dictionaries (7.11.3, "File specification dictionaries")
+      which denote the associated files for this marked-content sequence. Each file specification dictionary in the array 
+      shall have an <b>AFRelationship</b> entry.
+    </ins></td>
+  </tr>
+</table>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="374">EXAMPLE:<br/>
+
+<code>10 0 obj
+<<
+  /Resources <<
+    /Properties <<
+      /MF1 << 
+        /MCAF [ 
+          << /Type /Filespec /AFRelationship /Data /EF ... >> 
+          << /Type /Filespec /AFRelationship /Schema /EF ... >> 
+        ] 
+      >>
+      /MF2 << /MCAF [ ... ] >>
+    >>
+  >>
+stream
+...
+/AF /MF1 BDC
+  ...
+EMC
+...
+endstream
+endobj
+</code></ins></p>
+
+<p class="location">Change the second last paragraph as follows:</p>
+
+<p>
+Although the marked-content tag shall be <b>AF</b>, other applications of marked-content are
+not precluded from using <b>AF</b> as a tag. The marked-content is connected with associated
+files only if the tag is <b>AF</b> and the named property list is defined 
+<del onMouseEnter="mouseEnter(this)" data-issue="374">as a valid array of file specification dictionaries</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="374">according to “Table 409a - Property list entries for associated files”</ins>.
+To avoid conflict with other features that use marked-content, such as 14.7,
+"Logical structure", where content is to be tagged with source content markers as well
+as other markers, the other markers should be nested inside the source content
+markers.
 </p>
 
 <p>...</p>
