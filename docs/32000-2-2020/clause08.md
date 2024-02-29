@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 18 February 2024
+modified: 1 March 2024
 ---
 
 <ul class="noprint">
@@ -590,7 +590,10 @@ the corresponding colour spaces either directly or via a default colour space (s
       In PDF 1.2 and later versions, <del onMouseEnter="mouseEnter(this)" data-issue="292">form XObjects may be independent of the content streams in which they appear, and this is strongly recommended although not required</del><ins onMouseEnter="mouseEnter(this)" data-issue="292">it is strongly recommended that form XObjects be independent of the content streams in which they appear; from PDF 2.0 this is required</ins>. In an independent form XObject, the resource dictionary of the form XObject is required and shall contain all named resources used by the form XObject. These resources shall not be promoted to the outer content stream’s resource dictionary, although that stream’s resource dictionary refers to the form XObject.
      </p>
      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="292">
-      NOTE In PDF 1.1 and earlier, all named resources used in the form XObject were defined to be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appeared in the resource dictionary of the form XObject. These resources also needed to be specified in the form XObject’s resource dictionary as well, to determine which resources were used inside the form XObject. If a resource was included in both dictionaries, it needed to have the same name in both locations.
+      NOTE 1 In PDF 1.1 and earlier, all named resources used in the form XObject were defined to be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appeared in the resource dictionary of the form XObject. These resources also needed to be specified in the form XObject’s resource dictionary as well, to determine which resources were used inside the form XObject. If a resource was included in both dictionaries, it needed to have the same name in both locations.
+    </ins></p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="291">
+     NOTE 2 Linearized PDF files impose additional requirements on resources - see "Annex F - (normative) Linearized PDF".
     </ins></p>
     </td>
   </tr>

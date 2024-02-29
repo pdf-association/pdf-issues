@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 8 December 2023
+modified: 1 March 2024
 ---
 
 <ul class="noprint">
@@ -1088,6 +1088,12 @@ nested.</ins>
 <ins onMouseEnter="mouseEnter(this)" data-issue="128">
 NOTE 3 PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in form XObjects, Type 3 glyph descriptions or annotation appearance streams used on a page. 
 Those earlier versions state that resources that were referenced from those content streams can be inherited from the resource dictionary of the page on which they are used.
+</ins>
+</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="291">
+NOTE 4 Linearized PDF files impose additional requirements on resources - see "Annex F - (normative) Linearized PDF".
 </ins>
 </p>
 
