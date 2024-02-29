@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 2 June 2023
+modified: 1 March 2024
 ---
 
 <ul class="noprint">
@@ -205,6 +205,21 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
     If this key is not present, the colour space for the 3D artwork colour values  <del onMouseEnter="mouseEnter(this)" data-issue="18" data-iso="approved">are</del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="18" data-iso="approved">is</ins> considered undefined and a PDF processor may choose any appropriate
     RGB-based colour space, such as sRGB.
+    </td>
+  </tr>
+  <tr>
+    <td><b>Resources</b></td>
+    <td>name tree</td>
+    <td>
+    <p>
+      (<i>Optional<ins onMouseEnter="mouseEnter(this)" data-issue="362">; Deprecated in PDF 2.0</ins></i>) A name tree that maps name strings to objects that may be used by applications or scripts to modify the default view of the 3D artwork.
+    </p>
+    <p>
+      The names in this name tree shall be text strings so as to be encoded in a way that will be accessible from ECMAScript.
+    </p>
+    <p class="hangingindent">
+    <ins onMouseEnter="mouseEnter(this)" data-issue="362">NOTE <b>Resources</b> was deprecated in PDF 2.0 because it was insufficiently specified to ensure interoperable implementations.</ins>
+    </p>
     </td>
   </tr>
 </table>
