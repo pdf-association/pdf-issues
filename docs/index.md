@@ -1,6 +1,6 @@
 ---
 title: Errata Overview
-modified: 13 March 2023
+modified: 8 March 2024
 ---
 
 <link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
@@ -8,8 +8,8 @@ modified: 13 March 2023
 
 <p>
 The <a href="https://github.com/pdf-association/pdf-issues/">public GitHub repository "pdf-issues"</a> hosted by the <a href="https://www.pdfa.org">PDF Association</a>
-provides all developers a means of openly reporting errata against ISO PDF related standards for review and resolution by industry and ISO experts.
-All issues in ISO PDF related standards are important, from minor typos and formatting issues, to
+provides all developers a means of openly reporting errata against industry and ISO PDF-related publications for review and resolution by industry.
+All issues in PDF-related publications are important, from minor typos and formatting issues, to
 larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry,
 PDF interoperability and implementation reliability will be improved.
 </p>
@@ -19,11 +19,13 @@ The current set of resolved errata are presented as <span class="isostyle">
 <ins title="GitHub Issue URL will appear">additions</ins>,
 <del title="GitHub Issue URL will appear">deletions</del> or
 <ins class="editornote" title="GitHub Issue URL will appear">editor notes</ins></span>
-to the published wording in the relevant ISO standard organized by clause number.
-GitHub Issue numbers and ISO status will appear as popup tooltips when hovering over changes or inline when printed and refer back to
+to the published wording in the relevant publication organized by clause number.
+GitHub Issue numbers and ISO status (<i>where relevant</i>) will appear as popup tooltips when hovering over changes or inline when printed and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
 closed GitHub pdf-issues</a>.
 </p>
+
+<p>For ISO publications:</p>
 
 <ul>
   <li>
@@ -31,19 +33,19 @@ closed GitHub pdf-issues</a>.
   </li>
 
   <li>
-  If a small gray ISO logo is also shown <img src="assets/Logo-ISO-submitted-small.png" alt="Small grey ISO logo" />, then that errata has been approved by the appropriate <a href="https://www.pdfa.org/community/">PDF Association technical working group</a> and submitted to the appropriate <a href="https://www.pdfa.org/iso-status/">ISO working group responsible</a> and is waiting for approval. 
+  If a small gray ISO logo is also shown <img src="assets/Logo-ISO-submitted-small.png" alt="Small grey ISO logo" />, then that errata has been approved by the appropriate <a href="https://www.pdfa.org/community/">PDF Association technical working group</a> and submitted to the appropriate <a href="https://www.pdfa.org/iso-status/">ISO working group responsible</a> and is waiting for approval. Such errata have the potential to get changed by the ISO committee.
   </li>
 
   <li>
-  If no ISO logo is shown then the errata has been resolved by the appropriate <a href="https://www.pdfa.org/community/">PDF Association technical working group</a> but has not yet been submitted to ISO for ratification.
+  If no ISO logo is shown then the errata has been resolved by the appropriate <a href="https://www.pdfa.org/community/">PDF Association technical working group</a> but has not yet been submitted to ISO for ratification. Such errata have the potential to get changed by the ISO committee.
   </li>
 </ul>
 
 <p>
-Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to locate precisely where the resolution is being applied.
+Due to ISO copyright, minimal surrounding text from the relevant ISO publication is provided that is sufficient to locate precisely where the resolution is being applied.
 </p>
 
-<p>Errata in the following ISO publications are supported:</p>
+<p>Errata in the following PDF specifications are supported:</p>
 
 
  <h3><b>Core PDF technologies</b></h3>
@@ -56,11 +58,13 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
        <li><a href="https://pdfa.org/resource/iso-ts-24064/" target="_blank">ISO/TS 24064:2023 Document management — Portable document format — RichMedia annotations conforming to the ISO 10303-242 (STEP AP 242) specification</a></li>
        <li><a href="https://pdfa.org/resource/iso-ts-32003-aes-gcm/" target="_blank">ISO/TS 32003:2023 Document management — Portable Document Format — Adding support of AES-GCM in PDF 2.0</a></li>
        <li><a href="https://pdfa.org/resource/iso-ts-32004-integrity-protection/" target="_blank">ISO/TS 32004:2023 Portable Document Format — Integrity protection in encrypted documents in PDF 2.0</a></li>
-       <li>ISO/TS 32005:2023 Document management — Portable Document Format — PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2 - <a href="32005-2023/index.html"><i>Resolved errata</i></a></li>
+       <li><a href="https://pdfa.org/resource/iso-32005" target="_blank">ISO/TS 32005:2023 Document management — Portable Document Format — PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2</a> - <a href="32005-2023/index.html"><i>Resolved errata</i></a></li>
     </ul>
     </li>
    <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="21757-1-2020/index.html"><i>Resolved errata</i></a></li>
    <li>XFDF 3.0 (<a href="https://www.pdfa.org/resource/iso-19444-xfdf/" target="_blank">ISO 19444-1:2019</a>)</li>
+   <li><a target="_blank" href="https://pdfa.org/declarations/">PDF Declarations</a> (<i>industry standard</i>)</li>
+   <li><a target="_blank" href="https://pdfa.org/wtpdf/">Well Tagged PDF (WTPDF)</a> (<i>industry standard</i>)</li>
   </ul>
 
  <h3><a href="https://www.pdfa.org/resource/iso-19005-pdfa/" target="_blank"><b>PDF/A</b> (ISO 19005) - PDF for long-term preservation</a></h3>
@@ -88,9 +92,10 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
   <h3><a href="https://www.pdfa.org/resource/iso-14289-pdfua/" target="_blank"><b>PDF/UA</b> (ISO 14289) - PDF for universal accessibility</a></h3>
    <ul>
     <li>PDF/UA-1 (ISO 14289-1:2014)</li>
+    <li>PDF/UA-2 (ISO 14289-2:2024)</li>
    </ul>
 
-  <h3><b>Other ISO PDF publications</b></h3>
+  <h3><b>Other PDF related publications</b></h3>
   <ul>
    <li><a href="https://www.pdfa.org/resource/iso-23504-pdfr/" target="_blank"><b>PDF/R-1</b> - ISO 23504-1:2020 PDF for raster image transport and storage</a></li>
    <li><a href="https://pdfa.org/resource/3d-formats/" target="_blank"><b>PRC</b> - ISO 14739-1:2014 Document management — 3D use of Product Representation Compact (PRC) format — Part 1: PRC 10001</a></li>
@@ -100,8 +105,8 @@ Due to ISO copyright, only minimal surrounding text from the relevant ISO standa
 The PDF Association maintains a <a href="https://www.pdfa.org/index-of-pdf-related-iso-publications/">full list of all PDF-related ISO publications</a>.</p>
 
 <p>
-Resolutions that are <b>not</b> officially authorized by the ISO working groups responsible for PDF related standards
-(ISO TC 171 SC 2 and ISO TC 130 WG 2) may be changed. A complete list of all
+Unless indicated otherwise, resolutions in ISO publications are <b>not</b> officially authorized by the ISO working groups responsible for PDF related standards
+(ISO TC 171 SC 2 and ISO TC 130 WG 2) and thus may be changed. A complete list of all
 <a href="https://www.pdfa.org/iso-status/" target="_parent">current work in progress of each PDF-related ISO working group</a> is also maintained by the PDF Association.
 </p>
 
