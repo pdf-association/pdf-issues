@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 17 November 2023
+modified: 12 April 2024
 ---
 
 <ul class="noprint">
@@ -758,7 +758,18 @@ The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byt
 The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string shall contain at most one <b>Tm</b> (text matrix) operator. If this operator is present, the interactive PDF processor shall replace the horizontal and vertical translation components with positioning values it determines to be appropriate, based on the field value, the quadding (<b>Q</b>) attribute, and any layout rules it employs. If the default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string contains no <b>Tm</b> operator, the viewer shall insert one in the appearance stream (with appropriate horizontal and vertical translation components) after the default appearance string and before the text-positioning and text-showing operators for the variable text.
 </p>
 
-<p>...</p>
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+To update an existing appearance stream to reflect a new field value, the interactive PDF processor shall first copy any needed resources from the 
+document’s <b>DR</b> dictionary (see "Table 224 — Entries in the interactive form dictionary") into the stream’s Resources dictionary. 
+(If the <b>DR</b> and <b>Resources</b> dictionaries contain resources with the same name, the one already in the <b>Resources</b> dictionary shall be left intact,
+not replaced with the corresponding value from the <b>DR</b> dictionary.) The interactive PDF processor shall then replace the existing contents of the
+appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> with the corresponding new contents as shown in 
+<del onMouseEnter="mouseEnter(this)" data-issue="393">Example 1 in 12.7.5.2.3, "Check boxes", 12.7.5, "Field types"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="393">Example above</ins> 
+(If the existing appearance stream contains no marked-content with tag <b>Tx</b>, the new contents shall be appended to the end of the original stream.)
+</p>
 
 
 <h3 id="H12.7.5">12.7.5 Field types</h3>
