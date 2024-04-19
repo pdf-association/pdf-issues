@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 3
 title: Terms and definitions
-modified: 25 October 2023
+modified: 19 April 2024
 ---
 
 <ul class="noprint">
@@ -42,21 +42,21 @@ cross-platform profile format for the creation and interpretation of colour data
 
 <p class="location">Add the following new Terms and Definitions (<i>subclause numbering is not shown</i>):</p>
 
-<h2><i>x.y</i><br/>cross-reference table</h2>
+<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149"><i>x.y</i><br/>cross-reference table</ins></h2>
 <p>
-data derived from all cross-reference sections and cross-reference streams in a PDF file that contains information that permits random access to all indirect objects within the PDF file (see 7.5.4 "Cross-reference table").
+<ins onMouseEnter="mouseEnter(this)" data-issue="149">data derived from all cross-reference sections and cross-reference streams in a PDF file that contains information that permits random access to all indirect objects within the PDF file (see 7.5.4 "Cross-reference table").</ins>
 </p>
-<p class="hangingindent">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorectly used to describe a cross-reference section.</p>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorectly used to describe a cross-reference section.</ins></p>
 
-<h2><i>x.y</i><br/>cross-reference section</h2>
+<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149"><i>x.y</i><br/>cross-reference section</ins></h2>
 <p>
-begins with a line containing the keyword <b>xref</b> followed by one or more cross-reference subsections (see 7.5.4 "Cross-reference table").
+<ins onMouseEnter="mouseEnter(this)" data-issue="149">begins with a line containing the keyword <b>xref</b> followed by one or more cross-reference subsections (see 7.5.4 "Cross-reference table").</ins>
 </p>
-<p class="hangingindent">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorectly used to describe a cross-reference section.</p>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorectly used to describe a cross-reference section.</ins></p>
 
-<h2><i>x.y</i><br/>cross-reference sub-section</h2>
+<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149"><i>x.y</i><br/>cross-reference sub-section</ins></h2>
 <p>
-exist within cross-reference sections and start with a line containing a pair of integers followed by lines containing entries for a contiguous range of object numbers (see 7.5.4 "Cross-reference table").
+<ins onMouseEnter="mouseEnter(this)" data-issue="149">exist within cross-reference sections and start with a line containing a pair of integers followed by lines containing entries for a contiguous range of object numbers (see 7.5.4 "Cross-reference table").</ins>
 </p>
 
 <p>...</p>
