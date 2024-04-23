@@ -245,7 +245,7 @@ However, a</del>
 </table>
 
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="365">
-(a) The delimiter characters { and } (LEFT CURLY BRACE (7Bh) and RIGHT CURLY BRACE (7Dh)) are additional delimiter characters only within Type 4 PostScript calculator functions (see 7.10.5 "Type 4 (PostScript calculator) functions").
+(a) The delimiter characters { and } (LEFT CURLY BRACKET (7Bh) and RIGHT CURLY BRACKET (7Dh)) are additional delimiter characters only within Type 4 PostScript calculator functions (see 7.10.5 "Type 4 (PostScript calculator) functions").
 </ins></p>
 
 <h2 id="H7.3">7.3 Objects</h2>
