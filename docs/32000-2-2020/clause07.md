@@ -571,9 +571,9 @@ dictionaries, all key values shall be direct objects as well. The <b>F</b> entry
 
 <p>...</p>
 
-<h3 id="H7.6.2">7.6.2 Application of encryption</h3>
+<h2 id="H7.6">7.6 Encryption</h2>
 
-<h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
+<h3 id="H7.6.2">7.6.2 Application of encryption</h3>
 
 <p class="location">Add new NOTE 1 after the 4th bullet in the first bulleted list below the first paragraph as follows:</p>
 
@@ -590,6 +590,8 @@ the value of the <b>Contents</b> key in a Signature dictionary is always a hexad
 <p>Encryption is not applied to other object types such as integers and boolean values, which are used primarily to convey information about the document's structure rather than its contents. ...</p>
 
 <p>...</p>
+
+<h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
 
 <h4 id="H7.6.3.1">7.6.3.1 General</h4>
 
