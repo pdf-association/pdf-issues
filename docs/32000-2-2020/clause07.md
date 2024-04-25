@@ -1458,7 +1458,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 
 <h3 id="H7.10.5">7.10.5 Type 4 (PostScript calculator) functions</h3>
 
-<h4 id="H7.10.5.2">7.10.5 Operators and operands</h4>
+<h4 id="H7.10.5.2">7.10.5.2 Operators and operands</h4>
 
 <p class="location">Change Table 42 as follows:</p>
 
