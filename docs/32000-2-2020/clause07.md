@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 1 March 2024
+modified: 25 April 2024
 ---
 
 <ul class="noprint">
@@ -998,7 +998,9 @@ there is no way to specify that metadata is to be left unencrypted in these case
        specifications for embedded file streams (see 7.11.4, "Embedded file streams"). ...</p>
     <p>(<i>PDF 2.0</i>) For unencrypted wrapper documents for an encrypted payload document (see 7.6.7, "Unencrypted wrapper document") the
        <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">name</del> strings provided in this tree shall not contain or be derived from
-       the encrypted payload document’s actual file name. ...</p>
+       the encrypted payload document’s actual file name. This is to avoid potential disclosure of sensitive information in the original filename.
+       The <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">name</del> string should match the value of <b>F</b> or 
+       <b>UF</b> in the referenced File Specification dictionary.</p>
     </td>
   </tr>  
   <tr>
