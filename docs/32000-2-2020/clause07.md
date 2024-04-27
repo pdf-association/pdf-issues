@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 25 April 2024
+modified: 27 April 2024
 ---
 
 <ul class="noprint">
@@ -34,6 +34,12 @@ modified: 25 April 2024
   <li>7.4 Filters
    <ul>
     <li><a href="#H7.4.3">7.4.3 ASCII85Decode filter</a>
+    </li>
+    <li>7.4.4 LZWDecode and FlateDecode filters</a>
+     <ul>
+      <li><a href="#H7.4.4.3">7.4.4.3 LZWDecode and FlateDecode parameters</a>
+      </li>
+     </ul>
     </li>
     <li><a href="#H7.4.9">7.4.9 JPXDecode filter</a>
     </li>
@@ -345,6 +351,38 @@ Any other characters, and any character sequences that represent impossible comb
     <li>A <i>z</i> character occurs in the middle of a group.</li>
     <li>A final partial group contains only one character.</li>
 </ul>
+
+<h3 id="H7.4.4">7.4.4 LZWDecode and FlateDecode filters</h3>
+
+<p>...</p>
+
+<h4 id="H7.4.4.3">7.4.4.3 LZWDecode and FlateDecode parameters</h4>
+
+<p>...</p>
+
+<p class="location">Change Table 8 as follows:</p>
+
+<table>
+  <caption id="Table8">Table 8 - Optional parameters for LZWDecode and FlateDecode filters</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>BitsPerComponent</b></td>
+    <td>integer</td>
+    <td>
+     <p>(<i>May be used only if <b>Predictor</b> is greater than 1</i>) The number of bits used to represent each colour component in a sample. 
+     Valid values are <i>1</i>, <i>2</i>, <i>4</i>, <i>8</i>, and (<i>PDF 1.5</i>) <i>16</i>. Default value: <i>8</i>.
+     </p>
+     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="366">
+       NOTE there is no relationship between this parameter and the similarly named key in image dictionaries.
+     </ins></p>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H7.4.9">7.4.9 JPXDecode filter</h3>
 

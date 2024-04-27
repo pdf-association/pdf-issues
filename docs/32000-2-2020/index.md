@@ -26,6 +26,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <p>The following tables have all been corrected:</p>
 <ul>
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
+<li><a href="clause07.html#Table8">Table 8 - Optional parameters for LZWDecode and FlateDecode filters</a></li>
 <li><a href="clause07.html#Table15">Table 15 - Entries in the file trailer dictionary</a></li>
 <li><a href="clause07.html#Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</a></li>
 <li><a href="clause07.html#Table25">Table 25 - Entries common to all crypt filter dictionaries</a></li>

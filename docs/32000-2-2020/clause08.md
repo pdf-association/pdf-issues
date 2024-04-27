@@ -400,6 +400,30 @@ indicates that the corresponding colour component shall never be painted on the 
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>BitsPerComponent</b></td>
+    <td>integer</td>
+    <td>
+    <p>
+      (<i>Required except for image masks and images that use the <b>JPXDecode</b> filter</i>) The number of bits used to represent each colour component.
+      Only a single value shall be specified; the number of bits shall be the same for all colour components. The value shall be <i>1</i>, <i>2</i>, 
+      <i>4</i>, <i>8</i>, or (<i>from PDF 1.5</i>) <i>16</i>. If <b>ImageMask</b> is <i>true</i>, this entry is optional, but if specified, its
+      value shall be <i>1</i>.
+    </p>
+    <p>
+      If the image stream uses a filter, the value of <b>BitsPerComponent</b> shall be consistent with the size of the data samples that the filter
+      delivers. In particular, a <b>CCITTFaxDecode</b> or <b>JBIG2Decode</b> filter shall always deliver 1-bit samples, a <b>RunLengthDecode</b> or
+      <b>DCTDecode</b> filter shall always deliver 8-bit samples, and an <b>LZWDecode</b> or <b>FlateDecode</b> filter shall deliver samples of
+      <del onMouseEnter="mouseEnter(this)" data-issue="366">a</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="366">the</ins> 
+      specified size <del onMouseEnter="mouseEnter(this)" data-issue="366">if a predictor function is used</del>.
+    </p>
+    <p>
+      If the image stream uses the <b>JPXDecode</b> filter, this entry is optional and shall be ignored if present. The bit depth is determined by 
+      the PDF processor in the process of decoding the JPEG 2000 image.
+    </p>
+    </td>
+  </tr>
+  <tr>
     <td><b>Intent</b></td>
     <td>name</td>
     <td>
