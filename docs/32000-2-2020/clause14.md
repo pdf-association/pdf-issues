@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 1 March 2024
+modified: 27 April 2024
 ---
 
 <ul class="noprint">
@@ -12,6 +12,8 @@ modified: 1 March 2024
  <li>14.3 Metadata
   <ul>
    <li><a href="#H14.3.2">14.3.2 Metadata streams</a>
+   </li>
+   <li><a href="#H14.3.3">14.3.3 Document information dictionary</a>
    </li>
   </ul>
  </li>
@@ -191,6 +193,32 @@ The contents of a metadata stream shall be the metadata represented in Extensibl
 <ins onMouseEnter="mouseEnter(this)" data-issue="296">All XMP metadata in PDF shall be encoded as UTF-8.</ins>
 </p>
 
+<p>...</p>
+
+<h3 id="H14.3.3">14.3.3 Document information dictionary</h3>
+
+<p class="location">Change the EXAMPLE below Table 349 as follows:</p>
+
+<code>101 0 obj % document information dictionary
+&lt;&lt; /CreationDate (D:20140314124211+01'00)
+   /ModDate (D:20140924212303+02'00)
+&gt;&gt;
+endobj
+
+102 0 obj % document level metadata stream
+&lt;&lt; /Type /Metadata
+   /Subtype /XML
+   /Length 103 0 R
+&gt;&gt;
+stream
+&lt;?xpacket begin="</code>
+<del onMouseEnter="mouseEnter(this)" data-issue="398">Ôªø</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="398"><i>… UTF-8 value of U+FEFF (efbbbf) …</i></ins>
+<code>" id="W5M0MpCehiHzreSzNTczkc9d"?&gt;
+...
+</code>
+
+<p></p>
 
 <h2 id="H14.5">14.5 Page-piece dictionaries</h2>
 
