@@ -92,6 +92,8 @@ modified: 18 February 2024
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
+<h2>9.3 Text state parameters and operators</h2>
+
 <h3 id="H9.3.4">9.3.4 Horizontal scaling</h3>
 
 <p class="location">Change the first paragraph as follows:</p>
@@ -130,8 +132,6 @@ The scaling shall apply to the horizontal coordinate in text space, independentl
   <figcaption>Figure 58 — Horizontal scaling</figcaption>
 </figure>
 
-
-<h2>9.3 Text state parameters and operators</h2>
 
 <h3 id="H9.3.6">9.3.6 Text rendering mode</h3>
 
