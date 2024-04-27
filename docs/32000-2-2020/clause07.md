@@ -1541,7 +1541,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 <p class="location">Change Table 45 as follows:</p>
 
 <table>
-  <caption id="Table45">Table 45 - Entries in an embedded file parameter dictionaryy</caption>
+  <caption id="Table45">Table 45 - Entries in an embedded file parameter dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
