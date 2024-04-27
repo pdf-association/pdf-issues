@@ -1501,6 +1501,14 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     </p>
     </td>
   </tr>
+  <tr>
+    <td><b>AFRelationship</b></td>
+    <td>name</td>
+    <td>
+      (<i>Optional; PDF 2.0</i>) A name value that represents the relationship between the component of this PDF document that refers to this file specification <ins onMouseEnter="mouseEnter(this)" data-issue="391">(via an <b>AF</b> array)</ins> and the associated file denoted by this file specification dictionary. See 14.13, "Associated files" for more details. These values represent the following relationships:
+      <p class="hangingindent">...</p>
+    </td>
+  </tr>
 </table>
  
 
