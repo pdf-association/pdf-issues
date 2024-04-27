@@ -47,7 +47,7 @@ or greater.
 <p class="location">Change Table F.1 as follows:</p>
 
 <table>
-  <caption id="TableA.1">Table F.1 - Entries in the linearization parameter dictionary</caption>
+  <caption id="TableF.1">Table F.1 - Entries in the linearization parameter dictionary</caption>
   <tr>
     <th>Parameter</th>
     <th>Type</th>
@@ -61,6 +61,16 @@ or greater.
       <ins onMouseEnter="mouseEnter(this)" data-issue="153" data-iso="approved">As usual, a change in the integer part
       indicates an incompatible change in the linearized format. A change in the fractional part
       indicates an upward-compatible change. The current version is 1.0.</ins>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>P</b></td>
+    <td>integer</td>
+    <td>
+      <p>(<i>Optional</i>) The page number of the first page; see 
+      <del onMouseEnter="mouseEnter(this)" data-issue="389">F.3.4, "First-page cross-reference table and trailer (Part 3)"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="389">F.3.7, "First-page section (Part 6)"</ins>. Default value: <i>0</i>.
       </p>
     </td>
   </tr>
