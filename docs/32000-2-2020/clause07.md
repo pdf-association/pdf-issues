@@ -1538,6 +1538,27 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
   </tr>
 </table>
 
+<p class="location">Change Table 45 as follows:</p>
+
+<table>
+  <caption id="Table45">Table 45 - Entries in an embedded file parameter dictionaryy</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>CheckSum</b></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="382">byte</ins> string</td>
+    <td>
+    <p>
+    (<i>Optional</i>) 16-byte string that is the checksum of the bytes of the uncompressed embedded file. The checksum shall be calculated by 
+    applying the standard MD5 message-digest algorithm (defined in Internet RFC 1321) to the bytes of the embedded file stream.
+    </p>
+    <p class="hangingindent">NOTE This is strictly a checksum, and is not used for security purposes.</p>
+    </td>
+  </tr>
+</table>
 <h3 id="H7.11.6">7.11.6 Collection items</h3>
 
 <p class="location">Change Table 47 as follows:</p>
