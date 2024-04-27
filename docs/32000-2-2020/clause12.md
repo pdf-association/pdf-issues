@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 12 April 2024
+modified: 27 April 2024
 ---
 
 <ul class="noprint">
@@ -30,6 +30,8 @@ modified: 12 April 2024
    <li>12.4.4 Presentations
     <ul>
      <li><a href="#H12.4.4.1">12.4.4.1 General</a>
+     </li>
+     <li><a href="#H12.4.4.2">12.4.4.2 Sub-page navigation</a>
      </li>
     </ul>
    </li>
@@ -367,6 +369,66 @@ in <del onMouseEnter="mouseEnter(this)" data-issue="320">drawing</del><ins onMou
     </td>
   </tr>
 </table>
+
+<p>...</p>
+
+<h4 id="H12.4.4.2">12.4.4.2 Sub-page navigation</h4>
+
+<p>...</p>
+
+<p class="location">Change the bullets below Table 165 as follows:</p>
+
+<p>
+An interactive PDF processor shall maintain a current navigation node. When a user navigates to a page, if the page dictionary has a <b>PresSteps</b> entry, the node specified by that entry shall become the current node. (Otherwise, there is no current node.) If the user requests to navigate forward (such as an arrow key press) and there is a current navigation node, the following shall occur:
+</p>
+
+<ol style="list-style: lower-alpha;">
+  <li>
+    <p>The sequence of actions specified by <b>NA</b> (if present) shall be executed.</p>
+    <p>If <b>NA</b> specifies an action that navigates to another page, the following actions for navigating to another page take place, and <b>Next</b> should not be present.</p>
+  </li>
+  <li>
+   <p>The node specified by <b>Next</b> (if present) shall become the new current navigation node.</p>
+   <p><ins onMouseEnter="mouseEnter(this)" data-issue="304">If there is no node specified by <b>Next</b> then navigate to the next page. If the current page is the last page, then the current navigation node remains unchanged.</ins>
+   </p>
+  </li>
+</ol>
+
+<p>
+Similarly, if the user requests to navigate backward and there is a current navigation node, the following shall occur:
+</p>
+
+<ol style="list-style: lower-alpha;" start="3">
+  <li>
+    <p>The sequence of actions specified by <b>PA</b> (if present) shall be executed.</p>
+    <p>If <b>PA</b> specifies an action that navigates to another page, the following actions for navigating to another page take place, and <b>Prev</b> should not be present.
+    </p>
+  </li>
+  <li>
+   <p>The node specified by <b>Prev</b> (if present) shall become the new current navigation node.</p>
+   <p><ins onMouseEnter="mouseEnter(this)" data-issue="304">If there is no node specified by <b>Prev</b> then navigate to the previous page. If the current page is the first page, then the current navigation node remains unchanged.</ins>
+   </p>
+  </li>
+</ol>
+
+<p>Transition effects, similar to the page transitions described earlier, may be specified as transition actions that are part of the <b>NA</b> or <b>PA</b> sequence; see 12.6.4.15, "Transition actions".</p>
+
+<p>If the user requests to navigate to another page (regardless of whether there is a current node) and that page’s dictionary contains a <b>PresSteps</b> entry, the following shall occur:</p>
+
+<ol style="list-style: lower-alpha;">
+  <li>
+    <p>The navigation node represented by <b>PresSteps</b> shall become the current node.</p>
+  </li>
+  <li>
+    <p>If the navigation request was forward, or if the navigation request was for random access (such as by clicking on a link), the actions specified by <b>NA</b> shall be executed and the node specified by <b>Next</b> shall become the new current node, as described previously.
+    </p>
+    <p>If the navigation request was backward, the actions specified by <b>PA</b> shall be executed and the node specified by <b>Prev</b> shall become the new current node, as described previously.
+    </p>
+  </li>
+  <li>
+    <p>The interactive PDF processor shall make the new page the current page and shall display it. Any page transitions specified by the <b>Trans</b> entry of the page dictionary shall be performed.</p>
+  </li>
+</ol>
 
 <h2 id="H12.5">12.5 Annotations</h2>
 
