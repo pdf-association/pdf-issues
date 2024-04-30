@@ -448,9 +448,9 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
 
 
 
-<h3 id="H13.7.2">RichMedia annotations</h3>
+<h3 id="H13.7.2">13.7.2 RichMedia annotations</h3>
 
-<h4 id="H13.7.2.1">General</h4>
+<h4 id="H13.7.2.1">13.7.2.1 General</h4>
 
 <p class="location">Modify the first paragraph as follows:</p>
 
@@ -487,7 +487,7 @@ while the <i>RichMediaContent dictionary</i> can be shared across rich-media ann
 </table>
 
 
-<h4 id="H13.7.2.2">RichMediaSettings dictionary</h4>
+<h4 id="H13.7.2.2">13.7.2.2 RichMediaSettings dictionary</h4>
 
 <h5 id="H13.7.2.2.1">13.7.2.2.1 General</h5>
 
