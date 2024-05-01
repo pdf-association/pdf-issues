@@ -28,7 +28,7 @@ modified: 11 October 2023
 
 <p class="location">Delete all of clause 5.1.3 as follows:</p>
 
-<h3 id="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
+<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="236">
