@@ -1038,7 +1038,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 </table>
 
 
-<h4 id="H14.8.5.8">14.8.5.8 Attribute attributes</h4>
+<h4 id="H14.8.5.8">14.8.5.8 Artifact attributes</h4>
 
 <p class="location">Change Table 385 as follows:</p>
 
