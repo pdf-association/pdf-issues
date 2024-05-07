@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 27 April 2024
+modified: 7 May 2024
 ---
 
 <ul class="noprint">
@@ -186,6 +186,8 @@ modified: 27 April 2024
   <li>7.12 Extensions dictionary
    <ul>
     <li><a href="#H7.12.2">7.12.2 Extensions dictionary</a>
+    </li>
+    <li><a href="#H7.12.3">7.12.3 Developer extensions dictionary</a>
     </li>
     <li><a href="#H7.12.5">7.12.5 ExtensionLevel</a>
     </li>
@@ -1646,6 +1648,16 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     </td>
   </tr>
 </table>
+
+<h3 id="H7.12.3">7.12.3 Developer extensions dictionary</h3>
+
+<p class="location">Add the following note below Table 49 as follows:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="164">NOTE If a developer extension defines a new PDF encryption algorithm then the <b>URL</b> and <b>ExtensionRevision</b> string values will be encrypted using that new algorithm and will not be meaningful to processors that do not support that developer extension.
+</ins></p>
+
+<p>...</p>
 
 <h3 id="H7.12.5">7.12.5 ExtensionLevel</h3>
 
