@@ -1654,7 +1654,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 <p class="location">Add the following note below Table 49 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="164">NOTE If a developer extension defines a new PDF encryption algorithm then the <b>URL</b> and <b>ExtensionRevision</b> string values will be encrypted using that new algorithm and will not be meaningful to processors that do not support that developer extension.
+<ins onMouseEnter="mouseEnter(this)" data-issue="164">NOTE The <b>URL</b> and <b>ExtensionRevision</b> entries are not exempt from encryption so if a developer extension defines a new PDF encryption algorithm and a PDF is configured to encrypt strings with that algorithm, then those values will not be meaningful to processors that do not support that developer extension.
 </ins></p>
 
 <p>...</p>
