@@ -3,7 +3,7 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 isotitle: 'Document management - ECMAScript for PDF - Part 1: Use of ISO 32000-2 (PDF 2.0)'
 title: ECMAscript for PDF 2.0 Corrections
-modified: 10 August 2021
+modified: 8 May 2024
 ---
 
 <p>
@@ -29,6 +29,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 <li><a href="clause10.html#Table1">Table 1 - Annotation types and their properties</a></li>
 <li><a href="clause10.html#Table3">Table 3 - AnnotRichMedia object properties</a></li>
 <li><a href="clause10.html#Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268">properties</ins></a></li>
+<li><a href="clause12.html#Table113">Table 113 - Mesh properties</a></li>
 </ul>
 
 <hr>

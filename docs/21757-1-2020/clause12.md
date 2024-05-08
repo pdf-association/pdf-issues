@@ -3,10 +3,16 @@ subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 clause: 12
 title: Object overview
-modified: 2 Sept 2022
+modified: 8 May 2024
 ---
 
 <ul>
+   <li>12.19 Mesh
+    <ul> 
+     <li><a href="#H12.19.2">12.19.2 Mesh properties</a>
+     </li>
+    </ul>
+   </li>
    <li>12.35 StateEvent
     <ul>
      <li><a href="#H12.35.1">12.35.1 General</a>
@@ -30,6 +36,35 @@ modified: 2 Sept 2022
 
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+
+<h2 id="H12.19">12.19 Mesh</h2>
+
+<h3 id="H12.19.2">12.19.2 Mesh properties</h3>
+
+<p class="location">Change Table 113 as follows:</p>
+
+<table>
+  <caption id="Table113">Table 113 - Mesh properties</caption>
+  <tr>
+    <th>Property</th>
+    <th>Type</th>
+    <th>Access</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>material</td>
+    <td>material</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="388">R</ins></td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>renderMode</td>
+    <td>string</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="388">R/W</ins></td>
+    <td>...</td>
+  </tr>
+</table>
+
 
 <h2 id="H12.35">12.35 StateEvent</h2>
 
