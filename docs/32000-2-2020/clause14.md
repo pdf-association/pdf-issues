@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 27 April 2024
+modified: 10 May 2024
 ---
 
 <ul class="noprint">
@@ -515,6 +515,18 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 </table>
 
 <h4 id="H14.7.5.4">14.7.5.4 Finding structure elements from content items</h4>
+
+<p class="location">Change the second paragraph as follows:</p>
+
+<p>
+The parent tree is a number tree (see 7.9.7, "Number trees"), accessed from the <b>ParentTree</b> entry in a document’s structure tree root 
+("Table 354 — Entries in the structure tree root"). 
+The tree shall contain an entry for each object that is a content item of 
+<del onMouseEnter="mouseEnter(this)" data-issue="343">at least one</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="343">a</ins> 
+structure element and for each content stream containing at least one marked-content sequence that is a content item.
+The key for each entry shall be an integer given as the value of the <b>StructParent</b> or <b>StructParents</b> entry in the object (see "Table 359 — Additional dictionary entries for structure element access"). The values of these entries shall be as follows:
+</p>
 
 <p class="location">Change the second bullet point as follows:</p>
 
