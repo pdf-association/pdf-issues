@@ -425,6 +425,15 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     See 14.7.5.4, "Finding structure elements from content items" for further discussion.
     </td>
   </tr>
+  <tr>
+    <td><b>Namespaces</b></td> 
+    <td>array</td>
+    <td>
+    (<i>Required if any structure elements have namespace identifiers; PDF 2.0</i>)  An array of
+    <ins onMouseEnter="mouseEnter(this)" data-issue="396">at least all</ins> 
+    namespaces used within the document <ins onMouseEnter="mouseEnter(this)" data-issue="396">as referenced from structure elements in the structure hierarchy</ins> (see 14.7.4.2, "Namespace dictionary").
+    </td>
+  </tr>
 </table>
 
 
@@ -474,6 +483,16 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>
       <p>...</p>
       <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">Attribute class names and revisions shall not be <b>null</b>.</ins></p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>NS</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 2.0</i>) An indirect reference to a namespace dictionary defining the namespace this element belongs to (see 14.7.4, "Namespaces")
+    <ins onMouseEnter="mouseEnter(this)" data-issue="396">that shall also be an element in the structure tree root <b>Namespaces</b> array (see 
+    "Table 354 - Entries in the structure tree root")</ins>
+    . If <ins onMouseEnter="mouseEnter(this)" data-issue="396"><b>NS</b> is</ins> not present, the element shall be considered to be in the default standard structure namespace (see 14.8.6, "Standard structure namespaces").
     </td>
   </tr>
 </table>
