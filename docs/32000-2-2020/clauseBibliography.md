@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Bibliography
 title: Bibliography
-modified: 2 June 2023
+modified: 10 May 2024
 ---
 
 <ul class="noprint">
@@ -18,10 +18,10 @@ modified: 2 June 2023
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<p class="location">Add a new bibliographic entry as follows:</p>
+<p class="location">Append a new bibliographic entry as follows:</p>
 
-<p>
-[50] Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial", (<a href="https://pdfa.org/norm-refs/5411.ToUnicode.pdf">https://pdfa.org/norm-refs/5411.ToUnicode.pdf</a>)
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="277">
+[50] Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial", (<a href="https://pdfa.org/norm-refs/5411.ToUnicode.pdf">https://pdfa.org/norm-refs/5411.ToUnicode.pdf</a>)</ins>
 </p>
 
 </div>
