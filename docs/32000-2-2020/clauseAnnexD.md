@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex D
 title: (normative) Character sets and encodings
-modified: 2 June 2023
+modified: 10 May 2024
 ---
 
 <ul class="noprint">
@@ -41,7 +41,7 @@ modified: 2 June 2023
     <td>0x16</td>
     <td>0026</td>
     <td><del onMouseEnter="mouseEnter(this)" data-issue="285">U+0017</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285">U+0016</ins></td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="285">(END OF TRANSMISSION BLOCK)</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285">(SYNCHRONOUS IDLE)</ins></td>
+    <td>(SYNCHRONOUS IDLE)</td>
     <td>U</td>
   </tr>
 </table>
