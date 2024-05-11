@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 10 May 2024
+modified: 11 May 2024
 ---
 
 <ul class="noprint">
@@ -369,6 +369,12 @@ Marked-content sequences may be nested one within another, but each sequence sha
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.5</ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Variable text field replacement</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.2</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">12.7.4.3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Tx</b></ins></td>
   </tr>
 </table>
 
