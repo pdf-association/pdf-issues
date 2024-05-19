@@ -51,7 +51,7 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-The structure element’s structure type entry ()<b>S</b>) may have values that establish hierarchical relationships between entries in a list. The <b>LI</b> value specifies an individual list entry. The <b>L</b> value specifies a list made up of individual list entries and/or lists of list entries. The trailing character in <b>LI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".
+The structure element’s structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a list. The <b>LI</b> value specifies an individual list entry. The <b>L</b> value specifies a list made up of individual list entries and/or lists of list entries. The trailing character in <b>LI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".
 </p>
 
 </div>
