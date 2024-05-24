@@ -26,6 +26,8 @@ modified: 24 May 2024
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
+<p class="editornote" data-issue="415">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect operator <code>/BDC</code> need to replaced by <code>BDC</code> (operators do not have leading SLASH) throughout Annex H.</p>
+
 <h2 id="HH.8">H.8 Structure elements examples</h2>
 
 <h3 id="HH.8.2">H.8.2 Table of Contents</h3>
