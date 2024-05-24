@@ -95,6 +95,8 @@ modified: 24 May 2024
        </li>
        <li><a href="#H14.8.5.4.2">14.8.5.4.2 General layout attributes</a>
        </li>
+       <li><a href="#H14.8.5.4.3">14.8.5.4.3 Layout Attributes for BLSEs</a>
+       </li>
        <li><a href="#H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</a>
        </li>
       </ul>
@@ -605,7 +607,9 @@ by specific standard owners; see 14.8.5, "Standard structure attributes". In add
     <del onMouseEnter="mouseEnter(this)" data-issue="354">PDF processor creating</del> 
     <ins onMouseEnter="mouseEnter(this)" data-issue="354">owner of</ins> 
     the attribute data. The value shall either be 
-    <del onMouseEnter="mouseEnter(this)" data-issue="354">a</del> <i>NSO</i>, <i>UserProperties</i> (see "Table 361 — Additional entries in an attribute object dictionary for user properties"), one of the values from 14.8.5, "Standard structure attributes", or conform to the guidelines described in Annex E, "Extending PDF".
+    <del onMouseEnter="mouseEnter(this)" data-issue="354">a</del> <i>NSO</i>, <i>UserProperties</i> (see "Table 361 — Additional entries in an attribute object dictionary for user properties"), 
+    one of the values from <del onMouseEnter="mouseEnter(this)" data-issue="226">14.8.5, "Standard structure attributes"</del><ins onMouseEnter="mouseEnter(this)" data-issue="226">"Table 376 — Standard structure attribute owners"</ins>
+    , or conform to the guidelines described in Annex E, "Extending PDF".
     <p>If the value for the <b>O</b> entry is <i>NSO</i> then the <b>NS</b> entry shall be present, and shall identify the owner of the attribute object.</p>
     </td>
   </tr>
@@ -892,6 +896,10 @@ endobj
 
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
 
+<p class="editornote" data-issue="226">
+EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a> throughout all subclauses of 14.8.5, "Layout", "Table", "PrintField" and "Artifact" terms are incorrectly formatted as bold indicating a key name, when they are <b>O</b> (owner) key values and thus should be italic.
+</p>
+
 <h4 id="H14.8.5.1">14.8.5.1 General</h4>
 
 <p class="location">Change reference to subclause 14.8.5.2 in sixth paragraph as follows:</p>
@@ -938,6 +946,12 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
   </tr>
 </table>
 
+<p class="location">Add a new NOTE immediately below Table 376 as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226">
+NOTE: other values for the owner (<b>O</b>) entry are defined in "Table 360 — Entries common to all attribute object dictionaries".
+</ins></p>
+
 
 <p class="location">Add a new NOTE after the current note below Table 376 as follows:</p>
 
@@ -965,25 +979,54 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 
 <p class="location">Change Table 377 as follows:</p>
 
+<p class="editornote" data-issue="226">
+EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be bold (indicating key names). The first column should not have bold typeface. A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is formally defined.
+</p>
+
+
 <table>
   <caption id="Table377">Table 377 - Standard layout attributes</caption>
   <tr>
     <th>Structure Elements</th>
-    <th>Attributes</th>
+    <th>Attribute<del onMouseEnter="mouseEnter(this)" data-issue="226">s</del> <ins onMouseEnter="mouseEnter(this)" data-issue="226">key name</ins></th>
     <th>Inheritable</th>
+    <th  style="text-align: center"><ins onMouseEnter="mouseEnter(this)" data-issue="226">References</ins></th>
   </tr>
   <tr>
-    <td><b><del onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Vertical text</del>
+    <td rowspan="3">
+      <b>Figure</b>, <b>Form</b>, <b>Formula</b><ins onMouseEnter="mouseEnter(this)" data-issue="226">, <b>Artifact</b>,</ins> and <b>Table</b> elements
+    </td>
+    <td><b>BBox</b></td>
+    <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Tables 379 and 385</ins></td>
+  </tr>
+  <tr>
+    <td><b>Width</b></td>
+    <td>No</td>
+    <td rowspan="2" style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>Height</b></td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Vertical text</del>
         <ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Any structure element containing text whose inline-progression direction is top to bottom or bottom to top.</ins>
-    </b></td>
-    <td>...</td>
-    <td>...</td>
+    </td>
+    <td><b>GlyphOrientationVertical</b></td>
+    <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
   </tr>
   <tr>
-    <td><b><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">RB, RT, EP (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">)</ins>
-    </b></td>
-    <td>...</td>
-    <td>...</td>
+    <td rowspan="2"><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved"><b>RB</b>, <b>RT</b>, <b>RP</b> (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">)</ins>
+    </td>
+    <td><b>RubyAlign</b></td>
+    <td>Yes</td>
+    <td rowspan="2" style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369</ins></td>
+  </tr>
+  <tr>
+    <td><b>RubyPosition</b></td>
+    <td>Yes</td>
   </tr>
 </table>
 
@@ -1035,6 +1078,30 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     </td>
   </tr>
 </table>
+
+
+<h5 id="H14.8.5.4.3">14.8.5.4.3 Layout Attributes for BLSEs</h5>
+
+<p class="location">Change Table 379 as follows:</p>
+
+<table>
+  <caption id="Table379">Table 379 - Standard layout attributes specific to block-level structure elements</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+    <td><b>BBox</b></td>
+    <td>rectangle</td>
+    <td>...
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226">
+      NOTE 4: Artifact attributes also define a <b>BBox</b> attribute (see "Table 385 — Standard artifact attributes").
+      </ins></p>
+    </td>
+  <tr>
+  </tr>
+</table>
+
 
 
 <h5 id="H14.8.5.4.4">14.8.5.4.4 Layout Attributes for ILSEs</h5>
@@ -1108,6 +1175,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td>rectangle</td>
     <td>
     (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226">NOTE: BLSE attributes also define a <b>BBox</b> attribute (see "Table 379 — Additional standard layout attributes specific to block-level structure elements").</ins></p>
     </td>
   </tr>
   <tr>

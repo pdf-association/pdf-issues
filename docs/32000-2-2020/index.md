@@ -120,6 +120,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table376">Table 376 - Standard structure attribute owners</a></li>
 <li><a href="clause14.html#Table377">Table 377 - Standard layout attributes</a></li>
 <li><a href="clause14.html#Table378">Table 378 - Standard layout attributes common to all standard structure types</a></li>
+<li><a href="clause14.html#Table379">Table 379 - Standard layout attributes specific to block-level structure elements</a></li>
 <li><a href="clause14.html#Table380">Table 380 - Standard layout attributes specific to inline-level structure elements</a></li>
 <li><a href="clause14.html#Table382">Table 382 - Standard list attributes</a></li>
 <li><a href="clause14.html#Table385">Table 385 - Standard artifact attributes</a></li>
