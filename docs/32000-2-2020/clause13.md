@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 1 March 2024
+modified: 24 May 2024
 ---
 
 <ul class="noprint">
@@ -169,6 +169,13 @@ modified: 1 March 2024
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Delete the single sentence paragraph immediately below Table 286 as follows:</p>
+
+<p><del onMouseEnter="mouseEnter(this)" data-issue="414">An unrecognised value shall be treated as <i>(TEMPNEVER)</i>.</del></p>
+
+<p>...</p>
 
 <h2 id="H13.6">13.6 3D Artwork</h2>
 
