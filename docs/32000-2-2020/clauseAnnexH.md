@@ -46,10 +46,20 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 
 <p>...</p>
 
+<p class="location">Correct Figure H.5 as follows (page numbers are all vertically aligned):</p>
+
+<p style="margin-left: 50px">TABLE OF CONTENTS</p>
+<p style="margin-left: 80px">1. Chapter One<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>3</p>
+<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;1.<del onMouseEnter="mouseEnter(this)" data-issue="419">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">1</ins> Section A<ins>.............</ins>4</p>
+<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;1.<del onMouseEnter="mouseEnter(this)" data-issue="419">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">2</ins> Section B<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>5</p>
+<p style="margin-left: 80px">2. Chapter Two<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>6</p>
+<p style="margin-left: 80px">3. Chapter <del onMouseEnter="mouseEnter(this)" data-issue="419">Two</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">Three.........</ins>7</p> 
+<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;3.1 Section A<ins onMouseEnter="mouseEnter(this)" data-issue="419">............</ins>8</p>
+
+
 <p class="location">Correct the last EXAMPLE as follows:</p>
 
 <code>...
-
 400 0 obj
     &lt;&lt;/Type /StructElem
        /S <ins onMouseEnter="mouseEnter(this)" data-issue="425">/</ins>TOC
