@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex H
 title: (informative) Example PDF files
-modified: 26 May 2022
+modified: 24 May 2024
 ---
 
 <ul class="noprint">
@@ -45,6 +45,20 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 </p>
 
 <p>...</p>
+
+<p class="location">Correct the last EXAMPLE as follows:</p>
+
+<code>...
+
+400 0 obj
+    &lt;&lt;/Type /StructElem
+       /S <ins onMouseEnter="mouseEnter(this)" data-issue="425">/</ins>TOC
+       /K [201 0 R 211 0 R 301 0 R 214 0 R 215 0 R 302 0 R]
+       <ins onMouseEnter="mouseEnter(this)" data-issue="425">/P 400 0 R</ins>
+    &gt;&gt;
+endobj
+
+</code>
 
 <h3 id="HH.8.3">H.8.3 Hierarchical lists</h3>
 
