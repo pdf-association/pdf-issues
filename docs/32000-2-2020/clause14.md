@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 11 May 2024
+modified: 24 May 2024
 ---
 
 <ul class="noprint">
@@ -611,6 +611,16 @@ by specific standard owners; see 14.8.5, "Standard structure attributes". In add
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+When an array of attribute objects is provided, the value of the <b>O</b> and <b>NS</b> keys may be repeated across attribute objects. 
+If a given attribute 
+<ins onMouseEnter="mouseEnter(this)" data-issue="226">for a specific owner (as defined by the <b>O</b> and <b>NS</b> entries)</ins>
+is specified more than once, the later (in array order) entry shall take precedence.
+</p>
 
 <h4 id="H14.7.6.2">14.7.6.2 Attribute classes</h4>
 
