@@ -854,6 +854,25 @@ there is no way to specify that metadata is to be left unencrypted in these case
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Correct the last example in subclause 7.6.6 as follows (a SLASH was missing from the key value name "<code>V2</code>"):</p>
+
+<code>...
+8 0 obj                                        %Encryption dictionary
+      &lt;&lt;/Filter /MySecurityHandlerName
+         /V 4                                  %Version 4: allow crypt filters
+         /CF                                   %List of crypt filters
+          &lt;&lt;/MyFilter0
+               &lt;&lt;/Type /CryptFilter
+                 /CFM <ins onMouseEnter="mouseEnter(this)" data-issue="424">/</ins>V2&gt;&gt;                    %Uses the standard algorithm
+               &gt;&gt;
+               ...
+...
+
+</code>
+
+
 <h2 id="H7.7">7.7 Document structure</h2>
 
 <h3 id="H7.7.1">7.7.1 General</h3>
