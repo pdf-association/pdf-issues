@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 7 May 2024
+modified: 24 May 2024
 ---
 
 <ul class="noprint">
@@ -84,6 +84,8 @@ modified: 7 May 2024
         <li><a href="#H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</a>
         </li>
         <li><a href="#H7.6.4.3.3">7.6.4.3.3 Algorithm 2.A: Retrieving the file encryption key from an encrypted document in order to decrypt it (revision 6 and later)</a>
+        </li>
+        <li><a href="#H7.6.4.3.4">7.6.4.3.4 Algorithm 2.B: Computing a hash (revision 6 and later)</a>
         </li>
         <li><a href="#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
         </li>
@@ -262,10 +264,13 @@ However, a</del>
 
 <p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 1:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="327">
-<img src="PDF-Integer-EBNF.svg" alt="EBNF railroad diagram for PDF integer object">
-<a href="PDF-Integer.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
-</ins>
+<figure>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="327">
+    <img src="PDF-Integer-EBNF.svg" alt="EBNF railroad diagram for a PDF integer object">
+    <a href="PDF-Integer.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+    <figcaption>Figure 1a - EBNF diagram for a PDF integer object</figcaption>
+  </ins>
+</figure>
 
 <p class="location">Change EXAMPLE 1 as follows:</p>
 
@@ -276,10 +281,13 @@ However, a</del>
 
 <p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 2:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="327">
-<img src="PDF-Real-EBNF.svg" alt="EBNF railroad diagram for PDF real object">
-<a href="PDF-Real.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
-</ins>
+<figure>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="327">
+    <img src="PDF-Real-EBNF.svg" alt="EBNF railroad diagram for PDF real object">
+    <a href="PDF-Real.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+    <figcaption>Figure 1b - EBNF diagram for a PDF real object</figcaption>
+  </ins>
+</figure>
 
 <p class="location">Change EXAMPLE 2 as follows:</p>
 
@@ -691,6 +699,28 @@ and the file encryption key as the key. ...
 <ins onMouseEnter="mouseEnter(this)" data-issue="53" data-iso="approved">NOTE This algorithm, when applied to the user password string, produces the file encryption key used to encrypt or decrypt string and stream data according to 7.6.3.3, "Algorithm 1.A: Encryption of data using the AES algorithms". Parts of this algorithm are also used in the algorithms described in 7.6.4.4, "Password algorithms".</ins>
 </p>
 
+<h5 id="H7.6.4.3.4">7.6.4.3.4 Algorithm 2.B: Computing a hash (revision 6 and later)</h5>
+
+<p class="location">Change bullet (a) as follows:</p>
+
+<ol type="a" start="1">
+  <li>
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="325">
+      Make a new string, <b>K1</b>, consisting of 64 repetitions of the sequence: input password, <b>K</b>, the 48-byte user key. The 48 byte user key is only used when checking the owner password or creating the owner key. If checking the user password or creating the user key, <b>K1</b> is the concatenation of the input password and <b>K</b>.
+    </del></p>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="325">
+      <p>Make a new string <b>K0</b> as follows:</p>
+      <ul>
+        <li>When checking the owner password or creating the owner key, <b>K0</b> is the concatenation of the input password, <b>K</b>, and the 48-byte user key.</li>
+        <li>Otherwise, <b>K0</b> is the concatenation of the input password and <b>K</b>.</li>
+      </ul>
+      <p>Next, set <b>K1</b> to 64 repetitions of <b>K0</b>.</p>
+    </ins>
+  </li>
+  <li>...</li>
+</ol>
+
+
 <h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
 <p class="location">Change bullet (f) as follows:</p>
@@ -830,12 +860,12 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <p class="location">Move Figure 5 from subclause 7.7.2 to after the first paragraph, and update Figure 5 as follows:</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="261"> 
-  <figure>
-    <img src="../assets/figure5-document-structure.svg" alt="Updated Figure 5 - Structure of a PDF document, additionally showing Document Part in PDF DOM">
+<figure>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="261"> 
+    <img src="figure5-document-structure.svg" alt="Updated Figure 5 - Structure of a PDF document, additionally showing Document Part in PDF DOM">
     <figcaption>Figure 5 - Structure of a PDF document</figcaption>
-  </figure>
-</ins>
+  </ins>
+</figure>
 
 <h3 id="H7.7.2">7.7.2 Document catalog dictionary</h3>
 
