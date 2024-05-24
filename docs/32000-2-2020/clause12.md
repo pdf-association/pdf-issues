@@ -933,6 +933,53 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
   </tr>
 </table>
 
+<p>...</p>
+
+<p class="location">Change Table 238 as follows:</p>
+
+<table>
+  <caption id="Table238">Table 238 - Entries in a certificate seed value dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>KeyUsage</b></td>
+    <td>array of ASCII strings</td>
+    <td>
+      <p>...</p>
+      <del onMouseEnter="mouseEnter(this)" data-issue="410">
+      <p>1 digitalSignature 4 dataEncipherment 7<br/>cRLSign<br/>
+         2 non-Repudiation 5 keyAgreement 8<br/>encipherOnly<br/>
+         3 keyEncipherment 6 keyCertSign 9<br/>decipherOnly</p>
+      </del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="410">
+      <table style="border-collapse: collapse; border: none;">
+        <tr>
+          <td style="border-collapse: collapse; border: none;">1 digitalSignature</td>
+          <td style="border-collapse: collapse; border: none;">4 dataEncipherment</td>
+          <td style="border-collapse: collapse; border: none;">7 cRLSign</td>
+        </tr>
+        <tr>
+          <td style="border-collapse: collapse; border: none;">2 non-Repudiation</td>
+          <td style="border-collapse: collapse; border: none;">5 keyAgreement</td>
+          <td style="border-collapse: collapse; border: none;">8 encipherOnly</td>
+        </tr>
+        <tr>
+          <td style="border-collapse: collapse; border: none;">3 keyEncipherment</td>
+          <td style="border-collapse: collapse; border: none;">6 keyCertSign</td>
+          <td style="border-collapse: collapse; border: none;">9 decipherOnly</td>
+        </tr>
+      </table>
+      </ins>
+      <p>...</p>
+    </td>
+  </tr>
+</table>
+
+<p>...</p>
+
 <h3 id="H12.7.6">12.7.6 Form actions</h3>
 
 <h4 id="H12.7.6.2">12.7.6.2 Submit-form action</h4>
