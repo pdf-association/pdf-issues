@@ -7,6 +7,14 @@ modified: 24 May 2024
 ---
 
 <ul class="noprint">
+  <li><a href="#HH.2">H.2 Minimal PDF file</a>
+  </li>
+  <li>H.7 Updating example
+    <ul>
+      <li><a href="#HH.7.5">H.7.5 Stage 4: Add three annotations and update metadata</a>
+      </li>
+    </ul>
+  </li>
   <li>H.8 Structure elements examples
     <ul>
       <li><a href="#HH.8.2">H.8.2 Table of Contents</a>
@@ -27,6 +35,71 @@ modified: 24 May 2024
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
 <p class="editornote" data-issue="415">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect operator <code>/BDC</code> need to replaced by <code>BDC</code> (operators do not have leading SLASH) throughout Annex H.</p>
+
+<h2 id="HH.2">H.2 Minimal PDF file</h2>
+
+<p class="location">Change the example as follows:</p>
+
+<code>...
+            &lt;xmpMM:DocumentID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402"><i>unique GUID of document</i></del> …&lt;/xmpMM:DocumentID&gt;
+            &lt;xmpMM:InstanceID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402"><i>GUID changed for each save</i></del> …&lt;/xmpMM:InstanceID&gt;
+...
+
+</code>
+
+<h2 id="HH.7">H.7 Updating example</h2>
+
+<h3 id="HH.7.5">H.7.5 Stage 4: Add three annotations and update metadata</h3>
+
+<p class="location">Change the example as follows:</p>
+
+<code>...
+6 0 obj                                         %Metadata stream<del onMouseEnter="mouseEnter(this)" data-issue="402">s</del>
+      &lt;&lt;/Type /Metadata
+          /Subtype /XML
+          /Length … <i>number of bytes in updated metadata</i> …
+      &gt;&gt;
+stream
+<del onMouseEnter="mouseEnter(this)" data-issue="402">%In this Metadata, "preserved" items are left unaltered, and not updated to reflect possibly
+%different software or a different author. Updating software needs to be able to parse the XMP
+%in any valid format and preserve all content which is not to be updated, even that with
+%unfamiliar tags. In this example some reordering of tags has taken place. Note further that
+%after incremental update there can be multiple XMP packets
+&lt;?xpacket begin="… <i>UTF-8 value of U+FEFF (efbbbf)</i> …" id="W5M0MpCehiHzreSzNTczkc9d"?&gt;
+&lt;x:xmpmeta xmlns:x="adobe:ns:meta/"&gt;
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;
+&lt;rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/"&gt;
+&lt;pdf:Producer>… <i>name of software which generated the PDF (preserved)</i> …&lt;/pdf:Producer&gt;
+&lt;/rdf:Description&gt;
+&lt;rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;
+&lt;dc:format&gt;application/pdf&lt;/dc:format&gt;
+&lt;dc:title&gt;&lt;rdf:Alt&gt;
+&lt;rdf:li xml:lang="x-default"&gt;… <i>document title (preserved)</i> …&lt;/rdf:li&gt;
+&lt;/rdf:Alt&gt;&lt;/dc:title&gt;
+&lt;dc:creator&gt;&lt;rdf:Seq&gt;
+&lt;rdf:li&gt;… <i>document author’s personal name (preserved)</i> …&lt;/rdf:li&gt;
+&lt;/rdf:Seq&gt;&lt;/dc:creator&gt;
+&lt;/rdf:Description&gt;
+&lt;rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"&gt;
+&lt;xmpMM:DocumentID>… unique GUID of document (preserved) …&lt;/xmpMM:DocumentID&gt;
+&lt;xmpMM:InstanceID>… GUID changed for each save (updated) …&lt;/xmpMM:InstanceID&gt;
+&lt;/rdf:Description&gt;
+&lt;rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"&gt;
+&lt;xmp:CreatorTool&gt;… <i>name of tool used to create the document (preserved)</i> …&lt;/xmp:CreatorTool&gt;
+&lt;xmp:CreateDate&gt;… <i>timestamp, like 2012-12-25T12:34:56Z (preserved)</i> …&lt;/xmp:CreateDate&gt;
+&lt;xmp:ModifyDate&gt;… <i>timestamp, like 2012-12-27T14:36:06Z (updated)</i> …&lt;/xmp:ModifyDate&gt;
+&lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;
+&lt;/x:xmpmeta&gt;
+… <i>white-space padding to permit in-place updating of metadata</i> …
+… <i>Note that applications which fully understand PDF updating do not usually update in-place</i> …
+&lt;?xpacket end="w"?&gt;</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="402">...</ins>
+endstream
+endobj
+...
+
+</code>
 
 <h2 id="HH.8">H.8 Structure elements examples</h2>
 
