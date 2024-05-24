@@ -56,6 +56,18 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 <p style="margin-left: 80px">3. Chapter <del onMouseEnter="mouseEnter(this)" data-issue="419">Two</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">Three.........</ins>7</p> 
 <p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;3.1 Section A<ins onMouseEnter="mouseEnter(this)" data-issue="419">............</ins>8</p>
 
+<p>...</p>
+
+<p class="location">Replace Figure H.7 with the following corrected version:</p>
+
+<figure>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="418">
+    <img src="Figure H.7.svg" alt="Corrected Figure H.7 — Hierarchy of structure elements and relationship with marked-content">
+  </ins>
+  <figcaption>Figure H.7 — Hierarchy of structure elements and relationship with marked-content</figcaption>
+</figure>
+
+<p>...</p>
 
 <p class="location">Correct the last EXAMPLE as follows:</p>
 
@@ -77,6 +89,19 @@ endobj
 <p>
 The structure element’s structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a list. The <b>LI</b> value specifies an individual list entry. The <b>L</b> value specifies a list made up of individual list entries and/or lists of list entries. The trailing character in <b>LI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".
 </p>
+
+<p>...</p>
+
+<p class="location">Replace Figure H.9 with the following corrected version:</p>
+
+<figure>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="418">
+    <img src="Figure H.9.svg" alt="Corrected Figure H.9 — Hierarchy of structure elements and relationship with marked-content">
+  </ins>
+  <figcaption>Figure H.9 — Hierarchy of structure elements and relationship with marked-content</figcaption>
+</figure>
+
+<p>...</p>
 
 </div>
 
