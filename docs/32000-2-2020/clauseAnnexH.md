@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex H
 title: (informative) Example PDF files
-modified: 24 May 2024
+modified: 26 May 2024
 ---
 
 <ul class="noprint">
@@ -130,6 +130,17 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 <p style="margin-left: 80px">2. Chapter Two<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>6</p>
 <p style="margin-left: 80px">3. Chapter <del onMouseEnter="mouseEnter(this)" data-issue="419">Two</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">Three.........</ins>7</p> 
 <p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;3.1 Section A<ins onMouseEnter="mouseEnter(this)" data-issue="419">............</ins>8</p>
+
+<p>...</p>
+
+<p class="location">Replace Figure H.6 with the following corrected version:</p>
+
+<figure>
+  <ins onMouseEnter="mouseEnter(this)" data-issue="415">
+    <img src="Figure H.6.svg" alt="Corrected Figure H.6 — Association between content and marked-content identifiers">
+  </ins>
+  <figcaption>Figure H.6 — Association between content and marked-content identifiers</figcaption>
+</figure>
 
 <p>...</p>
 
