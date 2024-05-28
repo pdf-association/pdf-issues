@@ -2,7 +2,7 @@
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 isotitle: 'Document management - ECMAScript for PDF - Part 1: Use of ISO 32000-2 (PDF 2.0)'
-title: ECMAscript for PDF 2.0 Corrections
+title: 'PDF 2.0 ECMAscript  Corrections'
 modified: 8 May 2024
 ---
 

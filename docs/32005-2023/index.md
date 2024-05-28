@@ -1,7 +1,7 @@
 ---
-isodoc: ISO/TS 32005:2023
-isotitle: 'Document management -- Portable Document Format -- PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2'
-title: ISO/TS 32005:2023 - PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2
+isodoc: ISO TS 32005:2023
+isotitle: 'Document management - Portable Document Format - PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2'
+title: 'ISO TS 32005: PDF 1.7 and 2.0 inclusion rules in PDF 2.0 Corrections'
 modified: 6 October 2023
 ---
 

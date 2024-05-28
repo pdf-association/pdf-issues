@@ -1,7 +1,7 @@
 ---
-isodoc: ISO/TS 32001:2022
-isotitle: 'Document management — Portable Document Format — Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0)'
-title: ISO/TS 32001:2022 - Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0)
+isodoc: ISO TS 32001:2022
+isotitle: 'Document management - Portable Document Format - Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0)'
+title: 'ISO TS 32001: PDF 2.0 Hash Algorithm extensions Corrections'
 modified: 6 October 2023
 ---
 
