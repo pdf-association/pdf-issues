@@ -1,6 +1,6 @@
 ---
 title: Errata Overview
-modified: 8 March 2024
+modified: 28 May 2024
 ---
 
 <link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
@@ -59,6 +59,7 @@ Due to ISO copyright, minimal surrounding text from the relevant ISO publication
        <li><a href="https://pdfa.org/resource/iso-ts-32003-aes-gcm/" target="_blank">ISO/TS 32003:2023 Document management — Portable Document Format — Adding support of AES-GCM in PDF 2.0</a></li>
        <li><a href="https://pdfa.org/resource/iso-ts-32004-integrity-protection/" target="_blank">ISO/TS 32004:2023 Portable Document Format — Integrity protection in encrypted documents in PDF 2.0</a></li>
        <li><a href="https://pdfa.org/resource/iso-32005" target="_blank">ISO/TS 32005:2023 Document management — Portable Document Format — PDF 1.7 and 2.0 structure namespace inclusion in ISO 32000-2</a> - <a href="32005-2023/index.html"><i>Resolved errata</i></a></li>
+       <li><a href="https://pdfa.org/resource/iso-32007" target="_blank">ISO/TS 32007:2024 Document management — Portable Document Format — RichMedia annotations conforming to glTF assets</a></li>
     </ul>
     </li>
    <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="21757-1-2020/index.html"><i>Resolved errata</i></a></li>
