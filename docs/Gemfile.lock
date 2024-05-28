@@ -273,7 +273,7 @@ DEPENDENCIES
   faraday-retry
   github-pages
   jekyll
-  jekyll-feed
+  jekyll-seo-tag
   kramdown-parser-gfm
   minima
   tzinfo

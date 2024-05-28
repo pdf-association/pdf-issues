@@ -71,3 +71,5 @@ toc:
 
   - standard: ISO/TS 32005:2023
     subfolderitems:
+      - ref: 'Clause 7: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0 and PDF 1.7'
+        url:  clause07.html

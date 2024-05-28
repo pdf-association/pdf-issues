@@ -17,14 +17,13 @@
 title: Errata for PDF specifications
 
 author:
-  name: "info@pdfa.com"
+  name: "PDF Association"
   email: info@pdfa.com
 
-name: "info@pdfa.com"
-email: info@pdfa.com
-
 description: >- # this means to ignore newlines until "baseurl:"
-  Industry-agreed resolutions for errata reported against PDF specifications.
+  Industry-agreed resolutions for errata reported against PDF standards and specifications.
+
+tagline: Resolutions to PDF specification errata
 
 baseurl: / # the subpath of your site, e.g. /blog
 
@@ -32,30 +31,34 @@ url: "https://pdf-issues.pdfa.org" # the base hostname & protocol for your site,
 
 logo: https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo.png
 
-twitter:
-    username: PDFAssociation
-github:
-    username:  pdf-association
-
 show_excerpts: false
 
-#theme: jekyll-theme-minimal
 theme: minima
 
+# See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+social:
+  name: PDF Association
+  links:
+    - https://www.linkedin.com/company/pdf-association/
+    - https://github.com/pdf-association/
+    - https://www.youtube.com/ThePDFAssociation
+    - https://x.com/pdf-association
+    - https://www.facebook.com/PDFassociation
+
+
 # See https://github.com/jekyll/minima
+google_analytics: UA-1991880-1
 minima:
+  skin: classic
   google_analytics: UA-1991880-1
   date_format: "%e %B %Y"
   social_links:
-    twitter: PDFAssociation
-    github: pdf-association
-    facebook: PDFassociation
-    linkedin: pdf-association
-    youtube: ThePDFAssociation
-    twitter:
-      username: PDFAssociation
-    github:
-      username: pdf-association
+    - { platform: twitter,  user_url: https://x.com/pdf-association, username: PDFAssociation }
+    - { platform: github,   user_url: https://github.com/pdf-association/, username: pdf-association }
+    - { platform: facebook, user_url: https://www.facebook.com/PDFassociation }
+    - { platform: linkedin, user_url: https://www.linkedin.com/company/pdf-association/ }
+    - { platform: youtube,  user_url: https://www.youtube.com/ThePDFAssociation, username: ThePDFAssociation }
+
 
 # Build settings
 markdown: kramdown
@@ -69,8 +72,8 @@ header_pages:
     - 32001-2022/index.md
     - 32005-2023/index.md
 
-# plugins:
-#  - jekyll-feed
+plugins:
+ - jekyll-seo-tag
 
 encoding: UTF-8
 
