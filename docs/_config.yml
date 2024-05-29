@@ -50,7 +50,6 @@ social:
 google_analytics: UA-1991880-1
 minima:
   skin: classic
-  google_analytics: UA-1991880-1
   date_format: "%e %B %Y"
   social_links:
     - { platform: twitter,  user_url: https://x.com/pdf-association, username: PDFAssociation }
@@ -69,8 +68,11 @@ header_pages:
     - 15930-9-2020/index.md
     - 16612-3-2020/index.md
     - 21757-1-2020/index.md
+    - 14739-1-2014/index.md
     - 32001-2022/index.md
     - 32005-2023/index.md
+    - wtpdf-1/index.md
+    - pdf-declarations/index.md
 
 plugins:
  - jekyll-seo-tag

@@ -64,12 +64,28 @@ toc:
       - ref: 'Clause 12: Object overview'
         url:  clause12.html
 
-  - standard: ISO/TS 32001:2022
+  - standard: ISO TS 32001:2022
     subfolderitems:
       - ref: 'Clause 5: Digital signature enhancements'
         url:  clause05.html
 
-  - standard: ISO/TS 32005:2023
+  - standard: ISO TS 32005:2023
     subfolderitems:
       - ref: 'Clause 7: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0 and PDF 1.7'
         url:  clause07.html
+
+  - standard: ISO 14739-1:2014
+    subfolderitems:
+
+  - standard: WTPDF 1.0
+    subfolderitems:
+      - ref: 'Clause 6: Conformance'
+        url:  clause06.html
+
+  - standard: PDF Declarations
+    subfolderitems:
+      - ref: 'Clause 7: PDF Declaration syntax'
+        url:  clause07.html
+      - ref: 'Clause 8: PDF Declaration requirements'
+        url:  clause08.html
+        
