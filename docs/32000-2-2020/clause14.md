@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 24 May 2024
+modified: 7 June 2024
 ---
 
 <ul class="noprint">
@@ -33,6 +33,8 @@ modified: 24 May 2024
    </li>
    <li>14.7.5 Structure content
     <ul>
+     <li><a href="#H14.7.5.2">14.7.5.2 Marked-content sequences as content items</a>
+     </li>
      <li><a href="#H14.7.5.3">14.7.5.3 PDF objects as content items</a>
      </li>
      <li><a href="#H14.7.5.4">14.7.5.4 Finding structure elements from content items</a>
@@ -518,6 +520,34 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <h3 id="H14.7.5">14.7.5 Structure content</h3>
 
+<h4 id="H14.7.5.2">14.7.5.2 Marked-content sequences as content items</h4>
+
+<p class="location">Change Table 357 as follows:</p>
+
+<table>
+  <caption id="Table357">Table 357 - Entries in a marked-content reference dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Pg</b></td>
+    <td>dictionary</td>
+    <td>
+      <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="431">Optional</del>
+             <ins onMouseEnter="mouseEnter(this)" data-issue="431">Sometimes required</ins>; shall be an indirect reference</i>) 
+        The page object representing the page on which the graphics objects in the marked-content sequence shall be rendered. 
+        This entry <del onMouseEnter="mouseEnter(this)" data-issue="431">overrides</del><ins onMouseEnter="mouseEnter(this)" data-issue="431">takes precedence over</ins> any <b>Pg</b> entry in the structure element containing the marked content reference
+        <del onMouseEnter="mouseEnter(this)" data-issue="431">; it shall be required if the structure element has no such entry.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="431">. This entry is required if the structure element containing the object reference has no <b>Pg</b> entry.</ins>
+      </p>
+    </td>
+  </tr>
+</table>
+
+<p>...</p>
+
 <h4 id="H14.7.5.3">14.7.5.3 PDF objects as content items</h4>
 
 <p class="location">Change Table 358 as follows:</p>
@@ -531,12 +561,15 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
   </tr>
   <tr>
     <td><b>Pg</b></td>
-    <td>Dictionary</td>
+    <td>dictionary</td>
     <td>
-      <i>(Optional; shall be an indirect reference)</i> The page object of the page on which the object shall be rendered. This entry overrides any <b>Pg</b> entry in the structure element containing the object reference; it shall be 
-      <del onMouseEnter="mouseEnter(this)" data-issue="339">used</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="339">required</ins> 
-      if the structure element has no such entry.
+      <p><i>(<del onMouseEnter="mouseEnter(this)" data-issue="431">Optional</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="431">Sometimes required</ins>; shall be an indirect reference)</i> 
+        The page object of the page on which the object shall be rendered. 
+        This entry <del onMouseEnter="mouseEnter(this)" data-issue="431">overrides</del><ins onMouseEnter="mouseEnter(this)" data-issue="431">takes precedence over</ins> any <b>Pg</b> entry in the structure element containing the object reference
+        <del onMouseEnter="mouseEnter(this)" data-issue="431">; it shall be required if the structure element has no such entry.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="339,431">. This entry is required if the structure element containing the object reference has no <b>Pg</b> entry.</ins>
+       </p>
     </td>
   </tr>
 </table>
