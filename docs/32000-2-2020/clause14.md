@@ -61,6 +61,8 @@ modified: 7 June 2024
    </li>
    <li>14.8.4 Standard structure types
     <ul>
+     <li><a href="#H14.8.4.3">14.8.4.3 Document level structure types</a>
+     </li>
      <li><a href="#H14.8.4.4">14.8.4.4 Grouping level structure types</a>
      </li>
      <li>14.8.4.7 Inline level structure types
@@ -697,6 +699,16 @@ The meaning of the terms block-progression direction and inline-progression dire
 <p>...</p>
 
 <h3 id="H14.8.4">14.8.4 Standard structure types</h3>
+
+<h4 id="H14.8.4.3">14.8.4.3 Document level structure types</h4>
+
+<p class="location">Add a new informative NOTE 1 after the second paragraph (before Table 364) as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="349">
+NOTE 1: A document can consist of zero, one or more sub-documents and document fragments. However, regardless of the presence of sub-document or document fragments, the entire content of a single PDF file is considered a logical document. Annex L "Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0" contains the requirement that a document utilizing tags from the PDF 2.0 standard structure namespace have a single structure element of type <b>Document</b> as the root of the document.
+</ins></p>
+
+<p>...</p>
 
 <h4 id="H14.8.4.4">14.8.4.4 Grouping level structure types</h4>
 
