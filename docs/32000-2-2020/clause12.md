@@ -1067,6 +1067,21 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
 
 <p>...</p>
 
+<p class="location">Add a new informative NOTE 2 after the bullet in the bulleted list below NOTE 1 as follows:</p>
+
+<ul>
+ <li><p>
+  A <i>byte range digest</i> shall be computed over a range of bytes in the PDF file, that shall be indicated by the <b>ByteRange</b> entry in the signature dictionary. This range should be the entire PDF file, including the signature dictionary but excluding the signature value itself (the <b>Contents</b> entry). In case of multiple digital signatures this range shall be the sequence of bytes starting from the <code>"%PDF-"</code> comment at the beginning of the PDF document to the end of the <code>"%%EOF"</code> comment, possibly followed by an optional EOL marker, terminating the incremental update that adds the digital signature dictionary to the document. When a byte range digest is present, all values in the signature dictionary shall be direct objects.
+ </p>
+ <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+  NOTE 2: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included when a byte range digest is present.
+ </ins></p> 
+ </li>
+ <li>...</li>
+</ul>
+
+<p>...</p>
+
 <p class="location">Change the last paragraph as follows:</p>
 
 <p>

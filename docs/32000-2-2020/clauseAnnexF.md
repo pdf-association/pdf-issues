@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex F
 title: (normative) Linearized PDF
-modified: 15 September 2023
+modified: 7 June 2024
 ---
 
 <ul class="noprint">
@@ -12,6 +12,8 @@ modified: 15 September 2023
       <li><a href="#HF.3.2">F.3.2 Header (Part 1)</a>
       </li>
       <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
+      </li>
+      <li><a href="#HF.3.6">F.3.6 Hint streams (Parts 5 and 10)</a>
       </li>
      </ul>
     </li>
@@ -28,6 +30,8 @@ modified: 15 September 2023
 
 <h2 id="HF.3">F.3 Linearized PDF document structure</h2>
 
+<h3 id="HF.3.2">F.3.2 Header (Part 1)</h3>
+
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
@@ -39,10 +43,14 @@ or greater.
 
 <p>...</p>
 
-
-<h3 id="HF.3.2">F.3.2 Header (Part 1)</h3>
-
 <h3 id="HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</h3>
+
+<p class="location">Add a new informative NOTE below the first paragraph as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+NOTE: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in a Linearization parameter dictionary.
+</ins></p> 
+
 
 <p class="location">Change Table F.1 as follows:</p>
 
@@ -76,6 +84,14 @@ or greater.
   </tr>
 </table>
 
+
+<h3 id="HF.3.6">F.3.6 Hint streams (Parts 5 and 10)</h3>
+
+<p class="location">Add a new informative NOTE 2 below the paragraph below the existing NOTE as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+NOTE 2: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in hint stream dictionaries.
+</ins></p> 
 </div>
 
 <hr>

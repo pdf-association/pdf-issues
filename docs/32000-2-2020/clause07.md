@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 24 May 2024
+modified: 7 June 2024
 ---
 
 <ul class="noprint">
@@ -187,6 +187,8 @@ modified: 24 May 2024
   </li>
   <li>7.12 Extensions dictionary
    <ul>
+    <li><a href="#H7.12.1">7.12.1 General</a>
+    </li>
     <li><a href="#H7.12.2">7.12.2 Extensions dictionary</a>
     </li>
     <li><a href="#H7.12.3">7.12.3 Developer extensions dictionary</a>
@@ -582,18 +584,24 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 <p class="location">Change the first bullet point as follows:</p>
 <ul>
 <li>
-The values of all entries shown in "Table 17 - Additional entries specific to a cross-reference
+<p>The values of all entries shown in "Table 17 - Additional entries specific to a cross-reference
 stream dictionary" shall be direct objects; indirect references shall not be permitted. For arrays
 (the <b>Index</b> and <b>W</b> entries), all of their elements shall be direct objects as well. 
 <del onMouseEnter="mouseEnter(this)" data-issue="246">If the stream is encoded, the <b>Filter</b> and <b>DecodeParms</b> 
 entries in "Table 5 - Entries common to all stream dictionaries" shall also be direct objects.</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="246">The values of all entries shown in "Table 5 - Entries common to 
 all stream dictionaries" shall also be direct objects. For arrays, all array elements shall be direct objects and for 
-dictionaries, all key values shall be direct objects as well. The <b>F</b> entry defined in Table 5 shall not be used.</ins> 
+dictionaries, all key values shall be direct objects as well. The <b>F</b> entry defined in Table 5 shall not be used.</ins></p>
+
+<p class="location">Append new informative NOTE below the first bullet as follows:</p>
+
+<p class="hangindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") are thus not allowed in cross-reference stream dictionaries.
+</ins></p>
+
 </li>
 <li>...</li>
 </ul>
-
 
 <h4 id="H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</h4>
 
@@ -1676,6 +1684,16 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     </p></td>
   </tr>
 </table>
+
+<h2 id="H7.12">7.12 Extensions dictionary</h2>
+
+<h3 id="H7.12.1">7.12.1 General</h3>
+
+<p class="location">Add new informative NOTE below the first paragraph as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+NOTE: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in extensions dictionaries.
+</ins></p>
 
 
 <h3 id="H7.12.2">7.12.2 Extensions dictionary</h3>
