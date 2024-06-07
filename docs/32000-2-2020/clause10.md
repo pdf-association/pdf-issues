@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
-modified: 18 February 2024
+modified: 7 June 2024
 ---
 
 <ul class="noprint">
@@ -16,10 +16,12 @@ modified: 18 February 2024
   <li>10.6 Halftones
     <ul>
     <li>10.6.5 Halftone dictionaries
-      <ul>
+     <ul>
+      <li><a href="#H10.6.5.3">10.6.5.3 Type 6 halftones</a>
+      </li>
       <li><a href="#H10.6.5.6">10.6.5.6 Type 5 halftones</a>
       </li>
-      </ul>
+     </ul>
     </li>
     </ul>
   </li>
@@ -58,6 +60,34 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
 
 <h3 id="H10.6.5">10.6.5 Halftone dictionaries</h3>
 
+<h4 id="H10.6.5.3">10.6.5.3 Type 6 halftones</h4>
+
+<p class="location">Change Table 129 as follows:</p>
+
+<table>
+  <caption id="Table129">Table 129 - Additional entries specific to a Type 6 halftone dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>TransferFunction</b></td>
+    <td>function or<br/>name</td>
+    <td>
+      <p>
+      (<i>Optional</i>) A transfer function, which overrides the current transfer function in the graphics state for the same component. 
+      <del onMouseEnter="mouseEnter(this)" data-issue="310">The name <i>Identity</i> may be used to specify the identity function (see 10.5, "Transfer functions").</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="310">This entry shall be present if the dictionary is a component of a Type 5 halftone (see 10.6.5.6, "Type 5 halftones") and represents either a nonprimary or nonstandard primary colour component (see 10.5, "Transfer functions"). The name <i>Identity</i> may be used to specify the identity function.</ins>
+      </p>
+      <p class="hangingindent">
+        NOTE PDF versions to 1.7 required that this entry be present if the dictionary is a component of a Type 5 halftone (see 10.6.5.6, "Type 5 halftones") and represents either a non-primary or non-standard primary colour component.
+      </p>
+    </td>
+  </tr>
+</table>
+
+
 <h4 id="H10.6.5.6">10.6.5.6 Type 5 halftones</h4>
 
 <p class="location">Change Table 132 as follows:</p>
@@ -68,6 +98,16 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
     <th>Key</th>
     <th>Type</th>
     <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>any colorant name</b></td>
+    <td>dictionary or<br/>stream</td>
+    <td>
+      <p>(<i>Required, one per colourant</i>) The halftone corresponding to the colourant or colour component named by the key. The halftone may be of any Type other than 5.</p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="310">
+      NOTE As stated for each of the other halftone types the referenced halftone will have a <b>TransferFunction</b> if it represents a nonprimary or nonstandard primary colour component.
+      </ins></p>
+    </td>
   </tr>
   <tr>
     <td><b>Default</b></td>
