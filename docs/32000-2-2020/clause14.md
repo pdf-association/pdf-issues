@@ -17,6 +17,8 @@ modified: 7 June 2024
    </li>
   </ul>
  </li>
+ <li><a href="#H14.4">14.4 File identifiers</a>
+ </li>
  <li><a href="#H14.5">14.5 Page-piece dictionaries</a>
  </li>
  <li>14.6 Marked content
@@ -225,6 +227,22 @@ stream
 </code>
 
 <p></p>
+
+<h2 id="H14.4">14.4 File identifiers</h2>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+PDF file identifiers shall be defined by the <b>ID</b> entry in a PDF file’s trailer dictionary (see 7.5.5, "File trailer"). 
+The value of this entry shall be an array of two byte strings. 
+The first byte string shall be a permanent identifier based on the <del onMouseEnter="mouseEnter(this)" data-issue="328">contents of the</del> PDF file at the time it was originally created and shall not change when the PDF file is updated. 
+The second byte string shall be a changing identifier based on the PDF file<del onMouseEnter="mouseEnter(this)" data-issue="328">’s contents</del> at the time it was last updated (see 7.5.6, "Incremental updates"). 
+When a PDF file is first written, both identifiers shall be set to the same value. 
+If the first identifier in the reference matches the first identifier in the referenced file’s <b>ID</b> entry, and the last identifier in the reference matches the last identifier in the referenced file’s <b>ID</b> entry, it is very likely that the correct and unchanged PDF file has been found. If only the first identifier matches, a different version of the correct PDF file has been found.
+</p>
+
+<p>...</p>
+
 
 <h2 id="H14.5">14.5 Page-piece dictionaries</h2>
 
