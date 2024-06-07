@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 27 April 2024
+modified: 7 June 2024
 ---
 
 <ul class="noprint">
@@ -323,6 +323,32 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 
 <p>...</p>
 
+<p class="location">Change Table 161 as follows:</p>
+
+<table>
+  <caption id="Table161">Table 161 - Entries in a page label dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+   <td><b>S</b></td>
+   <td>name</td>
+   <td>
+    <p>(<i>Optional</i>) The numbering style that shall be used for the numeric portion of each page label:</p>
+    <ul>
+     <li>D - Decimal Arabic numerals</li>
+     <li>R - Uppercase Roman numerals</li>
+     <li>r - Lowercase Roman numerals</li>
+     <li>A - Uppercase letters (A to Z for the first 26 pages, AA to <del onMouseEnter="mouseEnter(this)" data-issue="432">Z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432">A</ins>Z for the next 26, and so on)</li>
+     <li>a - Lowercase letters (a to z for the first 26 pages, aa to <del onMouseEnter="mouseEnter(this)" data-issue="432">z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432">a</ins>z for the next 26, and so on)</li>
+    </ul>
+    <p>There is no default numbering style; if no <b>S</b> entry is present, page labels shall consist solely of a label prefix with no numeric portion.</p>
+    <p class="hangingindent">NOTE If the <b>P</b> entry (next) specifies the label prefix Contents, each page is simply labelled Contents with no page number. (If the <b>P</b> entry is also missing or empty, the page label is an empty string.)</p>
+   </td>
+  </tr>
+</table>
 
 <h3 id="H12.4.3">12.4.3 Articles</h3>
 

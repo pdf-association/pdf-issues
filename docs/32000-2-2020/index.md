@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 24 May 2024
+modified: 7 June 2024
 ---
 
 <p>
@@ -67,6 +67,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause11.html#Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</a></li>
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
 <li><a href="clause12.html#Table151">Table 151 - Entries in an outline item dictionary</a></li>
+<li><a href="clause12.html#Table161">Table 161 - Entries in a page label dictionary</a></li>
 <li><a href="clause12.html#Table164">Table 164 - Entries in a transition dictionary</a></li>
 <li><a href="clause12.html#Table166">Table 166 - Entries common to all annotation dictionaries</a></li>
 <li><a href="clause12.html#Table176">Table 176 - Additional entries specific to a link annotation</a></li>
