@@ -938,8 +938,8 @@ When a cell does not explicitly identify its headers through a <b>Headers</b> at
 </p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="200">To find headers for any data or header cell,</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="200">Given a data or header cell,</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="200">To find headers for any</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="200">Given a</ins> data or header cell, 
 begin from the current cell position and use the current value of <b>WritingMode</b> to search towards the first cell in the appropriate horizontal 
 <del onMouseEnter="mouseEnter(this)" data-issue="200">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200">and</ins> vertical directions.
 The search terminates when any of these conditions is reached:
