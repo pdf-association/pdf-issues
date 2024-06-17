@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="169px" preserveAspectRatio="none" style="width:573px;height:169px;background:#FFFFFF;" version="1.1" viewBox="0 0 573 169" width="573px" zoomAndPan="magnify">
+    xmlns:xlink="http://www.w3.org/1999/xlink" style="background:#FFFFFF;" 
+    version="1.1" viewBox="0 0 573 160" enable-background="new 0 0 573 160" xml:space="preserve">
     <defs/>
     <g>
         <line style="stroke:#181818;stroke-width:1.5;" x1="40" x2="40" y1="65.4453" y2="65.4453"/>
