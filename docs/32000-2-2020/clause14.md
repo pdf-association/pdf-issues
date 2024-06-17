@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 7 June 2024
+modified: 17 June 2024
 ---
 
 <ul class="noprint">
@@ -926,6 +926,49 @@ endobj
   </tr>
 </table>
 
+<p class="location">Update all text below Table 371 as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="200">
+If the <b>Headers</b> attribute (see 14.8.5, "Standard structure attributes") is not specified, any cell in a table may have multiple headers associated with it. These headers are defined either explicitly by the <b>Headers</b> attribute, or implicitly, by the following algorithm:
+</del>
+<ins>
+When a cell does not explicitly identify its headers through a <b>Headers</b> attribute, the following algorithm may be used to determine the cell’s headers, if any:
+</ins>
+</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="200">To find headers for any data or header cell,</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="200">Given a data or header cell,</ins> 
+begin from the current cell position and use the current value of <b>WritingMode</b> to search towards the first cell in the appropriate horizontal 
+<del onMouseEnter="mouseEnter(this)" data-issue="200">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200">and</ins> vertical directions.
+The search terminates when any of these conditions is reached:
+</p>
+
+<ul>
+  <li>the edge of the table is reached</li>
+  <li>a data cell is found after a header cell</li>
+  <li>a header cell is found that has the <b>Headers</b> attribute set — the headers that are specified are appended to the row <del onMouseEnter="mouseEnter(this)" data-issue="200">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200">or</ins> column list that is current being built</li>
+</ul>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="200">
+However, cells with a value for <b>Scope</b> that conflicts with the search's direction should not terminate this section of the search and such a cell (irrespective of its Headers attribute) should not be added to the headers list being created.
+</ins></p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="200">
+EXAMPLE: If searching up a given column reveals a cell with a <b>Scope</b> value of <i>Row</i> this cell should not cause this column search to terminate.
+</ins></p>
+
+<p>
+When a header cell is found in the search and the (implicit or explicit) <b>Scope</b> attribute of the header cell 
+<del onMouseEnter="mouseEnter(this)" data-issue="200">is either <i>Both</i> or <i>Row</i>/<i>Column</i>, the header cell is appended to the end of the list of row/column headers</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="200">matches the current search direction (i.e., is either <i>Both</i>, or is <i>Row</i> or <i>Column</i> when searching for row or column headers, respectively), then the header cell is appended to the end of the list of row or column headers</ins>
+, resulting in a list of headers ordered from most specific to most general.
+</p>
+
+<p class="hangingindent">
+NOTE: This algorithm works for languages with different intrinsic directionality of the script (such as right-to-left) because the structure always reflects the logical content order of the table.
+</p>
 
 <h5 id="H14.8.4.8.4">14.8.4.8.4 Caption structure types</h5>
 
