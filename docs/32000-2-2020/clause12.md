@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 7 June 2024
+modified: 17 June 2024
 ---
 
 <ul class="noprint">
@@ -42,6 +42,8 @@ modified: 7 June 2024
    <li><a href="#H12.5.1">12.5.1 General</a>
    </li>
    <li><a href="#H12.5.2">12.5.2 Annotation dictionaries</a>
+   </li>
+   <li><a href="#H12.5.5">12.5.5 Appearance streams</a>
    </li>
    <li>12.5.6 Annotation types
     <ul>
@@ -533,6 +535,21 @@ and <b>Sy</b> keys.
 NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2</ins> Requiring an appearance dictionary for each annotation ensures the reliable rendering of the annotations.
 <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">When an appearance dictionary is not present, the rendered appearance will be implementation dependent.</ins>
 </p>
+
+<h3 id="H12.5.5">12.5.5 Appearance streams</h3>
+
+<p>...</p>
+
+<p class="location">Change the paragraph below the EXAMPLE as follows:</p>
+
+<p>
+where <del onMouseEnter="mouseEnter(this)" data-issue="422">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422"><i>f</i></ins><i>ormXObject2</i> define the check box’s normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
+</p>
+
+
+<p>...</p>
+
+<h3 id="H12.5.6">12.5.6 Annotation types</h3>
 
 <h4 id="H12.5.6.2">12.5.6.2 Markup annotations</h4>
 
