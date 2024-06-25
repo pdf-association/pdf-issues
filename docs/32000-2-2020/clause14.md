@@ -1327,7 +1327,6 @@ EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issu
       NOTE 4: Artifact attributes also define a <b>BBox</b> attribute (see "Table 385 — Standard artifact attributes").
       </ins></p>
     </td>
-  <tr>
   </tr>
 </table>
 
