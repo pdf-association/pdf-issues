@@ -1091,14 +1091,16 @@ EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issu
 
 
 <table>
-  <caption id="Table377">Table 377 - Standard layout attributes</caption>
-  <thead>
+ <caption id="Table377">Table 377 - Standard layout attributes</caption>
+ <thead>
+   <tr>
     <th>Structure Elements</th>
     <th>Attribute<del onMouseEnter="mouseEnter(this)" data-issue="226">s</del> <ins onMouseEnter="mouseEnter(this)" data-issue="226">key name</ins></th>
     <th>Inheritable</th>
     <th style="text-align: center"><ins onMouseEnter="mouseEnter(this)" data-issue="226">References</ins></th>
-  </thead>
-
+   </tr>
+ </thead>
+ <tbody>
   <tr>
     <td rowspan="7">Any structure element</td>
     <td><b>Placement</b></td> <td>No</td>
@@ -1253,6 +1255,7 @@ EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issu
     <td><b>RubyPosition</b></td> <td>Yes</td>
     <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369 and 380</ins></td>
   </tr>
+ </tbody>
 </table>
 
 <p>...</p>
@@ -1316,6 +1319,7 @@ EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issu
     <th>Type</th>
     <th>Value</th>
   </tr>
+  <tr>
     <td><b>BBox</b></td>
     <td>rectangle</td>
     <td>...
