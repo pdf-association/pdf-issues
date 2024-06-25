@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 17 June 2024
+modified: 25 June 2024
 ---
 
 <ul class="noprint">
@@ -1083,56 +1083,175 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 
 <h5 id="H14.8.5.4.1">14.8.5.4.1 General</h5>
 
-<p class="location">Change Table 377 as follows:</p>
+<p class="location">Replace Table 377 as follows:</p>
 
 <p class="editornote" data-issue="226">
-EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be bold (indicating key names). The first column should not have bold typeface. A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is formally defined.
+EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be bold (indicating key names). The first column should not have bold typeface unless a key name is used. A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is defined.
 </p>
 
 
 <table>
   <caption id="Table377">Table 377 - Standard layout attributes</caption>
-  <tr>
+  <thead>
     <th>Structure Elements</th>
     <th>Attribute<del onMouseEnter="mouseEnter(this)" data-issue="226">s</del> <ins onMouseEnter="mouseEnter(this)" data-issue="226">key name</ins></th>
     <th>Inheritable</th>
-    <th  style="text-align: center"><ins onMouseEnter="mouseEnter(this)" data-issue="226">References</ins></th>
+    <th style="text-align: center"><ins onMouseEnter="mouseEnter(this)" data-issue="226">References</ins></th>
+  </thead>
+
+  <tr>
+    <td rowspan="7">Any structure element</td>
+    <td><b>Placement</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
   </tr>
   <tr>
-    <td rowspan="3">
-      <b>Figure</b>, <b>Form</b>, <b>Formula</b><ins onMouseEnter="mouseEnter(this)" data-issue="226">, <b>Artifact</b>,</ins> and <b>Table</b> elements
+    <td><b>WritingMode</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+  </tr>
+  <tr>
+    <td><b>BackgroundColor</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+  </tr>
+  <tr>
+    <td><b>BorderColor</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+  </tr>
+  <tr>
+    <td><b>BorderStyle</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+  </tr>
+  <tr>
+    <td><b>Color</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+  </tr>
+  <tr>
+    <td><b>Padding</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+  </tr>
+
+  <tr>
+    <td rowspan="4">Any BLSE; ILSEs with <b>Placement</b> other than <i>Inline</i></td>
+    <td><b>SpaceBefore</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>SpaceAfter</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>StartIndent</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>EndIndent</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+
+  <tr>
+    <td rowspan="2">BLSEs containing text</td>
+    <td><b>TextIndent</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>TextAlign</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+
+  <tr>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>Figure</b>, <b>Form</b>, <b>Formula</b>, <b>Artifact</b>, and <b>Table</b> elements</ins> 
     </td>
-    <td><b>BBox</b></td>
-    <td>No</td>
+    <td style="vertical-align: middle;"><b>BBox</b></td> <td style="vertical-align: middle;">No</td>
     <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Tables 379 and 385</ins></td>
   </tr>
+
   <tr>
-    <td><b>Width</b></td>
-    <td>No</td>
-    <td rowspan="2" style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td rowspan="2">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>Figure</b>, <b>Form</b>, <b>Formula</b>, <b>Table</b>, <b>TH</b> (Table Header) and <b>TD</b> (Table data)</ins>
+    </td>
+    <td><b>Width</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
   </tr>
   <tr>
-    <td><b>Height</b></td>
-    <td>No</td>
+    <td><b>Height</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
   </tr>
+
+  <tr>
+    <td rowspan="4"><ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>TH</b> (Table Header) and <b>TD</b> (Table data)</ins></td>
+    <td><b>BlockAlign</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>InlineAlign</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>TBorderStyle</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+  <tr>
+    <td><b>TPadding</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+  </tr>
+
+  <tr>
+    <td rowspan="6">Any ILSE; BLSEs containing ILSEs or containing direct or nested content items</td>
+    <td><b>LineHeight</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+  </tr>
+  <tr>
+    <td><b>BaselineShift</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+  </tr>
+  <tr>
+    <td><b>TextDecorationType</b></td> <td>Yes, only for directly nested ILSEs</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+  </tr>
+  <tr>
+    <td><b>TextPosition</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+  </tr>
+  <tr>
+    <td><b>TextDecorationColor</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+  </tr>
+  <tr>
+    <td><b>TextDecorationThickness</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+  </tr>
+
+  <tr>
+    <td rowspan="3">Grouping elements</td>
+    <td><b>ColumnCount</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 381</ins></td>
+  </tr>
+  <tr>
+    <td><b>ColumnWidth</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 381</ins></td>
+  </tr>
+  <tr>
+    <td><b>ColumnGap</b></td> <td>No</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 381</ins></td>
+  </tr>
+
   <tr>
     <td><del onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Vertical text</del>
         <ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">Any structure element containing text whose inline-progression direction is top to bottom or bottom to top.</ins>
     </td>
-    <td><b>GlyphOrientationVertical</b></td>
-    <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><b>GlyphOrientationVertical</b></td>
+    <td style="vertical-align: middle;">Yes</td>
     <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
   </tr>
+
   <tr>
-    <td rowspan="2"><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved"><b>RB</b>, <b>RT</b>, <b>RP</b> (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">)</ins>
-    </td>
-    <td><b>RubyAlign</b></td>
-    <td>Yes</td>
-    <td rowspan="2" style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369</ins></td>
+    <td rowspan="2"><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved"><b>RB</b>, <b>RT</b>, <b>RP</b> (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">)</ins></td>
+    <td><b>RubyAlign</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369 and 380</ins></td>
   </tr>
   <tr>
-    <td><b>RubyPosition</b></td>
-    <td>Yes</td>
+    <td><b>RubyPosition</b></td> <td>Yes</td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369 and 380</ins></td>
   </tr>
 </table>
 
