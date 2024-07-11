@@ -55,7 +55,7 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 
 - The simulated "track changes" is achieved via HTML5 `del` and `ins` tags, styled by CSS in `assets/iso-style.css`.
 
-- Editor notes use `class="editornote"` and can use the `ins` tag if necessary to link to an issue.
+- Editor notes use `class="editornote"` and can use `ins` or `del` tags as necessary to link to the edits for an issue.
 
 - Descriptive location statements (where abouts in the relevant standard each specific edit is made) are needed for ISO Amendments. These use `<p class="location">...</p>` and tend to be of the form "Change Table XX as follows:", "Delete the third paragraph below ...", "Insert a new NOTE above ...", etc.
 
