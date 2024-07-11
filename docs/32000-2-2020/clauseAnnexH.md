@@ -34,7 +34,7 @@ modified: 26 May 2024
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<p class="editornote" data-issue="415">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect operator <code>/BDC</code> need to replaced by <code>BDC</code> (operators do not have leading SLASH) throughout Annex H.</p>
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect PDF content stream operator <del onMouseEnter="mouseEnter(this)" data-issue="415"><code>/BDC</code></del> need to replaced by <ins onMouseEnter="mouseEnter(this)" data-issue="415"><code>BDC</code></ins> (PDF content operators do not have leading SLASH) throughout Annex H.</p>
 
 <h2 id="HH.2">H.2 Minimal PDF file</h2>
 

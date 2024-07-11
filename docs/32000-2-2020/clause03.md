@@ -22,8 +22,7 @@ modified: 19 April 2024
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<p class="editornote">
-EDITOR NOTE: ISO requires that Terms and Definitions are sorted alphabetically, which may result in updated numbering.
+<p class="editornote">EDITOR NOTE: ISO requires that Terms and Definitions are sorted alphabetically, which may result in updated numbering.
 </p>
 
 <p class="location">Change term 3.31 ICC profile as follows:</p>

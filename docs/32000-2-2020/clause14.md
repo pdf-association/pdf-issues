@@ -87,7 +87,7 @@ modified: 25 June 2024
      </li>
     </ul>
    </li>
-   <li>14.8.5 Standard structure attributes
+   <li><a href="#H14.8.5">14.8.5 Standard structure attributes</a>
     <ul>
      <li><a href="#H14.8.5.1">14.8.5.1 General</a>
      </li>
@@ -1002,8 +1002,7 @@ NOTE: This algorithm works for languages with different intrinsic directionality
 
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
 
-<p class="editornote" data-issue="226">
-EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a> throughout all subclauses of 14.8.5, "Layout", "Table", "PrintField" and "Artifact" terms are incorrectly formatted as bold indicating a key name, when they are <b>O</b> (owner) key values and thus should be italic.
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a> throughout all subclauses of 14.8.5, "Layout", "Table", "PrintField" and "Artifact" terms are incorrectly formatted as <del onMouseEnter="mouseEnter(this)" data-issue="226">bold</del> indicating a key name, when they are <b>O</b> (owner) key values and thus should be <ins onMouseEnter="mouseEnter(this)" data-issue="226">italic</ins>.
 </p>
 
 <h4 id="H14.8.5.1">14.8.5.1 General</h4>
@@ -1085,8 +1084,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 
 <p class="location">Replace Table 377 as follows:</p>
 
-<p class="editornote" data-issue="226">
-EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be bold (indicating key names). The first column should not have bold typeface unless a key name is used. A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is defined.
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be <ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>bold</b></ins> (indicating key names). The first column should not have <del onMouseEnter="mouseEnter(this)" data-issue="226">bold</del> typeface unless a key name is used. <ins onMouseEnter="mouseEnter(this)" data-issue="226">A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is defined.</ins>
 </p>
 
 
