@@ -2,7 +2,7 @@
 isodoc: ISO 32005:2023
 clause: 7
 title: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0 and PDF 1.7
-modified: 15 October 2023
+modified: 11 July 2024
 ---
 
 <ul>
@@ -25,6 +25,11 @@ modified: 15 October 2023
 <p class="location">Change Table 5 as follows:</p>
 
 <p class="editornote">EDITOR NOTE: the corrected hierarchical inclusion rules in Table 5 are also <a href="https://pdfa.org/resource/iso-ts-32005-hierarchical-inclusion-rules/" target="_blank">available as a spreadsheet</a> that was not included in the ISO/TS 32005:2023 publication.
+</p>
+
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/440">Errata #440</a> modify Table Table 5 such that where Structure Type is <b>WP</b> and Child is <b>Figure</b> and where Structure Type is <b>Figure</b> and Parent is <b>WP</b> the undefined cell value <del onMouseEnter="mouseEnter(this)" data-issue="440">"c"</del> 
+is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440">"0..<i>n</i>"</ins> relationship. 
+The embedded spreadsheet data is also corrected.
 </p>
 
 <table>
@@ -162,6 +167,69 @@ modified: 15 October 2023
         <tr><td>0..n</td><td>Figure</td></tr>
         <tr><td>0..n</td><td>Formula</td></tr>
         <tr><td>0..n</td><td>Artifact</td></tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr style="vertical-align: top;">
+    <td>WP</td>
+    <td>
+      <table cellspacing="0" cellpadding="0" style="border-style: hidden;">
+        <tr><td>0..n</td><td>NonStruct</td></tr>
+        <tr><td>0..n</td><td>Private</td></tr>
+        <tr><td>0..n</td><td>Sub</td></tr>
+        <tr><td>0..n</td><td>Em</td></tr>
+        <tr><td>0..n</td><td>String</td></tr>
+        <tr><td>0..n</td><td>Span</td></tr>
+        <tr><td>0..n</td><td>Quote</td></tr>
+        <tr><td>0..n</td><td>Link</td></tr>
+        <tr><td>0..n</td><td>Reference</td></tr>
+        <tr><td>0..n</td><td>Annot</td></tr>
+        <tr><td>0..n</td><td>Form</td></tr>
+        <tr>
+          <td><del onMouseEnter="mouseEnter(this)" data-issue="440">c</del>
+              <ins onMouseEnter="mouseEnter(this)" data-issue="440">0..n</ins></td>
+          <td>Figure</td>
+        </tr>
+        <tr><td>0..n</td><td>Artifact</td></tr>
+        <tr><td>&Dagger;</td><td>content item</td></tr>
+      </table>
+    </td>
+    <td>
+      <table cellspacing="0" cellpadding="0" style="border-style: hidden;">
+        <tr><td>&Dagger;</td><td>Div</td></tr>
+        <tr><td>&Dagger;</td><td>NonStruct</td></tr>
+        <tr><td>0..n</td><td>Private</td></tr>
+        <tr><td>[b]</td><td>Warichu</td></tr>
+        <tr><td>0..n</td><td>Artifact</td></tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr style="vertical-align: top;">
+    <td>Figure</td>
+    <td>
+      <table cellspacing="0" cellpadding="0" style="border-style: hidden;">
+        <tr><td>...</td><td>...</td></tr>
+      </table>
+    </td>
+    <td>
+      <table cellspacing="0" cellpadding="0" style="border-style: hidden;">
+        <tr><td>...</td><td>...</td></tr>
+        <tr>
+          <td><del onMouseEnter="mouseEnter(this)" data-issue="440">c</del>
+              <ins onMouseEnter="mouseEnter(this)" data-issue="440">0..n</ins></td>
+          <td>Figure</td>
+        </tr>
+        <tr><td>...</td><td>...</td></tr>
       </table>
     </td>
   </tr>
