@@ -23,6 +23,8 @@ modified: 19 July 2024
       </li>
      </ul>
     </li>
+    <li><a href="#H7.3.7">7.3.7 Dictionary objects</a>
+    </li>
     <li>7.3.8 Stream objects
      <ul>
       <li><a href="#H7.3.8.2">7.3.8.2 Stream extent</a>
@@ -310,6 +312,23 @@ However, a</del>
 </p>
 
 <p>...</p>
+
+<h3 id="H7.3.7">7.3.7 Dictionary objects</h3>
+
+<p>...</p>
+
+<p class="location">Add a new NOTE 2 below the third paragraph as follows:</p>
+
+<p>Multiple entries in the same dictionary shall not have the same key.</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="438">
+NOTE 2 Due to 2-digit hexadecimal code escaping in PDF names, there are different ways to write the same key (see 7.3.5, "Name objects").
+</ins></p>
+
+<p>...</p>
+
+
+<h3 id="H7.3.8">7.3.8 Stream objects</h3>
 
 <h4 id="H7.3.8.2">7.3.8.2 Stream extent</h4>
 
