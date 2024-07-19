@@ -153,10 +153,26 @@ modified: 19 July 2024
      </li>
     </ul>
    </li>
+   <li>12.8.4 Long term validation of signatures
+    <ul>
+     <li><a href="#H12.8.4.1">12.8.4.1 General</a>
+     </li>
+     <li><a href="#H12.8.4.3">12.8.4.3 Document Security Store (DSS)</a>
+     </li>
+     <li><a href="#H12.8.4.4">12.8.4.4 Validation-related information (VRI)</a>
+     </li>
+    </ul>
+   </li>
+   <li><a href="#H12.8.5">12.8.5 Document timestamp (DTS) dictionary</a>
+    <ul>
+     <li><a href="#H12.8.5.1">12.8.5.1 General</a>
+     </li>
+    </ul>
+   </li>
    <li><a href="#H12.8.6">12.8.6 Permissions</a>
    </li>
   </ul>
- </li>
+   <li>12.8.3 Signature interoperability
  <li>12.10 Geospatial features
   <ul>
    <li><a href="#H12.10.2">12.10.2 Geospatial measure dictionary</a>
@@ -1342,6 +1358,44 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <p class="editornote">EDITOR NOTE: Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</p>
 
+<h3>12.8.4 Long term validation of signatures</h3>
+
+<h4 id="H12.8.4.1">12.8.4.1 General</h4>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+Long term validation (LTV) of signatures 
+<ins onMouseEnter="mouseEnter(this)" data-issue="448">was added in PDF 2.0 and </ins> 
+is achieved by using two types of dictionaries:
+</p>
+
+<ul>
+<li>document security store (DSS) dictionaries, and</li>
+<li>document timestamp dictionaries (DTS) (see 12.8.5, "Document timestamp (DTS) dictionary").</li>
+</ul>
+
+<h4 id="H12.8.4.3">12.8.4.3 Document Security Store (DSS)</h4>
+
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/448">Errata #448</a>, all keys in Table 261 need to be indicated that they were introduced in PDF 2.0.</p>
+
+
+<h4 id="H12.8.4.4">12.8.4.4 Validation-related information (VRI)</h4>
+
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/448">Errata #448</a>, all keys in Table 262 need to be indicated that they were introduced in PDF 2.0.</p>
+
+
+<h3 id="H12.8.5">12.8.5 Document timestamp (DTS) dictionary</h3>
+
+<h4 id="H12.8.5.1">12.8.5.1 General</h4>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+A document timestamp dictionary 
+<ins onMouseEnter="mouseEnter(this)" data-issue="448">was added in PDF 2.0 and </ins> 
+establishes the exact contents of the complete PDF file at the time indicated in the timestamp token.
+</p>
 
 <h3 id="H12.8.6">12.8.6 Permissions</h3>
 
