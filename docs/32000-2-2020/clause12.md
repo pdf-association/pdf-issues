@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 17 June 2024
+modified: 19 July 2024
 ---
 
 <ul class="noprint">
@@ -52,6 +52,10 @@ modified: 17 June 2024
      <li><a href="#H12.5.6.5">12.5.6.5 Link annotations</a>
      </li>
      <li><a href="#H12.5.6.6">12.5.6.6 Free text annotations</a>
+     </li>
+     <li><a href="#H12.5.6.9">12.5.6.9 Polygon and polyline annotations</a>
+     </li>
+     <li><a href="#H12.5.6.13">12.5.6.13 Ink annotations</a>
      </li>
      <li><a href="#H12.5.6.18">12.5.6.18 Screen annotations</a>
      </li>
@@ -632,6 +636,51 @@ an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins 
     <td>dictionary</td>
     <td>
       <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299">1.3</ins>)</i>...
+    </td>
+  </tr>
+</table>
+
+<h4 id="H12.5.6.9">12.5.6.9 Polygon and polyline annotations</h4>
+
+<p class="location">Change Table 181 as follows:</p>
+
+<table>
+  <caption id="Table181">Table 181 - Additional entries specific to a polygon or polyline annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Vertices</b></td>
+    <td>array</td>
+    <td>
+      (<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="444"> unless a <b>Path</b> key is present, in which case it shall be ignored</del></i>)
+      <ins onMouseEnter="mouseEnter(this)" data-issue="444">Shall be ignored if <b>Path</b> is present.</ins> 
+      An array of numbers specifying the alternating horizontal and vertical coordinates, respectively, of each vertex, in default user space.
+    </td>
+  </tr>
+</table>
+
+
+<h4 id="H12.5.6.13">12.5.6.13 Ink annotations</h4>
+
+<p class="location">Change Table 185 as follows:</p>
+
+<table>
+  <caption id="Table185">Table 185 - Additional entries specific to an ink annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>InkList</b></td>
+    <td>array</td>
+    <td>
+     (<i>Required</i>) 
+     <ins onMouseEnter="mouseEnter(this)" data-issue="444">Shall be ignored if <b>Path</b> is present.</ins> 
+     An array of <i>n</i> arrays, each representing a stroked path. Each array shall be a series of alternating horizontal and vertical coordinates in default user space, specifying points along the path. When drawn, the points shall be connected by straight lines or curves in an implementation-dependent way.
     </td>
   </tr>
 </table>
