@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 1 March 2024
+modified: 19 July 2024
 ---
 
 <ul class="noprint">
@@ -364,7 +364,19 @@ indicates that the corresponding colour component shall never be painted on the 
 
 <h2 id="H8.7">8.7 Patterns</h2>
 
-<h3 id="H8.7.1">8.7.1 General</h3>
+<h3 id="H8.7.3">8.7.3 Tiling patterns</h3>
+
+<h4 id="H8.7.3.1">8.7.3.1 General</h4>
+
+<p class="location">Change the second paragraph as follows:</p>
+
+<p>
+The pattern cell can include graphical elements such as filled areas, text, and sampled images. Its shape need not be rectangular, and the spacing of tiles can differ from the dimensions of the cell itself. When performing painting operations such as <b>S</b> (stroke) or <b>f</b> (fill), the PDF processor shall paint the cell on the current page as many times as necessary to fill an area. The order in which individual tiles (instances of the cell) are painted is unspecified and unpredictable
+<ins onMouseEnter="mouseEnter(this)" data-issue="428">(implementation dependent)</ins>
+; figures on adjacent tiles should not overlap.
+</p>
+
+<p>...</p>
 
 <p class="location">Change the caption of Table 74 as follows:</p>
 
