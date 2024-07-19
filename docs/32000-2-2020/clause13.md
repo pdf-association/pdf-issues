@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 24 May 2024
+modified: 19 July 2024
 ---
 
 <ul class="noprint">
@@ -20,6 +20,18 @@ modified: 24 May 2024
    <li>13.2.4 Media clip objects
     <ul>
      <li><a href="#H13.2.4.2">13.2.4.2 Media clip data</a>
+     </li>
+    </ul>
+   </li>
+   <li>13.2.7 Other multimedia objects
+    <ul>
+     <li>13.2.7.2 Media players dictionary
+      <ul>
+       <li><a href="#H13.2.7.2.1">13.2.7.2.1 General</a>
+       </li>
+       <li><a href="#H13.2.7.2.2">13.2.7.2.2 Algorithm: Media Player</a>
+       </li>
+      </ul>
      </li>
     </ul>
    </li>
@@ -176,6 +188,26 @@ modified: 24 May 2024
 <p><del onMouseEnter="mouseEnter(this)" data-issue="414">An unrecognised value shall be treated as <i>(TEMPNEVER)</i>.</del></p>
 
 <p>...</p>
+
+
+<h3 id="H13.2.7">13.2.7 Other multimedia objects</h3>
+
+<h4 id="H13.2.7.2">">13.2.7.2 Media players dictionary</h4>
+
+<h5 id="H13.2.7.2.1">13.2.7.2.1 General</h5>
+
+<p class="location">Move the last paragraph to below the heading "13.2.7.2.2 Algorithm: Media Player" as follows:</p>
+
+<p><del onMouseEnter="mouseEnter(this)" data-issue="449">
+Since both media clip data and media play parameters dictionaries may be employed in a play operation, and each may reference a media players dictionary, there is a potential for conflict between the contents of the two media players dictionaries.
+</del></p>
+
+<h5 id="H13.2.7.2.2">13.2.7.2.2 Algorithm: Media Player</h5>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="449">
+Since both media clip data and media play parameters dictionaries may be employed in a play operation, and each may reference a media players dictionary, there is a potential for conflict between the contents of the two media players dictionaries.
+</ins></p>
+
 
 <h2 id="H13.6">13.6 3D Artwork</h2>
 
