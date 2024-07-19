@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 7 June 2024
+modified: 19 July 2024
 ---
 
 <ul class="noprint">
@@ -165,6 +165,8 @@ modified: 7 June 2024
     </li>
     <li>7.10.5 Type 4 (PostScript calculator) functions
      <ul>
+      <li><a href="#H7.10.5.1">7.10.5.1 General</a>
+      </li>
       <li><a href="#H7.10.5.2">7.10.5.2 Operators and operands</a>
       </li>
      </ul>
@@ -1554,6 +1556,18 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 <p>...</p>
 
 <h3 id="H7.10.5">7.10.5 Type 4 (PostScript calculator) functions</h3>
+
+<h4 id="H7.10.5.1">7.10.5.1 General</h4>
+
+<p class="location">Change NOTE 1 as follows:</p>
+
+<p class="hangingindent">
+NOTE 1 Although any function can be sampled (in a Type 
+<del onMouseEnter="mouseEnter(this)" data-issue="446">4</del><ins onMouseEnter="mouseEnter(this)" data-issue="446">0</ins> 
+PDF function) and others can be described with exponential functions (Type 2 in PDF), Type 4 functions offer greater flexibility and potentially greater accuracy. For example, a tint transformation function for a hexachrome (six-component) <b>DeviceN</b> colour space with an alternative colour space of <b>DeviceCMYK</b> (see 8.6.6.5, "DeviceN colour spaces") requires a 6-in, 4-out function. If such a function were sampled with m values for each input variable, the number of samples, 4 × <i>m</i><sup>6</sup>, could be prohibitively large. In practice, such functions can often be written as short, simple PostScript language functions.
+</p>
+
+<p>...</p>
 
 <h4 id="H7.10.5.2">7.10.5.2 Operators and operands</h4>
 
