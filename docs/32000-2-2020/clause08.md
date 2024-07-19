@@ -253,6 +253,12 @@ a miter to a bevel.
 
 <h4 id="H8.5.3.1">8.5.3.1 General</h4>
 
+<p class="location">Add a new NOTE above Table 59 as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="434">
+NOTE: While these operators are primarily for path-painting, they also serve a purpose in path construction as they may affect the current graphics path (see 8.5.2, "Path-construction operators").
+</ins></p>
+
 <p class="location">Change Table 59 as follows:</p>
 
 <table>
