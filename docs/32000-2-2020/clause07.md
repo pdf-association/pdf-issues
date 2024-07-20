@@ -31,6 +31,8 @@ modified: 19 July 2024
       </li>
      </ul>
     </li>
+    <li><a href="#H7.3.10">7.3.10 Indirect objects</a>
+    </li>
    </ul>
   </li>
   <li>7.4 Filters
@@ -361,6 +363,42 @@ NOTE 2 Due to 2-digit hexadecimal code escaping in PDF names, there are differen
     </p></td>
   </tr>
 </table>
+
+
+<h3 id="H7.3.10">7.3.10 Indirect objects</h3>
+
+<p class="location">Change the first bulleted list as follows:</p>
+
+<p>
+Any object in a PDF file may be labelled as an indirect object. This gives the object a unique object identifier by which other objects can refer to it (for example, as an element of an array or as the value of a dictionary entry). The object identifier shall consist of two parts:
+</p>
+
+<ul>
+  <li><del onMouseEnter="mouseEnter(this)" data-issue="379">A positive integer object number</del><ins  onMouseEnter="mouseEnter(this)" data-issue="379">A <i>PDF object number</i> is a positive (non-zero) decimal integer comprised only of digits. It shall not have a leading PLUS SIGN ("<code>+</code>", 2Bh) and shall not start with leading zeros ("<code>0</code>").</ins>. Indirect objects may be numbered sequentially within a PDF file, but this is not required; object numbers may be assigned in any arbitrary order.
+    <figure>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="379">
+        <img src="PDF-ObjectNumber-EBNF.svg" alt="EBNF railroad diagram for a PDF object number" style="display: block;  margin-left: auto; margin-right: auto; width: 70%;">
+        <a href="PDF-ObjectNumber.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+        <figcaption>Figure 1c - EBNF diagram for a PDF object number</figcaption>
+      </ins>
+    </figure>
+  </li>
+
+  <li><del onMouseEnter="mouseEnter(this)" data-issue="379">A non-negative integer generation number</del><ins onMouseEnter="mouseEnter(this)" data-issue="379">A <i>PDF generation number</i> is a non-negative decimal integer: its syntax requirements are identical to those of a PDF object number (above), except that the single digit "<code>0</code>" shall also be permitted</ins>. In a newly created file, all indirect objects shall have generation numbers of 0. Non-zero generation numbers may be introduced when the file is later updated; see 7.5.4, "Cross-reference table" and 7.5.6, "Incremental updates".
+    <figure>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="379">
+        <img src="PDF-GenerationNumber-EBNF.svg" alt="EBNF railroad diagram for a PDF generation number" style="display: block;  margin-left: auto; margin-right: auto; width: 70%;">
+        <a href="PDF-GenerationNumber.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+        <figcaption>Figure 1d - EBNF diagram for a PDF generation number</figcaption>
+      </ins>
+    </figure>
+  </li>
+
+</ul>
+
+<p>...</p>
+
+<h2 id="H7.4">7.4 Filters</h2>
 
 <h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
 

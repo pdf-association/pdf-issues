@@ -1,0 +1,5 @@
+@startebnf "PDF Object Number"
+
+PDF_Object_Number = "1 - 9", [{"0 - 9"}-] ; 
+
+@endebnf
