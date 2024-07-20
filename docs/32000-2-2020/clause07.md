@@ -37,6 +37,8 @@ modified: 19 July 2024
   </li>
   <li>7.4 Filters
    <ul>
+    <li><a href="#H7.4.1">7.4.1 General</a>
+    </li>
     <li><a href="#H7.4.3">7.4.3 ASCII85Decode filter</a>
     </li>
     <li>7.4.4 LZWDecode and FlateDecode filters</a>
@@ -399,6 +401,34 @@ Any object in a PDF file may be labelled as an indirect object. This gives the o
 <p>...</p>
 
 <h2 id="H7.4">7.4 Filters</h2>
+
+<h3 id="H7.4.1">7.4.1 General</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+Stream filters are introduced in 7.3.8, "Stream objects". An option when reading stream data is to decode it using a filter to produce the original non-encoded data. Whether to do so and which decoding filter or filters to use 
+<del onMouseEnter="mouseEnter(this)" data-issue="216">are</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="216">shall be</ins>
+specified in the stream dictionary.
+<ins onMouseEnter="mouseEnter(this)" data-issue="216">All stream data shall follow the appropriate format(s) as described below.</ins>
+</p>
+
+<p>...</p>
+
+<p class="location">Change the paragraph introducing the bulleted list above NOTE 1 as follows:</p>
+
+<p>
+PDF 
+<del onMouseEnter="mouseEnter(this)" data-issue="216">files</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="216">processors shall</ins>
+support a standard set of filters that fall into two main categories:
+</p>
+
+<ul>
+ <li>...</li>
+ <li>...</li>
+</ul>
 
 <h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
 
