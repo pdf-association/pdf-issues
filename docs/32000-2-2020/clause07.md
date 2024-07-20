@@ -376,7 +376,7 @@ Any object in a PDF file may be labelled as an indirect object. This gives the o
 </p>
 
 <ul>
-  <li><del onMouseEnter="mouseEnter(this)" data-issue="379">A positive integer object number</del><ins  onMouseEnter="mouseEnter(this)" data-issue="379">A <i>PDF object number</i> is a positive (non-zero) decimal integer comprised only of digits. It shall not have a leading PLUS SIGN ("<code>+</code>", 2Bh) and shall not start with leading zeros ("<code>0</code>").</ins>. Indirect objects may be numbered sequentially within a PDF file, but this is not required; object numbers may be assigned in any arbitrary order.
+  <li><del onMouseEnter="mouseEnter(this)" data-issue="379">A positive integer object number</del><ins  onMouseEnter="mouseEnter(this)" data-issue="379">A <i>PDF object number</i> is a positive (non-zero) decimal integer comprised only of digits. It shall not have a leading PLUS SIGN ("<code>+</code>", 2Bh) and shall not start with leading zeros ("<code>0</code>")</ins>. Indirect objects may be numbered sequentially within a PDF file, but this is not required; object numbers may be assigned in any arbitrary order.
     <figure>
       <ins onMouseEnter="mouseEnter(this)" data-issue="379">
         <img src="PDF-ObjectNumber-EBNF.svg" alt="EBNF railroad diagram for a PDF object number" style="display: block;  margin-left: auto; margin-right: auto; width: 70%;">
@@ -1854,7 +1854,7 @@ The value of the <b>BaseVersion</b> entry shall be a name and shall be consisten
 The value of <b>BaseVersion</b>, when treated as a version number, shall be less than or equal to the 
 <del onMouseEnter="mouseEnter(this)" data-issue="399">PDF version, both in the document header (see 7.5.2, "File header")</del>
 <ins  onMouseEnter="mouseEnter(this)" data-issue="399">version of the PDF specification to which this document conforms (see "Table 29 - Entries in the catalog dictionary", considering both the document header (see 7.5.2, "File header")</ins>
-and the catalog dictionary <b>Version</b> key value", if present<ins onMouseEnter="mouseEnter(this)" data-issue="399">)</ins>. 
+and the catalog dictionary <b>Version</b> key value, if present<ins onMouseEnter="mouseEnter(this)" data-issue="399">)</ins>. 
 The value of <b>BaseVersion</b> may be different from the version number in the document header or that supplied by the <b>Version</b> key in the catalog dictionary. This is because it reflects the version of the standard that has been extended and not the version of this particular file.
 </p>
 
