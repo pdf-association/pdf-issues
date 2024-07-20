@@ -197,6 +197,8 @@ modified: 19 July 2024
     </li>
     <li><a href="#H7.12.3">7.12.3 Developer extensions dictionary</a>
     </li>
+    <li><a href="#H7.12.4">7.12.4 BaseVersion</a>
+    </li>
     <li><a href="#H7.12.5">7.12.5 ExtensionLevel</a>
     </li>
    </ul>
@@ -566,6 +568,22 @@ NOTE 1 The main advantage to updating a PDF file in this way is that small chang
 <ins onMouseEnter="mouseEnter(this)" data-issue="341">, or when</ins>
 a PDF processor cannot overwrite the contents of the original PDF file. 
 Incremental updates are used to save changes to documents in these contexts.
+</p>
+
+<p>...</p>
+
+<p class="location">Change the paragraph above NOTE 4 and NOTE 4 as follows:</p>
+
+<p>
+In versions of PDF 1.4 or later a PDF writer may use the <b>Version</b> entry in the document’s catalog dictionary (see 7.7.2, "Document catalog dictionary")
+<del onMouseEnter="mouseEnter(this)" data-issue="399">to override the version specified in the header</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="399">upgrade the current version of the PDF specification to which the document conforms (considering both the document header (see 7.5.2, "File header") and the catalog dictionary <b>Version</b> key value, if already present). The catalog of an incremental update shall not reduce the version of the document with the value, or absence, of the <b>Version</b> entry</ins>
+. 
+A PDF writer may also need to update the Extensions dictionary, see 7.12, "Extensions dictionary", if the update either deleted or added developer-defined extensions.
+</p>
+
+<p class="hangingindent">
+NOTE 4 The <b>Version</b> entry enables the version to be <del onMouseEnter="mouseEnter(this)" data-issue="399">altered</del><ins onMouseEnter="mouseEnter(this)" data-issue="399">upgraded</ins> when performing an incremental update.
 </p>
 
 <p>...</p>
@@ -1756,6 +1774,21 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="164">NOTE The <b>URL</b> and <b>ExtensionRevision</b> entries are not exempt from encryption so if a developer extension defines a new PDF encryption algorithm and a PDF is configured to encrypt strings with that algorithm, then those values will not be meaningful to processors that do not support that developer extension.
 </ins></p>
+
+<p>...</p>
+
+<h3 id="H7.12.4">7.12.4 BaseVersion</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The value of the <b>BaseVersion</b> entry shall be a name and shall be consistent with the syntax used for the <b>Version</b> entry value of the catalog dictionary (see 7.7.2, "Document catalog dictionary"). 
+The value of <b>BaseVersion</b>, when treated as a version number, shall be less than or equal to the 
+<del onMouseEnter="mouseEnter(this)" data-issue="399">PDF version, both in the document header (see 7.5.2, "File header")</del>
+<ins  onMouseEnter="mouseEnter(this)" data-issue="399">version of the PDF specification to which this document conforms (see "Table 29 - Entries in the catalog dictionary", considering both the document header (see 7.5.2, "File header")</ins>
+and the catalog dictionary <b>Version</b> key value", if present<ins onMouseEnter="mouseEnter(this)" data-issue="399">)</ins>. 
+The value of <b>BaseVersion</b> may be different from the version number in the document header or that supplied by the <b>Version</b> key in the catalog dictionary. This is because it reflects the version of the standard that has been extended and not the version of this particular file.
+</p>
 
 <p>...</p>
 
