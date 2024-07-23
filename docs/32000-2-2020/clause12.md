@@ -676,6 +676,20 @@ an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins 
       An array of numbers specifying the alternating horizontal and vertical coordinates, respectively, of each vertex, in default user space.
     </td>
   </tr>
+  <tr>
+    <td><b>Path</b></td>
+    <td>array</td>
+    <td>
+      <p>
+        (<i>Optional; PDF 2.0</i>) An array of <i>n</i> arrays, each supplying the operands for a path building operator (<b>m</b>, <b>l</b> or <b>c</b>).
+      </p>
+      <p>If this key is present the <b>Vertices</b> key shall 
+        <del onMouseEnter="mouseEnter(this)" data-issue="444">not be present</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="444">be ignored</ins>.
+      </p>
+      <p>...</p>
+    </td>
+  </tr>
 </table>
 
 
