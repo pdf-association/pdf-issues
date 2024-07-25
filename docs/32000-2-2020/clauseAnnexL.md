@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex L
 title: (normative) Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0
-modified: 11 July 2022
+modified: 25 July 2022
 ---
 
 <ul class="noprint">
@@ -22,9 +22,11 @@ modified: 11 July 2022
 <p class="location">Change the third paragraph as follows:</p>
 
 <p>
-An informative matrix representation of Table L.2 is attached to the PDF of this document as "ISO32000-2_AnnexL_matrix-version2020.pdf" and
-in machine-readable form, as <ins onMouseEnter="mouseEnter(this)" data-issue="64" data-iso="approved">
-<a href="https://www.pdfa.org/norm-refs/ISO32000-2_AnnexL_matrix-version2020-amd1.xlsx">"ISO32000-2_AnnexL_matrix-version2020-amd1.xlsx</a></ins>."
+An informative matrix representation of Table L.2 is attached to the PDF of this document as 
+<del onMouseEnter="mouseEnter(this)" data-issue="64,83,336,349,440" data-iso="approved">"ISO32000-2_AnnexL_matrix-version2020.pdf"</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="64,83,336,349,440" data-iso="approved">"<a href="https://www.pdfa.org/norm-refs/ISO32000-2_AnnexL_matrix-version072024.pdf">ISO32000-2_AnnexL_matrix-version072024.pdf</a>"</ins> 
+and in machine-readable form, as <ins onMouseEnter="mouseEnter(this)" data-issue="64,83,336,349,440" data-iso="approved">
+"<a href="https://www.pdfa.org/norm-refs/ISO32000-2_AnnexL_matrix-version072024.xlsx">ISO32000-2_AnnexL_matrix-version072024.xlsx</a></ins>."
 </p>
 
 <p class="location">Correct Table Annex L.2 and associated attachments as follows:</p>
