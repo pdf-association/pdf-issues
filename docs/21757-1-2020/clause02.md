@@ -22,10 +22,10 @@ modified: 1 July 2022
 <p class="location">Replace ISO/IEC 22275:2018 with the normative reference to ES2020 as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="185">
+<del onMouseEnter="mouseEnter(this)" data-issue="185" data-iso="submitted">
 ISO/IEC 22275:2018, <i>Information technology — Programming languages, their environments, and system software interfaces — ECMAScript® Specification Suite</i>
 </del><br/>
-<ins onMouseEnter="mouseEnter(this)" data-issue="185">
+<ins onMouseEnter="mouseEnter(this)" data-issue="185" data-iso="submitted">
 ECMA-262, 11th edition, June 2020, <i>ECMAScript<sup>&reg;</sup> 2020 Language Specification</i>, <a href="https://262.ecma-international.org/11.0/">https://262.ecma-international.org/11.0/</a>
 </ins>
 </p>

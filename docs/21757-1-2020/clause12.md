@@ -54,13 +54,13 @@ modified: 8 May 2024
   <tr>
     <td>material</td>
     <td>material</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="388">R</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="388" data-iso="submitted">R</ins></td>
     <td>...</td>
   </tr>
   <tr>
     <td>renderMode</td>
     <td>string</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="388">R/W</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="388" data-iso="submitted">R/W</ins></td>
     <td>...</td>
   </tr>
 </table>
@@ -72,7 +72,7 @@ modified: 8 May 2024
 
 <p class="location">Add a new NOTE after the first and only paragraph as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="210">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="210" data-iso="submitted">
 NOTE The state data could be stored or retrieved from the <b>Data</b> entry of the View Params dictionary as described in Table 345 of the ISO 32000-2 specification.
 </ins></p>
 
@@ -81,8 +81,8 @@ NOTE The state data could be stored or retrieved from the <b>Data</b> entry of t
 <p class="location">Change the title of subclause 12.40.2 as follows:</p>
 
 <h3 id="H12.40.2">12.40.2 ToolEventHandler
-<del onMouseEnter="mouseEnter(this)" data-issue="267">methods</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="267">properties</ins></h3>
+<del onMouseEnter="mouseEnter(this)" data-issue="267" data-iso="submitted">methods</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="267" data-iso="submitted">properties</ins></h3>
 
 </div>
 
