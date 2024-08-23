@@ -28,16 +28,16 @@ modified: 11 October 2023
 
 <p class="location">Delete all of clause 5.1.3 as follows:</p>
 
-<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
+<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="236">
+<del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">
 In ISO 32000-2:2020, Table 256 (“Entries in a signature reference dictionary”; 12.8.1, “General”), the following text is added to the end of the current <b>DigestMethod</b> value text:
 </del>
 </p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="236">
+<del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">
 (PDF 2.x) In addition to those values previously defined, this value may be one of SHA3-256, SHA3-384, SHA3-512 or SHAKE256. Default value for PDF 2.0: SHA256 (PDF 2.0).
 </del>
 </p>
