@@ -8,7 +8,7 @@ modified: 11 October 2023
 <ul>
  <li>5.1 Support for secure hash algorithm 3 (SHA-3) hash family
   <ul>
-   <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></a>
+   <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></a>
    </li>
   </ul>
  </li>
