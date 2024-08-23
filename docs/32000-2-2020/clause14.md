@@ -1775,6 +1775,7 @@ since indirect references are not permitted in content streams, named property r
       /MF2 << /MCAF [ ... ] >>
     >>
   >>
+>>
 stream
 ...
 /AF /MF1 BDC
