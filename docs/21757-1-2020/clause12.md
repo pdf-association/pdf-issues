@@ -21,7 +21,7 @@ modified: 8 May 2024
    </li>
    <li>12.40 ToolEvent
     <ul>
-     <li><a href="#H12.40.2">12.40.2 ToolEventHandler <del onMouseEnter="mouseEnter(this)" data-issue="267">methods</del><ins onMouseEnter="mouseEnter(this)" data-issue="267">properties</ins></a>
+     <li><a href="#H12.40.2">12.40.2 ToolEventHandler <del onMouseEnter="mouseEnter(this)" data-issue="267" data-iso="submitted">methods</del><ins onMouseEnter="mouseEnter(this)" data-issue="267" data-iso="submitted">properties</ins></a>
      </li>
     </ul>
    </li>
