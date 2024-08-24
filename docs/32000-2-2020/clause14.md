@@ -783,15 +783,15 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
   </tr>
 </table>
 
-<p class="location">Insert a new clause heading below NOTE 1 and modify text as follows:</p>
+<p class="location">Insert a new sub-clause heading "14.8.4.7.3 Link elements" below NOTE 1 and modify the existing text below NOTE 1 as follows:</p>
 
 <h5 id="H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">14.8.4.7.3 Link elements</ins></h5>
 
 <p>Tagged PDF link elements (standard structure type <b>Link</b>) use PDF's logical structure facilities to establish the association between content items and link annotations, providing functionality comparable to HTML hypertext links. The following items may be children of a link element:</p>
 
 <ul>
-<li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del></li>
-<li>Object references (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotations</ins> associated with the content</li>
+<li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del>.</li>
+<li>Object references (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotations</ins> associated with the content.</li>
 </ul>
 
 <p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action of a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
@@ -1732,13 +1732,12 @@ The relationship that the associated files have to the PDF content is supplied b
 .
 </p>
 
-<p class="location">Insert a new Table, NOTE 4 and EXAMPLE below the paragraph below NOTE 3 as follows:</p>
+<p class="location">Insert a new Table, new NOTE 4, and a new EXAMPLE below the paragraph below NOTE 3 as follows:</p>
 
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="374">
-NOTE 4 As defined in Table 34 and section 14.6.2, “Property Lists”, a marked-content property list is always a dictionary. Furthermore, entries in associated file file specification dictionaries require the use of an indirect reference to the embedded file stream and,
-since indirect references are not permitted in content streams, named property resources must always be used.
+NOTE 4 As defined in Table 34 and section 14.6.2, "Property Lists", a marked-content property list is always a dictionary. Furthermore, entries in Associated File file specification dictionaries use an indirect reference to the embedded file stream and, since indirect references are not allowed in content streams, named property resources are always used.
 </ins>
 </p>
 

@@ -564,7 +564,8 @@ conditions and responses that occur in response to certain events, such as activ
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="59" data-iso="approved"><b>Scripts</b></ins></td>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="59" data-iso="approved">array</ins></td>
     <td>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="59" data-iso="approved"><p>(<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in the <b>Assets</b> name tree of the RichMediaContent dictionary. If the array has no elements, no script is executed.</p><p>Default value: an empty array.</p></ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="59" data-iso="approved"><p>(<i>Optional; PDF 2.0</i>) An array of indirect object references to file specification dictionaries, each of which describe a JavaScript file that shall be present in the <b>Assets</b> name tree of the RichMediaContent dictionary. If the array has no elements, no script is executed.</p>
+    <p>Default value: an empty array.</p></ins>
     </td>
   </tr>
 </table>

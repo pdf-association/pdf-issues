@@ -33,7 +33,7 @@ and in machine-readable form, as <ins onMouseEnter="mouseEnter(this)" data-issue
 
 <p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/83">Errata #83</a> modify Table Annex L.2 so that <b>Table</b> is now indicated as a valid child of <b>P</b> with a
 <ins onMouseEnter="mouseEnter(this)" data-issue="83" data-iso="approved">"0..<i>n</i>"</ins> 
-relationship and, in the <b>Table</b> section, <b>P</b> is listed as a valid parent also with a 
+relationship and, in the <b>Table</b> section, <b>P</b> is listed as a valid parent with a 
 <ins onMouseEnter="mouseEnter(this)" data-issue="83" data-iso="approved">"0..<i>n</i>"</ins> relationship. 
 The embedded PDF and spreadsheet data are also corrected.
 </p>
