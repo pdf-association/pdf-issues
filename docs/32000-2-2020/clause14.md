@@ -787,14 +787,14 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
 
 <h5 id="H14.8.4.7.3"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">14.8.4.7.3 Link elements</ins></h5>
 
-<p>Tagged PDF link elements (standard structure type Link) use PDF's logical structure facilities to establish the association between content items and link annotations, providing functionality comparable to HTML hypertext links. The following items may be children of a link element:</p>
+<p>Tagged PDF link elements (standard structure type <b>Link</b>) use PDF's logical structure facilities to establish the association between content items and link annotations, providing functionality comparable to HTML hypertext links. The following items may be children of a link element:</p>
 
 <ul>
 <li>One or more content items or other ILSEs (except other links) <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">if <b>A</b>, <b>Dest</b> and <b>PA</b> keys of all of them have identical values</del></li>
 <li>Object references (see 14.7.5.3, "PDF objects as content items") to one <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">or more</ins> link <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotation</del> <ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">annotations</ins> associated with the content</li>
 </ul>
 
-<p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action in a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
+<p class="hangingindent">NOTE <del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">1</ins> An <b>SD</b> entry in the <b>GoTo</b> or <b>GoToR</b> action of a <b>Link</b> annotation facilitates linking directly to a target structure element as opposed to just targeting an area on a page.</p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 When a <b>Link</b> structure element describes a span of text to be associated with a link annotation and that span
