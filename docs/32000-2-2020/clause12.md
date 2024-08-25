@@ -171,8 +171,10 @@ modified: 19 July 2024
    </li>
    <li><a href="#H12.8.6">12.8.6 Permissions</a>
    </li>
-  </ul>
    <li>12.8.3 Signature interoperability
+   </li>
+  </ul>
+ </li>
  <li>12.10 Geospatial features
   <ul>
    <li><a href="#H12.10.2">12.10.2 Geospatial measure dictionary</a>
