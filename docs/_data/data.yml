@@ -69,6 +69,11 @@ toc:
       - ref: 'Clause 5: Digital signature enhancements'
         url:  clause05.html
 
+  - standard: ISO TS 32002:2022
+    subfolderitems:
+      - ref: 'Clause 5: Digital signature enhancements'
+        url:  clause05.html
+
   - standard: ISO TS 32005:2023
     subfolderitems:
       - ref: 'Clause 7: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0 and PDF 1.7'
