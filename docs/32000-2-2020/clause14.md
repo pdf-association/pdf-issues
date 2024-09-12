@@ -35,6 +35,14 @@ modified: 25 June 2024
    </li>
    <li>14.7.5 Structure content
     <ul>
+     <li>14.7.5.1 General
+      <ul>
+       <li><del onMouseEnter="mouseEnter(this)" data-issue="452"><a href="#H14.7.5.1.1">14.7.5.1.1 Content items</a></del>
+       </li>
+      </ul>
+     </li>
+     <li><ins onMouseEnter="mouseEnter(this)" data-issue="452"><a href="#H14.7.5.1a">14.7.5.2 Content items</a></ins>
+     </li>
      <li><a href="#H14.7.5.2">14.7.5.2 Marked-content sequences as content items</a>
      </li>
      <li><a href="#H14.7.5.3">14.7.5.3 PDF objects as content items</a>
@@ -539,6 +547,16 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 
 <h3 id="H14.7.5">14.7.5 Structure content</h3>
+
+<h4 id="H14.7.5.1">14.7.5.1 General</h4>
+
+<p class="location">Move entire subclause 14.7.5.1.1 up one heading level to become 14.7.5.2 and renumber later subclauses of 14.7.5 appropriately. Subclause text is otherwise unchanged:</p>
+
+<del onMouseEnter="mouseEnter(this)" data-issue="452"><h5 id="H14.7.5.1.1">14.7.5.1.1 Content items</h5></del>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="452"><h4 id="H14.7.5.1a">14.7.5.2 Content items</h4></ins>
+
+<p>...</p>
 
 <h4 id="H14.7.5.2">14.7.5.2 Marked-content sequences as content items</h4>
 
