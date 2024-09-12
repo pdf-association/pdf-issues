@@ -44,6 +44,21 @@ modified: 10 May 2024
     <td>(SYNCHRONOUS IDLE)</td>
     <td>U</td>
   </tr>
+  <tr>
+    <td colspan="7">...</td>
+  </tr>
+  <tr>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="461">&#x0160;</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="461">&minus;</ins>
+    </td>
+    <td>138</td>
+    <td>0x8a</td>
+    <td>0212</td>
+    <td>U+2212</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="461">MINUS</ins></td>
+    <td></td>
+  </tr>
 </table>
 
 </div>
