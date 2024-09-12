@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 18 February 2024
+modified: 13 Sept 2024
 ---
 
 <ul class="noprint">
@@ -345,6 +345,32 @@ character codes.
 <p>...</p>
 
 <h4 id="H9.6.2.2">9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</h4>
+
+<p class="location">Convert the comma list of fonts in the first paragraph to a bulleted list as follows:</p>
+
+<p>
+The PostScript language names of 14 Type 1 fonts, known as the standard 14 fonts, are as follows: 
+<del onMouseEnter="mouseEnter(this)" data-issue="384">Times-Roman, Helvetica, Courier, Symbol, Times-Bold, Helvetica-Bold, Courier-Bold, ZapfDingbats, Times-Italic, Helvetica-Oblique, Courier-Oblique, Times-BoldItalic, Helvetica-BoldOblique, Courier-BoldOblique.</del>
+</p>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="384">
+<ul>
+  <li>Times-Roman</li>
+  <li>Helvetica</li>
+  <li>Courier</li>
+  <li>Symbol</li>
+  <li>Times-Bold</li>
+  <li>Helvetica-Bold</li>
+  <li>Courier-Bold</li>
+  <li>ZapfDingbats</li>
+  <li>Times-Italic</li>
+  <li>Helvetica-Oblique</li>
+  <li>Courier-Oblique</li>
+  <li>Times-BoldItalic</li>
+  <li>Helvetica-BoldOblique</li>
+  <li>Courier-BoldOblique</li>
+</ul>
+</ins>
 
 <p class="location">Change the second paragraph to a NOTE and modify as follows:</p>
 
