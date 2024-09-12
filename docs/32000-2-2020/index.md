@@ -117,6 +117,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table355">Table 355 - Entries in a structure element dictionary</a></li>
 <li><a href="clause14.html#Table357">Table 357 - Entries in a marked-content reference dictionary</a></li>
 <li><a href="clause14.html#Table358">Table 358 - Entries in an object reference dictionary</a></li>
+<li><a href="clause14.html#Table359">Table 359 - Additional dictionary entries for structure element access</a></li>
 <li><a href="clause14.html#Table360">Table 360 - Entries common to all attribute object dictionaries</a></li>
 <li><a href="clause14.html#Table365">Table 365 - Grouping level structure types</a></li>
 <li><a href="clause14.html#Table368">Table 368 - General inline level structure types</a></li>

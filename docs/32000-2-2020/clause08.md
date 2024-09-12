@@ -639,6 +639,14 @@ the corresponding colour spaces either directly or via a default colour space (s
     </ins></p>
     </td>
   </tr>
+  <tr>
+    <td><b>StructParent</b></td>
+    <td>integer</td>
+    <td>
+      (<i>Required if the form XObject is a structural content item; PDF 1.3</i>) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.5.4, "Finding structure elements from content items").
+      <ins onMouseEnter="mouseEnter(this)" data-issue="463">At most one of the entries <b>StructParent</b> or <b>StructParents</b> shall be present. A form XObject shall be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</ins>
+    </td>
+  </tr>
 </table>
 
 
