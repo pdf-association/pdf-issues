@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 19 July 2024
+modified: 13 Sept 2024
 ---
 
 <ul class="noprint">

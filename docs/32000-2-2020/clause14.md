@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 25 June 2024
+modified: 13 Sept 2024
 ---
 
 <ul class="noprint">

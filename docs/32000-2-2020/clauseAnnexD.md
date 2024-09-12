@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex D
 title: (normative) Character sets and encodings
-modified: 10 May 2024
+modified: 13 Sept 2024
 ---
 
 <ul class="noprint">
