@@ -355,20 +355,20 @@ The PostScript language names of 14 Type 1 fonts, known as the standard 14 fonts
 
 <ins onMouseEnter="mouseEnter(this)" data-issue="384">
 <ul>
-  <li>Times-Roman</li>
-  <li>Helvetica</li>
   <li>Courier</li>
+  <li>Courier-Bold</li>
+  <li>Courier-BoldOblique</li>
+  <li>Courier-Oblique</li>
+  <li>Helvetica</li>
+  <li>Helvetica-Bold</li>
+  <li>Helvetica-BoldOblique</li>
+  <li>Helvetica-Oblique</li>
   <li>Symbol</li>
   <li>Times-Bold</li>
-  <li>Helvetica-Bold</li>
-  <li>Courier-Bold</li>
-  <li>ZapfDingbats</li>
-  <li>Times-Italic</li>
-  <li>Helvetica-Oblique</li>
-  <li>Courier-Oblique</li>
   <li>Times-BoldItalic</li>
-  <li>Helvetica-BoldOblique</li>
-  <li>Courier-BoldOblique</li>
+  <li>Times-Italic</li>
+  <li>Times-Roman</li>
+  <li>ZapfDingbats</li>
 </ul>
 </ins>
 
