@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 13 Sept 2024
+modified: 25 October 2024
 ---
 
 <ul class="noprint">
@@ -63,6 +63,16 @@ modified: 13 Sept 2024
  </li>
  <li>14.8 Tagged PDF
   <ul>
+   <li>14.8.2 Tagged PDF and page content
+    <ul>
+     <li>14.8.2.2 Real content and Artifacts
+      <ul>
+       <li><a href="#H14.8.2.2.2">14.8.2.2.2 Specification of Artifacts</a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
    <li>14.8.3 Basic layout model
     <ul>
      <li><a href="#H14.8.3.3">14.8.3.3 Progression direction</a>
@@ -751,6 +761,28 @@ it is an empty class, which defines no additional attributes.</ins>
 </p>
 
 <h2 id="H14.8">14.8 Tagged PDF</h2>
+
+<h3 id="H14.8.2">14.8.2 Tagged PDF and page content</h3>
+
+<h4 id="H14.8.2.2">14.8.2.2 Real content and Artifacts</h4>
+
+<h5 id="H14.8.2.2.2">14.8.2.2.2 Specification of Artifacts</h5>
+
+<p class="location">Change/split the paragraph below NOTE 1 into a new NOTE 2 and normative sentence as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="484">For artifacts defined using the marked-content sequence method, the form indicated in EXAMPLE 1 shall be used to identify a generic artifact; the form indicated in EXAMPLE 2 shall be used for those artifacts that have an associated property list.</del> 
+</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="484">NOTE 2: For artifacts defined using the marked-content sequence method, the form indicated in EXAMPLE 1 is used to identify a generic artifact; the form indicated in EXAMPLE 2 is used for those artifacts that have an associated property list.</ins>
+</p>
+
+<p>
+"Table 363 — Property list entries for artifacts" shows the properties that may be included in <del onMouseEnter="mouseEnter(this)" data-issue="484">such a</del> <ins onMouseEnter="mouseEnter(this)" data-issue="484">the</ins> property list.
+</p>
+
+<p>...</p>
 
 <h3 id="H14.8.3">14.8.3 Basic layout model</h3>
 
