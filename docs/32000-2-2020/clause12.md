@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 19 July 2024
+modified: 25 October 2024
 ---
 
 <ul class="noprint">
@@ -48,6 +48,8 @@ modified: 19 July 2024
    <li>12.5.6 Annotation types
     <ul>
      <li><a href="#H12.5.6.2">12.5.6.2 Markup annotations</a>
+     </li>
+     <li><a href="#H12.5.6.3">12.5.6.3 Annotation states</a>
      </li>
      <li><a href="#H12.5.6.5">12.5.6.5 Link annotations</a>
      </li>
@@ -593,6 +595,29 @@ of annotations may be grouped so that they function as a single unit when a user
 The group consists of a primary annotation, which shall not have an <b>IRT</b> entry, and one or more subordinate annotations, which shall have
 an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins onMouseEnter="mouseEnter(this)" data-issue="297"><i>(PDF 1.6)</i></ins> entry whose value is <i>Group</i>.
 </p>
+
+<h4 id="H12.5.6.3">12.5.6.3 Annotation states</h4>
+
+<p class="location">Correct the first paragraph as follows:</p>
+
+<p>
+Beginning with PDF 1.5, annotations may have an author-specific state associated with them. The state is not specified in the annotation itself but in a separate text annotation that refers to the original annotation by means of its <b>IRT</b> ("in reply to") entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>). States shall be grouped into a number of state models, as shown in "Table 174 — Annotation states".
+</p>
+
+<p>...</p>
+
+<p class="location">Correct the second bullet as follows:</p>
+
+<p>State changes made by a user shall be indicated in a text annotation with the following entries:</p>
+
+<ul>
+  <li>...</li>
+  <li>The <b>IRT</b> entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>) shall refer to the original annotation.</li>
+  <li>...</li>
+</ul>
+
+<p>...</p>
+
 
 <h4 id="H12.5.6.5">12.5.6.5 Link annotations</h4>
 
