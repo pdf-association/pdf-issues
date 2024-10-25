@@ -19,6 +19,14 @@ modified: 25 October 2024
    </li>
    <li><a href="#H12.3.3">12.3.3 Document outline</a>
    </li>
+   <li>12.3.5 Collections
+    <ul>
+     <li><a href="#H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477">12.3.5.3 Collection navigators</ins></a>
+     </li>
+    </ul>
+   </li>
+   <li><a href="#H12.3.6"><del onMouseEnter="mouseEnter(this)" data-issue="477">12.3.6 Navigators</del></a>
+   </li>
   </ul>
  </li>
  <li>12.4 Page-level navigation
@@ -342,6 +350,17 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 </table>
 
 <p>...</p>
+
+<h3 id="H12.3.5">12.3.5 Collections</h3>
+
+<h4 id="H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477">12.3.5.3 Collection navigators</ins></h4>
+
+<p class="editornote">EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/477">Issue #477</a>) all of subclause 12.3.6 Navigators was moved and demoted one level to subclause 12.3.5.3 Collection navigators.</p>
+
+<h3 id="H12.3.6"><del onMouseEnter="mouseEnter(this)" data-issue="477">12.3.6 Navigators</del></h3>
+
+<p class="editornote">EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/477">Issue #477</a>) move all of subclause 12.3.6 Navigators to subclause 12.3.5.3 Collection navigators.</p>
+
 
 <p class="location">Change the title of clause 12.4.2 as follows:</p>
 
