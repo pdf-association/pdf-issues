@@ -1631,6 +1631,16 @@ NOTE: <b>Lang</b> entries are defined as text strings which include Unicode-enco
 
 <h3 id="H14.9.4">14.9.4 Replacement text</h3>
 
+<p class="location">Add a new bullet as the 3rd (i.e. last) item in the bullet list as follows:</p>
+
+<p>Replacement text may be specified for the following items:</p>
+
+<ul>
+  <li>A structure element (see 14.7.2, “Structure Hierarchy”), by means of the optional <b>ActualText</b> entry (PDF 1.4) of the structure element dictionary.</li>
+  <li>(<i>PDF 1.5</i>) A marked-content sequence (see 14.6, “Marked Content”), through an <b>ActualText</b> entry in a property list attached to the marked-content sequence with a <b>Span</b> tag.</li>
+  <li><ins onMouseEnter="mouseEnter(this)" data-issue="483">(<i>PDF 1.5</i>) A marked-content sequence (see 14.6, "Marked content"), through an <b>ActualText</b> entry in a property list attached to the marked-content sequence with an <b>Artifact</b> tag (see 14.8.2.2.2 Artifact).</ins></li>
+</ul>
+
 <p>...</p>
 
 <p class="location">Add a new EXAMPLE above the existing EXAMPLE and number as follows:</p>
