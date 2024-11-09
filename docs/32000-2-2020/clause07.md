@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 13 Sept 2024
+modified: 9 November 2024
 ---
 
 <ul class="noprint">
@@ -1729,7 +1729,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
     <td><b>AFRelationship</b></td>
     <td>name</td>
     <td>
-      (<i>Optional; PDF 2.0</i>) A name value that represents the relationship between the component of this PDF document that refers to this file specification <ins onMouseEnter="mouseEnter(this)" data-issue="391">(via an <b>AF</b> array)</ins> and the associated file denoted by this file specification dictionary. See 14.13, "Associated files" for more details. These values represent the following relationships:
+      (<i>Optional; PDF 2.0</i>) A name value that represents the relationship between the component of this PDF document that refers to this file specification <ins onMouseEnter="mouseEnter(this)" data-issue="391">(via an <b>AF</b> or <b>MCAF</b> array)</ins> and the associated file denoted by this file specification dictionary. See 14.13, "Associated files" for more details. These values represent the following relationships:
       <p class="hangingindent">...</p>
     </td>
   </tr>
