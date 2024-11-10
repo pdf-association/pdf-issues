@@ -1271,10 +1271,10 @@ nested.</ins>
   If each page requires different sets of resources, then each should be written with its own <b>Resources</b> dictionary.
   </li>
   <li>
-    <del onMouseEnter="mouseEnter(this)" data-issue="128">
+    <del onMouseEnter="mouseEnter(this)" data-issue="128 data-iso="approved"">
       Content streams that define the glyph descriptions of a Type 3 font shall include a <b>Resources</b> entry in the Type 3 font dictionary specifying all the resources used by all the content streams in the <b>CharProcs</b> dictionary of a Type 3 font.
     </del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="128">
+    <ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
       <p>If a glyph description content stream in the <b>CharProcs</b> entry of a Type 3 font uses named resources directly then those resources shall be present in the resource dictionary designated by the first <b>Resources</b> entry found in the following search order:
       </p>
       <ol>
