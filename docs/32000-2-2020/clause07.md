@@ -41,7 +41,7 @@ modified: 9 November 2024
     </li>
     <li><a href="#H7.4.3">7.4.3 ASCII85Decode filter</a>
     </li>
-    <li>7.4.4 LZWDecode and FlateDecode filters</a>
+    <li>7.4.4 LZWDecode and FlateDecode filters
      <ul>
       <li><a href="#H7.4.4.3">7.4.4.3 LZWDecode and FlateDecode parameters</a>
       </li>
