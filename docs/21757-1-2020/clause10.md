@@ -108,8 +108,8 @@ modified: 14 February 2022
   </tr>
   <tr>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="266" data-iso="submitted">rec:</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="266" data-iso="submitted">rect</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="266" data-iso="approved">rec:</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="266" data-iso="approved">rect</ins>
     </td>
     <td>Array</td>
     <td>R/W</td>
@@ -128,11 +128,11 @@ modified: 14 February 2022
 <p class="location">Change Table 89 as follows:</p>
 
 <table>
-  <caption id="Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="submitted">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="submitted">properties</ins></caption>
+  <caption id="Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">properties</ins></caption>
   <tr>
     <th>
-    <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="submitted">Parameter</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="submitted">Property</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">Parameter</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">Property</ins>
     </th>
     <th>Type</th>
     <th>Description</th>

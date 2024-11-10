@@ -28,7 +28,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 <ul>
 <li><a href="clause10.html#Table1">Table 1 - Annotation types and their properties</a></li>
 <li><a href="clause10.html#Table3">Table 3 - AnnotRichMedia object properties</a></li>
-<li><a href="clause10.html#Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="submitted">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="submitted">properties</ins></a></li>
+<li><a href="clause10.html#Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">properties</ins></a></li>
 <li><a href="clause12.html#Table113">Table 113 - Mesh properties</a></li>
 </ul>
 
