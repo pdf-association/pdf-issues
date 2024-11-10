@@ -2,13 +2,13 @@
 isodoc: ISO 32001:2022
 clause: 5
 title: Digital signature enhancements
-modified: 11 Sept 2024
+modified: 10 November 2024
 ---
 
 <ul>
  <li>5.1 Support for secure hash algorithm 3 (SHA-3) hash family
   <ul>
-   <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></a>
+   <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></a>
    </li>
    <li><a href="#H5.1.4">5.1.4 Changes to ISO 32000-2:2020, Table 260 — SubFilter value algorithm support</a>
    </li>
@@ -30,16 +30,16 @@ modified: 11 Sept 2024
 
 <p class="location">Delete all of clause 5.1.3 as follows:</p>
 
-<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
+<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">
+<del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">
 In ISO 32000-2:2020, Table 256 (“Entries in a signature reference dictionary”; 12.8.1, “General”), the following text is added to the end of the current <b>DigestMethod</b> value text:
 </del>
 </p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="submitted">
+<del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">
 (PDF 2.x) In addition to those values previously defined, this value may be one of SHA3-256, SHA3-384, SHA3-512 or SHAKE256. Default value for PDF 2.0: SHA256 (PDF 2.0).
 </del>
 </p>
