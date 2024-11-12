@@ -747,7 +747,7 @@ an array of class names
 (<del onMouseEnter="mouseEnter(this)" data-issue="305">typically</del><ins onMouseEnter="mouseEnter(this)" data-issue="305">possibly</ins> accompanied by revision numbers as well <ins onMouseEnter="mouseEnter(this)" data-issue="305"><i>(deprecated in PDF 2.0)</i></ins>; see 14.7.6.3, "Attribute revision numbers"). For each class named in
 the <b>C</b> entry, the corresponding attribute object or objects shall be considered to be attached to the given structure element, along with
 those identified in the element’s <b>A</b> entry. 
-<ins onMouseEnter="mouseEnter(this)" data-issue="289">Attribute objects included through a class and through an array of classes within the <b>C</b>
+<ins onMouseEnter="mouseEnter(this)" data-issue="289" data-iso="approved">Attribute objects included through a class and through an array of classes within the <b>C</b>
 entry may have the value of <b>O</b> and <b>NS</b> repeated. If a given attribute is specified more than once across the attribute objects, the later
 (in array order) shall take precedence.</ins>
 If both the <b>A</b> and <b>C</b> entries are present and a given attribute is specified by both, the one specified by the <b>A</b> entry shall take precedence.
@@ -756,7 +756,7 @@ If both the <b>A</b> and <b>C</b> entries are present and a given attribute is s
 <p class="location">Add a new NOTE after the last paragraph as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="254">NOTE If a class identified through the <b>C</b> entry is not present in the <b>ClassMap</b>, 
+<ins onMouseEnter="mouseEnter(this)" data-issue="254" data-iso="approved">NOTE If a class identified through the <b>C</b> entry is not present in the <b>ClassMap</b>, 
 it is an empty class, which defines no additional attributes.</ins>
 </p>
 
@@ -1141,7 +1141,7 @@ NOTE: other values for the owner (<b>O</b>) entry are defined in "Table 360 — 
 <p class="location">Add a new NOTE after the current note below Table 376 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="286">NOTE The attribute owner, defined through the <b>O</b> and <b>NS</b> entries in the attribute object, define an owner for each attribute, but do not provide information on transformation of those attributes into other formats. When considering formats such as HTML and MathML, attributes would be transformed to meet the syntactic requirements of those formats.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="286" data-iso="approved">NOTE The attribute owner, defined through the <b>O</b> and <b>NS</b> entries in the attribute object, define an owner for each attribute, but do not provide information on transformation of those attributes into other formats. When considering formats such as HTML and MathML, attributes would be transformed to meet the syntactic requirements of those formats.</ins>
 </p>
 
 <p>...</p>

@@ -163,8 +163,8 @@ modified: 19 July 2024
     <td>ASCII string</td>
     <td>
     <p>(<i>Optional; shall not be present for form XObjects</i>) An ASCII string identifying the type of data in <b>D</b>. The string 
-    <del onMouseEnter="mouseEnter(this)" data-issue="257">should</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="257">shall</ins> 
+    <del onMouseEnter="mouseEnter(this)" data-issue="257" data-iso="approved">should</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="257" data-iso="approved">shall</ins> 
     conform to the content type specification described in <i>Internet RFC 2045</i>.</p>
     </td>
   </tr>
@@ -479,8 +479,8 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
     <td>dictionary</td>
     <td>
       (<i>Optional; PDF 2.0</i>) A comment reference is an indirect reference to a projection annotation that may be associated with this 3D measurement. 
-      <del onMouseEnter="mouseEnter(this)" data-issue="283">See "Table 341 — Entries in a RichMediaContent dictionary".</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="283">See 13.6.7.4, "3D measurements and projection annotations" .</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="283" data-iso="approved">See "Table 341 — Entries in a RichMediaContent dictionary".</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="283" data-iso="approved">See 13.6.7.4, "3D measurements and projection annotations" .</ins>
     </td>
   </tr>
 </table>

@@ -552,7 +552,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 
 <p>
 A PDF processor shall support Adobe-CNS1-7, Adobe-GB1-5, Adobe-Japan1-7 and Adobe-KR-9 character collections.
-<del onMouseEnter="mouseEnter(this)" data-issue="278">".</del> 
+<del onMouseEnter="mouseEnter(this)" data-issue="278" data-iso="approved">".</del> 
 Adobe-Japan2-0 and Adobe-Korea1-2 are deprecated in this document (2020). As noted in 9.7.3, "CIDSystemInfo dictionaries", a character collection is identified
 by registry, ordering, and supplement number, and supplements are cumulative; that is, a higher-numbered supplement includes the CIDs contained in
 lower-numbered supplements, as well as some additional CIDs. Consequently, text encoded according to the predefined CMaps for a given PDF version shall be 
@@ -679,7 +679,7 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 <p>In this case, the last byte of the string shall be incremented for each consecutive code in the source code range.</p>
 <p>When defining ranges of this type, the value of the last byte in the string shall be less than or equal to 255 - (<i>srcCode2 - srcCode1</i>). This ensures that the last byte of the string shall not be incremented past 255; otherwise, the result of mapping is undefined.</p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="277">
+<ins onMouseEnter="mouseEnter(this)" data-issue="277" data-iso="approved">
 <p class="hangingindent">NOTE the above requirements are specific to PDF and are not described in Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial".</p>
 </ins>
 

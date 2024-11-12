@@ -25,7 +25,7 @@ modified: 14 October 2022
 the term <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">"name string"</del> are replaced by just <ins onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">"string"</ins> throughout ISO 32000-2:2020.</p>
 
 <p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/259">Errata #259</a>, all descriptive occurrences of
-the word <del onMouseEnter="mouseEnter(this)" data-issue="259">"miter"</del> (US spelling) are replaced by the International English spelling <ins onMouseEnter="mouseEnter(this)" data-issue="259">"mitre"</ins> throughout ISO 32000-2:2020.</p>
+the word <del onMouseEnter="mouseEnter(this)" data-issue="259" data-iso="approved">"miter"</del> (US spelling) are replaced by the International English spelling <ins onMouseEnter="mouseEnter(this)" data-issue="259" data-iso="approved">"mitre"</ins> throughout ISO 32000-2:2020.</p>
 
 <p>...</p>
 

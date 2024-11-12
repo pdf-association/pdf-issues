@@ -165,10 +165,10 @@ modified: 19 July 2024
     </td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="260">halftone origin</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="260">array</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="260" data-iso="approved">halftone origin</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="260" data-iso="approved">array</ins></td>
     <td>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="260">
+    <ins onMouseEnter="mouseEnter(this)" data-issue="260" data-iso="approved">
     (<i>PDF 2.0</i>) The X and Y coordinates of the halftone origin. Initial value: a PDF reader shall initialise this to a suitable device dependent value.
     </ins>
     </td>

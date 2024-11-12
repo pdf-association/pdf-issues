@@ -40,7 +40,7 @@ modified: 13 Sept 2024
     <td>22</td>
     <td>0x16</td>
     <td>0026</td>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="285">U+0017</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285">U+0016</ins></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="285" data-iso="approved">U+0017</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285" data-iso="approved">U+0016</ins></td>
     <td>(SYNCHRONOUS IDLE)</td>
     <td>U</td>
   </tr>

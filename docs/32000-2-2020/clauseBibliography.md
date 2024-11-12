@@ -20,7 +20,7 @@ modified: 10 May 2024
 
 <p class="location">Append a new bibliographic entry as follows:</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="277">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="277" data-iso="approved">
 [50] Adobe Technical Note #5411 "ToUnicode Mapping File Tutorial", (<a href="https://pdfa.org/norm-refs/5411.ToUnicode.pdf">https://pdfa.org/norm-refs/5411.ToUnicode.pdf</a>)</ins>
 </p>
 

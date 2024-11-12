@@ -510,7 +510,7 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 
 <p>
 If a PDF file contains binary data, as most do (see 7.2, "Lexical conventions"), the header line shall be immediately followed by a 
-<del onMouseEnter="mouseEnter(this)" data-issue="272">comment line containing</del> <ins onMouseEnter="mouseEnter(this)" data-issue="272">line containing only a comment that starts with</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="272" data-iso="approved">comment line containing</del> <ins onMouseEnter="mouseEnter(this)" data-issue="272" data-iso="approved">line containing only a comment that starts with</ins> 
 at least four binary characters–that is, characters whose codes are 128 or greater.
 This ensures proper behaviour of file transfer applications that inspect data near the beginning of a file to determine whether to treat the file’s contents as text or as binary.
 </p>
@@ -697,9 +697,9 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 <p>The values of all entries shown in "Table 17 - Additional entries specific to a cross-reference
 stream dictionary" shall be direct objects; indirect references shall not be permitted. For arrays
 (the <b>Index</b> and <b>W</b> entries), all of their elements shall be direct objects as well. 
-<del onMouseEnter="mouseEnter(this)" data-issue="246">If the stream is encoded, the <b>Filter</b> and <b>DecodeParms</b> 
+<del onMouseEnter="mouseEnter(this)" data-issue="246" data-iso="approved">If the stream is encoded, the <b>Filter</b> and <b>DecodeParms</b> 
 entries in "Table 5 - Entries common to all stream dictionaries" shall also be direct objects.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="246">The values of all entries shown in "Table 5 - Entries common to 
+<ins onMouseEnter="mouseEnter(this)" data-issue="246" data-iso="approved">The values of all entries shown in "Table 5 - Entries common to 
 all stream dictionaries" shall also be direct objects. For arrays, all array elements shall be direct objects and for 
 dictionaries, all key values shall be direct objects as well. The <b>F</b> entry defined in Table 5 shall not be used.</ins></p>
 
@@ -998,7 +998,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 <p class="location">Move Figure 5 from subclause 7.7.2 to after the first paragraph, and update Figure 5 as follows:</p>
 
 <figure>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="261"> 
+  <ins onMouseEnter="mouseEnter(this)" data-issue="261" data-iso="approved"> 
     <img src="figure5-document-structure.svg" alt="Updated Figure 5 - Structure of a PDF document, additionally showing Document Part in PDF DOM">
     <figcaption>Figure 5 - Structure of a PDF document</figcaption>
   </ins>
@@ -1015,7 +1015,7 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
 
 <p class="location">Move Figure 5 - Structure of a PDF document from here to subclause 7.7.1:</p>
 
-<del onMouseEnter="mouseEnter(this)" data-issue="261"> 
+<del onMouseEnter="mouseEnter(this)" data-issue="261" data-iso="approved"> 
   <figure>
     <figcaption>Figure 5 - Structure of a PDF document</figcaption>
   </figure>
@@ -1096,14 +1096,14 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     <td>array</td>
     <td>
     (<i>Required</i>) An array of indirect references to the immediate children of this node. The children shall only be page objects or other page tree nodes
-    <ins onMouseEnter="mouseEnter(this)" data-issue="271">(<b>null</b> entries shall not be present). The length of the array shall be at least one</ins>.
+    <ins onMouseEnter="mouseEnter(this)" data-issue="271" data-iso="approved">(<b>null</b> entries shall not be present). The length of the array shall be at least one</ins>.
     </td>
   </tr>
   <tr>
     <td><b>Count</b></td>
     <td>integer</td>
     <td>
-    (<i>Required</i>) The number of leaf nodes (page objects) that are descendants of this node within the page tree <ins onMouseEnter="mouseEnter(this)" data-issue="271">which shall be 1 or greater</ins>.
+    (<i>Required</i>) The number of leaf nodes (page objects) that are descendants of this node within the page tree <ins onMouseEnter="mouseEnter(this)" data-issue="271" data-iso="approved">which shall be 1 or greater</ins>.
     <p class="hangingindent">NOTE Since the number of pages descendent from a Pages dictionary can be accurately determined by examining the tree itself using the <b>Kids</b> arrays, the <b>Count</b> entry is redundant.</p>
     <p>A PDF writer shall ensure that the value of the <b>Count</b> key is consistent with the number of entries in the <b>Kids</b> array and its descendants which definitively determines the number of descendant pages.</p>
     </td>
@@ -1329,8 +1329,8 @@ NOTE 4 Linearized PDF files impose additional requirements on resources - see "A
     <td>dictionary</td>
     <td>
     <p>(<i>Optional</i>) A dictionary that maps each resource name to either the name of a 
-    <del onMouseEnter="mouseEnter(this)" data-issue="280">device-dependent colour space</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="280">colour space with no additional parameters (<b>DeviceGray</b>, <b>DeviceRGB</b>, <b>DeviceCMYK</b>, or <b>Pattern</b>),</ins>     
+    <del onMouseEnter="mouseEnter(this)" data-issue="280" data-iso="approved">device-dependent colour space</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="280" data-iso="approved">colour space with no additional parameters (<b>DeviceGray</b>, <b>DeviceRGB</b>, <b>DeviceCMYK</b>, or <b>Pattern</b>),</ins>     
     or an array describing a colour space (see 8.6, "Colour spaces").
     </p>
     </td>
@@ -1545,26 +1545,26 @@ guillemotright, questiondown, which is unlikely to be a meaningful beginning of 
 <p>
 The byte string type shall be used for binary data that shall be represented as a series of bytes, where each byte may be any value representable in 8 bits.
 Byte string type is a subtype of string type. 
-<del onMouseEnter="mouseEnter(this)" data-issue="276">For example, byte strings are used to define a file identifier (see 14.4, "File identifiers") that is specified in ID entry of PDF file trailer
+<del onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">For example, byte strings are used to define a file identifier (see 14.4, "File identifiers") that is specified in ID entry of PDF file trailer
 (see "Table 15 — Entries in the file trailer dictionary").In such case byte string is written in hexadecimal form (see 7.3.4.3, "Hexadecimal strings") and looks like<br/>
 <code>&lt;B6FB54F3F8554D478DC874F11DAD0F11&gt;</code>
 </del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="276">Unless otherwise stated in this document, a byte string may be either a literal string (see 7.3.4.2, "Literal strings") or a hexadecimal string (see 7.3.4.3, "Hexadecimal strings").</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">Unless otherwise stated in this document, a byte string may be either a literal string (see 7.3.4.2, "Literal strings") or a hexadecimal string (see 7.3.4.3, "Hexadecimal strings").</ins>
 </p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="276">EXAMPLE Byte strings are used to define a file identifier (see 14.4, "File identifiers") 
+<ins onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">EXAMPLE Byte strings are used to define a file identifier (see 14.4, "File identifiers") 
 that are specified in the <b>ID</b> entry of the PDF file trailer (see "Table 15 — Entries in the file trailer dictionary"). 
 If written in hexadecimal form, an <b>ID</b> array entry looks like:<br/><br/>
 <code>&lt;B6FB54F3F8554D478DC874F11DAD0F11&gt;</code></ins>
 </p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="276">NOTE 1 The <b>Contents</b> entry of a Signature dictionary can be required to be a hexadecimal string (see "Table 255 - Entries in a signature dictionary").</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">NOTE 1 The <b>Contents</b> entry of a Signature dictionary can be required to be a hexadecimal string (see "Table 255 - Entries in a signature dictionary").</ins>
 </p>
 
 <p>
-NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276">2</ins> The string can represent characters but the encoding is not known. The bytes of the string do not have to represent characters.
+NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">2</ins> The string can represent characters but the encoding is not known. The bytes of the string do not have to represent characters.
 </p>
 
 
@@ -1582,8 +1582,8 @@ be present if the APOSTROPHE following the hour offset field (HH) is present. Th
 DD shall be both 01; all other numerical fields shall default to zero values. A PLUS SIGN as the value of
 the O field signifies that local time is now and later than UT, a HYPHEN-MINUS signifies that local time is
 earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equal to UT. If no UT information is specified, 
-<del onMouseEnter="mouseEnter(this)" data-issue="251">the relationship of the specified time to UT shall be considered to be GMT.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="251">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the relationship of the specified time to UT shall be considered to be GMT.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins> 
 Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.
 </p>
 
@@ -1695,8 +1695,8 @@ PDF function) and others can be described with exponential functions (Type 2 in 
   <tr>
     <td>Conditional operators</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="269"><code>If</code></del> 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="269"><code>if</code></ins> 
+      <del onMouseEnter="mouseEnter(this)" data-issue="269" data-iso="approved"><code>If</code></del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="269" data-iso="approved"><code>if</code></ins> 
       <code>ifelse</code>
     </td>
   </tr>

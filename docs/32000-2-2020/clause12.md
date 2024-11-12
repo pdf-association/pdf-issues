@@ -233,7 +233,7 @@ modified: 25 October 2024
        <li><i>UseOutlines</i> Document outline visible</li>
        <li><i>UseThumbs</i> Thumbnail images visible</li>
        <li><i>UseOC</i> Optional content group panel visible</li>
-       <li><ins onMouseEnter="mouseEnter(this)" data-issue="275"><i>UseAttachments (PDF 2.0)</i> Attachments panel visible</ins></li>
+       <li><ins onMouseEnter="mouseEnter(this)" data-issue="275" data-iso="approved"><i>UseAttachments (PDF 2.0)</i> Attachments panel visible</ins></li>
      </ul>
      <p>This entry is meaningful only if the value of the <b>PageMode</b> entry in the catalog dictionary (see 7.7.2, "Document catalog dictionary") 
      is <i>FullScreen</i>; it shall be ignored otherwise. Default value: <i>UseNone</i>.</p>
@@ -548,10 +548,10 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1" 
     <td>array</td>
     <td>
       <p>...</p>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="287">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry shall be ignored.</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="287" data-iso="approved">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry shall be ignored.</ins>
       <p class="hangingindent">
       NOTE (<i>PDF 1.2</i>) The dictionaries for some annotation types (such as free text and polygon annotations) can include the <b>BS</b> entry. That entry specifies a border style dictionary that has more
-      settings than the array specified for the <b>Border</b> entry. <del onMouseEnter="mouseEnter(this)" data-issue="287">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry is ignored.</del>
+      settings than the array specified for the <b>Border</b> entry. <del onMouseEnter="mouseEnter(this)" data-issue="287" data-iso="approved">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry is ignored.</del>
       </p>
     </td>
   </tr>
@@ -832,7 +832,7 @@ However, a projection annotation is only valid within the context of an associat
     <td>
      <p>...</p>
      <p class="hangingindent">
-     <ins onMouseEnter="mouseEnter(this)" data-issue="258">NOTE: Although normally named destinations can also be specified by the use of a name object, that particular usage of them is not provided for in this case.</ins>
+     <ins onMouseEnter="mouseEnter(this)" data-issue="258" data-iso="approved">NOTE: Although normally named destinations can also be specified by the use of a name object, that particular usage of them is not provided for in this case.</ins>
      </p>
     </td>
   </tr>
@@ -851,7 +851,7 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 
 <p class="location">Change the first paragraph as follows:</p>
 
-<p>A <i>go-to-3D-view action</i> (<i>PDF 1.6</i>) identifies a 3D <ins onMouseEnter="mouseEnter(this)" data-issue="282">or RichMedia</ins> annotation and specifies a view for the annotation to use (see 13.6, "3D Artwork"). 
+<p>A <i>go-to-3D-view action</i> (<i>PDF 1.6</i>) identifies a 3D <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">or RichMedia</ins> annotation and specifies a view for the annotation to use (see 13.6, "3D Artwork"). 
 "Table 220 — Additional entries specific to a go-to-3D-view action" shows the entries in a go-to-3D-view action dictionary.</p>
 
 <p class="location">Change Table 220 as follows:</p>
@@ -868,8 +868,8 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
     <td>name</td>
     <td>
      <p>(<i>Required</i>) The type of action that this dictionary describes; shall be <i>GoTo3DView</i> for a
-      <del onMouseEnter="mouseEnter(this)" data-issue="265">transition</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="265">Go-To-3D-View</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="265" data-iso="approved">transition</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="265" data-iso="approved">Go-To-3D-View</ins>
       action.</p>
     </td>
   </tr>
@@ -881,13 +881,13 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
       <ul>
        <li>A 3D view dictionary (see 13.6.4, "3D views").</li>
        <li>An integer specifying an index into the <b>VA</b> array in the <b>3D</b> stream (see "Table 311 — Entries in a 3D stream dictionary")
-       <ins onMouseEnter="mouseEnter(this)" data-issue="282">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
+       <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
        </li>
        <li>A text string matching the <b>IN</b> entry in one of the views in the <b>VA</b> array (see "Table 315 — Entries in a 3D view dictionary")
-       <ins onMouseEnter="mouseEnter(this)" data-issue="282">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
+       <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
        </li>
        <li>A name that indicates the first (<b>F</b>), last (<b>L</b>), next (<b>N</b>), previous (<b>P</b>), or default (<b>D</b>) entries in the <b>VA</b> 
-       <ins onMouseEnter="mouseEnter(this)" data-issue="282">or <b>Views</b></ins>
+       <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">or <b>Views</b></ins>
        array; see discussion following this Table.
        </li>
       </ul>
