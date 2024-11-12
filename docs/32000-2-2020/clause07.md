@@ -1295,13 +1295,13 @@ nested.</ins>
     patterns (see "Table 74 — Additional entries specific to a Type 1 pattern dictionary"), and annotation appearances (see 12.5.5 "Appearance streams").
   </li>
   <li>
-    <del onMouseEnter="mouseEnter(this)" data-issue="128">PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in all form XObjects and Type 3 fonts used on a page. 
+    <del onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in all form XObjects and Type 3 fonts used on a page. 
     All resources that are referenced from those forms and fonts shall be inherited from the resource dictionary of the page on which they are used.</del>
   </li>
 </ul>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="128">
+<ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
 NOTE 3 PDF files written obeying earlier versions of PDF may have omitted the <b>Resources</b> entry in form XObjects, Type 3 glyph descriptions or annotation appearance streams used on a page. 
 Those earlier versions state that resources that were referenced from those content streams can be inherited from the resource dictionary of the page on which they are used.
 </ins>
