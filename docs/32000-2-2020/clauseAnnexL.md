@@ -38,8 +38,8 @@ relationship and, in the <b>Table</b> section, <b>P</b> is listed as a valid par
 The embedded PDF and spreadsheet data are also corrected.
 </p>
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/440">Errata #440</a> modify Table Annex L.2 such that where Structure Type is <b>WP</b> and Child is <b>Figure</b> and where Structure Type is <b>Figure</b> and Parent is <b>WP</b> the undefined cell value <del onMouseEnter="mouseEnter(this)" data-issue="440">"c"</del> 
-is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440">"0..<i>n</i>"</ins> relationship. 
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/440">Errata #440</a> modify Table Annex L.2 such that where Structure Type is <b>WP</b> and Child is <b>Figure</b> and where Structure Type is <b>Figure</b> and Parent is <b>WP</b> the undefined cell value <del onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"c"</del> 
+is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"0..<i>n</i>"</ins> relationship. 
 The embedded PDF and spreadsheet data are also corrected.
 </p>
 
@@ -56,7 +56,7 @@ The embedded PDF and spreadsheet data are also corrected.
   </thead>
   <tbody>
     <tr>
-     <td>StructTreeRoot <ins onMouseEnter="mouseEnter(this)" data-issue="349"><sup>1</sup></ins></td>
+     <td>StructTreeRoot <ins onMouseEnter="mouseEnter(this)" data-issue="349" data-iso="approved"><sup>1</sup></ins></td>
      <td>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Document</td>
      <td></td>
     </tr>
@@ -68,7 +68,7 @@ The embedded PDF and spreadsheet data are also corrected.
   </tbody>
 </table>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="349">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="349" data-iso="approved">
 <sup>1</sup> StructTreeRoot refers to the structure tree root dictionary (see "Table 354 — Entries in the structure tree root") and is not the name of a structure element.
 </ins></p>
 

@@ -100,9 +100,9 @@ modified: 13 Sept 2024
 
 <p>
 The horizontal scaling parameter, 𝑇<sub>h</sub>, adjusts the width of glyphs by stretching or compressing them in the horizontal direction. Its value 
-<ins onMouseEnter="mouseEnter(this)" data-issue="376">is the normalized value of the operand to the <b>Tz</b> operator which</ins> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">is the normalized value of the operand to the <b>Tz</b> operator which</ins> 
 shall be specified as a percentage of the normal width of the glyphs, with 100 being the normal width 
-<ins onMouseEnter="mouseEnter(this)" data-issue="376">of 100%, representing a scaling value of 1.0 for 𝑇<sub>h</sub></ins>. 
+<ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">of 100%, representing a scaling value of 1.0 for 𝑇<sub>h</sub></ins>. 
 The scaling shall apply to the horizontal coordinate in text space, independently of the writing mode. It shall affect both the glyph’s shape and its horizontal displacement (that is, its displacement vector). If the writing mode is horizontal, it shall also affect the spacing parameters 𝑇<sub>c</sub> and 𝑇<sub>w</sub>, as well as any positioning adjustments performed by the <b>TJ</b> operator. "Figure 58 — Horizontal scaling" shows the effect of horizontal scaling.
 </p>
 
@@ -112,8 +112,8 @@ The scaling shall apply to the horizontal coordinate in text space, independentl
     <table style="width:fit-content;">
     <tr>
       <td style="vertical-align:middle;">
-        <p><ins onMouseEnter="mouseEnter(this)" data-issue="376">100 <b>Tz</b></ins></p>
-        <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376">100</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376">1.0</ins> (default)</p>
+        <p><ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">100 <b>Tz</b></ins></p>
+        <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">100</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">1.0</ins> (default)</p>
       </td>
       <td style="vertical-align:middle;">
         <p style="font-size:360%; transform:translate(68px,0); -webkit-transform:translate(68px,0); display:inline-block;">Word</p>
@@ -121,8 +121,8 @@ The scaling shall apply to the horizontal coordinate in text space, independentl
     </tr>
     <tr>
       <td style="vertical-align:middle;">
-        <p><ins onMouseEnter="mouseEnter(this)" data-issue="376">50 <b>Tz</b></ins></p>
-        <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376">50</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376">0.5</ins></p>
+        <p><ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">50 <b>Tz</b></ins></p>
+        <p>𝑇<sub>h</sub> = <del onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">50</del> <ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">0.5</ins></p>
       </td>
       <td style="vertical-align:middle;">
         <p style="font-size:360%; transform:scale(0.5,1); -webkit-transform:scale(0.5,1); display:inline-block;">WordWord</p>
@@ -138,13 +138,13 @@ The scaling shall apply to the horizontal coordinate in text space, independentl
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 Certain degenerate glyph sub-paths that are not visible when filled can become apparent when stroking, e.g., a zero<ins onMouseEnter="mouseEnter(this)" data-issue="372">-length</ins> line with round end caps will paint a circle according to the current stroke width.
+NOTE 3 Certain degenerate glyph sub-paths that are not visible when filled can become apparent when stroking, e.g., a zero<ins onMouseEnter="mouseEnter(this)" data-issue="372" data-iso="approved">-length</ins> line with round end caps will paint a circle according to the current stroke width.
 </p>
 
 <p class="location">Change the paragraph below NOTE 3 as follows:</p>
 
 <p>
-The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" data-issue="372"><b>Tm</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="372"><i>𝑇<sub>m</sub></i></ins> shall be updated for each glyph drawn when using text rendering mode 3 or 7 in exactly the same way as would be done for other text rendering modes.
+The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" data-issue="372" data-iso="approved"><b>Tm</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="372" data-iso="approved"><i>𝑇<sub>m</sub></i></ins> shall be updated for each glyph drawn when using text rendering mode 3 or 7 in exactly the same way as would be done for other text rendering modes.
 </p>
 
 <h2 id="H9.4">9.4 Text objects</h2>
@@ -153,7 +153,7 @@ The <i>e</i> and <i>f</i> components of <del onMouseEnter="mouseEnter(this)" dat
 
 <p class="location">Append the following paragraph to this sub-clause as follows:</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="368">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="368" data-iso="approved">
 Within a text object, the graphics state stack operators <b>q</b> and <b>Q</b> (see 8.4.2, "Graphics state stack") shall additionally push and pop 𝑇<sub>m</sub> and 𝑇<sub>lm</sub> as part of the graphics state stack.
 </ins></p>
 
@@ -175,7 +175,7 @@ Within a text object, the graphics state stack operators <b>q</b> and <b>Q</b> (
     <td>
     <p>Move to the start of the next line. This operator has the same effect as the code</p>
     <p>
-      0 <i>-𝑇<sub>l</sub></i> <del onMouseEnter="mouseEnter(this)" data-issue="373"><b>TD</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="373"><b>Td</b></ins>  
+      0 <i>-𝑇<sub>l</sub></i> <del onMouseEnter="mouseEnter(this)" data-issue="373" data-iso="approved"><b>TD</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="373" data-iso="approved"><b>Td</b></ins>  
     </p>
     <p>where <i>𝑇<sub>l</sub></i> denotes the current leading parameter in the text state. The negative of <i>𝑇<sub>l</sub></i> is used here because <i>𝑇<sub>l</sub></i> is the text leading expressed as a positive number. Going to the next line entails decreasing the y coordinate.</p>
     </td>
@@ -207,7 +207,7 @@ character codes.
 
 <p class="location">Change NOTE 2 into normative text as follows:</p>
 
-<p><del onMouseEnter="mouseEnter(this)" data-issue="376">NOTE 2</del> Conceptually, the entire transformation from text space to device space can be represented by a text rendering matrix, 𝑇<sub>𝑟𝑚</sub>:
+<p><del onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">NOTE 2</del> Conceptually, the entire transformation from text space to device space can be represented by a text rendering matrix, 𝑇<sub>𝑟𝑚</sub>:
 </p>
 <p style="text-align:center">
 <math xmlns="https://www.w3.org/1998/Math/MathML">

@@ -205,7 +205,7 @@ modified: 25 October 2024
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-This feature has been <del onMouseEnter="mouseEnter(this)" data-issue="367">deprecated</del><ins onMouseEnter="mouseEnter(this)" data-issue="367">considered unnecessary</ins> since PDF 1.4 <ins onMouseEnter="mouseEnter(this)" data-issue="367"> and was deprecated in PDF 2.0</ins>.
+This feature has been <del onMouseEnter="mouseEnter(this)" data-issue="367" data-iso="approved">deprecated</del><ins onMouseEnter="mouseEnter(this)" data-issue="367" data-iso="approved">considered unnecessary</ins> since PDF 1.4 <ins onMouseEnter="mouseEnter(this)" data-issue="367" data-iso="approved"> and was deprecated in PDF 2.0</ins>.
 </p>
 
 <h2 id="H14.3">14.3 Metadata</h2>
@@ -238,8 +238,8 @@ endobj
 &gt;&gt;
 stream
 &lt;?xpacket begin="</code>
-<del onMouseEnter="mouseEnter(this)" data-issue="398">Ôªø</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="398"><i>… UTF-8 value of U+FEFF (efbbbf) …</i></ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="398" data-iso="approved">Ôªø</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="398" data-iso="approved"><i>… UTF-8 value of U+FEFF (efbbbf) …</i></ins>
 <code>" id="W5M0MpCehiHzreSzNTczkc9d"?&gt;
 ...
 </code>
@@ -478,8 +478,8 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>array</td>
     <td>
     (<i>Required if any structure elements have namespace identifiers; PDF 2.0</i>)  An array of
-    <ins onMouseEnter="mouseEnter(this)" data-issue="396">at least all</ins> 
-    namespaces used within the document <ins onMouseEnter="mouseEnter(this)" data-issue="396">as referenced from structure elements in the structure hierarchy</ins> (see 14.7.4.2, "Namespace dictionary").
+    <ins onMouseEnter="mouseEnter(this)" data-issue="396" data-iso="approved">at least all</ins> 
+    namespaces used within the document <ins onMouseEnter="mouseEnter(this)" data-issue="396" data-iso="approved">as referenced from structure elements in the structure hierarchy</ins> (see 14.7.4.2, "Namespace dictionary").
     </td>
   </tr>
 </table>
@@ -538,9 +538,9 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>dictionary</td>
     <td>
     (<i>Optional; PDF 2.0</i>) An indirect reference to a namespace dictionary defining the namespace this element belongs to (see 14.7.4, "Namespaces")
-    <ins onMouseEnter="mouseEnter(this)" data-issue="396">that shall also be an element in the structure tree root <b>Namespaces</b> array (see 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="396" data-iso="approved">that shall also be an element in the structure tree root <b>Namespaces</b> array (see 
     "Table 354 - Entries in the structure tree root")</ins>
-    . If <ins onMouseEnter="mouseEnter(this)" data-issue="396"><b>NS</b> is</ins> not present, the element shall be considered to be in the default standard structure namespace (see 14.8.6, "Standard structure namespaces").
+    . If <ins onMouseEnter="mouseEnter(this)" data-issue="396" data-iso="approved"><b>NS</b> is</ins> not present, the element shall be considered to be in the default standard structure namespace (see 14.8.6, "Standard structure namespaces").
     </td>
   </tr>
 </table>
@@ -630,8 +630,8 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 The parent tree is a number tree (see 7.9.7, "Number trees"), accessed from the <b>ParentTree</b> entry in a document’s structure tree root 
 ("Table 354 — Entries in the structure tree root"). 
 The tree shall contain an entry for each object that is a content item of 
-<del onMouseEnter="mouseEnter(this)" data-issue="343">at least one</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="343">a</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="343" data-iso="approved">at least one</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="343" data-iso="approved">a</ins> 
 structure element and for each content stream containing at least one marked-content sequence that is a content item.
 The key for each entry shall be an integer given as the value of the <b>StructParent</b> or <b>StructParents</b> entry in the object (see "Table 359 — Additional dictionary entries for structure element access"). The values of these entries shall be as follows:
 </p>
@@ -693,8 +693,8 @@ Depending on the type of content item, this entry may appear in the page object 
 A PDF processor that processes logical structure may attach additional information, called attributes, to any structure element. The attribute
 information shall be held in one or more attribute objects associated with the structure element. An attribute object shall be a dictionary or
 stream that includes an <b>O</b> entry (see "Table 360 — Entries common to all attribute object dictionaries") identifying the
-<del onMouseEnter="mouseEnter(this)" data-issue="354">conforming product that owns</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="354">owner of</ins> the attribute information. 
+<del onMouseEnter="mouseEnter(this)" data-issue="354" data-iso="approved">conforming product that owns</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="354" data-iso="approved">owner of</ins> the attribute information. 
 Other entries, except the <b>NS</b> entry, shall represent the attributes: the keys shall be attribute names, and values shall be the corresponding
 attribute values. To facilitate the interchange of content among conforming products, PDF defines a set of standard structure attributes identified
 by specific standard owners; see 14.8.5, "Standard structure attributes". In addition, attributes may be used to represent user properties (see 
@@ -715,10 +715,10 @@ by specific standard owners; see 14.8.5, "Standard structure attributes". In add
     <td>name</td>
     <td>
     (<i>Required</i>) The name of the 
-    <del onMouseEnter="mouseEnter(this)" data-issue="354">PDF processor creating</del> 
-    <ins onMouseEnter="mouseEnter(this)" data-issue="354">owner of</ins> 
+    <del onMouseEnter="mouseEnter(this)" data-issue="354" data-iso="approved">PDF processor creating</del> 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="354" data-iso="approved">owner of</ins> 
     the attribute data. The value shall either be 
-    <del onMouseEnter="mouseEnter(this)" data-issue="354">a</del> <i>NSO</i>, <i>UserProperties</i> (see "Table 361 — Additional entries in an attribute object dictionary for user properties"), 
+    <del onMouseEnter="mouseEnter(this)" data-issue="354" data-iso="approved">a</del> <i>NSO</i>, <i>UserProperties</i> (see "Table 361 — Additional entries in an attribute object dictionary for user properties"), 
     one of the values from <del onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">14.8.5, "Standard structure attributes"</del><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">"Table 376 — Standard structure attribute owners"</ins>
     , or conform to the guidelines described in Annex E, "Extending PDF".
     <p>If the value for the <b>O</b> entry is <i>NSO</i> then the <b>NS</b> entry shall be present, and shall identify the owner of the attribute object.</p>
@@ -802,7 +802,7 @@ The meaning of the terms block-progression direction and inline-progression dire
 
 <p class="location">Add a new informative NOTE 1 after the second paragraph (before Table 364) as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="349">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="349" data-iso="approved">
 NOTE 1: A document can consist of zero, one or more sub-documents and document fragments. However, regardless of the presence of sub-document or document fragments, the entire content of a single PDF file is considered a logical document. Annex L "Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0" contains the requirement that a document utilizing tags from the PDF 2.0 standard structure namespace have a single structure element of type <b>Document</b> as the root of the document.
 </ins></p>
 
@@ -1119,15 +1119,15 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
   </tr>
   <tr>
     <td><b>CSS-1</b></td>
-    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357">version</del><ins onMouseEnter="mouseEnter(this)" data-issue="357">level</ins> 1</td>
+    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357" data-iso="approved">version</del><ins onMouseEnter="mouseEnter(this)" data-issue="357" data-iso="approved">level</ins> 1</td>
   </tr>
   <tr>
     <td><b>CSS-2</b></td>
-    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357">version 2.1</del><ins onMouseEnter="mouseEnter(this)" data-issue="357">level 2, revision 1</ins></td>
+    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357" data-iso="approved">version 2.1</del><ins onMouseEnter="mouseEnter(this)" data-issue="357" data-iso="approved">level 2, revision 1</ins></td>
   </tr>
   <tr>
     <td><b>CSS-3</b></td>
-    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357">version</del><ins onMouseEnter="mouseEnter(this)" data-issue="357">level</ins> 3</td>
+    <td>Additional attributes governing translation to a format using CSS, <del onMouseEnter="mouseEnter(this)" data-issue="357" data-iso="approved">version</del><ins onMouseEnter="mouseEnter(this)" data-issue="357" data-iso="approved">level</ins> 3</td>
   </tr>
 </table>
 
@@ -1445,14 +1445,14 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>ContinuedList</b></td>
     <td>boolean</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346">not inheritable;</ins> PDF 2.0</i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346" data-iso="approved">not inheritable;</ins> PDF 2.0</i>) ...
     </td>
   </tr>
   <tr>
     <td><b>ContinuedFrom</b></td>
     <td>ID (byte string)</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346">not inheritable;</ins> PDF 2.0</i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346" data-iso="approved">not inheritable;</ins> PDF 2.0</i>) ...
     </td>
   </tr>
 </table>
@@ -1473,14 +1473,14 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>Type</b></td>
     <td>name</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
     </td>
   </tr>
   <tr>
     <td><b>BBox</b></td>
     <td>rectangle</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">NOTE: BLSE attributes also define a <b>BBox</b> attribute (see "Table 379 — Additional standard layout attributes specific to block-level structure elements").</ins></p>
     </td>
   </tr>
@@ -1488,7 +1488,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>Subtype</b></td>
     <td>name</td>
     <td>
-    (<i>Optional; <del onMouseEnter="mouseEnter(this)" data-issue="347">PDF 1.7</del><ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
+    (<i>Optional; <del onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">PDF 1.7</del><ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
     </td>
   </tr>
 </table>
@@ -1496,7 +1496,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 <p class="location">Insert a new NOTE below Table 385 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="347">NOTE: the meaning of the keys <b>Type</b> and <b>Subtype</b> in "Table 382 - Standard artifact attributes" do not follow the documented conventions described in 7.3.7, "Dictionary objects". This is due to alignment of "Table 382 - Standard artifact attributes" (<i>PDF 2.0</i>) with the previously existing "Table 363 - Property list entries for artifacts".</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">NOTE: the meaning of the keys <b>Type</b> and <b>Subtype</b> in "Table 382 - Standard artifact attributes" do not follow the documented conventions described in 7.3.7, "Dictionary objects". This is due to alignment of "Table 382 - Standard artifact attributes" (<i>PDF 2.0</i>) with the previously existing "Table 363 - Property list entries for artifacts".</ins>
 </p>
 
 
@@ -1645,12 +1645,12 @@ NOTE: <b>Lang</b> entries are defined as text strings which include Unicode-enco
 
 <p class="location">Add a new EXAMPLE above the existing EXAMPLE and number as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="364">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="364" data-iso="approved">
 EXAMPLE 1 This example shows the use of replacement text to indicate the correct character content
 in a case where the SPACE character does not appear in the text content.
 </ins></p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="364">
+<ins onMouseEnter="mouseEnter(this)" data-issue="364" data-iso="approved">
 <code class="hangingindent">
 /Span &lt;&lt; /ActualText (Missing ) &gt;&gt; BDC   % add missing space character
     (Missing) Tj
@@ -1663,7 +1663,7 @@ EMC
 <p class="location">Correct the EXAMPLE as follows:</p>
 
 <p class="hangingindent">
-EXAMPLE <ins onMouseEnter="mouseEnter(this)" data-issue="364">2</ins> This example shows the use of
+EXAMPLE <ins onMouseEnter="mouseEnter(this)" data-issue="364" data-iso="approved">2</ins> This example shows the use of
 replacement text to indicate the correct character content in a case where hyphenation changes 
 the spelling of a word (in German, up until spelling reforms, the word "Drucker" when hyphenated 
 was rendered as "Druk-" and "ker").
@@ -1672,7 +1672,7 @@ was rendered as "Druk-" and "ker").
 <code class="hangingindent">
 (Dru) Tj
 /Span
-    &lt;&lt; <del onMouseEnter="mouseEnter(this)" data-issue="356">/Actual Text</del><ins onMouseEnter="mouseEnter(this)" data-issue="356">/ActualText</ins> (c) &gt;&gt;
+    &lt;&lt; <del onMouseEnter="mouseEnter(this)" data-issue="356" data-iso="approved">/Actual Text</del><ins onMouseEnter="mouseEnter(this)" data-issue="356" data-iso="approved">/ActualText</ins> (c) &gt;&gt;
     BDC
         (k-) Tj
     EMC
@@ -1733,7 +1733,7 @@ was rendered as "Druk-" and "ker").
     <code>[/monochrome name1  tint1…namen tintn]</code>
     <p>
       where each <i>name</i> is a string representing the name of a colourant and each <i>tint</i> is a 
-      <del onMouseEnter="mouseEnter(this)" data-issue="358">real</del>
+      <del onMouseEnter="mouseEnter(this)" data-issue="358" data-iso="approved">real</del>
       number in the range 0.0 to 1.0 specifying the concentration of that colourant to be applied.
     </p>
     </td>
@@ -1794,31 +1794,31 @@ Other PDF value types shall not be used.
 <p class="location">Change the paragraph below NOTE 2 as follows:</p>
 
 <p>
-Unlike other types of marked-content tags, the <b>DP</b> or <b>MP</b> marked-content operators shall not be used with the <b>AF</b> tag when that tag is used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374">ies</ins>.
+Unlike other types of marked-content tags, the <b>DP</b> or <b>MP</b> marked-content operators shall not be used with the <b>AF</b> tag when that tag is used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">ies</ins>.
 </p>
 
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 The combination of a <b>DP</b> or <b>MP</b> operator with an <b>AF</b> tag (when used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374">ies</ins>) is forbidden, as these operators only mark a single point and thus don’t enable connections between any specific sequence of content operators and their associated file.
+NOTE 3 The combination of a <b>DP</b> or <b>MP</b> operator with an <b>AF</b> tag (when used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">ies</ins>) is forbidden, as these operators only mark a single point and thus don’t enable connections between any specific sequence of content operators and their associated file.
 </p>
 
 <p class="location">Change the paragraph below NOTE 3 as follows:</p>
 
 <p>
 The property list associated with the marked-content shall specify 
-<ins onMouseEnter="mouseEnter(this)" data-issue="374">a dictionary with an <b>MCAF</b> entry defining</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">a dictionary with an <b>MCAF</b> entry defining</ins>
 an array of file specification dictionaries
-<ins onMouseEnter="mouseEnter(this)" data-issue="374">(see 7.11.3, "File specification dictionaries")</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">(see 7.11.3, "File specification dictionaries")</ins>
 to which the content is associated. The named resource in the
 <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>Property List</b></del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><i>property list</i></ins>
 (see 14.6.2, "Property lists") shall specify 
-<del onMouseEnter="mouseEnter(this)" data-issue="374">an array of file specification dictionaries</del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="374">this dictionary</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">an array of file specification dictionaries</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">this dictionary</ins>
 to which the content is associated.
 The relationship that the associated files have to the PDF content is supplied by the <b>AFRelationship</b> key in each file specification dictionary
-<ins onMouseEnter="mouseEnter(this)" data-issue="374">in the array</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">in the array</ins>
 .
 </p>
 
@@ -1826,22 +1826,22 @@ The relationship that the associated files have to the PDF content is supplied b
 
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="374">
+<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">
 NOTE 4 As defined in Table 34 and section 14.6.2, "Property Lists", a marked-content property list is always a dictionary. Furthermore, entries in Associated File file specification dictionaries use an indirect reference to the embedded file stream and, since indirect references are not allowed in content streams, named property resources are always used.
 </ins>
 </p>
 
 <table>
-  <caption id="Table409a"><ins onMouseEnter="mouseEnter(this)" data-issue="374">Table 409a - Property list entries for associated files</ins></caption>
+  <caption id="Table409a"><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">Table 409a - Property list entries for associated files</ins></caption>
   <tr>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374">Key</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374">Type</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374">Value</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">Key</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">Type</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">Value</ins></th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374"><b>MCAF</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374">array</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374">
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved"><b>MCAF</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">array</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">
       <i>(Optional, PDF 2.0)</i> An array of one or more file specification dictionaries (7.11.3, "File specification dictionaries")
       which denote the associated files for this marked-content sequence. Each file specification dictionary in the array 
       shall have an <b>AFRelationship</b> entry.
@@ -1849,7 +1849,7 @@ NOTE 4 As defined in Table 34 and section 14.6.2, "Property Lists", a marked-con
   </tr>
 </table>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="374">EXAMPLE:<br/>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">EXAMPLE:<br/>
 
 <code>10 0 obj
 <<
@@ -1881,8 +1881,8 @@ endobj
 Although the marked-content tag shall be <b>AF</b>, other applications of marked-content are
 not precluded from using <b>AF</b> as a tag. The marked-content is connected with associated
 files only if the tag is <b>AF</b> and the named property list is defined 
-<del onMouseEnter="mouseEnter(this)" data-issue="374">as a valid array of file specification dictionaries</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="374">according to “Table 409a - Property list entries for associated files”</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">as a valid array of file specification dictionaries</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">according to “Table 409a - Property list entries for associated files”</ins>.
 To avoid conflict with other features that use marked-content, such as 14.7,
 "Logical structure", where content is to be tagged with source content markers as well
 as other markers, the other markers should be nested inside the source content

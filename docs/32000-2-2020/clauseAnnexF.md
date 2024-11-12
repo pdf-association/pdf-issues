@@ -47,7 +47,7 @@ or greater.
 
 <p class="location">Add a new informative NOTE below the first paragraph as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
 NOTE: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in a Linearization parameter dictionary.
 </ins></p> 
 
@@ -77,8 +77,8 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
     <td>integer</td>
     <td>
       <p>(<i>Optional</i>) The page number of the first page; see 
-      <del onMouseEnter="mouseEnter(this)" data-issue="389">F.3.4, "First-page cross-reference table and trailer (Part 3)"</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="389">F.3.7, "First-page section (Part 6)"</ins>. Default value: <i>0</i>.
+      <del onMouseEnter="mouseEnter(this)" data-issue="389" data-iso="approved">F.3.4, "First-page cross-reference table and trailer (Part 3)"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="389" data-iso="approved">F.3.7, "First-page section (Part 6)"</ins>. Default value: <i>0</i>.
       </p>
     </td>
   </tr>
@@ -89,7 +89,7 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
 
 <p class="location">Add a new informative NOTE 2 below the paragraph below the existing NOTE as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
 NOTE 2: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in hint stream dictionaries.
 </ins></p> 
 </div>

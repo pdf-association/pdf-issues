@@ -185,7 +185,7 @@ modified: 19 July 2024
 
 <p class="location">Delete the single sentence paragraph immediately below Table 286 as follows:</p>
 
-<p><del onMouseEnter="mouseEnter(this)" data-issue="414">An unrecognised value shall be treated as <i>(TEMPNEVER)</i>.</del></p>
+<p><del onMouseEnter="mouseEnter(this)" data-issue="414" data-iso="approved">An unrecognised value shall be treated as <i>(TEMPNEVER)</i>.</del></p>
 
 <p>...</p>
 
@@ -198,13 +198,13 @@ modified: 19 July 2024
 
 <p class="location">Move the last paragraph to below the heading "13.2.7.2.2 Algorithm: Media Player" as follows:</p>
 
-<p><del onMouseEnter="mouseEnter(this)" data-issue="449">
+<p><del onMouseEnter="mouseEnter(this)" data-issue="449" data-iso="approved">
 Since both media clip data and media play parameters dictionaries may be employed in a play operation, and each may reference a media players dictionary, there is a potential for conflict between the contents of the two media players dictionaries.
 </del></p>
 
 <h5 id="H13.2.7.2.2">13.2.7.2.2 Algorithm: Media Player</h5>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="449">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="449" data-iso="approved">
 Since both media clip data and media play parameters dictionaries may be employed in a play operation, and each may reference a media players dictionary, there is a potential for conflict between the contents of the two media players dictionaries.
 </ins></p>
 
@@ -251,13 +251,13 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
     <td>name tree</td>
     <td>
     <p>
-      (<i>Optional<ins onMouseEnter="mouseEnter(this)" data-issue="362">; Deprecated in PDF 2.0</ins></i>) A name tree that maps name strings to objects that may be used by applications or scripts to modify the default view of the 3D artwork.
+      (<i>Optional<ins onMouseEnter="mouseEnter(this)" data-issue="362" data-iso="approved">; Deprecated in PDF 2.0</ins></i>) A name tree that maps name strings to objects that may be used by applications or scripts to modify the default view of the 3D artwork.
     </p>
     <p>
       The names in this name tree shall be text strings so as to be encoded in a way that will be accessible from ECMAScript.
     </p>
     <p class="hangingindent">
-    <ins onMouseEnter="mouseEnter(this)" data-issue="362">NOTE <b>Resources</b> was deprecated in PDF 2.0 because it was insufficiently specified to ensure interoperable implementations.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="362" data-iso="approved">NOTE <b>Resources</b> was deprecated in PDF 2.0 because it was insufficiently specified to ensure interoperable implementations.</ins>
     </p>
     </td>
   </tr>

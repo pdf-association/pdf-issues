@@ -137,8 +137,8 @@ When a halftone dictionary of some other Type appears as the value of an entry i
 
 <p>
 The <i>flatness tolerance</i> controls the maximum permitted distance in device pixels between the mathematically correct path and an approximation constructed from straight line segments, as shown in "Figure 69 — Flatness tolerance". Flatness may be specified as the operand of the <b>i</b> operator (see "Table 56 — Graphics state operators") or as the value of the <b>FL</b> entry in a graphics state parameter dictionary (see "Table 57 — Entries in a graphics state parameter dictionary"). 
-<del onMouseEnter="mouseEnter(this)" data-issue="371">It shall be a positive number.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="371">It shall be a number in the range 0 to 100 inclusive, where a value of 0 shall specify the output device’s default flatness tolerance. The value indicates the maximum error tolerance measured in output device pixels.</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved">It shall be a positive number.</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved">It shall be a number in the range 0 to 100 inclusive, where a value of 0 shall specify the output device’s default flatness tolerance. The value indicates the maximum error tolerance measured in output device pixels.</ins>
 </p>
 
 </div>

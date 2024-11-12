@@ -386,8 +386,8 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
      <li>D - Decimal Arabic numerals</li>
      <li>R - Uppercase Roman numerals</li>
      <li>r - Lowercase Roman numerals</li>
-     <li>A - Uppercase letters (A to Z for the first 26 pages, AA to <del onMouseEnter="mouseEnter(this)" data-issue="432">Z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432">A</ins>Z for the next 26, and so on)</li>
-     <li>a - Lowercase letters (a to z for the first 26 pages, aa to <del onMouseEnter="mouseEnter(this)" data-issue="432">z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432">a</ins>z for the next 26, and so on)</li>
+     <li>A - Uppercase letters (A to Z for the first 26 pages, AA to <del onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">Z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">A</ins>Z for the next 26, and so on)</li>
+     <li>a - Lowercase letters (a to z for the first 26 pages, aa to <del onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">a</ins>z for the next 26, and so on)</li>
     </ul>
     <p>There is no default numbering style; if no <b>S</b> entry is present, page labels shall consist solely of a label prefix with no numeric portion.</p>
     <p class="hangingindent">NOTE If the <b>P</b> entry (next) specifies the label prefix Contents, each page is simply labelled Contents with no page number. (If the <b>P</b> entry is also missing or empty, the page label is an empty string.)</p>
@@ -586,7 +586,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 <p class="location">Change the paragraph below the EXAMPLE as follows:</p>
 
 <p>
-where <del onMouseEnter="mouseEnter(this)" data-issue="422">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422"><i>f</i></ins><i>ormXObject2</i> define the check box’s normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
+where <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject2</i> define the check box’s normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
 </p>
 
 
@@ -717,8 +717,8 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <td><b>Vertices</b></td>
     <td>array</td>
     <td>
-      (<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="444"> unless a <b>Path</b> key is present, in which case it shall be ignored</del></i>)
-      <ins onMouseEnter="mouseEnter(this)" data-issue="444">Shall be ignored if <b>Path</b> is present.</ins> 
+      (<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="444" data-iso="approved"> unless a <b>Path</b> key is present, in which case it shall be ignored</del></i>)
+      <ins onMouseEnter="mouseEnter(this)" data-issue="444" data-iso="approved">Shall be ignored if <b>Path</b> is present.</ins> 
       An array of numbers specifying the alternating horizontal and vertical coordinates, respectively, of each vertex, in default user space.
     </td>
   </tr>
@@ -730,8 +730,8 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
         (<i>Optional; PDF 2.0</i>) An array of <i>n</i> arrays, each supplying the operands for a path building operator (<b>m</b>, <b>l</b> or <b>c</b>).
       </p>
       <p>If this key is present the <b>Vertices</b> key shall 
-        <del onMouseEnter="mouseEnter(this)" data-issue="444">not be present</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="444">be ignored</ins>.
+        <del onMouseEnter="mouseEnter(this)" data-issue="444" data-iso="approved">not be present</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="444" data-iso="approved">be ignored</ins>.
       </p>
       <p>...</p>
     </td>
@@ -755,7 +755,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <td>array</td>
     <td>
      (<i>Required</i>) 
-     <ins onMouseEnter="mouseEnter(this)" data-issue="444">Shall be ignored if <b>Path</b> is present.</ins> 
+     <ins onMouseEnter="mouseEnter(this)" data-issue="444" data-iso="approved">Shall be ignored if <b>Path</b> is present.</ins> 
      An array of <i>n</i> arrays, each representing a stroked path. Each array shall be a series of alternating horizontal and vertical coordinates in default user space, specifying points along the path. When drawn, the points shall be connected by straight lines or curves in an implementation-dependent way.
     </td>
   </tr>
@@ -995,8 +995,8 @@ document’s <b>DR</b> dictionary (see "Table 224 — Entries in the interactive
 (If the <b>DR</b> and <b>Resources</b> dictionaries contain resources with the same name, the one already in the <b>Resources</b> dictionary shall be left intact,
 not replaced with the corresponding value from the <b>DR</b> dictionary.) The interactive PDF processor shall then replace the existing contents of the
 appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> with the corresponding new contents as shown in 
-<del onMouseEnter="mouseEnter(this)" data-issue="393">Example 1 in 12.7.5.2.3, "Check boxes", 12.7.5, "Field types"</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="393">Example above</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="393" data-iso="approved">Example 1 in 12.7.5.2.3, "Check boxes", 12.7.5, "Field types"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="393" data-iso="approved">Example above</ins> 
 (If the existing appearance stream contains no marked-content with tag <b>Tx</b>, the new contents shall be appended to the end of the original stream.)
 </p>
 
@@ -1116,12 +1116,12 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
     <td>array of ASCII strings</td>
     <td>
       <p>...</p>
-      <del onMouseEnter="mouseEnter(this)" data-issue="410">
+      <del onMouseEnter="mouseEnter(this)" data-issue="410" data-iso="approved">
       <p>1 digitalSignature 4 dataEncipherment 7<br/>cRLSign<br/>
          2 non-Repudiation 5 keyAgreement 8<br/>encipherOnly<br/>
          3 keyEncipherment 6 keyCertSign 9<br/>decipherOnly</p>
       </del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="410">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="410" data-iso="approved">
       <table style="border-collapse: collapse; border: none;">
         <tr>
           <td style="border-collapse: collapse; border: none;">1 digitalSignature</td>
@@ -1264,7 +1264,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
  <li><p>
   A <i>byte range digest</i> shall be computed over a range of bytes in the PDF file, that shall be indicated by the <b>ByteRange</b> entry in the signature dictionary. This range should be the entire PDF file, including the signature dictionary but excluding the signature value itself (the <b>Contents</b> entry). In case of multiple digital signatures this range shall be the sequence of bytes starting from the <code>"%PDF-"</code> comment at the beginning of the PDF document to the end of the <code>"%%EOF"</code> comment, possibly followed by an optional EOL marker, terminating the incremental update that adds the digital signature dictionary to the document. When a byte range digest is present, all values in the signature dictionary shall be direct objects.
  </p>
- <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+ <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
   NOTE 2: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included when a byte range digest is present.
  </ins></p> 
  </li>
@@ -1426,7 +1426,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <p>
 Long term validation (LTV) of signatures 
-<ins onMouseEnter="mouseEnter(this)" data-issue="448">was added in PDF 2.0 and </ins> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="448" data-iso="approved">was added in PDF 2.0 and </ins> 
 is achieved by using two types of dictionaries:
 </p>
 
@@ -1453,7 +1453,7 @@ is achieved by using two types of dictionaries:
 
 <p>
 A document timestamp dictionary 
-<ins onMouseEnter="mouseEnter(this)" data-issue="448">was added in PDF 2.0 and </ins> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="448" data-iso="approved">was added in PDF 2.0 and </ins> 
 establishes the exact contents of the complete PDF file at the time indicated in the timestamp token.
 </p>
 
@@ -1501,7 +1501,7 @@ establishes the exact contents of the complete PDF file at the time indicated in
     <td>array</td>
     <td>
     <p>(<i>Optional; PDF 2.0</i>) A 12-element transformation matrix of 
-    <del onMouseEnter="mouseEnter(this)" data-issue="358">real</del> 
+    <del onMouseEnter="mouseEnter(this)" data-issue="358" data-iso="approved">real</del> 
     numbers, defining the transformation from XObject position coordinates to projected coordinate system. 
     If <b>GCS</b> is a geographic coordinate system dictionary then <b>PCSM</b> should be ignored and <b>GTPS</b> used instead.
     If <b>PCSM</b> is present, it has priority over <b>GPTS</b>, and <b>GPTS</b> values may be ignored. This priority provides backward compatibility.

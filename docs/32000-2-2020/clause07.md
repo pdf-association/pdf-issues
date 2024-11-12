@@ -255,18 +255,18 @@ However, a</del>
     <td>123</td>
     <td>7B</td>
     <td>173</td>
-    <td>LEFT CURLY BRACKET <ins onMouseEnter="mouseEnter(this)" data-issue="365"><sup>a</sup></ins></td>
+    <td>LEFT CURLY BRACKET <ins onMouseEnter="mouseEnter(this)" data-issue="365" data-iso="approved"><sup>a</sup></ins></td>
   </tr>
   <tr>
     <td>}</td>
     <td>125</td>
     <td>7D</td>
     <td>175</td>
-    <td>RIGHT CURLY BRACKET <ins onMouseEnter="mouseEnter(this)" data-issue="365"><sup>a</sup></ins></td>
+    <td>RIGHT CURLY BRACKET <ins onMouseEnter="mouseEnter(this)" data-issue="365" data-iso="approved"><sup>a</sup></ins></td>
   </tr>
 </table>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="365">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="365" data-iso="approved">
 (a) The delimiter characters { and } (LEFT CURLY BRACKET (7Bh) and RIGHT CURLY BRACKET (7Dh)) are additional delimiter characters only within Type 4 PostScript calculator functions (see 7.10.5 "Type 4 (PostScript calculator) functions").
 </ins></p>
 
@@ -327,7 +327,7 @@ However, a</del>
 
 <p>Multiple entries in the same dictionary shall not have the same key.</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="438">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="438" data-iso="approved">
 NOTE 2 Due to 2-digit hexadecimal code escaping in PDF names, there are different ways to write the same key (see 7.3.5, "Name objects").
 </ins></p>
 
@@ -376,9 +376,9 @@ Any object in a PDF file may be labelled as an indirect object. This gives the o
 </p>
 
 <ul>
-  <li><del onMouseEnter="mouseEnter(this)" data-issue="379">A positive integer object number</del><ins  onMouseEnter="mouseEnter(this)" data-issue="379">A <i>PDF object number</i> is a positive (non-zero) decimal integer comprised only of digits. It shall not have a leading PLUS SIGN ("<code>+</code>", 2Bh) and shall not start with leading zeros ("<code>0</code>")</ins>. Indirect objects may be numbered sequentially within a PDF file, but this is not required; object numbers may be assigned in any arbitrary order.
+  <li><del onMouseEnter="mouseEnter(this)" data-issue="379" data-iso="approved">A positive integer object number</del><ins  onMouseEnter="mouseEnter(this)" data-issue="379" data-iso="approved">A <i>PDF object number</i> is a positive (non-zero) decimal integer comprised only of digits. It shall not have a leading PLUS SIGN ("<code>+</code>", 2Bh) and shall not start with leading zeros ("<code>0</code>")</ins>. Indirect objects may be numbered sequentially within a PDF file, but this is not required; object numbers may be assigned in any arbitrary order.
     <figure>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="379">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="379" data-iso="approved">
         <img src="PDF-ObjectNumber-EBNF.svg" alt="EBNF railroad diagram for a PDF object number" style="display: block;  margin-left: auto; margin-right: auto; width: 70%;">
         <a href="PDF-ObjectNumber.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
         <figcaption>Figure 1c - EBNF diagram for a PDF object number</figcaption>
@@ -386,9 +386,9 @@ Any object in a PDF file may be labelled as an indirect object. This gives the o
     </figure>
   </li>
 
-  <li><del onMouseEnter="mouseEnter(this)" data-issue="379">A non-negative integer generation number</del><ins onMouseEnter="mouseEnter(this)" data-issue="379">A <i>PDF generation number</i> is a non-negative decimal integer: its syntax requirements are identical to those of a PDF object number (above), except that the single digit "<code>0</code>" shall also be permitted</ins>. In a newly created file, all indirect objects shall have generation numbers of 0. Non-zero generation numbers may be introduced when the file is later updated; see 7.5.4, "Cross-reference table" and 7.5.6, "Incremental updates".
+  <li><del onMouseEnter="mouseEnter(this)" data-issue="379" data-iso="approved">A non-negative integer generation number</del><ins onMouseEnter="mouseEnter(this)" data-issue="379" data-iso="approved">A <i>PDF generation number</i> is a non-negative decimal integer: its syntax requirements are identical to those of a PDF object number (above), except that the single digit "<code>0</code>" shall also be permitted</ins>. In a newly created file, all indirect objects shall have generation numbers of 0. Non-zero generation numbers may be introduced when the file is later updated; see 7.5.4, "Cross-reference table" and 7.5.6, "Incremental updates".
     <figure>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="379">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="379" data-iso="approved">
         <img src="PDF-GenerationNumber-EBNF.svg" alt="EBNF railroad diagram for a PDF generation number" style="display: block;  margin-left: auto; margin-right: auto; width: 70%;">
         <a href="PDF-GenerationNumber.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
         <figcaption>Figure 1d - EBNF diagram for a PDF generation number</figcaption>
@@ -479,7 +479,7 @@ Any other characters, and any character sequences that represent impossible comb
      <p>(<i>May be used only if <b>Predictor</b> is greater than 1</i>) The number of bits used to represent each colour component in a sample. 
      Valid values are <i>1</i>, <i>2</i>, <i>4</i>, <i>8</i>, and (<i>PDF 1.5</i>) <i>16</i>. Default value: <i>8</i>.
      </p>
-     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="366">
+     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="366" data-iso="approved">
        NOTE there is no relationship between this parameter and the similarly named key in image dictionaries.
      </ins></p>
     </td>
@@ -632,8 +632,8 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
 
 <p class="hangingindent">
 NOTE 1 The main advantage to updating a PDF file in this way is that small changes to a large document can be saved quickly 
-<del onMouseEnter="mouseEnter(this)" data-issue="341">. There are additional advantages such as when editing a document across an HTTP connection or using OLE embedding (a Microsoft WindowsTM specific technology)</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="341">, or when</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="341" data-iso="approved">. There are additional advantages such as when editing a document across an HTTP connection or using OLE embedding (a Microsoft WindowsTM specific technology)</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="341" data-iso="approved">, or when</ins>
 a PDF processor cannot overwrite the contents of the original PDF file. 
 Incremental updates are used to save changes to documents in these contexts.
 </p>
@@ -644,14 +644,14 @@ Incremental updates are used to save changes to documents in these contexts.
 
 <p>
 In versions of PDF 1.4 or later a PDF writer may use the <b>Version</b> entry in the document’s catalog dictionary (see 7.7.2, "Document catalog dictionary")
-<del onMouseEnter="mouseEnter(this)" data-issue="399">to override the version specified in the header</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="399">upgrade the current version of the PDF specification to which the document conforms (considering both the document header (see 7.5.2, "File header") and the catalog dictionary <b>Version</b> key value, if already present). The catalog of an incremental update shall not reduce the version of the document with the value, or absence, of the <b>Version</b> entry</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">to override the version specified in the header</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">upgrade the current version of the PDF specification to which the document conforms (considering both the document header (see 7.5.2, "File header") and the catalog dictionary <b>Version</b> key value, if already present). The catalog of an incremental update shall not reduce the version of the document with the value, or absence, of the <b>Version</b> entry</ins>
 . 
 A PDF writer may also need to update the Extensions dictionary, see 7.12, "Extensions dictionary", if the update either deleted or added developer-defined extensions.
 </p>
 
 <p class="hangingindent">
-NOTE 4 The <b>Version</b> entry enables the version to be <del onMouseEnter="mouseEnter(this)" data-issue="399">altered</del><ins onMouseEnter="mouseEnter(this)" data-issue="399">upgraded</ins> when performing an incremental update.
+NOTE 4 The <b>Version</b> entry enables the version to be <del onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">altered</del><ins onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">upgraded</ins> when performing an incremental update.
 </p>
 
 <p>...</p>
@@ -705,7 +705,7 @@ dictionaries, all key values shall be direct objects as well. The <b>F</b> entry
 
 <p class="location">Append new informative NOTE below the first bullet as follows:</p>
 
-<p class="hangindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+<p class="hangindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
 NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") are thus not allowed in cross-reference stream dictionaries.
 </ins></p>
 
@@ -983,7 +983,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
          /CF                                   %List of crypt filters
           &lt;&lt;/MyFilter0
                &lt;&lt;/Type /CryptFilter
-                 /CFM <ins onMouseEnter="mouseEnter(this)" data-issue="424">/</ins>V2&gt;&gt;                    %Uses the standard algorithm
+                 /CFM <ins onMouseEnter="mouseEnter(this)" data-issue="424" data-iso="approved">/</ins>V2&gt;&gt;                    %Uses the standard algorithm
                &gt;&gt;
                ...
 ...
@@ -1073,7 +1073,7 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     <td><b>StructTreeRoot</b></td>
     <td>dictionary</td>
     <td>
-    (<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="348">; shall be an indirect reference</ins></i>) ...
+    (<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="348" data-iso="approved">; shall be an indirect reference</ins></i>) ...
     </td>
   </tr>
 </table>
@@ -1676,7 +1676,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
 
 <p class="hangingindent">
 NOTE 1 Although any function can be sampled (in a Type 
-<del onMouseEnter="mouseEnter(this)" data-issue="446">4</del><ins onMouseEnter="mouseEnter(this)" data-issue="446">0</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="446" data-iso="approved">4</del><ins onMouseEnter="mouseEnter(this)" data-issue="446" data-iso="approved">0</ins> 
 PDF function) and others can be described with exponential functions (Type 2 in PDF), Type 4 functions offer greater flexibility and potentially greater accuracy. For example, a tint transformation function for a hexachrome (six-component) <b>DeviceN</b> colour space with an alternative colour space of <b>DeviceCMYK</b> (see 8.6.6.5, "DeviceN colour spaces") requires a 6-in, 4-out function. If such a function were sampled with m values for each input variable, the number of samples, 4 × <i>m</i><sup>6</sup>, could be prohibitively large. In practice, such functions can often be written as short, simple PostScript language functions.
 </p>
 
@@ -1729,7 +1729,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
     <td><b>AFRelationship</b></td>
     <td>name</td>
     <td>
-      (<i>Optional; PDF 2.0</i>) A name value that represents the relationship between the component of this PDF document that refers to this file specification <ins onMouseEnter="mouseEnter(this)" data-issue="391">(via an <b>AF</b> or <b>MCAF</b> array)</ins> and the associated file denoted by this file specification dictionary. See 14.13, "Associated files" for more details. These values represent the following relationships:
+      (<i>Optional; PDF 2.0</i>) A name value that represents the relationship between the component of this PDF document that refers to this file specification <ins onMouseEnter="mouseEnter(this)" data-issue="391" data-iso="approved">(via an <b>AF</b> or <b>MCAF</b> array)</ins> and the associated file denoted by this file specification dictionary. See 14.13, "Associated files" for more details. These values represent the following relationships:
       <p class="hangingindent">...</p>
     </td>
   </tr>
@@ -1773,7 +1773,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
   </tr>
   <tr>
     <td><b>CheckSum</b></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="382">byte</ins> string</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="382" data-iso="approved">byte</ins> string</td>
     <td>
     <p>
     (<i>Optional</i>) 16-byte string that is the checksum of the bytes of the uncompressed embedded file. The checksum shall be calculated by 
@@ -1818,7 +1818,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
 
 <p class="location">Add new informative NOTE below the first paragraph as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
 NOTE: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in extensions dictionaries.
 </ins></p>
 
@@ -1860,9 +1860,9 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
 <p>
 The value of the <b>BaseVersion</b> entry shall be a name and shall be consistent with the syntax used for the <b>Version</b> entry value of the catalog dictionary (see 7.7.2, "Document catalog dictionary"). 
 The value of <b>BaseVersion</b>, when treated as a version number, shall be less than or equal to the 
-<del onMouseEnter="mouseEnter(this)" data-issue="399">PDF version, both in the document header (see 7.5.2, "File header")</del>
-<ins  onMouseEnter="mouseEnter(this)" data-issue="399">version of the PDF specification to which this document conforms (see "Table 29 - Entries in the catalog dictionary", considering both the document header (see 7.5.2, "File header")</ins>
-and the catalog dictionary <b>Version</b> key value, if present<ins onMouseEnter="mouseEnter(this)" data-issue="399">)</ins>. 
+<del onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">PDF version, both in the document header (see 7.5.2, "File header")</del>
+<ins  onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">version of the PDF specification to which this document conforms (see "Table 29 - Entries in the catalog dictionary", considering both the document header (see 7.5.2, "File header")</ins>
+and the catalog dictionary <b>Version</b> key value, if present<ins onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">)</ins>. 
 The value of <b>BaseVersion</b> may be different from the version number in the document header or that supplied by the <b>Version</b> key in the catalog dictionary. This is because it reflects the version of the standard that has been extended and not the version of this particular file.
 </p>
 

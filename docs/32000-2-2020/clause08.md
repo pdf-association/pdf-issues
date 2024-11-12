@@ -161,7 +161,7 @@ modified: 19 July 2024
     <td><b>flatness</b></td>
     <td>number</td>
     <td>
-    The precision with which curves shall be rendered on the output device (see 10.7.2, "Flatness tolerance"). The value of this parameter <del onMouseEnter="mouseEnter(this)" data-issue="371">(positive number)</del> gives the maximum error tolerance, measured in output device pixels; smaller numbers give smoother curves at the expense of more computation and memory use. Initial value: <i>1.0</i>.
+    The precision with which curves shall be rendered on the output device (see 10.7.2, "Flatness tolerance"). The value of this parameter <del onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved">(positive number)</del> gives the maximum error tolerance, measured in output device pixels; smaller numbers give smoother curves at the expense of more computation and memory use. Initial value: <i>1.0</i>.
     </td>
   </tr>
   <tr>
@@ -182,7 +182,7 @@ modified: 19 July 2024
 
 <p>
 Occurrences of the <b>q</b> and <b>Q</b> operators shall be balanced within a given content stream (or within the sequence of streams specified in a page dictionary’s <b>Contents</b> array).
-<ins onMouseEnter="mouseEnter(this)" data-issue="368">See 9.4.1, "General" for additional information that must be managed as part of the graphics state stack when <b>q</b> and <b>Q</b> operators occur within text objects.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="368" data-iso="approved">See 9.4.1, "General" for additional information that must be managed as part of the graphics state stack when <b>q</b> and <b>Q</b> operators occur within text objects.</ins>
 </p>
 
 
@@ -219,7 +219,7 @@ a miter to a bevel.
     <td><i>flatness</i></td>
     <td><b>i</b></td>
     <td>
-      Set the flatness tolerance in the graphics state (see 10.7.2, "Flatness tolerance"). <del onMouseEnter="mouseEnter(this)" data-issue="371"><i>flatness</i> is a number in the range 0 to 100; a value of 0 shall specify the output device’s default flatness tolerance.</del>
+      Set the flatness tolerance in the graphics state (see 10.7.2, "Flatness tolerance"). <del onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved"><i>flatness</i> is a number in the range 0 to 100; a value of 0 shall specify the output device’s default flatness tolerance.</del>
     </td>
   </tr>
 </table>
@@ -241,7 +241,7 @@ a miter to a bevel.
     <td>name</td>
     <td>
       <p>...</p>
-      <p><del onMouseEnter="mouseEnter(this)" data-issue="360">The default value is: <i>Default</i>.</del></p>
+      <p><del onMouseEnter="mouseEnter(this)" data-issue="360" data-iso="approved">The default value is: <i>Default</i>.</del></p>
     </td>
   </tr>
 </table>
@@ -255,7 +255,7 @@ a miter to a bevel.
 
 <p class="location">Add a new NOTE above Table 59 as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="434">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="434" data-iso="approved">
 NOTE: While these operators are primarily for path-painting, they also serve a purpose in path construction as they may affect the current graphics path (see 8.5.2, "Path-construction operators").
 </ins></p>
 
@@ -378,7 +378,7 @@ indicates that the corresponding colour component shall never be painted on the 
 
 <p>
 The pattern cell can include graphical elements such as filled areas, text, and sampled images. Its shape need not be rectangular, and the spacing of tiles can differ from the dimensions of the cell itself. When performing painting operations such as <b>S</b> (stroke) or <b>f</b> (fill), the PDF processor shall paint the cell on the current page as many times as necessary to fill an area. The order in which individual tiles (instances of the cell) are painted is unspecified and unpredictable
-<ins onMouseEnter="mouseEnter(this)" data-issue="428">(implementation dependent)</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="428" data-iso="approved">(implementation dependent)</ins>
 ; figures on adjacent tiles should not overlap.
 </p>
 
@@ -431,9 +431,9 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       If the image stream uses a filter, the value of <b>BitsPerComponent</b> shall be consistent with the size of the data samples that the filter
       delivers. In particular, a <b>CCITTFaxDecode</b> or <b>JBIG2Decode</b> filter shall always deliver 1-bit samples, a <b>RunLengthDecode</b> or
       <b>DCTDecode</b> filter shall always deliver 8-bit samples, and an <b>LZWDecode</b> or <b>FlateDecode</b> filter shall deliver samples of
-      <del onMouseEnter="mouseEnter(this)" data-issue="366">a</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="366">the</ins> 
-      specified size <del onMouseEnter="mouseEnter(this)" data-issue="366">if a predictor function is used</del>.
+      <del onMouseEnter="mouseEnter(this)" data-issue="366" data-iso="approved">a</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="366" data-iso="approved">the</ins> 
+      specified size <del onMouseEnter="mouseEnter(this)" data-issue="366" data-iso="approved">if a predictor function is used</del>.
     </p>
     <p>
       If the image stream uses the <b>JPXDecode</b> filter, this entry is optional and shall be ignored if present. The bit depth is determined by 

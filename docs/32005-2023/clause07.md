@@ -27,8 +27,8 @@ modified: 11 July 2024
 <p class="editornote">EDITOR NOTE: the corrected hierarchical inclusion rules in Table 5 are also <a href="https://pdfa.org/resource/iso-ts-32005-hierarchical-inclusion-rules/" target="_blank">available as a spreadsheet</a> that was not included in the ISO/TS 32005:2023 publication.
 </p>
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/440">Errata #440</a> modify Table Table 5 such that where Structure Type is <b>WP</b> and Child is <b>Figure</b> and where Structure Type is <b>Figure</b> and Parent is <b>WP</b> the undefined cell value <del onMouseEnter="mouseEnter(this)" data-issue="440">"c"</del> 
-is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440">"0..<i>n</i>"</ins> relationship. 
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/440">Errata #440</a> modify Table Table 5 such that where Structure Type is <b>WP</b> and Child is <b>Figure</b> and where Structure Type is <b>Figure</b> and Parent is <b>WP</b> the undefined cell value <del onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"c"</del> 
+is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"0..<i>n</i>"</ins> relationship. 
 The embedded spreadsheet data is also corrected.
 </p>
 
@@ -191,8 +191,8 @@ The embedded spreadsheet data is also corrected.
         <tr><td>0..n</td><td>Annot</td></tr>
         <tr><td>0..n</td><td>Form</td></tr>
         <tr>
-          <td><del onMouseEnter="mouseEnter(this)" data-issue="440">c</del>
-              <ins onMouseEnter="mouseEnter(this)" data-issue="440">0..n</ins></td>
+          <td><del onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">c</del>
+              <ins onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">0..n</ins></td>
           <td>Figure</td>
         </tr>
         <tr><td>0..n</td><td>Artifact</td></tr>
@@ -225,8 +225,8 @@ The embedded spreadsheet data is also corrected.
       <table cellspacing="0" cellpadding="0" style="border-style: hidden;">
         <tr><td>...</td><td>...</td></tr>
         <tr>
-          <td><del onMouseEnter="mouseEnter(this)" data-issue="440">c</del>
-              <ins onMouseEnter="mouseEnter(this)" data-issue="440">0..n</ins></td>
+          <td><del onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">c</del>
+              <ins onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">0..n</ins></td>
           <td>Figure</td>
         </tr>
         <tr><td>...</td><td>...</td></tr>

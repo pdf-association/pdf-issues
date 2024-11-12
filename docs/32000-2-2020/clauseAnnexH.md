@@ -34,15 +34,15 @@ modified: 26 May 2024
 
 <p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect PDF content stream operator <del onMouseEnter="mouseEnter(this)" data-issue="415"><code>/BDC</code></del> need to replaced by <ins onMouseEnter="mouseEnter(this)" data-issue="415"><code>BDC</code></ins> (PDF content operators do not have leading SLASH) throughout Annex H.</p>
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect PDF content stream operator <del onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved"><code>/BDC</code></del> need to replaced by <ins onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved"><code>BDC</code></ins> (PDF content operators do not have leading SLASH) throughout Annex H.</p>
 
 <h2 id="HH.2">H.2 Minimal PDF file</h2>
 
 <p class="location">Change the example as follows:</p>
 
 <code>...
-            &lt;xmpMM:DocumentID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402"><i>unique GUID of document</i></del> …&lt;/xmpMM:DocumentID&gt;
-            &lt;xmpMM:InstanceID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402"><i>GUID changed for each save</i></del> …&lt;/xmpMM:InstanceID&gt;
+            &lt;xmpMM:DocumentID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved"><i>unique GUID of document</i></del> …&lt;/xmpMM:DocumentID&gt;
+            &lt;xmpMM:InstanceID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved"><i>GUID changed for each save</i></del> …&lt;/xmpMM:InstanceID&gt;
 ...
 
 </code>
@@ -54,13 +54,13 @@ modified: 26 May 2024
 <p class="location">Change the example as follows:</p>
 
 <code>...
-6 0 obj                                         %Metadata stream<del onMouseEnter="mouseEnter(this)" data-issue="402">s</del>
+6 0 obj                                         %Metadata stream<del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved">s</del>
       &lt;&lt;/Type /Metadata
           /Subtype /XML
           /Length … <i>number of bytes in updated metadata</i> …
       &gt;&gt;
 stream
-<del onMouseEnter="mouseEnter(this)" data-issue="402">%In this Metadata, "preserved" items are left unaltered, and not updated to reflect possibly
+<del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved">%In this Metadata, "preserved" items are left unaltered, and not updated to reflect possibly
 %different software or a different author. Updating software needs to be able to parse the XMP
 %in any valid format and preserve all content which is not to be updated, even that with
 %unfamiliar tags. In this example some reordering of tags has taken place. Note further that
@@ -94,7 +94,7 @@ stream
 … <i>white-space padding to permit in-place updating of metadata</i> …
 … <i>Note that applications which fully understand PDF updating do not usually update in-place</i> …
 &lt;?xpacket end="w"?&gt;</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="402">...</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved">...</ins>
 endstream
 endobj
 ...
@@ -124,19 +124,19 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 <p class="location">Correct Figure H.5 as follows (page numbers are all vertically aligned):</p>
 
 <p style="margin-left: 50px">TABLE OF CONTENTS</p>
-<p style="margin-left: 80px">1. Chapter One<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>3</p>
-<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;1.<del onMouseEnter="mouseEnter(this)" data-issue="419">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">1</ins> Section A<ins>.............</ins>4</p>
-<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;1.<del onMouseEnter="mouseEnter(this)" data-issue="419">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">2</ins> Section B<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>5</p>
-<p style="margin-left: 80px">2. Chapter Two<ins onMouseEnter="mouseEnter(this)" data-issue="419">.............</ins>6</p>
-<p style="margin-left: 80px">3. Chapter <del onMouseEnter="mouseEnter(this)" data-issue="419">Two</del><ins onMouseEnter="mouseEnter(this)" data-issue="419">Three.........</ins>7</p> 
-<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;3.1 Section A<ins onMouseEnter="mouseEnter(this)" data-issue="419">............</ins>8</p>
+<p style="margin-left: 80px">1. Chapter One<ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">.............</ins>3</p>
+<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;1.<del onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">2</del><ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">1</ins> Section A<ins>.............</ins>4</p>
+<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;1.<del onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">2</ins> Section B<ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">.............</ins>5</p>
+<p style="margin-left: 80px">2. Chapter Two<ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">.............</ins>6</p>
+<p style="margin-left: 80px">3. Chapter <del onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">Two</del><ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">Three.........</ins>7</p> 
+<p style="margin-left: 80px">&nbsp;&nbsp;&nbsp;&nbsp;3.1 Section A<ins onMouseEnter="mouseEnter(this)" data-issue="419" data-iso="approved">............</ins>8</p>
 
 <p>...</p>
 
 <p class="location">Replace Figure H.6 with the following corrected version:</p>
 
 <figure>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="415">
+  <ins onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved">
     <img src="Figure H.6.svg" alt="Corrected Figure H.6 — Association between content and marked-content identifiers">
   </ins>
   <figcaption>Figure H.6 — Association between content and marked-content identifiers</figcaption>
@@ -147,7 +147,7 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 <p class="location">Replace Figure H.7 with the following corrected version:</p>
 
 <figure>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="418">
+  <ins onMouseEnter="mouseEnter(this)" data-issue="418" data-iso="approved">
     <img src="Figure H.7.svg" alt="Corrected Figure H.7 — Hierarchy of structure elements and relationship with marked-content">
   </ins>
   <figcaption>Figure H.7 — Hierarchy of structure elements and relationship with marked-content</figcaption>
@@ -160,9 +160,9 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 <code>...
 400 0 obj
     &lt;&lt;/Type /StructElem
-       /S <ins onMouseEnter="mouseEnter(this)" data-issue="425">/</ins>TOC
+       /S <ins onMouseEnter="mouseEnter(this)" data-issue="425" data-iso="approved">/</ins>TOC
        /K [201 0 R 211 0 R 301 0 R 214 0 R 215 0 R 302 0 R]
-       <ins onMouseEnter="mouseEnter(this)" data-issue="425">/P 400 0 R</ins>
+       <ins onMouseEnter="mouseEnter(this)" data-issue="425" data-iso="approved">/P 400 0 R</ins>
     &gt;&gt;
 endobj
 
@@ -181,7 +181,7 @@ The structure element’s structure type entry (<b>S</b>) may have values that e
 <p class="location">Replace Figure H.9 with the following corrected version:</p>
 
 <figure>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="418">
+  <ins onMouseEnter="mouseEnter(this)" data-issue="418" data-iso="approved">
     <img src="Figure H.9.svg" alt="Corrected Figure H.9 — Hierarchy of structure elements and relationship with marked-content">
   </ins>
   <figcaption>Figure H.9 — Hierarchy of structure elements and relationship with marked-content</figcaption>

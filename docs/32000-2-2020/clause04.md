@@ -54,7 +54,7 @@ digit hexadecimal character code value with the prefix "U+" as shown in the exam
 
 <p class="location">Append the following paragraph to the end of this subclause as follows:</p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="397">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="397" data-iso="approved">
 In this document and by convention, XMP examples always use the preferred prefixes for XMP standard and specialised namespaces as specified in ISO 16684-1 and at <a href="https://developer.adobe.com/xmp/docs/XMPNamespaces">https://developer.adobe.com/xmp/docs/XMPNamespaces</a>.
 </ins></p>
 
