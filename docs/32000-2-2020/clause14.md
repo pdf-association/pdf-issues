@@ -719,7 +719,7 @@ by specific standard owners; see 14.8.5, "Standard structure attributes". In add
     <ins onMouseEnter="mouseEnter(this)" data-issue="354">owner of</ins> 
     the attribute data. The value shall either be 
     <del onMouseEnter="mouseEnter(this)" data-issue="354">a</del> <i>NSO</i>, <i>UserProperties</i> (see "Table 361 — Additional entries in an attribute object dictionary for user properties"), 
-    one of the values from <del onMouseEnter="mouseEnter(this)" data-issue="226">14.8.5, "Standard structure attributes"</del><ins onMouseEnter="mouseEnter(this)" data-issue="226">"Table 376 — Standard structure attribute owners"</ins>
+    one of the values from <del onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">14.8.5, "Standard structure attributes"</del><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">"Table 376 — Standard structure attribute owners"</ins>
     , or conform to the guidelines described in Annex E, "Extending PDF".
     <p>If the value for the <b>O</b> entry is <i>NSO</i> then the <b>NS</b> entry shall be present, and shall identify the owner of the attribute object.</p>
     </td>
@@ -733,7 +733,7 @@ by specific standard owners; see 14.8.5, "Standard structure attributes". In add
 <p>
 When an array of attribute objects is provided, the value of the <b>O</b> and <b>NS</b> keys may be repeated across attribute objects. 
 If a given attribute 
-<ins onMouseEnter="mouseEnter(this)" data-issue="226">for a specific owner (as defined by the <b>O</b> and <b>NS</b> entries)</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">for a specific owner (as defined by the <b>O</b> and <b>NS</b> entries)</ins>
 is specified more than once, the later (in array order) entry shall take precedence.
 </p>
 
@@ -1009,7 +1009,7 @@ endobj
 <p class="location">Update all text below Table 371 as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="200">
+<del onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">
 If the <b>Headers</b> attribute (see 14.8.5, "Standard structure attributes") is not specified, any cell in a table may have multiple headers associated with it. These headers are defined either explicitly by the <b>Headers</b> attribute, or implicitly, by the following algorithm:
 </del>
 <ins>
@@ -1018,31 +1018,31 @@ When a cell does not explicitly identify its headers through a <b>Headers</b> at
 </p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="200">To find headers for any</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="200">Given a</ins> data or header cell, 
+<del onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">To find headers for any</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">Given a</ins> data or header cell, 
 begin from the current cell position and use the current value of <b>WritingMode</b> to search towards the first cell in the appropriate horizontal 
-<del onMouseEnter="mouseEnter(this)" data-issue="200">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200">and</ins> vertical directions.
+<del onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">and</ins> vertical directions.
 The search terminates when any of these conditions is reached:
 </p>
 
 <ul>
   <li>the edge of the table is reached</li>
   <li>a data cell is found after a header cell</li>
-  <li>a header cell is found that has the <b>Headers</b> attribute set — the headers that are specified are appended to the row <del onMouseEnter="mouseEnter(this)" data-issue="200">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200">or</ins> column list that is current being built</li>
+  <li>a header cell is found that has the <b>Headers</b> attribute set — the headers that are specified are appended to the row <del onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">/</del><ins onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">or</ins> column list that is current being built</li>
 </ul>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="200">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">
 However, cells with a value for <b>Scope</b> that conflicts with the search's direction should not terminate this section of the search and such a cell (irrespective of its Headers attribute) should not be added to the headers list being created.
 </ins></p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="200">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">
 EXAMPLE: If searching up a given column reveals a cell with a <b>Scope</b> value of <i>Row</i> this cell should not cause this column search to terminate.
 </ins></p>
 
 <p>
 When a header cell is found in the search and the (implicit or explicit) <b>Scope</b> attribute of the header cell 
-<del onMouseEnter="mouseEnter(this)" data-issue="200">is either <i>Both</i> or <i>Row</i>/<i>Column</i>, the header cell is appended to the end of the list of row/column headers</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="200">matches the current search direction (i.e., is either <i>Both</i>, or is <i>Row</i> or <i>Column</i> when searching for row or column headers, respectively), then the header cell is appended to the end of the list of row or column headers</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">is either <i>Both</i> or <i>Row</i>/<i>Column</i>, the header cell is appended to the end of the list of row/column headers</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="200" data-iso="approved">matches the current search direction (i.e., is either <i>Both</i>, or is <i>Row</i> or <i>Column</i> when searching for row or column headers, respectively), then the header cell is appended to the end of the list of row or column headers</ins>
 , resulting in a list of headers ordered from most specific to most general.
 </p>
 
@@ -1082,7 +1082,7 @@ NOTE: This algorithm works for languages with different intrinsic directionality
 
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a> throughout all subclauses of 14.8.5, "Layout", "Table", "PrintField" and "Artifact" terms are incorrectly formatted as <del onMouseEnter="mouseEnter(this)" data-issue="226">bold</del> indicating a key name, when they are <b>O</b> (owner) key values and thus should be <ins onMouseEnter="mouseEnter(this)" data-issue="226">italic</ins>.
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a> throughout all subclauses of 14.8.5, "Layout", "Table", "PrintField" and "Artifact" terms are incorrectly formatted as <del onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">bold</del> indicating a key name, when they are <b>O</b> (owner) key values and thus should be <ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">italic</ins>.
 </p>
 
 <h4 id="H14.8.5.1">14.8.5.1 General</h4>
@@ -1133,7 +1133,7 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
 
 <p class="location">Add a new NOTE immediately below Table 376 as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">
 NOTE: other values for the owner (<b>O</b>) entry are defined in "Table 360 — Entries common to all attribute object dictionaries".
 </ins></p>
 
@@ -1164,7 +1164,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 
 <p class="location">Replace Table 377 as follows:</p>
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be <ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>bold</b></ins> (indicating key names). The first column should not have <del onMouseEnter="mouseEnter(this)" data-issue="226">bold</del> typeface unless a key name is used. <ins onMouseEnter="mouseEnter(this)" data-issue="226">A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is defined.</ins>
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/226">Errata #226</a>, only the second column in Table 377 should be <ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">"><b>bold</b></ins> (indicating key names). The first column should not have <del onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">bold</del> typeface unless a key name is used. <ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">A fourth column is also to be added containing cross-references to Tables in ISO 32000-2 where each attribute is defined.</ins>
 </p>
 
 
@@ -1173,146 +1173,146 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
  <thead>
    <tr>
     <th>Structure Elements</th>
-    <th>Attribute<del onMouseEnter="mouseEnter(this)" data-issue="226">s</del> <ins onMouseEnter="mouseEnter(this)" data-issue="226">key name</ins></th>
+    <th>Attribute<del onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">s</del> <ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">key name</ins></th>
     <th>Inheritable</th>
-    <th style="text-align: center"><ins onMouseEnter="mouseEnter(this)" data-issue="226">References</ins></th>
+    <th style="text-align: center"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">References</ins></th>
    </tr>
  </thead>
  <tbody>
   <tr>
     <td rowspan="7">Any structure element</td>
     <td><b>Placement</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
   <tr>
     <td><b>WritingMode</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
   <tr>
     <td><b>BackgroundColor</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
   <tr>
     <td><b>BorderColor</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
   <tr>
     <td><b>BorderStyle</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
   <tr>
     <td><b>Color</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
   <tr>
     <td><b>Padding</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 378</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 378</ins></td>
   </tr>
 
   <tr>
     <td rowspan="4">Any BLSE; ILSEs with <b>Placement</b> other than <i>Inline</i></td>
     <td><b>SpaceBefore</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>SpaceAfter</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>StartIndent</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>EndIndent</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
 
   <tr>
     <td rowspan="2">BLSEs containing text</td>
     <td><b>TextIndent</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>TextAlign</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
 
   <tr>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>Figure</b>, <b>Form</b>, <b>Formula</b>, <b>Artifact</b>, and <b>Table</b> elements</ins> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">"><b>Figure</b>, <b>Form</b>, <b>Formula</b>, <b>Artifact</b>, and <b>Table</b> elements</ins> 
     </td>
     <td style="vertical-align: middle;"><b>BBox</b></td> <td style="vertical-align: middle;">No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Tables 379 and 385</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Tables 379 and 385</ins></td>
   </tr>
 
   <tr>
     <td rowspan="2">
-      <ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>Figure</b>, <b>Form</b>, <b>Formula</b>, <b>Table</b>, <b>TH</b> (Table Header) and <b>TD</b> (Table data)</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">"><b>Figure</b>, <b>Form</b>, <b>Formula</b>, <b>Table</b>, <b>TH</b> (Table Header) and <b>TD</b> (Table data)</ins>
     </td>
     <td><b>Width</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>Height</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
 
   <tr>
-    <td rowspan="4"><ins onMouseEnter="mouseEnter(this)" data-issue="226"><b>TH</b> (Table Header) and <b>TD</b> (Table data)</ins></td>
+    <td rowspan="4"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">"><b>TH</b> (Table Header) and <b>TD</b> (Table data)</ins></td>
     <td><b>BlockAlign</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>InlineAlign</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>TBorderStyle</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
   <tr>
     <td><b>TPadding</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 379</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 379</ins></td>
   </tr>
 
   <tr>
     <td rowspan="6">Any ILSE; BLSEs containing ILSEs or containing direct or nested content items</td>
     <td><b>LineHeight</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
   <tr>
     <td><b>BaselineShift</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
   <tr>
     <td><b>TextDecorationType</b></td> <td>Yes, only for directly nested ILSEs</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
   <tr>
     <td><b>TextPosition</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
   <tr>
     <td><b>TextDecorationColor</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
   <tr>
     <td><b>TextDecorationThickness</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
 
   <tr>
     <td rowspan="3">Grouping elements</td>
     <td><b>ColumnCount</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 381</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 381</ins></td>
   </tr>
   <tr>
     <td><b>ColumnWidth</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 381</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 381</ins></td>
   </tr>
   <tr>
     <td><b>ColumnGap</b></td> <td>No</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 381</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 381</ins></td>
   </tr>
 
   <tr>
@@ -1321,17 +1321,17 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     </td>
     <td style="text-align: center; vertical-align: middle;"><b>GlyphOrientationVertical</b></td>
     <td style="vertical-align: middle;">Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 380</ins></td>
   </tr>
 
   <tr>
     <td rowspan="2"><ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved"><b>RB</b>, <b>RT</b>, <b>RP</b> (</ins>Ruby text<ins onMouseEnter="mouseEnter(this)" data-issue="223" data-iso="approved">)</ins></td>
     <td><b>RubyAlign</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369 and 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 369 and 380</ins></td>
   </tr>
   <tr>
     <td><b>RubyPosition</b></td> <td>Yes</td>
-    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226">Table 369 and 380</ins></td>
+    <td style="text-align: center; vertical-align: middle;"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">Table 369 and 380</ins></td>
   </tr>
  </tbody>
 </table>
@@ -1401,7 +1401,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>BBox</b></td>
     <td>rectangle</td>
     <td>...
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226">
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">
       NOTE 4: Artifact attributes also define a <b>BBox</b> attribute (see "Table 385 — Standard artifact attributes").
       </ins></p>
     </td>
@@ -1481,7 +1481,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td>rectangle</td>
     <td>
     (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347">not inheritable; PDF 2.0</ins></i>) ...
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226">NOTE: BLSE attributes also define a <b>BBox</b> attribute (see "Table 379 — Additional standard layout attributes specific to block-level structure elements").</ins></p>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">">NOTE: BLSE attributes also define a <b>BBox</b> attribute (see "Table 379 — Additional standard layout attributes specific to block-level structure elements").</ins></p>
     </td>
   </tr>
   <tr>

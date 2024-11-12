@@ -408,10 +408,10 @@ Any object in a PDF file may be labelled as an indirect object. This gives the o
 
 <p>
 Stream filters are introduced in 7.3.8, "Stream objects". An option when reading stream data is to decode it using a filter to produce the original non-encoded data. Whether to do so and which decoding filter or filters to use 
-<del onMouseEnter="mouseEnter(this)" data-issue="216">are</del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="216">shall be</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="216" data-iso="approved">are</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="216" data-iso="approved">shall be</ins>
 specified in the stream dictionary.
-<ins onMouseEnter="mouseEnter(this)" data-issue="216">All stream data shall follow the appropriate format(s) as described below.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="216" data-iso="approved">All stream data shall follow the appropriate format(s) as described below.</ins>
 </p>
 
 <p>...</p>
@@ -420,8 +420,8 @@ specified in the stream dictionary.
 
 <p>
 PDF 
-<del onMouseEnter="mouseEnter(this)" data-issue="216">files</del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="216">processors shall</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="216" data-iso="approved">files</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="216" data-iso="approved">processors shall</ins>
 support a standard set of filters that fall into two main categories:
 </p>
 
@@ -520,13 +520,13 @@ This ensures proper behaviour of file transfer applications that inspect data ne
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-The cross-reference table contains information that permits random access to indirect objects within the PDF file so that the entire PDF file need not be read to locate any particular object. The table <del onMouseEnter="mouseEnter(this)" data-issue="149">shall contain</del><ins onMouseEnter="mouseEnter(this)" data-issue="149">comprises</ins> a one-line entry for each indirect object, specifying the byte offset of that object within the body of the PDF file. Beginning with PDF 1.5, some or all of the cross-reference information may alternatively be contained in cross-reference streams; see 7.5.8, "Cross-reference streams".
+The cross-reference table contains information that permits random access to indirect objects within the PDF file so that the entire PDF file need not be read to locate any particular object. The table <del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">shall contain</del><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">comprises</ins> a one-line entry for each indirect object, specifying the byte offset of that object within the body of the PDF file. Beginning with PDF 1.5, some or all of the cross-reference information may alternatively be contained in cross-reference streams; see 7.5.8, "Cross-reference streams".
 </p>
 
 <p class="location">Change NOTE 1 as follows and move NOTE 1 below the second paragraph:</p>
 
 <p class="hangingindent">
-NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="149">The cross-reference table is</del><ins onMouseEnter="mouseEnter(this)" data-issue="149">Cross-reference sections are</ins> the only part of a PDF file with a fixed format, which permits entries in <del onMouseEnter="mouseEnter(this)" data-issue="149">the table</del><ins onMouseEnter="mouseEnter(this)" data-issue="149">sections</ins> to be accessed randomly.
+NOTE 1 <del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">The cross-reference table is</del><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">Cross-reference sections are</ins> the only part of a PDF file with a fixed format, which permits entries in <del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">the table</del><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">sections</ins> to be accessed randomly.
 </p>
 
 
@@ -598,10 +598,10 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
     <td>
       <p>
         (<i>Required; shall not be an indirect reference</i>) 
-        <del onMouseEnter="mouseEnter(this)" data-issue="149">The total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value shall be 1 greater than the highest object number defined in the PDF file.</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="149">This value shall be 1 greater than the highest object number defined in the PDF file.</ins>
+        <del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">The total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value shall be 1 greater than the highest object number defined in the PDF file.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">This value shall be 1 greater than the highest object number defined in the PDF file.</ins>
       </p>
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149">NOTE 1: this is equivalent to the total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE 1: this is equivalent to the total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
       <p>Any object in a cross-reference section whose number is greater than this value shall be ignored and defined to be missing by a PDF reader.</p>
     </td>
   </tr>
@@ -1848,7 +1848,7 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
 <p class="location">Add the following note below Table 49 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="164">NOTE The <b>URL</b> and <b>ExtensionRevision</b> entries are not exempt from encryption so if a developer extension defines a new PDF encryption algorithm and a PDF is configured to encrypt strings with that algorithm, then those values will not be meaningful to processors that do not support that developer extension.
+<ins onMouseEnter="mouseEnter(this)" data-issue="164" data-iso="approved">NOTE The <b>URL</b> and <b>ExtensionRevision</b> entries are not exempt from encryption so if a developer extension defines a new PDF encryption algorithm and a PDF is configured to encrypt strings with that algorithm, then those values will not be meaningful to processors that do not support that developer extension.
 </ins></p>
 
 <p>...</p>
