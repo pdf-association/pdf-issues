@@ -287,7 +287,7 @@ However, a</del>
 <p class="location">Change EXAMPLE 1 as follows:</p>
 
 <p>EXAMPLE 1 Integer objects</p>
-<code class="hangingindent">123   43445   +17   -98   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300">00987</ins></code>
+<code class="hangingindent">123   43445   +17   -98   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300" data-iso="approved">00987</ins></code>
 
 <p>...</p>
 
@@ -341,7 +341,7 @@ NOTE 2 Due to 2-digit hexadecimal code escaping in PDF names, there are differen
 <p class="location">Insert a new NOTE immediately after the first paragraph and before the EXAMPLE as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="319">NOTE: The 'encoded data' of a stream encompasses all enveloping markers of the encoding, e.g. end-of-data markers, if the encoding scheme uses them.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="319" data-iso="approved">NOTE: The 'encoded data' of a stream encompasses all enveloping markers of the encoding, e.g. end-of-data markers, if the encoding scheme uses them.</ins>
 </p>
 
 <p class="location">Change Table 5 as follows:</p>
@@ -436,13 +436,13 @@ support a standard set of filters that fall into two main categories:
 
 <p>
 The ASCII base-85 encoding shall use the ASCII characters ! through u ((21h) - (75h)) and the character z (7Ah), with the 2-character sequence ~> (7Eh)(3Eh) as its EOD marker. The <b>ASCII85Decode</b> filter shall ignore all white-space characters (see 7.2, "Lexical conventions"). 
-<ins onMouseEnter="mouseEnter(this)" data-issue="293">If the <b>ASCII85Decode</b> filter encounters the character ~ in its input, the next character shall be > and the filter will reach EOD. Any other characters shall cause an error.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="293" data-iso="approved">If the <b>ASCII85Decode</b> filter encounters the character ~ in its input, the next character shall be > and the filter will reach EOD. Any other characters shall cause an error.</ins>
 Any other characters, and any character sequences that represent impossible combinations in the ASCII base-85 encoding, shall cause an error.
 </p>
 
 <p class="location">Insert a new NOTE below the second paragraph as follows:</p>
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="293">NOTE: the Adobe PostScript Language Reference Manual (PLRM), Third Edition, clause 3.13.3 defines the above parsing and error requirements for the ASCII base-85 EOD ~> marker.</ins> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="293" data-iso="approved">NOTE: the Adobe PostScript Language Reference Manual (PLRM), Third Edition, clause 3.13.3 defines the above parsing and error requirements for the ASCII base-85 EOD ~> marker.</ins> 
 </p>
 
 
@@ -1143,7 +1143,7 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     <td>
     (<i>Optional; PDF 1.1; recommended if the page contains article beads</i>) An array that shall contain indirect references to all article beads 
     appearing on the page (see 12.4.3, "Articles"). The beads shall be listed in the array in 
-    <del onMouseEnter="mouseEnter(this)" data-issue="320">natural</del> reading order. 
+    <del onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">natural</del> reading order. 
     Objects of <b>Type</b> <i>Template</i> shall have no <b>B</b> key.
     <p>...</p>
     </td>
@@ -1245,7 +1245,7 @@ occur in pairs and may be nested. They bracket a compatibility section, a portio
 ignored without error. This mechanism enables a PDF processor to use operators defined in later versions of PDF without sacrificing compatibility
 with older applications. It should be used only in cases where ignoring such newer operators is the appropriate thing to do. The <b>BX</b> and 
 <b>EX</b> operators are not themselves part of any graphics object (see 8.2, "Graphics objects") or of the graphics state (8.4, "Graphics state").
-<ins onMouseEnter="mouseEnter(this)" data-issue="302">
+<ins onMouseEnter="mouseEnter(this)" data-issue="302" data-iso="approved">
 All pairs of matching operators (marked-content operators <b>BMC</b>, <b>BDC</b>, and <b>EMC</b> (see 14.6, "Marked content"); text object operators
 <b>BT</b> and <b>ET</b> (see 9.4, "Text objects"); the compatibility operators <b>BX</b> and <b>EX</b> (see "Table 33 - Compatibility operators")
 and the graphics state save and restore operators <b>q</b> and <b>Q</b> (see "Table 56 - Graphics state operators")) shall be properly (separately)
@@ -1308,7 +1308,7 @@ Those earlier versions state that resources that were referenced from those cont
 </p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="291">
+<ins onMouseEnter="mouseEnter(this)" data-issue="291" data-iso="approved">
 NOTE 4 Linearized PDF files impose additional requirements on resources - see "Annex F - (normative) Linearized PDF".
 </ins>
 </p>
@@ -1610,7 +1610,7 @@ Regardless of whether the time zone is specified, the rest of the date shall be 
     <p>[<i>key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> ...key<sub>n</sub> value<sub>n</sub></i>]</p>
     <p>where each <i>key<sub>i</sub></i> shall be a string and the corresponding <i>value<sub>i</sub></i> shall be the
       object associated with that key. The keys shall be sorted <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">in lexical order</del>, as described below. 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="307">Keys shall not be the <b>null</b> object.</ins></p>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="307" data-iso="approved">Keys shall not be the <b>null</b> object.</ins></p>
     </td>
   </tr>
 </table>
@@ -1645,7 +1645,7 @@ Any encoding of the keys may be used as long as it is self-consistent; keys shal
     <p>[<i>key<sub>1</sub> value<sub>1</sub> key<sub>2</sub> value<sub>2</sub> ...key<sub>n</sub> value<sub>n</sub></i>]</p>
     <p>where each <i>key<sub>i</sub></i> shall is an integer and the corresponding <i>value<sub>i</sub></i> shall be the
       object associated with that key. The keys shall be sorted in numerical order, analogously to the arrangement of keys in a name tree as described in 7.9.6, "Name trees".
-      <ins onMouseEnter="mouseEnter(this)" data-issue="307">Keys shall not be the <b>null</b> object.</ins></p>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="307" data-iso="approved">Keys shall not be the <b>null</b> object.</ins></p>
     </td>
   </tr>
 </table>
@@ -1720,7 +1720,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
     <td>name</td>
     <td>
     <p>
-      (<i>Required if an <b>EF</b>, <b>EP</b> or <b>RF</b> entry is present; recommended always<ins onMouseEnter="mouseEnter(this)" data-issue="298">; PDF 1.3</ins></i>)
+      (<i>Required if an <b>EF</b>, <b>EP</b> or <b>RF</b> entry is present; recommended always<ins onMouseEnter="mouseEnter(this)" data-issue="298" data-iso="approved">; PDF 1.3</ins></i>)
       The type of PDF object that this dictionary describes; shall be <i>Filespec</i> for a file specification dictionary.
     </p>
     </td>

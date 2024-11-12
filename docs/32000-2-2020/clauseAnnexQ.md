@@ -42,7 +42,7 @@ shall be considered to contain transparency (see "Table 166 - Entries common to 
 <p>
 For any graphical element that represents text drawing, its text state shall be checked to determine the type of font being used for rendering.
 If the <b>Subtype</b> of the font dictionary is <i>Type3</i>, then each object in its <b>CharProc</b> array shall be processed as
-<ins onMouseEnter="mouseEnter(this)" data-issue="295">if it was</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="295" data-iso="approved">if it was</ins>
 a form XObject according to Q.3, "Form XObjects".
 </p>
 

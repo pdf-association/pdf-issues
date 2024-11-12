@@ -77,8 +77,8 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
     <td>
       <p>
       (<i>Optional</i>) A transfer function, which overrides the current transfer function in the graphics state for the same component. 
-      <del onMouseEnter="mouseEnter(this)" data-issue="310">The name <i>Identity</i> may be used to specify the identity function (see 10.5, "Transfer functions").</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="310">This entry shall be present if the dictionary is a component of a Type 5 halftone (see 10.6.5.6, "Type 5 halftones") and represents either a nonprimary or nonstandard primary colour component (see 10.5, "Transfer functions"). The name <i>Identity</i> may be used to specify the identity function.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="310" data-iso="approved">The name <i>Identity</i> may be used to specify the identity function (see 10.5, "Transfer functions").</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="310" data-iso="approved">This entry shall be present if the dictionary is a component of a Type 5 halftone (see 10.6.5.6, "Type 5 halftones") and represents either a nonprimary or nonstandard primary colour component (see 10.5, "Transfer functions"). The name <i>Identity</i> may be used to specify the identity function.</ins>
       </p>
       <p class="hangingindent">
         NOTE PDF versions to 1.7 required that this entry be present if the dictionary is a component of a Type 5 halftone (see 10.6.5.6, "Type 5 halftones") and represents either a non-primary or non-standard primary colour component.
@@ -104,7 +104,7 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
     <td>dictionary or<br/>stream</td>
     <td>
       <p>(<i>Required, one per colourant</i>) The halftone corresponding to the colourant or colour component named by the key. The halftone may be of any Type other than 5.</p>
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="310">
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="310" data-iso="approved">
       NOTE As stated for each of the other halftone types the referenced halftone will have a <b>TransferFunction</b> if it represents a nonprimary or nonstandard primary colour component.
       </ins></p>
     </td>
@@ -125,7 +125,7 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
 
 <p class="location">Delete the paragraph below the bulleted list (above EXAMPLE) as follows:</p>
 
-<p><del onMouseEnter="mouseEnter(this)" data-issue="311">
+<p><del onMouseEnter="mouseEnter(this)" data-issue="311" data-iso="approved">
 When a halftone dictionary of some other Type appears as the value of an entry in a Type 5 halftone dictionary, it shall apply only to the single colourant or colour component named by that entry’s key. This is in contrast to such a dictionary’s being used as the current halftone parameter in the graphics state, which shall apply to all colour components. If nonprimary colourants are requested when the current halftone is defined by any means other than a Type 5 halftone dictionary, the gray halftone screen and transfer function shall be used for all such colourants.
 </del></p>
 

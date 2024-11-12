@@ -216,7 +216,7 @@ This feature has been <del onMouseEnter="mouseEnter(this)" data-issue="367">depr
 
 <p>
 The contents of a metadata stream shall be the metadata represented in Extensible Markup Language (XML) and the grammar of the XML representing the metadata shall be defined according to the extensible metadata platform specification (ISO 16684-1). 
-<ins onMouseEnter="mouseEnter(this)" data-issue="296">All XMP metadata in PDF shall be encoded as UTF-8.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="296" data-iso="approved">All XMP metadata in PDF shall be encoded as UTF-8.</ins>
 </p>
 
 <p>...</p>
@@ -308,7 +308,7 @@ data needed by the PDF processor other than the actual content of the document, 
 <p class="location">Delete NOTE 1 (<i>original numbering</i>) as follows:</p>
 
 <p class="hangingindent">
-<del onMouseEnter="mouseEnter(this)" data-issue="303">NOTE 1 This is a sequence not simply of bytes in the content stream but of complete graphics objects. Each object is fully qualified by the parameters of the graphics state in which it is rendered.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="303" data-iso="approved">NOTE 1 This is a sequence not simply of bytes in the content stream but of complete graphics objects. Each object is fully qualified by the parameters of the graphics state in which it is rendered.</del>
 </p>
 
 <p>...</p>
@@ -353,7 +353,7 @@ Marked-content sequences may be nested one within another, but each sequence sha
     <th>Description</th>
   </tr>
   <tr>
-    <td><del onMouseEnter="mouseEnter(this)" data-issue="301"><i>Tag</i></del> <ins onMouseEnter="mouseEnter(this)" data-issue="301"><i>tag</i></ins></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="301" data-iso="approved"><i>Tag</i></del> <ins onMouseEnter="mouseEnter(this)" data-issue="301" data-iso="approved"><i>tag</i></ins></td>
     <td><b>BMC</b></td>
     <td>Begin a marked-content sequence terminated by a balancing <b>EMC</b> operator. <i>tag</i> shall be a name object indicating the role or significance of the sequence.
     </td>
@@ -430,9 +430,9 @@ Marked-content sequences may be nested one within another, but each sequence sha
 <p>
 When the marked-content operators <b>BMC</b>, <b>BDC</b>, and <b>EMC</b> are combined with the text object operators <b>BT</b> and <b>ET</b>
 (see 9.4, "Text objects")
-<ins onMouseEnter="mouseEnter(this)" data-issue="302">; the compatibility operators <b>BX</b> and <b>EX</b> (see "Table 33 - Compatibility operators");
+<ins onMouseEnter="mouseEnter(this)" data-issue="302" data-iso="approved">; the compatibility operators <b>BX</b> and <b>EX</b> (see "Table 33 - Compatibility operators");
 or the graphics state save and restore operators <b>q</b> and <b>Q</b> (see "Table 56 - Graphics state operators")</ins>, each pair of matching
-operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="mouseEnter(this)" data-issue="302">or </del><b>BT</b>…<b>ET</b><ins onMouseEnter="mouseEnter(this)" data-issue="302">, <b>BX</b>…<b>EX</b> or <b>q</b>…<b>Q</b></ins>) shall be properly (separately) nested. ...
+operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="mouseEnter(this)" data-issue="302" data-iso="approved">or </del><b>BT</b>…<b>ET</b><ins onMouseEnter="mouseEnter(this)" data-issue="302" data-iso="approved">, <b>BX</b>…<b>EX</b> or <b>q</b>…<b>Q</b></ins>) shall be properly (separately) nested. ...
 </p>
 
 
@@ -454,9 +454,9 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>dictionary or array</td>
     <td>
     (<i>Optional</i>) The immediate child or children of the structure tree root in the structure hierarchy. The value 
-    <del onMouseEnter="mouseEnter(this)" data-issue="308">may</del><ins onMouseEnter="mouseEnter(this)" data-issue="308">shall</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">may</del><ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">shall</ins>
     be either a dictionary representing a single structure element or an array of such dictionaries. 
-    <ins onMouseEnter="mouseEnter(this)" data-issue="308">Values or array elements shall not be <b>null</b>.</ins>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">Values or array elements shall not be <b>null</b>.</ins>
     </td>
   </tr>
   <tr>
@@ -469,7 +469,7 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     The form of the associated value shall depend on the nature of the object: 
     For an object that is a content item in its own right, the value shall be an indirect reference to the object’s parent element (the structure element that contains it as a content item). 
     For a page object or content stream containing marked-content sequences that are content items, the value shall be an array of references to the parent elements of those marked-content sequences. 
-    <ins onMouseEnter="mouseEnter(this)" data-issue="308">This array may contain elements that are <b>null</b>.</ins> 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">This array may contain elements that are <b>null</b>.</ins> 
     See 14.7.5.4, "Finding structure elements from content items" for further discussion.
     </td>
   </tr>
@@ -505,14 +505,14 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>array</td>
     <td>
       <p>...</p>
-      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">The array shall not contain elements that are <b>null</b>.</ins></p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">The array shall not contain elements that are <b>null</b>.</ins></p>
     </td>
   </tr>
   <tr>
     <td><b>K</b></td>
     <td>(various)</td>
     <td>
-    <p>(<i>Optional</i>) The children of this structure element <ins onMouseEnter="mouseEnter(this)" data-issue="308">(shall not be <b>null</b>)</ins>.
+    <p>(<i>Optional</i>) The children of this structure element <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">(shall not be <b>null</b>)</ins>.
     The value of this entry may be one of the following objects or an array consisting of one or more of the following objects in any combination:</p>
     <p>...</p>
     </td>
@@ -522,7 +522,7 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>(various)</td>
     <td>
       <p>...</p>
-      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">Attribute objects and revisions shall not be <b>null</b>.</ins></p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">Attribute objects and revisions shall not be <b>null</b>.</ins></p>
     </td>
   </tr>
   <tr>
@@ -530,7 +530,7 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     <td>name or array</td>
     <td>
       <p>...</p>
-      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308">Attribute class names and revisions shall not be <b>null</b>.</ins></p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">Attribute class names and revisions shall not be <b>null</b>.</ins></p>
     </td>
   </tr>
   <tr>
@@ -641,15 +641,15 @@ The key for each entry shall be an integer given as the value of the <b>StructPa
 <ul>
  <li>...</li>
  <li>
- For a content stream containing marked-content sequences that are content items, the value shall be an array of indirect references to the sequences’ parent structure elements <ins onMouseEnter="mouseEnter(this)" data-issue="308">or <b>null</b> for unused marked content identifiers (MCIDs) or those that do not have a structural parent</ins>. 
- The array element corresponding to each sequence shall be found by using the sequence’s marked-content identifier <ins onMouseEnter="mouseEnter(this)" data-issue="308">(MCID)</ins> as a zero-based index into the array.
+ For a content stream containing marked-content sequences that are content items, the value shall be an array of indirect references to the sequences’ parent structure elements <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">or <b>null</b> for unused marked content identifiers (MCIDs) or those that do not have a structural parent</ins>. 
+ The array element corresponding to each sequence shall be found by using the sequence’s marked-content identifier <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">(MCID)</ins> as a zero-based index into the array.
  </li>
 </ul>
 
 <p class="location">Add a new NOTE 2 below existing NOTE as follows (existing NOTE to be renumbered as NOTE 1):</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="308">NOTE 2: MCIDs are scoped by content stream and must start at zero, so the same MCID may reappear across pages or XObjects. Thus ensuring MCIDs are contiguous for any given page allows for efficient creation of <b>StructParents</b> without excessive <b>null</b> objects in the structure tree root <b>ParentTree</b> number-tree.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">NOTE 2: MCIDs are scoped by content stream and must start at zero, so the same MCID may reappear across pages or XObjects. Thus ensuring MCIDs are contiguous for any given page allows for efficient creation of <b>StructParents</b> without excessive <b>null</b> objects in the structure tree root <b>ParentTree</b> number-tree.</ins>
 </p>
 
 <p>...</p>
@@ -744,7 +744,7 @@ is specified more than once, the later (in array order) entry shall take precede
 <p>
 The <b>C</b> entry in a structure element dictionary (see "Table 355 — Entries in a structure element dictionary") shall contain a class name or
 an array of class names 
-(<del onMouseEnter="mouseEnter(this)" data-issue="305">typically</del><ins onMouseEnter="mouseEnter(this)" data-issue="305">possibly</ins> accompanied by revision numbers as well <ins onMouseEnter="mouseEnter(this)" data-issue="305"><i>(deprecated in PDF 2.0)</i></ins>; see 14.7.6.3, "Attribute revision numbers"). For each class named in
+(<del onMouseEnter="mouseEnter(this)" data-issue="305" data-iso="approved">typically</del><ins onMouseEnter="mouseEnter(this)" data-issue="305" data-iso="approved">possibly</ins> accompanied by revision numbers as well <ins onMouseEnter="mouseEnter(this)" data-issue="305" data-iso="approved"><i>(deprecated in PDF 2.0)</i></ins>; see 14.7.6.3, "Attribute revision numbers"). For each class named in
 the <b>C</b> entry, the corresponding attribute object or objects shall be considered to be attached to the given structure element, along with
 those identified in the element’s <b>A</b> entry. 
 <ins onMouseEnter="mouseEnter(this)" data-issue="289" data-iso="approved">Attribute objects included through a class and through an array of classes within the <b>C</b>
@@ -1761,13 +1761,13 @@ was rendered as "Druk-" and "ker").
     <td>stream</td>
     <td>
       <p>
-        <del onMouseEnter="mouseEnter(this)" data-issue="290">(<i>Optional; PDF 2.0; shall be an indirect reference</i>) A metadata stream that shall contain metadata for this document part (see 14.3.2, "Metadata streams").</del>
+        <del onMouseEnter="mouseEnter(this)" data-issue="290" data-iso="approved">(<i>Optional; PDF 2.0; shall be an indirect reference</i>) A metadata stream that shall contain metadata for this document part (see 14.3.2, "Metadata streams").</del>
       </p>
       <p>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="290">XMP metadata streams (see 14.3.2, "Metadata streams") shall not be used in <b>DPart</b> dictionaries.</ins>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="290" data-iso="approved">XMP metadata streams (see 14.3.2, "Metadata streams") shall not be used in <b>DPart</b> dictionaries.</ins>
       </p>
       <p class="hangingindent">
-        <ins onMouseEnter="mouseEnter(this)" data-issue="290">NOTE: the <b>Metadata</b> key was allowed in earlier editions of PDF 2.0.</ins>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="290" data-iso="approved">NOTE: the <b>Metadata</b> key was allowed in earlier editions of PDF 2.0.</ins>
       </p>
     </td>
   </tr>

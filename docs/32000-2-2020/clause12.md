@@ -403,7 +403,7 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 
 <p>
 The optional <b>Threads</b> entry in the document catalog dictionary (see 7.7.2, "Document catalog dictionary") holds an array of thread dictionaries ("Table 162 — Entries in a thread dictionary") defining the document’s articles. Each individual bead within a thread shall be represented by a bead dictionary ("Table 163 — Entries in a bead dictionary"). The thread dictionary’s <b>F</b> entry shall refer to the first bead in the thread; the beads shall be chained together sequentially in a doubly linked list through their <b>N</b> (next) and <b>V</b> (previous) entries. In addition, for each page on which article beads appear, the page object (see 7.7.3, "Page tree") shall contain a <b>B</b> entry whose value is an array of indirect references to the beads on the page, 
-in <del onMouseEnter="mouseEnter(this)" data-issue="320">drawing</del><ins onMouseEnter="mouseEnter(this)" data-issue="320">reading</ins> order.
+in <del onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">drawing</del><ins onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">reading</ins> order.
 </p>
 
 
@@ -460,7 +460,7 @@ An interactive PDF processor shall maintain a current navigation node. When a us
   </li>
   <li>
    <p>The node specified by <b>Next</b> (if present) shall become the new current navigation node.</p>
-   <p><ins onMouseEnter="mouseEnter(this)" data-issue="304">If there is no node specified by <b>Next</b> then navigate to the next page. If the current page is the last page, then the current navigation node remains unchanged.</ins>
+   <p><ins onMouseEnter="mouseEnter(this)" data-issue="304" data-iso="approved">If there is no node specified by <b>Next</b> then navigate to the next page. If the current page is the last page, then the current navigation node remains unchanged.</ins>
    </p>
   </li>
 </ol>
@@ -477,7 +477,7 @@ Similarly, if the user requests to navigate backward and there is a current navi
   </li>
   <li>
    <p>The node specified by <b>Prev</b> (if present) shall become the new current navigation node.</p>
-   <p><ins onMouseEnter="mouseEnter(this)" data-issue="304">If there is no node specified by <b>Prev</b> then navigate to the previous page. If the current page is the first page, then the current navigation node remains unchanged.</ins>
+   <p><ins onMouseEnter="mouseEnter(this)" data-issue="304" data-iso="approved">If there is no node specified by <b>Prev</b> then navigate to the previous page. If the current page is the first page, then the current navigation node remains unchanged.</ins>
    </p>
   </li>
 </ol>
@@ -609,10 +609,10 @@ separating text into paragraphs, a CARRIAGE RETURN (0Dh) shall be used and not, 
 <p class="location">Change the paragraph below Table 172 as follows:</p>
 
 <p>
-In <del onMouseEnter="mouseEnter(this)" data-issue="297">PDF 1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="297">PDF 1.5</ins>, a set 
+In <del onMouseEnter="mouseEnter(this)" data-issue="297" data-iso="approved">PDF 1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="297" data-iso="approved">PDF 1.5</ins>, a set 
 of annotations may be grouped so that they function as a single unit when a user interacts with them. 
 The group consists of a primary annotation, which shall not have an <b>IRT</b> entry, and one or more subordinate annotations, which shall have
-an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins onMouseEnter="mouseEnter(this)" data-issue="297"><i>(PDF 1.6)</i></ins> entry whose value is <i>Group</i>.
+an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins onMouseEnter="mouseEnter(this)" data-issue="297" data-iso="approved"><i>(PDF 1.6)</i></ins> entry whose value is <i>Group</i>.
 </p>
 
 <h4 id="H12.5.6.3">12.5.6.3 Annotation states</h4>
@@ -669,7 +669,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <td><b>BS</b></td>
     <td>dictionary</td>
     <td>
-      <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299">1.3</ins>)</i>...
+      <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299" data-iso="approved">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299" data-iso="approved">1.3</ins>)</i>...
     </td>
   </tr>
 </table>
@@ -687,7 +687,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   </tr>
   <tr>
     <td><b>DA</b></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string</td>
     <td>
     <p>(<i>Required</i>) The default appearance string that shall be used in formatting the text (see 12.7.4.3, "Variable text").</p>
     <p>The annotation dictionary's <b>AP</b> entry <del onMouseEnter="mouseEnter(this)" data-issue="42" data-iso="approved">, if present,</del> shall take precedence over the <b>DA</b> entry (see "Table 170 - Entries in an appearance dictionary" and 12.5.5, "Appearance streams").</p>
@@ -697,7 +697,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <td><b>BS</b></td>
     <td>dictionary</td>
     <td>
-      <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299">1.3</ins>)</i>...
+      <i>(Optional; PDF <del onMouseEnter="mouseEnter(this)" data-issue="299" data-iso="approved">1.6</del><ins onMouseEnter="mouseEnter(this)" data-issue="299" data-iso="approved">1.3</ins>)</i>...
     </td>
   </tr>
 </table>
@@ -914,7 +914,7 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
   </tr>
   <tr>
     <td><b>DA</b></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string</td>
     <td>
     (<i>Optional</i>) A document-wide default value for the <b>DA</b> attribute of variable text fields (see 12.7.4.3, "Variable text").
     </td>
@@ -949,8 +949,8 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
     <td>dictionary</td>
     <td>
     (<i>Optional; PDF 1.2</i>) An additional-actions dictionary defining the field’s behaviour in response to various trigger events (see 12.6.3, "Trigger events"). This entry has exactly the same meaning as the <b>AA</b> entry in 
-    <del onMouseEnter="mouseEnter(this)" data-issue="313">an annotation dictionary (see 12.5.2, "Annotation dictionaries")</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="313">a Widget annotation dictionary (see 12.5.6.19, "Widget annotations")</ins>.
+    <del onMouseEnter="mouseEnter(this)" data-issue="313" data-iso="approved">an annotation dictionary (see 12.5.2, "Annotation dictionaries")</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="313" data-iso="approved">a Widget annotation dictionary (see 12.5.6.19, "Widget annotations")</ins>.
     </td>
   </tr>
 </table>
@@ -968,7 +968,7 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
   </tr>
   <tr>
     <td><b>DA</b></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string</td>
     <td>
     (<i>Required; inheritable</i>) The default appearance string containing a sequence of valid page-content graphics or text state operators that define such properties as the field’s text size and colour.
     </td>
@@ -980,11 +980,11 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 <p class="location">Change the first two paragraphs below the EXAMPLE as follows:</p>
 
 <p>
-The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string (<b>DA</b>) contains any graphics state or text state operators needed to establish the graphics state parameters, such as text size and colour, for displaying the field’s variable text. Only operators that are allowed within text objects shall occur in this <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string (see "Figure 9 — Graphics objects"). At a minimum, the <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string shall include a <b>Tf</b> (text font) operator along with its two operands, <i>font</i> and <i>size</i>. The specified font value shall match a resource name in the <b>Font</b> entry of the default resource dictionary (referenced from the <b>DR</b> entry of the interactive form dictionary; see "Table 224 — Entries in the interactive form dictionary"). A zero value for <i>size</i> means that the font shall be <i>auto-sized</i>: its size shall be computed as an implementation dependent function.
+The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string (<b>DA</b>) contains any graphics state or text state operators needed to establish the graphics state parameters, such as text size and colour, for displaying the field’s variable text. Only operators that are allowed within text objects shall occur in this <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string (see "Figure 9 — Graphics objects"). At a minimum, the <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string shall include a <b>Tf</b> (text font) operator along with its two operands, <i>font</i> and <i>size</i>. The specified font value shall match a resource name in the <b>Font</b> entry of the default resource dictionary (referenced from the <b>DR</b> entry of the interactive form dictionary; see "Table 224 — Entries in the interactive form dictionary"). A zero value for <i>size</i> means that the font shall be <i>auto-sized</i>: its size shall be computed as an implementation dependent function.
 </p>
 
 <p>
-The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string shall contain at most one <b>Tm</b> (text matrix) operator. If this operator is present, the interactive PDF processor shall replace the horizontal and vertical translation components with positioning values it determines to be appropriate, based on the field value, the quadding (<b>Q</b>) attribute, and any layout rules it employs. If the default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318">byte</ins> string contains no <b>Tm</b> operator, the viewer shall insert one in the appearance stream (with appropriate horizontal and vertical translation components) after the default appearance string and before the text-positioning and text-showing operators for the variable text.
+The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string shall contain at most one <b>Tm</b> (text matrix) operator. If this operator is present, the interactive PDF processor shall replace the horizontal and vertical translation components with positioning values it determines to be appropriate, based on the field value, the quadding (<b>Q</b>) attribute, and any layout rules it employs. If the default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string contains no <b>Tm</b> operator, the viewer shall insert one in the appearance stream (with appropriate horizontal and vertical translation components) after the default appearance string and before the text-positioning and text-showing operators for the variable text.
 </p>
 
 <p class="location">Change the last paragraph as follows:</p>
