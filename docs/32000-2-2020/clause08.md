@@ -546,11 +546,11 @@ The pattern cell can include graphical elements such as filled areas, text, and 
 
 <p class="hangingindent">
 NOTE One of the most important uses of stencil masking is for painting character glyphs represented as bitmaps. Using such a glyph as a stencil mask transfers only its "black" bits to the page, leaving the "white" bits (which are really just background) unchanged. For reasons discussed in 
-<del onMouseEnter="mouseEnter(this)" data-issue="333">9.6.5.3, "Encodings for Type 3 fonts"</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="333">9.6.4, "Type 3 fonts"</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="333" data-iso="approved">9.6.5.3, "Encodings for Type 3 fonts"</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="333" data-iso="approved">9.6.4, "Type 3 fonts"</ins>
 , an image mask, rather than an image, 
-<del onMouseEnter="mouseEnter(this)" data-issue="333">need almost always be used to paint glyph bitmaps</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="333">is normally used to paint glyph bitmaps</ins>.
+<del onMouseEnter="mouseEnter(this)" data-issue="333" data-iso="approved">need almost always be used to paint glyph bitmaps</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="333" data-iso="approved">is normally used to paint glyph bitmaps</ins>.
 </p>
 
 

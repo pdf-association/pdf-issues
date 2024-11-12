@@ -36,8 +36,8 @@ modified: 7 June 2024
 
 <p>
 The Linearized PDF file shall begin with the standard header line (see 7.5.2, "File header"). Linearization is independent of PDF version number and may be applied to any PDF file of version 
-<del onMouseEnter="mouseEnter(this)" data-issue="331">1.1</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="331">1.2</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="331" data-iso="approved">1.1</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="331" data-iso="approved">1.2</ins> 
 or greater.
 </p>
 

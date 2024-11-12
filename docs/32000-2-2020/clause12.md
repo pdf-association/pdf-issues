@@ -1520,10 +1520,10 @@ establishes the exact contents of the complete PDF file at the time indicated in
 
 <p>
 A geographic coordinate system (GEOGCS) specifies an ellipsoidal object in geographic coordinates: angular units of latitude and longitude. The geographic coordinate 
-system<ins onMouseEnter="mouseEnter(this)" data-issue="321">s</ins> 
+system<ins onMouseEnter="mouseEnter(this)" data-issue="321" data-iso="approved">s</ins> 
 shall be described in 
-<del onMouseEnter="mouseEnter(this)" data-issue="321">either or both</del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="321">any</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="321" data-iso="approved">either or both</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="321" data-iso="approved">any</ins>
 of two well-established standards: as a numeric EPSG reference code, or as a Well Known Text (WKT) string, which contains a description of algorithms and parameters needed for transformations.
 </p>
 
@@ -1533,8 +1533,8 @@ of two well-established standards: as a numeric EPSG reference code, or as a Wel
 
 <p>
 The EPSG reference codes are described in a database available through 
-<del onMouseEnter="mouseEnter(this)" data-issue="321"><a href="http://www.epsg.org">http://www.epsg.org</a></del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="321"><a href="https://epsg.org">https://epsg.org</a></ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="321" data-iso="approved"><a href="http://www.epsg.org">http://www.epsg.org</a></del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="321" data-iso="approved"><a href="https://epsg.org">https://epsg.org</a></ins> 
 as administered by the International Association of Oil and Gas Producers (OGP). The WKT (Well Known Text) format is specified in ISO 19162.
 </p>
 

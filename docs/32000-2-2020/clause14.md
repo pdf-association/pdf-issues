@@ -253,8 +253,8 @@ stream
 <p>
 PDF file identifiers shall be defined by the <b>ID</b> entry in a PDF file’s trailer dictionary (see 7.5.5, "File trailer"). 
 The value of this entry shall be an array of two byte strings. 
-The first byte string shall be a permanent identifier based on the <del onMouseEnter="mouseEnter(this)" data-issue="328">contents of the</del> PDF file at the time it was originally created and shall not change when the PDF file is updated. 
-The second byte string shall be a changing identifier based on the PDF file<del onMouseEnter="mouseEnter(this)" data-issue="328">’s contents</del> at the time it was last updated (see 7.5.6, "Incremental updates"). 
+The first byte string shall be a permanent identifier based on the <del onMouseEnter="mouseEnter(this)" data-issue="328" data-iso="approved">contents of the</del> PDF file at the time it was originally created and shall not change when the PDF file is updated. 
+The second byte string shall be a changing identifier based on the PDF file<del onMouseEnter="mouseEnter(this)" data-issue="328" data-iso="approved">’s contents</del> at the time it was last updated (see 7.5.6, "Incremental updates"). 
 When a PDF file is first written, both identifiers shall be set to the same value. 
 If the first identifier in the reference matches the first identifier in the referenced file’s <b>ID</b> entry, and the last identifier in the reference matches the last identifier in the referenced file’s <b>ID</b> entry, it is very likely that the correct and unchanged PDF file has been found. If only the first identifier matches, a different version of the correct PDF file has been found.
 </p>
@@ -317,8 +317,8 @@ data needed by the PDF processor other than the actual content of the document, 
 
 <p>
 All marked-content operators except <b>EMC</b> shall take a <i>tag</i> operand indicating the role or significance of the marked-content element to the PDF processor.
-<del onMouseEnter="mouseEnter(this)" data-issue="334">All such tags should have second-class names registered with ISO</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="334">For tags not defined in either ISO publications or Logical Structure (see 14.7, "Logical structure"), those tags should use second-class names</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">All such tags should have second-class names registered with ISO</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">For tags not defined in either ISO publications or Logical Structure (see 14.7, "Logical structure"), those tags should use second-class names</ins>
 (see Annex E, "Extending PDF") to avoid conflicts between different applications marking the same content stream.
 In addition to the tag operand, the <b>DP</b> and <b>BDC</b> operators shall specify a property list containing further information associated with the marked-content. Property lists are discussed further in 14.6.2, "Property lists".
 </p>
@@ -326,7 +326,7 @@ In addition to the tag operand, the <b>DP</b> and <b>BDC</b> operators shall spe
 <p class="location">Delete NOTE 3 (<i>original numbering</i>) as follows:</p>
 
 <p class="hangingindent">
-<del onMouseEnter="mouseEnter(this)" data-issue="334">NOTE 3 The <i>tag</i> operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">NOTE 3 The <i>tag</i> operand of marked-content operators have no relationship to Tagged PDF (see 14.8 "Tagged PDF") and thus is not <del onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">rolemapped</del><ins onMouseEnter="mouseEnter(this)" data-issue="126" data-iso="approved">role mapped</ins>.</del>
 </p>
 
 <p>...</p>
@@ -335,9 +335,9 @@ In addition to the tag operand, the <b>DP</b> and <b>BDC</b> operators shall spe
 
 <p>
 Marked-content operators may appear only 
-<del onMouseEnter="mouseEnter(this)" data-issue="335">between graphics objects in the content stream</del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="335">at the content stream level or within a text object as shown in "Figure 9 — Graphics objects".</ins>. 
-<del onMouseEnter="mouseEnter(this)" data-issue="335">They may not occur within a graphics object or between a graphics state operator and its operands.</del> 
+<del onMouseEnter="mouseEnter(this)" data-issue="335" data-iso="approved">between graphics objects in the content stream</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="335" data-iso="approved">at the content stream level or within a text object as shown in "Figure 9 — Graphics objects".</ins>. 
+<del onMouseEnter="mouseEnter(this)" data-issue="335" data-iso="approved">They may not occur within a graphics object or between a graphics state operator and its operands.</del> 
 Marked-content sequences may be nested one within another, but each sequence shall be entirely contained within a single content stream. "Table 352 — Marked-content operators" summarises the marked-content operators.
 </p>
 
@@ -363,65 +363,65 @@ Marked-content sequences may be nested one within another, but each sequence sha
 <p class="location">Add a new table and informative NOTE below Table 352 as follows:</p>
 
 <table>
-  <caption id="Table352a"><ins onMouseEnter="mouseEnter(this)" data-issue="334">Table 352a - Marked content tags defined in PDF 2.0 (<i>informative</i>)</ins></caption>
+  <caption id="Table352a"><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Table 352a - Marked content tags defined in PDF 2.0 (<i>informative</i>)</ins></caption>
   <tr>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF feature</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF version</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334">Subclause</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334"><i>tag</i></ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF feature</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF version</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Subclause</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><i>tag</i></ins></th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Associated files</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 2.0</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.13.5</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>AF</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Associated files</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 2.0</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">14.13.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>AF</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Artifacts</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 2.0</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.8.2.2.2</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Artifact</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Artifacts</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 2.0</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">14.8.2.2.2</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>Artifact</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Optional content</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">8.11.3.2</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>OC</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Optional content</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 1.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">8.11.3.2</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>OC</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Reverse order show strings</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.4</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.8.2.5.3</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>ReversedChars</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Reverse order show strings</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 1.4</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">14.8.2.5.3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>ReversedChars</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Alternate description</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.3</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Alternate description</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 1.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">14.9.3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>Span</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Replacement text</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.4</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.4</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Replacement text</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 1.4</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">14.9.4</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>Span</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Expansion of abbreviations and acronyms</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.5</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">14.9.5</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Span</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Expansion of abbreviations and acronyms</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 1.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">14.9.5</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>Span</b></ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">Variable text field replacement</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">PDF 1.2</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334">12.7.4.3</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334"><b>Tx</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Variable text field replacement</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">PDF 1.2</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">12.7.4.3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved"><b>Tx</b></ins></td>
   </tr>
 </table>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="334">NOTE: PDF 1.7 defined various clipping related tags (see 14.6.3, "Clip tags" in ISO 32000-1:2008) and a <b>TagSuspect</b> tag (see 14.8.2.3, "Page Content Order" in ISO 32000-1:2008) which were intentionally removed in PDF 2.0.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">NOTE: PDF 1.7 defined various clipping related tags (see 14.6.3, "Clip tags" in ISO 32000-1:2008) and a <b>TagSuspect</b> tag (see 14.8.2.3, "Page Content Order" in ISO 32000-1:2008) which were intentionally removed in PDF 2.0.</ins>
 </p>
 
 
@@ -583,12 +583,12 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     <td><b>Pg</b></td>
     <td>dictionary</td>
     <td>
-      <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="431">Optional</del>
-             <ins onMouseEnter="mouseEnter(this)" data-issue="431">Sometimes required</ins>; shall be an indirect reference</i>) 
+      <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">Optional</del>
+             <ins onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">Sometimes required</ins>; shall be an indirect reference</i>) 
         The page object representing the page on which the graphics objects in the marked-content sequence shall be rendered. 
-        This entry <del onMouseEnter="mouseEnter(this)" data-issue="431">overrides</del><ins onMouseEnter="mouseEnter(this)" data-issue="431">takes precedence over</ins> any <b>Pg</b> entry in the structure element containing the marked content reference
-        <del onMouseEnter="mouseEnter(this)" data-issue="431">; it shall be required if the structure element has no such entry.</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="431">. This entry is required if the structure element containing the object reference has no <b>Pg</b> entry.</ins>
+        This entry <del onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">overrides</del><ins onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">takes precedence over</ins> any <b>Pg</b> entry in the structure element containing the marked content reference
+        <del onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">; it shall be required if the structure element has no such entry.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">. This entry is required if the structure element containing the object reference has no <b>Pg</b> entry.</ins>
       </p>
     </td>
   </tr>
@@ -611,12 +611,12 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
     <td><b>Pg</b></td>
     <td>dictionary</td>
     <td>
-      <p><i>(<del onMouseEnter="mouseEnter(this)" data-issue="431">Optional</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="431">Sometimes required</ins>; shall be an indirect reference)</i> 
+      <p><i>(<del onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">Optional</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">Sometimes required</ins>; shall be an indirect reference)</i> 
         The page object of the page on which the object shall be rendered. 
-        This entry <del onMouseEnter="mouseEnter(this)" data-issue="431">overrides</del><ins onMouseEnter="mouseEnter(this)" data-issue="431">takes precedence over</ins> any <b>Pg</b> entry in the structure element containing the object reference
-        <del onMouseEnter="mouseEnter(this)" data-issue="431">; it shall be required if the structure element has no such entry.</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="339,431">. This entry is required if the structure element containing the object reference has no <b>Pg</b> entry.</ins>
+        This entry <del onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">overrides</del><ins onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">takes precedence over</ins> any <b>Pg</b> entry in the structure element containing the object reference
+        <del onMouseEnter="mouseEnter(this)" data-issue="431" data-iso="approved">; it shall be required if the structure element has no such entry.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="339,431" data-iso="approved,approved">. This entry is required if the structure element containing the object reference has no <b>Pg</b> entry.</ins>
        </p>
     </td>
   </tr>
@@ -1624,7 +1624,7 @@ endobj
 
 <p class="location">Add a new NOTE below the last bullet point as follows:</p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="330">
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="330" data-iso="approved">
 NOTE: <b>Lang</b> entries are defined as text strings which include Unicode-encoded strings as shown in "Figure 7 - Relationship between string types". <b>Lang</b> entry text strings can be represented as either literal strings or hexadecimal strings (see 7.3.4, "String objects").
 </ins></p>
 

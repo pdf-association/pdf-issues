@@ -36,7 +36,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table31">Table 31 - Entries in a page object</a></li>
 <li><a href="clause07.html#Table32">Table 32 - Entries in the name dictionary</a></li>
 <li><a href="clause07.html#Table34">Table 34 - Entries in a resource dictionary</a></li>
-<li><a href="clause07.html#Table35">Table 35 - PDF data types <ins onMouseEnter="mouseEnter(this)" data-issue="322">(informative)</ins></a></li>
+<li><a href="clause07.html#Table35">Table 35 - PDF data types <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">(informative)</ins></a></li>
 <li><a href="clause07.html#Table36">Table 36 - Entries in a name tree node dictionary</a></li>
 <li><a href="clause07.html#Table37">Table 37 - Entries in a number tree node dictionary</a></li>
 <li><a href="clause07.html#Table42">Table 42 - Operators in Type 4 functions</a></li>
@@ -112,7 +112,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause13.html#Table343">Table 343 - Entries in a RichMediaInstance dictionary</a></li>
 <li><a href="clause14.html#Table350">Table 350 - Entries in a page-piece dictionary</a></li>
 <li><a href="clause14.html#Table352">Table 352 - Marked content operators</a></li>
-<li><a href="clause14.html#Table352a"><ins onMouseEnter="mouseEnter(this)" data-issue="334">Table 352a - Marked content tags defined in PDF 2.0 (<i>informative</i>)</ins></a></li>
+<li><a href="clause14.html#Table352a"><ins onMouseEnter="mouseEnter(this)" data-issue="334" data-iso="approved">Table 352a - Marked content tags defined in PDF 2.0 (<i>informative</i>)</ins></a></li>
 <li><a href="clause14.html#Table354">Table 354 - Entries in the structure tree root</a></li>
 <li><a href="clause14.html#Table355">Table 355 - Entries in a structure element dictionary</a></li>
 <li><a href="clause14.html#Table357">Table 357 - Entries in a marked-content reference dictionary</a></li>

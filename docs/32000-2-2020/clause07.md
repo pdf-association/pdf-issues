@@ -277,7 +277,7 @@ However, a</del>
 <p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 1:</p>
 
 <figure>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="327">
+  <ins onMouseEnter="mouseEnter(this)" data-issue="327" data-iso="approved">
     <img src="PDF-Integer-EBNF.svg" alt="EBNF railroad diagram for a PDF integer object">
     <a href="PDF-Integer.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
     <figcaption>Figure 1a - EBNF diagram for a PDF integer object</figcaption>
@@ -294,7 +294,7 @@ However, a</del>
 <p class="location">Add the following EBNF figure and embedded attachment above EXAMPLE 2:</p>
 
 <figure>
-  <ins onMouseEnter="mouseEnter(this)" data-issue="327">
+  <ins onMouseEnter="mouseEnter(this)" data-issue="327" data-iso="approved">
     <img src="PDF-Real-EBNF.svg" alt="EBNF railroad diagram for PDF real object">
     <a href="PDF-Real.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
     <figcaption>Figure 1b - EBNF diagram for a PDF real object</figcaption>
@@ -823,10 +823,10 @@ and the file encryption key as the key. ...
 
 <ol type="a" start="1">
   <li>
-    <p><del onMouseEnter="mouseEnter(this)" data-issue="325">
+    <p><del onMouseEnter="mouseEnter(this)" data-issue="325" data-iso="approved">
       Make a new string, <b>K1</b>, consisting of 64 repetitions of the sequence: input password, <b>K</b>, the 48-byte user key. The 48 byte user key is only used when checking the owner password or creating the owner key. If checking the user password or creating the user key, <b>K1</b> is the concatenation of the input password and <b>K</b>.
     </del></p>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="325">
+    <ins onMouseEnter="mouseEnter(this)" data-issue="325" data-iso="approved">
       <p>Make a new string <b>K0</b> as follows:</p>
       <ul>
         <li>When checking the owner password or creating the owner key, <b>K0</b> is the concatenation of the input password, <b>K</b>, and the 48-byte user key.</li>
@@ -1345,7 +1345,7 @@ NOTE 4 Linearized PDF files impose additional requirements on resources - see "A
 <p class="location">Replace Table 35 with the following table and NOTE:</p>
 
 <table>
-  <caption id="Table35">Table 35 - PDF data types <ins onMouseEnter="mouseEnter(this)" data-issue="322">(informative)</ins></caption>
+  <caption id="Table35">Table 35 - PDF data types <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">(informative)</ins></caption>
   <tr>
     <th>Type</th>
     <th>Description</th>
@@ -1354,145 +1354,145 @@ NOTE 4 Linearized PDF files impose additional requirements on resources - see "A
   <tr>
     <td>ASCII string</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Bytes containing ASCII characters</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object containing bytes encoded as ASCII characters.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Bytes containing ASCII characters</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A string object containing bytes encoded as ASCII characters.</ins>
     </td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4</ins><br/>7.9.2</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">7.3.4</ins><br/>7.9.2</td>
   </tr>
   <tr>
     <td>array</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">An</ins> array object.</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">An</ins> array object.</td>
     <td>7.3.6</td>
   </tr>
   <tr>
     <td>boolean</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A Boolean object.</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A Boolean object.</ins></td>
     <td>7.3.2</td>
   </tr>
   <tr>
     <td>byte string</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">A series of bytes that shall represent characters or other binary data. If such a type represents characters, the encoding shall be determined by the context.</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object containing bytes where the encoding is determined by the context.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A series of bytes that shall represent characters or other binary data. If such a type represents characters, the encoding shall be determined by the context.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A string object containing bytes where the encoding is determined by the context.</ins>
     </td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4</ins><br/>7.9.2<br/>7.9.2.4</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">7.3.4</ins><br/>7.9.2<br/>7.9.2.4</td>
   </tr>
   <tr>
     <td>date</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Date (ASCII string)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object that represents a date.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Date (ASCII string)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A string object that represents a date.</ins>
     </td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4<br/>7.9.2</ins><br/>7.9.4</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">7.3.4<br/>7.9.2</ins><br/>7.9.4</td>
   </tr>
   <tr>
     <td>dictionary</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> dictionary object.</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A</ins> dictionary object.</td>
     <td>7.3.7</td>
   </tr>
   <tr>
     <td>file specification</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> file specification (dictionary or string)</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A</ins> file specification (dictionary or string)</td>
     <td>7.11</td>
   </tr>
   <tr>
     <td>function</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Function (dictionary or stream)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A function object (dictionary or stream) that represents a parameterised function, including mathematical formulas or sampled representations with arbitrary resolution.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Function (dictionary or stream)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A function object (dictionary or stream) that represents a parameterised function, including mathematical formulas or sampled representations with arbitrary resolution.</ins>
     </td>
     <td>7.10</td>
   </tr>
   <tr>
     <td>integer</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">An</ins> integer number <ins onMouseEnter="mouseEnter(this)" data-issue="322">object</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">An</ins> integer number <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">object</ins></td>
     <td>7.3.3</td>
   </tr>
   <tr>
     <td>name</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> name object</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A</ins> name object</td>
     <td>7.3.5</td>
   </tr>
   <tr>
     <td>name tree</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Name tree (dictionary)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A name tree data structure (dictionary)</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Name tree (dictionary)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A name tree data structure (dictionary)</ins>
     </td>
     <td>7.9.6</td>
   </tr>
   <tr>
     <td>null</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">The</ins> null object</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">The</ins> null object</td>
     <td>7.3.9</td>
   </tr>
   <tr>
     <td>number</td>
     <td>
       <p>
-        <del onMouseEnter="mouseEnter(this)" data-issue="322">Number</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="322">A numeric object</ins> (integer or real).
+        <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Number</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A numeric object</ins> (integer or real).
       </p> 
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="322">NOTE: the term "real" may also be used in this specification to represent a numeric object.</ins></p> 
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">NOTE: the term "real" may also be used in this specification to represent a numeric object.</ins></p> 
     </td>
     <td>7.3.3</td>
   </tr>
   <tr>
     <td>number tree</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Number tree (dictionary)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A number tree data structure (dictionary)</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Number tree (dictionary)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A number tree data structure (dictionary)</ins>
     </td>
     <td>7.9.7</td>
   </tr>
   <tr>
     <td>PDFDocEncoded string</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Bytes containing a string that shall be encoded using PDFDocEncoding</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A type of text string containing information intended to be human-readable that is encoded using the single-byte PDFDocEncoding.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Bytes containing a string that shall be encoded using PDFDocEncoding</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A type of text string containing information intended to be human-readable that is encoded using the single-byte PDFDocEncoding.</ins>
     </td>
     <td>7.9.2<br/>7.9.2.3</td>
   </tr>
   <tr>
     <td>rectangle</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Rectangle (array)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A rectangle (array with 4 numeric elements)</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Rectangle (array)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A rectangle (array with 4 numeric elements)</ins>
     </td>
     <td>7.9.5</td>
   </tr>
   <tr>
     <td>stream</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> stream object <ins onMouseEnter="mouseEnter(this)" data-issue="322">(including the stream extent dictionary)</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A</ins> stream object <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">(including the stream extent dictionary)</ins></td>
     <td>7.3.8</td>
   </tr>
   <tr>
     <td>string</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Any string that is not a text string. Beginning with PDF 1.7, this type is further qualified as the types: ASCII string and byte string.</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A string object that may be further qualified as either a text string, an ASCII string, or a byte string.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Any string that is not a text string. Beginning with PDF 1.7, this type is further qualified as the types: ASCII string and byte string.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A string object that may be further qualified as either a text string, an ASCII string, or a byte string.</ins>
     </td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322">7.3.4</ins><br/>7.9.2</td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">7.3.4</ins><br/>7.9.2</td>
   </tr>
   <tr>
     <td>text string</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="322">Bytes that represent characters that shall be encoded using either PDFDocEncoding, UTF-16BE or UTF-8 (as defined in 7.9.2.2, "Text string type".)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A type of string object containing information that is intended to be human-readable, and that is encoded as either PDFDocEncoding, UTF-16BE, or UTF-8 (<i>PDF 2.0</i>)</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">Bytes that represent characters that shall be encoded using either PDFDocEncoding, UTF-16BE or UTF-8 (as defined in 7.9.2.2, "Text string type".)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A type of string object containing information that is intended to be human-readable, and that is encoded as either PDFDocEncoding, UTF-16BE, or UTF-8 (<i>PDF 2.0</i>)</ins>
     </td>
     <td>7.9.2<br/>7.9.2.2</td>
   </tr>
   <tr>
     <td>text stream</td>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="322">A</ins> text stream <ins onMouseEnter="mouseEnter(this)" data-issue="322">object (including the stream extent dictionary)</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">A</ins> text stream <ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">object (including the stream extent dictionary)</ins>
     </td>
     <td>7.9.3</td>
   </tr>  
 </table>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="322">NOTE: unless otherwise stated in this specification, all string objects may be written as either a literal string or a hexadecimal string as described in "7.3.4 - String objects".</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="322" data-iso="approved">NOTE: unless otherwise stated in this specification, all string objects may be written as either a literal string or a hexadecimal string as described in "7.3.4 - String objects".</ins>
 </p>
 
 <h3 id="H7.9.2">7.9.2 String object types</h3>

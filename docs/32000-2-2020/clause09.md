@@ -581,8 +581,8 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
     <td>stream</td>
     <td>
     <i>(Optional)</i> A stream containing a CMap file that maps character codes to Unicode values (see 
-    <del onMouseEnter="mouseEnter(this)" data-issue="324">9.9.2, "Font subsets"</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="324">9.10, "Extraction of Text Content"</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="324" data-iso="approved">9.9.2, "Font subsets"</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="324" data-iso="approved">9.10, "Extraction of Text Content"</ins>
     ).
     </td>
   </tr>
@@ -639,7 +639,7 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
 <p class="location">Add a new NOTE to the very end of clause 9.8.1 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="337">NOTE: if the font descriptor is for an embedded font, then all fields of the descriptor are for that specific embedded (full or subset) font program. If it is for a referenced (non-embedded) font, then it applies to the source material found by the PDF Writer at the time of PDF creation.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="337" data-iso="approved">NOTE: if the font descriptor is for an embedded font, then all fields of the descriptor are for that specific embedded (full or subset) font program. If it is for a referenced (non-embedded) font, then it applies to the source material found by the PDF Writer at the time of PDF creation.</ins>
 </p>
 
 
