@@ -664,7 +664,7 @@ NOTE 4 The <b>Version</b> entry enables the version to be <del onMouseEnter="mou
 
 <ul>
   <li>...</li>
-  <li><ins onMouseEnter="mouseEnter(this)" data-issue="439">The document catalog (see 7.7.2 Document catalog dictionary) in an encrypted document</ins></li>
+  <li><ins onMouseEnter="mouseEnter(this)" data-issue="439" data-iso="approved">The document catalog (see 7.7.2 Document catalog dictionary) in an encrypted document</ins></li>
 </ul>
 
 <p class="location">Append the following paragraph after the bulleted list as follows:</p>
@@ -1010,7 +1010,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <p>
 The root of a document’s object hierarchy is the catalog dictionary, located by means of the <b>Root</b> entry in the trailer of the PDF file (see 7.5.5, "File trailer"). The catalog dictionary contains references to other objects defining the document’s contents, outline, article threads, named destinations, and other attributes. In addition, it contains information about how the document shall be displayed on the screen, such as whether its outline and thumbnail page images shall be displayed automatically and whether some location other than the first page shall be shown when the document is opened. "Table 29 — Entries in the catalog dictionary" shows the entries in the catalog dictionary.
-<ins onMouseEnter="mouseEnter(this)" data-issue="439">For encrypted documents, the catalog dictionary shall not be in an object stream (see 7.5.7 Object streams).</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="439" data-iso="approved">For encrypted documents, the catalog dictionary shall not be in an object stream (see 7.5.7 Object streams).</ins>
 </p>
 
 <p class="location">Move Figure 5 - Structure of a PDF document from here to subclause 7.7.1:</p>

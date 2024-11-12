@@ -350,10 +350,10 @@ character codes.
 
 <p>
 The PostScript language names of 14 Type 1 fonts, known as the standard 14 fonts, are as follows: 
-<del onMouseEnter="mouseEnter(this)" data-issue="384">Times-Roman, Helvetica, Courier, Symbol, Times-Bold, Helvetica-Bold, Courier-Bold, ZapfDingbats, Times-Italic, Helvetica-Oblique, Courier-Oblique, Times-BoldItalic, Helvetica-BoldOblique, Courier-BoldOblique.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="384" data-iso="approved">Times-Roman, Helvetica, Courier, Symbol, Times-Bold, Helvetica-Bold, Courier-Bold, ZapfDingbats, Times-Italic, Helvetica-Oblique, Courier-Oblique, Times-BoldItalic, Helvetica-BoldOblique, Courier-BoldOblique.</del>
 </p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="384">
+<ins onMouseEnter="mouseEnter(this)" data-issue="384" data-iso="approved">
 <ul>
   <li>Courier</li>
   <li>Courier-Bold</li>

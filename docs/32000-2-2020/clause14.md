@@ -658,7 +658,7 @@ The key for each entry shall be an integer given as the value of the <b>StructPa
 
 <p>
 To locate the relevant parent tree entry, each object or content stream that is represented in the tree shall contain a special dictionary entry, <b>StructParent</b> or <b>StructParents</b> (see "Table 359 — Additional dictionary entries for structure element access"). 
-<ins onMouseEnter="mouseEnter(this)" data-issue="463">At most one of the entries <b>StructParent</b> or <b>StructParents</b> shall be present. An object may be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="463" data-iso="approved">At most one of the entries <b>StructParent</b> or <b>StructParents</b> shall be present. An object may be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</ins>
 Depending on the type of content item, this entry may appear in the page object of a page containing marked-content sequences, in the stream dictionary of a form or image XObject, or in an annotation dictionary. Its value shall be the integer key under which the entry corresponding to the object shall be found in the structural parent tree.
 </p>
 
@@ -676,7 +676,7 @@ Depending on the type of content item, this entry may appear in the page object 
     <td>integer</td>
     <td>
     (<i>Required for all content streams containing marked-content sequences that are structural content items; PDF 1.3</i>) The integer key of this object’s entry in the structural parent tree. 
-    <del onMouseEnter="mouseEnter(this)" data-issue="463">At most one of these two entries shall be present in a given object.
+    <del onMouseEnter="mouseEnter(this)" data-issue="463" data-iso="approved">At most one of these two entries shall be present in a given object.
     An object may be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</del>
     </td>
   </tr>

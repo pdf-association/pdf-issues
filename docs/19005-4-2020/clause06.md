@@ -56,14 +56,14 @@ modified: 14 February 2022
 <p class="location">Change the second paragraph as follows:</p>
 
 <p class="hangingindent">
-NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="104">1</ins>
+NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="104" data-iso="approved">1</ins>
 This requirement ensures that there is always an explicitly defined transparency blending space specified for any content which has associated transparency.
 </p>
 
 <p class="location">Insert a new NOTE 2 after the existing NOTE (renumbered) as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="104">Note 2 Page transparency can be determined as defined in ISO 32000-2:2020, Annex Q.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="104" data-iso="approved">Note 2 Page transparency can be determined as defined in ISO 32000-2:2020, Annex Q.</ins>
 </p>
 
 <p>...</p>
@@ -90,10 +90,10 @@ This requirement ensures that there is always an explicitly defined transparency
 
 <p class="location">Add a new NOTE before Table 2 as follows:</p>
 
-<p>The PDF/A identification schema defined in Table 2 uses the namespace URI http<del onMouseEnter="mouseEnter(this)" data-issue="123">s</del>://www.aiim.org/pdfa/ns/id/. The required schema namespace prefix is <b>pdfaid</b>.
+<p>The PDF/A identification schema defined in Table 2 uses the namespace URI http<del onMouseEnter="mouseEnter(this)" data-issue="123" data-iso="approved">s</del>://www.aiim.org/pdfa/ns/id/. The required schema namespace prefix is <b>pdfaid</b>.
 </p>
 
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="123">
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="123" data-iso="approved">
 NOTE there was an error in a previous edition of this document and implementations may choose to accept "https" in addition to "http" for the namespace URI.
 </ins></p>
 
@@ -108,7 +108,7 @@ NOTE there was an error in a previous edition of this document and implementatio
     <th>Explanation</th>
   </tr>
   <tr>
-    <td><b>pdfa<ins onMouseEnter="mouseEnter(this)" data-issue="123">id</ins>:conformance</b></td>
+    <td><b>pdfa<ins onMouseEnter="mouseEnter(this)" data-issue="123" data-iso="approved">id</ins>:conformance</b></td>
     <td>Closed choice of Text</td>
     <td>Internal</td>
     <td>(Optional) PDF/A conformance level: E or F</td>
