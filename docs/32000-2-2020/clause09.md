@@ -615,10 +615,19 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
     <td><b>FontWeight</b></td>
     <td><del onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="approved">number</del> <ins onMouseEnter="mouseEnter(this)" data-issue="152" data-iso="approved">integer</ins></td>
     <td>
-    <p>...</p>
-    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="178" data-iso="approved">NOTE The definition of <b>FontWeight</b> in PDF matches the
-    CSS <code>font-weight</code> property, but may be more constrained than font weights used by various font formats.</ins>
-    </p>
+      <p>(<i>Optional; PDF 1.5</i>) The weight (thickness) component of the fully-qualified font name or font specifier. If present, 
+      the value shall 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="474">be between 1 and 1000 inclusive, and should</ins>
+      be one of 100, 200, 300, 400, 500, 600, 700, 800, or 900, where each number indicates a weight that is at least as dark as its predecessor.
+      A value of 400 shall indicate a normal weight; 700 shall indicate bold.
+      The specific interpretation of these values varies from font to font.
+      </p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="178" data-iso="approved">NOTE The definition of <b>FontWeight</b>
+      in PDF matches the CSS <code>font-weight</code> property.</ins>
+      </p>
+      <p class="hangingindent">
+      EXAMPLE 3 300 in one font might appear most similar to 500 in another.
+      </p>
     </td>
   </tr>
   <tr>
