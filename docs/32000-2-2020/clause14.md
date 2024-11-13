@@ -101,6 +101,8 @@ modified: 13 November 2024
        </li>
        <li><a href="#H14.8.4.8.4">14.8.4.8.4 Caption structure types</a>
        </li>
+       <li><a href="#H14.8.4.8.6">14.8.4.8.6 Formula structure types</a>
+       </li>
       </ul>
      </li>
     </ul>
@@ -1080,6 +1082,24 @@ NOTE: This algorithm works for languages with different intrinsic directionality
     </td>
   </tr>
 </table>
+
+<h5 id="H14.8.4.8.6">14.8.4.8.6 Formula structure types</h5>
+
+<p class="location">Delete the entire second paragraph as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="470">The standard structure type <b>Formula</b> shall not appear between the <b>BT</b> and <b>ET</b> operators delimiting a text object (see 9.4, "Text objects").</del>
+</p>
+
+<p class="location">Change the third paragraph as follows:</p>
+
+<p>
+A <b>Formula</b> element may have logical substructure, including other <b>Formula</b> elements. 
+<del onMouseEnter="mouseEnter(this)" data-issue="470">For repurposing purposes it may be treated as visually static, without examining its internal contents. It should have a <b>BBox</b> attribute (see 14.8.5, "Standard structure attributes")</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="470">It should have a <b>BBox</b> attribute (see 14.8.5, "Standard structure attributes") and can then for repurposing purposes be treated as visually static, without examining its internal contents</ins>.
+</p>
+
+<p>...</p>
 
 
 <h3 id="H14.8.5">14.8.5 Standard structure attributes</h3>
