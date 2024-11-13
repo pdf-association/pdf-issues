@@ -865,6 +865,28 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
     <p>...</p>
     </td>
   </tr>
+  <tr>
+    <td><b>Annot</b></td>
+    <td>Grouping, Block or Inline</td>
+    <td>
+      <p>
+        <del onMouseEnter="mouseEnter(this)" data-issue="437">Either an association between the content enclosed by the <b>Annot</b> structure element and one or more corresponding PDF annotations (see 12.5, "Annotations"), or a mechanism to include one or more PDF annotations in the structure tree.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="437">Encloses one or more PDF annotations and associated content, if any.</ins>
+      </p>
+      <p>...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Form</b></td>
+    <td>Grouping, Block or Inline</td>
+    <td>
+      <p>
+        <del onMouseEnter="mouseEnter(this)" data-issue="437">Either an association between content enclosed by the <b>Form</b> structure element and a corresponding widget annotation or a mechanism to include a widget annotation in the structure tree.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="437">Encloses a PDF widget annotation and associated content, if any.</ins>
+      </p>
+      <p>...</p>
+    </td>
+  </tr>
 </table>
 
 <p class="location">Insert a new sub-clause heading "14.8.4.7.3 Link elements" below NOTE 1 and modify the existing text below NOTE 1 as follows:</p>
