@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 9 November 2024
+modified: 13 November 2024
 ---
 
 <ul class="noprint">
@@ -77,7 +77,7 @@ modified: 9 November 2024
    <ul>
     <li><a href="#H7.6.2">7.6.2 Application of encryption</a>
     </li>
-    <li>7.6.3 General encryption algorithm
+    <li><a href="#H7.6.3">7.6.3 General encryption algorithm</a>
      <ul>
       <li><a href="#H7.6.3.1">7.6.3.1 General</a>
       </li>
@@ -758,6 +758,18 @@ the value of the <b>Contents</b> key in a Signature dictionary is always a hexad
 <p>...</p>
 
 <h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
+
+<p>...</p>
+
+<p class="location">Change the last paragraph as follows:</p>
+
+<p>
+Stream data shall be encrypted after applying all stream encoding filters and shall be decrypted before applying any stream decoding filters. The number of bytes to be encrypted or decrypted 
+<del onMouseEnter="mouseEnter(this)" data-issue="469">shall be</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="469">is</ins> 
+given by the <b>Length</b> entry in the stream dictionary. Decryption of strings (other than those in the encryption dictionary) shall be done after escape-sequence processing and hexadecimal decoding as appropriate to the string representation described in 7.3.4, "String objects".
+</p>
+
 
 <h4 id="H7.6.3.1">7.6.3.1 General</h4>
 
