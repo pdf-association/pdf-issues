@@ -82,6 +82,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table226">Table 226 - Entries common to all field dictionaries</a></li>
 <li><a href="clause12.html#Table228">Table 228 - Additional entries common to all fields containing variable text</a></li>
 <li><a href="clause12.html#Table232">Table 232 - Additional entry specific to a text field</a></li>
+<li><a href="clause12.html#Table234">Table 234 - Additional entries specific to a choice field</a></li>
 <li><a href="clause12.html#Table236">Table 236 - Entries in a signature field lock dictionary</a></li>
 <li><a href="clause12.html#Table237">Table 237 - Entries in a signature field seed value dictionary</a></li>
 <li><a href="clause12.html#Table238">Table 238 - Entries in a certificate seed value dictionary</a></li>

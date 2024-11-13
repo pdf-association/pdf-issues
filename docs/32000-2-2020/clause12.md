@@ -113,6 +113,8 @@ modified: 25 October 2024
      </li>
      <li><a href="#H12.7.5.3">12.7.5.3 Text fields</a>
      </li>
+     <li><a href="#H12.7.5.4">12.7.5.4 Choice fields</a>
+     </li>
      <li><a href="#H12.7.5.5">12.7.5.5 Signature Fields</a>
      </li>
     </ul>
@@ -1038,6 +1040,33 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
     <p>(<i>Optional; inheritable</i>) <ins onMouseEnter="mouseEnter(this)" data-issue="191" data-iso="approved">An integer value greater than or equal to zero that is the</ins>
         <del onMouseEnter="mouseEnter(this)" data-issue="191" data-iso="approved">The</del> maximum length of the field’s text, in characters.
     </p>
+    </td>
+  </tr>
+</table>
+
+<h4 id="H12.7.5.4">12.7.5.4 Choice fields</h4>
+
+<p class="location">Change Table 234 as follows:</p>
+
+<table>
+  <caption id="Table234">Table 234 - Additional entries specific to a choice field</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>I</b></td>
+    <td>array</td>
+    <td>
+      (<i>Sometimes required, otherwise optional; PDF 1.4</i>) For choice fields 
+      <del onMouseEnter="mouseEnter(this)" data-issue="468">that allow multiple selection (MultiSelect flag set)</del>, an array of integers,
+      sorted in ascending order, representing the zero-based indices in the <b>Opt</b> array of the currently selected option items. This 
+      entry shall be used when two or more elements in the <b>Opt</b> array have different names but the same export value 
+      <del onMouseEnter="mouseEnter(this)" data-issue="468">or when the value of the choice field is an array</del>. If the 
+      item<ins onMouseEnter="mouseEnter(this)" data-issue="468">(</ins>s<ins onMouseEnter="mouseEnter(this)" data-issue="468">)</ins> 
+      identified by this entry differ from those in the <b>V</b> entry of the field dictionary (see discussion following this Table), 
+      the <b>V</b> entry shall be used.
     </td>
   </tr>
 </table>
