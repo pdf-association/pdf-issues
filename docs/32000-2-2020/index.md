@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 13 Sept 2024
+modified: 13 November 2024
 ---
 
 <p>
@@ -131,6 +131,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause14.html#Table382">Table 382 - Standard list attributes</a></li>
 <li><a href="clause14.html#Table385">Table 385 - Standard artifact attributes</a></li>
 <li><a href="clause14.html#Table393">Table 393 - Entries in a Web Capture command dictionary</a></li>
+<li><a href="clause14.html#Table402">Table 402 - Entries in a DestOutputProfileRef dictionary</a></li>
 <li><a href="clause14.html#Table407">Table 407 - Entries in a version 2.0 OPI dictionary</a></li>
 <li><a href="clause14.html#Table409">Table 409 - Entries in a DPart dictionary</a></li>
 <li><a href="clause14.html#Table409a">Table 409a - Property list entries for associated files</a></li>

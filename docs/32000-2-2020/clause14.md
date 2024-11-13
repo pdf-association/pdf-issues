@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 25 October 2024
+modified: 13 November 2024
 ---
 
 <ul class="noprint">
@@ -167,6 +167,8 @@ modified: 25 October 2024
  </li>
  <li>14.11 Prepress support
   <ul>
+   <li><a href="#H14.11.5">14.11.5 Output intents</a>
+   </li>
    <li><a href="#H14.11.7">14.11.7 Open prepress interface (OPI)</a>
    </li>
   </ul>
@@ -1708,6 +1710,35 @@ was rendered as "Druk-" and "ker").
 
 
 <h2 id="H14.11">14.11 Prepress support</h2>
+
+<h3 id="H14.11.5">14.11.5 Output intents</h3>
+
+<p class="location">Change Table 402 as follows:</p>
+
+<table>
+  <caption id="Table402">Table 402 - Entries in a DestOutputProfileRef dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>URLs</b></td>
+    <td>array</td>
+    <td>
+      <p>(<i>Optional; PDF 2.0</i>) An array, containing at least one element, where each element shall be 
+        <del onMouseEnter="mouseEnter(this)" data-issue="482">an embedded file specification (7.11.4, "Embedded file streams") or</del> 
+        a URL file specification 
+        <ins onMouseEnter="mouseEnter(this)" data-issue="482">dictionary (see "Table 43 - Entries in a file specification dictionary") with an <b>FS</b> entry having the value <i>URL</i> and an <b>F</b> entry being a <b>PDFDocEncoded</b> text string limited to RFC 3986</ins>
+        (<ins onMouseEnter="mouseEnter(this)" data-issue="482">see</ins> 7.11.5, "URL specifications").
+      </p>
+      <p class="hangingindent">
+        NOTE: ICC profiles referenced via the <b>URLs</b> array do not have to conform to the <b>ICCBased</b> requirements of "Table 67 — ICC profile types" and thus can also support N-component output profiles.
+      </p>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H14.11.7">14.11.7 Open prepress interface (OPI)</h3>
 
