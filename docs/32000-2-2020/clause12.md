@@ -107,6 +107,8 @@ modified: 25 October 2024
     <ul>
      <li>12.7.5.2 Button fields
       <ul>
+       <li><a href="#H12.7.5.2.2">12.7.5.2.2 Push-buttons</a>
+       </li>
        <li><a href="#H12.7.5.2.4">12.7.5.2.4 Radio buttons</a>
        </li>
       </ul>
@@ -1006,6 +1008,15 @@ appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> wit
 <h3 id="H12.7.5">12.7.5 Field types</h3>
 
 <h4 id="H12.7.5.2">12.7.5.2 Button fields</h4>
+
+<h5 id="H12.7.5.2.2">12.7.5.2.2 Push-fields</h5>
+
+<p class="location">Change the first and only paragraph as follows:</p>
+
+<p>
+A push-button field shall have a field type of <i>Btn</i> and the Pushbutton flag (see "Table 229 — Field flags specific to button fields") set to one. 
+<del onMouseEnter="mouseEnter(this)" data-issue="386">Because this type of retains no permanent value, it shall not use the <b>V</b> and <b>DV</b> entries in the field dictionary (see "Table 226 — Entries common to all field dictionaries").</del>
+</p>
 
 <h5 id="H12.7.5.2.4">12.7.5.2.4 Radio buttons</h5>
 
