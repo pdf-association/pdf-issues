@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 13 November 2024
+modified: 19 November 2024
 ---
 
 <ul class="noprint">
@@ -1034,6 +1034,20 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
 </p>
 
 <h4 id="H12.7.5.3">12.7.5.3 Text fields</h4>
+
+<p class="location">Change paragraph below Table 231 as follows:</p>
+
+<p>
+<ins onMouseEnter="mouseEnter(this)" data-issue="392">If the field has a value other than <b>null</b>, </ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="392">The</del><ins onMouseEnter="mouseEnter(this)" data-issue="392">the</ins> 
+field’s text shall be held in a text string (or, beginning with PDF 1.5, a stream) in the <b>V</b> (value) entry of the field dictionary. 
+The contents of this text string or stream shall be used to construct an appearance stream for displaying the field, as described under 12.7.4.3,
+"Variable text" The text shall be presented in a single style (font, size, colour, and so forth), as specified by the <b>DA</b> (default
+appearance) string.
+</p>
+
+<p>...</p>
+
 
 <p class="location">Change Table 232 as follows:</p>
 
