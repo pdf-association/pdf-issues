@@ -1,8 +1,8 @@
-# PDF 2.0 Issues
+# PDF Specification Issues
 
-![PDF support](https://img.shields.io/badge/PDF-1.7%2C2.0-blue)
+![PDF support](https://img.shields.io/badge/PDF-1.x%2C2.0-blue)
 &nbsp;&nbsp;&nbsp;
-![PDF subsets](https://img.shields.io/badge/PDF%20subsets-PDF%2FA%2CPDF%2FX%2CPDF%2FVT%2CPDF%2FR-blue)
+![PDF subsets](https://img.shields.io/badge/PDF%20subsets-PDF%2FA%2CPDF%2FUA%2CPDF%2FX%2CPDF%2FVT%2CPDF%2FR-blue)
 &nbsp;&nbsp;&nbsp;
 ![LinkedIn](https://img.shields.io/static/v1?style=social&label=LinkedIn&logo=linkedin&message=PDF-Association)
 &nbsp;&nbsp;&nbsp;
@@ -10,7 +10,7 @@
 &nbsp;&nbsp;&nbsp;
 ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCJL_M0VH2lm65gvGVarUTKQ?style=social)
 
-Get your [zero-cost copy of ISO 32000-2 now](https://www.pdfa.org/announcing-no-cost-access-to-iso-32000-2-pdf-2-0/)! Includes ISO-approved errata and new PDF 2.0 crypto extensions.
+Get your [sponsored copy of ISO 32000-2 or PDF/UA-2 now](https://pdfa.org/sponsored-standards/)! Includes industry and ISO-approved errata and various ISO PDF 2.0 extensions.
 
 ## Stats
 
@@ -26,16 +26,17 @@ Get your [zero-cost copy of ISO 32000-2 now](https://www.pdfa.org/announcing-no-
 
 ## About
 
-This public GitHub repository "pdf-issues" is hosted by the <a href="https://www.pdfa.org">PDF Association</a> and
-provides all developers a means of openly reporting errata against ISO PDF related standards for review and resolution by industry and ISO experts.
-All issues in ISO PDF related standards are important, from minor typos and formatting issues, to
+This public GitHub repository is hosted by the <a href="https://www.pdfa.org">PDF Association</a> and
+provides every stakeholder a means of openly reporting errata against any PDF specification, including ISO publications and certain PDF Association industry specifications. Errata are resolved via consensus in PDF Association [Technical Working Groups](https://pdfa.org/community/) (<i>open to members</i>) and published at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/). For ISO publications, these industry resolutions are passed to the [relevant ISO working group](https://www.pdfa.org/iso-status/) for later ratification. 
+
+All issues in PDF specifications are important, from minor typos and formatting issues, to
 larger ambiguous, unclear or apparently contradictory statements. By reaching consensus on resolutions as an industry,
-PDF interoperability and implementation reliability will be improved.
+PDF interoperability and implementation reliability can be improved.
 
 The current set of resolved errata are presented as
 <span style="background-color:lightyellow;color:green;text-decoration-style:double;text-decoration-color:green;">additions</span>,
 <span style="background-color:seashell;color:darkred;text-decoration:line-through;text-decoration-color:red;">deletions</span> or
-<span style="font-weight:bold;color:purple;background-color:snow;text-decoration initial">editor notes</span>
+<span style="font-weight:bold;color:purple;background-color:snow;text-decoration initial">Editor Notes</span>
 to the published wording in the relevant ISO standard organized by clause number.
 GitHub Issue numbers will appear as popup tooltips when hovering over changes and refer back to
 <a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aclosed+label%3A%22proposed+solution%22" target="_blank">
@@ -45,21 +46,21 @@ closed GitHub pdf-issues</a>.
 
 * If a small gray ISO logo is also shown ![ISO submitted logo](docs/assets/Logo-ISO-submitted-small.png), then that errata has been approved by the PDF Association's appropriate TWG and submitted to the appropriate ISO working group and is waiting for approval. 
 
-* If no ISO logo is shown then the errata has been resolved by the PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) but has not yet been submitted to ISO for ratification.
+* If no ISO logo is shown then the errata has been resolved by a PDF Association [Technical Working Group](https://www.pdfa.org/community/) but has not yet been submitted to ISO for ratification.
 
 
-Due to ISO copyright, only minimal surrounding text from the relevant ISO standard is provided that is sufficient to understand how the resolution is being applied.
+Due to ISO copyright, only minimal surrounding text from the relevant ISO publication is provided that is sufficient to understand where the resolution is being applied.
 
-Errata in the following published ISO publications are supported:
+Errata in the following PDF specifications are supported:
 
 ### Core PDF technologies
   <ul>
    <li>PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-32000-pdf/" target="_blank">ISO 32000-2:2020</a>) - <a href="https://pdf-issues.pdfa.org/32000-2-2020/index.html"><i>Resolved errata</i></a>
    <ul>
      <li>
-     ISO/TS 32001 <a href="https://www.pdfa.org/resource/iso-ts-32001/">Extensions to Hash Algorithm Support in PDF 2.0</a>	
+     ISO/TS 32001 <a href="https://www.pdfa.org/resource/iso-ts-32001/">Extensions to Hash Algorithm Support in PDF 2.0</a>	- <a href="https://pdf-issues.pdfa.org/32001-2022/"><i>Resolved errata</i></a>
      </li>
-     <li>ISO/TS 32002 <a href="https://www.pdfa.org/resource/iso-ts-32002">Extensions to Digital Signatures in PDF 2.0</a>
+     <li>ISO/TS 32002 <a href="https://www.pdfa.org/resource/iso-ts-32002">Extensions to Digital Signatures in PDF 2.0</a> - <a href="https://pdf-issues.pdfa.org/32002-2022/"><i>Resolved errata</i></a>
      </li>
      <li>ISO/TS 24064 <a href="https://pdfa.org/resource/iso-ts-24064/">RichMedia annotations with STEP AP 242 3D for PDF 2.0</a>
      </li>
@@ -67,12 +68,14 @@ Errata in the following published ISO publications are supported:
      </li>
      <li>ISO/TS 32004 <a href="https://pdfa.org/resource/iso-ts-32004-integrity-protection/">Integrity protection in encrypted documents in PDF 2.0</a>
      </li>
-     <li>ISO/TS 32005 <a href="https://pdfa.org/resource/iso-32005/">PDF 1.7 and 2.0 structure namespace inclusion in PDF 2.0</a>
+     <li>ISO/TS 32005 <a href="https://pdfa.org/resource/iso-32005/">PDF 1.7 and 2.0 structure namespace inclusion in PDF 2.0</a> - <a href="https://pdf-issues.pdfa.org/32005-2023/"><i>Resolved errata</i></a>
      </li>
    </ul>
    </li>
    <li>ECMAScript for PDF 2.0 (<a href="https://www.pdfa.org/resource/iso-21757-ecmascript/" target="_blank">ISO 21757-1:2020</a>) - <a href="https://pdf-issues.pdfa.org/21757-1-2020/index.html"><i>Resolved errata</i></a></li>
    <li>XFDF 3.0 (<a href="https://www.pdfa.org/resource/iso-19444-xfdf/" target="_blank">ISO 19444-1:2019</a>)</li>
+   <li>"<a href="https://pdfa.org/wtpdf/">Well-Tagged PDF v1.0</a>" - <i><a href="https://pdf-issues.pdfa.org/wtpdf-1/">Resolved errata</a></i></li>
+   <li>"<a href="https://pdfa.org/declarations/">PDF Declarations</a>" - <i><a href="https://pdf-issues.pdfa.org/pdf-declarations/">Resolved errata</a></i></li>
   </ul>
 
 ### <a href="https://www.pdfa.org/resource/iso-19005-pdfa/" target="_blank">PDF/A (ISO 19005) - PDF for long-term preservation</a>
@@ -100,6 +103,7 @@ Errata in the following published ISO publications are supported:
 ### <a href="https://www.pdfa.org/resource/iso-14289-pdfua/" target="_blank">PDF/UA (ISO 14289) - PDF for universal accessibility</a>
    <ul>
     <li>PDF/UA-1 (ISO 14289-1:2014)</li>
+    <li>PDF/UA-2 (ISO 14289-2:2024)</li>
    </ul>
 
 ### Other ISO PDF publications
@@ -113,11 +117,11 @@ The PDF Association maintains a <a href="https://www.pdfa.org/index-of-pdf-relat
 Not all resolutions proposed here are officially authorized by the [ISO working groups responsible for PDF](https://www.pdfa.org/iso-status/) and may get changed when reviewed by the ISO working group.
 
 ## A Simple Process
-1. Open a new GitHub Issue. Clearly explain the mistake you have found in a published ISO PDF 2.0-based standard, or the feature you would like to see in a future version.
+1. Open a new GitHub Issue. Clearly explain the mistake you have found in a PDF specification, or the feature you would like to see in a future version.
 2. The community can discuss and contribute to open issues here in GitHub, and work towards a proposed resolution.
-3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for each proposed resolution. Issues related to PDF subset standards may also get passed on to other TWGs.
+3. The PDF Association's [PDF Technical Working Group](https://www.pdfa.org/community/pdf-technical-working-group/) (TWG) will consider all input and reach a consensus for each proposed resolution. Issues related to PDF subset standards or specific technical topics may get delegated to other TWGs.
 4. Each issue will be updated with the agreed resolution and then Closed by moderators once the resolution is published at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
-5. At some later time, some errata may be passed to the appropriate ISO working group for formal ratification.
+5. At some later time, errata will be passed to the appropriate ISO working group for formal ratification.
 
 A full list of all ISO and industry-agreed issue resolutions (as pseudo-markup) is actively maintained at [https://pdf-issues.pdfa.org/](https://pdf-issues.pdfa.org/).
 
