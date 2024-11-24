@@ -30,8 +30,8 @@ modified: 7 June 2024
   <li>...</li>
   <li>
     <p><i>Second class</i>. Names that are applicable to a specific developer. All names that begin with 4 characters including or followed by a LOW LINE (5fh) or COLON (3Ah) in either the key or value of a dictionary entry are second-class names, except 
-    <del onMouseEnter="mouseEnter(this)" data-issue="229" data-iso="approved">">keys added to a document information dictionary (see 14.3.3, "Document information dictionary") or a thread information dictionary (in the I entry of a thread dictionary; see 12.4.3, "Articles")</del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="229" data-iso="approved">"> where otherwise stated in this specification</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="229" data-iso="approved">keys added to a document information dictionary (see 14.3.3, "Document information dictionary") or a thread information dictionary (in the I entry of a thread dictionary; see 12.4.3, "Articles")</del>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="229" data-iso="approved">where otherwise stated in this specification</ins>
     . 
     Those four-byte prefixes are developer-specific name prefixes that are managed in a public list at <a href="https://github.com/adobe/pdf-names-list">https://github.com/adobe/pdf-names-list</a>, to which new prefixes can be added.
     </p>

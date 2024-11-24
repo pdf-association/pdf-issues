@@ -192,7 +192,7 @@ modified: 19 July 2024
 
 <h3 id="H13.2.7">13.2.7 Other multimedia objects</h3>
 
-<h4 id="H13.2.7.2">">13.2.7.2 Media players dictionary</h4>
+<h4 id="H13.2.7.2">13.2.7.2 Media players dictionary</h4>
 
 <h5 id="H13.2.7.2.1">13.2.7.2.1 General</h5>
 
