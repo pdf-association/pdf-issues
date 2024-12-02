@@ -308,8 +308,8 @@ NOTE: While these operators are primarily for path-painting, they also serve a p
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"<i>Specification ICC.1:2001-04 - File Format for Color Profiles [REVISION of ICC.1:1998-09]</i>"</ins></td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">4.<i>x.y.z</i></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1, <i>Image technology colour management – Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">4.<i>x.y.z</i> where <i>x</i> &le; 3</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1:2010, <i>Image technology colour management – Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
   </tr>
 </table>
 
@@ -320,14 +320,14 @@ NOTE: While these operators are primarily for path-painting, they also serve a p
 <ul>
 <li>A PDF reader shall support <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC.1:2010 as required by PDF 2.0</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">both ICC profile header version 2.x and 4.x profiles</ins>, which will enable it to properly render all embedded ICC profiles regardless of the PDF version.</li>
 <li>A PDF reader shall always process an embedded ICC profile according to the <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">corresponding version of the PDF</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC specification</ins> being processed as shown in <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces"</ins> above; it shall not substitute the alternate colour space in these cases.</li>
-<li>A PDF writer should use ICC <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">1:2010</del> profiles<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved"> conforming to ISO 15076</ins>. It may embed profiles conforming to an earlier or later ICC version.</li>
+<li>A PDF writer should use ICC <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">1:2010</del> profiles<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved"> conforming to ISO 15076-1:2010</ins>. It may embed profiles conforming to an earlier or later ICC version.</li> 
 <li>...</li>
 </ul>
 
 <p class="location">Add a new NOTE 2 below NOTE 1 and above Table 67 as follows:</p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="228" data-iso="approved">NOTE 2 ICC profiles can contain private tags. This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="228" data-iso="approved">NOTE 2 ICC profiles can contain private tags or tags defined in later versions of ICC profile specifications than specified in "Table 66 - ICC Specification versions supported by ICC based colour spaces". This document intentionally does not specify how a PDF processor might use such data in ICC profiles. A PDF processor can ignore such data altogether. Any use of such data is implementation dependent.</ins>
 </p>
 
 <h4 id="H8.6.5.8">8.6.5.8 Rendering intents</h4>
