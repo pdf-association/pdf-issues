@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 13 Sept 2024
+modified: 17 January 2025
 ---
 
 <ul class="noprint">
@@ -639,6 +639,16 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
     </p>
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="190" data-iso="approved">NOTE While different font programs may define descender metrics using either positive or negative numbers (e.g. <a href="https://docs.microsoft.com/en-us/typography/opentype/spec/os2#uswindescent">OpenType usWinDescent</a>), PDF always expects negative values.   
     </ins></p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>MissingWidth</b></td>
+    <td>number</td>
+    <td>
+      (<i>Optional</i>) The width to use for character codes whose widths are not specified in a font dictionary’s <b>Widths</b> array. 
+      <del onMouseEnter="mouseEnter(this)" data-issue="453">This shall have a predictable effect only if all such codes map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="453">To ensure predictable results, all such codes must map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry - otherwise results are implementation dependent.</ins> 
+      Default value: <i>0</i>.
     </td>
   </tr>
 </table>
