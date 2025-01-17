@@ -671,6 +671,81 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 
 <h3 id="H9.10.3">9.10.3 ToUnicode CMaps</h3>
 
+<p class="location">Change the first paragraph and bullet list as follows:</p>
+
+<p>
+The CMap defined in the <b>ToUnicode</b> entry of the font dictionary shall follow the syntax for CMaps introduced in 9.7.5, "CMaps" and fully documented in Adobe Technical Note #5014, <i>Adobe CMap and CIDFont Files Specification</i>. 
+<ins onMouseEnter="mouseEnter(this)" data-issue="462">The <b>ToUnicode</b> stream dictionary contains the entries list in "Table 125a - Additional entries in a ToUnicode CMap stream dictionary".</ins>
+This CMap differs from an ordinary one in these ways:
+</p>
+
+<ul>
+  <li>
+    <del onMouseEnter="mouseEnter(this)" data-issue="462">The only pertinent entry in the CMap stream dictionary (see "Table 118 — Additional entries in a CMap stream dictionary") is</del>
+    <b>UseCMap</b><del onMouseEnter="mouseEnter(this)" data-issue="462">, which</del> may be used if the CMap is based on another <b>ToUnicode</b> CMap.</li>
+  <li>...</li>
+  <li>...</li>
+</ul>
+
+<p class="location">Insert a new table (Table 125a) after the bulleted list as follows:</p>
+
+
+<table>
+  <caption id="Table125a"><ins onMouseEnter="mouseEnter(this)" data-issue="462">Table 125a - Additional entries in a ToUnicode CMap stream dictionary</ins></caption>
+  <tr>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462">Key</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462">Type</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462">Value</ins></th>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>Type</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">name</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      (<i>Optional</i>) The type of PDF object that this dictionary describes; shall be <b>CMap</b> for a ToUnicode CMap dictionary.
+      </ins>
+    </td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>CMapName</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">name</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      (<i>Optional</i>) The name of the CMap. It shall be the same as the value of <b>CMapName</b> in the ToUnicode CMap data.
+      </ins>
+    </td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>CIDSystemInfo</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">dictionary</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      (<i>Optional</i>) A dictionary (see 9.7.3, "CIDSystemInfo dictionaries") containing entries that define the character collection for the CIDFont or CIDFonts associated with the CMap. The value of this entry shall be the same as the value of <b>CIDSystemInfo</b> in the ToUnicode CMap data. (However, it does not need to match the values of <b>CIDSystemInfo</b> for the <i>Identity-H</i> or <i>Identity-V</i> CMaps.)
+      </ins>
+    </td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>WMode</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">integer</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      (<i>Optional</i>) A code that specifies the writing mode for any CIDFont with which this CMap is combined. The value shall be 0 for horizontal or 1 for vertical. Default value: 0. The value of this entry shall be the same as the value of <b>WMode</b> in the CMap file.
+      </ins>
+    </td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>UseCMap</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">name or stream</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      (<i>Optional</i>) The name of a predefined CMap, or a stream containing a CMap. If this entry is present, the referencing CMap shall specify only the character mappings that differ from the referenced CMap.
+      </ins>
+    </td>
+  </tr>
+</table>
+
+<p>...</p>
+
 <p class="location">Change the last paragraph in EXAMPLE 2 as follows:</p>
 
 <p>EXAMPLE 2</p>

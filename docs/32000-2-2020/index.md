@@ -65,6 +65,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause09.html#Table115">Table 115 - Entries in a CIDFont dictionary</a></li>
 <li><a href="clause09.html#Table119">Table 119 - Entries in a Type 0 font dictionary</a></li>
 <li><a href="clause09.html#Table120">Table 120 - Entries common to all font descriptors</a></li>
+<li><a href="clause09.html#Table125a"><ins onMouseEnter="mouseEnter(this)" data-issue="462">Table 125a - Additional entries in a ToUnicode CMap stream dictionary</ins></a></li>
 <li><a href="clause10.html#Table129">Table 129 - Additional entries specific to a Type 6 halftone dictionary</a></li>
 <li><a href="clause10.html#Table132">Table 132 - Entries in a Type 5 halftone dictionary</a></li>
 <li><a href="clause11.html#Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</a></li>
