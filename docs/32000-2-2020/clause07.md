@@ -1817,10 +1817,18 @@ PDF function) and others can be described with exponential functions (Type 2 in 
     <td><b>Subtype</b></td>
     <td>name</td>
     <td>
-    <p>
-    (<i>Optional, required in the case of an embedded file stream used as an associated file
-    <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">(see 14.13 "Associated files") or as an asset of a RichMedia annotation (see "13.7 Rich media")</ins></i>) ...
-    </p>
+      <p>(<i>Optional, required in the case of an embedded file stream used as an associated file
+        <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">(see 14.13 "Associated files") or as an asset of a RichMedia annotation (see "13.7 Rich media")</ins></i>) 
+        The subtype of the embedded file. 
+        The value of this entry shall conform to 
+        <del onMouseEnter="mouseEnter(this)" data-issue="155">the MIME media type names defined in Internet RFC 2046, with the provision that characters not permitted in names</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="155">a subset of the MIME media type as defined in Internet RFC 2046, section 2. This entry shall only include the top-level media type and its description separated by a SOLIDUS (2Fh) (/), and shall not include SEMI-COLON (3Bh) (;), EQUALS (3Dh) (=), NUMBER SIGN (23h) (#), or any media type parameters or sub-parameters. Additionally, characters not permitted in PDF name objects
+        </ins>
+        shall use the 2-character hexadecimal code format described in 7.3.5, "Name objects".
+      </p>
+      <p class="hangingindent">
+        NOTE The media type for PDF is defined by Internet RFC 8118.
+      </p>
     </td>
   </tr>
 </table>
