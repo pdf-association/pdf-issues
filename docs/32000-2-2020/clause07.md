@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 13 November 2024
+modified: 17 January 2025
 ---
 
 <ul class="noprint">
@@ -66,6 +66,8 @@ modified: 13 November 2024
     <li>7.5.8 Cross-reference streams
      <ul>
       <li><a href="#H7.5.8.2">7.5.8.2 Cross-reference stream dictionary</a>
+      </li>
+      <li><a href="#H7.5.8.3">7.5.8.3 Cross-reference stream data</a>
       </li>
       <li><a href="#H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</a>
       </li>
@@ -712,6 +714,37 @@ NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (se
 </li>
 <li>...</li>
 </ul>
+
+<h4 id="H7.5.8.3">7.5.8.3 Cross-reference stream data</h4>
+
+<p class="location">Change Table 18 as follows:</p>
+
+
+<table>
+  <caption id="Table18">Table 18 - Entries in a cross-reference stream</caption>
+  <tr>
+    <th>Type</th>
+    <th>Field</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td rowspan="3"><b>1</b></td>
+    <td>1</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>
+      The byte offset of the object, starting from the beginning of the PDF file.
+      <del onMouseEnter="mouseEnter(this)" data-issue="500">Default value: <i>0</i>.</del>
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>...</td>
+  </tr>
+</table>
+
 
 <h4 id="H7.5.8.4">7.5.8.4 Compatibility with applications that do not support compressed reference streams</h4>
 
