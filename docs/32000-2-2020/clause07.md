@@ -321,6 +321,24 @@ However, a</del>
 
 <p>...</p>
 
+<p class="location">Change Table 3 follows:</p>
+
+<table>
+  <caption id="Table3">Table 3 - Escape sequences in literal strings</caption>
+  <tr>
+    <th>Sequence</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>\ddd</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="494">Character code ddd (octal)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="494">Byte with value ddd in octal.</ins>
+    </td>
+  </tr>
+</table>
+
+
 <h3 id="H7.3.7">7.3.7 Dictionary objects</h3>
 
 <p>...</p>

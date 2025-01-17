@@ -25,6 +25,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 
 <p>The following tables have all been corrected:</p>
 <ul>
+<li><a href="clause07.html#Table3">Table 3 - Escape sequences in literal strings</a></li>
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
 <li><a href="clause07.html#Table8">Table 8 - Optional parameters for LZWDecode and FlateDecode filters</a></li>
 <li><a href="clause07.html#Table15">Table 15 - Entries in the file trailer dictionary</a></li>
