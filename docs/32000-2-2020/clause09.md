@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 17 January 2025
+modified: 31 January 2025
 ---
 
 <ul class="noprint">
@@ -43,6 +43,8 @@ modified: 17 January 2025
  </li>
  <li>9.7 Composite fonts
   <ul>
+   <li><a href="#H9.7.3">9.7.3. CIDSystemInfo dictionaries</a>
+   </li>
    <li>9.7.4 CIDFonts
     <ul>
      <li><a href="#H9.7.4.1">9.7.4.1 General</a>
@@ -520,6 +522,19 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 
 
 <h2 id="H9.7">9.7 Composite fonts</h2>
+
+<h3 id="H9.7.3">9.7.3 CIDSystemInfo dictionaries</h3>
+
+<p class="location">Change the second paragraph as follows:</p>
+
+<p>
+The <b>CIDSystemInfo</b> entry in a CIDFont is a dictionary that shall specify the CIDFont’s character collection. 
+The CIDFont need not contain glyph descriptions for all the CIDs in a collection; it may contain a subset. 
+The <b>CIDSystemInfo</b> entry in a CMap file shall be 
+<del onMouseEnter="mouseEnter(this)" data-issue="518">either</del> a single dictionary
+<del onMouseEnter="mouseEnter(this)" data-issue="518">or an array of dictionaries, depending on whether it associates codes with a single character collection or with multiple character collections</del>; see 9.7.5, "CMaps".
+</p>
+
 
 <h3 id="H9.7.4">9.7.4 CIDFonts</h3>
 
