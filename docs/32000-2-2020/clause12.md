@@ -719,6 +719,15 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <th>Description</th>
   </tr>
   <tr>
+    <td>OpenArrow</td>
+    <td>...</td>
+    <td>
+      <p class="editornote">EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/513">Issue #513</a>) 
+      The row height in the ISO PDF file obscures the end of the sentence. The text is unchanged but noted here for clarity.</p>
+      <p>Two short lines meeting in an acute angle to form an open arrowhead.</p>
+    </td>
+  </tr>
+  <tr>
     <td>RClosedArrow</td>
     <td>...</td>
     <td>
