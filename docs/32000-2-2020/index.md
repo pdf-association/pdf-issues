@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 17 January 2024
+modified: 31 January 2025
 ---
 
 <p>
@@ -76,6 +76,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table166">Table 166 - Entries common to all annotation dictionaries</a></li>
 <li><a href="clause12.html#Table176">Table 176 - Additional entries specific to a link annotation</a></li>
 <li><a href="clause12.html#Table177">Table 177 - Additional entries specific to a free text annotation</a></li>
+<li><a href="clause12.html#Table179">Table 179 - Line ending styles</a></li>
 <li><a href="clause12.html#Table181">Table 181 - Additional entries specific to a polygon or polyline annotation</a></li>
 <li><a href="clause12.html#Table185">Table 185 - Additional entries specific to an ink annotation</a></li>
 <li><a href="clause12.html#Table202">Table 202 - Additional entries specific to a go-to action</a></li>

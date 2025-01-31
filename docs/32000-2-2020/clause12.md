@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 19 November 2024
+modified: 31 January 2025
 ---
 
 <ul class="noprint">
@@ -705,6 +705,29 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     </td>
   </tr>
 </table>
+
+
+<h4 id="H12.5.6.7">12.5.6.7 Line annotations</h4>
+
+<p class="location">Change Table 179 as follows:</p>
+
+<table>
+  <caption id="Table179">Table 179 - Line ending styles</caption>
+  <tr>
+    <th>Name</th>
+    <th>Appearance</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>RClosedArrow</td>
+    <td>...</td>
+    <td>
+      (<i>PDF 1.5</i>) A triangular closed arrowhead in the reverse direction from ClosedArrow
+      <ins onMouseEnter="mouseEnter(this)" data-issue="515">filled with the annotation’s interior colour, if any.</ins>
+    </td>
+  </tr>
+</table>
+
 
 <h4 id="H12.5.6.9">12.5.6.9 Polygon and polyline annotations</h4>
 
