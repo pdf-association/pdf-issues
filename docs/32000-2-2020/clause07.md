@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 17 January 2025
+modified: 31 January 2025
 ---
 
 <ul class="noprint">
@@ -1803,6 +1803,34 @@ PDF function) and others can be described with exponential functions (Type 2 in 
 <h3 id="H7.11.4">7.11.4 Embedded file streams</h3>
 
 <h4 id="H7.11.4.1">7.11.4.1 General</h4>
+
+<p class="location">Replace the text and bullets below the NOTE as follows:</p>
+
+<div>
+<del onMouseEnter="mouseEnter(this)" data-issue="481">
+<p>An embedded file stream shall be included in a PDF file in one of the following ways:</p>
+
+<ul>
+  <li>
+    Any file specification dictionary in the document may have an <b>EF</b> entry that specifies an embedded file stream. The stream data shall still be associated with a location in the file system. In particular, this method shall be used for file attachment annotations (see 12.5.6.15, "File attachment annotations"), which associate the embedded file with a location on a page in the document.
+  </li>
+  <li>
+    Embedded file streams may be associated with the document as a whole through the <b>EmbeddedFiles</b> entry in the PDF file’s name dictionary (see 7.7.4, "Name dictionary"). The associated name tree shall map name strings to file specifications that refer to embedded file streams through their <b>EF</b> entries.
+  </li>
+</ul>
+</del>
+
+<ins onMouseEnter="mouseEnter(this)" data-issue="481">
+<p>
+Embedded file streams shall only be included in a PDF file using file specification dictionaries that have an <b>EF</b> entry. Embedded file streams shall only be specified via <b>EF</b> or <b>RF</b> entries (see 7.11.2, "Related files array") in file specification dictionaries. Any file specification dictionary may have an embedded file stream, however file attachment annotations (see 12.5.6.15, "File attachment annotations"), which associate an embedded file with a location on a page in the document, shall always include an embedded file stream. 
+</p>
+
+<p>
+File specification dictionaries using embedded file streams can be associated with the document as a whole through the <b>EmbeddedFiles</b> entry in the PDF file’s name dictionary (see 7.7.4, "Name dictionary"), however this is not required unless stated otherwise.  
+</p>
+</ins>
+</div>
+
 
 <p class="location">Change Table 44 as follows:</p>
 

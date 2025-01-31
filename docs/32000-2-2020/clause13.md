@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 19 July 2024
+modified: 31 January 2025
 ---
 
 <ul class="noprint">
@@ -36,6 +36,8 @@ modified: 19 July 2024
     </ul>
    </li>
   </ul>
+ </li>
+ <li><a href="#H13.5">13.5 Alternate presentations</a>
  </li>
  <li>13.6 3D Artwork
   <ul>
@@ -208,6 +210,16 @@ Since both media clip data and media play parameters dictionaries may be employe
 Since both media clip data and media play parameters dictionaries may be employed in a play operation, and each may reference a media players dictionary, there is a potential for conflict between the contents of the two media players dictionaries.
 </ins></p>
 
+
+<h2 id="H13.5">13.5 Alternate Presentations</h2>
+
+<p class="location">Change NOTE 2 below Table 308 as follows:</p>
+
+<p class="hangingindent">
+NOTE 2: Typically, images are stored in the document as image XObjects (see 8.9.5, "Image dictionaries"), thereby allowing them to be shared between the standard PDF representation and the slideshow. Other media objects are stored 
+<del onMouseEnter="mouseEnter(this)" data-issue="481">or embedded file streams (see 7.11.4, "Embedded file streams")</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="481">as file specification dictionaries (see 7.11.3, "File specification dictionaries") typically with an embedded file stream</ins>.
+</p>
 
 <h2 id="H13.6">13.6 3D Artwork</h2>
 
