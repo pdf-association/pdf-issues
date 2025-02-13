@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 31 January 2025
+modified: 14 February 2025
 ---
 
 <p>
@@ -29,6 +29,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
 <li><a href="clause07.html#Table8">Table 8 - Optional parameters for LZWDecode and FlateDecode filters</a></li>
 <li><a href="clause07.html#Table15">Table 15 - Entries in the file trailer dictionary</a></li>
+<li><a href="clause07.html#Table17">Table 17 - Additional entries specific to a cross-reference stream dictionary</a></li>
 <li><a href="clause07.html#Table18">Table 18 - Entries in a cross-reference stream</a></li>
 <li><a href="clause07.html#Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</a></li>
 <li><a href="clause07.html#Table25">Table 25 - Entries common to all crypt filter dictionaries</a></li>

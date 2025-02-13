@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 31 January 2025
+modified: 14 February 2025
 ---
 
 <ul class="noprint">
@@ -623,6 +623,7 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
       </p>
       <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE 1: this is equivalent to the total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
       <p>Any object in a cross-reference section whose number is greater than this value shall be ignored and defined to be missing by a PDF reader.</p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
     </td>
   </tr>
   <tr>
@@ -732,6 +733,30 @@ NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (se
 </li>
 <li>...</li>
 </ul>
+
+
+<p class="location">Change Table 17 as follows:</p>
+
+<table>
+  <caption id="Table17">Table 17 - Additional entries specific to a cross-reference stream dictionary</caption>
+  <tr>
+    <th>Keu</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Size</b></td>
+    <td>integer</td>
+    <td>
+      <p>
+        (<i>Required</i>) The number one greater than the highest object number used in this section or in any section for which this shall be an update. It shall be equivalent to the <b>Size</b> entry in a trailer dictionary
+        <ins onMouseEnter="mouseEnter(this)" data-issue="522">(see "Table 15 - Entries in the file trailer dictionar")</ins>.
+      </p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
+    </td>
+  </tr>
+  </table>
+
 
 <h4 id="H7.5.8.3">7.5.8.3 Cross-reference stream data</h4>
 
