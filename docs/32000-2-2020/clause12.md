@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 31 January 2025
+modified: 28 March 2025
 ---
 
 <ul class="noprint">
@@ -62,6 +62,8 @@ modified: 31 January 2025
      <li><a href="#H12.5.6.5">12.5.6.5 Link annotations</a>
      </li>
      <li><a href="#H12.5.6.6">12.5.6.6 Free text annotations</a>
+     </li>
+     <li><a href="#H12.5.6.8">12.5.6.8 Square and circle annotations</a>
      </li>
      <li><a href="#H12.5.6.9">12.5.6.9 Polygon and polyline annotations</a>
      </li>
@@ -698,6 +700,16 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     </td>
   </tr>
   <tr>
+    <td><b>RD</b></td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="524">rectangle</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="524">array</ins>
+    </td>
+    <td>
+       ...
+    </td>
+  </tr>
+  <tr>
     <td><b>BS</b></td>
     <td>dictionary</td>
     <td>
@@ -738,6 +750,30 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
 </table>
 
 
+<h4 id="H12.5.6.8">12.5.6.8 Square and circle annotations</h4>
+
+<p class="location">Change Table 180 as follows:</p>
+
+<table>
+  <caption id="Table180">Table 180 - Additional entries specific to a square or circle annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>RD</b></td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="524">rectangle</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="524">array</ins>
+    </td>
+    <td>
+       ...
+    </td>
+  </tr>
+</table>
+
+
 <h4 id="H12.5.6.9">12.5.6.9 Polygon and polyline annotations</h4>
 
 <p class="location">Change Table 181 as follows:</p>
@@ -770,6 +806,30 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
         <ins onMouseEnter="mouseEnter(this)" data-issue="444" data-iso="approved">be ignored</ins>.
       </p>
       <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
+<h4 id="H12.5.6.11">12.5.6.11 Caret annotations</h4>
+
+<p class="location">Change Table 183 as follows:</p>
+
+<table>
+  <caption id="Table183">Table 183 - Additional entries specific to caret annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>RD</b></td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="524">rectangle</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="524">array</ins>
+    </td>
+    <td>
+       ...
     </td>
   </tr>
 </table>
