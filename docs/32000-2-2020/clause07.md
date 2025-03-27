@@ -117,6 +117,8 @@ modified: 28 March 2025
     </li>
     <li><a href="#H7.6.6">7.6.6 Crypt filters</a>
     </li>
+    <li><a href="#H7.6.7">7.6.7 Unencrypted wrapper document</a>
+    </li>
    </ul>
   </li>
   <li>7.7 Document structure
@@ -1093,6 +1095,24 @@ there is no way to specify that metadata is to be left unencrypted in these case
 ...
 
 </code>
+
+<h3 id="H7.6.7">7.6.7 Unencrypted wrapper document</h3>
+
+<p>...</p>
+
+<p class="location">Correct the third paragraph (immediately above Table 28) as follows:</p>
+
+<p>
+To enable automatic display of an encrypted payload within an unencrypted wrapper the PDF producer shall include a <b>Collection</b> dictionary 
+(as described in 12.3.5, "Collections") identifying the encrypted payload as the initial document in the collection and setting the collection 
+<b>View</b> to <i>H</i> (hidden). In addition, the PDF producer shall include the file specification dictionary for the encrypted payload in the 
+<b>EmbeddedFiles</b> name tree, and as an entry in the <b>AF</b> array in the document catalog. The file specification dictionary for the encrypted
+payload shall include the <b>AFRelationship</b> key with a value of <i>EncryptedPayload</i>, and shall include an encrypted payload dictionary 
+(see "Table 28 — Entries in an encrypted payload dictionary") with details of the cryptographic filter needed to decrypt the encrypted payload. 
+<del onMouseEnter="mouseEnter(this)" data-issue="529">For a PDF file that is an unencrypted wrapper for an encrypted payload document, the <b>EmbeddedFiles</b> name tree shall contain exactly one entry, for the encrypted payload document.</del>
+</p>
+
+<p>...</p>
 
 
 <h2 id="H7.7">7.7 Document structure</h2>
