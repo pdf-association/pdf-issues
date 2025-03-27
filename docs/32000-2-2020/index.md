@@ -32,6 +32,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table17">Table 17 - Additional entries specific to a cross-reference stream dictionary</a></li>
 <li><a href="clause07.html#Table18">Table 18 - Entries in a cross-reference stream</a></li>
 <li><a href="clause07.html#Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</a></li>
+<li><a href="clause07.html#Table24">Table 24 - Public-key security handler user access permissions</a></li>
 <li><a href="clause07.html#Table25">Table 25 - Entries common to all crypt filter dictionaries</a></li>
 <li><a href="clause07.html#Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</a></li>
 <li><a href="clause07.html#Table29">Table 29 - Entries in the catalog dictionary</a></li>

@@ -105,8 +105,6 @@ modified: 28 March 2025
     </li>
     <li>7.6.5 Public-key security handlers
      <ul>
-      <li>7.6.5.1 General
-      </li>
       <li><a href="#H7.6.5.2">7.6.5.2 Public-key encryption dictionary</a>
       </li>
       <li><a href="#H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="approved">7.6.5.3 Public-key encryption permissions</ins></a>
@@ -969,11 +967,7 @@ and the file encryption key as the key. ...
 
 <h3 id="H7.6.5">7.6.5 Public-key security handlers</h3>
 
-<h4 id="H7.6.5.1">7.6.5.1 General</h4>
-
-<p>...</p>
-
-<h4 id="H7.6.5.2">7.6.5.2 Public-key security dictionary</h4>
+<h4 id="H7.6.5.2">7.6.5.2 Public-key encryption dictionary</h4>
 
 <p>...</p>
 
@@ -989,7 +983,22 @@ Permitted values of the <b>SubFilter</b> entry for use with conforming public-ke
 
 <h4 id="H7.6.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="196" data-iso="approved">7.6.5.3 Public-key security permissions</ins></h4>
 
-<p class="editornote">EDITOR NOTE: current text and Table 24 remain unchanged.</p>
+<p class="editornote">EDITOR NOTE: current text and Table 24 remain.</p>
+
+<p class="location">Append a new row to the end of Table 24 as follows:</p>
+
+<table>
+  <caption id="Table24">Table 24 - Public-key security handler user access permissions</caption>
+  <tr>
+    <th>Bit position</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="475">13 - 32</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="475">Reserved. Must be 1.</ins></td>
+  </tr>
+</table>
+
 
 <p class="location">Renumber the next clause appropriately:</p>
 
