@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 14 February 2025
+modified: 28 March 2025
 ---
 
 <ul class="noprint">
@@ -449,6 +449,22 @@ support a standard set of filters that fall into two main categories:
  <li>...</li>
  <li>...</li>
 </ul>
+
+<p class="location">Change EXAMPLE 1 code as follows:</p>
+
+<code>1 0 obj
+&lt;&lt; /Length 44<del onMouseEnter="mouseEnter(this)" data-issue="527">7</del><ins onMouseEnter="mouseEnter(this)" data-issue="527">9</ins>
+/Filter [/ASCII85Decode /FlateDecode]
+&gt;&gt;
+stream
+GhQ\j_/=ii'LfceJ%/-bPR=PCD-LeMX!Z7pmG\.BSJGfG1MH^`^(F$rh*;h>h/i!XMIl:?" o%Tk8W%<tN0"eRE==1.4N>=Cc@SiF+*s\3`snB>Y$n=^$I[!5nkk"\Wp1;WBoI"]#[bZ=Ou#c QqtW?@3^VI[CftgH<HWngT*U:T12>8lm%+Q=gI^i0+\=:@fc@rHeGG!&rPQYfZ>YdpV`eM._@ Z]46KR;P?sT-tkq-Xn4&]=EE2[h<FPBAePZJ9inNNF4R*)W-?\NH1C-GG&?=IC_>b%&++C2jo
+*B+a7eU&`hee<0<F%-Y]De8<t.o"7p,rtNedLjK.J`kSL@c;BDEq+;F1Y?O)>keNVh+-(1*S= CQ?fQ_I]jWNc*Qe2XR^R#;3:<$\m;6d>@C3egX,+W+VfZ]X4*3r5*tiejhQe:!'jq$^jfSIj%
+13FL<ins onMouseEnter="mouseEnter(this)" data-issue="527">~&gt;</ins>
+endstream
+endobj
+
+</code>
+
 
 <h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
 
