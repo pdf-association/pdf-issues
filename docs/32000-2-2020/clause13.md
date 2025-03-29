@@ -218,7 +218,7 @@ Since both media clip data and media play parameters dictionaries may be employe
 <p class="hangingindent">
 NOTE 2: Typically, images are stored in the document as image XObjects (see 8.9.5, "Image dictionaries"), thereby allowing them to be shared between the standard PDF representation and the slideshow. Other media objects are stored 
 <del onMouseEnter="mouseEnter(this)" data-issue="481">or embedded file streams (see 7.11.4, "Embedded file streams")</del> 
-<ins onMouseEnter="mouseEnter(this)" data-issue="481">as file specification dictionaries (see 7.11.3, "File specification dictionaries") typically with an embedded file stream</ins>.
+<ins onMouseEnter="mouseEnter(this)" data-issue="481">as file specification dictionaries (see 7.11.3, "File specification dictionaries"), typically with an embedded file stream</ins>.
 </p>
 
 <h2 id="H13.6">13.6 3D Artwork</h2>

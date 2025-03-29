@@ -783,7 +783,7 @@ it is an empty class, which defines no additional attributes.</ins>
 </p>
 
 <p>
-"Table 363 — Property list entries for artifacts" shows the properties that may be included in <del onMouseEnter="mouseEnter(this)" data-issue="484">such a</del> <ins onMouseEnter="mouseEnter(this)" data-issue="484">the</ins> property list.
+"Table 363 — Property list entries for artifacts" shows the properties that may be included in <del onMouseEnter="mouseEnter(this)" data-issue="484">a</del> <ins onMouseEnter="mouseEnter(this)" data-issue="484">the</ins> property list.
 </p>
 
 <p>...</p>

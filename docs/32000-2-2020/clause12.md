@@ -319,7 +319,7 @@ is a destination name and the corresponding value is either<del onMouseEnter="mo
 "Table 149 — Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
 an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="approved">:</ins>
 </p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="162,288" data-iso="approved">
+<ins onMouseEnter="mouseEnter(this)" data-issue="162,288" data-iso="approved, industry">
  <ul>
   <li>an array defining the destination, using the syntax shown in "Table 149 — Destination syntax", or</li>
   <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry. See "Table 202 — Additional entries specific to a go-to action", "Table 203 - Additional entries specific to a remote go-to action" and "Table 204 - Additional entries specific to an embedded go-to action".</li>
@@ -935,7 +935,7 @@ However, a projection annotation is only valid within the context of an associat
 </table>
 
 
-<h4 id="H12.6.4.8">12.6.4.16 URI actions</h4>
+<h4 id="H12.6.4.8">12.6.4.8 URI actions</h4>
 
 <p class="location">Note the following Editor Note that is inserted below Example 2:</p>
 
@@ -1127,7 +1127,7 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
 
 <h4 id="H12.7.5.3">12.7.5.3 Text fields</h4>
 
-<p class="location">Change paragraph below Table 231 as follows:</p>
+<p class="location">Change the paragraph below Table 231 as follows:</p>
 
 <p>
 <ins onMouseEnter="mouseEnter(this)" data-issue="392">If the field has a value other than <b>null</b>, </ins>

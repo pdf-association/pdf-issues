@@ -756,7 +756,7 @@ NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (se
 <table>
   <caption id="Table17">Table 17 - Additional entries specific to a cross-reference stream dictionary</caption>
   <tr>
-    <th>Keu</th>
+    <th>Key</th>
     <th>Type</th>
     <th>Value</th>
   </tr>
@@ -766,7 +766,7 @@ NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (se
     <td>
       <p>
         (<i>Required</i>) The number one greater than the highest object number used in this section or in any section for which this shall be an update. It shall be equivalent to the <b>Size</b> entry in a trailer dictionary
-        <ins onMouseEnter="mouseEnter(this)" data-issue="522">(see "Table 15 - Entries in the file trailer dictionar")</ins>.
+        <ins onMouseEnter="mouseEnter(this)" data-issue="522">(see "Table 15 - Entries in the file trailer dictionary")</ins>.
       </p>
       <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
     </td>
