@@ -1657,6 +1657,13 @@ establishes the exact contents of the complete PDF file at the time indicated in
     </p>
     </td>
   </tr>
+  <tr>
+      <td><b>LPTS</b></td>
+      <td>array</td>
+      <td>
+      (<i><del onMouseEnter="mouseEnter(this)" data-issue="533">Optional</del><ins onMouseEnter="mouseEnter(this)" data-issue="533">Required</ins>; PDF 2.0</i>) ...
+      </td>
+  </tr> 
 </table>
 
 
