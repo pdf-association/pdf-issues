@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex A
 title: (informative) Operator Summary
-modified: 9 May 2022
+modified: 28 April 2025
 ---
 
 <ul class="noprint">
@@ -39,6 +39,21 @@ modified: 9 May 2022
     <td>
       <del onMouseEnter="mouseEnter(this)" data-issue="108" data-iso="approved">"Table 351 - Entries in a data dictionary"</del>
       <ins onMouseEnter="mouseEnter(this)" data-issue="108" data-iso="approved">"Table 352 - Marked-content operators"</ins>
+    </td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td><b>BT</b></td>
+    <td></td>
+    <td>Begin text object</td>
+    <td>
+      <del onMouseEnter="mouseEnter(this)" data-issue="541">"Table 107 - Text-showing operators"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="541">"Table 105 - Text object operators"</ins>
     </td>
   </tr>
   <tr>
