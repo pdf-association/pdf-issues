@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 28 April 2025
+modified: 29 April 2025
 ---
 
 <ul class="noprint">
@@ -1648,7 +1648,13 @@ establishes the exact contents of the complete PDF file at the time indicated in
     <td>
     <p>(<i>Optional; PDF 2.0</i>) A 12-element transformation matrix of 
     <del onMouseEnter="mouseEnter(this)" data-issue="358" data-iso="approved">real</del> 
-    numbers, defining the transformation from XObject position coordinates to projected coordinate system. 
+    numbers, defining the transformation from XObject position coordinates to 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="534">the</ins> projected coordinate system.
+    <ins onMouseEnter="mouseEnter(this)" data-issue="534">This array represents a 4x4 affine transformation matrix in row order. The XObject position coordinates are represented as a 1x4 matrix, <code>[ <i>x y z</i> 1 ]</code>, where the <code><i>z</i></code> value is non-zero only in the context of a <b>Geospatial3D</b>-enabled annotation.
+    </ins>
+    </p>
+    <p>
+    <ins onMouseEnter="mouseEnter(this)" data-issue="534"><b>PCSM</b> only applies when <b>GCS</b> is a projected coordinate system.</ins> 
     If <b>GCS</b> is a geographic coordinate system dictionary then <b>PCSM</b> should be ignored and <b>GTPS</b> used instead.
     If <b>PCSM</b> is present, it has priority over <b>GPTS</b>, and <b>GPTS</b> values may be ignored. This priority provides backward compatibility.
     </p>
