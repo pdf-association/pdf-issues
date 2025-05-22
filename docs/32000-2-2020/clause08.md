@@ -460,7 +460,7 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       <del onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved">Mask</del>
       <ins onMouseEnter="mouseEnter(this)" data-issue="14" data-iso="approved"><b>Mask</b></ins> and <b>ColorSpace</b> 
       shall not be 
-      <del onMouseEnter="mouseEnter(this)" data-issue="215">specified</del><ins onMouseEnter="mouseEnter(this)" data-issue="215">present (if present, they shall be ignored)</ins>; 
+      <del onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">specified</del><ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">present (if present, they shall be ignored)</ins>; 
       unmasked areas shall be painted using the current nonstroking colour. Default value: <i>false</i>.
     </td>
   </tr>
@@ -471,10 +471,10 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       <p>(<i>Optional; shall not be present for image masks; PDF 1.3</i>) 
       An image XObject defining an image mask to be applied to this image (see 8.9.6.3, "Explicit masking"), or an array specifying a range of colours to be applied to it as a colour key mask (see 8.9.6.4, "Colour key masking"). 
       If <b>ImageMask</b> is <i>true</i>, this entry shall not be present
-      <ins onMouseEnter="mouseEnter(this)" data-issue="215">(if present, it shall be ignored)</ins>.
+      <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">(if present, it shall be ignored)</ins>.
       </p>
       <p class="hangingindent">
-      <ins onMouseEnter="mouseEnter(this)" data-issue="215">NOTE Interactions between <b>SMask</b>, <b>SMaskInData</b> and the current soft mask in the graphics state are set out in clause 11.6.4.3, "Mask shape and opacity".</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">NOTE Interactions between <b>SMask</b>, <b>SMaskInData</b> and the current soft mask in the graphics state are set out in clause 11.6.4.3, "Mask shape and opacity".</ins>
       </p>
     </td>
   </tr>
@@ -497,7 +497,7 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       <p>If present, this entry shall override the current soft mask in the graphics state, as well as the image’s <b>Mask</b> entry, if any.
       However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect. 
       If <b>SMask</b> is absent and <b>SMaskInData</b> has value 0, the image shall have no associated soft mask (although the current soft mask in the graphics state may still apply). 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="215"><b>SMask</b> shall not be present if <b>SMaskInData</b> has a non-zero value (if present, <b>SMask</b> shall be ignored).</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved"><b>SMask</b> shall not be present if <b>SMaskInData</b> has a non-zero value (if present, <b>SMask</b> shall be ignored).</ins>
       </p>
       <p>
       <ins onMouseEnter="mouseEnter(this)" data-issue="13" data-iso="approved">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2 Soft-mask images.</ins>
@@ -515,14 +515,14 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       <ol start="0">
         <li>
           If present, encoded soft-mask image information shall be ignored.
-          <ins onMouseEnter="mouseEnter(this)" data-issue="215">If present, <b>SMask</b> shall override the current soft mask in the graphics state, as well as the image’s <b>Mask</b> entry, if any. However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect.</ins>
+          <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">If present, <b>SMask</b> shall override the current soft mask in the graphics state, as well as the image’s <b>Mask</b> entry, if any. However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect.</ins>
         </li>
         <li>The image’s data stream includes encoded soft-mask values. A PDF processor shall create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.</li>
         <li>The image’s data stream includes colour channels that have been premultiplied with an opacity channel; the image data also includes the opacity channel. A PDF processor shall create a soft-mask image from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.</li>
       </ol>
       <p>
         If this entry has a non-zero value, <b>SMask</b> shall not be specified
-        <ins onMouseEnter="mouseEnter(this)" data-issue="215">(if present, <b>SMask</b> shall be ignored). If <b>SMaskInData</b> is non-zero, 
+        <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">(if present, <b>SMask</b> shall be ignored). If <b>SMaskInData</b> is non-zero, 
         there shall be only one opacity channel in the JPEG 2000 data and it shall apply to all colour channels</ins>. 
         See also 7.4.9, "JPXDecode filter".
       </p>
