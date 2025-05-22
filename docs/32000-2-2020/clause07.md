@@ -332,8 +332,8 @@ However, a</del>
   <tr>
     <td>\ddd</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="494">Character code ddd (octal)</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="494">Byte with value ddd in octal.</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="494" data-iso="approved">Character code ddd (octal)</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="494" data-iso="approved">Byte with value ddd in octal.</ins>
     </td>
   </tr>
 </table>
@@ -453,13 +453,13 @@ support a standard set of filters that fall into two main categories:
 <p class="location">Change EXAMPLE 1 code as follows:</p>
 
 <code>1 0 obj
-&lt;&lt; /Length 44<del onMouseEnter="mouseEnter(this)" data-issue="527">7</del><ins onMouseEnter="mouseEnter(this)" data-issue="527">9</ins>
+&lt;&lt; /Length 44<del onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">7</del><ins onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">9</ins>
 /Filter [/ASCII85Decode /FlateDecode]
 &gt;&gt;
 stream
 GhQ\j_/=ii'LfceJ%/-bPR=PCD-LeMX!Z7pmG\.BSJGfG1MH^`^(F$rh*;h>h/i!XMIl:?" o%Tk8W%<tN0"eRE==1.4N>=Cc@SiF+*s\3`snB>Y$n=^$I[!5nkk"\Wp1;WBoI"]#[bZ=Ou#c QqtW?@3^VI[CftgH<HWngT*U:T12>8lm%+Q=gI^i0+\=:@fc@rHeGG!&rPQYfZ>YdpV`eM._@ Z]46KR;P?sT-tkq-Xn4&]=EE2[h<FPBAePZJ9inNNF4R*)W-?\NH1C-GG&?=IC_>b%&++C2jo
 *B+a7eU&`hee<0<F%-Y]De8<t.o"7p,rtNedLjK.J`kSL@c;BDEq+;F1Y?O)>keNVh+-(1*S= CQ?fQ_I]jWNc*Qe2XR^R#;3:<$\m;6d>@C3egX,+W+VfZ]X4*3r5*tiejhQe:!'jq$^jfSIj%
-13FL<ins onMouseEnter="mouseEnter(this)" data-issue="527">~&gt;</ins>
+13FL<ins onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">~&gt;</ins>
 endstream
 endobj
 
@@ -639,7 +639,7 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
       </p>
       <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE 1: this is equivalent to the total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
       <p>Any object in a cross-reference section whose number is greater than this value shall be ignored and defined to be missing by a PDF reader.</p>
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522" data-iso="approved">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
     </td>
   </tr>
   <tr>
@@ -766,9 +766,9 @@ NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (se
     <td>
       <p>
         (<i>Required</i>) The number one greater than the highest object number used in this section or in any section for which this shall be an update. It shall be equivalent to the <b>Size</b> entry in a trailer dictionary
-        <ins onMouseEnter="mouseEnter(this)" data-issue="522">(see "Table 15 - Entries in the file trailer dictionary")</ins>.
+        <ins onMouseEnter="mouseEnter(this)" data-issue="522" data-iso="approved">(see "Table 15 - Entries in the file trailer dictionary")</ins>.
       </p>
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522" data-iso="approved">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
     </td>
   </tr>
   </table>
@@ -795,7 +795,7 @@ NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (se
     <td>2</td>
     <td>
       The byte offset of the object, starting from the beginning of the PDF file.
-      <del onMouseEnter="mouseEnter(this)" data-issue="500">Default value: <i>0</i>.</del>
+      <del onMouseEnter="mouseEnter(this)" data-issue="500" data-iso="approved">Default value: <i>0</i>.</del>
     </td>
   </tr>
   <tr>
@@ -857,8 +857,8 @@ the value of the <b>Contents</b> key in a Signature dictionary is always a hexad
 
 <p>
 Stream data shall be encrypted after applying all stream encoding filters and shall be decrypted before applying any stream decoding filters. The number of bytes to be encrypted or decrypted 
-<del onMouseEnter="mouseEnter(this)" data-issue="469">shall be</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="469">is</ins> 
+<del onMouseEnter="mouseEnter(this)" data-issue="469" data-iso="approved">shall be</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="469" data-iso="approved">is</ins> 
 given by the <b>Length</b> entry in the stream dictionary. Decryption of strings (other than those in the encryption dictionary) shall be done after escape-sequence processing and hexadecimal decoding as appropriate to the string representation described in 7.3.4, "String objects".
 </p>
 
@@ -1877,7 +1877,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
 <p class="location">Replace the text and bullets below the NOTE as follows:</p>
 
 <div>
-<del onMouseEnter="mouseEnter(this)" data-issue="481">
+<del onMouseEnter="mouseEnter(this)" data-issue="481" data-iso="approved">
 <p>An embedded file stream shall be included in a PDF file in one of the following ways:</p>
 
 <ul>
@@ -1890,7 +1890,7 @@ PDF function) and others can be described with exponential functions (Type 2 in 
 </ul>
 </del>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="481">
+<ins onMouseEnter="mouseEnter(this)" data-issue="481" data-iso="approved">
 <p>
 Embedded file streams shall only be included in a PDF file using file specification dictionaries that have an <b>EF</b> entry. Embedded file streams shall only be specified via <b>EF</b> or <b>RF</b> entries (see 7.11.2, "Related files array") in file specification dictionaries. Any file specification dictionary may have an embedded file stream, however file attachment annotations (see 12.5.6.15, "File attachment annotations"), which associate an embedded file with a location on a page in the document, shall always include an embedded file stream. 
 </p>
@@ -1919,8 +1919,8 @@ File specification dictionaries using embedded file streams can be associated wi
         <ins onMouseEnter="mouseEnter(this)" data-issue="156" data-iso="approved">(see 14.13 "Associated files") or as an asset of a RichMedia annotation (see "13.7 Rich media")</ins></i>) 
         The subtype of the embedded file. 
         The value of this entry shall conform to 
-        <del onMouseEnter="mouseEnter(this)" data-issue="155">the MIME media type names defined in Internet RFC 2046, with the provision that characters not permitted in names</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="155">a subset of the MIME media type as defined in Internet RFC 2046, section 2. This entry shall only include the top-level media type and its description separated by a SOLIDUS (2Fh) (/), and shall not include SEMI-COLON (3Bh) (;), EQUALS (3Dh) (=), NUMBER SIGN (23h) (#), or any media type parameters or sub-parameters. Additionally, characters not permitted in PDF name objects
+        <del onMouseEnter="mouseEnter(this)" data-issue="155" data-iso="approved">the MIME media type names defined in Internet RFC 2046, with the provision that characters not permitted in names</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="155" data-iso="approved">a subset of the MIME media type as defined in Internet RFC 2046, section 2. This entry shall only include the top-level media type and its description separated by a SOLIDUS (2Fh) (/), and shall not include SEMI-COLON (3Bh) (;), EQUALS (3Dh) (=), NUMBER SIGN (23h) (#), or any media type parameters or sub-parameters. Additionally, characters not permitted in PDF name objects
         </ins>
         shall use the 2-character hexadecimal code format described in 7.3.5, "Name objects".
       </p>
