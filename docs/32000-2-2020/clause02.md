@@ -25,8 +25,8 @@ The following documents are referred to in the text in such a way that some or a
 <p class="location">Correct the date of "Adobe Technical Note #5014" normative reference as follows:</p>
 
 <p class="hangingindent">
-Adobe Technical Note #5014, <i>Adobe CMap and CID Font Files Specification, Version 1.0</i>, 
-(<del onMouseEnter="mouseEnter(this)" data-issue="519">8 October 1996</del><ins onMouseEnter="mouseEnter(this)" data-issue="519">11 June 1993</ins>),
+Adobe Technical Note #5014, <i>Adobe CMap and CID Font Files Specification, Version 1.0</i>,
+(<del onMouseEnter="mouseEnter(this)" data-issue="519" data-iso="approved">8 October 1996</del><ins onMouseEnter="mouseEnter(this)" data-issue="519" data-iso="approved">11 June 1993</ins>),
 Adobe Systems Incorporated<sup>1</sup>
 </p>
 
@@ -43,7 +43,6 @@ EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/519"
 <p>...</p>
 
 </div>
-
 
 <hr>
 <p class="footnote">Last modified: {{ page.modified }}</p>
