@@ -37,11 +37,11 @@ modified: 13 November 2024
     <ul>
      <li>14.7.5.1 General
       <ul>
-       <li><del onMouseEnter="mouseEnter(this)" data-issue="452"><a href="#H14.7.5.1.1">14.7.5.1.1 Content items</a></del>
+       <li><del onMouseEnter="mouseEnter(this)" data-issue="452" data-iso="approved"><a href="#H14.7.5.1.1">14.7.5.1.1 Content items</a></del>
        </li>
       </ul>
      </li>
-     <li><ins onMouseEnter="mouseEnter(this)" data-issue="452"><a href="#H14.7.5.1a">14.7.5.2 Content items</a></ins>
+     <li><ins onMouseEnter="mouseEnter(this)" data-issue="452" data-iso="approved"><a href="#H14.7.5.1a">14.7.5.2 Content items</a></ins>
      </li>
      <li><a href="#H14.7.5.2">14.7.5.2 Marked-content sequences as content items</a>
      </li>
@@ -566,9 +566,9 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <p class="location">Move entire subclause 14.7.5.1.1 up one heading level to become 14.7.5.2 and renumber later subclauses of 14.7.5 appropriately. Subclause text is otherwise unchanged:</p>
 
-<del onMouseEnter="mouseEnter(this)" data-issue="452"><h5 id="H14.7.5.1.1">14.7.5.1.1 Content items</h5></del>
+<del onMouseEnter="mouseEnter(this)" data-issue="452" data-iso="approved"><h5 id="H14.7.5.1.1">14.7.5.1.1 Content items</h5></del>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="452"><h4 id="H14.7.5.1a">14.7.5.2 Content items</h4></ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="452" data-iso="approved"><h4 id="H14.7.5.1a">14.7.5.2 Content items</h4></ins>
 
 <p>...</p>
 
@@ -775,15 +775,15 @@ it is an empty class, which defines no additional attributes.</ins>
 <p class="location">Change/split the paragraph below NOTE 1 into a new NOTE 2 and normative sentence as follows:</p>
 
 <p>
-<del onMouseEnter="mouseEnter(this)" data-issue="484">For artifacts defined using the marked-content sequence method, the form indicated in EXAMPLE 1 shall be used to identify a generic artifact; the form indicated in EXAMPLE 2 shall be used for those artifacts that have an associated property list.</del> 
+<del onMouseEnter="mouseEnter(this)" data-issue="484" data-iso="approved">For artifacts defined using the marked-content sequence method, the form indicated in EXAMPLE 1 shall be used to identify a generic artifact; the form indicated in EXAMPLE 2 shall be used for those artifacts that have an associated property list.</del> 
 </p>
 
 <p class="hangingindent">
-<ins onMouseEnter="mouseEnter(this)" data-issue="484">NOTE 2: For artifacts defined using the marked-content sequence method, the form indicated in EXAMPLE 1 is used to identify a generic artifact; the form indicated in EXAMPLE 2 is used for those artifacts that have an associated property list.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="484" data-iso="approved">NOTE 2: For artifacts defined using the marked-content sequence method, the form indicated in EXAMPLE 1 is used to identify a generic artifact; the form indicated in EXAMPLE 2 is used for those artifacts that have an associated property list.</ins>
 </p>
 
 <p>
-"Table 363 — Property list entries for artifacts" shows the properties that may be included in <del onMouseEnter="mouseEnter(this)" data-issue="484">a</del> <ins onMouseEnter="mouseEnter(this)" data-issue="484">the</ins> property list.
+"Table 363 — Property list entries for artifacts" shows the properties that may be included in <del onMouseEnter="mouseEnter(this)" data-issue="484" data-iso="approved">a</del> <ins onMouseEnter="mouseEnter(this)" data-issue="484" data-iso="approved">the</ins> property list.
 </p>
 
 <p>...</p>
@@ -870,8 +870,8 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
     <td>Grouping, Block or Inline</td>
     <td>
       <p>
-        <del onMouseEnter="mouseEnter(this)" data-issue="437">Either an association between the content enclosed by the <b>Annot</b> structure element and one or more corresponding PDF annotations (see 12.5, "Annotations"), or a mechanism to include one or more PDF annotations in the structure tree.</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="437">Encloses one or more PDF annotations and associated content, if any.</ins>
+        <del onMouseEnter="mouseEnter(this)" data-issue="437" data-iso="approved">Either an association between the content enclosed by the <b>Annot</b> structure element and one or more corresponding PDF annotations (see 12.5, "Annotations"), or a mechanism to include one or more PDF annotations in the structure tree.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="437" data-iso="approved">Encloses one or more PDF annotations and associated content, if any.</ins>
       </p>
       <p>...</p>
     </td>
@@ -881,8 +881,8 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
     <td>Grouping, Block or Inline</td>
     <td>
       <p>
-        <del onMouseEnter="mouseEnter(this)" data-issue="437">Either an association between content enclosed by the <b>Form</b> structure element and a corresponding widget annotation or a mechanism to include a widget annotation in the structure tree.</del>
-        <ins onMouseEnter="mouseEnter(this)" data-issue="437">Encloses a PDF widget annotation and associated content, if any.</ins>
+        <del onMouseEnter="mouseEnter(this)" data-issue="437" data-iso="approved">Either an association between content enclosed by the <b>Form</b> structure element and a corresponding widget annotation or a mechanism to include a widget annotation in the structure tree.</del>
+        <ins onMouseEnter="mouseEnter(this)" data-issue="437" data-iso="approved">Encloses a PDF widget annotation and associated content, if any.</ins>
       </p>
       <p>...</p>
     </td>
@@ -1682,7 +1682,7 @@ NOTE: <b>Lang</b> entries are defined as text strings which include Unicode-enco
 <ul>
   <li>A structure element (see 14.7.2, “Structure Hierarchy”), by means of the optional <b>ActualText</b> entry (PDF 1.4) of the structure element dictionary.</li>
   <li>(<i>PDF 1.5</i>) A marked-content sequence (see 14.6, “Marked Content”), through an <b>ActualText</b> entry in a property list attached to the marked-content sequence with a <b>Span</b> tag.</li>
-  <li><ins onMouseEnter="mouseEnter(this)" data-issue="483">(<i>PDF 1.5</i>) A marked-content sequence (see 14.6, "Marked content"), through an <b>ActualText</b> entry in a property list attached to the marked-content sequence with an <b>Artifact</b> tag (see 14.8.2.2.2 Artifact).</ins></li>
+  <li><ins onMouseEnter="mouseEnter(this)" data-issue="483" data-iso="approved">(<i>PDF 1.5</i>) A marked-content sequence (see 14.6, "Marked content"), through an <b>ActualText</b> entry in a property list attached to the marked-content sequence with an <b>Artifact</b> tag (see 14.8.2.2.2 Artifact).</ins></li>
 </ul>
 
 <p>...</p>

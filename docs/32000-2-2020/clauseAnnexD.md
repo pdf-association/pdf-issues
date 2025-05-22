@@ -49,14 +49,14 @@ modified: 13 Sept 2024
   </tr>
   <tr>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="461">&#x0160;</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="461">&minus;</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="461" data-iso="approved">&#x0160;</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="461" data-iso="approved">&minus;</ins>
     </td>
     <td>138</td>
     <td>0x8a</td>
     <td>0212</td>
     <td>U+2212</td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="461">MINUS</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="461" data-iso="approved">MINUS</ins></td>
     <td></td>
   </tr>
 </table>
