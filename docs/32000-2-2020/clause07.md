@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 28 March 2025
+modified: 23 May 2025
 ---
 
 <ul class="noprint">
@@ -868,6 +868,21 @@ given by the <b>Length</b> entry in the stream dictionary. Decryption of strings
 <p class="location">Change NOTE 1 as follows:</p>
 
 <p class="hangingindent">NOTE 1 The name RC4&trade; is a registered trademark of RSA Security Inc. and cannot be used by third parties creating implementations of the algorithm. Proprietary implementations of the RC4 encryption algorithm are available under license from RSA Security Inc. For licensing information, contact: <del onMouseEnter="mouseEnter(this)" data-issue="95" data-iso="approved">RSA Security Inc. 2955 Campus Drive, Suite 400, San Mateo, CA 94403-2507, USA, or</del> <a href="http://www.rsasecurity.com/">http://www.rsasecurity.com/</a>.</p>
+
+<p class="location">Change the bullet immediately below NOTE 1 as follows:</p>
+
+<ul>
+  <li>
+    The AES (Advanced Encryption Standard) algorithm (beginning with PDF 1.6). AES is a symmetric block cipher
+    <ins onMouseEnter="mouseEnter(this)" data-issue="542">as specified in FIPS 197, <i>Advanced Encryption Standard (AES)</i></ins>
+    : the same algorithm shall be used for both encryption and decryption, and the length of the data when encrypted is rounded up to a multiple of the block size
+    <ins onMouseEnter="mouseEnter(this)" data-issue="542"> except in the case where the length of the data is an exact multiple of the block size, in which case it is increased to the next higher multiple of the block size. The block size</ins>
+    <del onMouseEnter="mouseEnter(this)" data-issue="542">, which</del> 
+    is fixed to always be 16 bytes
+    <del onMouseEnter="mouseEnter(this)" data-issue="542">, as specified in FIPS 197, <i>Advanced Encryption Standard (AES)</i></del>.
+  </li>
+</ul>
+
 
 <p>...</p>
 
