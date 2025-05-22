@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 31 January 2025
+modified: 23 May 2025
 ---
 
 <ul class="noprint">
@@ -191,15 +191,18 @@ Within a text object, the graphics state stack operators <b>q</b> and <b>Q</b> (
 <p>
 The strings shall conform to the syntax for string objects
 <ins onMouseEnter="mouseEnter(this)" data-issue="165" data-iso="approved">(see 7.3.4.2, "Literal strings")</ins>.
-When a string is written by enclosing the data in parentheses, bytes whose values are equal to
+<del onMouseEnter="mouseEnter(this)" data-issue="550">When a string is written by enclosing the data in parentheses, bytes whose values are equal to
 those of the ASCII characters
 <ins onMouseEnter="mouseEnter(this)" data-issue="165" data-iso="approved">CARRIAGE RETURN (0Dh),</ins>
 LEFT PARENTHESIS (28h), RIGHT PARENTHESIS (29h),
 and REVERSE SOLIDUS (5Ch) (backslash) shall be preceded by a REVERSE SOLIDUS)
 character. All other byte values between 0 and 255 may be used in a string object.
-These rules apply to each individual byte in a string object, whether the string
-is interpreted by the text-showing operators as single-byte or multiple-byte
-character codes.
+These</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="550">All literal string </ins> rules apply 
+<del onMouseEnter="mouseEnter(this)" data-issue="550">to each individual byte in a string object, whether the string</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="550">before the string</ins>
+is interpreted by the text-showing operators 
+<del onMouseEnter="mouseEnter(this)" data-issue="550">as single-byte or multiple-byte character codes</del>.
 </p>
 
 <p>...</p>
