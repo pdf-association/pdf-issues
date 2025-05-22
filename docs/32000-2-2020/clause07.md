@@ -994,8 +994,8 @@ Permitted values of the <b>SubFilter</b> entry for use with conforming public-ke
     <th>Meaning</th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="475">13 - 32</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="475">Reserved. Must be 1.</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="475" data-iso="approved">13 - 32</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="475" data-iso="approved">Reserved. Must be 1.</ins></td>
   </tr>
 </table>
 
@@ -1118,7 +1118,7 @@ To enable automatic display of an encrypted payload within an unencrypted wrappe
 <b>EmbeddedFiles</b> name tree, and as an entry in the <b>AF</b> array in the document catalog. The file specification dictionary for the encrypted
 payload shall include the <b>AFRelationship</b> key with a value of <i>EncryptedPayload</i>, and shall include an encrypted payload dictionary 
 (see "Table 28 — Entries in an encrypted payload dictionary") with details of the cryptographic filter needed to decrypt the encrypted payload. 
-<del onMouseEnter="mouseEnter(this)" data-issue="529">For a PDF file that is an unencrypted wrapper for an encrypted payload document, the <b>EmbeddedFiles</b> name tree shall contain exactly one entry, for the encrypted payload document.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="529" data-iso="approved">For a PDF file that is an unencrypted wrapper for an encrypted payload document, the <b>EmbeddedFiles</b> name tree shall contain exactly one entry, for the encrypted payload document.</del>
 </p>
 
 <p>...</p>

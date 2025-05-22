@@ -1769,10 +1769,10 @@ was rendered as "Druk-" and "ker").
     <td>array</td>
     <td>
       <p>(<i>Optional; PDF 2.0</i>) An array, containing at least one element, where each element shall be 
-        <del onMouseEnter="mouseEnter(this)" data-issue="482">an embedded file specification (7.11.4, "Embedded file streams") or</del> 
+        <del onMouseEnter="mouseEnter(this)" data-issue="482" data-iso="approved">an embedded file specification (7.11.4, "Embedded file streams") or</del> 
         a URL file specification 
-        <ins onMouseEnter="mouseEnter(this)" data-issue="482">dictionary (see "Table 43 - Entries in a file specification dictionary") with an <b>FS</b> entry having the value <i>URL</i> and an <b>F</b> entry being a <b>PDFDocEncoded</b> text string limited to RFC 3986</ins>
-        (<ins onMouseEnter="mouseEnter(this)" data-issue="482">see</ins> 7.11.5, "URL specifications").
+        <ins onMouseEnter="mouseEnter(this)" data-issue="482" data-iso="approved">dictionary (see "Table 43 - Entries in a file specification dictionary") with an <b>FS</b> entry having the value <i>URL</i> and an <b>F</b> entry being a <b>PDFDocEncoded</b> text string limited to RFC 3986</ins>
+        (<ins onMouseEnter="mouseEnter(this)" data-issue="482" data-iso="approved">see</ins> 7.11.5, "URL specifications").
       </p>
       <p class="hangingindent">
         NOTE: ICC profiles referenced via the <b>URLs</b> array do not have to conform to the <b>ICCBased</b> requirements of "Table 67 — ICC profile types" and thus can also support N-component output profiles.

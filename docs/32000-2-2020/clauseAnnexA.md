@@ -52,8 +52,8 @@ modified: 28 April 2025
     <td></td>
     <td>Begin text object</td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="541">"Table 107 - Text-showing operators"</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="541">"Table 105 - Text object operators"</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="541" data-iso="approved">"Table 107 - Text-showing operators"</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="541" data-iso="approved">"Table 105 - Text object operators"</ins>
     </td>
   </tr>
   <tr>
