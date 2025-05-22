@@ -531,8 +531,8 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 The <b>CIDSystemInfo</b> entry in a CIDFont is a dictionary that shall specify the CIDFont’s character collection. 
 The CIDFont need not contain glyph descriptions for all the CIDs in a collection; it may contain a subset. 
 The <b>CIDSystemInfo</b> entry in a CMap file shall be 
-<del onMouseEnter="mouseEnter(this)" data-issue="518">either</del> a single dictionary
-<del onMouseEnter="mouseEnter(this)" data-issue="518">or an array of dictionaries, depending on whether it associates codes with a single character collection or with multiple character collections</del>; see 9.7.5, "CMaps".
+<del onMouseEnter="mouseEnter(this)" data-issue="518" data-iso="approved">either</del> a single dictionary
+<del onMouseEnter="mouseEnter(this)" data-issue="518" data-iso="approved">or an array of dictionaries, depending on whether it associates codes with a single character collection or with multiple character collections</del>; see 9.7.5, "CMaps".
 </p>
 
 
@@ -632,7 +632,7 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
     <td>
       <p>(<i>Optional; PDF 1.5</i>) The weight (thickness) component of the fully-qualified font name or font specifier. If present, 
       the value shall 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="474">be between 1 and 1000 inclusive, and should</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="474" data-iso="approved">be between 1 and 1000 inclusive, and should</ins>
       be one of 100, 200, 300, 400, 500, 600, 700, 800, or 900, where each number indicates a weight that is at least as dark as its predecessor.
       A value of 400 shall indicate a normal weight; 700 shall indicate bold.
       The specific interpretation of these values varies from font to font.
@@ -661,8 +661,8 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
     <td>number</td>
     <td>
       (<i>Optional</i>) The width to use for character codes whose widths are not specified in a font dictionary’s <b>Widths</b> array. 
-      <del onMouseEnter="mouseEnter(this)" data-issue="453">This shall have a predictable effect only if all such codes map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry.</del>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="453">To ensure predictable results, all such codes must map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry - otherwise results are implementation dependent.</ins> 
+      <del onMouseEnter="mouseEnter(this)" data-issue="453" data-iso="approved">This shall have a predictable effect only if all such codes map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="453" data-iso="approved">To ensure predictable results, all such codes must map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry - otherwise results are implementation dependent.</ins> 
       Default value: <i>0</i>.
     </td>
   </tr>
@@ -700,14 +700,14 @@ entries for metric information only; it shall not include <b>FontFile</b>, <b>Fo
 
 <p>
 The CMap defined in the <b>ToUnicode</b> entry of the font dictionary shall follow the syntax for CMaps introduced in 9.7.5, "CMaps" and fully documented in Adobe Technical Note #5014, <i>Adobe CMap and CIDFont Files Specification</i>. 
-<ins onMouseEnter="mouseEnter(this)" data-issue="462">The <b>ToUnicode</b> stream dictionary contains the entries list in "Table 125a - Additional entries in a ToUnicode CMap stream dictionary".</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">The <b>ToUnicode</b> stream dictionary contains the entries list in "Table 125a - Additional entries in a ToUnicode CMap stream dictionary".</ins>
 This CMap differs from an ordinary one in these ways:
 </p>
 
 <ul>
   <li>
-    <del onMouseEnter="mouseEnter(this)" data-issue="462">The only pertinent entry in the CMap stream dictionary (see "Table 118 — Additional entries in a CMap stream dictionary") is</del>
-    <b>UseCMap</b><del onMouseEnter="mouseEnter(this)" data-issue="462">, which</del> may be used if the CMap is based on another <b>ToUnicode</b> CMap.</li>
+    <del onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">The only pertinent entry in the CMap stream dictionary (see "Table 118 — Additional entries in a CMap stream dictionary") is</del>
+    <b>UseCMap</b><del onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">, which</del> may be used if the CMap is based on another <b>ToUnicode</b> CMap.</li>
   <li>...</li>
   <li>...</li>
 </ul>
@@ -716,53 +716,53 @@ This CMap differs from an ordinary one in these ways:
 
 
 <table>
-  <caption id="Table125a"><ins onMouseEnter="mouseEnter(this)" data-issue="462">Table 125a - Additional entries in a ToUnicode CMap stream dictionary</ins></caption>
+  <caption id="Table125a"><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">Table 125a - Additional entries in a ToUnicode CMap stream dictionary</ins></caption>
   <tr>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462">Key</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462">Type</ins></th>
-    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462">Value</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">Key</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">Type</ins></th>
+    <th><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">Value</ins></th>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>Type</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">name</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved"><b>Type</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">name</ins></td>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">
       (<i>Optional</i>) The type of PDF object that this dictionary describes; shall be <b>CMap</b> for a ToUnicode CMap dictionary.
       </ins>
     </td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>CMapName</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">name</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved"><b>CMapName</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">name</ins></td>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">
       (<i>Optional</i>) The name of the CMap. It shall be the same as the value of <b>CMapName</b> in the ToUnicode CMap data.
       </ins>
     </td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>CIDSystemInfo</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">dictionary</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved"><b>CIDSystemInfo</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">dictionary</ins></td>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">
       (<i>Optional</i>) A dictionary (see 9.7.3, "CIDSystemInfo dictionaries") containing entries that define the character collection for the CIDFont or CIDFonts associated with the CMap. The value of this entry shall be the same as the value of <b>CIDSystemInfo</b> in the ToUnicode CMap data. (However, it does not need to match the values of <b>CIDSystemInfo</b> for the <i>Identity-H</i> or <i>Identity-V</i> CMaps.)
       </ins>
     </td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>WMode</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">integer</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved"><b>WMode</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">integer</ins></td>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">
       (<i>Optional</i>) A code that specifies the writing mode for any CIDFont with which this CMap is combined. The value shall be 0 for horizontal or 1 for vertical. Default value: 0. The value of this entry shall be the same as the value of <b>WMode</b> in the CMap file.
       </ins>
     </td>
   </tr>
   <tr>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462"><b>UseCMap</b></ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462">name or stream</ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved"><b>UseCMap</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">name or stream</ins></td>
     <td>
-      <ins onMouseEnter="mouseEnter(this)" data-issue="462">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">
       (<i>Optional</i>) The name of a predefined CMap, or a stream containing a CMap. If this entry is present, the referencing CMap shall specify only the character mappings that differ from the referenced CMap.
       </ins>
     </td>
