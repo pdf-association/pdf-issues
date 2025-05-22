@@ -51,6 +51,8 @@ modified: 23 May 2025
      <li><a href="#H8.6.6.5">8.6.6.5 DeviceN colour spaces</a>
      </li>
    </li>
+   <li><a href="#H8.6.8">8.6.8 Colour operators</a>
+   </li>
   </ul>
  </li>
  <li>8.7 Patterns
@@ -374,6 +376,31 @@ The colour component name <b>None</b>
 <del onMouseEnter="mouseEnter(this)" data-issue="309" data-iso="approved">, which may be present only for <b>DeviceN</b> colour spaces that do not have the <b>NChannel</b> subtype,</del> 
 indicates that the corresponding colour component shall never be painted on the page, as in a <b>Separation</b> colour space for the <b>None</b> colourant. When a <b>DeviceN</b> colour space is painting the named device colourants directly, colour components corresponding to <b>None</b> colourants shall be discarded. However, when the <b>DeviceN</b> colour space reverts to its alternate colour space, those components shall be passed to the tint transformation function, which may use them as desired.
 </p>
+
+
+<h3 id="H8.6.8">8.6.8 Colour operators</h3>
+
+<p class="location">Change Table 73 as follows:</p>
+
+<table>
+  <caption id="Table73">Table 73 - Colour operators</caption>
+  <tr>
+    <th>Operands</th>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+   <td><i>name</i></td>
+   <td><b>CS</b></td>
+   <td>
+     <p>
+      (<i>PDF 1.1</i>) Set the current colour space to use for stroking operations. The operand name shall be a name object. If the colour space is one that can be specified by a name and no additional parameters (<b>DeviceGray</b>, <b>>DeviceRGB</b>, <b>DeviceCMYK</b>, and certain cases of <b>Pattern</b>), the name may be specified directly. Otherwise, it shall be a name defined in the <b>ColorSpace</b> subdictionary of the current resource dictionary (see 7.8.3, "Resource dictionaries")
+      <del onMouseEnter="mouseEnter(this)" data-issue="551">; the associated value shall be an array describing the colour space (see 8.6.3, "Colour space families")</del>.
+     </p>
+     <p>...</p>
+   </td>
+  </tr>
+</table>
 
 
 
