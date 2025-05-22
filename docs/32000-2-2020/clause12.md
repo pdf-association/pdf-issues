@@ -21,11 +21,11 @@ modified: 29 April 2025
    </li>
    <li>12.3.5 Collections
     <ul>
-     <li><a href="#H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477">12.3.5.3 Collection navigators</ins></a>
+     <li><a href="#H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.5.3 Collection navigators</ins></a>
      </li>
     </ul>
    </li>
-   <li><a href="#H12.3.6"><del onMouseEnter="mouseEnter(this)" data-issue="477">12.3.6 Navigators</del></a>
+   <li><a href="#H12.3.6"><del onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.6 Navigators</del></a>
    </li>
   </ul>
  </li>
@@ -319,7 +319,7 @@ is a destination name and the corresponding value is either<del onMouseEnter="mo
 "Table 149 — Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
 an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="approved">:</ins>
 </p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="162,288" data-iso="approved, industry">
+<ins onMouseEnter="mouseEnter(this)" data-issue="162,288" data-iso="approved, approved">
  <ul>
   <li>an array defining the destination, using the syntax shown in "Table 149 — Destination syntax", or</li>
   <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry. See "Table 202 — Additional entries specific to a go-to action", "Table 203 - Additional entries specific to a remote go-to action" and "Table 204 - Additional entries specific to an embedded go-to action".</li>
@@ -359,11 +359,11 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 
 <h3 id="H12.3.5">12.3.5 Collections</h3>
 
-<h4 id="H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477">12.3.5.3 Collection navigators</ins></h4>
+<h4 id="H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.5.3 Collection navigators</ins></h4>
 
 <p class="editornote">EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/477">Issue #477</a>) all of subclause 12.3.6 Navigators was moved and demoted one level to subclause 12.3.5.3 Collection navigators.</p>
 
-<h3 id="H12.3.6"><del onMouseEnter="mouseEnter(this)" data-issue="477">12.3.6 Navigators</del></h3>
+<h3 id="H12.3.6"><del onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.6 Navigators</del></h3>
 
 <p class="editornote">EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/477">Issue #477</a>) move all of subclause 12.3.6 Navigators to subclause 12.3.5.3 Collection navigators.</p>
 
@@ -626,7 +626,7 @@ an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins 
 <p class="location">Correct the first paragraph as follows:</p>
 
 <p>
-Beginning with PDF 1.5, annotations may have an author-specific state associated with them. The state is not specified in the annotation itself but in a separate text annotation that refers to the original annotation by means of its <b>IRT</b> ("in reply to") entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>). States shall be grouped into a number of state models, as shown in "Table 174 — Annotation states".
+Beginning with PDF 1.5, annotations may have an author-specific state associated with them. The state is not specified in the annotation itself but in a separate text annotation that refers to the original annotation by means of its <b>IRT</b> ("in reply to") entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>). States shall be grouped into a number of state models, as shown in "Table 174 — Annotation states".
 </p>
 
 <p>...</p>
@@ -637,7 +637,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
 
 <ul>
   <li>...</li>
-  <li>The <b>IRT</b> entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>) shall refer to the original annotation.</li>
+  <li>The <b>IRT</b> entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>) shall refer to the original annotation.</li>
   <li>...</li>
 </ul>
 
@@ -702,8 +702,8 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   <tr>
     <td><b>RD</b></td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="524">rectangle</del> 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="524">array</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">rectangle</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">array</ins>
     </td>
     <td>
        ...
@@ -744,7 +744,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <td>...</td>
     <td>
       (<i>PDF 1.5</i>) A triangular closed arrowhead in the reverse direction from ClosedArrow
-      <ins onMouseEnter="mouseEnter(this)" data-issue="515">filled with the annotation’s interior colour, if any.</ins>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="515" data-iso="approved">filled with the annotation’s interior colour, if any.</ins>
     </td>
   </tr>
 </table>
@@ -764,8 +764,8 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   <tr>
     <td><b>RD</b></td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="524">rectangle</del> 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="524">array</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">rectangle</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">array</ins>
     </td>
     <td>
        ...
@@ -825,8 +825,8 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   <tr>
     <td><b>RD</b></td>
     <td>
-      <del onMouseEnter="mouseEnter(this)" data-issue="524">rectangle</del> 
-      <ins onMouseEnter="mouseEnter(this)" data-issue="524">array</ins>
+      <del onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">rectangle</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">array</ins>
     </td>
     <td>
        ...
@@ -1107,7 +1107,7 @@ appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> wit
 
 <p>
 A push-button field shall have a field type of <i>Btn</i> and the Pushbutton flag (see "Table 229 — Field flags specific to button fields") set to one. 
-<del onMouseEnter="mouseEnter(this)" data-issue="386">Because this type of retains no permanent value, it shall not use the <b>V</b> and <b>DV</b> entries in the field dictionary (see "Table 226 — Entries common to all field dictionaries").</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="386" data-iso="approved">Because this type of retains no permanent value, it shall not use the <b>V</b> and <b>DV</b> entries in the field dictionary (see "Table 226 — Entries common to all field dictionaries").</del>
 </p>
 
 <h5 id="H12.7.5.2.4">12.7.5.2.4 Radio buttons</h5>
@@ -1130,8 +1130,9 @@ shall be used instead of the <b>V</b> key to determine which appearance to use.
 <p class="location">Change the paragraph below Table 231 as follows:</p>
 
 <p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="392">If the field has a value other than <b>null</b>, </ins>
-<del onMouseEnter="mouseEnter(this)" data-issue="392">The</del><ins onMouseEnter="mouseEnter(this)" data-issue="392">the</ins> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="392" data-iso="approved">If the field has a value other than <b>null</b>, </ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="392" data-iso="approved">The</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="392" data-iso="approved">the</ins> 
 field’s text shall be held in a text string (or, beginning with PDF 1.5, a stream) in the <b>V</b> (value) entry of the field dictionary. 
 The contents of this text string or stream shall be used to construct an appearance stream for displaying the field, as described under 12.7.4.3,
 "Variable text" The text shall be presented in a single style (font, size, colour, and so forth), as specified by the <b>DA</b> (default
