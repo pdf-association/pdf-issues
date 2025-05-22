@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 19 November 2024
+modified: 23 May 2025
 ---
 
 <ul class="noprint">
@@ -252,6 +252,15 @@ a miter to a bevel.
 <h3 id="H8.5.3">8.5.3 Path-painting operators</h3>
 
 <h4 id="H8.5.3.1">8.5.3.1 General</h4>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The path-painting operators end a path object, causing it to be painted on the current page in the manner that the operator specifies. The principal path-painting operators shall be <b>S</b> (for stroking) and <b>f</b> (for filling). Variants of these operators combine stroking and filling in a single operation or apply different rules for determining the area to be filled. Attempting to execute a painting operator when the current path is undefined (at the beginning of a new page or immediately after a painting operator has been executed) shall 
+<del onMouseEnter="mouseEnter(this)" data-issue="549">generate an error</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="549">be ignored</ins>. 
+"Table 59 — Path-painting operators" lists all the path-painting operators.
+</p>
 
 <p class="location">Add a new NOTE above Table 59 as follows:</p>
 
