@@ -1,0 +1,200 @@
+%PDF-1.7
+%¿÷¢þ
+%
+% Copyright 2025 PDF Association, Inc. https://www.pdfa.org
+%
+% Errata 133 example as a fully functional PDF.
+% See https://pdf-issues.pdfa.org/32000-2-2020/clause14.html#H14.8.4.7.3
+%
+1 0 obj % Document Catalog (ISO 32000-2:2020, Table 29)
+<<
+  /Type     /Catalog
+  /Lang     (en-US)
+  /MarkInfo << /Marked true >>   % Must be tagged PDF
+  /Pages    2 0 R
+  /StructTreeRoot 7 0 R
+>>
+endobj
+
+2 0 obj % Page tree root with a single page (ISO 32000-2:2020, Table 30)
+<<
+  /Type  /Pages
+  /Count 1
+  /Kids  [ 3 0 R ]
+>>
+endobj
+
+3 0 obj % Page object (ISO 32000-2:2020, Table 31)
+<<
+  /Type       /Page
+  /Annots     [ 4 0 R ] % a single Link Annotation
+  /Contents   5 0 R
+  /MediaBox   [ 0 0 100 100 ]
+  /Parent     2 0 R
+  /Resources  <<
+     /Font << /FHelv 6 0 R >>
+  >>
+  /StructParents 0
+  /Tabs /S
+>>
+endobj
+
+4 0 obj % Link annotation using QuadPoints to span 2 lines (ISO 32000-2:2020, Tables 166 and 176)
+<<
+  /Type     /Annot
+  /Subtype  /Link
+  /P        3 0 R
+  /A        << % URI Action (ISO 32000-2:2020, Tables 196 and 210)
+    /S    /URI
+    /Type /Action
+    /URI  (https://pdfa.org/)
+  >>
+  /Rect     [ 10 77 53 88 ]
+  /Contents (Link annotation to PDF Association website)
+  /QuadPoints [
+    42 83 53 83   53 88 42 88
+    10 77 16 77   16 81 10 81
+  ]
+  /StructParent 1
+>>
+endobj
+
+5 0 obj % Content stream for page 1
+<<
+  /Length 1864
+>>
+stream
+  BT                          % Begin a text object
+    /P << /MCID 0 >> BDC      % Begin marked-content sequence 0 (paragraph)
+      0 0 0 rg                % Set nonstroking colour to black
+      /FHelv 1 Tf             % Set text font and size
+      4 0 0 4 10 84 Tm        % Set text matrix
+      (Here is some text ) Tj % Show text preceding link
+    EMC                       % End marked-content sequence 0
+    /Link << /MCID 1 >> BDC   % Marked-content sequence 1 (link)
+      0 0 1 rg                % Blue visually indicates a hyperlink
+      4 0 0 4 42 84 Tm        % Set text matrix
+      (with a ) Tj            % Show first line of text for link
+      -8 -1.5 Td              % Start a new line
+      (link) Tj               % Show second line of text for link
+    EMC                       % End marked-content sequence 1
+    /P << /MCID 2 >> BDC      % Marked-content sequence 2 (paragraph)
+      0 0 0 rg                % Set nonstroking colour to black
+      ( inside. ) Tj          % Show text following link
+    EMC                       % End marked-content sequence 2
+  ET                          % End the text object
+
+  /Artifact BMC               % Begin marked content for blue underlined hyperlnk
+    0 0 1 RG                  % Set stroking colour to blue
+    1 0 0 1 42 83 cm          % Set coordinate transform matrix
+    0 0 m                     % Move to start a line
+    10 0 l                    % Draw the underline for line 1
+    S                         % Stroke the underline for line 1
+    1 0 0 1 10 77 cm          % Set coordinate transform matrix
+    0 0 m                     % Move to start a line
+    6 0 l                     % Draw the underline for line 2
+    S                         % Stroke the underline for line 2
+  EMC                         % End marked content (artifact)
+endstream
+endobj
+
+6 0 obj % Helvetica font resource for page 1 (not embedded)
+<<
+  /Type      /Font
+  /Subtype   /Type1
+  /BaseFont  /Helvetica
+>>
+endobj
+
+7 0 obj % Structure tree root (ISO 32000-2:2020, Table 354)
+<<
+  /Type       /StructTreeRoot
+  /ParentTree  8 0 R
+  /K          10 0 R
+  /ParentTreeNextKey 4
+>>
+endobj
+
+8 0 obj % Structure tree Parent number-tree (ISO 32000-2:2020, Table 354). Must be indirect values.
+<<
+  /Nums [
+    0   9 0 R     % Page StructParents value --> array of marked-content sequences
+    1  12 0 R     % Annotation StructParent value --> <Link> tag
+  ]
+>>
+endobj
+
+% ISO 32000-2:2020, Table 354, ParentTree: "For a page object ... containing marked-content 
+% sequences that are content items, the value shall be an array of references to the parent 
+% elements of those marked-content sequences"
+9 0 obj
+[
+  11 0 R  % <P> tag
+  12 0 R  % <Link> tag
+  11 0 R  % <P> tag
+]
+endobj
+
+10 0 obj % Root element must always be <Document>
+<<
+  /Type /StructElem
+  /S    /Document
+  /P    7 0 R          % Parent is structure tree root
+  /Pg   3 0 R          % Page 1
+  /K    11 0 R         % Kids = only a <paragraph>
+>>
+endobj
+
+11 0 obj % <P> paragraph structure element
+<<
+  /Type /StructElem
+  /S    /P             % <P> paragraph
+  /P    10 0 R         % Parent is <Document>
+  /Pg    3 0 R         % Page 1
+  /K [                 % Kids:
+      0                %   MCID 0 = paragraph
+      12 0 R           %   <Link> tag
+      2                %   MCID 2 = paragraph
+  ]
+>>
+endobj
+
+12 0 obj % <Link> tag
+<<
+  /Type /StructElem
+  /S    /Link
+  /P    11 0 R         % Parent is <P> paragraph
+  /Pg    3 0 R         % Page 1
+  /K [                 % Kids:
+    1                  %  MCID 1 = link
+    <<
+      /Type /OBJR        % Object reference dictionary (ISO 32000-2:2020, Table 358)
+      /Pg   3 0 R        % Page 1
+      /Obj  4 0 R        % Link annotation
+    >>
+  ]
+>>
+endobj
+xref
+0 13
+0000000000 65535 f
+0000000208 00000 n
+0000000416 00000 n
+0000000551 00000 n
+0000000854 00000 n
+0000001359 00000 n
+0000003312 00000 n
+0000003457 00000 n
+0000003629 00000 n
+0000004149 00000 n
+0000004240 00000 n
+0000004490 00000 n
+0000004853 00000 n
+trailer <<
+  /Root 1 0 R
+  /Size 13
+  /ID [ <21d45ad721d403db5602c008bbe2fa24> <21d45ad721d403db5602c008bbe2fa24> ]
+>>
+startxref
+5262
+%%EOF

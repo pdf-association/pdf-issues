@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 13 November 2024
+modified: 2 June 2025
 ---
 
 <ul class="noprint">
@@ -923,6 +923,30 @@ Here is some text <span style="color:blue;text-decoration:underline;">with a</sp
 NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclose multiple link annotations on a single page is deprecated.
 </ins></p>
 
+<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
+<code>
+4 0 obj % Link annotation using QuadPoints to span 2 lines (ISO 32000-2:2020, Tables 166 and 176)
+&lt;&lt;
+  /Type     /Annot
+  /Subtype  /Link
+  /P        3 0 R
+  /A        &lt;&lt; % URI Action (ISO 32000-2:2020, Tables 196 and 210)
+    /S    /URI
+    /Type /Action
+    /URI  (https://pdfa.org/)
+  &gt;&gt;
+  /Rect     [ 10 77 53 88 ]
+  /Contents (Link annotation to PDF Association website)
+  /QuadPoints [
+    42 83 53 83   53 88 42 88
+    10 77 16 77   16 81 10 81
+  ]
+  /StructParent 1
+&gt;&gt;
+endobj
+
+</code></ins></div>
+
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 2 Consider the following fragment of HTML code, which produces a line of text containing a hypertext link:</ins></p>
 
 <div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
@@ -936,72 +960,93 @@ NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclo
 </code></ins></div>
 
 <br/>
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">This code sample shows an equivalent fragment of PDF using a link element, whose text it displays in blue and underlined.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">This code sample shows an equivalent fragment of PDF using a link element, whose text is displayed as blue and underlined.
+A <a href="LinkExample.pdf" target="_blank">functional PDF is attached <span style="font-size: x-large;">&#x1f4ce;</span></a>.
+</ins></p>
 
 <div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-<code>/P &lt;&lt; /MCID 0 &gt;&gt;                     % Marked-content sequence 0 (paragraph)
-  BDC                                % Begin marked-content sequence
-    BT                               % Begin text object
-      /T1_0 1 Tf                     % Set text font and size
-      14 0 0 14 10.000 753.976 Tm    % Set text matrix
-      0.0 0.0 0.0 rg                 % Set nonstroking colour to black
-      (Here is some text ) Tj        % Show text preceding link
-    ET                               % End text object
-  EMC                                % End marked-content sequence
+<code>5 0 obj
+&lt;&lt;
+  /Length ... 
+&gt;&gt;
+stream
+  BT                          % Begin a text object
+    /P &lt;&lt; /MCID 0 &gt;&gt; BDC      % Begin marked-content sequence 0 (paragraph)
+      0 0 0 rg                % Set nonstroking colour to black
+      /FHelv 1 Tf             % Set text font and size
+      4 0 0 4 10 84 Tm        % Set text matrix
+      (Here is some text ) Tj % Show text preceding link
+    EMC                       % End marked-content sequence 0
+    /Link &lt;&lt; /MCID 1 &gt;&gt; BDC   % Marked-content sequence 1 (link)
+      0 0 1 rg                % Blue visually indicates a hyperlink
+      4 0 0 4 42 84 Tm        % Set text matrix
+      (with a ) Tj            % Show first line of text for link
+      -8 -1.5 Td              % Start a new line
+      (link) Tj               % Show second line of text for link
+    EMC                       % End marked-content sequence 1
+    /P &lt;&lt; /MCID 2 &gt;&gt; BDC      % Marked-content sequence 2 (paragraph)
+      0 0 0 rg                % Set nonstroking colour to black
+      ( inside. ) Tj          % Show text following link
+    EMC                       % End marked-content sequence 2
+  ET                          % End the text object
 
-/Link &lt;&lt; /MCID 1 &gt;&gt;                  % Marked-content sequence 1 (link)
-  BDC                                % Begin marked-content sequence
-    0.7 w                            % Set line width
-    [ ] 0 d                          % Solid dash pattern
-    111.094 751.8587 m               % Move to beginning of underline
-    174.486 751.8587 l               % Draw underline
-    0.0 0.0 1.0 RG                   % Set stroking colour to blue
-    S                                % Stroke underline
-    BT                               % Begin text object
-      14 0 0 14 111.094 753.976 Tm   % Set text matrix
-      0.0 0.0 1.0 rg                 % Set nonstroking colour to blue
-      (with a link) Tj               % Show text of link
-    ET                               % End text object
-  EMC                                % End marked-content sequence
-
-/P &lt;&lt; /MCID 2 &gt;&gt;                     % Marked-content sequence 2 (paragraph)
-  BDC                                % Begin marked-content sequence
-    BT                               % Begin text object
-      14 0 0 14 174.486 753.976 Tm   % Set text matrix
-      0.0 0.0 0.0 rg                 % Set nonstroking colour to black
-      ( inside.) Tj                  % Show text following link
-    ET                               % End text object
-  EMC                                % End marked-content sequence
+  /Artifact BMC               % Begin marked content for blue underlined hyperlnk
+    0 0 1 RG                  % Set stroking colour to blue
+    1 0 0 1 42 83 cm          % Set coordinate transform matrix
+    0 0 m                     % Move to start a line
+    10 0 l                    % Draw the underline for line 1
+    S                         % Stroke the underline for line 1
+    1 0 0 1 10 77 cm          % Set coordinate transform matrix
+    0 0 m                     % Move to start a line
+    6 0 l                     % Draw the underline for line 2
+    S                         % Stroke the underline for line 2
+  EMC                         % End marked content (artifact)
+endstream
+endobj
 </code></ins></div>
 
 <br/>
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 3 This example shows an excerpt from the associated logical structure hierarchy.</ins></p>
 
 <div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-<code>501 0 obj              % Structure element for paragraph
-&lt;&lt;  /Type /StructElem
-    /S /P
-    ...
-    /K [ 0             % Three children: marked-content sequence 0
-         502 0 R       % Link
-         2             % Marked-content sequence 2
-    ]
+<code>10 0 obj % Root element must always be &lt;Document&gt;
+&lt;&lt;
+  /Type /StructElem
+  /S    /Document
+  /P    7 0 R          % Parent is structure tree root
+  /Pg   3 0 R          % Page 1
+  /K    11 0 R         % Kids = only a &lt;P&gt; paragraph
 &gt;&gt;
 endobj
 
-502 0 obj              % Structure element for link
-&lt;&lt;  /Type /StructElem
-    /S /Link
-    ...
-    /K [ 1             % Two children: marked-content sequence 1
-         503 0 R       % Object reference to link annotation
-    ]
+11 0 obj %  &lt;P&gt; paragraph structure element
+&lt;&lt;
+  /Type /StructElem
+  /S    /P             % &lt;P&gt; paragraph
+  /P    10 0 R         % Parent is &lt;Document&gt;
+  /Pg    3 0 R         % Page 1
+  /K [                 % Kids:
+      0                %   MCID 0 = paragraph
+      12 0 R           %   &lt;Link&gt; tag
+      2                %   MCID 2 = paragraph
+  ]
 &gt;&gt;
 endobj
 
-503 0 obj              % Object reference to link annotation
-&lt;&lt;  /Type /OBJR
-    /Obj 600 0 R       % Link annotation (not shown)
+12 0 obj % &lt;Link&gt; tag
+&lt;&lt;
+  /Type /StructElem
+  /S    /Link
+  /P    11 0 R         % Parent is &lt;P&gt; paragraph
+  /Pg    3 0 R         % Page 1
+  /K [                 % Kids:
+    1                  %  MCID 1 = link
+    &lt;&lt;
+      /Type /OBJR        % Object reference dictionary (ISO 32000-2:2020, Table 358)
+      /Pg   3 0 R        % Page 1
+      /Obj  4 0 R        % Link annotation
+    &gt;&gt;
+  ]
 &gt;&gt;
 endobj
 </code></ins></div>
