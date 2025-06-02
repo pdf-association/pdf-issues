@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 23 May 2025
+modified: 2 June 2025
 ---
 
 <ul class="noprint">
@@ -281,7 +281,7 @@ However, a</del>
 <figure>
   <ins onMouseEnter="mouseEnter(this)" data-issue="327" data-iso="approved">
     <img src="PDF-Integer-EBNF.svg" alt="EBNF railroad diagram for a PDF integer object">
-    <a href="PDF-Integer.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+    <a href="PDF-Integer.ebnf" target="_blank"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
     <figcaption>Figure 1a - EBNF diagram for a PDF integer object</figcaption>
   </ins>
 </figure>
@@ -298,7 +298,7 @@ However, a</del>
 <figure>
   <ins onMouseEnter="mouseEnter(this)" data-issue="327" data-iso="approved">
     <img src="PDF-Real-EBNF.svg" alt="EBNF railroad diagram for PDF real object">
-    <a href="PDF-Real.ebnf"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
+    <a href="PDF-Real.ebnf" target="_blank"><span style="font-size: xx-large;">&#x1f4ce;</span></a>
     <figcaption>Figure 1b - EBNF diagram for a PDF real object</figcaption>
   </ins>
 </figure>
