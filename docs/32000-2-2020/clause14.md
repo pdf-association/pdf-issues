@@ -906,11 +906,11 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
 When a <b>Link</b> structure element describes a span of text to be associated with a link annotation and that span
 wraps from the end of one line to the beginning of another, the <b>Link</b> structure element shall include a single
 object reference that associates the span with the associated link annotation. Further, the link annotation shall
-use the <b>QuadPoint</b> entry to denote the active areas on the page.</ins></p>
+use the <b>QuadPoints</b> entry to denote the active areas on the page.</ins></p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-EXAMPLE 1 The <b>Link</b> structure element references a link annotation that includes a <b>QuadPoint</b> entry that boxes the
-strings "with a" and "link". That is, the <b>QuadPoint</b> entry contains 16 numbers: the first 8 numbers describe
+EXAMPLE 1 The <b>Link</b> structure element references a link annotation that includes a <b>QuadPoints</b> entry that boxes the
+strings "with a" and "link". That is, the <b>QuadPoints</b> entry contains 16 numbers: the first 8 numbers describe
 a quadrilateral for "with a", and the next 8 describe a quadrilateral for "link".
 </ins></p>
 
@@ -990,7 +990,7 @@ stream
     EMC                       % End marked-content sequence 2
   ET                          % End the text object
 
-  /Artifact BMC               % Begin marked content for blue underlined hyperlnk
+  /Artifact BMC               % Begin marked content for blue underlined hyperlink
     0 0 1 RG                  % Set stroking colour to blue
     1 0 0 1 42 83 cm          % Set coordinate transform matrix
     0 0 m                     % Move to start a line
