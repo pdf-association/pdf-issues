@@ -992,14 +992,12 @@ stream
 
   /Artifact BMC               % Begin marked content for blue underlined hyperlink
     0 0 1 RG                  % Set stroking colour to blue
-    1 0 0 1 42 83 cm          % Set coordinate transform matrix
-    0 0 m                     % Move to start a line
-    10 0 l                    % Draw the underline for line 1
-    S                         % Stroke the underline for line 1
-    1 0 0 1 10 77 cm          % Set coordinate transform matrix
-    0 0 m                     % Move to start a line
-    6 0 l                     % Draw the underline for line 2
-    S                         % Stroke the underline for line 2
+    0.2 w                     % Set narrow line width
+    42 83 m                   % Move to start a line
+    53 83 l                   % Draw the underline segment for line 1
+    10 77 m                   % Move to start a line
+    16 77 l                   % Draw the underline segment for line 2
+    S                         % Stroke the underline 
   EMC                         % End marked content (artifact)
 endstream
 endobj
