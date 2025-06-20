@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex D
 title: (normative) Character sets and encodings
-modified: 13 Sept 2024
+modified: 20 June 2025
 ---
 
 <ul class="noprint">
@@ -36,6 +36,30 @@ modified: 13 Sept 2024
     <th>Notes</th>
   </tr>
   <tr>
+    <td colspan="7">...</td>
+  </tr>
+  <tr>
+    <td><b>^D</b></td>
+    <td>4</td>
+    <td>0x04</td>
+    <td>0004</td>
+    <td>U+0004</td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="562">(END OF TEXT)</del><ins onMouseEnter="mouseEnter(this)" data-issue="562">END OF TRANSMISSION</ins></td>
+    <td>U</td>
+  </tr>
+  <tr>
+    <td><b>^E</b></td>
+    <td>5</td>
+    <td>0x05</td>
+    <td>0005</td>
+    <td>U+0005</td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="562">(END OF TRANSMISSION)</del><ins onMouseEnter="mouseEnter(this)" data-issue="562">ENQUIRY</ins></td>
+    <td>U</td>
+  </tr>
+  <tr>
+    <td colspan="7">...</td>
+  </tr>
+  <tr>
     <td><b>^V</b></td>
     <td>22</td>
     <td>0x16</td>
@@ -43,6 +67,27 @@ modified: 13 Sept 2024
     <td><del onMouseEnter="mouseEnter(this)" data-issue="285" data-iso="approved">U+0017</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285" data-iso="approved">U+0016</ins></td>
     <td>(SYNCHRONOUS IDLE)</td>
     <td>U</td>
+  </tr>
+  <tr>
+    <td colspan="7">...</td>
+  </tr>
+  <tr>
+    <td><b><del onMouseEnter="mouseEnter(this)" data-issue="562">u</del><ins onMouseEnter="mouseEnter(this)" data-issue="562">&#x02D8;</ins></b></td>
+    <td>24</td>
+    <td>0x18</td>
+    <td>0030</td>
+    <td>U+02D8</td>
+    <td>BREVE</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><b><del onMouseEnter="mouseEnter(this)" data-issue="562">v</del><ins onMouseEnter="mouseEnter(this)" data-issue="562">&#x02C7;</ins></b></td>
+    <td>25</td>
+    <td>0x19</td>
+    <td>0031</td>
+    <td>U+02C7</td>
+    <td>CARON</td>
+    <td></td>
   </tr>
   <tr>
     <td colspan="7">...</td>
