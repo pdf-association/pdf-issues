@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 2 June 2025
+modified: 20 June 2025
 ---
 
 <ul class="noprint">
@@ -189,6 +189,8 @@ modified: 2 June 2025
  </li>
  <li>14.13 Associated files
   <ul>
+   <li><a href="#H14.13.1">14.13.1 General</a>
+   </li>
    <li><a href="#H14.13.5">14.13.5 Associated files linked to graphics objects</a>
    </li>
   </ul>
@@ -1903,6 +1905,20 @@ Other PDF value types shall not be used.
 </p>
 
 <h2 id="H14.13">14.13 Associated files</h2>
+
+<h3 id="H14.13.1">14.13.1 General</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+<i>Associated files</i> provide a means to associate content in other formats with objects of a PDF file and to identify the relationship between them. 
+<del onMouseEnter="mouseEnter(this)" data-issue="568">Such associated files are designated using file specification dictionaries (see 7.11.3, "File specification dictionaries"), and <b>AF</b> keys are used in object dictionaries to connect the associated file’s specification dictionaries with those objects.</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="568">Associated files for object dictionaries are designated using an <b>AF</b> entry that shall be an array of file specification dictionaries (see 7.11.3, "File specification dictionaries") that contain an <b>AFRelationship</b> entry. Associated files for marked content sequences shall use an <b>AF</b> marked content tag (see 14.13.5, "Associated files linked to graphics objects"). The <b>AF</b> entry or tag connects the associated file specification dictionaries with an object or sequence of graphic objects.</ins>
+Some PDF objects that can provide the <b>AF</b> keys are:
+</p>
+
+<p>...</p>
+
 <h3 id="H14.13.5">14.13.5 Associated files linked to graphics objects</h3>
 
 <p>...</p>
