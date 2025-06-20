@@ -74,6 +74,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause10.html#Table132">Table 132 - Entries in a Type 5 halftone dictionary</a></li>
 <li><a href="clause11.html#Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</a></li>
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
+<li><a href="clause12.html#Table149">Table 149 - Destination syntax</a></li>
 <li><a href="clause12.html#Table151">Table 151 - Entries in an outline item dictionary</a></li>
 <li><a href="clause12.html#Table161">Table 161 - Entries in a page label dictionary</a></li>
 <li><a href="clause12.html#Table164">Table 164 - Entries in a transition dictionary</a></li>

@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 29 April 2025
+modified: 20 June 2025
 ---
 
 <ul class="noprint">
@@ -13,6 +13,8 @@ modified: 29 April 2025
   <ul>
    <li>12.3.2 Destinations
     <ul>
+     <li><a href="#H12.3.2.2">12.3.2.2 Explicit destinations</a>
+     </li>
      <li><a href="#H12.3.2.4">12.3.2.4 Named destinations</a>
      </li>
     </ul>
@@ -307,6 +309,28 @@ modified: 29 April 2025
 <h2 id="H12.3">12.3 Document-level navigation</h2>
 
 <h3 id="H12.3.2">12.3.2 Destinations</h3>
+
+<h4 id="H12.3.2.2">12.3.2.2 Explicit destinations</h4>
+
+<p class="location">Change Table 149 as follows:</p>
+
+<table>
+  <caption id="Table149">Table 149 - Destination syntax</caption>
+  <tr>
+    <th>Syntax</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td style="white-space:pre;">[<i>page</i> <b>/FitR</b> <i>left bottom right top</i>]</td>
+    <td>
+      Display the page designated by page, with its contents magnified just enough to fit the rectangle specified by the coordinates <i>left</i>, <i>bottom</i>, <i>right</i>, and <i>top</i> entirely within the window both horizontally and vertically. If the required horizontal and vertical magnification factors are different, 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="536">interactive processors should</ins>
+      use the smaller of the two, centring the rectangle within the window in the other dimension.
+    </td>
+  </tr>
+</table>
+
+<p>...</p>
 
 <h4 id="H12.3.2.4">12.3.2.4 Named destinations</h4>
 
