@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 23 May 2025
+modified: 20 June 2025
 ---
 
 <ul class="noprint">
@@ -94,6 +94,8 @@ modified: 23 May 2025
    <li>8.11.4 Configuring optional content
     <ul>
      <li><a href="#H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</a>
+     </li>
+     <li><a href="#H8.11.4.4">8.11.4.4 Usage and usage application dictionaries</a>
      </li>
     </ul>
    </li>
@@ -781,6 +783,36 @@ the corresponding colour spaces either directly or via a default colour space (s
     </td>
   </tr>
 </table>
+
+<h4 id="H8.11.4.4">8.11.4.4 Usage and usage application dictionaries</h4>
+ 
+<p class="location">Change Table 100 as follows:</p>
+
+<table>
+  <caption id="Table100">Table 100 - Entries in an optional content usage dictionary</caption>
+  <tr>
+    <th><b>Key</b></th>
+    <th><b>Type</b></th>
+    <th><b>Value</b></th>
+  </tr>
+  <tr>
+    <td><b>Language</b></td>
+    <td>dictionary</td>
+    <td>
+      <p>(<i>Optional</i>) A dictionary specifying the language of the content controlled by this optional content group. It shall contain the following entry:</p>
+      <ul>
+        <li class="hangingindent"><b>Lang</b> (<i>required</i>) A text string that specifies a language and possibly a locale (see 14.9.2, "Natural language specification"). For example, <code>es-MX</code> represents Mexican Spanish.</li>
+      </ul>
+      <p>Additionally, it may contain the following entry:</p>
+      <ul>
+        <li class="hangingindent"><b>Preferred</b> (<i>optional</i>) A name whose values shall be either <i>ON</i> or <i>OFF</i>. Default value: <i>OFF</i>. It shall be used by PDF processors when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. <del onMouseEnter="mouseEnter(this)" data-issue="567">See 8.11.4.4, "Usage and usage application dictionaries" for more information</del>.</li>
+      </ul>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="567">NOTE: This entry does not change the natural language of any content.</ins></p>
+    </td>
+  </tr>
+</table>
+
+<p>...</p>
 
 </div>
 
