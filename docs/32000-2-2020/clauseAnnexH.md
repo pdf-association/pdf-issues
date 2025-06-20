@@ -3,11 +3,13 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: Annex H
 title: (informative) Example PDF files
-modified: 26 May 2024
+modified: 20 June 2025
 ---
 
 <ul class="noprint">
   <li><a href="#HH.2">H.2 Minimal PDF file</a>
+  </li>
+  <li><a href="#HH.3">H.3 Simple text string example</a>
   </li>
   <li>H.7 Updating example
     <ul>
@@ -46,6 +48,25 @@ modified: 26 May 2024
 ...
 
 </code>
+
+<h2 id="HH.3">H.3 Simple text string example</h2>
+
+<p>...</p>
+
+<p class="location">Correct the example as follows:</p>
+
+<code>...
+    %Underline "32000-2". Position must be calculated by generator
+    %including scaled per-font underline vertical offset
+
+    <ins onMouseEnter="mouseEnter(this)" data-issue="563">1.2 w                            %Set line width suitable for size of text</ins>
+    133.3 694.2 m                    %Move to start of line position
+    221.4 694.2 l                    %Set path to end of line position
+    <del onMouseEnter="mouseEnter(this)" data-issue="563">1.2 w                            %Set line width suitable for size of text</del>
+    S                                %Stroke path
+...</code>
+
+<p>...</p>
 
 <h2 id="HH.7">H.7 Updating example</h2>
 
