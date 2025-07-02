@@ -17,7 +17,7 @@ modified: 31 January 2025
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies <ins onMouseEnter="mouseEnter(this)" data-issue="57" data-iso="approved">(including any amendments)</ins>. For undated references, the latest edition of the referenced document (including any amendments or corrigenda) applies.
+The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies <ins onMouseEnter="mouseEnter(this)" data-issue="57" data-iso="approved">(not including any amendments)</ins>. For undated references, the latest edition of the referenced document (including any amendments or corrigenda) applies.
 </p>
 
 <p>...</p>
