@@ -86,6 +86,8 @@ toc:
     subfolderitems:
       - ref: 'Clause 6: Conformance'
         url:  clause06.html
+      - ref: 'Clause 8: File format requirements'
+        url:  clause08.html
 
   - standard: PDF Declarations
     subfolderitems:
