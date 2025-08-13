@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 20 June 2025
+modified: 13 July 2025
 ---
 
 <ul class="noprint">
@@ -1125,7 +1125,7 @@ appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> wit
 
 <h4 id="H12.7.5.2">12.7.5.2 Button fields</h4>
 
-<h5 id="H12.7.5.2.2">12.7.5.2.2 Push-fields</h5>
+<h5 id="H12.7.5.2.2">12.7.5.2.2 Push-buttons</h5>
 
 <p class="location">Change the first and only paragraph as follows:</p>
 
