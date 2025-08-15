@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 2
 title: Normative references
-modified: 31 January 2025
+modified: 15 August 2025
 ---
 
 <link rel="stylesheet" href="../assets/iso-style.css">
@@ -36,11 +36,11 @@ EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/519"
 
 <p>...</p>
 
-<p class="location">Add a new normative reference as follows:</p>
+<p class="location">Add new normative references as follows:</p>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"<i>Specification ICC.1:2001-04 - File Format for Color Profiles [REVISION of ICC.1:1998-09]</i>", International Color Consortium, <a href="https://www.color.org/specification/ICC.1-2001-04.pdf">https://www.color.org/specification/ICC.1-2001-04.pdf</a>.</ins></p>
 
-<p>...</p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="553">Adobe Technical Note #5902: "<i>PostScript Name Generation for Variation Fonts</i>", Version 1.0, September 14 2016, Adobe Systems Incorporated, <a href="https://github.com/adobe-type-tools/font-tech-notes/blob/main/pdfs/5902.AdobePSNameGeneration.pdf">https://github.com/adobe-type-tools/font-tech-notes/blob/main/pdfs/5902.AdobePSNameGeneration.pdf</a></ins></p>
 
 </div>
 

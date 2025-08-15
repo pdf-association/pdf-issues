@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 9
 title: Text
-modified: 23 May 2025
+modified: 15 August 2025
 ---
 
 <ul class="noprint">
@@ -36,6 +36,8 @@ modified: 23 May 2025
      <li><a href="#H9.6.2.2">9.6.2.2 Standard Type 1 fonts (standard 14 fonts) (PDF 1.0-1.7)</a>
      </li>
     </ul>
+   </li>
+   <li><a href="#H9.6.3">9.6.3 TrueType fonts</a>
    </li>
    <li><a href="#H9.6.4">9.6.4 Type 3 fonts</a>
    </li>
@@ -393,6 +395,20 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 <del onMouseEnter="mouseEnter(this)" data-issue="47,48" data-iso="approved,approved">These fonts, or their font metrics and suitable substitution fonts, shall be available to the PDF processor.</del>
 </p>
 
+
+<h3 id="H9.6.3">9.6.3 TrueType fonts</h3>
+
+<p>...</p>>
+
+<p class="location">Append additional text to the end of the last bullet as follows:</p>
+
+<ol>
+  <li>...</li>
+  <li>In the absence of a PostScript language name in the "name" table, a PostScript language name should be derived from the name by which the font is known in the host operating system. <ins  onMouseEnter="mouseEnter(this)" data-issue="553">An Adobe technical note provides a specification for Postscript name generation that can be used for instance fonts derived from variable fonts. See Adobe Technical Note #5902: "<i>PostScript Name Generation for Variation Fonts</i>".</ins>
+  </li>
+</ol>
+
+<p>...</p>>
 
 <h3 id="H9.6.4">9.6.4 Type 3 fonts</h3>
 
