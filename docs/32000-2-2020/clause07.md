@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 2 June 2025
+modified: 15 August 2025
 ---
 
 <ul class="noprint">
@@ -718,6 +718,17 @@ NOTE 3 Indirect references to objects inside object streams use the normal synta
 
 <p class="hangingindent">
 <ins onMouseEnter="mouseEnter(this)" data-issue="110" data-iso="approved">NOTE 4: Including the document catalog in an object stream has interoperability implications, particularly for encrypted documents. If the catalog dictionary is part of an object stream, a PDF processor reading the document must first process that object stream before it can access potentially relevant document metadata, including the declared PDF version, developer extensions and XMP metadata.</ins>
+</p>
+
+<p>...</p>
+
+<p class="location">Modify the third paragraph below EXAMPLE 2 as follows:</p>
+
+<p>
+An object stream itself, like any stream, shall be an indirect object, and therefore, there shall be an entry for it in a cross-reference table 
+or cross-reference stream (see 7.5.8, "Cross-reference streams"), although there 
+<del onMouseEnter="mouseEnter(this)" data-issue="594">might</del><ins onMouseEnter="mouseEnter(this)" data-issue="594">may</ins> 
+not be any references to it (of the form <code>243 0 R</code>).
 </p>
 
 <p>...</p>
