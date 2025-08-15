@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 13 July 2025
+modified: 15 August 2025
 ---
 
 <ul class="noprint">
@@ -583,6 +583,17 @@ recognise, as documented in <del onMouseEnter="mouseEnter(this)" data-issue="1" 
       NOTE (<i>PDF 1.2</i>) The dictionaries for some annotation types (such as free text and polygon annotations) can include the <b>BS</b> entry. That entry specifies a border style dictionary that has more
       settings than the array specified for the <b>Border</b> entry. <del onMouseEnter="mouseEnter(this)" data-issue="287" data-iso="approved">If an annotation dictionary includes the <b>BS</b> entry, then the <b>Border</b> entry is ignored.</del>
       </p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>ca</b></td>
+    <td>number</td>
+    <td>
+      <p>...</p>
+      <p>
+      Default value: <del onMouseEnter="mouseEnter(this)" data-issue="577"><i>1.0</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="577">the value of <b>CA</b></ins>
+      </p>
+      <p>...</p>
     </td>
   </tr>
 </table>
