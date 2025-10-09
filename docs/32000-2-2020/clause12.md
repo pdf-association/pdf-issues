@@ -694,11 +694,11 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     <td><b>QuadPoints</b></td>
     <td>array</td>
     <td>
-    <p>(<i><del data-issue="133" data-iso="approved">Optional</del><ins data-issue="133" data-iso="approved">Sometimes required</ins>; PDF 1.6</i>) An array of 8 &times; <i>n</i> numbers specifying the coordinates of <i>n</i> quadrilaterals in default user space that comprise the region in which the link should be activated. The coordinates for each quadrilateral are given in the order:<br/>
+    <p>(<i><del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">Optional</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">Sometimes required</ins>; PDF 1.6</i>) An array of 8 &times; <i>n</i> numbers specifying the coordinates of <i>n</i> quadrilaterals in default user space that comprise the region in which the link should be activated. The coordinates for each quadrilateral are given in the order:<br/>
     <i>x</i><sub>1</sub> <i>y</i><sub>1</sub> <i>x</i><sub>2</sub> <i>y</i><sub>2</sub> <i>x</i><sub>3</sub> <i>y</i><sub>3</sub> <i>x</i><sub>4</sub> <i>y</i><sub>4</sub><br/>
     specifying the four vertices of the quadrilateral in counterclockwise order. For orientation purposes, such as when applying an underline border style, the bottom of a quadrilateral is the line formed by (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) and (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>).
     </p>
-    <p><ins data-issue="133" data-iso="approved">A <b>QuadPoints</b> entry is required when used with a <b>Link</b> structure element in Tagged PDF that describes a span of text that wraps from the end of one line to the beginning of another (see 14.8.4.7.3, "Link elements").</ins>
+    <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">A <b>QuadPoints</b> entry is required when used with a <b>Link</b> structure element in Tagged PDF that describes a span of text that wraps from the end of one line to the beginning of another (see 14.8.4.7.3, "Link elements").</ins>
     </p>
     <p>If this entry is not present, or the PDF processor does not recognise it, or if any coordinates in the <b>QuadPoints</b> array lie outside the region specified by
     <b>Rect</b> then the activation region for the link annotation shall be defined by its <b>Rect</b> entry.
