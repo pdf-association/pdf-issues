@@ -921,10 +921,6 @@ Here is some text <span style="color:blue;text-decoration:underline;">with a</sp
 <span style="color:blue;text-decoration:underline;">link</span> inside.
 </ins></p>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-NOTE 2 Beginning with PDF 1.7, use of the <b>Link</b> structure element to enclose multiple link annotations on a single page is deprecated.
-</ins></p>
-
 <div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
 <code>
 4 0 obj % Link annotation using QuadPoints to span 2 lines (ISO 32000-2:2020, Tables 166 and 176)
