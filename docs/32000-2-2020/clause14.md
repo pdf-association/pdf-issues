@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 14
 title: Document interchange
-modified: 20 June 2025
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -192,6 +192,8 @@ modified: 20 June 2025
    <li><a href="#H14.13.1">14.13.1 General</a>
    </li>
    <li><a href="#H14.13.5">14.13.5 Associated files linked to graphics objects</a>
+   </li>
+   <li><a href="#H14.13.10">14.13.10 Associated files examples</a>
    </li>
   </ul>
  </li>
@@ -1980,19 +1982,19 @@ NOTE 4 As defined in Table 34 and section 14.6.2, "Property Lists", a marked-con
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">EXAMPLE:<br/>
 
 <code>10 0 obj
-<<
-  /Resources <<
-    /Properties <<
-      /MF1 << 
+&lt;&lt;
+  /Resources &lt;&lt;
+    /Properties &lt;&lt;
+      /MF1 &lt;&lt; 
         /MCAF [ 
-          << /Type /Filespec /AFRelationship /Data /EF ... >> 
-          << /Type /Filespec /AFRelationship /Schema /EF ... >> 
+          &lt;&lt; /Type /Filespec /AFRelationship /Data /EF ... &gt;&gt;
+          &lt;&lt; /Type /Filespec /AFRelationship /Schema /EF ... &gt;&gt; 
         ] 
-      >>
-      /MF2 << /MCAF [ ... ] >>
-    >>
-  >>
->>
+      &gt;&gt;
+      /MF2 &lt;&lt; /MCAF [ ... ] &gt;&gt;
+    &gt;&gt;
+  &gt;&gt;
+&gt;&gt;
 stream
 ...
 /AF /MF1 BDC
@@ -2019,6 +2021,32 @@ markers.
 
 <p>...</p>
 
+<h3 id="H14.13.10">14.13.10 Associated files example</h3>
+
+<p class="location">Change object 21 in EXAMPLE 3 as follows:</p>
+
+<code>
+...
+
+21 0 obj % embedded file stream
+&lt;&lt;
+  /Filter /FlateDecode
+  /Length 1975
+  /Type /EmbeddedFile
+  /Subtype <del onMouseEnter="mouseEnter(this)" data-issue="637">/application#2Fxhtml+xml</del><ins onMouseEnter="mouseEnter(this)" data-issue="637">/application#2Fmathml+xml</ins>
+  /Params
+  &lt;&lt; 
+    /CheckSum &lt;ad032d7a6ea930489df4bfd6acb585b9&gt;
+    /Size 3979
+    /CreationDate (D:20010727133719)
+    /ModDate (D:20010727133720)
+  &gt;&gt;
+&gt;&gt;
+stream
+...
+endstream
+endobj
+</code>
 
 </div>
 
