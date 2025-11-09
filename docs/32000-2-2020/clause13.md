@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 31 January 2025
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -65,6 +65,8 @@ modified: 31 January 2025
     <ul>
      <li>13.6.7.3 3D measurement/markup dictionary
       <ul>
+       <li><a href="#H13.6.7.3.3">13.6.7.3.3 3D perpendicular dimension measurement</a>
+       </li>
        <li><a href="#H13.6.7.3.6">13.6.7.3.6 3D comment note</a>
        </li>
       </ul>
@@ -474,6 +476,55 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
 <h3 id="H13.6.7">13.6.7 Persistence of 3D measurements and markups</h3>
 
 <h4 id="H13.6.7.3">13.6.7.3 3D measurement/markup dictionary</h4>
+
+<h5 id="H13.6.7.3.3">13.6.7.3.3 3D perpendicular dimension measurement</h5>
+
+<p class="location">Change the paragraph above Table 328 as follows:</p>
+
+<p>
+In addition to the entries in "Table 326 — Entries in a 3D measurement/markup dictionary common to 
+all markup subtypes", the following entries are defined for a 
+<del onMouseEnter="mouseEnter(this)" data-issue="645"><b>I</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="645">3D measurement dictionary</ins> 
+with a <b>Subtype</b> value of <i>PD3</i> for 3D perpendicular measurement.
+</p>
+
+<p class="location">Modify Table 328 as follows:</p>
+
+<table>
+  <caption id="Table328">Table 328 - Additional entries in a 3D measurement/markup dictionary for a 3D perpendicular dimension measurement</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td>
+      <b>A1</b>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="645"><i>(digit 1)</i></ins>
+    </td>
+    <td>array</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>
+      <b>N1</b>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="645"><i>(digit 1)</i></ins>
+    </td>
+    <td>array</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>
+      <b>D1</b>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="645"><i>(digit 1)</i></ins>
+    </td>
+    <td>array</td>
+    <td>...</td>
+  </tr>
+</table>
+
+
+
 
 <h5 id="H13.6.7.3.6">13.6.7.3.6 3D comment note</h5>
 
