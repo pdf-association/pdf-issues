@@ -3,14 +3,16 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 3
 title: Terms and definitions
-modified: 19 April 2024
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
- <li><a href="#H3.31">3.31 ICC profile</a>
- </li>
- <li><a href="#H3.32">3.32 ICC specification</a>
- </li>
+  <li><a href="#H3.6">3.6 boolean object<del onMouseEnter="mouseEnter(this)" data-issue="623">s</del></a>
+  </li>
+  <li><a href="#H3.31">3.31 ICC profile</a>
+  </li>
+  <li><a href="#H3.32">3.32 ICC specification</a>
+  </li>
 </ul>
 <hr>
 
@@ -24,6 +26,11 @@ modified: 19 April 2024
 
 <p class="editornote">EDITOR NOTE: ISO requires that Terms and Definitions are sorted alphabetically, which may result in updated numbering.
 </p>
+
+<p class="location">Make the term 3.6 boolean objects singular as follows:</p>
+
+<h2 id="H3.6">3.6<br/>boolean object<del onMouseEnter="mouseEnter(this)" data-issue="623">s</del></h2>
+<p>either the keyword <b>true</b> or the keyword <b>false</b></p>
 
 <p class="location">Change term 3.31 ICC profile as follows:</p>
 
