@@ -1545,6 +1545,35 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 </table>
 
 
+<h4 id="H14.8.5.5">14.8.5.6 PrintField attributes</h4>
+
+<p class="location">Change Table 383 as follows:</p>
+
+<table>
+  <caption id="Table383">Table 383 - PrintField attributes</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Role</b></td>
+    <td>name</td>
+    <td>
+      <p>(<i>Optional; not inheritable; PDF 1.0</i>) The type of form field represented. The value of <b>Role</b> shall be one of the following:</p>
+      <table style="margin-left: 40px; border: none;">
+        <tr style="border: none;"><td style="border: none;"><i>rb</i></td> <td style="border: none;">Radio button</td></tr> 
+        <tr style="border: none;"><td style="border: none;"><i>cb</i></td> <td style="border: none;">Check box</td></tr>
+        <tr style="border: none;"><td style="border: none;"><i>pb</i></td> <td style="border: none;">Push button</td></tr>
+        <tr style="border: none;"><td style="border: none;"><i>tv</i></td> <td style="border: none;">Text-value field</td></tr> 
+        <tr style="border: none;"><td style="border: none;"><i>lb</i></td> <td style="border: none;"><del onMouseEnter="mouseEnter(this)" data-issue="632">Listbox</del><ins onMouseEnter="mouseEnter(this)" data-issue="632">List box</ins> field</td></tr>
+      </table>
+      <p>...</p>
+    </td>
+  </tr>
+</table>
+
+
 <h4 id="H14.8.5.8">14.8.5.8 Artifact attributes</h4>
 
 <p class="location">Change Table 385 as follows:</p>
