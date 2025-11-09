@@ -1235,6 +1235,13 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     (<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="348" data-iso="approved">; shall be an indirect reference</ins></i>) ...
     </td>
   </tr>
+  <tr>
+    <td><b>DPartRoot</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 2.0<ins onMouseEnter="mouseEnter(this)" data-issue="614">; shall be an indirect reference</ins></i>) ...
+    </td>
+  </tr>
 </table>
 
 <h3 id="H7.7.3">7.7.3 Page tree</h3>
