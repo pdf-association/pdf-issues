@@ -13,6 +13,8 @@ modified: 10 November 2025
   </li>
   <li><a href="#H3.32">3.32 ICC specification</a>
   </li>
+  <li><a href="#H3.46">3.46 object stream</a>
+  </li>
 </ul>
 <hr>
 
@@ -45,6 +47,15 @@ ISO 15076-1<del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="appro
 <p>
 cross-platform profile format for the creation and interpretation of colour data and means of reference to ISO 15076-1<del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">:2010</del> or <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">any of the ICC.1 specifications</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"Specification ICC.1:2001-04 - File Format for Color Profiles [REVISION of ICC.1:1998-09]"</ins>
 </p>
+
+<p class="location">Change term 3.46 object stream as follows:</p>
+
+<h2 id="H3.46">3.46<br/>object stream</h2>
+<p>
+stream that contains a sequence of PDF objects (3.44), except those 
+<del onMouseEnter="mouseEnter(this)" data-issue="627">of <b>Type</b> <i>stream</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="627">that are stream objects (3.63)</ins> 
+</p>
+
 
 <p class="location">Add the following new Terms and Definitions (<i>subclause numbering is not shown</i>):</p>
 
