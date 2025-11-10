@@ -71,6 +71,8 @@ toc:
 
   - standard: ISO TS 32002:2022
     subfolderitems:
+      - ref: 'Clause 1: Scope'
+        url:  clause01.html
       - ref: 'Clause 5: Digital signature enhancements'
         url:  clause05.html
 
