@@ -1562,7 +1562,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>Role</b></td>
     <td>name</td>
     <td>
-      <p>(<i>Optional; not inheritable; PDF 1.0</i>) The type of form field represented. The value of <b>Role</b> shall be one of the following:</p>
+      <p>(<i>Optional; not inheritable; PDF 1.7</i>) The type of form field represented. The value of <b>Role</b> shall be one of the following:</p>
       <table style="margin-left: 40px; border: none;">
         <tr style="border: none;"><td style="border: none;"><i>rb</i></td> <td style="border: none;">Radio button</td></tr> 
         <tr style="border: none;"><td style="border: none;"><i>cb</i></td> <td style="border: none;">Check box</td></tr>
