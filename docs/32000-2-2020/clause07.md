@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 15 August 2025
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -2003,6 +2003,13 @@ File specification dictionaries using embedded file streams can be associated wi
     </td>
   </tr>
 </table>
+
+<p class="location">Add a new NOTE 2 below Table 45 as follows and renumber the existing NOTE in 7.11.4.1 as NOTE 1:</p>
+
+<p class="hangingindent">
+<ins onMouseEnter="mouseEnter(this)" data-issue="598">NOTE: <b>CreationDate</b> and <b>ModDate</b> are intended to reflect the respective file system dates of the file when it is embedded in the PDF (if supported by the host file system).</ins> 
+</p>
+
 <h3 id="H7.11.6">7.11.6 Collection items</h3>
 
 <p class="location">Change Table 47 as follows:</p>
