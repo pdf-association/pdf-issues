@@ -733,6 +733,24 @@ not be any references to it (of the form <code>243 0 R</code>).
 
 <p>...</p>
 
+<p class="location">Modify the second paragraph in EXAMPLE 4 as follows:</p>
+
+<p class="hangingindent">EXAMPLE 4: The following shows the same objects from the previous example stored in an object stream in a PDF 1.5 
+file, along with a cross-reference stream.
+</p>
+
+<p style="margin-left: 45px;">
+The cross-reference stream (see 7.5.8, "Cross-Reference Streams") contains entries for the fonts (objects 11 and 13) and the descriptor (object 12), which are compressed objects in an object stream. The first field of 
+<del onMouseEnter="mouseEnter(this)" data-issue="638">, along with a cross-reference table field</del>
+<ins onMouseEnter="mouseEnter(this)" data-issue="638">these entries is the entry type (2), the second field</ins> 
+is the number of the object stream (15), and the third field is the position within the sequence of objects in the object stream (0, 1, and 2). 
+The cross-reference stream also contains a type 1 entry for the object stream itself.
+</p>
+
+<p style="margin-left: 45px;">...</p>
+
+<p>...</p>
+
 <h3 id="H7.5.8">7.5.8 Cross-reference streams</h3>
 
 <h4 id="H7.5.8.2">7.5.8.2 Cross-reference stream dictionary</h4>
