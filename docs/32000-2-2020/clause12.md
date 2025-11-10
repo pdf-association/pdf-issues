@@ -1086,7 +1086,8 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
     <td><b>AA</b></td>
     <td>dictionary</td>
     <td>
-    (<i>Optional; PDF 1.2</i>) An additional-actions dictionary defining the field’s behaviour in response to various trigger events (see 12.6.3, "Trigger events"). This entry has exactly the same meaning as the <b>AA</b> entry in 
+    (<i>Optional; PDF 1.2</i>) An additional-actions dictionary defining the field’s behaviour in response to various trigger events (see 12.6.3, "Trigger events" 
+    <ins onMouseEnter="mouseEnter(this)" data-issue="618" data-iso="approved"> and "Table 199 - Entries in a form field’s additional-actions dictionary"</ins>). This entry has exactly the same meaning as the <b>AA</b> entry in 
     <del onMouseEnter="mouseEnter(this)" data-issue="313" data-iso="approved">an annotation dictionary (see 12.5.2, "Annotation dictionaries")</del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="313" data-iso="approved">a Widget annotation dictionary (see 12.5.6.19, "Widget annotations")</ins>.
     </td>
