@@ -416,11 +416,11 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
      <li>D - Decimal Arabic numerals</li>
      <li>R - Uppercase Roman numerals</li>
      <li>r - Lowercase Roman numerals</li>
-     <li>A - Uppercase letters (A to Z for the first 26 pages, AA to <del onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">Z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">A</ins>Z for the next 26, and so on)</li>
-     <li>a - Lowercase letters (a to z for the first 26 pages, aa to <del onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">z</del><ins onMouseEnter="mouseEnter(this)" data-issue="432" data-iso="approved">a</ins>z for the next 26, and so on)</li>
+     <li>A - Uppercase letters (A to Z for the first 26 pages, AA to ZZ for the next 26, <ins onMouseEnter="mouseEnter(this)" data-issue="593">AAA to ZZZ for the next 26, AAAA to ZZZZ for the next 26,</ins> and so on)</li>
+     <li>a - Lowercase letters (a to z for the first 26 pages, aa to zz for the next 26, <ins onMouseEnter="mouseEnter(this)" data-issue="593">aaa to zzz for the next 26, aaaa to zzzz for the next 26,</ins> and so on)</li>
     </ul>
     <p>There is no default numbering style; if no <b>S</b> entry is present, page labels shall consist solely of a label prefix with no numeric portion.</p>
-    <p class="hangingindent">NOTE If the <b>P</b> entry (next) specifies the label prefix Contents, each page is simply labelled Contents with no page number. (If the <b>P</b> entry is also missing or empty, the page label is an empty string.)</p>
+    <p class="hangingindent">NOTE If the <b>P</b> entry (next) specifies the label prefix "Contents", each page is simply labelled "Contents" with no page number. (If the <b>P</b> entry is also missing or empty, the page label is an empty string.)</p>
    </td>
   </tr>
 </table>
