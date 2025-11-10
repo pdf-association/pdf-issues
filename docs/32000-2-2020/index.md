@@ -72,6 +72,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause09.html#Table125a"><ins onMouseEnter="mouseEnter(this)" data-issue="462" data-iso="approved">Table 125a - Additional entries in a ToUnicode CMap stream dictionary</ins></a></li>
 <li><a href="clause10.html#Table129">Table 129 - Additional entries specific to a Type 6 halftone dictionary</a></li>
 <li><a href="clause10.html#Table132">Table 132 - Entries in a Type 5 halftone dictionary</a></li>
+<li><a href="clause11.html#Table143">Table 143 - Restrictions on the entries in a soft-mask image dictionary</a></li>
 <li><a href="clause11.html#Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</a></li>
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
 <li><a href="clause12.html#Table149">Table 149 - Destination syntax</a></li>

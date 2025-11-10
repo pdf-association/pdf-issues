@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 11
 title: Transparency
-modified: 15 September 2023
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -15,6 +15,12 @@ modified: 15 September 2023
     </li>
     <li>11.6 Specifying transparency in PDF
      <ul>
+      <li>11.6.5 Specifying soft masks
+        <ul>
+          <li><a href="#H11.6.5.2">11.6.5.2 Soft-mask images</a>
+          </li>
+        </ul>
+      </li>
       <li><a href="#H11.6.6">11.6.6 Transparency group XObjects</a>
       </li>
      </ul>
@@ -46,12 +52,35 @@ modified: 15 September 2023
 
 <h2 id="H11.6">11.6 Specifying transparency in PDF</h2>
 
+<h3 id="H11.6.5">11.6.5 Specifying soft masks</h3>
+
+<h4 id="H11.6.5.2">11.6.5.2 Soft-mask images</h4>
+
+<p class="location">Change Table 143 as follows:</p>
+
+<table>
+  <caption id="Table143">Table 143 - Restrictions on the entries in a soft-mask image dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Restriction</th>
+  </tr>
+  <tr>
+    <td><b>ID</b></td>
+    <td>Ignored. <ins onMouseEnter="mouseEnter(this)" data-issue="619">Deprecated in PDF 2.0.</ins></td>
+  </tr>
+  <tr>
+    <td><b>OPI</b></td>
+    <td>Ignored. <ins onMouseEnter="mouseEnter(this)" data-issue="619">Deprecated in PDF 2.0.</ins></td>
+  </tr>
+</table>
+
+
 <h3 id="H11.6.6">11.6.6 Transparency group XObjects</h3>
 
 <p class="location">Change Table 145 as follows:</p>
 
 <table>
-  <caption id="Table145">Table 145 -Additional entries specific to a transparency group attributes dictionary</caption>
+  <caption id="Table145">Table 145 - Additional entries specific to a transparency group attributes dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>

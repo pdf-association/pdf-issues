@@ -1300,7 +1300,7 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     <td><b>ID</b></td>
     <td>byte string</td>
     <td>
-    (<i>Optional; PDF 1.3<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="approved">; indirect reference preferred</del></i>) ...
+    (<i>Optional; PDF 1.3<del onMouseEnter="mouseEnter(this)" data-issue="106" data-iso="approved">; indirect reference preferred</del><ins onMouseEnter="mouseEnter(this)" data-issue="619">; Deprecated in PDF 2.0</ins></i>) ...
     </td>
   </tr>
   <tr>

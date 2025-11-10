@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 20 June 2025
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -592,8 +592,9 @@ The pattern cell can include graphical elements such as filled areas, text, and 
     <td><b>ID</b></td>
     <td>byte string</td>
     <td>
-      <p>...</p><p><ins onMouseEnter="mouseEnter(this)" data-issue="13" data-iso="approved">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2
-      Soft-mask images.</ins></p>
+      <p>(<i>Optional; PDF 1.3; indirect reference preferred<ins onMouseEnter="mouseEnter(this)" data-issue="619">; Deprecated in PDF 2.0</ins></i>) 
+      The digital identifier of the image’s parent Web Capture content set (see 14.10.6, "Object attributes related to web capture").</p>
+      <p><ins onMouseEnter="mouseEnter(this)" data-issue="13" data-iso="approved">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2, Soft-mask images.</ins></p>
     </td>
   </tr>
 </table>
