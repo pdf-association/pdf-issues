@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 10
 title: Rendering
-modified: 7 June 2024
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -11,6 +11,18 @@ modified: 7 June 2024
     <ul>
     <li><a href="#H10.3.1">10.3.1 General</a>
     </li>
+    </ul>
+  </li>
+  <li>10.4 Conversions among device colour spaces
+    <ul>
+      <li>10.4.2 Classic colour conversion methods
+        <ul>
+          <li><a href="#H10.4.2.2">10.4.2.2 Conversion between DeviceGray and DeviceRGB</a>
+          </li>
+          <li><a href="#H10.4.2.3">10.4.2.3 Conversion between DeviceGray and DeviceCMYK</a>
+          </li>
+        </ul>
+      </li>
     </ul>
   </li>
   <li>10.6 Halftones
@@ -55,6 +67,30 @@ Conversion from a CIE-based source colour to a CIE-based destination colour shal
 <ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">the appropriate ICC specification (see "Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces")</ins>.
 </p>
 
+<h2 id="H10.4">10.4 Conversions among device colour spaces</h2>
+
+<h3 id="H10.4.2">10.4.2 Classic colour conversion methods</h3>
+
+<h4 id="H10.4.2.2">10.4.2.2 Conversion between DeviceGray and DeviceRGB</h4>
+
+<p class="location">Change the formula as follows:</p>
+
+<p style="margin-left:50px;"><i>
+red = <del onMouseEnter="mouseEnter(this)" data-issue="640">grey</del><ins onMouseEnter="mouseEnter(this)" data-issue="640">gray</ins><br/>
+green = <del onMouseEnter="mouseEnter(this)" data-issue="640">grey</del><ins onMouseEnter="mouseEnter(this)" data-issue="640">gray</ins><br/>
+blue = <del onMouseEnter="mouseEnter(this)" data-issue="640">grey</del><ins onMouseEnter="mouseEnter(this)" data-issue="640">gray</ins>
+</i></p>
+
+<h4 id="H10.4.2.3">10.4.2.3 Conversion between DeviceGray and DeviceCMYK</h4>
+
+<p class="location">Change the formula as follows:</p>
+
+<p style="margin-left:50px;"><i>
+cyan = 0.0<br/>
+magenta = 0.0<br/>
+yellow = 0.0<br/>
+black = 1.0 - <del onMouseEnter="mouseEnter(this)" data-issue="640">grey</del><ins onMouseEnter="mouseEnter(this)" data-issue="640">gray</ins>
+</i></p>
 
 <h2 id="H10.6">10.6 Halftones</h2>
 
