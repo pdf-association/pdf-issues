@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 15 August 2025
+modified: 10 November 2025
 ---
 
 <ul class="noprint">
@@ -865,7 +865,13 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
       <ins onMouseEnter="mouseEnter(this)" data-issue="524" data-iso="approved">array</ins>
     </td>
     <td>
-       ...
+       <p>(<i>Optional; PDF 1.5</i>) A set of four numbers that shall describe the numerical differences between two rectangles: the <b>Rect</b> entry of the 
+          annotation and the actual boundaries of the underlying caret. Such a difference can occur
+          <del onMouseEnter="mouseEnter(this)" data-issue="608">. W</del>
+          <ins onMouseEnter="mouseEnter(this)" data-issue="608"> w</ins>hen 
+          a paragraph symbol specified by <b>Sy</b> is displayed along with the caret.
+      </p>
+       <p>...</p>
     </td>
   </tr>
 </table>
