@@ -177,6 +177,8 @@ modified: 10 November 2025
  </li>
  <li>14.12 Document parts
   <ul>
+   <li><a href="#H14.12.2">14.12.2 DPart tree structure</a>
+   </li>
    <li>14.12.4 Data structures
     <ul>
      <li><a href="#H14.12.4.1">14.12.4.1 General</a>
@@ -1887,6 +1889,17 @@ was rendered as "Druk-" and "ker").
 
 
 <h2 id="H14.12">14.12 Document parts</h2>
+
+<h3 id="H14.12.2">14.12.2 DPart tree structure</h3>
+
+<p>...</p>
+
+<p class="location">Change the paragraph after NOTE 1 as follows:</p>
+
+<p>
+The value of the optional <b>DPartRoot</b> key in the catalog dictionary shall be an indirect object reference to <del onMouseEnter="mouseEnter(this)" data-issue="609">a</del><ins onMouseEnter="mouseEnter(this)" data-issue="609">the</ins> DPartRoot<del onMouseEnter="mouseEnter(this)" data-issue="609">Node</del> dictionary <ins onMouseEnter="mouseEnter(this)" data-issue="609">(see "Table 408 - Entries in a DPartRoot dictionary")</ins>.
+</p>
+
 
 <h3 id="H14.12.4">14.12.4 Data structures</h3>
 
