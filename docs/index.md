@@ -1,6 +1,6 @@
 ---
 title: PDF Errata Overview
-modified: 28 May 2024
+modified: 11 November 2025
 ---
 
 <link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
@@ -45,7 +45,7 @@ closed GitHub pdf-issues</a>.
 Due to ISO copyright, minimal surrounding text from the relevant ISO publication is provided that is sufficient to locate precisely where the resolution is being applied.
 </p>
 
-<p>Errata in the following PDF specifications are supported:</p>
+<p>Errata in the following PDF and ISO specifications are supported:</p>
 
 
  <h3><b>Core PDF technologies</b></h3>
@@ -95,6 +95,15 @@ Due to ISO copyright, minimal surrounding text from the relevant ISO publication
     <li>PDF/UA-1 (ISO 14289-1:2014)</li>
     <li>PDF/UA-2 (ISO 14289-2:2024)</li>
    </ul>
+
+  <h3><a href="https://pdfa.org/resource/iso-16684-xmp/" target="_blank"><b>XMP</b> (ISO 16684) - Extensible metadata platform</a></h3>
+   <ul>
+    <li>ISO 16684-1:2019 - XMP data model</li>
+    <li>ISO 16684-2:2014 - XMP schemas using RELAX NG - <a href="16684-2-2014/index.html"><i>Resolved errata</i></a></li>
+    <li>ISO 16684-3:2021 - JSON-LD serialization of XMP</li>
+    <li>ISO 16684-4:2024 - Use of XMP for semantic units</li>
+   </ul>
+
 
   <h3><b>Other PDF related publications</b></h3>
   <ul>
