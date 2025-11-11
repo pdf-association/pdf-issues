@@ -97,4 +97,8 @@ toc:
         url:  clause07.html
       - ref: 'Clause 8: PDF Declaration requirements'
         url:  clause08.html
-        
+
+  - standard: ISO 16684-2:2014
+    subfolderitems:
+      - ref: 'Annex C: (informative) RELAX NG schema for the XMP namespace'
+        url:  clauseAnnexC.html
