@@ -54,17 +54,19 @@ var lastTimeout;
 window.addEventListener("load", function(){
     var n = 0;
     var s = "";
-    var iss;
+    var iss = null;
     var iso = null;
     var p;
 
     var edits = document.getElementsByTagName('ins');
     for (n = 0, nEdits = edits.length; n < nEdits; n++) {
-        iss = edits[n].getAttribute("data-issue").split(',');
-        if (edits[n].getAttribute("data-iso") != null) {
-            iso = edits[n].getAttribute("data-iso").split(',');
-            if (iss.length != iso.length) {
-                console.log("Insertion data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+        if (edits[n].getAttribute("data-issue") != null) {
+            iss = edits[n].getAttribute("data-issue").split(',');
+            if (edits[n].getAttribute("data-iso") != null) {
+                iso = edits[n].getAttribute("data-iso").split(',');
+                if (iss.length != iso.length) {
+                    console.log("Insertion data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+                }
             }
         }
         s = "";
@@ -88,11 +90,13 @@ window.addEventListener("load", function(){
     var edits = document.getElementsByTagName('del');
     iso = null;
     for (n = 0, nEdits = edits.length; n < nEdits; n++) {
-        iss = edits[n].getAttribute("data-issue").split(',');
-        if (edits[n].getAttribute("data-iso") != null) {
-            iso = edits[n].getAttribute("data-iso").split(',');
-            if ((iso != null) && (iss.length != iso.length)) {
-                console.log("Deletion data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+        if (edits[n].getAttribute("data-issue") != null) {
+            iss = edits[n].getAttribute("data-issue").split(',');
+            if (edits[n].getAttribute("data-iso") != null) {
+                iso = edits[n].getAttribute("data-iso").split(',');
+                if ((iso != null) && (iss.length != iso.length)) {
+                    console.log("Deletion data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+                }
             }
         }
         s = "";
@@ -116,12 +120,15 @@ window.addEventListener("load", function(){
 
 function mouseEnter(obj) {
     clearTimeout(lastTimeout)
-    var iss = obj.getAttribute("data-issue").split(',');
+    var iss = null;
     var iso = null;
-    if (obj.getAttribute("data-iso") != null) {
-        iso = obj.getAttribute("data-iso").split(',');
-        if ((iso != null) && (iss.length != iso.length)) {
-            console.log("data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+    if (obj.getAttribute("data-issue") != null) {
+        iss = obj.getAttribute("data-issue").split(',');
+        if (obj.getAttribute("data-iso") != null) {
+            iso = obj.getAttribute("data-iso").split(',');
+            if ((iso != null) && (iss.length != iso.length)) {
+                console.log("data-issue and data-iso not the same length for " + obj.getAttribute("data-issue"));
+            }
         }
     }
     var s = "";
