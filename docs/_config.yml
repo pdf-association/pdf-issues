@@ -47,7 +47,7 @@ social:
 
 
 # See https://github.com/jekyll/minima
-google_analytics: UA-1991880-1
+google_analytics: G-F90FBHNRDT
 minima:
   skin: classic
   date_format: "%e %B %Y"
