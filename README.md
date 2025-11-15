@@ -83,6 +83,7 @@ Errata in the following PDF specifications are supported:
 * PDF/A-4 (ISO 19005-4:2020) - <a href="https://pdf-issues.pdfa.org/19005-4-2020/index.html">*Resolved errata*</a>
 * PDF/A-3 (ISO 19005-3:2012) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a>
 * PDF/A-2 (ISO 19005-2:2011) - see <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a>
+
 * PDF/A-1 (ISO 19005-1:2005) - see <a href="https://www.pdfa.org/resource/pdfa-1-technical-notes/" target="_blank">PDF/A-1 Technical Notes</a> and <a href="https://www.pdfa.org/resource/technote-0010-clarifications-of-iso-19005-parts-1-3-for-developers-of-pdfa-creators-and-validators/" target="_blank">TechNote 0010</a>
 
 ### <a href="https://www.pdfa.org/resource/iso-15930-pdfx/" target="_blank">PDF/X (ISO 15930) - PDF for prepress digital data exchange</a>
@@ -104,7 +105,7 @@ Errata in the following PDF specifications are supported:
 
 ### Other ISO PDF publications
 
-* [PDF/R-1 (ISO 23504-1:2020)](https://www.pdfa.org/resource/iso-23504-pdfr/){:target="_blank"} - PDF for raster image transport and storage
+* <a href="https://www.pdfa.org/resource/iso-23504-pdfr/" target="_blank">PDF/R-1 (ISO 23504-1:2020)- PDF for raster image transport and storage</a>
 
 Errata on PDF 1.7 (ISO 32000-1:2008) and withdrawn ISO publications are **not** supported - refer to ISO 32000-2 instead.
 The PDF Association maintains a [full list of all PDF-related ISO publications](https://www.pdfa.org/index-of-pdf-related-iso-publications/).
