@@ -1304,6 +1304,13 @@ appearance) string.
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>SignaturePolicyCommitmentType</b></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="681">A</del><ins onMouseEnter="mouseEnter(this)" data-issue="681">a</ins>rray of ASCII strings</td>
+    <td>
+     <p>...</p>
+    </td>
+  </tr>
+  <tr>
     <td><b>KeyUsage</b></td>
     <td>array of ASCII strings</td>
     <td>
