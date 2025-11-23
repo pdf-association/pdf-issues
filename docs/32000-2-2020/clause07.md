@@ -1945,6 +1945,16 @@ PDF function) and others can be described with exponential functions (Type 2 in 
   </tr>
 </table>
 
+<p class="location">Change the paragraph immediately below Table 42 as follows:</p>
+
+<p>The operand syntax for Type 4 functions shall follow PDF conventions rather than PostScript language 
+conventions. The entire code stream defining the function shall be enclosed in braces { } (using LEFT 
+CURLY BRACE (7Bh) and RIGHT CURLY BRACE (<del onMouseEnter="mouseEnter(this)" data-issue="669">07hD</del><ins onMouseEnter="mouseEnter(this)" data-issue="669">7Dh</ins>)). Braces also shall delimit expressions that are 
+executed conditionally by the <b>if</b> and <b>ifelse</b> operators: 
+</p>
+
+<p>...</p>
+
 <h2 id="H7.11">7.11 File specifications</h2>
 
 <h3 id="H7.11.3">7.11.3 File specification dictionaries</h3>
