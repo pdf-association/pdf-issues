@@ -652,7 +652,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 
 <p>...</p>
 
-<p class="location">Change the paragraph below the EXAMPLE as follows:</p>
+<p class="location">Change the paragraph below the EXAMPLE as follows and make this non-normative paragraph part of the example (see <a href="https://github.com/pdf-association/pdf-issues/issues/660">PDF Errata #660</a>):</p>
 
 <p>
 where <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject2</i> define the check box’s normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
