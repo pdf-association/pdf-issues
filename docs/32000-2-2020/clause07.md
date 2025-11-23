@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 7
 title: Syntax
-modified: 10 November 2025
+modified: 23 November 2025
 ---
 
 <ul class="noprint">
@@ -88,6 +88,10 @@ modified: 10 November 2025
     <li>7.6.4 Standard security handler
      <ul>
       <li><a href="#H7.6.4.1">7.6.4.1 General</a>
+      </li>
+      <li><a href="#H7.6.4.2">7.6.4.2 Standard encryption dictionary</a>
+      </li>
+      <li>7.6.4.3 File encryption key algorithm
        <ul>
         <li><a href="#H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</a>
         </li>
@@ -95,6 +99,10 @@ modified: 10 November 2025
         </li>
         <li><a href="#H7.6.4.3.4">7.6.4.3.4 Algorithm 2.B: Computing a hash (revision 6 and later)</a>
         </li>
+       </ul>
+      </li>
+      <li>7.6.4.4 Password algorithms
+       <ul> 
         <li><a href="#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
         </li>
         <li><a href="#H7.6.4.4.12">7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</a>
@@ -937,6 +945,35 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p>...</p>
 
+<h4 id="H7.6.4.2">7.6.4.2 Standard encryption dictionary</h4>
+
+<p class="location">Change Table 21 as follows:</p>
+
+<table>
+  <caption id="Table21">Table 21 - Additional encryption dictionary entries for the standard security handler</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>O</b></td>
+    <td>byte string</td>
+    <td>
+      <p>(<i>Required</i>) A byte string, 32 bytes long if the value of <b>R</b> is 4 or less and 48 
+      bytes long if the value of <b>R</b> is 6, based on both the 
+      <del onMouseEnter="mouseEnter(this)" data-issue="674">owne&nbsp;r</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="674">owner</ins> 
+      and user passwords, that shall be used in computing the file encryption key and in 
+      determining whether a valid owner password was entered.
+      </p>
+      <p>For more information, see 7.6.4.3, "File encryption key algorithm" and 7.6.4.4, "Password algorithms".</p>
+    </td>
+  </tr>
+</table>
+
+<h4 id="H7.6.4.3">7.6.4.3 File encryption key algorithm</h4>
+
 <h5 id="H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</h5>
 
 <p class="location">Change NOTE 2 as follows:</p>
@@ -986,6 +1023,7 @@ and the file encryption key as the key. ...
   <li>...</li>
 </ol>
 
+<h4 id="H7.6.4.4">7.6.4.4 Password algorithms</h4>
 
 <h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
