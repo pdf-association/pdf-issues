@@ -71,6 +71,8 @@ modified: 23 November 2025
      </li>
      <li><a href="#H12.5.6.13">12.5.6.13 Ink annotations</a>
      </li>
+     <li><a href="#H12.5.6.17">12.5.6.17 Movie annotations</a>
+     </li>
      <li><a href="#H12.5.6.18">12.5.6.18 Screen annotations</a>
      </li>
      <li><a href="#H12.5.6.24">12.5.6.24 Projection annotations</a>
@@ -904,6 +906,31 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     </td>
   </tr>
 </table>
+
+<h4 id="H12.5.6.17">12.5.6.17 Movie annotations</h4>
+
+<p class="location">Change Table 189 as follows:</p>
+
+<table>
+  <caption id="Table189">Table 189 - Additional entries specific to a movie annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>T</b></td>
+    <td>text string</td>
+    <td>
+     <p>(<i>Optional</i>) The title of the movie annotation. 
+      <del onMouseEnter="mouseEnter(this)" data-issue="676"><b>Movie</b></del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="676">Movie</ins>
+      actions (12.6.4.10, "Movie actions") may use this title to reference the movie annotation.
+     </p> 
+    </td>
+  </tr>
+</table>
+
 
 <h4 id="H12.5.6.18">12.5.6.18 Screen annotations</h4>
 
