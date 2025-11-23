@@ -1285,6 +1285,13 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     </td>
   </tr>
   <tr>
+    <td><b>SpiderInfo</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="672">; deprecated in PDF 2.0</ins></i>) ...
+    </td>
+  </tr>
+  <tr>
     <td><b>StructTreeRoot</b></td>
     <td>dictionary</td>
     <td>
@@ -1422,6 +1429,20 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     <td>
     <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">name</del> strings to invisible
        (template) pages for use in interactive forms (see 12.7.7, "Named pages").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>IDS</b></td>
+    <td>name tree</td>
+    <td>
+      <p>(<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="672">; deprecated in PDF 2.0</ins></i>) ...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>URLS</b></td>
+    <td>name tree</td>
+    <td>
+      <p>(<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="672">; deprecated in PDF 2.0</ins></i>) ...</p>
     </td>
   </tr>
   <tr>
