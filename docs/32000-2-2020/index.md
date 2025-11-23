@@ -119,6 +119,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table275">Table 275 - Requirement types</a></li>
 <li><a href="clause13.html#Table277">Table 277 - Entries common to all rendition dictionaries</a></li>
 <li><a href="clause13.html#Table285">Table 285 - Additional entries in a media clip data dictionary</a></li>
+<li><a href="clause13.html#Table293">Table 293 - Entries in a media screen parameters dictionary</a></li>
 <li><a href="clause13.html#Table311">Table 311 - Entries in a 3D stream dictionary</a></li>
 <li><a href="clause13.html#Table315">Table 315 - Entries in a 3D view dictionary</a></li>
 <li><a href="clause13.html#Table317">Table 317 - Entries in a 3D background dictionary</a></li>

@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 10 November 2025
+modified: 23 November 2025
 ---
 
 <ul class="noprint">
@@ -20,6 +20,12 @@ modified: 10 November 2025
    <li>13.2.4 Media clip objects
     <ul>
      <li><a href="#H13.2.4.2">13.2.4.2 Media clip data</a>
+     </li>
+    </ul>
+   </li>
+   <li>13.2.6 Media screen parameters
+    <ul>
+     <li><a href="#H13.2.6.1">13.2.6.1 General</a>
      </li>
     </ul>
    </li>
@@ -192,6 +198,30 @@ modified: 10 November 2025
 <p><del onMouseEnter="mouseEnter(this)" data-issue="414" data-iso="approved">An unrecognised value shall be treated as <i>(TEMPNEVER)</i>.</del></p>
 
 <p>...</p>
+
+<h3 id="H13.2.6">13.2.6 Media screen parameters</h3>
+
+<h4 id="H13.2.6.1">13.2.6.1 General</h4>
+
+<p class="location">Change Table 293 as follows:</p>
+
+<table>
+  <caption id="Table293">Table 293 - Entries in a media screen parameters dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>BE</b></td>
+    <td>dictionary</td>
+    <td>
+      <p>(<i>Optional</i>) A dictionary whose entries (see "Table 294 — Entries in a media screen parameters MH/BE dictionary")
+      <del onMouseEnter="mouseEnter(this)" data-issue="662">should be honoured</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="662">shall only be honoured in a 'best effort' sense.</ins>.</p>
+    </td>
+  </tr>
+</table>
 
 
 <h3 id="H13.2.7">13.2.7 Other multimedia objects</h3>
