@@ -215,6 +215,8 @@ modified: 23 November 2025
     </li>
     <li><a href="#H7.12.5">7.12.5 ExtensionLevel</a>
     </li>
+    <li><a href="#H7.12.6">7.12.6 URL</a>
+    </li>
    </ul>
   </li>
 </ul>
@@ -2171,6 +2173,11 @@ The value of <b>BaseVersion</b> may be different from the version number in the 
 <p>The value of the <b>ExtensionLevel</b> entry shall be an integer, which shall be interpreted with respect to the <b>BaseVersion</b> value.
 If a developer has released multiple extensions against the same <b>BaseVersion</b> value, they <del onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">shall</del><ins onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">should</ins> be ordered over time and the <b>ExtensionLevel</b> numbers <del onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">shall be a monotonically increasing sequence</del><ins onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">should increase</ins> over time.
 </p>
+
+
+<h3 id="H7.12.6">7.12.6 URL</h3>
+
+<p class="editornote">EDITOR NOTE: The indentation of the examples in subclause 7.12.6 are inconsistent.</p>
 
 </div>
 
