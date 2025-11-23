@@ -23,6 +23,8 @@ modified: 23 November 2025
    </li>
    <li>12.3.5 Collections
     <ul>
+     <li><a href="#H12.3.5.1">12.3.5.1 General</a>
+     </li>
      <li><a href="#H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.5.3 Collection navigators</ins></a>
      </li>
     </ul>
@@ -390,6 +392,24 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 <p>...</p>
 
 <h3 id="H12.3.5">12.3.5 Collections</h3>
+
+<h4 id="H12.3.5.1">General</h4>
+
+<p class="location">Change Table 154 as follows:</p>
+
+<table>
+  <caption id="Table154">Table 154 - Entries in a collection schema dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+   <td><del onMouseEnter="mouseEnter(this)" data-issue="673"><b>Other keys</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="673">Other keys</ins></td>
+   <td>dictionary</td>
+   <td><p>...</p></td>
+  </tr>
+</table>
 
 <h4 id="H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.5.3 Collection navigators</ins></h4>
 

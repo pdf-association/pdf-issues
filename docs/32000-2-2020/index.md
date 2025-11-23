@@ -78,6 +78,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
 <li><a href="clause12.html#Table149">Table 149 - Destination syntax</a></li>
 <li><a href="clause12.html#Table151">Table 151 - Entries in an outline item dictionary</a></li>
+<li><a href="clause12.html#Table154">Table 154 - Entries in a collection schema dictionary</a></li>
 <li><a href="clause12.html#Table161">Table 161 - Entries in a page label dictionary</a></li>
 <li><a href="clause12.html#Table164">Table 164 - Entries in a transition dictionary</a></li>
 <li><a href="clause12.html#Table166">Table 166 - Entries common to all annotation dictionaries</a></li>
