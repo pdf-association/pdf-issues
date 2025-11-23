@@ -2177,7 +2177,7 @@ If a developer has released multiple extensions against the same <b>BaseVersion<
 
 <h3 id="H7.12.6">7.12.6 URL</h3>
 
-<p class="editornote">EDITOR NOTE: The indentation of the examples in subclause 7.12.6 are inconsistent.</p>
+<p class="editornote">EDITOR NOTE: The indentation of the examples in subclause 7.12.6 are inconsistent (see <a href="https://github.com/pdf-association/pdf-issues/issues/670">PDF Errata #670</a>).</p>
 
 </div>
 
