@@ -203,6 +203,12 @@ modified: 23 November 2025
    </li>
   </ul>
  </li>
+ <li>12.9 Measurement properties
+  <ul>
+   <li><a href="#H12.9.1">12.9.1 General</a>
+   </li>
+  </ul>
+ </li>
  <li><a href="#H12.10">12.10 Geospatial features</a>
   <ul>
    <li><a href="#H12.10.2">12.10.2 Geospatial measure dictionary</a>
@@ -1810,6 +1816,14 @@ establishes the exact contents of the complete PDF file at the time indicated in
     </td>
   </tr>
 </table>
+
+
+<h2 id="H12.9">12.9 Measurement features</h2>
+
+<h3 id="H12.9.1">12.9.1 General</h3>
+
+<p class="editornote">EDITOR NOTE: Insert an empty placeholder NOTE 1 at the start of subclause 12.9.1 so that NOTE 2 and NOTE 3 are not renumbered. See <a href="https://github.com/pdf-association/pdf-issues/issues/655">PDF Errata #655</a>.
+</p>
 
 
 <h2 id="H12.10">12.10 Geospatial features</h2>
