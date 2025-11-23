@@ -1370,6 +1370,24 @@ appearance) string.
 
 <h4 id="H12.7.6.3">12.7.6.3 Reset-form action</h4>
 
+<p class="location">Change Table 241 as follows:</p>
+
+<table>
+  <caption id="Table241">Table 241 - Additional entries specific to a reset-form action</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Flags</b></td>
+    <td>integer</td>
+    <td>
+      <p>(<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="683">; inheritable</del></i>) ...</p>
+    </td>
+  </tr>
+</table>
+
 <p class="location">Change Table 242 as follows:</p>
 
 <table>
