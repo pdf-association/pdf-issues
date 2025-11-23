@@ -1772,6 +1772,7 @@ is achieved by using two types of dictionaries:
 
 <p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/448">Errata #448</a>, all keys in Table 262 need to be indicated that they were introduced in PDF 2.0.</p>
 
+<p class="editornote">EDITOR NOTE: both examples in subclause 12.8.4.4 are missing the "endobj" keyword from various objects (see <a href="https://github.com/pdf-association/pdf-issues/issues/661">PDF Errata #661</a>).</p>
 
 <h3 id="H12.8.5">12.8.5 Document timestamp (DTS) dictionary</h3>
 
