@@ -91,6 +91,8 @@ modified: 23 November 2025
      </li>
      <li><a href="#H12.6.4.16">12.6.4.16 Go-To-3D-View actions</a>
      </li>
+     <li><a href="#H12.6.4.18">12.6.4.18 Rich-Media-Execute actions</a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -1037,6 +1039,29 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 
 <p>...</p>
 
+<h4 id="H12.6.4.18">12.6.4.18 Rich-Media-Execute actions</h4>
+
+<p class="location">Change Table 223 as follows:</p>
+
+<table>
+  <caption id="Table223">Table 223 - Entries in a RichMediaCommand dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>A</b></td>
+    <td>(various)</td>
+    <td>
+      <p>(<i>Optional; PDF 2.0</i>) An object that specifies the arguments to the command. The object may either be a single typed value or an array of typed values, each an argument. Valid arguments are objects of type text string, integer, 
+      <del onMouseEnter="mouseEnter(this)" data-issue="679">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="679">real</ins>, 
+      or boolean.
+      </p>
+      <p>Default value: no arguments.</p>
+    </td>
+  </tr>
+</table>
 
 
 <h2 id="H12.7">12.7 Forms</h2>
