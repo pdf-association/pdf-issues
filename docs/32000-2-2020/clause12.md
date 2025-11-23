@@ -203,7 +203,7 @@ modified: 23 November 2025
    </li>
   </ul>
  </li>
- <li>12.10 Geospatial features
+ <li><a href="#H12.10">12.10 Geospatial features</a>
   <ul>
    <li><a href="#H12.10.2">12.10.2 Geospatial measure dictionary</a>
    </li>
@@ -211,7 +211,7 @@ modified: 23 November 2025
    </li>
   </ul>
  </li>
- <li>12.11 Document requirements
+ <li><a href="#H12.11">12.11 Document requirements</a>
   <ul>
    <li><a href="#H12.11.1">12.11.1 General</a>
    </li>
@@ -1814,6 +1814,9 @@ establishes the exact contents of the complete PDF file at the time indicated in
 
 <h2 id="H12.10">12.10 Geospatial features</h2>
 
+<p class="editornote">EDITOR NOTE: Tables 269-274 and 276 have an inconsistent column title for the third column. It should be "Value", not "Description" for consistency throughout ISO 32000-2 for tables defining dictionaries. See <a href="https://github.com/pdf-association/pdf-issues/issues/656">PDF Errata #656</a>.
+</p>
+
 <h3 id="H12.10.2">12.10.2 Geospatial measure dictionary</h3>
 
 <p class="location">Change Table 269 as follows:</p>
@@ -1823,7 +1826,7 @@ establishes the exact contents of the complete PDF file at the time indicated in
   <tr>
     <th>Key</th>
     <th>Type</th>
-    <th>Value</th>
+    <th><del onMouseEnter="mouseEnter(this)" data-issue="656">Description</del><ins onMouseEnter="mouseEnter(this)" data-issue="656">Value</ins></th>
   </tr>
   <tr>
     <td><b>PCSM</b></td>
@@ -1883,6 +1886,9 @@ as administered by the International Association of Oil and Gas Producers (OGP).
 
 <h2 id="H12.11">12.11 Document requirements</h2>
 
+<p class="editornote">EDITOR NOTE: Tables 269-274 and 276 have an inconsistent column title for the third column. It should be "Value", not "Description" for consistency throughout ISO 32000-2 for tables defining dictionaries. See <a href="https://github.com/pdf-association/pdf-issues/issues/656">PDF Errata #656</a>.
+</p>
+
 <h3 id="H12.11.1">12.11.1 General</h3>
 
 <p class="location">Change Table 273 as follows:</p>
@@ -1892,7 +1898,7 @@ as administered by the International Association of Oil and Gas Producers (OGP).
   <tr>
     <th>Key</th>
     <th>Type</th>
-    <th>Value</th>
+    <th><del onMouseEnter="mouseEnter(this)" data-issue="656">Description</del><ins onMouseEnter="mouseEnter(this)" data-issue="656">Value</ins></th>
   </tr>
   <tr>
     <td><b>S</b></td>
@@ -1922,7 +1928,7 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
   <tr>
     <th>Key</th>
     <th>Type</th>
-    <th>Value</th>
+    <th><del onMouseEnter="mouseEnter(this)" data-issue="656">Description</del><ins onMouseEnter="mouseEnter(this)" data-issue="656">Value</ins></th>
   </tr>
   <tr>
     <td><b>...</b></td>
