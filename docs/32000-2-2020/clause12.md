@@ -179,6 +179,12 @@ modified: 23 November 2025
     <ul>
      <li><a href="#H12.8.3.1">12.8.3.1 General</a>
      </li>
+     <li>12.8.3.4 CAdES signatures as used in PDF
+      <ul>
+       <li><a href="#H12.8.3.4.4">12.8.3.4.4 Profiles of ETSI.CAdES.detached</a>
+       </li>
+      </ul>
+     </li>
     </ul>
    </li>
    <li>12.8.4 Long term validation of signatures
@@ -1751,6 +1757,15 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 </table>
 
 <p class="editornote">EDITOR NOTE: Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</p>
+
+
+<h4 id="H12.8.3.4">H12.8.3.4 CAdES signatures as used in PDF</h4>
+
+<h5 id="H12.8.3.4.4">12.8.3.4.4 Profiles of ETSI.CAdES.detached</h5>
+
+<p class="editornote">EDITOR NOTE: Insert an empty placeholder NOTE 1 at the start of subclause 12.8.3.4.4 so that NOTE 2 and NOTE 3 are not renumbered. See <a href="https://github.com/pdf-association/pdf-issues/issues/649">PDF Errata #649</a>.
+</p>
+
 
 <h3>12.8.4 Long term validation of signatures</h3>
 
