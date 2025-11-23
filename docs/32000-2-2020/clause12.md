@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 12
 title: Interactive features
-modified: 10 November 2025
+modified: 23 November 2025
 ---
 
 <ul class="noprint">
@@ -140,6 +140,8 @@ modified: 10 November 2025
      <li>12.7.8.3 FDF catalog
       <ul>
        <li><a href="#H12.7.8.3.1">12.7.8.3.1 General</a>
+       </li>
+       <li><a href="#H12.7.8.3.4">12.7.8.3.4 FDF annotation dictionaries</a>
        </li>
       </ul>
      </li>
@@ -1430,6 +1432,26 @@ as input. The computation shall be identical to steps (a) and (b) of the
 "File encryption key algorithm"; the first 5 bytes of the result shall be the file encryption key for the embedded FDF file.
 </p>
 
+<h5 id="H12.7.8.3.4">12.7.8.3.4 FDF annotation dictionaries</h5>
+
+<p class="location">Change Table 254 as follows:</p>
+
+<table>
+  <caption id="Table254">Table 254 - Additional entry for annotation dictionaries in an FDF file</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Page</b></td>
+    <td>integer</td>
+    <td>
+      (<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="685"> for annotations in FDF files</del></i>) ...
+    </td>
+  </tr>
+</table>
+
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
 <p class="location">Change the first paragraph as follows:</p>
@@ -1439,12 +1461,9 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 <b>PrintField</b> attrib<del onMouseEnter="mouseEnter(this)" data-issue="54" data-iso="approved">0</del>ute (14.8.5.6, "PrintField attributes") for repurposing and accessibility purposes.
 </p>
 
+<h2 id="H12.8">12.8 Digital signatures</h2>
 
 <h3 id="H12.8.1">12.8.1 General</h3>
-
-<p>...</p>
-
-<h4 id="H12.8.1">12.8.1 General</h4>
 
 <p>...</p>
 

@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: PDF 2.0 Corrections
-modified: 10 November 2025
+modified: 23 November 2025
 ---
 
 <p>
@@ -100,6 +100,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table238">Table 238 - Entries in a certificate seed value dictionary</a></li>
 <li><a href="clause12.html#Table239">Table 239 - Additional entries specific to a submit-form action</a></li>
 <li><a href="clause12.html#Table242">Table 242 - Flag for reset-form actions</a></li>
+<li><a href="clause12.html#Table254">Table 254 - Additional entry for annotation dictionaries in an FDF file</a></li>
 <li><a href="clause12.html#Table255">Table 255 - Entries in a signature dictionary</a></li>
 <li><a href="clause12.html#Table256">Table 256 - Entries in a signature reference dictionary</a></li>
 <li><a href="clause12.html#Table257">Table 257 - Entries in the DocMDP transform parameters dictionary</a></li>
