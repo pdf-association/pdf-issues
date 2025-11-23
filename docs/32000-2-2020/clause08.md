@@ -63,6 +63,16 @@ modified: 23 November 2025
      </li>
     </ul>
    </li>
+   <li>8.7.4 Shading patterns
+    <ul>
+     <li>8.7.4.5 Shading types
+      <ul>
+       <li><a href="#H8.7.4.5.8">8.7.4.5.8 Type 7 (tensor-product patch mesh) shadings</a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
  <li>8.9 Images
@@ -444,7 +454,46 @@ The pattern cell can include graphical elements such as filled areas, text, and 
   </tr>
 </table>
 
+<h3 id="H8.7.4">8.7.4 Shading patterns</h3>
 
+<h4 id="H8.7.4.5">8.7.4.5 Shading types</h4>
+
+<h5 id="H8.7.4.5.8">8.7.4.5.8 Type 7 (tensor-product patch mesh) shadings</h5>
+
+<p class="location">Remove the green line below the matrix that is 2 paragraphs before Table 85 as follows:</p>
+
+<p>The coordinates of the control points in a tensor-product patch shall be specified in the shading’s data stream in the following order:</p>
+
+<table style="margin-left: auto; margin-right: auto; border: none;" cellspacing="0" cellpadding="0">
+  <tr>
+    <td style="border: none">4</td>
+    <td style="border: none">5</td>
+    <td style="border: none">6</td>
+    <td style="border: none">7</td>
+  </tr>
+  <tr>
+    <td style="border: none">3</td>
+    <td style="border: none">14</td>
+    <td style="border: none">15</td>
+    <td style="border: none">8</td>
+  </tr>
+  <tr>
+    <td style="border: none">2</td>
+    <td style="border: none">13</td>
+    <td style="border: none">16</td>
+    <td style="border: none">9</td>
+  </tr>
+  <tr>
+    <td style="border: none">1</td>
+    <td style="border: none">12</td>
+    <td style="border: none">11</td>
+    <td style="border: none">10</td>
+  </tr>
+</table>
+
+<p><del onMouseEnter="mouseEnter(this)" data-issue="682">&nbsp;<hr style="color:green; width:80%">&nbsp;</del></p>
+
+<p>...</p>
 
 <h2 id="H8.9">8.9 Images</h2>
 
