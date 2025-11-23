@@ -87,6 +87,8 @@ modified: 23 November 2025
      </li>
      <li><a href="#H12.6.4.4">12.6.4.4 Embedded Go-To actions</a>
      </li>
+     <li><a href="#H12.6.4.6">12.6.4.6 Launch actions</a>
+     </li>
      <li><a href="#H12.6.4.8">12.6.4.8 URI actions</a>
      </li>
      <li><a href="#H12.6.4.16">12.6.4.16 Go-To-3D-View actions</a>
@@ -976,6 +978,26 @@ However, a projection annotation is only valid within the context of an associat
      <p class="hangingindent">
      <ins onMouseEnter="mouseEnter(this)" data-issue="258" data-iso="approved">NOTE: Although normally named destinations can also be specified by the use of a name object, that particular usage of them is not provided for in this case.</ins>
      </p>
+    </td>
+  </tr>
+</table>
+
+<h4 id="H12.6.4.6">12.6.4.6 Launch actions</h4>
+
+<p class="location">Change Table 208 as follows:</p>
+
+<table>
+  <caption id="Table208">Table 208 - Entries in a Microsoft Windows&trade; launch parameter dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>D</b></td>
+    <td>byte string</td>
+    <td>
+     <p>(<i>Optional</i>) A <del onMouseEnter="mouseEnter(this)" data-issue="677">bye</del><ins onMouseEnter="mouseEnter(this)" data-issue="677">byte</ins> string specifying the default directory in standard DOS syntax.</p>
     </td>
   </tr>
 </table>

@@ -89,6 +89,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table185">Table 185 - Additional entries specific to an ink annotation</a></li>
 <li><a href="clause12.html#Table202">Table 202 - Additional entries specific to a go-to action</a></li>
 <li><a href="clause12.html#Table205">Table 205 - Entries specific to a target dictionary</a></li>
+<li><a href="clause12.html#Table208">Table 208 - Entries in a Microsoft Windows&trade; launch parameter dictionary</a></li>
 <li><a href="clause12.html#Table220">Table 220 - Additional entries specific to a go-to-3D-view action</a></li>
 <li><a href="clause12.html#Table223">Table 223 - Entries in a RichMediaCommand dictionary</a></li>
 <li><a href="clause12.html#Table224">Table 224 - Entries in the interactive form dictionary</a></li>
