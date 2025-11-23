@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 8
 title: Graphics
-modified: 10 November 2025
+modified: 23 November 2025
 ---
 
 <ul class="noprint">
@@ -91,6 +91,12 @@ modified: 10 November 2025
  </li>
  <li>8.11 Optional Content
   <ul>
+   <li>8.11.3 Making graphical content optional
+    <ul>
+     <li><a href="#H8.11.3.2">8.11.3.2 Optional content in content streams</a>
+     </li>
+    </ul>
+   </li>
    <li>8.11.4 Configuring optional content
     <ul>
      <li><a href="#H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</a>
@@ -753,6 +759,69 @@ the corresponding colour spaces either directly or via a default colour space (s
 
 
 <h2 id="H8.11">8.11 Optional Content</h2>
+
+<h3 id="H8.11.3">8.11.3 Making graphical content optional</h3>
+
+<h4 id="H8.11.3.2">8.11.3.2 Optional content in content streams</h4>
+ 
+<p class="location">Change EXAMPLE 2 as follows (whitespace changes are not marked up):</p>
+
+<code><ins onMouseEnter="mouseEnter(this)" data-issue="686">5 0 obj
+&lt;&lt; /Length ... &gt;&gt;
+stream</ins>
+% Within a content stream
+…
+/OC /OC2 BDC                 % Draws a black rectangle frame
+    0 g
+    4 w
+    100 100 412 592 re s
+EMC
+/OC /OC3 BDC                 % Draws an image XObject
+    q
+      412 0 0 592 100 100 cm
+      /Im3 Do
+    Q
+EMC
+/OC /OC4 BDC                 % Draws an image XObject
+    q
+      412 0 0 592 100 100 cm
+      /Im4 Do
+    Q
+EMC
+… 
+<ins onMouseEnter="mouseEnter(this)" data-issue="686">endstream
+endobj
+
+10 0 obj</ins>
+&lt;&lt;    % The resource dictionary
+  /Properties &lt;&lt; /OC2 20 0 R /OC3 30 0 R /OC4 40 0 R &gt;&gt;
+  /XObject    &lt;&lt; /Im3 50 0 R /Im4 /60 0 R &gt;&gt;
+&gt;&gt;
+endobj
+
+20 0 obj    % Optional content membership dictionary
+&lt;&lt;
+  /Type /OCMD
+  /OCGs [ 30 0 R 40 0 R ]
+  /P    /AnyOn
+&gt;&gt;
+endobj
+ 
+30 0 obj    % Optional content group "Image A"
+&lt;&lt;
+  /Type /OCG
+  /Name (Image A)
+&gt;&gt;
+endobj
+ 
+40 0 obj    % Optional content group "Image B"
+&lt;&lt;
+  /Type /OCG
+  /Name (Image B)
+&gt;&gt;
+endobj
+
+</code>
 
 <h3 id="H8.11.4">8.11.4 Configuring optional content</h3>
 
