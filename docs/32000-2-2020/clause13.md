@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 clause: 13
 title: Multimedia features
-modified: 23 November 2025
+modified: 25 November 2025
 ---
 
 <ul class="noprint">
@@ -67,6 +67,8 @@ modified: 23 November 2025
      </li>
     </ul>
    </li>
+   <li><a href="#H13.6.5">13.6.5 Coordinate systems for 3D</a>
+   <li>
    <li>13.6.7 Persistence of 3D measurements and markups
     <ul>
      <li>13.6.7.3 3D measurement/markup dictionary
@@ -502,6 +504,22 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    </td>
   </tr>
 </table>
+
+<h3 id="H13.6.5">13.6.5 Coordinate systems for 3D</h3>
+
+<p class="location">Change the formulae after the following paragraph as follows:</p>
+
+<p>Carrying out the multiplication has the following results: </p>
+
+<div style="margin-left: 50px;">
+<p><i>
+x' = a × x + d × y + g × z + tx<br/>
+y' = b × x + e × y + h × <ins onMouseEnter="mouseEnter(this)" data-issue="690">z </ins>+ ty<br/>
+z' = c × x + f × y + i × z + tz
+</i></p>
+</div>
+
+<p>...</p>
 
 <h3 id="H13.6.7">13.6.7 Persistence of 3D measurements and markups</h3>
 
