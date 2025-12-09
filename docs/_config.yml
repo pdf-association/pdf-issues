@@ -9,14 +9,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 tagline: Resolutions to PDF specification errata
 
-baseurl: /_site # the subpath of your site, e.g. /blog
-url: https://labs.pdfa.org # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /
+url: https://pdf-issues.pdfa.org
 logo: ./assets/PDFa-logo-black-text.png
 favicon_ico: ./favicon.png
 
 theme: just-the-docs
 layout: default
-color_scheme: light
+color_scheme: light # or dark
 
 # Aux. Links appear in the top right corner.
 aux_links_new_tab: true
