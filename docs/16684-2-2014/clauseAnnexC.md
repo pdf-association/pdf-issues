@@ -1,20 +1,18 @@
 ---
 subset: XMP RELAX NG schemas
 isodoc: ISO 16684-2:2014
-clause: Annex C
-title: (informative) RELAX NG schema for the XMP namespace
-modified: 11 November 2025
+title: 'Annex C: (informative) RELAX NG schema for the XMP namespace'
+last_modified_date: 11 November 2025
+parent: ISO 16684-2:2014 XMP RELAX NG schema
+nav_order: 1
 ---
 
-
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}: {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="location">Based on <a href="https://github.com/pdf-association/pdfa-twg/issues/56">PDF/A Errata #56</a>, change the RELAX NG XML as follows:</p>
 
@@ -32,8 +30,4 @@ modified: 11 November 2025
 
 </code>
 
-
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

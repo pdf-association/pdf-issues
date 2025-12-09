@@ -1,23 +1,22 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: Annex L
-title: (normative) Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0
-modified: 2 June 2025
+title: 'Annex L: (normative) Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0'
+last_modified_date: 2 June 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 26
 ---
 
 <ul class="noprint">
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="location">Change the third paragraph as follows:</p>
 
@@ -73,7 +72,3 @@ The embedded PDF and spreadsheet data are also corrected.
 </ins></p>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

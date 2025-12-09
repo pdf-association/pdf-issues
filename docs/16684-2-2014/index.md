@@ -2,9 +2,14 @@
 subset: XMP RELAX NG schemas
 isodoc: ISO 16684-2:2014
 isotitle: 'Graphic technology — Extensible metadata platform (XMP)Part 2: Description of XMP schemas using RELAX NG'
-title: ISO 16684-2:2014 XMP RELAX NG schema Corrections
-modified: 11 November 2025
+title: ISO 16684-2:2014 XMP RELAX NG schema
+last_modified_date: 11 November 2025
+nav_order: 13
+has_toc: false
+search_exclude: true
 ---
+
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
 This is all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
@@ -22,7 +27,3 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
         {% endif %}
     {% endfor %}
 </ul>
-
-<hr>
-<link rel="stylesheet" href="../assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>

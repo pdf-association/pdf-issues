@@ -1,9 +1,10 @@
 ---
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
-clause: 12
-title: Object overview
-modified: 8 May 2024
+title: 12. Object overview
+last_modified_date: 8 May 2024
+parent: PISO 21757-1:2020 ECMAScript for PDF 2.0
+nav_order: 12
 ---
 
 <ul>
@@ -28,14 +29,12 @@ modified: 8 May 2024
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+  Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H12.19">12.19 Mesh</h2>
 
@@ -85,7 +84,3 @@ NOTE The state data could be stored or retrieved from the <b>Data</b> entry of t
 <ins onMouseEnter="mouseEnter(this)" data-issue="267" data-iso="approved">properties</ins></h3>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

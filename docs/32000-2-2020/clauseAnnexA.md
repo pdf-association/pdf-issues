@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: Annex A
-title: (informative) Operator Summary
-modified: 28 April 2025
+title: 'Annex A: (informative) Operator Summary'
+last_modified_date: 28 April 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 15
 ---
 
 <ul class="noprint">
@@ -12,13 +13,12 @@ modified: 28 April 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="HA.2">A.2 PDF content stream operators</h2>
 
@@ -73,9 +73,4 @@ modified: 28 April 2025
   </tr>
 </table>
 
-
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

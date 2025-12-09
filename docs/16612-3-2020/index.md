@@ -2,9 +2,14 @@
 subset: PDF/VT-3
 isodoc: ISO 16612-3:2020
 isotitle: 'Graphic technology - Variable data exchange - Part 3: Using PDF/X-6 (PDF/VT-3)'
-title: PDF/VT-3 Corrections
-modified: 10 August 2021
+title: ISO 16612-3:2020 PDF/VT-3
+last_modified_date: 10 August 2021
+nav_order: 12
+has_toc: false
+search_exclude: true
 ---
+
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
 This is a placeholder for all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
@@ -23,7 +28,3 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
-
-<hr>
-<link rel="stylesheet" href="../assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>

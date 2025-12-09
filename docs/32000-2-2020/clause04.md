@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 4
-title: Notation
-modified: 27 April 2024
+title: 4. Notation
+last_modified_date: 27 April 2024
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 4
 ---
 
 <ul class="noprint">
@@ -14,13 +15,12 @@ modified: 27 April 2024
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H4.1">4.1 General</h2>
 
@@ -62,4 +62,4 @@ In this document and by convention, XMP examples always use the preferred prefix
 
 
 <hr>
-<p class="footnote">Last modified: {{ page.modified }}</p>
+

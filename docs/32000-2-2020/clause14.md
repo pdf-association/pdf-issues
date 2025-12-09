@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 14
-title: Document interchange
-modified: 10 November 2025
+title: 14. Document interchange
+last_modified_date: 10 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 14
 ---
 
 <ul class="noprint">
@@ -202,13 +203,12 @@ modified: 10 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H14.2">14.2 Procedure sets</h2>
 
@@ -842,15 +842,6 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
     <ins onMouseEnter="mouseEnter(this)" data-issue="141" data-iso="approved">NOTE 2 The semantic value of a structure element of type <b>Part</b> is determined by the elements enclosed within, in addition to the grouping nature of <b>Part</b>.</ins>
     </p>
     <p>...</p>
-    </td>
-  </tr>
-  <tr>
-    <td><b>Part</b></td>
-    <td>Grouping</td>
-    <td>
-      <p>Encloses content structured in <ins onMouseEnter="mouseEnter(this)" data-issue="689">a</ins> fashion that is orthogonal to the semantic structure. It can be used as a role mapping target for custom tags for which no suitable standard structure element is available, or where attributes are applied in a non-semantic fashion.
-      </p>
-      <p>...</p>
     </td>
   </tr>
 </table>
@@ -2100,7 +2091,3 @@ endobj
 </code>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 8
-title: Graphics
-modified: 23 November 2025
+title: 8. Graphics
+last_modified_date: 10 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 8
 ---
 
 <ul class="noprint">
@@ -63,16 +64,6 @@ modified: 23 November 2025
      </li>
     </ul>
    </li>
-   <li>8.7.4 Shading patterns
-    <ul>
-     <li>8.7.4.5 Shading types
-      <ul>
-       <li><a href="#H8.7.4.5.8">8.7.4.5.8 Type 7 (tensor-product patch mesh) shadings</a>
-       </li>
-      </ul>
-     </li>
-    </ul>
-   </li>
   </ul>
  </li>
  <li>8.9 Images
@@ -101,12 +92,6 @@ modified: 23 November 2025
  </li>
  <li>8.11 Optional Content
   <ul>
-   <li>8.11.3 Making graphical content optional
-    <ul>
-     <li><a href="#H8.11.3.2">8.11.3.2 Optional content in content streams</a>
-     </li>
-    </ul>
-   </li>
    <li>8.11.4 Configuring optional content
     <ul>
      <li><a href="#H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</a>
@@ -121,13 +106,12 @@ modified: 23 November 2025
 
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H8.2">8.2 Graphics objects</h2>
 
@@ -454,46 +438,7 @@ The pattern cell can include graphical elements such as filled areas, text, and 
   </tr>
 </table>
 
-<h3 id="H8.7.4">8.7.4 Shading patterns</h3>
 
-<h4 id="H8.7.4.5">8.7.4.5 Shading types</h4>
-
-<h5 id="H8.7.4.5.8">8.7.4.5.8 Type 7 (tensor-product patch mesh) shadings</h5>
-
-<p class="location">Remove the green line below the matrix that is 2 paragraphs before Table 85 as follows:</p>
-
-<p>The coordinates of the control points in a tensor-product patch shall be specified in the shading’s data stream in the following order:</p>
-
-<table style="margin-left: auto; margin-right: auto; border: none;" cellspacing="0" cellpadding="0">
-  <tr>
-    <td style="border: none">4</td>
-    <td style="border: none">5</td>
-    <td style="border: none">6</td>
-    <td style="border: none">7</td>
-  </tr>
-  <tr>
-    <td style="border: none">3</td>
-    <td style="border: none">14</td>
-    <td style="border: none">15</td>
-    <td style="border: none">8</td>
-  </tr>
-  <tr>
-    <td style="border: none">2</td>
-    <td style="border: none">13</td>
-    <td style="border: none">16</td>
-    <td style="border: none">9</td>
-  </tr>
-  <tr>
-    <td style="border: none">1</td>
-    <td style="border: none">12</td>
-    <td style="border: none">11</td>
-    <td style="border: none">10</td>
-  </tr>
-</table>
-
-<p><del onMouseEnter="mouseEnter(this)" data-issue="682">&nbsp;<hr style="color:green; width:80%">&nbsp;</del></p>
-
-<p>...</p>
 
 <h2 id="H8.9">8.9 Images</h2>
 
@@ -809,69 +754,6 @@ the corresponding colour spaces either directly or via a default colour space (s
 
 <h2 id="H8.11">8.11 Optional Content</h2>
 
-<h3 id="H8.11.3">8.11.3 Making graphical content optional</h3>
-
-<h4 id="H8.11.3.2">8.11.3.2 Optional content in content streams</h4>
- 
-<p class="location">Change EXAMPLE 2 as follows (whitespace changes are not marked up):</p>
-
-<code><ins onMouseEnter="mouseEnter(this)" data-issue="686">5 0 obj
-&lt;&lt; /Length ... &gt;&gt;
-stream</ins>
-% Within a content stream
-…
-/OC /OC2 BDC                 % Draws a black rectangle frame
-    0 g
-    4 w
-    100 100 412 592 re s
-EMC
-/OC /OC3 BDC                 % Draws an image XObject
-    q
-      412 0 0 592 100 100 cm
-      /Im3 Do
-    Q
-EMC
-/OC /OC4 BDC                 % Draws an image XObject
-    q
-      412 0 0 592 100 100 cm
-      /Im4 Do
-    Q
-EMC
-… 
-<ins onMouseEnter="mouseEnter(this)" data-issue="686">endstream
-endobj
-
-10 0 obj</ins>
-&lt;&lt;    % The resource dictionary
-  /Properties &lt;&lt; /OC2 20 0 R /OC3 30 0 R /OC4 40 0 R &gt;&gt;
-  /XObject    &lt;&lt; /Im3 50 0 R /Im4 /60 0 R &gt;&gt;
-&gt;&gt;
-endobj
-
-20 0 obj    % Optional content membership dictionary
-&lt;&lt;
-  /Type /OCMD
-  /OCGs [ 30 0 R 40 0 R ]
-  /P    /AnyOn
-&gt;&gt;
-endobj
- 
-30 0 obj    % Optional content group "Image A"
-&lt;&lt;
-  /Type /OCG
-  /Name (Image A)
-&gt;&gt;
-endobj
- 
-40 0 obj    % Optional content group "Image B"
-&lt;&lt;
-  /Type /OCG
-  /Name (Image B)
-&gt;&gt;
-endobj
-
-</code>
-
 <h3 id="H8.11.4">8.11.4 Configuring optional content</h3>
 
 <h4 id="H8.11.4.3">8.11.4.3 Optional content configuration dictionaries</h4>
@@ -920,11 +802,11 @@ endobj
     <td>
       <p>(<i>Optional</i>) A dictionary specifying the language of the content controlled by this optional content group. It shall contain the following entry:</p>
       <ul>
-        <li class="hangingindent"><b>Lang</b> (<i>required</i>) A text string that specifies a language and possibly a locale (see 14.9.2, "Natural language specification"). For example, <code>es-MX</code> represents Mexican Spanish.</li>
+        <li><p class="hangingindent"><b>Lang</b> (<i>required</i>) A text string that specifies a language and possibly a locale (see 14.9.2, "Natural language specification"). For example, <code>es-MX</code> represents Mexican Spanish.</p></li>
       </ul>
       <p>Additionally, it may contain the following entry:</p>
       <ul>
-        <li class="hangingindent"><b>Preferred</b> (<i>optional</i>) A name whose values shall be either <i>ON</i> or <i>OFF</i>. Default value: <i>OFF</i>. It shall be used by PDF processors when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. <del onMouseEnter="mouseEnter(this)" data-issue="567">See 8.11.4.4, "Usage and usage application dictionaries" for more information</del>.</li>
+        <li><p class="hangingindent"><b>Preferred</b> (<i>optional</i>) A name whose values shall be either <i>ON</i> or <i>OFF</i>. Default value: <i>OFF</i>. It shall be used by PDF processors when there is a partial match but no exact match between the system language and the language strings in all usage dictionaries. <del onMouseEnter="mouseEnter(this)" data-issue="567">See 8.11.4.4, "Usage and usage application dictionaries" for more information</del>.</p></li>
       </ul>
       <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="567">NOTE: This entry does not change the natural language of any content.</ins></p>
     </td>
@@ -934,6 +816,3 @@ endobj
 <p>...</p>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

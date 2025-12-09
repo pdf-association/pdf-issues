@@ -2,9 +2,14 @@
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
 isotitle: 'Document management - ECMAScript for PDF - Part 1: Use of ISO 32000-2 (PDF 2.0)'
-title: 'PDF 2.0 ECMAscript  Corrections'
-modified: 8 May 2024
+title: ISO 21757-1:2020 ECMAScript for PDF 2.0
+last_modified_date: 8 May 2024
+nav_order: 15
+has_toc: false
+search_exclude: true
 ---
+
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
 This document lists all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
@@ -31,7 +36,3 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 <li><a href="clause10.html#Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">properties</ins></a></li>
 <li><a href="clause12.html#Table113">Table 113 - Mesh properties</a></li>
 </ul>
-
-<hr>
-<link rel="stylesheet" href="../assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>

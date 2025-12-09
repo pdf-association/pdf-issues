@@ -1,16 +1,15 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: Annex F
-title: (normative) Linearized PDF
-modified: 22 November 2025
+title: 'Annex F: (normative) Linearized PDF'
+last_modified_date: 7 June 2024
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 20
 ---
 
 <ul class="noprint">
     <li>F.3 Linearized PDF document structure
      <ul>
-      <li><a href="#HF.3.1">F.3.1 General</a>
-      </li>
       <li><a href="#HF.3.2">F.3.2 Header (Part 1)</a>
       </li>
       <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
@@ -22,34 +21,14 @@ modified: 22 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="HF.3">F.3 Linearized PDF document structure</h2>
-
-<h3 id="HF.3.1">F.3.1 General</h3>
-
-<p class="location">Change EXAMPLE 5 as follows:</p>
-
-<code>56 0 obj 
-&lt;&lt;  /Length 57 
-    … Possibly other stream attributes, such as Filter … 
-    /S 21          % Position of shared object hint table 
-    … Possibly entries for other hint tables … 
-<ins onMouseEnter="mouseEnter(this)" data-issue="687">&gt;&gt;</ins> 
-stream 
-<del onMouseEnter="mouseEnter(this)" data-issue="687">&gt;&gt;</del>
-    … Page offset hint table … 
-    … Shared object hint table … 
-    … Possibly other hint tables … 
-endstream 
-endobj
-</code>
 
 <h3 id="HF.3.2">F.3.2 Header (Part 1)</h3>
 
@@ -105,15 +84,12 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
   </tr>
 </table>
 
-
 <h3 id="HF.3.6">F.3.6 Hint streams (Parts 5 and 10)</h3>
 
 <p class="location">Add a new informative NOTE 2 below the paragraph below the existing NOTE as follows:</p>
 
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
 NOTE 2: due to the above requirement for direct objects, Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") cannot be included in hint stream dictionaries.
-</ins></p> 
-</div>
+</ins></p>
 
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>
+</div>

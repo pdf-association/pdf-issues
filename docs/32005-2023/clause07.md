@@ -1,8 +1,9 @@
 ---
 isodoc: ISO 32005:2023
-clause: 7
-title: Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0 and PDF 1.7
-modified: 11 July 2024
+title: 7. Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0 and PDF 1.7
+last_modified_date: 11 July 2024
+parent: 'ISO TS 32005: PDF 1.7 and 2.0 inclusion rules in PDF 2.0'
+nav_order: 7
 ---
 
 <ul>
@@ -11,14 +12,12 @@ modified: 11 July 2024
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+  Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H7.2">7.2 Hierarchical inclusion rules</h2>
 
@@ -28,7 +27,7 @@ modified: 11 July 2024
 </p>
 
 <p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/440">Errata #440</a> modify Table Table 5 such that where Structure Type is <b>WP</b> and Child is <b>Figure</b> and where Structure Type is <b>Figure</b> and Parent is <b>WP</b> the undefined cell value <del onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"c"</del> 
-is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"0..<i>n</i>"</ins> relationship. 
+is corrected to be a <ins onMouseEnter="mouseEnter(this)" data-issue="440" data-iso="approved">"0..<i>n</i>"</ins> relationship.
 The embedded spreadsheet data is also corrected.
 </p>
 
@@ -236,6 +235,3 @@ The embedded spreadsheet data is also corrected.
 </table>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

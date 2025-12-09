@@ -1,21 +1,5 @@
-# Welcome to Jekyll
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Errata for PDF specifications
-
+encoding: UTF-8
 author:
   name: "PDF Association"
   email: info@pdfa.com
@@ -25,15 +9,33 @@ description: >- # this means to ignore newlines until "baseurl:"
 
 tagline: Resolutions to PDF specification errata
 
-baseurl: / # the subpath of your site, e.g. /blog
+baseurl: /_site # the subpath of your site, e.g. /blog
+url: https://labs.pdfa.org # the base hostname & protocol for your site, e.g. http://example.com
+logo: ./assets/PDFa-logo-black-text.png
+favicon_ico: ./favicon.png
 
-url: "https://pdf-issues.pdfa.org" # the base hostname & protocol for your site, e.g. http://example.com
+theme: just-the-docs
+layout: default
+color_scheme: light
 
-logo: https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo.png
+# Aux. Links appear in the top right corner.
+aux_links_new_tab: true
+aux_links:
+  PDF Association: https://pdfa.org/
+  Github: https://github.com/pdf-association/pdf-issues
 
-show_excerpts: false
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
 
-theme: minima
+# HTML compression must be disabled so line-breaks in code samples are preserved.
+compress_html:
+  ignore:
+    envs: all
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-seo-tag
 
 # See: https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 social:
@@ -42,48 +44,47 @@ social:
     - https://www.linkedin.com/company/pdf-association/
     - https://github.com/pdf-association/
     - https://www.youtube.com/ThePDFAssociation
-    - https://x.com/pdf-association
     - https://www.facebook.com/PDFassociation
 
 
 # See https://github.com/jekyll/minima
 google_analytics: G-F90FBHNRDT
-minima:
-  skin: classic
-  date_format: "%e %B %Y"
-  social_links:
-    - { platform: twitter,  user_url: https://x.com/pdf-association, username: PDFAssociation }
-    - { platform: github,   user_url: https://github.com/pdf-association/, username: pdf-association }
-    - { platform: facebook, user_url: https://www.facebook.com/PDFassociation }
-    - { platform: linkedin, user_url: https://www.linkedin.com/company/pdf-association/ }
-    - { platform: youtube,  user_url: https://www.youtube.com/ThePDFAssociation, username: ThePDFAssociation }
 
+# Sidebar navigation
+nav_enabled: true
 
-# Build settings
-markdown: kramdown
+back_to_top: true
+back_to_top_text: "Back to top"
 
-header_pages:
-    - 32000-2-2020/index.md
-    - 19005-4-2020/index.md
-    - 15930-9-2020/index.md
-    - 16612-3-2020/index.md
-    - 16684-2-2014/index.md
-    - 21757-1-2020/index.md
-    - 14739-1-2014/index.md
-    - 32001-2022/index.md
-    - 32002-2022/index.md
-    - 32005-2023/index.md
-    - wtpdf-1/index.md
-    - pdf-declarations/index.md
+# Heading anchor links appear on hover over h1-h6 tags in page content
+# allowing users to deep link to a particular heading on a page.
+heading_anchors: true
 
-plugins:
- - jekyll-seo-tag
+# Enable or disable the site search
+search_enabled: true
+search:
+  # Split pages into sections that can be searched individually. Supports 1 - 6, default: 2
+  heading_level: 4
+  # Maximum amount of previews per search result. Default: 3
+  previews: 5
+  # Maximum amount of words to display before a matched word in the preview. Default: 5
+  preview_words_before: 5
+  # Maximum amount of words to display after a matched word in the preview. Default: 10
+  preview_words_after: 10
+  # Set the search token separator. Default: /[\s\-/]+/
+  # Example: enable support for hyphenated search words
+  tokenizer_separator: /[\s/]+/
+  # Display the relative url in search results
+  rel_url: true
+  # Enable or disable the search button that appears in the bottom right corner of every page
+  button: true
+  # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
+  focus_shortcut_key: 'k'
 
-encoding: UTF-8
+enable_copy_code_button: true
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+# The following items will not be processed, by default. Create a custom list to override the default setting.
 # exclude:
 #   - Gemfile
 #   - Gemfile.lock

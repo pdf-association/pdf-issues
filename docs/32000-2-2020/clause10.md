@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 10
-title: Rendering
-modified: 10 November 2025
+title: 10. Rendering
+last_modified_date: 10 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 10
 ---
 
 <ul class="noprint">
@@ -46,13 +47,12 @@ modified: 10 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H10.3">10.3 CIE-Based colour to device colour</h2>
 
@@ -123,7 +123,6 @@ black = 1.0 - <del onMouseEnter="mouseEnter(this)" data-issue="640">grey</del><i
   </tr>
 </table>
 
-
 <h4 id="H10.6.5.6">10.6.5.6 Type 5 halftones</h4>
 
 <p class="location">Change Table 132 as follows:</p>
@@ -178,7 +177,3 @@ The <i>flatness tolerance</i> controls the maximum permitted distance in device 
 </p>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

@@ -2,9 +2,14 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
-title: PDF 2.0 Corrections
-modified: 23 November 2025
+title: ISO 32000-2:2020 PDF 2.0
+last_modified_date: 10 November 2025
+nav_order: 1
+has_toc: false
+search_exclude: true
 ---
+
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
 This document lists all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
@@ -32,7 +37,6 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table17">Table 17 - Additional entries specific to a cross-reference stream dictionary</a></li>
 <li><a href="clause07.html#Table18">Table 18 - Entries in a cross-reference stream</a></li>
 <li><a href="clause07.html#Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</a></li>
-<li><a href="clause07.html#Table21">Table 21 - Additional encryption dictionary entries for the standard security handler</a></li>
 <li><a href="clause07.html#Table24">Table 24 - Public-key security handler user access permissions</a></li>
 <li><a href="clause07.html#Table25">Table 25 - Entries common to all crypt filter dictionaries</a></li>
 <li><a href="clause07.html#Table27">Table 27 - Additional crypt filter dictionary entries for public-key security handlers</a></li>
@@ -78,7 +82,6 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table147">Table 147 - Entries in a viewer preferences dictionary</a></li>
 <li><a href="clause12.html#Table149">Table 149 - Destination syntax</a></li>
 <li><a href="clause12.html#Table151">Table 151 - Entries in an outline item dictionary</a></li>
-<li><a href="clause12.html#Table154">Table 154 - Entries in a collection schema dictionary</a></li>
 <li><a href="clause12.html#Table161">Table 161 - Entries in a page label dictionary</a></li>
 <li><a href="clause12.html#Table164">Table 164 - Entries in a transition dictionary</a></li>
 <li><a href="clause12.html#Table166">Table 166 - Entries common to all annotation dictionaries</a></li>
@@ -89,12 +92,9 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table181">Table 181 - Additional entries specific to a polygon or polyline annotation</a></li>
 <li><a href="clause12.html#Table183">Table 183 - Additional entries specific to a caret annotation</a></li>
 <li><a href="clause12.html#Table185">Table 185 - Additional entries specific to an ink annotation</a></li>
-<li><a href="clause12.html#Table189">Table 189 - Additional entries specific to a movie annotation</a></li>
 <li><a href="clause12.html#Table202">Table 202 - Additional entries specific to a go-to action</a></li>
 <li><a href="clause12.html#Table205">Table 205 - Entries specific to a target dictionary</a></li>
-<li><a href="clause12.html#Table208">Table 208 - Entries in a Microsoft Windows&trade; launch parameter dictionary</a></li>
 <li><a href="clause12.html#Table220">Table 220 - Additional entries specific to a go-to-3D-view action</a></li>
-<li><a href="clause12.html#Table223">Table 223 - Entries in a RichMediaCommand dictionary</a></li>
 <li><a href="clause12.html#Table224">Table 224 - Entries in the interactive form dictionary</a></li>
 <li><a href="clause12.html#Table226">Table 226 - Entries common to all field dictionaries</a></li>
 <li><a href="clause12.html#Table228">Table 228 - Additional entries common to all fields containing variable text</a></li>
@@ -104,9 +104,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table237">Table 237 - Entries in a signature field seed value dictionary</a></li>
 <li><a href="clause12.html#Table238">Table 238 - Entries in a certificate seed value dictionary</a></li>
 <li><a href="clause12.html#Table239">Table 239 - Additional entries specific to a submit-form action</a></li>
-<li><a href="clause12.html#Table241">Table 241 - Additional entries specific to a reset-form action</a></li>
 <li><a href="clause12.html#Table242">Table 242 - Flag for reset-form actions</a></li>
-<li><a href="clause12.html#Table254">Table 254 - Additional entry for annotation dictionaries in an FDF file</a></li>
 <li><a href="clause12.html#Table255">Table 255 - Entries in a signature dictionary</a></li>
 <li><a href="clause12.html#Table256">Table 256 - Entries in a signature reference dictionary</a></li>
 <li><a href="clause12.html#Table257">Table 257 - Entries in the DocMDP transform parameters dictionary</a></li>
@@ -119,7 +117,6 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause12.html#Table275">Table 275 - Requirement types</a></li>
 <li><a href="clause13.html#Table277">Table 277 - Entries common to all rendition dictionaries</a></li>
 <li><a href="clause13.html#Table285">Table 285 - Additional entries in a media clip data dictionary</a></li>
-<li><a href="clause13.html#Table293">Table 293 - Entries in a media screen parameters dictionary</a></li>
 <li><a href="clause13.html#Table311">Table 311 - Entries in a 3D stream dictionary</a></li>
 <li><a href="clause13.html#Table315">Table 315 - Entries in a 3D view dictionary</a></li>
 <li><a href="clause13.html#Table317">Table 317 - Entries in a 3D background dictionary</a></li>
@@ -163,7 +160,3 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>
 <li><a href="clauseAnnexL.html#TableL.2">Table Annex L.2 - Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0</a></li>
 </ul>
-
-<hr>
-<link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>

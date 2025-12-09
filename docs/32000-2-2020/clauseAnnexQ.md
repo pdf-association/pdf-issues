@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: Annex Q
-title: (normative) Method for determining transparency on a page
-modified: 23 June 2023
+title: 'Annex Q: (normative) Method for determining transparency on a page'
+last_modified_date: 23 June 2023
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 31
 ---
 
 <ul class="noprint">
@@ -14,13 +15,12 @@ modified: 23 June 2023
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="HQ.2">Q.2 Page content</h2>
 
@@ -34,7 +34,6 @@ in the page dictionary's <b>Annots</b> array shall have their appearance streams
 shall be considered to contain transparency (see "Table 166 - Entries common to all annotation dictionaries").</ins>
 </p>
 
-
 <h2 id="HQ.5">Q.5 Text objects</h2>
 
 <p class="location">Change the only paragraph as follows:</p>
@@ -47,6 +46,3 @@ a form XObject according to Q.3, "Form XObjects".
 </p>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

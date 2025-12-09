@@ -1,24 +1,23 @@
 ---
 isodoc: PDF Declarations
-clause: 7
-title: PDF Declaration syntax
-modified: 29 May 2024
+title: 7. PDF Declaration syntax
+last_modified_date: 29 May 2024
+parent: PDF Declarations
+nav_order: 7
 ---
 
 <ul>
- <li><a href="#H7.2">7.2 PDF Declaration example</a>
- </li>
+  <li><a href="#H7.2">7.2 PDF Declaration example</a>
+  </li>
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+  Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H7.2">7.2 PDF Declaration example</h2>
 
@@ -31,6 +30,3 @@ modified: 29 May 2024
 </code>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

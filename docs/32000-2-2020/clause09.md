@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 9
-title: Text
-modified: 15 August 2025
+title: 9. Text
+last_modified_date: 15 August 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 9
 ---
 
 <ul class="noprint">
@@ -88,13 +89,12 @@ modified: 15 August 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2>9.3 Text state parameters and operators</h2>
 
@@ -812,7 +812,3 @@ This CMap differs from an ordinary one in these ways:
 </ins>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

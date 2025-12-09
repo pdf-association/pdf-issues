@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 0
 title: Introduction
-modified: 14 October 2022
+last_modified_date: 14 October 2022
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 0
 ---
 
 <ul class="noprint">
@@ -12,14 +13,12 @@ modified: 14 October 2022
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
 <p class="fake-h1">{{ page.title }}</p>
-
 
 <p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/214">Errata #214</a>, all occurrences of
 the term <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">"name string"</del> are replaced by just <ins onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">"string"</ins> throughout ISO 32000-2:2020.</p>
@@ -45,6 +44,4 @@ the word <del onMouseEnter="mouseEnter(this)" data-issue="259" data-iso="approve
 
 </div>
 
-
 <hr>
-<p class="footnote">Last modified: {{ page.modified }}</p>

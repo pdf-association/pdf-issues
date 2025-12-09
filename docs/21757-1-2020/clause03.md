@@ -1,9 +1,10 @@
 ---
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
-clause: 3
-title: Terms and definitions
-modified: 9 May 2022
+title: 3. Terms and definitions
+last_modified_date: 9 May 2022
+parent: ISO 21757-1:2020 ECMAScript for PDF 2.0
+nav_order: 3
 ---
 
 <ul>
@@ -12,14 +13,12 @@ modified: 9 May 2022
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H3.1">3.1<br/>ECMAscript</h2>
 
@@ -30,7 +29,3 @@ means of reference to ISO 22275 and ISO 22537 <ins onMouseEnter="mouseEnter(this
 </p>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

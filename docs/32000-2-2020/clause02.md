@@ -1,18 +1,18 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 2
-title: Normative references
-modified: 15 August 2025
+title: 2. Normative references
+last_modified_date: 15 August 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 2
 ---
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-    Issue #xxxx
+  Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="location">Change the first paragraph as follows:</p>
 
@@ -45,4 +45,3 @@ EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/519"
 </div>
 
 <hr>
-<p class="footnote">Last modified: {{ page.modified }}</p>

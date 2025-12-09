@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: Annex E
-title: (normative) Extending PDF
-modified: 7 June 2024
+title: 'Annex E: (normative) Extending PDF'
+last_modified_date: 7 June 2024
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 19
 ---
 
 <ul class="noprint">
@@ -12,13 +13,12 @@ modified: 7 June 2024
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="HF.3">E.2 Classes of PDF names</h2>
 
@@ -51,6 +51,3 @@ modified: 7 June 2024
 </ul>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

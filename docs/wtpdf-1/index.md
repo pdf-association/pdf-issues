@@ -1,12 +1,17 @@
 ---
 isodoc: WTPDF 1.0
-isotitle: 'Well-Tagged PDF (WTPDF): Using Tagged PDF for Accessibility and Reuse in PDF 2.0'
-title: 'Well-Tagged PDF 1.0'
-modified: 29 May 2024
+isotitle: 'Well-Tagged PDF - Using Tagged PDF for Accessibility and Reuse in PDF 2.0'
+title: Well-Tagged PDF 1.0
+last_modified_date: 29 May 2024
+nav_order: 20
+has_toc: false
+search_exclude: true
 ---
 
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
+
 <p>
-This document lists all industry-approved corrections to <a href="https://pdfa.org/wtpdf/" target="_blank">"{{ page.isodoc }} <i>{{ page.isotitle }}</i>"</a>.
+This document lists all industry-approved corrections to <a href="https://pdfa.org/wtpdf/" target="_blank">"{{ page.isodoc }}: <i>{{ page.isotitle }}</i>"</a>.
 All issues related to {{ page.isodoc }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>
 with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=is%3Aissue+label%3AWTPDF" target="_blank">WTPDF</a>'.
 </p>
@@ -22,7 +27,3 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
-
-<hr>
-<link rel="stylesheet" href="../assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>
