@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 10 November 2025
+last_modified_date: 23 November 2025
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -89,6 +89,10 @@ nav_order: 7
     <li>7.6.4 Standard security handler
      <ul>
       <li><a href="#H7.6.4.1">7.6.4.1 General</a>
+      </li>
+      <li><a href="#H7.6.4.2">7.6.4.2 Standard encryption dictionary</a>
+      </li>
+      <li>7.6.4.3 File encryption key algorithm
        <ul>
         <li><a href="#H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</a>
         </li>
@@ -96,6 +100,10 @@ nav_order: 7
         </li>
         <li><a href="#H7.6.4.3.4">7.6.4.3.4 Algorithm 2.B: Computing a hash (revision 6 and later)</a>
         </li>
+       </ul>
+      </li>
+      <li>7.6.4.4 Password algorithms
+       <ul> 
         <li><a href="#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
         </li>
         <li><a href="#H7.6.4.4.12">7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</a>
@@ -207,6 +215,8 @@ nav_order: 7
     <li><a href="#H7.12.4">7.12.4 BaseVersion</a>
     </li>
     <li><a href="#H7.12.5">7.12.5 ExtensionLevel</a>
+    </li>
+    <li><a href="#H7.12.6">7.12.6 URL</a>
     </li>
    </ul>
   </li>
@@ -937,6 +947,35 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p>...</p>
 
+<h4 id="H7.6.4.2">7.6.4.2 Standard encryption dictionary</h4>
+
+<p class="location">Change Table 21 as follows:</p>
+
+<table>
+  <caption id="Table21">Table 21 - Additional encryption dictionary entries for the standard security handler</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>O</b></td>
+    <td>byte string</td>
+    <td>
+      <p>(<i>Required</i>) A byte string, 32 bytes long if the value of <b>R</b> is 4 or less and 48 
+      bytes long if the value of <b>R</b> is 6, based on both the 
+      <del onMouseEnter="mouseEnter(this)" data-issue="674">owne&nbsp;r</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="674">owner</ins> 
+      and user passwords, that shall be used in computing the file encryption key and in 
+      determining whether a valid owner password was entered.
+      </p>
+      <p>For more information, see 7.6.4.3, "File encryption key algorithm" and 7.6.4.4, "Password algorithms".</p>
+    </td>
+  </tr>
+</table>
+
+<h4 id="H7.6.4.3">7.6.4.3 File encryption key algorithm</h4>
+
 <h5 id="H7.6.4.3.2">7.6.4.3.2 Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)</h5>
 
 <p class="location">Change NOTE 2 as follows:</p>
@@ -986,6 +1025,7 @@ and the file encryption key as the key. ...
   <li>...</li>
 </ol>
 
+<h4 id="H7.6.4.4">7.6.4.4 Password algorithms</h4>
 
 <h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
@@ -1247,6 +1287,13 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     </td>
   </tr>
   <tr>
+    <td><b>SpiderInfo</b></td>
+    <td>dictionary</td>
+    <td>
+    (<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="672">; deprecated in PDF 2.0</ins></i>) ...
+    </td>
+  </tr>
+  <tr>
     <td><b>StructTreeRoot</b></td>
     <td>dictionary</td>
     <td>
@@ -1384,6 +1431,20 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
     <td>
     <p>(<i>Optional; PDF 1.3</i>) name tree mapping <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">name</del> strings to invisible
        (template) pages for use in interactive forms (see 12.7.7, "Named pages").</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>IDS</b></td>
+    <td>name tree</td>
+    <td>
+      <p>(<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="672">; deprecated in PDF 2.0</ins></i>) ...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>URLS</b></td>
+    <td>name tree</td>
+    <td>
+      <p>(<i>Optional; PDF 1.3<ins onMouseEnter="mouseEnter(this)" data-issue="672">; deprecated in PDF 2.0</ins></i>) ...</p>
     </td>
   </tr>
   <tr>
@@ -1886,6 +1947,16 @@ PDF function) and others can be described with exponential functions (Type 2 in 
   </tr>
 </table>
 
+<p class="location">Change the paragraph immediately below Table 42 as follows:</p>
+
+<p>The operand syntax for Type 4 functions shall follow PDF conventions rather than PostScript language 
+conventions. The entire code stream defining the function shall be enclosed in braces { } (using LEFT 
+CURLY BRACE (7Bh) and RIGHT CURLY BRACE (<del onMouseEnter="mouseEnter(this)" data-issue="669">07hD</del><ins onMouseEnter="mouseEnter(this)" data-issue="669">7Dh</ins>)). Braces also shall delimit expressions that are 
+executed conditionally by the <b>if</b> and <b>ifelse</b> operators: 
+</p>
+
+<p>...</p>
+
 <h2 id="H7.11">7.11 File specifications</h2>
 
 <h3 id="H7.11.3">7.11.3 File specification dictionaries</h3>
@@ -2102,5 +2173,10 @@ The value of <b>BaseVersion</b> may be different from the version number in the 
 <p>The value of the <b>ExtensionLevel</b> entry shall be an integer, which shall be interpreted with respect to the <b>BaseVersion</b> value.
 If a developer has released multiple extensions against the same <b>BaseVersion</b> value, they <del onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">shall</del><ins onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">should</ins> be ordered over time and the <b>ExtensionLevel</b> numbers <del onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">shall be a monotonically increasing sequence</del><ins onMouseEnter="mouseEnter(this)" data-issue="239" data-iso="approved">should increase</ins> over time.
 </p>
+
+
+<h3 id="H7.12.6">7.12.6 URL</h3>
+
+<p class="editornote">EDITOR NOTE: The indentation of the examples in subclause 7.12.6 are inconsistent (see <a href="https://github.com/pdf-association/pdf-issues/issues/670">PDF Errata #670</a>).</p>
 
 </div>

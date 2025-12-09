@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 'Annex F: (normative) Linearized PDF'
-last_modified_date: 7 June 2024
+last_modified_date: 22 November 2025
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 20
 ---
@@ -10,6 +10,8 @@ nav_order: 20
 <ul class="noprint">
     <li>F.3 Linearized PDF document structure
      <ul>
+      <li><a href="#HF.3.1">F.3.1 General</a>
+      </li>
       <li><a href="#HF.3.2">F.3.2 Header (Part 1)</a>
       </li>
       <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
@@ -29,6 +31,25 @@ nav_order: 20
 <p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="HF.3">F.3 Linearized PDF document structure</h2>
+
+<h3 id="HF.3.1">F.3.1 General</h3>
+
+<p class="location">Change EXAMPLE 5 as follows:</p>
+
+<code>56 0 obj 
+&lt;&lt;  /Length 57 
+    … Possibly other stream attributes, such as Filter … 
+    /S 21          % Position of shared object hint table 
+    … Possibly entries for other hint tables … 
+<ins onMouseEnter="mouseEnter(this)" data-issue="687">&gt;&gt;</ins> 
+stream 
+<del onMouseEnter="mouseEnter(this)" data-issue="687">&gt;&gt;</del>
+    … Page offset hint table … 
+    … Shared object hint table … 
+    … Possibly other hint tables … 
+endstream 
+endobj
+</code>
 
 <h3 id="HF.3.2">F.3.2 Header (Part 1)</h3>
 

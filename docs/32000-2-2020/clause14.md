@@ -844,6 +844,15 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
     <p>...</p>
     </td>
   </tr>
+  <tr>
+    <td><b>Part</b></td>
+    <td>Grouping</td>
+    <td>
+      <p>Encloses content structured in <ins onMouseEnter="mouseEnter(this)" data-issue="689">a</ins> fashion that is orthogonal to the semantic structure. It can be used as a role mapping target for custom tags for which no suitable standard structure element is available, or where attributes are applied in a non-semantic fashion.
+      </p>
+      <p>...</p>
+    </td>
+  </tr>
 </table>
 
 <h4 id="H14.8.4.7">14.8.4.7 Inline level structure types</h4>

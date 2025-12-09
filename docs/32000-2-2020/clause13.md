@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 13. Multimedia features
-last_modified_date: 10 November 2025
+last_modified_date: 25 November 2025
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 13
 ---
@@ -21,6 +21,12 @@ nav_order: 13
    <li>13.2.4 Media clip objects
     <ul>
      <li><a href="#H13.2.4.2">13.2.4.2 Media clip data</a>
+     </li>
+    </ul>
+   </li>
+   <li>13.2.6 Media screen parameters
+    <ul>
+     <li><a href="#H13.2.6.1">13.2.6.1 General</a>
      </li>
     </ul>
    </li>
@@ -62,6 +68,8 @@ nav_order: 13
      </li>
     </ul>
    </li>
+   <li><a href="#H13.6.5">13.6.5 Coordinate systems for 3D</a>
+   <li>
    <li>13.6.7 Persistence of 3D measurements and markups
     <ul>
      <li>13.6.7.3 3D measurement/markup dictionary
@@ -193,6 +201,29 @@ nav_order: 13
 
 <p>...</p>
 
+<h3 id="H13.2.6">13.2.6 Media screen parameters</h3>
+
+<h4 id="H13.2.6.1">13.2.6.1 General</h4>
+
+<p class="location">Change Table 293 as follows:</p>
+
+<table>
+  <caption id="Table293">Table 293 - Entries in a media screen parameters dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>BE</b></td>
+    <td>dictionary</td>
+    <td>
+      <p>(<i>Optional</i>) A dictionary whose entries (see "Table 294 — Entries in a media screen parameters MH/BE dictionary")
+      <del onMouseEnter="mouseEnter(this)" data-issue="662">should be honoured</del> 
+      <ins onMouseEnter="mouseEnter(this)" data-issue="662">shall only be honoured in a 'best effort' sense.</ins>.</p>
+    </td>
+  </tr>
+</table>
 
 <h3 id="H13.2.7">13.2.7 Other multimedia objects</h3>
 
@@ -472,6 +503,22 @@ Rich media"</del><ins onMouseEnter="mouseEnter(this)" data-issue="142" data-iso=
    </td>
   </tr>
 </table>
+
+<h3 id="H13.6.5">13.6.5 Coordinate systems for 3D</h3>
+
+<p class="location">Change the formulae after the following paragraph as follows:</p>
+
+<p>Carrying out the multiplication has the following results: </p>
+
+<div style="margin-left: 50px;">
+<p><i>
+x' = a × x + d × y + g × z + tx<br/>
+y' = b × x + e × y + h × <ins onMouseEnter="mouseEnter(this)" data-issue="690">z </ins>+ ty<br/>
+z' = c × x + f × y + i × z + tz
+</i></p>
+</div>
+
+<p>...</p>
 
 <h3 id="H13.6.7">13.6.7 Persistence of 3D measurements and markups</h3>
 

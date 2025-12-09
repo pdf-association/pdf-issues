@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 12. Interactive features
-last_modified_date: 10 November 2025
+last_modified_date: 23 November 2025
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
@@ -24,6 +24,8 @@ nav_order: 12
    </li>
    <li>12.3.5 Collections
     <ul>
+     <li><a href="#H12.3.5.1">12.3.5.1 General</a>
+     </li>
      <li><a href="#H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.5.3 Collection navigators</ins></a>
      </li>
     </ul>
@@ -72,6 +74,8 @@ nav_order: 12
      </li>
      <li><a href="#H12.5.6.13">12.5.6.13 Ink annotations</a>
      </li>
+     <li><a href="#H12.5.6.17">12.5.6.17 Movie annotations</a>
+     </li>
      <li><a href="#H12.5.6.18">12.5.6.18 Screen annotations</a>
      </li>
      <li><a href="#H12.5.6.24">12.5.6.24 Projection annotations</a>
@@ -88,9 +92,13 @@ nav_order: 12
      </li>
      <li><a href="#H12.6.4.4">12.6.4.4 Embedded Go-To actions</a>
      </li>
+     <li><a href="#H12.6.4.6">12.6.4.6 Launch actions</a>
+     </li>
      <li><a href="#H12.6.4.8">12.6.4.8 URI actions</a>
      </li>
      <li><a href="#H12.6.4.16">12.6.4.16 Go-To-3D-View actions</a>
+     </li>
+     <li><a href="#H12.6.4.18">12.6.4.18 Rich-Media-Execute actions</a>
      </li>
     </ul>
    </li>
@@ -142,6 +150,8 @@ nav_order: 12
       <ul>
        <li><a href="#H12.7.8.3.1">12.7.8.3.1 General</a>
        </li>
+       <li><a href="#H12.7.8.3.4">12.7.8.3.4 FDF annotation dictionaries</a>
+       </li>
       </ul>
      </li>
     </ul>
@@ -170,6 +180,12 @@ nav_order: 12
     <ul>
      <li><a href="#H12.8.3.1">12.8.3.1 General</a>
      </li>
+     <li>12.8.3.4 CAdES signatures as used in PDF
+      <ul>
+       <li><a href="#H12.8.3.4.4">12.8.3.4.4 Profiles of ETSI.CAdES.detached</a>
+       </li>
+      </ul>
+     </li>
     </ul>
    </li>
    <li>12.8.4 Long term validation of signatures
@@ -194,7 +210,13 @@ nav_order: 12
    </li>
   </ul>
  </li>
- <li>12.10 Geospatial features
+ <li>12.9 Measurement properties
+  <ul>
+   <li><a href="#H12.9.1">12.9.1 General</a>
+   </li>
+  </ul>
+ </li>
+ <li><a href="#H12.10">12.10 Geospatial features</a>
   <ul>
    <li><a href="#H12.10.2">12.10.2 Geospatial measure dictionary</a>
    </li>
@@ -202,7 +224,7 @@ nav_order: 12
    </li>
   </ul>
  </li>
- <li>12.11 Document requirements
+ <li><a href="#H12.11">12.11 Document requirements</a>
   <ul>
    <li><a href="#H12.11.1">12.11.1 General</a>
    </li>
@@ -382,6 +404,24 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 <p>...</p>
 
 <h3 id="H12.3.5">12.3.5 Collections</h3>
+
+<h4 id="H12.3.5.1">General</h4>
+
+<p class="location">Change Table 154 as follows:</p>
+
+<table>
+  <caption id="Table154">Table 154 - Entries in a collection schema dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+   <td><del onMouseEnter="mouseEnter(this)" data-issue="673"><b>Other keys</b></del><ins onMouseEnter="mouseEnter(this)" data-issue="673">Other keys</ins></td>
+   <td>dictionary</td>
+   <td><p>...</p></td>
+  </tr>
+</table>
 
 <h4 id="H12.3.5.3"><ins onMouseEnter="mouseEnter(this)" data-issue="477" data-iso="approved">12.3.5.3 Collection navigators</ins></h4>
 
@@ -624,7 +664,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 
 <p>...</p>
 
-<p class="location">Change the paragraph below the EXAMPLE as follows:</p>
+<p class="location">Change the paragraph below the EXAMPLE as follows and make this non-normative paragraph part of the example (see <a href="https://github.com/pdf-association/pdf-issues/issues/660">PDF Errata #660</a>):</p>
 
 <p>
 where <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject2</i> define the check box’s normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
@@ -899,6 +939,31 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   </tr>
 </table>
 
+<h4 id="H12.5.6.17">12.5.6.17 Movie annotations</h4>
+
+<p class="location">Change Table 189 as follows:</p>
+
+<table>
+  <caption id="Table189">Table 189 - Additional entries specific to a movie annotation</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>T</b></td>
+    <td>text string</td>
+    <td>
+     <p>(<i>Optional</i>) The title of the movie annotation. 
+      <del onMouseEnter="mouseEnter(this)" data-issue="676"><b>Movie</b></del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="676">Movie</ins>
+      actions (12.6.4.10, "Movie actions") may use this title to reference the movie annotation.
+     </p> 
+    </td>
+  </tr>
+</table>
+
+
 <h4 id="H12.5.6.18">12.5.6.18 Screen annotations</h4>
 
 <p class="location">Change the last bullet below Table 190 as follows:</p>
@@ -976,6 +1041,26 @@ However, a projection annotation is only valid within the context of an associat
   </tr>
 </table>
 
+<h4 id="H12.6.4.6">12.6.4.6 Launch actions</h4>
+
+<p class="location">Change Table 208 as follows:</p>
+
+<table>
+  <caption id="Table208">Table 208 - Entries in a Microsoft Windows&trade; launch parameter dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>D</b></td>
+    <td>byte string</td>
+    <td>
+     <p>(<i>Optional</i>) A <del onMouseEnter="mouseEnter(this)" data-issue="677">bye</del><ins onMouseEnter="mouseEnter(this)" data-issue="677">byte</ins> string specifying the default directory in standard DOS syntax.</p>
+    </td>
+  </tr>
+</table>
+
 
 <h4 id="H12.6.4.8">12.6.4.8 URI actions</h4>
 
@@ -1035,7 +1120,29 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 
 <p>...</p>
 
+<h4 id="H12.6.4.18">12.6.4.18 Rich-Media-Execute actions</h4>
 
+<p class="location">Change Table 223 as follows:</p>
+
+<table>
+  <caption id="Table223">Table 223 - Entries in a RichMediaCommand dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>A</b></td>
+    <td>(various)</td>
+    <td>
+      <p>(<i>Optional; PDF 2.0</i>) An object that specifies the arguments to the command. The object may either be a single typed value or an array of typed values, each an argument. Valid arguments are objects of type text string, integer, 
+      <del onMouseEnter="mouseEnter(this)" data-issue="679">number</del><ins onMouseEnter="mouseEnter(this)" data-issue="679">real</ins>, 
+      or boolean.
+      </p>
+      <p>Default value: no arguments.</p>
+    </td>
+  </tr>
+</table>
 
 <h2 id="H12.7">12.7 Forms</h2>
 
@@ -1302,6 +1409,13 @@ appearance) string.
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>SignaturePolicyCommitmentType</b></td>
+    <td><del onMouseEnter="mouseEnter(this)" data-issue="681">A</del><ins onMouseEnter="mouseEnter(this)" data-issue="681">a</ins>rray of ASCII strings</td>
+    <td>
+     <p>...</p>
+    </td>
+  </tr>
+  <tr>
     <td><b>KeyUsage</b></td>
     <td>array of ASCII strings</td>
     <td>
@@ -1368,6 +1482,24 @@ appearance) string.
 
 <h4 id="H12.7.6.3">12.7.6.3 Reset-form action</h4>
 
+<p class="location">Change Table 241 as follows:</p>
+
+<table>
+  <caption id="Table241">Table 241 - Additional entries specific to a reset-form action</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Flags</b></td>
+    <td>integer</td>
+    <td>
+      <p>(<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="683">; inheritable</del></i>) ...</p>
+    </td>
+  </tr>
+</table>
+
 <p class="location">Change Table 242 as follows:</p>
 
 <table>
@@ -1430,6 +1562,26 @@ as input. The computation shall be identical to steps (a) and (b) of the
 "File encryption key algorithm"; the first 5 bytes of the result shall be the file encryption key for the embedded FDF file.
 </p>
 
+<h5 id="H12.7.8.3.4">12.7.8.3.4 FDF annotation dictionaries</h5>
+
+<p class="location">Change Table 254 as follows:</p>
+
+<table>
+  <caption id="Table254">Table 254 - Additional entry for annotation dictionaries in an FDF file</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>Page</b></td>
+    <td>integer</td>
+    <td>
+      (<i>Required<del onMouseEnter="mouseEnter(this)" data-issue="685"> for annotations in FDF files</del></i>) ...
+    </td>
+  </tr>
+</table>
+
 <h3 id="H12.7.9">12.7.9 Non-interactive forms</h3>
 
 <p class="location">Change the first paragraph as follows:</p>
@@ -1439,6 +1591,7 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 <b>PrintField</b> attrib<del onMouseEnter="mouseEnter(this)" data-issue="54" data-iso="approved">0</del>ute (14.8.5.6, "PrintField attributes") for repurposing and accessibility purposes.
 </p>
 
+<h2 id="H12.8">12.8 Digital signatures</h2>
 
 <h3 id="H12.8.1">12.8.1 General</h3>
 
@@ -1608,6 +1761,15 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <p class="editornote">EDITOR NOTE: Table 260 italic formatting of PDF versions (such as "(<i>PDF 1.5</i>)") is inconsistently applied and needs to be corrected.</p>
 
+
+<h4 id="H12.8.3.4">H12.8.3.4 CAdES signatures as used in PDF</h4>
+
+<h5 id="H12.8.3.4.4">12.8.3.4.4 Profiles of ETSI.CAdES.detached</h5>
+
+<p class="editornote">EDITOR NOTE: Insert an empty placeholder NOTE 1 at the start of subclause 12.8.3.4.4 so that NOTE 2 and NOTE 3 are not renumbered. See <a href="https://github.com/pdf-association/pdf-issues/issues/649">PDF Errata #649</a>.
+</p>
+
+
 <h3>12.8.4 Long term validation of signatures</h3>
 
 <h4 id="H12.8.4.1">12.8.4.1 General</h4>
@@ -1634,6 +1796,7 @@ is achieved by using two types of dictionaries:
 
 <p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/448">Errata #448</a>, all keys in Table 262 need to be indicated that they were introduced in PDF 2.0.</p>
 
+<p class="editornote">EDITOR NOTE: both examples in subclause 12.8.4.4 are missing the "endobj" keyword from various objects (see <a href="https://github.com/pdf-association/pdf-issues/issues/661">PDF Errata #661</a>).</p>
 
 <h3 id="H12.8.5">12.8.5 Document timestamp (DTS) dictionary</h3>
 
@@ -1672,8 +1835,17 @@ establishes the exact contents of the complete PDF file at the time indicated in
   </tr>
 </table>
 
+<h2 id="H12.9">12.9 Measurement features</h2>
+
+<h3 id="H12.9.1">12.9.1 General</h3>
+
+<p class="editornote">EDITOR NOTE: Insert an empty placeholder NOTE 1 at the start of subclause 12.9.1 so that NOTE 2 and NOTE 3 are not renumbered. See <a href="https://github.com/pdf-association/pdf-issues/issues/655">PDF Errata #655</a>.
+</p>
 
 <h2 id="H12.10">12.10 Geospatial features</h2>
+
+<p class="editornote">EDITOR NOTE: Tables 269-274 and 276 have an inconsistent column title for the third column. It should be "Value", not "Description" for consistency throughout ISO 32000-2 for tables defining dictionaries. See <a href="https://github.com/pdf-association/pdf-issues/issues/656">PDF Errata #656</a>.
+</p>
 
 <h3 id="H12.10.2">12.10.2 Geospatial measure dictionary</h3>
 
@@ -1684,7 +1856,7 @@ establishes the exact contents of the complete PDF file at the time indicated in
   <tr>
     <th>Key</th>
     <th>Type</th>
-    <th>Value</th>
+    <th><del onMouseEnter="mouseEnter(this)" data-issue="656">Description</del><ins onMouseEnter="mouseEnter(this)" data-issue="656">Value</ins></th>
   </tr>
   <tr>
     <td><b>PCSM</b></td>
@@ -1744,6 +1916,9 @@ as administered by the International Association of Oil and Gas Producers (OGP).
 
 <h2 id="H12.11">12.11 Document requirements</h2>
 
+<p class="editornote">EDITOR NOTE: Tables 269-274 and 276 have an inconsistent column title for the third column. It should be "Value", not "Description" for consistency throughout ISO 32000-2 for tables defining dictionaries. See <a href="https://github.com/pdf-association/pdf-issues/issues/656">PDF Errata #656</a>.
+</p>
+
 <h3 id="H12.11.1">12.11.1 General</h3>
 
 <p class="location">Change Table 273 as follows:</p>
@@ -1753,7 +1928,7 @@ as administered by the International Association of Oil and Gas Producers (OGP).
   <tr>
     <th>Key</th>
     <th>Type</th>
-    <th>Value</th>
+    <th><del onMouseEnter="mouseEnter(this)" data-issue="656">Description</del><ins onMouseEnter="mouseEnter(this)" data-issue="656">Value</ins></th>
   </tr>
   <tr>
     <td><b>S</b></td>
@@ -1783,7 +1958,7 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
   <tr>
     <th>Key</th>
     <th>Type</th>
-    <th>Value</th>
+    <th><del onMouseEnter="mouseEnter(this)" data-issue="656">Description</del><ins onMouseEnter="mouseEnter(this)" data-issue="656">Value</ins></th>
   </tr>
   <tr>
     <td><b>...</b></td>
