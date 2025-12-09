@@ -2,9 +2,14 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
-title: PDF 2.0 Corrections
-modified: 23 November 2025
+title: ISO 32000-2:2020 PDF 2.0
+last_modified_date: 23 November 2025
+nav_order: 1
+has_toc: false
+search_exclude: true
 ---
+
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
 This document lists all industry-approved corrections to {{ page.subset }} as defined by "{{ page.isodoc }} <i>{{ page.isotitle }}</i>".
@@ -163,7 +168,3 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>
 <li><a href="clauseAnnexL.html#TableL.2">Table Annex L.2 - Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0</a></li>
 </ul>
-
-<hr>
-<link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>

@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 14
-title: Document interchange
-modified: 10 November 2025
+title: 14. Document interchange
+last_modified_date: 10 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 14
 ---
 
 <ul class="noprint">
@@ -202,13 +203,12 @@ modified: 10 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H14.2">14.2 Procedure sets</h2>
 
@@ -2100,7 +2100,3 @@ endobj
 </code>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

@@ -1,18 +1,17 @@
 ---
 isodoc: ISO 32002:2022
-clause: 1
-title: Scope
-modified: 10 November 2025
+title: 1. Scope
+last_modified_date: 10 November 2025
+parent: 'ISO TS 32002: PDF 2.0 Digital Signature extensions'
+nav_order: 1
 ---
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+  Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="location">Change all occurences of "elliptical" to "elliptic" as follows:</p>
 
@@ -27,6 +26,3 @@ modified: 10 November 2025
 <p>...</p>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

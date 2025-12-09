@@ -7,7 +7,15 @@
     .noprint   { display: none  !important; }
     .footnote  { display: none  !important; }
     .fixedpopup { display: none  !important; }
+    h1         { page-break-before: always; }
+    h2         { page-break-after: avoid; }
+    h3         { page-break-after: avoid; }
+    p          { page-break-inside: avoid; }  }
+
+  @page {
+     margin: 1.5cm
   }
+
 
   /* use standardized HTML tags for deletion and insertion markup */
   del {
@@ -28,12 +36,17 @@
 
   /* URL links */
   a {
-     color: mediumblue;
-  }
-  a:hover {
      color: #d03f4e;
-     font-weight: bold;
+     text-decoration: underline;
+     text-decoration-thickness: auto;
   }
+
+  a:hover {
+     color: black;
+     text-decoration: underline;
+     text-decoration-thickness: auto;
+ }
+
 
   .footnote {
     font-family: Arial, Helvetica, sans-serif;
@@ -71,14 +84,14 @@
   }
 
   /* Deeply nested headings get smaller than body text so fix */
+  .isostyle h4 {
+    font-weight: 500; font-size: 1.2rem !important; text-transform: none;
+  }
   .isostyle h5 {
-    font-weight: 600; font-size: 16px;
+    font-weight: 500; font-size: 1.1rem !important;
   }
   .isostyle h6 {
-    font-weight: 600; font-size: 15px;
-  }
-  .isostyle h7 {
-    font-weight: 600; font-size: 15px;
+    font-weight: 500; font-size: 1rem !important;
   }
 
   /* Avoid dual H1 tags - but make it look like an ISO doc */
@@ -123,6 +136,7 @@
     border: 0px;
     padding: 0px 0px;
     white-space: pre;
+    white-space-collapse: preserve;
   }
 
   .isostyle .hangingindent {

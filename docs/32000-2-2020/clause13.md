@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 13
-title: Multimedia features
-modified: 25 November 2025
+title: 13. Multimedia features
+last_modified_date: 25 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 13
 ---
 
 <ul class="noprint">
@@ -113,13 +114,12 @@ modified: 25 November 2025
 
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H13.1">13.1 General</h2>
 
@@ -224,7 +224,6 @@ modified: 25 November 2025
     </td>
   </tr>
 </table>
-
 
 <h3 id="H13.2.7">13.2.7 Other multimedia objects</h3>
 
@@ -742,6 +741,3 @@ conditions and responses that occur in response to certain events, such as activ
 </table>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

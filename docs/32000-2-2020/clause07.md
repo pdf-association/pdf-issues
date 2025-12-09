@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 7
-title: Syntax
-modified: 23 November 2025
+title: 7. Syntax
+last_modified_date: 23 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 7
 ---
 
 <ul class="noprint">
@@ -222,13 +223,12 @@ modified: 23 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H7.2">7.2 Lexical conventions</h2>
 
@@ -2180,6 +2180,3 @@ If a developer has released multiple extensions against the same <b>BaseVersion<
 <p class="editornote">EDITOR NOTE: The indentation of the examples in subclause 7.12.6 are inconsistent (see <a href="https://github.com/pdf-association/pdf-issues/issues/670">PDF Errata #670</a>).</p>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

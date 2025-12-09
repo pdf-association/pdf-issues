@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 11
-title: Transparency
-modified: 25 November 2025
+title: 11. Transparency
+last_modified_date: 25 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 11
 ---
 
 <ul class="noprint">
@@ -34,14 +35,12 @@ modified: 25 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
-
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H11.3">11.3 Basic compositing computations</h2>
 
@@ -126,8 +125,5 @@ f<sub>g<sub>0</sub></sub> = <del onMouseEnter="mouseEnter(this)" data-issue="688
     </td>
   </tr>
 </table>
+
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{ page.modified }}</p>

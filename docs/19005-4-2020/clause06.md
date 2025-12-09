@@ -1,9 +1,10 @@
 ---
 subset: PDF/A-4
 isodoc: ISO 19005-4:2020
-clause: 6
-title: Technical requirements
-modified: 14 February 2022
+title: 6. Technical requirements
+last_modified_date: 14 February 2022
+parent: ISO 19005-4:2020 PDF/A-4
+nav_order: 6
 ---
 
 <ul>
@@ -38,16 +39,12 @@ modified: 14 February 2022
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
-
-<h2 id="H6">6 Technical requirements</h2>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H6.2">6.2 Graphics</h2>
 
@@ -70,7 +67,7 @@ This requirement ensures that there is always an explicitly defined transparency
 
 <h3 id="H6.2.10">6.2.10 Fonts</h3>
 
-<h4 id="H6.2.10.3">6.2.10.3 Composite Fonts</h4>
+<h4 id="H6.2.10.3">6.2.10.3 Composite fonts</h4>
 
 <h5 id="H6.2.10.3.1">6.2.10.3.1 General</h5>
 
@@ -116,6 +113,3 @@ NOTE there was an error in a previous edition of this document and implementatio
 </table>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

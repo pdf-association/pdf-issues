@@ -1,22 +1,18 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: Bibliography
 title: Bibliography
-modified: 10 May 2024
+last_modified_date: 10 May 2024
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 99
 ---
 
-<ul class="noprint">
-</ul>
-<hr>
-
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="location">Append a new bibliographic entry as follows:</p>
 
@@ -25,6 +21,3 @@ modified: 10 May 2024
 </p>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

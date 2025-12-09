@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 12
-title: Interactive features
-modified: 23 November 2025
+title: 12. Interactive features
+last_modified_date: 23 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 12
 ---
 
 <ul class="noprint">
@@ -234,13 +235,12 @@ modified: 23 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H12.2">12.2 Viewer preferences</h2>
 
@@ -1144,7 +1144,6 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
   </tr>
 </table>
 
-
 <h2 id="H12.7">12.7 Forms</h2>
 
 <h3 id="H12.7.3">12.7.3 Interactive form dictionary</h3>
@@ -1598,6 +1597,10 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <p>...</p>
 
+<h4 id="H12.8.1">12.8.1 General</h4>
+
+<p>...</p>
+
 <p class="location">Add a new informative NOTE 2 after the bullet in the bulleted list below NOTE 1 as follows (NOTES to be renumbered):</p>
 
 <ul>
@@ -1832,14 +1835,12 @@ establishes the exact contents of the complete PDF file at the time indicated in
   </tr>
 </table>
 
-
 <h2 id="H12.9">12.9 Measurement features</h2>
 
 <h3 id="H12.9.1">12.9.1 General</h3>
 
 <p class="editornote">EDITOR NOTE: Insert an empty placeholder NOTE 1 at the start of subclause 12.9.1 so that NOTE 2 and NOTE 3 are not renumbered. See <a href="https://github.com/pdf-association/pdf-issues/issues/655">PDF Errata #655</a>.
 </p>
-
 
 <h2 id="H12.10">12.10 Geospatial features</h2>
 
@@ -1997,7 +1998,3 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
 </table>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

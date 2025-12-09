@@ -1,30 +1,29 @@
 ---
 isodoc: WTPDF 1.0
-clause: 6
-title: Conformance
-modified: 29 May 2024
+title: 6. Conformance
+last_modified_date: 29 May 2024
+parent: Well-Tagged PDF 1.0
+nav_order: 6
 ---
 
 <ul>
  <li>6.1 Conformance levels
    <ul>
      <li><a href="#H6.1.2">6.1.2 Conformance level for reuse</a>
-	 </li>
+     </li>
      <li><a href="#H6.1.3">6.1.3 Conformance level for accessibility</a>
-	 </li>
+     </li>
    </ul>
  </li>
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H6.1">6.1 Conformance levels</h2>
 
@@ -64,8 +63,4 @@ Files conforming to the conformance level for accessibility shall include a PDF 
 
 </code>
 
-
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

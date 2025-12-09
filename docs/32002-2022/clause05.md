@@ -1,11 +1,12 @@
 ---
 isodoc: ISO 32002:2022
-clause: 5
-title: Digital signature enhancements
-modified: 11 Sept 2024
+title: 5. Digital signature enhancements
+last_modified_date: 11 Sept 2024
+parent: 'ISO TS 32002: PDF 2.0 Digital Signature extensions'
+nav_order: 5
 ---
 
-<ul>
+<ul class="noprint">
  <li>5.1 Elliptic curve cryptography
   <ul>
    <li><a href="#H5.1.2">5.1.2 Proposed changes to ISO 32000-2:2020 Table 260 – SubFilter value algorithm support</a>
@@ -17,14 +18,12 @@ modified: 11 Sept 2024
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
-	Issue #xxxx
+  Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H5.1">5.1 Elliptic curve cryptography</h2>
 
@@ -57,7 +56,6 @@ modified: 11 Sept 2024
   </tr>
 </table>
 
-
 <h3 id="H5.1.3">5.1.3 Specification of allowed elliptic curves</h3>
 
 <p class="location">Change Table 4 as follows:</p>
@@ -84,8 +82,4 @@ modified: 11 Sept 2024
   </tr>
 </table>
 
-
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

@@ -1,23 +1,18 @@
 ---
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
-clause: 2
-title: Normative references
-modified: 1 July 2022
+title: 2. Normative references
+last_modified_date: 1 July 2022
+parent: ISO 21757-1:2020 ECMAScript for PDF 2.0
+nav_order: 2
 ---
 
-<ul>
-</ul>
-<hr>
-
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="location">Replace ISO/IEC 22275:2018 with the normative reference to ES2020 as follows:</p>
 
@@ -39,5 +34,4 @@ ECMA-262, 11th edition, June 2020, <i>ECMAScript<sup>&reg;</sup> 2020 Language S
 
 </div>
 
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>
+

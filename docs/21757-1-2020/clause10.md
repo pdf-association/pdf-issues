@@ -1,9 +1,10 @@
 ---
 subset: ECMAScript for PDF 2.0
 isodoc: ISO 21757-1:2020
-clause: 10
-title: ECMAScript API
-modified: 14 February 2022
+title: 10. ECMAScript API
+last_modified_date: 14 February 2022
+parent: ISO 21757-1:2020 ECMAScript for PDF 2.0
+nav_order: 10
 ---
 
 <ul>
@@ -38,14 +39,12 @@ modified: 14 February 2022
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H10.1">10.1 General</h2>
 
@@ -145,7 +144,3 @@ modified: 14 February 2022
 </table>
 
 </div>
-
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

@@ -1,57 +1,14 @@
-<link rel="stylesheet" href="https://pdf-issues.pdfa.org/assets/printing.css">
-<header class="site-header noprint" style="border-top: none;">
-
-<link rel="icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-32x32.png" sizes="32x32">
-<link rel="icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="https://www.pdfa.org/wp-content/uploads/2019/01/cropped-logo_squares_trans-1-180x180.png">
-
-<div class="noprint" style="color:black; font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif !important;">
-    <table style="width: 100%; border: none; margin-bottom: 6px; padding: 0px; border-spacing: 0px; border-collapse: separate;" role="presentation">
-        <tr style="width: 33%; border: none">
-            <td style="border: none;">
-                <img loading="lazy" src="https://www.pdfa.org/wp-content/uploads/2018/12/pdf-association-logo-300x141.png" alt="PDF Association logo" width="140">
-            </td>
-            <td style="border: none; background: rgba(150, 0, 0, 0.80); color: white; text-align: center;">
-                <h1><a style="color:white;" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
-            </td>
-            <td style="border: none; width: 20%; background: rgba(150, 0, 0, 0.80); text-align:right">
-                 <a href="https://www.pdfa.org/member-area/"><img style="-webkit-filter: unset; filter: unset; border: 2px outset #C5C5C5; border-radius: 6px; margin-top: 6px; margin-bottom: 6px; margin-right: 50px; height: 71px !important;" src="https://www.pdfa.org/wp-content/uploads/2020/05/member-area-col-216x300.jpg" width="50" alt="Member Area logo"></a>
-            </td>
-        </tr>
-    </table>
-
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-
-    {%- if titles_size > 0 -%}
-      <nav class="site-nav" style="float: initial; text-align: center;">
-       <input type="checkbox" id="nav-trigger" class="nav-trigger">
-        <label for="nav-trigger">
-         <span class="menu-icon">
-          <svg viewBox="0 0 18 15" width="18px" height="15px">
-            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
-          </svg>
-         </span>
-        </label>
-
-        <div class="trigger" style="text-align: center;">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" style="color:#d03f4e;" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-      </nav>
-    {%- endif -%}
-
-</div>
+<!-- 
+Any HTML added to this file will be inserted before the closing <head> tag. This might include additional <meta>, <link>, or <script> tags.
+The <head> tag automatically includes a link to an existing favicon if you set favicon_ico to the corresponding path in your configuration, 
+or if the path to the favicon is /favicon.ico.
+-->
+<!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" --> 
 
 <script>
 var lastTimeout;
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
     var n = 0;
     var s = "";
     var iss = null;
@@ -72,7 +29,7 @@ window.addEventListener("load", function(){
         s = "";
         for (let i in iss) {
             if (s != "") {
-                s = s + ", "; // add a gap between each URL
+                s = s + ", "; /* add a gap between each URL */
             }
             if ((iso != null) && (iso.length > i)) {
                 if (iso[i] == "approved") {
@@ -102,7 +59,7 @@ window.addEventListener("load", function(){
         s = "";
         for (let i in iss) {
             if (s != "") {
-                s = s + ", "; // add a gap between each URL
+                s = s + ", "; /* add a gap between each URL */
             }
             if ((iso != null) && (iso.length > i)) {
                 if (iso[i] == "approved") {
@@ -119,9 +76,9 @@ window.addEventListener("load", function(){
 });
 
 function mouseEnter(obj) {
-    clearTimeout(lastTimeout)
     var iss = null;
     var iso = null;
+    clearTimeout(lastTimeout);
     if (obj.getAttribute("data-issue") != null) {
         iss = obj.getAttribute("data-issue").split(',');
         if (obj.getAttribute("data-iso") != null) {
@@ -132,10 +89,10 @@ function mouseEnter(obj) {
         }
     }
     var s = "";
-    // Iterate over comma-separated issue numbers
+    /* Iterate over comma-separated issue numbers */
     for (let i in iss) {
         if (s != "") {
-            s = s + "<br\>"; // add a linebreak between each URL
+            s = s + "<br\>"; /* add a linebreak between each URL */
         }
         if ((iso != null) && (iso.length > i)) {
             if (iso[i] == "approved") {
@@ -156,11 +113,8 @@ function mouseEnter(obj) {
     lastTimeout = setTimeout(hideIssue, 3000);
 }
 
-function hideIssue() { // after 3 second timeout
+function hideIssue() { /* after 3 second timeout */
     var trg = document.getElementById("issuelink");
     trg.style.visibility = 'hidden';
 }
 </script>
-
-{% seo %}
-</header>

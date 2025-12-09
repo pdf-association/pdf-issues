@@ -67,13 +67,12 @@ This is a short description of what happens after the PDF Association PDF TWG ag
 </ul>
 <hr>;
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H4.1">4.1 General</h2>
 ```

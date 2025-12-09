@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 8
-title: Graphics
-modified: 23 November 2025
+title: 8. Graphics
+last_modified_date: 23 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 8
 ---
 
 <ul class="noprint">
@@ -121,13 +122,12 @@ modified: 23 November 2025
 
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H8.2">8.2 Graphics objects</h2>
 
@@ -934,6 +934,3 @@ endobj
 <p>...</p>
 
 </div>
-
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>

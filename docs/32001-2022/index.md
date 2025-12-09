@@ -1,9 +1,14 @@
 ---
 isodoc: ISO TS 32001:2022
 isotitle: 'Document management - Portable Document Format - Extensions to Hash Algorithm Support in ISO 32000-2 (PDF 2.0)'
-title: 'ISO TS 32001: PDF 2.0 Hash Algorithm extensions Corrections'
-modified: 6 October 2023
+title: 'ISO TS 32001: PDF 2.0 Hash Algorithm extensions'
+last_modified_date: 6 October 2023
+nav_order: 2
+has_toc: false
+search_exclude: true
 ---
+
+<h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
 This document lists all industry-approved corrections to <a href="https://www.pdfa.org/resource/iso-ts-32001/" target="_blank">"{{ page.isodoc }} <i>{{ page.isotitle }}</i>"</a>.
@@ -22,7 +27,3 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
-
-<hr>
-<link rel="stylesheet" href="../assets/iso-style.css">
-<p class="footnote">Last modified: {{ page.modified }}</p>

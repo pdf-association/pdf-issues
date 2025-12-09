@@ -1,8 +1,9 @@
 ---
 isodoc: WTPDF 1.0
-clause: 8
-title: File format requirements
-modified: 5 August 2025
+title: 8. File format requirements
+last_modified_date: 5 August 2025
+parent: Well-Tagged PDF 1.0
+nav_order: 8
 ---
 
 <ul>
@@ -19,14 +20,14 @@ modified: 5 August 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
+
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
 	Issue #xxxx
 </div>
 
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <h2 id="H8.2">8.2 Logical Structure</h2>
 
@@ -43,5 +44,4 @@ NOTE See examples in <del onMouseEnter="mouseEnter(this)" data-issue="598">4.6</
 
 </div>
 
-<hr>
-<p class="footnote">Last modified: {{page.modified}}</p>
+

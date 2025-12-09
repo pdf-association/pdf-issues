@@ -1,9 +1,10 @@
 ---
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
-clause: 3
-title: Terms and definitions
-modified: 10 November 2025
+title: 3. Terms and definitions
+last_modified_date: 10 November 2025
+parent: ISO 32000-2:2020 PDF 2.0
+nav_order: 3
 ---
 
 <ul class="noprint">
@@ -18,13 +19,12 @@ modified: 10 November 2025
 </ul>
 <hr>
 
-<link rel="stylesheet" href="../assets/iso-style.css">
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx
 </div>
 
-<p class="fake-h1">{{ page.clause }}. {{ page.title }}</p>
+<p class="fake-h1">{{ page.title }}</p>
 
 <p class="editornote">EDITOR NOTE: ISO requires that Terms and Definitions are sorted alphabetically, which may result in updated numbering.
 </p>
@@ -56,7 +56,6 @@ stream that contains a sequence of PDF objects (3.44), except those
 <del onMouseEnter="mouseEnter(this)" data-issue="627">of <b>Type</b> <i>stream</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="627">that are stream objects (3.63)</ins> 
 </p>
 
-
 <p class="location">Add the following new Terms and Definitions (<i>subclause numbering is not shown</i>):</p>
 
 <h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>x.y</i><br/>cross-reference table</ins></h2>
@@ -80,6 +79,4 @@ stream that contains a sequence of PDF objects (3.44), except those
 
 </div>
 
-
 <hr>
-<p class="footnote">Last modified: {{ page.modified }}</p>
