@@ -4,3 +4,5 @@ _site/
 .bundle/
 vendor/
 .jekyll-cache/
+Gemfile.lock
+.DS_Store
