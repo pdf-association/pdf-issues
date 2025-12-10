@@ -476,7 +476,6 @@ The optional <b>Threads</b> entry in the document catalog dictionary (see 7.7.2,
 in <del onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">drawing</del><ins onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">reading</ins> order.
 </p>
 
-
 <h3 id="H12.4.4">12.4.4 Presentations</h3>
 
 <h4 id="H12.4.4.1">12.4.4.1 General</h4>
@@ -514,7 +513,6 @@ in <del onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">dra
 <p>...</p>
 
 <h4 id="H12.4.4.2">12.4.4.2 Sub-page navigation</h4>
-
 <p>...</p>
 
 <p class="location">Change the bullets below Table 165 as follows:</p>
@@ -654,7 +652,6 @@ and <b>Sy</b> keys.
 <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">NOTE 1 Some of these keys are only relevant to certain annotation subtypes as described in the following subclauses.</ins>
 </p>
 
-
 <p class="hangingindent">
 NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2</ins> Requiring an appearance dictionary for each annotation ensures the reliable rendering of the annotations.
 <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">When an appearance dictionary is not present, the rendered appearance will be implementation dependent.</ins>
@@ -669,7 +666,6 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 <p>
 where <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject2</i> define the check box’s normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
 </p>
-
 
 <p>...</p>
 
@@ -717,7 +713,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
 </ul>
 
 <p>...</p>
-
 
 <h4 id="H12.5.6.5">12.5.6.5 Link annotations</h4>
 
@@ -794,7 +789,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   </tr>
 </table>
 
-
 <h4 id="H12.5.6.7">12.5.6.7 Line annotations</h4>
 
 <p class="location">Change Table 179 as follows:</p>
@@ -825,7 +819,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   </tr>
 </table>
 
-
 <h4 id="H12.5.6.8">12.5.6.8 Square and circle annotations</h4>
 
 <p class="location">Change Table 180 as follows:</p>
@@ -848,7 +841,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     </td>
   </tr>
 </table>
-
 
 <h4 id="H12.5.6.9">12.5.6.9 Polygon and polyline annotations</h4>
 
@@ -886,7 +878,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
   </tr>
 </table>
 
-
 <h4 id="H12.5.6.11">12.5.6.11 Caret annotations</h4>
 
 <p class="location">Change Table 183 as follows:</p>
@@ -915,7 +906,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     </td>
   </tr>
 </table>
-
 
 <h4 id="H12.5.6.13">12.5.6.13 Ink annotations</h4>
 
@@ -962,7 +952,6 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
     </td>
   </tr>
 </table>
-
 
 <h4 id="H12.5.6.18">12.5.6.18 Screen annotations</h4>
 
@@ -1060,7 +1049,6 @@ However, a projection annotation is only valid within the context of an associat
     </td>
   </tr>
 </table>
-
 
 <h4 id="H12.6.4.8">12.6.4.8 URI actions</h4>
 
@@ -1166,7 +1154,6 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
   </tr>
 </table>
 
-
 <h3 id="H12.7.4">12.7.4 Field dictionaries</h3>
 
 <h4 id="H12.7.4.1">12.7.4.1 General</h4>
@@ -1246,7 +1233,6 @@ appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> wit
 (If the existing appearance stream contains no marked-content with tag <b>Tx</b>, the new contents shall be appended to the end of the original stream.)
 </p>
 
-
 <h3 id="H12.7.5">12.7.5 Field types</h3>
 
 <h4 id="H12.7.5.2">12.7.5.2 Button fields</h4>
@@ -1290,7 +1276,6 @@ appearance) string.
 </p>
 
 <p>...</p>
-
 
 <p class="location">Change Table 232 as follows:</p>
 
@@ -1475,7 +1460,7 @@ appearance) string.
     <td><b>CharSet</b></td>
     <td>string</td>
     <td>
-    <p>(<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="122" data-iso="approved">; inheritable</del></i>) ... </p>
+    <p>(<i>Optional<del onMouseEnter="mouseEnter(this)" data-issue="122" data-iso="approved">inheritable;</del> PDF 2.0</i>) ... </p>
     </td>
   </tr>
 </table>
@@ -1522,7 +1507,6 @@ appearance) string.
     </td>
   </tr>
 </table>
-
 
 <h3 id="H12.7.8">12.7.8 Forms data format</h3>
 
@@ -1888,7 +1872,6 @@ establishes the exact contents of the complete PDF file at the time indicated in
   </tr> 
 </table>
 
-
 <h3 id="H12.10.3">12.10.3 Geographic coordinate system dictionary</h3>
 
 <p class="location">Change the first paragraph as follows:</p>
@@ -1912,7 +1895,6 @@ The EPSG reference codes are described in a database available through
 <ins onMouseEnter="mouseEnter(this)" data-issue="321" data-iso="approved"><a href="https://epsg.org">https://epsg.org</a></ins> 
 as administered by the International Association of Oil and Gas Producers (OGP). The WKT (Well Known Text) format is specified in ISO 19162.
 </p>
-
 
 <h2 id="H12.11">12.11 Document requirements</h2>
 
