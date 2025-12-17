@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 23 November 2025
+last_modified_date: 17 December 2025
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -104,6 +104,8 @@ nav_order: 7
       </li>
       <li>7.6.4.4 Password algorithms
        <ul> 
+        <li><a href="#H7.6.4.4.2">7.6.4.4.2 Algorithm 3:  Computing the encryption dictionary’s O-entry value (revision 4 and earlier)</a>
+        </li>
         <li><a href="#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
         </li>
         <li><a href="#H7.6.4.4.12">7.6.4.4.12 Algorithm 13: Validating the permissions (Security handlers of revision 6)</a>
@@ -993,7 +995,7 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p class="location">Insert new NOTE below bullet (f) as follows:</p>
 
-<ol type="a" start="6">
+<ol class="alphalist" style="counter-reset: list-item 5;">
 <li>
 Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24" data-iso="approved">with an initialization vector of zero</del>
 and the file encryption key as the key. ...
@@ -1008,7 +1010,7 @@ and the file encryption key as the key. ...
 
 <p class="location">Change bullet (a) as follows:</p>
 
-<ol type="a" start="1">
+<ol class="alphalist" style="counter-reset: list-item 0;">
   <li>
     <p><del onMouseEnter="mouseEnter(this)" data-issue="325" data-iso="approved">
       Make a new string, <b>K1</b>, consisting of 64 repetitions of the sequence: input password, <b>K</b>, the 48-byte user key. The 48 byte user key is only used when checking the owner password or creating the owner key. If checking the user password or creating the user key, <b>K1</b> is the concatenation of the input password and <b>K</b>.
@@ -1027,11 +1029,29 @@ and the file encryption key as the key. ...
 
 <h4 id="H7.6.4.4">7.6.4.4 Password algorithms</h4>
 
+<h5 id="H7.6.4.4.2">7.6.4.4.2 Algorithm 3:  Computing the encryption dictionary’s O-entry value (revision 4 and earlier)</h5>
+
+<p>...</p>
+
+<p class="location">Change bullets (a) and (e) as follows:</p>
+
+<ol class="alphalist" style="counter-reset: list-item 0;">
+  <li>Pad or truncate the owner password string as described in step (<del onMouseEnter="mouseEnter(this)" data-issue="643">b</del><ins onMouseEnter="mouseEnter(this)" data-issue="643">a</ins>) of 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)". If there is no owner password, use the user password instead.</li>
+  <li>...</li>
+  <li>...</li>
+  <li>...</li>
+  <li>Pad or truncate the user password string as described in step (<del onMouseEnter="mouseEnter(this)" data-issue="643">b</del><ins onMouseEnter="mouseEnter(this)" data-issue="643">a</ins>) of 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)".  </li>
+  <li>...</li>
+  <li>...</li>
+</ol>
+
+<p>...</p>
+
 <h5 id="H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</h5>
 
 <p class="location">Change bullet (f) as follows:</p>
 
-<ol type="a" start="6">
+<ol class="alphalist" style="counter-reset: list-item 5;">
 <li>
 Encrypt the 16-byte block using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24" data-iso="approved">with an initialization vector of zero</del>,
 using the file encryption key as the key. The result (16 bytes) is stored as the <b>Perms</b> string, and checked for validity when the file is opened.
@@ -1042,7 +1062,7 @@ using the file encryption key as the key. The result (16 bytes) is stored as the
 
 <p class="location">Change bullet (a) as follows:</p>
 
-<ol type="a" start="1">
+<ol class="alphalist" style="counter-reset: list-item 0;">
 <li>
 Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24" data-iso="approved">with an initialization vector of zero</del>
 and the file encryption key as the key. ...
@@ -1527,7 +1547,7 @@ nested.</ins>
         <li>the parent Type 3 font dictionary that contained the <b>CharProcs</b> entry with the glyph description content stream;</li>
       </ol>
       <p>If there is no <b>Resources</b> dictionary explicitly associated with the Type 3 glyph description content stream or Type 3 font dictionary:</p>
-      <ol start="3">
+      <ol style="counter-reset: list-item 3;">
         <li>the parent page dictionary on which the Type 3 font is used;</li>
         <li>resource inheritance from ancestor nodes of the parent page dictionary (see 7.7.3.4 "Inheritance of page attributes").</li>
       </ol>
