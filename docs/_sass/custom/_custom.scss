@@ -10,6 +10,8 @@
     h1         { page-break-before: always; }
     h2         { page-break-after: avoid; }
     h3         { page-break-after: avoid; }
+    h4         { page-break-after: avoid; }
+    h5         { page-break-after: avoid; }
     p          { page-break-inside: avoid; }  }
 
   @page {
@@ -34,7 +36,7 @@
   }
   ins:hover { background-color: #ffff66; }
 
-  /* URL links */
+  /* URL links to match https://pdfa.org */
   a {
      color: #d03f4e;
      text-decoration: underline;
@@ -45,8 +47,12 @@
      color: black;
      text-decoration: underline;
      text-decoration-thickness: auto;
- }
+  }
 
+  /* Appearance of clause indices at top of each clause*/
+   .noprint li {
+     line-height: 1;
+     } 
 
   .footnote {
     font-family: Arial, Helvetica, sans-serif;
@@ -59,6 +65,7 @@
 
   .isostyle {
     font-family: Cambria, Georgia, serif;
+    letter-spacing: normal;
   }
 
   .isostyle .fixedpopup {
@@ -85,13 +92,20 @@
 
   /* Deeply nested headings get smaller than body text so fix */
   .isostyle h4 {
-    font-weight: 500; font-size: 1.2rem !important; text-transform: none;
+    font-weight: 500; 
+    font-size: 1.2rem !important; 
+    text-transform: none;
+    letter-spacing: normal;
   }
   .isostyle h5 {
-    font-weight: 500; font-size: 1.1rem !important;
+    font-weight: 500; 
+    font-size: 1.1rem !important;
+    letter-spacing: normal;
   }
   .isostyle h6 {
-    font-weight: 500; font-size: 1rem !important;
+    font-weight: 500; 
+    font-size: 1rem !important;
+    letter-spacing: normal;
   }
 
   /* Avoid dual H1 tags - but make it look like an ISO doc */
@@ -161,3 +175,8 @@
     font-weight: bold;
     text-align: center;
   }
+
+  .isostyle ol.alphalist {
+    list-style: lower-alpha outside;
+    counter-reset: step-counter 0; 
+   }
