@@ -18,6 +18,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
+<nav>
 <ul>
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
@@ -27,3 +28,4 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
         {% endif %}
     {% endfor %}
 </ul>
+</nav>

@@ -6,6 +6,7 @@ parent: Well-Tagged PDF 1.0
 nav_order: 6
 ---
 
+<nav class="subclauses">
 <ul>
  <li>6.1 Conformance levels
    <ul>
@@ -16,6 +17,7 @@ nav_order: 6
    </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

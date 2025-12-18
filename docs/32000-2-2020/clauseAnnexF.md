@@ -7,20 +7,22 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 20
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
-    <li>F.3 Linearized PDF document structure
-     <ul>
-      <li><a href="#HF.3.1">F.3.1 General</a>
-      </li>
-      <li><a href="#HF.3.2">F.3.2 Header (Part 1)</a>
-      </li>
-      <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
-      </li>
-      <li><a href="#HF.3.6">F.3.6 Hint streams (Parts 5 and 10)</a>
-      </li>
-     </ul>
+  <li>F.3 Linearized PDF document structure
+    <ul>
+    <li><a href="#HF.3.1">F.3.1 General</a>
     </li>
+    <li><a href="#HF.3.2">F.3.2 Header (Part 1)</a>
+    </li>
+    <li><a href="#HF.3.3">F.3.3 Linearization parameter dictionary (Part 2)</a>
+    </li>
+    <li><a href="#HF.3.6">F.3.6 Hint streams (Parts 5 and 10)</a>
+    </li>
+    </ul>
+  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

@@ -7,7 +7,8 @@ parent: ISO 21757-1:2020 ECMAScript for PDF 2.0
 nav_order: 10
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
     <li><a href="#H10.1">10.1 General</a>
     </li>
     <li>10.2 Annotation
@@ -37,6 +38,7 @@ nav_order: 10
       </ul>
     </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

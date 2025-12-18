@@ -21,6 +21,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
+<nav>
 <ul>
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
@@ -30,3 +31,4 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
+</nav>

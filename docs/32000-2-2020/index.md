@@ -18,6 +18,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
+<nav>
 <ul>
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
@@ -27,8 +28,11 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
         {% endif %}
     {% endfor %}
 </ul>
+</nav>
 
 <p>The following tables have all been corrected:</p>
+
+<nav>
 <ul>
 <li><a href="clause07.html#Table3">Table 3 - Escape sequences in literal strings</a></li>
 <li><a href="clause07.html#Table5">Table 5 - Entries common to all stream dictionaries</a></li>
@@ -168,3 +172,4 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clauseAnnexF.html#TableF.1">Table F.1 - Entries in the linearization parameter dictionary</a></li>
 <li><a href="clauseAnnexL.html#TableL.2">Table Annex L.2 - Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0</a></li>
 </ul>
+</nav>

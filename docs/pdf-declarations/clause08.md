@@ -6,7 +6,8 @@ parent: PDF Declarations
 nav_order: 8
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
  <li>8.2 PDF Declarations Property Value Types
    <ul>
      <li><a href="#H8.2.1">8.2.1 Declaration</a>
@@ -14,6 +15,7 @@ nav_order: 8
    </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

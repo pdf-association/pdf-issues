@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 8
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
  <li><a href="#H8.2">8.2 Graphics objects</a>
  </li>
@@ -119,7 +120,7 @@ nav_order: 8
   </ul>
  </li>
 </ul>
-
+</nav>
 <hr>
 
 <div class="isostyle">

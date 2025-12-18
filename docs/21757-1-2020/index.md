@@ -19,6 +19,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
+<nav>
 <ul>
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
@@ -28,11 +29,15 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
+</nav>
 
 <p>The following tables have been corrected:</p>
+
+<nav>
 <ul>
 <li><a href="clause10.html#Table1">Table 1 - Annotation types and their properties</a></li>
 <li><a href="clause10.html#Table3">Table 3 - AnnotRichMedia object properties</a></li>
 <li><a href="clause10.html#Table89">Table 89 - oRequest <del onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">parameters</del><ins onMouseEnter="mouseEnter(this)" data-issue="268" data-iso="approved">properties</ins></a></li>
 <li><a href="clause12.html#Table113">Table 113 - Mesh properties</a></li>
 </ul>
+</nav>

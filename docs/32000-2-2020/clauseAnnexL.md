@@ -7,10 +7,6 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 26
 ---
 
-<ul class="noprint">
-</ul>
-<hr>
-
 <div class="isostyle">
 <div class="fixedpopup" id="issuelink">
     Issue #xxxx

@@ -7,12 +7,14 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 4
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
     <li><a href="#H4.1">4.1 General</a>
     </li>
     <li><a href="#H4.2">4.2 Established notations</a>
     </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

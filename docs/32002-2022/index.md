@@ -18,6 +18,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
+<nav>
 <ul>
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
@@ -27,9 +28,13 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
+</nav>
 
 <p>The following tables have all been corrected:</p>
+
+<nav>
 <ul>
 <li><a href="clause05.html#Table2">Table 2 - Additional permitted SubFilter values for ISO 32000-2:2020, Table 260</a></li>
 <li><a href="clause05.html#Table4">Table 4 - Supported EdDSA elliptic curves</a></li>
 </ul>
+</nav>

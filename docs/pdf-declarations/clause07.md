@@ -6,10 +6,12 @@ parent: PDF Declarations
 nav_order: 7
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
   <li><a href="#H7.2">7.2 PDF Declaration example</a>
   </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

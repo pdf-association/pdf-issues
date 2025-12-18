@@ -6,6 +6,7 @@ parent: 'ISO TS 32002: PDF 2.0 Digital Signature extensions'
 nav_order: 5
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
  <li>5.1 Elliptic curve cryptography
   <ul>
@@ -16,6 +17,7 @@ nav_order: 5
   </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

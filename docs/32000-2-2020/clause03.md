@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 3
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
   <li><a href="#H3.6">3.6 boolean object<del onMouseEnter="mouseEnter(this)" data-issue="623">s</del></a>
   </li>
@@ -17,6 +18,7 @@ nav_order: 3
   <li><a href="#H3.46">3.46 object stream</a>
   </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

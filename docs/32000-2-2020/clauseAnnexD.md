@@ -7,10 +7,12 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 18
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
-    <li><a href="#HD.3">D.3 PDFDocEncoding character set</a>
-    </li>
+  <li><a href="#HD.3">D.3 PDFDocEncoding character set</a>
+  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

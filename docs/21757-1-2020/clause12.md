@@ -7,7 +7,8 @@ parent: PISO 21757-1:2020 ECMAScript for PDF 2.0
 nav_order: 12
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
    <li>12.19 Mesh
     <ul> 
      <li><a href="#H12.19.2">12.19.2 Mesh properties</a>
@@ -27,6 +28,7 @@ nav_order: 12
     </ul>
    </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

@@ -6,7 +6,8 @@ parent: 'ISO TS 32001: PDF 2.0 Hash Algorithm extensions'
 nav_order: 5
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
  <li>5.1 Support for secure hash algorithm 3 (SHA-3) hash family
   <ul>
    <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></a>
@@ -16,6 +17,7 @@ nav_order: 5
   </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

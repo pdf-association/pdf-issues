@@ -7,12 +7,14 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 31
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
-   <li><a href="#HQ.2">Q.2 Page content</a>
-   </li>
-   <li><a href="#HQ.5">Q.5 Text objects</a>
-   </li>
+  <li><a href="#HQ.2">Q.2 Page content</a>
+  </li>
+  <li><a href="#HQ.5">Q.5 Text objects</a>
+  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

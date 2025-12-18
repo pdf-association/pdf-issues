@@ -6,6 +6,7 @@ parent: Well-Tagged PDF 1.0
 nav_order: 8
 ---
 
+<nav class="subclauses">
 <ul>
  <li>8.2 Logical structure
    <ul>
@@ -18,6 +19,7 @@ nav_order: 8
   </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 

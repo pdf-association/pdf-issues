@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
  <li><a href="#H12.2">12.2 Viewer preferences</a>
  </li>
@@ -233,6 +234,7 @@ nav_order: 12
   </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

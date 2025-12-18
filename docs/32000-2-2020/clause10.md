@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 10
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
   <li>10.3 CIE-Based colour to device colour
     <ul>
@@ -45,6 +46,7 @@ nav_order: 10
    </ul>
   </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

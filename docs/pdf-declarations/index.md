@@ -18,6 +18,7 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
 
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
+<nav>
 <ul>
     {% for std in site.data.data.toc %}
          {% if std.standard == page.isodoc %}
@@ -27,8 +28,12 @@ with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=
         {% endif %}
     {% endfor %}
 </ul>
+</nav>
 
 <p>The following tables have all been corrected:</p>
+
+<nav>
 <ul>
 <li><a href="clause08.html#Table2">Table 2 - PDF Declaration fields.</a></li>
 </ul>
+</nav>

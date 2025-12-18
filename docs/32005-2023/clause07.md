@@ -6,10 +6,12 @@ parent: 'ISO TS 32005: PDF 1.7 and 2.0 inclusion rules in PDF 2.0'
 nav_order: 7
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
  <li><a href="#H7.2">7.2 Hierarchical inclusion rules</a>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

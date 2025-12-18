@@ -7,7 +7,8 @@ parent: ISO 19005-4:2020 PDF/A-4
 nav_order: 6
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
   <li>6 Technical requirements
    <ul>
     <li>6.2 Graphics
@@ -37,6 +38,7 @@ nav_order: 6
    </ul>
   </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

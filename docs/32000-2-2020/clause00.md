@@ -7,10 +7,12 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 0
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
  <li><a href="#H0.4">0.4 Changes introduced in ISO 32000-2:2020</a>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

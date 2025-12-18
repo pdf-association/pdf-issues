@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
   <li>7.2 Lexical conventions
    <ul>
@@ -223,6 +224,7 @@ nav_order: 7
    </ul>
   </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

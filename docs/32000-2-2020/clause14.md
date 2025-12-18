@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 14
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
  <li><a href="#H14.2">14.2 Procedure sets</a>
  </li>
@@ -201,6 +202,7 @@ nav_order: 14
   </ul>
  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

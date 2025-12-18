@@ -7,6 +7,7 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 22
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
   <li><a href="#HH.2">H.2 Minimal PDF file</a>
   </li>
@@ -27,6 +28,7 @@ nav_order: 22
     </ul>
   </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

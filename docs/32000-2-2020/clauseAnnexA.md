@@ -7,10 +7,12 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 15
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
-    <li><a href="#HA.2">A.2 PDF content stream operators</a>
-    </li>
+  <li><a href="#HA.2">A.2 PDF content stream operators</a>
+  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

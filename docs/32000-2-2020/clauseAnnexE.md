@@ -7,10 +7,12 @@ parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 19
 ---
 
+<nav class="subclauses">
 <ul class="noprint">
-    <li><a href="#HE.2">E.2 Classes of PDF names</a>
-    </li>
+  <li><a href="#HE.2">E.2 Classes of PDF names</a>
+  </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">

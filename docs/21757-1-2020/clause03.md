@@ -7,10 +7,12 @@ parent: ISO 21757-1:2020 ECMAScript for PDF 2.0
 nav_order: 3
 ---
 
-<ul>
+<nav class="subclauses">
+<ul class="noprint">
    <li><a href="#H3.1">3.1 ECMAscript</a>
    </li>
 </ul>
+</nav>
 <hr>
 
 <div class="isostyle">
