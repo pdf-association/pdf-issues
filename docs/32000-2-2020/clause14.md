@@ -863,6 +863,8 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
 
 <p class="location">Change Table 368 as follows:</p>
 
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/703">Errata #703</a>, all EXAMPLES in Table 368 need to be renumbered sequentially.</p> 
+
 <table>
   <caption id="Table368">Table 368 - General inline level structure types</caption>
   <tr>
