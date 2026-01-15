@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 14. Document interchange
-last_modified_date: 10 November 2025
+last_modified_date: 16 January 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 14
 ---
