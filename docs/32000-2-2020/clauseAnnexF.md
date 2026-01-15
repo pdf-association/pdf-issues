@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 'Annex F: (normative) Linearized PDF'
-last_modified_date: 22 November 2025
+last_modified_date: 16 January 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 20
 ---
@@ -35,6 +35,16 @@ nav_order: 20
 <h2 id="HF.3">F.3 Linearized PDF document structure</h2>
 
 <h3 id="HF.3.1">F.3.1 General</h3>
+
+<p class="location">Change the first bullet as follows:</p>
+
+<ul>
+  <li>
+     The first group shall consist of the document catalog dictionary, other document-level objects, and all objects belonging to the first page of the document. These objects shall be numbered sequentially, starting at the first object number after the last number of the second group. (The stream containing the hint tables, called a hint stream, may be numbered out of sequence; see F.3.6, "Hint streams (Parts 5 and 10)"<ins onMouseEnter="mouseEnter(this)" data-issue="699">)</ins>. </li>
+  <li>...</li>
+<ul>
+
+<p>...</p>
 
 <p class="location">Change EXAMPLE 5 as follows:</p>
 
