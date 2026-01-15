@@ -271,7 +271,15 @@ When a PDF file is first written, both identifiers shall be set to the same valu
 If the first identifier in the reference matches the first identifier in the referenced file’s <b>ID</b> entry, and the last identifier in the reference matches the last identifier in the referenced file’s <b>ID</b> entry, it is very likely that the correct and unchanged PDF file has been found. If only the first identifier matches, a different version of the correct PDF file has been found.
 </p>
 
-<p>...</p>
+<p class="location">Change the second paragraph as follows:</p>
+
+<p>
+PDF writers should attempt to ensure the uniqueness of file identifiers. This may be achieved by computing them by means of a message digest algorithm <del onMouseEnter="mouseEnter(this)" data-issue="691">such as MD5 (described in Internet RFC 1321),</del> using the following information: 
+</p>
+
+<ul>
+  <li>...</li>
+</ul>
 
 
 <h2 id="H14.5">14.5 Page-piece dictionaries</h2>
