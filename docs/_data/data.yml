@@ -37,6 +37,8 @@ toc:
         url:  clauseAnnexH.html
       - ref: 'Annex L: (normative) Parent-child relationships between the standard structure elements in the standard structure namespace for PDF 2.0'
         url:  clauseAnnexL.html
+      - ref: 'Annex O: (normative) Fragment identifiers'
+        url:  clauseAnnexO.html
       - ref: 'Annex Q: (normative) Method for determining transparency on a page'
         url:  clauseAnnexQ.html
       - ref: 'Bibliography'
