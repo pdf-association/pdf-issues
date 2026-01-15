@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 8. Graphics
-last_modified_date: 23 November 2025
+last_modified_date: 16 January 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 8
 ---
@@ -814,7 +814,40 @@ the corresponding colour spaces either directly or via a default colour space (s
 <h3 id="H8.11.3">8.11.3 Making graphical content optional</h3>
 
 <h4 id="H8.11.3.2">8.11.3.2 Optional content in content streams</h4>
+
+<p class="location">Change EXAMPLE 1 as follows (whitespace changes are not marked up):</p>
+
+<code><ins onMouseEnter="mouseEnter(this)" data-issue="707">9 0 obj
+&lt;&lt; /Length ... &gt;&gt;
+stream</ins>          % Within a content stream 
+...
+/OC /oc1 BDC    % Optional content follows 
+  BT 
+    /F1 1 Tf 
+    12 0 0 12 100 600 Tm 
+    (Hello) Tj 
+  ET 
+EMC             % End of optional content 
+... 
+<ins onMouseEnter="mouseEnter(this)" data-issue="707">endstream
+endobj
+
+10 0 obj</ins>
+&lt;&lt;                             % In the resources dictionary 
+  /Properties &lt;&lt; /oc1 5 0 R &gt;&gt; % This dictionary maps the name oc1 to an 
+...                            % optional content group (object 5) 
+&gt;&gt; 
+<ins onMouseEnter="mouseEnter(this)" data-issue="707">endobj</ins>
  
+5 0 obj                        % The OCG controlling the visibility of the text.
+&lt;&lt; /Type /OCG 
+   /Name (Show Greeting) 
+&gt;&gt; 
+endobj
+</code>
+
+<p>...</p>
+
 <p class="location">Change EXAMPLE 2 as follows (whitespace changes are not marked up):</p>
 
 <code><ins onMouseEnter="mouseEnter(this)" data-issue="686">5 0 obj
