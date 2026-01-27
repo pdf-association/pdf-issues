@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 2. Normative references
-last_modified_date: 15 August 2025
+last_modified_date: 27 January 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 2
 ---
@@ -32,6 +32,15 @@ Adobe Systems Incorporated<sup>1</sup>
 
 <p class="editornote">
 EDITOR NOTE: (<a href="https://github.com/pdf-association/pdf-issues/issues/519">Issue #519</a>) the date for Adobe Technical Note #5014 is also incorrect at <a href="https://adobe-type-tools.github.io/font-tech-notes/">https://adobe-type-tools.github.io/font-tech-notes/.</a> There is no 1996 version.
+</p>
+
+<p>...</p>
+
+<p class="location">Replace the MathML 3.0 dated reference with an undated reference to MathML Core as follows:</p>
+
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="719"><i>Mathematical Markup Language (MathML) Version 3.0, 2nd Revision</i>, April 2014, World Wide Web Consortium (W3C), <a href="https://www.w3.org/TR/MathML3/">https://www.w3.org/TR/MathML3/</a></del><br/>
+<ins  onMouseEnter="mouseEnter(this)" data-issue="719"><i>MathML Core, W3C Candidate Recommendation</i>, World Wide Web Consortium (W3C), <a href="https://www.w3.org/TR/mathml-core/">https://www.w3.org/TR/mathml-core/</a></ins>
 </p>
 
 <p>...</p>

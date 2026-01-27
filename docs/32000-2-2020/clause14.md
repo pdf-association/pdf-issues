@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 14. Document interchange
-last_modified_date: 16 January 2026
+last_modified_date: 27 January 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 14
 ---
@@ -34,6 +34,12 @@ nav_order: 14
    <li><a href="#H14.7.2">14.7.2 Structure hierarchy</a>
    </li>
    <li><a href="#H14.7.3">14.7.3 Structure types</a>
+   </li>
+   <li>14.7.4 Namespaces
+    <ul>
+     <li><a href="#H14.7.4.2">14.7.4.2 Namespace dictionary</a>
+     </li>
+    </ul>
    </li>
    <li>14.7.5 Structure content
     <ul>
@@ -575,6 +581,17 @@ The <b>RoleMap</b> dictionary shall be comprised of a set of keys representing s
 
 <p>...</p>
 
+<h3 id="H14.7.4">14.7.4 Namespaces</h3>
+
+<h4 id="H14.7.4.2">14.7.4.2 Namespace dictionary</h4>
+
+<p class="location">Change NOTE 1 as follows:</p>
+
+<p class="hangingindent">
+NOTE 1: It is not generally expected that a URI for a namespace name will resolve. It is instead used for uniqueness. A URI specified here can correspond to an existing XML namespace (e.g. "http://www.w3.org/1998/Math/MathML" for MathML<del onMouseEnter="mouseEnter(this)" data-issue="719"> 3.0</del>). 
+</p>
+
+<p>...</p>
 
 <h3 id="H14.7.5">14.7.5 Structure content</h3>
 
@@ -1744,14 +1761,26 @@ endobj
 
 <h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
 
-<p class="location">Replace the paragraph below NOTE 1 as follows:</p>
+<p class="location">Change the second paragraph as follows:</p>
 
-<p class="hangingindent">NOTE 1 MathML is the only domain-specific namespace defined in PDF 2.0.</p>
+<p>
+MathML<del onMouseEnter="mouseEnter(this)" data-issue="719"> 3.0</del> defines a domain specific schema for representing mathematics. The namespace name (see 14.7.4.2, "Namespace dictionary"), as would be identified by the <b>NS</b> entry in a namespace dictionary, shall have the value: 
+</p>
+
+<p>...</p>
+
+<p class="location">Replace the paragraph below NOTE 1 as follows (NOTE 1 is unchanged):</p>
+
+<p class="hangingindent">NOTE 1: MathML is the only domain-specific namespace defined in PDF 2.0.</p>
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="72" data-iso="approved">When including mathematics structured as MathML 3.0, the math structure element type as defined in MathML 3.0 shall be used, and shall have its namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="72" data-iso="approved">When including mathematics structured as MathML 3.0, the <b>math</b> structure element type, as defined in MathML 3.0, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML 3.0 namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="72,719" data-iso="approved,industry">When including mathematics structured as MathML, the <b>math</b> structure element type, as defined in MathML, shall be used to enclose the formula under the <b>Formula</b> structure element type. All MathML structure element types and their attributes shall have the MathML namespace explicitly defined (see 14.7.4.2, "Namespace dictionary").</ins>
 </p>
+
+<p class="location">Change NOTE 2 as follows:</p>
+
+<p class="hangingindent">NOTE 2: The <b>math</b> structure element type is all lowercase to match the MathML<del onMouseEnter="mouseEnter(this)" data-issue="719"> 3.0</del> specification.</p>
 
 <p>...</p>
 
