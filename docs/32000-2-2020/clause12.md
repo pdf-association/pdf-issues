@@ -1579,10 +1579,6 @@ Unlike interactive forms, non-interactive forms do not use widget annotations bu
 
 <h2 id="H12.8">12.8 Digital signatures</h2>
 
-<h3 id="H12.8.1">12.8.1 General</h3>
-
-<p>...</p>
-
 <h4 id="H12.8.1">12.8.1 General</h4>
 
 <p>...</p>

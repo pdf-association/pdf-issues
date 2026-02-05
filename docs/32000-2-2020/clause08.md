@@ -50,8 +50,10 @@ nav_order: 8
     </ul>
    </li>
    <li>8.6.6 Special colour spaces
+    <ul>
      <li><a href="#H8.6.6.5">8.6.6.5 DeviceN colour spaces</a>
      </li>
+    </ul>
    </li>
    <li><a href="#H8.6.8">8.6.8 Colour operators</a>
    </li>
@@ -88,8 +90,10 @@ nav_order: 8
     </ul>
    </li>
    <li>8.9.6 Masked images
+    <ul>
      <li><a href="#H8.9.6.2">8.9.6.2 Stencil masking</a>
      </li>
+    </ul> 
    </li>
    <li><a href="#H8.9.7">8.9.7 Inline images</a>
    </li>
@@ -817,7 +821,7 @@ the corresponding colour spaces either directly or via a default colour space (s
 
 <p class="location">Change EXAMPLE 1 as follows (whitespace changes are not marked up):</p>
 
-<code><ins onMouseEnter="mouseEnter(this)" data-issue="707">9 0 obj
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="707">9 0 obj
 &lt;&lt; /Length ... &gt;&gt;
 stream</ins>          % Within a content stream 
 ...
@@ -844,13 +848,13 @@ endobj
    /Name (Show Greeting) 
 &gt;&gt; 
 endobj
-</code>
+</code></pre>
 
 <p>...</p>
 
 <p class="location">Change EXAMPLE 2 as follows (whitespace changes are not marked up):</p>
 
-<code><ins onMouseEnter="mouseEnter(this)" data-issue="686">5 0 obj
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="686">5 0 obj
 &lt;&lt; /Length ... &gt;&gt;
 stream</ins>
 % Within a content stream
@@ -904,8 +908,7 @@ endobj
   /Name (Image B)
 &gt;&gt;
 endobj
-
-</code>
+</code></pre>
 
 <h3 id="H8.11.4">8.11.4 Configuring optional content</h3>
 

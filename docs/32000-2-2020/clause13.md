@@ -70,7 +70,7 @@ nav_order: 13
     </ul>
    </li>
    <li><a href="#H13.6.5">13.6.5 Coordinate systems for 3D</a>
-   <li>
+   </li>
    <li>13.6.7 Persistence of 3D measurements and markups
     <ul>
      <li>13.6.7.3 3D measurement/markup dictionary

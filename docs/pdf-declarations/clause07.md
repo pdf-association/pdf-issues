@@ -25,10 +25,9 @@ nav_order: 7
 
 <p class="location">Correct the example as follows:</p>
 
-<code>...
+<pre><code>...
 <span style="color:red">&lt;pdfd:conformsTo&gt;</span><span style="color:blue">http://pdfa.org/declarations<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#hipaa</span><span style="color:red">&lt;/pdfd:conformsTo&gt;</span>
 ...
-
-</code>
+</code></pre>
 
 </div>

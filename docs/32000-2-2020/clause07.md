@@ -303,7 +303,7 @@ However, a</del>
 <p class="location">Change EXAMPLE 1 as follows:</p>
 
 <p>EXAMPLE 1 Integer objects</p>
-<code class="hangingindent">123   43445   +17   -98   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300" data-iso="approved">00987</ins></code>
+<pre><code class="hangingindent">123   43445   +17   -98   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300" data-iso="approved">00987</ins></code></pre>
 
 <p>...</p>
 
@@ -320,7 +320,7 @@ However, a</del>
 <p class="location">Change EXAMPLE 2 as follows:</p>
 
 <p>EXAMPLE 2 Real objects</p>
-<code class="hangingindent">34.5   -3.62   +123.6   4.   -.002   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300" >009.87</ins></code>
+<pre><code class="hangingindent">34.5   -3.62   +123.6   4.   -.002   0   <ins onMouseEnter="mouseEnter(this)" data-issue="300" >009.87</ins></code></pre>
 
 <p>...</p>
 
@@ -466,7 +466,7 @@ support a standard set of filters that fall into two main categories:
 
 <p class="location">Change EXAMPLE 1 code as follows:</p>
 
-<code>1 0 obj
+<pre><code>1 0 obj
 &lt;&lt; /Length 44<del onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">7</del><ins onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">9</ins>
 /Filter [/ASCII85Decode /FlateDecode]
 &gt;&gt;
@@ -476,8 +476,7 @@ GhQ\j_/=ii'LfceJ%/-bPR=PCD-LeMX!Z7pmG\.BSJGfG1MH^`^(F$rh*;h>h/i!XMIl:?" o%Tk8W%<
 13FL<ins onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">~&gt;</ins>
 endstream
 endobj
-
-</code>
+</code></pre>
 
 
 <h3 id="H7.4.3">7.4.3 ASCII85Decode filter</h3>
@@ -1197,7 +1196,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <p class="location">Correct the last example in subclause 7.6.6 as follows (a SLASH was missing from the key value name "<code>V2</code>"):</p>
 
-<code>...
+<pre><code>...
 8 0 obj                                        %Encryption dictionary
       &lt;&lt;/Filter /MySecurityHandlerName
          /V 4                                  %Version 4: allow crypt filters
@@ -1208,8 +1207,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
                &gt;&gt;
                ...
 ...
-
-</code>
+</code></pre>
 
 <h3 id="H7.6.7">7.6.7 Unencrypted wrapper document</h3>
 
@@ -1772,10 +1770,10 @@ NOTE 4 Linearized PDF files impose additional requirements on resources - see "A
 
 <p>EXAMPLE 1 A PDF dictionary containing key 'Key' with the value that is the text string "text&permil;" will look like</p>
 
-<code>
+<pre><code>
  <del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">&lt;&lt;/Key(text?)&gt;&gt;</del>
  <ins onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">&lt;&lt;/Key (text\213) &gt;&gt;</ins>
-</code>
+</code></pre>
 
 <p>where <del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">the character '?' after the 'text' is represented by the hex code 8Bh (</del>octal code 213 <del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">- that</del> is according to "D.2 Latin character set and encodings".</p>
 
@@ -1785,10 +1783,10 @@ NOTE 4 Linearized PDF files impose additional requirements on resources - see "A
 
 <p>EXAMPLE 2 A PDF dictionary containing key 'Key' with the value that is the text string "&#x442;&#x435;&#x441;&#x442;" (that is what the word in Russian with the translation to English as 'test') will look like</p>
 
-<code>
+<pre><code>
  <del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">&lt;&lt;/Key(??????????)&gt;&gt;</del>
  <ins onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">&lt;&lt;/Key &lt;FEFF0442043504410442&gt; &gt;&gt;</ins>
-</code>
+</code></pre>
 
 <p><del onMouseEnter="mouseEnter(this)" data-issue="96" data-iso="approved">where the characters in parentheses is the sequence of bytes with hex codes FE, FF, 04, 42, 04, 35, 04, 41, 04, 42.</del></p>
 

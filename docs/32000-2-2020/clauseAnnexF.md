@@ -42,13 +42,13 @@ nav_order: 20
   <li>
      The first group shall consist of the document catalog dictionary, other document-level objects, and all objects belonging to the first page of the document. These objects shall be numbered sequentially, starting at the first object number after the last number of the second group. (The stream containing the hint tables, called a hint stream, may be numbered out of sequence; see F.3.6, "Hint streams (Parts 5 and 10)"<ins onMouseEnter="mouseEnter(this)" data-issue="699">)</ins>. </li>
   <li>...</li>
-<ul>
+</ul>
 
 <p>...</p>
 
 <p class="location">Change EXAMPLE 5 as follows:</p>
 
-<code>56 0 obj 
+<pre><code>56 0 obj 
 &lt;&lt;  /Length 57 
     … Possibly other stream attributes, such as Filter … 
     /S 21          % Position of shared object hint table 
@@ -61,7 +61,7 @@ stream
     … Possibly other hint tables … 
 endstream 
 endobj
-</code>
+</code></pre>
 
 <h3 id="HF.3.2">F.3.2 Header (Part 1)</h3>
 

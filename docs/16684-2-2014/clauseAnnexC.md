@@ -16,7 +16,7 @@ nav_order: 1
 
 <p class="location">Based on <a href="https://github.com/pdf-association/pdfa-twg/issues/56">PDF/A Errata #56</a>, change the RELAX NG XML as follows:</p>
 
-<code>
+<pre><code>
    &lt;rng:define name=”xmp.Base.Rating” combine=”choice”&gt;
       &lt;rng:choice&gt;
          <ins>&lt;!-- NOTE: Earlier versions of XMP specifications specified this property as Integer --&gt;</ins>
@@ -27,7 +27,6 @@ nav_order: 1
          &lt;/rng:data&gt;
       &lt;/rng:choice&gt;
    &lt;/rng:define&gt;
-
-</code>
+</code></pre>
 
 </div>

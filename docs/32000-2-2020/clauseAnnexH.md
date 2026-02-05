@@ -44,12 +44,11 @@ nav_order: 22
 
 <p class="location">Change the example as follows:</p>
 
-<code>...
+<pre><code>...
             &lt;xmpMM:DocumentID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved"><i>unique GUID of document</i></del> …&lt;/xmpMM:DocumentID&gt;
             &lt;xmpMM:InstanceID&gt;… <del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved"><i>GUID changed for each save</i></del> …&lt;/xmpMM:InstanceID&gt;
 ...
-
-</code>
+</code></pre>
 
 <h2 id="HH.3">H.3 Simple text string example</h2>
 
@@ -57,7 +56,7 @@ nav_order: 22
 
 <p class="location">Correct the example as follows:</p>
 
-<code>...
+<pre><code>...
     %Underline "32000-2". Position must be calculated by generator
     %including scaled per-font underline vertical offset
 
@@ -66,7 +65,8 @@ nav_order: 22
     221.4 694.2 l                    %Set path to end of line position
     <del onMouseEnter="mouseEnter(this)" data-issue="563">1.2 w                            %Set line width suitable for size of text</del>
     S                                %Stroke path
-...</code>
+...
+</code></pre>
 
 <p>...</p>
 
@@ -76,7 +76,7 @@ nav_order: 22
 
 <p class="location">Change the example as follows:</p>
 
-<code>...
+<pre><code>...
 6 0 obj                                         %Metadata stream<del onMouseEnter="mouseEnter(this)" data-issue="402" data-iso="approved">s</del>
       &lt;&lt;/Type /Metadata
           /Subtype /XML
@@ -121,8 +121,7 @@ stream
 endstream
 endobj
 ...
-
-</code>
+</code></pre>
 
 <h2 id="HH.8">H.8 Structure elements examples</h2>
 
@@ -160,9 +159,9 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 
 <figure>
   <ins onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved">
-    <img src="Figure H.6.svg" alt="Corrected Figure H.6 — Association between content and marked-content identifiers">
+    <img src="Figure%20H.6.svg" alt="Corrected Figure H.6 - Association between content and marked-content identifiers">
   </ins>
-  <figcaption>Figure H.6 — Association between content and marked-content identifiers</figcaption>
+  <figcaption>Figure H.6 - Association between content and marked-content identifiers</figcaption>
 </figure>
 
 <p>...</p>
@@ -171,16 +170,16 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
 
 <figure>
   <ins onMouseEnter="mouseEnter(this)" data-issue="418" data-iso="approved">
-    <img src="Figure H.7.svg" alt="Corrected Figure H.7 — Hierarchy of structure elements and relationship with marked-content">
+    <img src="Figure%20H.7.svg" alt="Corrected Figure H.7 - Hierarchy of structure elements and relationship with marked-content">
   </ins>
-  <figcaption>Figure H.7 — Hierarchy of structure elements and relationship with marked-content</figcaption>
+  <figcaption>Figure H.7 - Hierarchy of structure elements and relationship with marked-content</figcaption>
 </figure>
 
 <p>...</p>
 
 <p class="location">Correct the last EXAMPLE as follows:</p>
 
-<code>...
+<pre><code>...
 400 0 obj
     &lt;&lt;/Type /StructElem
        /S <ins onMouseEnter="mouseEnter(this)" data-issue="425" data-iso="approved">/</ins>TOC
@@ -188,8 +187,7 @@ part of the <i>standard structure namespace for PDF 1.7</i> and are entirely val
        <ins onMouseEnter="mouseEnter(this)" data-issue="425" data-iso="approved">/P 400 0 R</ins>
     &gt;&gt;
 endobj
-
-</code>
+</code></pre>
 
 <h3 id="HH.8.3">H.8.3 Hierarchical lists</h3>
 
@@ -205,9 +203,9 @@ The structure element’s structure type entry (<b>S</b>) may have values that e
 
 <figure>
   <ins onMouseEnter="mouseEnter(this)" data-issue="418" data-iso="approved">
-    <img src="Figure H.9.svg" alt="Corrected Figure H.9 — Hierarchy of structure elements and relationship with marked-content">
+    <img src="Figure%20H.9.svg" alt="Corrected Figure H.9 - Hierarchy of structure elements and relationship with marked-content">
   </ins>
-  <figcaption>Figure H.9 — Hierarchy of structure elements and relationship with marked-content</figcaption>
+  <figcaption>Figure H.9 - Hierarchy of structure elements and relationship with marked-content</figcaption>
 </figure>
 
 <p>...</p>

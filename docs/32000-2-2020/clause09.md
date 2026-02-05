@@ -135,7 +135,7 @@ The scaling shall apply to the horizontal coordinate in text space, independentl
       </td>
     </tr>
     </table>
-  <figcaption>Figure 58 — Horizontal scaling</figcaption>
+  <figcaption>Figure 58 - Horizontal scaling</figcaption>
 </figure>
 
 
@@ -219,7 +219,7 @@ is interpreted by the text-showing operators
 <p><del onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">NOTE 2</del> Conceptually, the entire transformation from text space to device space can be represented by a text rendering matrix, 𝑇<sub>𝑟𝑚</sub>:
 </p>
 <p style="text-align:center">
-<math xmlns="https://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
  <msub>
   <mrow>
    <mi>T</mi>
@@ -521,8 +521,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 "Figure 62 - Output from the example" shows the result of showing the string ( ababab ) using this font.
 </p>
 
-<code>
-  ...
+<pre><code>...
   <del onMouseEnter="mouseEnter(this)" data-issue="44" data-iso="approved">%Type 3 font definition encoding two glyphs, 'a' and 'b'</del>
   <ins onMouseEnter="mouseEnter(this)" data-issue="44" data-iso="approved">%Type 3 font definition encoding the two glyphs square and triangle</ins>
   4 0 obj
@@ -539,7 +538,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
      &gt;&gt;
   endobj
   ...
-</code>
+</code></pre>
 
 
 <h2 id="H9.7">9.7 Composite fonts</h2>

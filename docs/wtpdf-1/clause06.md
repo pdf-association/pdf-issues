@@ -39,13 +39,12 @@ Files conforming to the conformance level for reuse shall include a PDF Declarat
 
 <p class="location">Correct the example as follows:</p>
 
-<code>...
+<pre><code>...
 &lt;pdfd:conformsTo&gt;
   http://pdfa.org/declarations/wtpdf<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#reuse1.0
 &lt;/pdfd:conformsTo&gt;
 ...
-
-</code>
+</pre></code>
 
 <h3 id="H6.1.3">6.1.3 Conformance level for accessibility</h3>
 
@@ -57,12 +56,11 @@ Files conforming to the conformance level for accessibility shall include a PDF 
 
 <p class="location">Correct the example as follows:</p>
 
-<code>...
+<pre><code>...
 &lt;pdfd:conformsTo&gt;
   http://pdfa.org/declarations/wtpdf<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#accessibility1.0
 &lt;/pdfd:conformsTo&gt;
 ...
-
-</code>
+</code></pre>
 
 </div>

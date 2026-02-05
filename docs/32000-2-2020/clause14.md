@@ -243,7 +243,7 @@ The contents of a metadata stream shall be the metadata represented in Extensibl
 
 <p class="location">Change the EXAMPLE below Table 349 as follows:</p>
 
-<code>101 0 obj % document information dictionary
+<pre><code>101 0 obj % document information dictionary
 &lt;&lt; /CreationDate (D:20140314124211+01'00)
    /ModDate (D:20140924212303+02'00)
 &gt;&gt;
@@ -255,12 +255,9 @@ endobj
    /Length 103 0 R
 &gt;&gt;
 stream
-&lt;?xpacket begin="</code>
-<del onMouseEnter="mouseEnter(this)" data-issue="398" data-iso="approved">Ôªø</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="398" data-iso="approved"><i>… UTF-8 value of U+FEFF (efbbbf) …</i></ins>
-<code>id="W5M0MpCehiHzreSzNTczkc9d"?&gt;
+&lt;?xpacket begin="<del onMouseEnter="mouseEnter(this)" data-issue="398" data-iso="approved">Ôªø</del><ins onMouseEnter="mouseEnter(this)" data-issue="398" data-iso="approved"><i>… UTF-8 value of U+FEFF (efbbbf) …</i></ins> id="W5M0MpCehiHzreSzNTczkc9d"?&gt;
 ...
-</code>
+</code></pre>
 
 <p></p>
 
@@ -963,9 +960,7 @@ Here is some text <span style="color:blue;text-decoration:underline;">with a</sp
 <span style="color:blue;text-decoration:underline;">link</span> inside.
 </ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-<code>
-4 0 obj % Link annotation using QuadPoints to span 2 lines (ISO 32000-2:2020, Tables 166 and 176)
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">4 0 obj % Link annotation using QuadPoints to span 2 lines (ISO 32000-2:2020, Tables 166 and 176)
 &lt;&lt;
   /Type     /Annot
   /Subtype  /Link
@@ -984,28 +979,25 @@ Here is some text <span style="color:blue;text-decoration:underline;">with a</sp
   /StructParent 1
 &gt;&gt;
 endobj
-
-</code></ins></div>
+</ins></code></pre>
 
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 2 Consider the following fragment of HTML code, which produces a line of text containing a hypertext link:</ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-<code>&lt;html&gt;
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">&lt;html&gt;
     &lt;body&gt;
         &lt;p&gt;
             Here is some text &lt;a href="https://www.pdfa.org"&gt;with a link&lt;/a&gt; inside.
         &lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
-</code></ins></div>
+</ins></code></pre>
 
 <br/>
 <p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">This code sample shows an equivalent fragment of PDF using a link element, whose text is displayed as blue and underlined.
 A <a href="LinkExample.pdf" target="_blank">functional PDF is attached <span style="font-size: x-large;">&#x1f4ce;</span></a>.
 </ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-<code>5 0 obj
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">5 0 obj
 &lt;&lt;
   /Length ... 
 &gt;&gt;
@@ -1041,13 +1033,12 @@ stream
   EMC                         % End marked content (artifact)
 endstream
 endobj
-</code></ins></div>
+</ins></code></pre>
 
 <br/>
-<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 3 This example shows an excerpt from the associated logical structure hierarchy.</ins></p>
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">EXAMPLE 3 This example shows an excerpt from the associated logical structure hierarchy:</ins></p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">
-<code>10 0 obj % Root element must always be &lt;Document&gt;
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">10 0 obj   % Root element must always be &lt;Document&gt;
 &lt;&lt;
   /Type /StructElem
   /S    /Document
@@ -1087,8 +1078,7 @@ endobj
   ]
 &gt;&gt;
 endobj
-</code></ins></div>
-<br/>
+</ins></code></pre>
 
 <h5 id="H14.8.4.7.4">14.8.4.7.<del onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">3</del><ins onMouseEnter="mouseEnter(this)" data-issue="133" data-iso="approved">4</ins> Ruby and warichu elements</h5>
 
@@ -1585,7 +1575,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
 </table>
 
 
-<h4 id="H14.8.5.5">14.8.5.6 PrintField attributes</h4>
+<h4 id="H14.8.5.6">14.8.5.6 PrintField attributes</h4>
 
 <p class="location">Change Table 383 as follows:</p>
 
@@ -1703,10 +1693,9 @@ To facilitate conversion of documents created against versions of the PDF standa
 
 <p class="location">Insert a new EXAMPLE 1 at the end of the subclause as follows:</p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">
-<p>EXAMPLE 1: use of namespaces</p>
-<code>
-17 0 obj
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">EXAMPLE 1: use of namespaces:</ins></p>
+
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="65" data-iso="approved">17 0 obj
 &lt;&lt;
    /Type /StructElem
    /S /section
@@ -1729,14 +1718,13 @@ endobj
    ...
 &gt;&gt;
 endobj
-</code></ins></div>
+</ins></code></pre>
 
 <p class="location">Insert a new EXAMPLE 2 at the end of the subclause as follows:</p>
 
-<div><ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">
-<p>EXAMPLE 2: Role mapping of structure elements with no explicitly identified namespace</p>
-<code>
-13 0 obj % A structure tree with a role map for elements within an undefined namespace
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">EXAMPLE 2: Role mapping of structure elements with no explicitly identified namespace:</ins></p>
+
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="151" data-iso="approved">13 0 obj % A structure tree with a role map for elements within an undefined namespace
 &lt;&lt;
    /Type /StructTreeRoot
    /RoleMap &lt;&lt; % The "Global" role map is applied to elements in an undefined namespace.
@@ -1757,7 +1745,7 @@ endobj
     ...
 &gt;&gt;
 endobj
-</code></ins></div>
+</ins></code></pre>
 
 <h4 id="H14.8.6.3">14.8.6.3 Other namespaces</h4>
 
@@ -1818,15 +1806,13 @@ EXAMPLE 1 This example shows the use of replacement text to indicate the correct
 in a case where the SPACE character does not appear in the text content.
 </ins></p>
 
-<ins onMouseEnter="mouseEnter(this)" data-issue="364" data-iso="approved">
-<code class="hangingindent">
+<pre><code class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="364" data-iso="approved">
 /Span &lt;&lt; /ActualText (Missing ) &gt;&gt; BDC   % add missing space character
     (Missing) Tj
 EMC
 44 0 Td   % Simulate space by moving the drawing position
 (space) Tj
-</code>
-</ins>
+</ins></code></pre>
 
 <p class="location">Correct the EXAMPLE as follows:</p>
 
@@ -1837,15 +1823,14 @@ the spelling of a word (in German, up until spelling reforms, the word "Drucker"
 was rendered as "Druk-" and "ker").
 </p>
 
-<code class="hangingindent">
-(Dru) Tj
+<pre><code class="hangingindent">(Dru) Tj
 /Span
     &lt;&lt; <del onMouseEnter="mouseEnter(this)" data-issue="356" data-iso="approved">/Actual Text</del><ins onMouseEnter="mouseEnter(this)" data-issue="356" data-iso="approved">/ActualText</ins> (c) &gt;&gt;
     BDC
         (k-) Tj
     EMC
 (ker) '
-</code>
+</code></pre>
 
 <h2 id="H14.10">14.10 Web capture</h2>
 
@@ -1927,7 +1912,7 @@ was rendered as "Druk-" and "ker").
       (<i>Optional</i>) A name object or array specifying the colourants to be applied to the image. 
       The value may be the name full_color or registration or an array of the form
     </p>
-    <code>[/monochrome name1  tint1…namen tintn]</code>
+    <pre><code>[ /monochrome <i>name1  tint1 ... namen tintn</i> ]</code></pre>
     <p>
       where each <i>name</i> is a string representing the name of a colourant and each <i>tint</i> is a 
       <del onMouseEnter="mouseEnter(this)" data-issue="358" data-iso="approved">real</del>
@@ -2071,9 +2056,9 @@ NOTE 4 As defined in Table 34 and section 14.6.2, "Property Lists", a marked-con
   </tr>
 </table>
 
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">EXAMPLE:<br/>
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">EXAMPLE:</ins></p>
 
-<code>10 0 obj
+<pre><code><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">10 0 obj
 &lt;&lt;
   /Resources &lt;&lt;
     /Properties &lt;&lt;
@@ -2095,7 +2080,7 @@ EMC
 ...
 endstream
 endobj
-</code></ins></p>
+</ins></code></pre>
 
 <p class="location">Change the second last paragraph as follows:</p>
 
@@ -2117,8 +2102,7 @@ markers.
 
 <p class="location">Change object 21 in EXAMPLE 3 as follows:</p>
 
-<code>
-...
+<pre><code>...
 
 21 0 obj % embedded file stream
 &lt;&lt;
@@ -2138,6 +2122,6 @@ stream
 ...
 endstream
 endobj
-</code>
+</code></pre>
 
 </div>
