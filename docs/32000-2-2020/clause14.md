@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 14. Document interchange
-last_modified_date: 27 January 2026
+last_modified_date: 19 February 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 14
 ---
@@ -1939,6 +1939,27 @@ The value of the optional <b>DPartRoot</b> key in the catalog dictionary shall b
 <h3 id="H14.12.4">14.12.4 Data structures</h3>
 
 <h4 id="H14.12.4.1">14.12.4.1 General</h4>
+
+<p class="location">Change Table 408 as follows:</p>
+
+<table>
+  <caption id="Table408">Table 408 - Entries in a DPartRoot dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>RecordLevel</b></td>
+    <td>integer</td>
+    <td>
+      <p>(<i>Optional; PDF 2.0</i>) This attribute may be used when a single PDF file encodes multiple documents. It identifies the zero based level of the document part hierarchy where each DPart node of that level corresponds to a component or hierarchy of components.</p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="610">
+      NOTE: Refer to ISO 16612-2 (PDF/VT) which describes the use of <b>RecordLevel</b> and components.
+      </ins></p>
+    </td>
+  </tr>
+</table>
 
 <p class="location">Change Table 409 as follows:</p>
 
