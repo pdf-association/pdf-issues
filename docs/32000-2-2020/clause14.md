@@ -1971,6 +1971,17 @@ The value of the optional <b>DPartRoot</b> key in the catalog dictionary shall b
     <th>Value</th>
   </tr>
   <tr>
+    <td><b>DParts</b></td>
+    <td>array</td>
+    <td>
+      <p>(<i>Shall not be present if a <b>Start</b> key is present; PDF 2.0</i>) An array of arrays.
+      Each element in the array <del onMouseEnter="mouseEnter(this)" data-issue="612">is</del> <ins onMouseEnter="mouseEnter(this)" data-issue="612">shall be</ins> an array of indirect references to immediate descendant DPart dictionaries. 
+      <del onMouseEnter="mouseEnter(this)" data-issue="612">The array shall not be empty.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="612">Empty arrays shall not be present.</ins>
+      </p>
+    </td>
+  </tr>
+  <tr>
     <td><b>Metadata</b></td>
     <td>stream</td>
     <td>
