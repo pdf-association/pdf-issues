@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 17 December 2025
+last_modified_date: 19 February 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -770,26 +770,28 @@ The cross-reference stream also contains a type 1 entry for the object stream it
 
 <p>...</p>
 
-<p class="location">Change the first bullet point as follows:</p>
+<p class="location">Change the first and second bullet points as follows:</p>
+
 <ul>
-<li>
-<p>The values of all entries shown in "Table 17 - Additional entries specific to a cross-reference
-stream dictionary" shall be direct objects; indirect references shall not be permitted. For arrays
-(the <b>Index</b> and <b>W</b> entries), all of their elements shall be direct objects as well. 
-<del onMouseEnter="mouseEnter(this)" data-issue="246" data-iso="approved">If the stream is encoded, the <b>Filter</b> and <b>DecodeParms</b> 
-entries in "Table 5 - Entries common to all stream dictionaries" shall also be direct objects.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="246" data-iso="approved">The values of all entries shown in "Table 5 - Entries common to 
-all stream dictionaries" shall also be direct objects. For arrays, all array elements shall be direct objects and for 
-dictionaries, all key values shall be direct objects as well. The <b>F</b> entry defined in Table 5 shall not be used.</ins></p>
-
-<p class="location">Append new informative NOTE below the first bullet as follows:</p>
-
-<p class="hangindent"><ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">
-NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") are thus not allowed in cross-reference stream dictionaries.
-</ins></p>
-
-</li>
-<li>...</li>
+  <li>
+    <p>
+      The values of all entries shown in "Table 17 - Additional entries specific to a cross-reference stream dictionary" shall be direct objects; indirect references shall not be permitted. For arrays (the <b>Index</b> and <b>W</b> entries), all of their elements shall be direct objects as well.
+      <del onMouseEnter="mouseEnter(this)" data-issue="246" data-iso="approved">If the stream is encoded, the <b>Filter</b> and <b>DecodeParms</b> entries in "Table 5 - Entries common to all stream dictionaries" shall also be direct objects.</del>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="246" data-iso="approved">The values of all entries shown in "Table 5 - Entries common to all stream dictionaries" shall also be direct objects. For arrays, all array elements shall be direct objects and for dictionaries, all key values shall be direct objects as well. The <b>F</b> entry defined in Table 5 shall not be used.</ins>
+    </p>
+    <p class="location">Append new informative NOTE below the first bullet as follows:</p>
+    <p class="hangindent">
+      <ins onMouseEnter="mouseEnter(this)" data-issue="403" data-iso="approved">NOTE: Metadata streams (see 14.3.2, "Metadata streams") and Associated Files (see 14.13, "Associated Files") are thus not allowed in cross-reference stream dictionaries.</ins>
+    </p>
+  </li>
+  <li>
+    <p>
+      Other cross-reference stream entries
+      <del onMouseEnter="mouseEnter(this)" data-issue="720">not listed in "Table 17 - Additional entries specific to a cross-reference stream dictionary"</del> 
+      may be indirect; in fact, some (such as Root in "Table 15 - Entries in the file trailer dictionary") shall be indirect. 
+    </p>
+  </li>
+  <li>...</li>
 </ul>
 
 
