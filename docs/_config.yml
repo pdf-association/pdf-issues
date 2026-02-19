@@ -54,7 +54,7 @@ google_analytics: G-F90FBHNRDT
 nav_enabled: true
 
 back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top_text: "Back to top (Table of Contents for this clause)"
 
 # Heading anchor links appear on hover over h1-h6 tags in page content
 # allowing users to deep link to a particular heading on a page.
