@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 12. Interactive features
-last_modified_date: 23 November 2025
+last_modified_date: 19 February 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
@@ -1373,6 +1373,17 @@ appearance) string.
     keys. If it contains DSA public/private keys, the digest algorithm is always SHA-1 and this attribute shall be ignored.</del>
     <ins onMouseEnter="mouseEnter(this)" data-issue="158" data-iso="approved">Some signature mechanisms require a specific digest function to be used. In such cases, the value of this entry shall be ignored.</ins>
     </p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>V</b></td>
+    <td>integer</td>
+    <td>
+      <p>(<i>Optional</i>) The minimum required capability of the signature field seed value dictionary parser. 
+      A value of 1 specifies that the parser shall be able to recognise all seed value dictionary entries in a PDF 1.5 file.
+      A value of 2 specifies that it shall be able to recognise all seed value dictionary entries specified <ins onMouseEnter="mouseEnter(this)" data-issue="680">for PDF 1.7 and earlier</ins>. 
+      A value of 3 specifies that it shall be able to recognise all seed value dictionary entries specified <del onMouseEnter="mouseEnter(this)" data-issue="680">in</del> <ins onMouseEnter="mouseEnter(this)" data-issue="680">for</ins> PDF 2.0 and earlier.</p>
+      <p>The <b>Ff</b> entry indicates whether this shall be treated as a required constraint.</p>
     </td>
   </tr>
   <tr>
