@@ -1850,8 +1850,8 @@ DD shall be both 01; all other numerical fields shall default to zero values. A 
 the O field signifies that local time is now and later than UT, a HYPHEN-MINUS signifies that local time is
 earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equal to UT. If no UT information is specified, 
 <del onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the relationship of the specified time to UT shall be considered to be GMT.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins> 
-Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.
+<ins onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins>
+<del onMouseEnter="mouseEnter(this)" data-issue="251">Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.</del>
 </p>
 
 <p>...</p>
