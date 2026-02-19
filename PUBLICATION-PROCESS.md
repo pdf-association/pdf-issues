@@ -177,6 +177,9 @@ bundle install
 bundle exec jekyll serve
 ```
 
+## Ruby 4
+
+It may be necessary to do `gem install google-protobuf --development` to get `bundle install` to work.
 
 # Scripting GitHub pdf-issues
 
@@ -187,3 +190,5 @@ curl -s -H "Accept: application/vnd.github.v3.html+json" https://api.github.com/
 curl -s -H "Accept: application/vnd.github.v3.html+json" https://api.github.com/repos/pdf-association/pdf-issues/issues?state=open\&labels=proposed%20solution | jq '.[] | { number, state, title }'
 
 ```
+
+
