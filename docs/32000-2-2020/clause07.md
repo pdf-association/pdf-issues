@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 19 February 2026
+last_modified_date: 21 February 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -22,6 +22,8 @@ nav_order: 7
     <li>7.3.4 String objects
      <ul>
       <li><a href="#H7.3.4.2">7.3.4.2 Literal strings</a>
+      </li>
+      <li><a href="#H7.3.4.3">7.3.4.3 Hexadecimal strings</a>
       </li>
      </ul>
     </li>
@@ -352,6 +354,13 @@ However, a</del>
   </tr>
 </table>
 
+<h4 id="H7.3.4.3">7.3.4.3 Hexadecimal strings</h4>
+
+<p class="location">Add a new NOTE below the second paragraph as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="731">
+NOTE:  Although white-space characters are permitted in hexadecimal strings, comments are prohibited (see 7.2.4 "Comments").
+</ins></p>
 
 <h3 id="H7.3.7">7.3.7 Dictionary objects</h3>
 
