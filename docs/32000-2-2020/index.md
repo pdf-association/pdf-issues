@@ -3,7 +3,7 @@ subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 isotitle: 'Document management - Portable document format - Part 2: PDF 2.0'
 title: ISO 32000-2:2020 PDF 2.0
-last_modified_date: 19 February 2026
+last_modified_date: 13 March 2026
 nav_order: 1
 has_toc: false
 search_exclude: true
@@ -59,6 +59,7 @@ All issues related to {{ page.subset }} are recorded in the PDF Association's <a
 <li><a href="clause07.html#Table45">Table 45 - Entries in an embedded file parameter dictionary</a></li>
 <li><a href="clause07.html#Table47">Table 47 - Entries in a collection subitem dictionary</a></li>
 <li><a href="clause07.html#Table48">Table 48 - Entries in an extensions dictionary</a></li>
+<li><a href="clause07.html#Table49">Table 49 - Entries in a developer extensions dictionary</a></li>
 <li><a href="clause08.html#Table50">Table 50 - Operator categories</a></li>
 <li><a href="clause08.html#Table52">Table 52 - Device-dependent graphics state parameters</a></li>
 <li><a href="clause08.html#Table56">Table 56 - Graphics state operators</a></li>

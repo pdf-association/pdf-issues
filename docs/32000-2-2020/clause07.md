@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 21 February 2026
+last_modified_date: 13 March 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -2173,6 +2173,24 @@ NOTE: due to the above requirement for direct objects, Metadata streams (see 14.
 </table>
 
 <h3 id="H7.12.3">7.12.3 Developer extensions dictionary</h3>
+
+<p class="location">Modify Table 49 as follows:</p>
+
+<table>
+  <caption id="Table49">Table 49 - Entries in a developer extensions dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>URL</b></td>
+    <td>string</td>
+    <td>
+    (<i><del onMouseEnter="mouseEnter(this)" data-issue="732">Optional</del><ins onMouseEnter="mouseEnter(this)" data-issue="732">Required</ins>; PDF 2.0; shall be a direct object<del onMouseEnter="mouseEnter(this)" data-issue="732"> if present</del></i>) A URL that refers to the documentation for this extension (see Annex E, "Extending PDF"). <ins onMouseEnter="mouseEnter(this)" data-issue="732">The URL assigned by the developer should be unique for each extension.</ins>
+    </td>
+  </tr>
+</table>
 
 <p class="location">Add the following note below Table 49 as follows:</p>
 
