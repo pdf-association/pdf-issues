@@ -10,9 +10,9 @@ nav_order: 5
 <ul class="noprint">
  <li>5.1 Support for secure hash algorithm 3 (SHA-3) hash family
   <ul>
-   <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></a>
+   <li><a href="#H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 - Entries in a signature reference dictionary</del></a>
    </li>
-   <li><a href="#H5.1.4">5.1.4 Changes to ISO 32000-2:2020, Table 260 — SubFilter value algorithm support</a>
+   <li><a href="#H5.1.4">5.1.4 Changes to ISO 32000-2:2020, Table 260 - SubFilter value algorithm support</a>
    </li>
   </ul>
  </li>
@@ -32,7 +32,7 @@ nav_order: 5
 
 <p class="location">Delete all of clause 5.1.3 as follows:</p>
 
-<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 — Entries in a signature reference dictionary</del></h3>
+<h3 id="H5.1.3"><del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">5.1.3 Changes to ISO 32000-2:2020, Table 256 - Entries in a signature reference dictionary</del></h3>
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">
@@ -47,9 +47,9 @@ In ISO 32000-2:2020, Table 256 (“Entries in a signature reference dictionary�
 </p>
 
 
-<h3 id="H5.1.4">5.1.4 Changes to ISO 32000-2:2020, Table 260 — SubFilter value algorithm support</h3>
+<h3 id="H5.1.4">5.1.4 Changes to ISO 32000-2:2020, Table 260 - SubFilter value algorithm support</h3>
 
-<p class="location">Change the last bullet point of the bullted list as follows:</p>
+<p class="location">Change the last bullet point of the bulleted list as follows:</p>
 
 <ul>
   <li>...</li>
