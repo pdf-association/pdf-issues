@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 'Annex D: (normative) Character sets and encodings'
-last_modified_date: 20 June 2025
+last_modified_date: 14 April 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 18
 ---
@@ -67,7 +67,7 @@ nav_order: 18
     <td>0x16</td>
     <td>0026</td>
     <td><del onMouseEnter="mouseEnter(this)" data-issue="285" data-iso="approved">U+0017</del> <ins onMouseEnter="mouseEnter(this)" data-issue="285" data-iso="approved">U+0016</ins></td>
-    <td>(SYNCHRONOUS IDLE)</td>
+    <td>(SYNC<ins onMouseEnter="mouseEnter(this)" data-issue="285">H</ins>RONOUS IDLE)</td>
     <td>U</td>
   </tr>
   <tr>
