@@ -1,7 +1,7 @@
 ---
 subset: XMP RELAX NG schemas
 isodoc: ISO 16684-2:2014
-isotitle: 'Graphic technology — Extensible metadata platform (XMP)Part 2: Description of XMP schemas using RELAX NG'
+isotitle: 'Graphic technology - Extensible metadata platform (XMP)Part 2: Description of XMP schemas using RELAX NG'
 title: ISO 16684-2:2014 XMP RELAX NG schema
 last_modified_date: 11 November 2025
 nav_order: 13

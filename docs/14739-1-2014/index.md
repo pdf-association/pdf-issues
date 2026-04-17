@@ -1,6 +1,6 @@
 ---
 isodoc: ISO 14739-1:2014
-isotitle: 'Document management - 3D use of Product Representation Compact (PRC) formatPart 1: PRC 10001'
+isotitle: 'Document management - 3D use of Product Representation Compact (PRC) format - Part 1: PRC 10001'
 title: ISO 14739-1:2014 PRC
 last_modified_date: 29 May 2024
 nav_order: 10
