@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 2. Normative references
-last_modified_date: 27 January 2026
+last_modified_date: 23 April 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 2
 ---
@@ -16,8 +16,12 @@ nav_order: 2
 
 <p class="location">Change the first paragraph as follows:</p>
 
+<p class="editornote">
+EDITOR NOTE: The change to ISO boilerplate text below clarifies that amendments and corrigenda to <u>explicitly dated</u> normative references <i>shall not</i> apply to PDF. An amendment or corrigenda to an <u>explicitly dated</u> normative reference <i>shall</i> only apply if it is explicitly added as a new normative reference that is itself dated. Incorrect application of amendments and corrigenda can result in invalid and incompatible PDF files that do not comply with this document. For this reason, normative references that are amendments or corrigenda shall always be <u>explicitly dated</u>. No ISO directive or wording shall override this very explicit technical intention.
+</p>
+
 <p>
-The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies <ins onMouseEnter="mouseEnter(this)" data-issue="57" data-iso="approved">(not including any amendments)</ins>. For undated references, the latest edition of the referenced document (including any amendments or corrigenda) applies.
+The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies <ins>(not including any amendments)</ins>. For undated references, the latest edition of the referenced document (including any amendments or corrigenda) applies.
 </p>
 
 <p>...</p>
