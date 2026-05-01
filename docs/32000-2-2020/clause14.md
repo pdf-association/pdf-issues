@@ -869,7 +869,7 @@ NOTE 1: A document can consist of zero, one or more sub-documents and document f
     </td>
   </tr>
   <tr>
-    <td><b>Part</b></td>
+    <td><b>Div</b></td>
     <td>Grouping</td>
     <td>
       <p>Encloses content structured in <ins onMouseEnter="mouseEnter(this)" data-issue="689">a</ins> fashion that is orthogonal to the semantic structure. It can be used as a role mapping target for custom tags for which no suitable standard structure element is available, or where attributes are applied in a non-semantic fashion.
