@@ -12,12 +12,12 @@ search_exclude: true
 <h1>{{ page.isodoc }}: <i>{{ page.isotitle }}</i></h1>
 
 <p>
-This document lists all industry-approved corrections to <a href="https://pdfa.org/resource/iso-14289-pdfua/" target="_blank">"{{ page.isodoc }} <i>{{ page.isotitle }}</i>"</a>.
+This is a placeholder for all industry-approved corrections to <a href="https://pdfa.org/resource/iso-14289-pdfua/" target="_blank">"{{ page.isodoc }} <i>{{ page.isotitle }}</i>"</a>.
 All issues related to {{ page.isodoc }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>
 with the label '<a href="https://github.com/pdf-association/pdf-issues/issues?q=label%3A%22PDF%2FUA-1%22" target="_blank">PDF/UA-1</a>'.
 </p>
 
-<p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
+<!-- p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p -->
 
 <nav>
 <ul>

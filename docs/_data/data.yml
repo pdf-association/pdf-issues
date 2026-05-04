@@ -85,8 +85,6 @@ toc:
 
   - standard: ISO 14289-1:2014
     subfolderitems:
-      - ref: 'Clause 7: File format requirements'
-        url:  clause07.html
 
   - standard: ISO 14739-1:2014
     subfolderitems:
