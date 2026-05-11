@@ -404,11 +404,11 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 
 <p class="location">Append additional text to the end of the last bullet as follows:</p>
 
-<ol>
+<ul>
   <li>...</li>
   <li>In the absence of a PostScript language name in the "name" table, a PostScript language name should be derived from the name by which the font is known in the host operating system. <ins  onMouseEnter="mouseEnter(this)" data-issue="553">An Adobe technical note provides a specification for Postscript name generation that can be used for instance fonts derived from variable fonts. See Adobe Technical Note #5902: "<i>PostScript Name Generation for Variation Fonts</i>".</ins>
   </li>
-</ol>
+</ul>
 
 <p>...</p>
 
