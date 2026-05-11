@@ -400,7 +400,7 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
 
 <h3 id="H9.6.3">9.6.3 TrueType fonts</h3>
 
-<p>...</p>>
+<p>...</p>
 
 <p class="location">Append additional text to the end of the last bullet as follows:</p>
 
@@ -410,7 +410,7 @@ have these fonts, or their font metrics and suitable substitution fonts availabl
   </li>
 </ol>
 
-<p>...</p>>
+<p>...</p>
 
 <h3 id="H9.6.4">9.6.4 Type 3 fonts</h3>
 
