@@ -19,6 +19,10 @@ nav_order: 3
   </li>
   <li><a href="#H3.46">3.46 object stream</a>
   </li>
+  <li><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><a href="#H3.xxx">3.xxx cross-reference section</a></ins>
+  </li>
+  <li><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><a href="#H3.yyy">3.yyy cross-reference sub-section</a></ins>
+  </li>
 </ul>
 </nav>
 <hr>
@@ -74,17 +78,15 @@ stream that contains a sequence of PDF objects (3.44), except those
 
 <p class="location">Add the following new Terms and Definitions (<i>subclause term numbering is not shown</i>):</p>
 
-<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>3.xxx</i><br/>cross-reference section</ins></h2>
+<h2 id="H3.xxx"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>3.xxx</i><br/>cross-reference section</ins></h2>
 <p>
 <ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">begins with a line containing the keyword <b>xref</b> followed by one or more cross-reference subsections (see 7.5.4 "Cross-reference table").</ins>
 </p>
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorrectly used to describe a cross-reference section.</ins></p>
 
-<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>3.yyy</i><br/>cross-reference sub-section</ins></h2>
+<h2 id="H3.yyy"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>3.yyy</i><br/>cross-reference sub-section</ins></h2>
 <p>
 <ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">exist within cross-reference sections and start with a line containing a pair of integers followed by lines containing entries for a contiguous range of object numbers (see 7.5.4 "Cross-reference table").</ins>
 </p>
-
-<p>...</p>
 
 </div>
