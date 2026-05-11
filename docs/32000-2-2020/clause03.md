@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 3. Terms and definitions
-last_modified_date: 10 November 2025
+last_modified_date: 12 May 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 3
 ---
@@ -10,6 +10,8 @@ nav_order: 3
 <nav class="subclauses">
 <ul class="noprint">
   <li><a href="#H3.6">3.6 boolean object<del onMouseEnter="mouseEnter(this)" data-issue="623">s</del></a>
+  </li>
+  <li><a href="#H3.13">3.13 cross-reference table</a>
   </li>
   <li><a href="#H3.31">3.31 ICC profile</a>
   </li>
@@ -36,6 +38,18 @@ nav_order: 3
 <h2 id="H3.6">3.6<br/>boolean object<del onMouseEnter="mouseEnter(this)" data-issue="623">s</del></h2>
 <p>either the keyword <b>true</b> or the keyword <b>false</b></p>
 
+
+<p class="location">Change term 3.13 cross-reference table as follows:</p>
+
+<h2 id="H3.13">3.13<br/>cross-reference table</h2>
+<p>
+<del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">data structure that contains the byte (3.7) offset start for each of the indirect objects (3.33) within the file</del> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">data derived from all cross-reference sections and cross-reference streams in a PDF file that contains information that permits random access to all indirect objects within the PDF file (see 7.5.4 "Cross-reference table").</ins>
+</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorrectly used to describe a cross-reference section.</ins></p>
+
+
 <p class="location">Change term 3.31 ICC profile as follows:</p>
 
 <h2 id="H3.31">3.31<br/>ICC profile</h2>
@@ -58,21 +72,15 @@ stream that contains a sequence of PDF objects (3.44), except those
 <del onMouseEnter="mouseEnter(this)" data-issue="627">of <b>Type</b> <i>stream</i></del><ins onMouseEnter="mouseEnter(this)" data-issue="627">that are stream objects (3.63)</ins> 
 </p>
 
-<p class="location">Add the following new Terms and Definitions (<i>subclause numbering is not shown</i>):</p>
+<p class="location">Add the following new Terms and Definitions (<i>subclause term numbering is not shown</i>):</p>
 
-<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>x.y</i><br/>cross-reference table</ins></h2>
-<p>
-<ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">data derived from all cross-reference sections and cross-reference streams in a PDF file that contains information that permits random access to all indirect objects within the PDF file (see 7.5.4 "Cross-reference table").</ins>
-</p>
-<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorrectly used to describe a cross-reference section.</ins></p>
-
-<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>x.y</i><br/>cross-reference section</ins></h2>
+<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>3.xxx</i><br/>cross-reference section</ins></h2>
 <p>
 <ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">begins with a line containing the keyword <b>xref</b> followed by one or more cross-reference subsections (see 7.5.4 "Cross-reference table").</ins>
 </p>
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE TO ENTRY: common colloquial usage of "cross-reference table" is often incorrectly used to describe a cross-reference section.</ins></p>
 
-<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>x.y</i><br/>cross-reference sub-section</ins></h2>
+<h2><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved"><i>3.yyy</i><br/>cross-reference sub-section</ins></h2>
 <p>
 <ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">exist within cross-reference sections and start with a line containing a pair of integers followed by lines containing entries for a contiguous range of object numbers (see 7.5.4 "Cross-reference table").</ins>
 </p>
@@ -80,5 +88,3 @@ stream that contains a sequence of PDF objects (3.44), except those
 <p>...</p>
 
 </div>
-
-<hr>
