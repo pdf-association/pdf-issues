@@ -473,7 +473,7 @@ support a standard set of filters that fall into two main categories:
  <li>...</li>
 </ul>
 
-<p class="location">Change EXAMPLE 1 code as follows:</p>
+<p class="location">Change EXAMPLE 3 code as follows:</p>
 
 <pre><code>1 0 obj
 &lt;&lt; /Length 44<del onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">7</del><ins onMouseEnter="mouseEnter(this)" data-issue="527" data-iso="approved">9</ins>
@@ -1860,7 +1860,7 @@ the O field signifies that local time is now and later than UT, a HYPHEN-MINUS s
 earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equal to UT. If no UT information is specified, 
 <del onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the relationship of the specified time to UT shall be considered to be GMT.</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins>
-<del onMouseEnter="mouseEnter(this)" data-issue="251">Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.</del>
 </p>
 
 <p>...</p>
