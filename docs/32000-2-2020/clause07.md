@@ -1205,7 +1205,7 @@ there is no way to specify that metadata is to be left unencrypted in these case
 
 <p>...</p>
 
-<p class="location">Correct the last example in subclause 7.6.6 as follows (a SLASH was missing from the key value name "<code>V2</code>"):</p>
+<p class="location">Correct the last example in subclause 7.6.6 as follows (a SOLIDUS was missing from the key value name "<code>V2</code>"):</p>
 
 <pre><code>...
 8 0 obj                                        %Encryption dictionary

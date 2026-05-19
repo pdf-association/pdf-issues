@@ -38,7 +38,7 @@ nav_order: 22
 
 <p class="fake-h1">{{ page.title }}</p>
 
-<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect PDF content stream operator <del onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved"><code>/BDC</code></del> need to replaced by <ins onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved"><code>BDC</code></ins> (PDF content operators do not have leading SLASH) throughout Annex H.</p>
+<p class="editornote">EDITOR NOTE: as a result of <a href="https://github.com/pdf-association/pdf-issues/issues/415">Errata #415</a>, all occurrences of incorrect PDF content stream operator <del onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved"><code>/BDC</code></del> need to replaced by <ins onMouseEnter="mouseEnter(this)" data-issue="415" data-iso="approved"><code>BDC</code></ins> (PDF content operators do not have leading SOLIDUS) throughout Annex H.</p>
 
 <h2 id="HH.2">H.2 Minimal PDF file</h2>
 
