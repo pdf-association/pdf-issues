@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 14. Document interchange
-last_modified_date: 19 February 2026
+last_modified_date: 22 May 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 14
 ---
@@ -13,6 +13,8 @@ nav_order: 14
  </li>
  <li>14.3 Metadata
   <ul>
+   <li><a href="#H14.3.1">14.3.1 General</a>
+   </li>
    <li><a href="#H14.3.2">14.3.2 Metadata streams</a>
    </li>
    <li><a href="#H14.3.3">14.3.3 Document information dictionary</a>
@@ -227,6 +229,15 @@ This feature has been <del onMouseEnter="mouseEnter(this)" data-issue="367" data
 </p>
 
 <h2 id="H14.3">14.3 Metadata</h2>
+
+<h3 id="H14.3.1">14.3.1 Metadata streams</h3>
+
+<p class="location">Change the first bulleted point as follows:</p>
+
+<ul>
+  <li>For document <ins onMouseEnter="mouseEnter(this)" data-issue="742">meta</ins>data and for object-level metadata: In a metadata stream (PDF 1.4) associated with the document or a component of the document (14.3.2, "Metadata streams"). Metadata streams are the preferred method in PDF 2.0. </li>
+  <li>...</li>
+</ul>
 
 <h3 id="H14.3.2">14.3.2 Metadata streams</h3>
 
