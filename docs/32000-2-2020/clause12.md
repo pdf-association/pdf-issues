@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 12. Interactive features
-last_modified_date: 19 February 2026
+last_modified_date: 22 May 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
@@ -1873,10 +1873,29 @@ establishes the exact contents of the complete PDF file at the time indicated in
     </td>
   </tr>
   <tr>
+      <td><b>GPTS</b></td>
+      <td>array</td>
+      <td>
+       <p>
+          (<i>Required; PDF 2.0</i>) An array of numbers that shall be taken pairwise, defining points in geographic space as degrees of latitude and longitude, respectively when 
+          defining a geographic coordinate system. These values shall be based on the geographic coordinate system described in the <b>GCS</b> dictionary. When defining a 
+          projected coordinate system, this array contains values in a planar projected coordinate space as eastings and northings. For <b>Geospatial3D</b>, when Geospatial 
+          feature information is present (requirement type <b>Geospatial3D</b>) in a 3D <ins onMouseEnter="mouseEnter(this)" data-issue="284">or RichMedia</ins> 
+          annotation, the <b>GPTS</b> array is required to hold 3D point coordinates as triples rather than pairwise where the third value of each tripe is an elevation value.
+        </p>
+        <p>...</p>
+       </td>
+  </tr> 
+  <tr>
       <td><b>LPTS</b></td>
       <td>array</td>
       <td>
-      (<i><del onMouseEnter="mouseEnter(this)" data-issue="533">Optional</del><ins onMouseEnter="mouseEnter(this)" data-issue="533">Required</ins>; PDF 2.0</i>) ...
+      (<i><del onMouseEnter="mouseEnter(this)" data-issue="533">Optional</del><ins onMouseEnter="mouseEnter(this)" data-issue="533">Required</ins>; PDF 2.0</i>)
+      An array of numbers that shall be taken pairwise to define points in a 2D unit square. The unit square is mapped to the rectangular bounds of 
+      the Viewport, image XObject, or forms XObject that contains the measure dictionary. This array shall contain the same number of number pairs as the <b>GPTS</b> 
+      array; each number pair is the unit square object position corresponding to the geospatial position in the <b>GPTS</b> array. For <b>Geospatial3D</b>, when Geospatial feature 
+      information is present in a 3D <ins onMouseEnter="mouseEnter(this)" data-issue="284">or RichMedia</ins> annotation (requirement type <b>Geospatial3D</b>), the LPTS 
+      array is required to hold 3D point coordinates as triples corresponding to the <b>GPTS</b> array in the 3D annotation view world coordinate space. 
       </td>
   </tr> 
 </table>

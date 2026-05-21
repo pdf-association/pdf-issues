@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 13. Multimedia features
-last_modified_date: 25 November 2025
+last_modified_date: 22 May 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 13
 ---
@@ -632,6 +632,24 @@ while the <i>RichMediaContent dictionary</i> can be shared across rich-media ann
     PDF processor and the initial state of artwork in those states. See "Table 334 — Entries in a RichMediaSettings dictionary".
     </p>
     <p>...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="284"><b>3DU</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="284">dictionary</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="284">
+      (<i>Optional; PDF 2.0</i>) A 3D units dictionary that specifies the units definitions for the 3D data associated with this annotation. See "Table 325 - Entries in a 3D units dictionary". 
+      </ins>
+    </td>
+  </tr>
+  <tr>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="284"><b>GEO</b></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="284">dictionary</ins></td>
+    <td>
+      <ins onMouseEnter="mouseEnter(this)" data-issue="284">
+      (<i>Optional; PDF 2.0</i>) For <b>Geospatial3D</b> requirement type, a geospatial information section may be present as an attribute within a RichMedia Annotation. There are further conditions placed on the <b>GPTS</b> and <b>LPTS</b> arrays within the geo-reference coordinate tables to include 3D point values. See 12.10.2, "Geospatial measure dictionary".
+      </ins>
     </td>
   </tr>
 </table>
