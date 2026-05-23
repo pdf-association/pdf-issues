@@ -1630,14 +1630,14 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>Type</b></td>
     <td>name</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
     </td>
   </tr>
   <tr>
     <td><b>BBox</b></td>
     <td>rectangle</td>
     <td>
-    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
+    (<i>Optional; <ins onMouseEnter="mouseEnter(this)" data-issue="346" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="226" data-iso="approved">NOTE: BLSE attributes also define a <b>BBox</b> attribute (see "Table 379 — Additional standard layout attributes specific to block-level structure elements").</ins></p>
     </td>
   </tr>
@@ -1645,7 +1645,7 @@ NOTE 1 The description of each of the standard <ins onMouseEnter="mouseEnter(thi
     <td><b>Subtype</b></td>
     <td>name</td>
     <td>
-    (<i>Optional; <del onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">PDF 1.7</del><ins onMouseEnter="mouseEnter(this)" data-issue="347" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
+    (<i>Optional; <del onMouseEnter="mouseEnter(this)" data-issue="346" data-iso="approved">PDF 1.7</del><ins onMouseEnter="mouseEnter(this)" data-issue="346" data-iso="approved">not inheritable; PDF 2.0</ins></i>) ...
     </td>
   </tr>
 </table>
