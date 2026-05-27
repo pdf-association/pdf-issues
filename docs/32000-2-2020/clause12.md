@@ -2005,6 +2005,18 @@ In addition to the keys in "Table 273 - Entries common to all requirement dictio
      <p>...</p>
     </td>
   </tr>
+  <tr>
+    <td><b>Encryption</b></td>
+    <td>
+      <p>Requires support for the specific set of encryption parameters that are specified by 
+        the encryption dictionary provided as the value of the Encrypt key in the 
+        requirement dictionary (see "Table 273 - Entries common to all requirement 
+        dictionaries" and "Table 274 - 
+        <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">Entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">Additional entries</ins> for specific types of requirements"). 
+      </p>
+      <p>...</p>
+    </td>
+  </tr>
 </table>
 
 </div>
