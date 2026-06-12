@@ -17,13 +17,13 @@ nav_order: 1
 <p class="location">Based on <a href="https://github.com/pdf-association/pdfa-twg/issues/56">PDF/A Errata #56</a>, change the RELAX NG XML as follows:</p>
 
 <pre><code>
-   &lt;rng:define name=”xmp.Base.Rating” combine=”choice”&gt;
+   &lt;rng:define name="xmp.Base.Rating" combine="choice"&gt;
       &lt;rng:choice&gt;
          <ins>&lt;!-- NOTE: Earlier versions of XMP specifications specified this property as Integer --&gt;</ins>
-         &lt;rng:value type=”<del>float</del><ins>double</ins>”&gt;-1&lt;/rng:value&gt; 
-         &lt;rng:data type=”<del>float</del><ins>double</ins>”&gt;
-            &lt;rng:param name=”minInclusive”&gt;0&lt;/rng:param&gt; 
-            &lt;rng:param name=”maxInclusive”&gt;5&lt;/rng:param&gt;
+         &lt;rng:value type="<del>float</del><ins>double</ins>"&gt;-1&lt;/rng:value&gt; 
+         &lt;rng:data type="<del>float</del><ins>double</ins>"&gt;
+            &lt;rng:param name="minInclusive"&gt;0&lt;/rng:param&gt; 
+            &lt;rng:param name="maxInclusive"&gt;5&lt;/rng:param&gt;
          &lt;/rng:data&gt;
       &lt;/rng:choice&gt;
    &lt;/rng:define&gt;

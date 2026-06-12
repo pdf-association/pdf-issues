@@ -36,7 +36,7 @@ nav_order: 5
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="236" data-iso="approved">
-In ISO 32000-2:2020, Table 256 (“Entries in a signature reference dictionary”; 12.8.1, “General”), the following text is added to the end of the current <b>DigestMethod</b> value text:
+In ISO 32000-2:2020, Table 256 ("Entries in a signature reference dictionary"; 12.8.1, "General"), the following text is added to the end of the current <b>DigestMethod</b> value text:
 </del>
 </p>
 

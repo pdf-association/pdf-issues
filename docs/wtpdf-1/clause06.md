@@ -34,7 +34,7 @@ nav_order: 6
 <p class="location">Correct the third paragraph as follows:</p>
 
 <p>
-Files conforming to the conformance level for reuse shall include a PDF Declaration with the URI identifier “http://pdfa.org/declarations/wtpdf<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#reuse1.0” as its <i>pdfd:conformsTo</i> entry. The PDF Declaration may provide additional claim information using the <i>pdfd:claimData</i> entry.
+Files conforming to the conformance level for reuse shall include a PDF Declaration with the URI identifier "http://pdfa.org/declarations/wtpdf<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#reuse1.0" as its <i>pdfd:conformsTo</i> entry. The PDF Declaration may provide additional claim information using the <i>pdfd:claimData</i> entry.
 </p>
 
 <p class="location">Correct the example as follows:</p>
@@ -51,7 +51,7 @@ Files conforming to the conformance level for reuse shall include a PDF Declarat
 <p class="location">Correct the fourth paragraph as follows:</p>
 
 <p>
-Files conforming to the conformance level for accessibility shall include a PDF Declaration with the URI identifier “http://pdfa.org/declarations/wtpdf<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#accessibility1.0” as its <i>pdfd:conformsTo</i> entry. The PDF Declaration may provide additional claim information using the <i>pdfd:claimData</i> entry.
+Files conforming to the conformance level for accessibility shall include a PDF Declaration with the URI identifier "http://pdfa.org/declarations/wtpdf<del onMouseEnter="mouseEnter(this)" data-issue="395">/</del>#accessibility1.0" as its <i>pdfd:conformsTo</i> entry. The PDF Declaration may provide additional claim information using the <i>pdfd:claimData</i> entry.
 </p>
 
 <p class="location">Correct the example as follows:</p>
