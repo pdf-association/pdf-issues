@@ -37,7 +37,7 @@ the word <del onMouseEnter="mouseEnter(this)" data-issue="259" data-iso="approve
 <ul>
 <li>...</li>
 <li>
-<del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1:2010 dated reference for ICC.1 can be supplemented by the Errata list and approved revisions available from the ICC website (http://color.org/icc_specs2.xalter) – see 8.6.5.5, "ICCBased colour spaces";</del>
+<del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1:2010 dated reference for ICC.1 can be supplemented by the Errata list and approved revisions available from the ICC website (http://color.org/icc_specs2.xalter) - see 8.6.5.5, "ICCBased colour spaces";</del>
 </li>
 <li>...</li>
 </ul>

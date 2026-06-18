@@ -685,7 +685,7 @@ conditions and responses that occur in response to certain events, such as activ
     <td><b>View</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Optional; PDF 2.0</i>) An indirect object reference to a 3D view dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="127" data-iso="approved">"Table 315 — Entries in a 3D view dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="127" data-iso="approved">13.7.2.3.5, "View dictionary"</ins> that shall also be referenced by the <b>Views</b> array within the annotation’s RichMediaContent dictionary (see "Table 341 — Entries in a RichMediaContent dictionary").</p>
+    <p>(<i>Optional; PDF 2.0</i>) An indirect object reference to a 3D view dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="127" data-iso="approved">"Table 315 — Entries in a 3D view dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="127" data-iso="approved">13.7.2.3.5, "View dictionary"</ins>) that shall also be referenced by the <b>Views</b> array within the annotation's RichMediaContent dictionary (see "Table 341 — Entries in a RichMediaContent dictionary").</p>
     <p>Default value: The first element in the <b>Views</b> array of the <del onMouseEnter="mouseEnter(this)" data-issue="145" data-iso="approved">annotation specified in the RichMediaContent dictionary</del> <ins onMouseEnter="mouseEnter(this)" data-issue="145" data-iso="approved">RichMediaContent dictionary specified in the annotation</ins>. If a <b>Views</b> array does not exist, default values for the components of a 3D view dictionary (see "Table 344 — Additional entries in a 3D view dictionary") are used.</p>
     </td>
   </tr>

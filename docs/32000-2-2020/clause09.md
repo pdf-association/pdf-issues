@@ -109,7 +109,7 @@ The horizontal scaling parameter, 𝑇<sub>h</sub>, adjusts the width of glyphs 
 <ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">is the normalized value of the operand to the <b>Tz</b> operator which</ins> 
 shall be specified as a percentage of the normal width of the glyphs, with 100 being the normal width 
 <ins onMouseEnter="mouseEnter(this)" data-issue="376" data-iso="approved">of 100%, representing a scaling value of 1.0 for 𝑇<sub>h</sub></ins>. 
-The scaling shall apply to the horizontal coordinate in text space, independently of the writing mode. It shall affect both the glyph’s shape and its horizontal displacement (that is, its displacement vector). If the writing mode is horizontal, it shall also affect the spacing parameters 𝑇<sub>c</sub> and 𝑇<sub>w</sub>, as well as any positioning adjustments performed by the <b>TJ</b> operator. "Figure 58 — Horizontal scaling" shows the effect of horizontal scaling.
+The scaling shall apply to the horizontal coordinate in text space, independently of the writing mode. It shall affect both the glyph's shape and its horizontal displacement (that is, its displacement vector). If the writing mode is horizontal, it shall also affect the spacing parameters 𝑇<sub>c</sub> and 𝑇<sub>w</sub>, as well as any positioning adjustments performed by the <b>TJ</b> operator. "Figure 58 — Horizontal scaling" shows the effect of horizontal scaling.
 </p>
 
 <p class="location">Update Figure 58 as follows:</p>
@@ -548,7 +548,7 @@ This example shows the definition of a Type 3 font with only two glyphs - a fill
 <p class="location">Change the second paragraph as follows:</p>
 
 <p>
-The <b>CIDSystemInfo</b> entry in a CIDFont is a dictionary that shall specify the CIDFont’s character collection. 
+The <b>CIDSystemInfo</b> entry in a CIDFont is a dictionary that shall specify the CIDFont's character collection. 
 The CIDFont need not contain glyph descriptions for all the CIDs in a collection; it may contain a subset. 
 The <b>CIDSystemInfo</b> entry in a CMap file shall be 
 <del onMouseEnter="mouseEnter(this)" data-issue="518" data-iso="approved">either</del> a single dictionary
@@ -680,7 +680,7 @@ a higher-numbered supplement than the one corresponding to the supported PDF ver
     <td><b>MissingWidth</b></td>
     <td>number</td>
     <td>
-      (<i>Optional</i>) The width to use for character codes whose widths are not specified in a font dictionary’s <b>Widths</b> array. 
+      (<i>Optional</i>) The width to use for character codes whose widths are not specified in a font dictionary's <b>Widths</b> array. 
       <del onMouseEnter="mouseEnter(this)" data-issue="453" data-iso="approved">This shall have a predictable effect only if all such codes map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry.</del>
       <ins onMouseEnter="mouseEnter(this)" data-issue="453" data-iso="approved">To ensure predictable results, all such codes must map to glyphs whose actual widths are the same as the value of the <b>MissingWidth</b> entry - otherwise results are implementation dependent.</ins> 
       Default value: <i>0</i>.

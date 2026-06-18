@@ -277,12 +277,12 @@ stream
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-PDF file identifiers shall be defined by the <b>ID</b> entry in a PDF file’s trailer dictionary (see 7.5.5, "File trailer"). 
+PDF file identifiers shall be defined by the <b>ID</b> entry in a PDF file's trailer dictionary (see 7.5.5, "File trailer"). 
 The value of this entry shall be an array of two byte strings. 
 The first byte string shall be a permanent identifier based on the <del onMouseEnter="mouseEnter(this)" data-issue="328" data-iso="approved">contents of the</del> PDF file at the time it was originally created and shall not change when the PDF file is updated. 
-The second byte string shall be a changing identifier based on the PDF file<del onMouseEnter="mouseEnter(this)" data-issue="328" data-iso="approved">’s contents</del> at the time it was last updated (see 7.5.6, "Incremental updates"). 
+The second byte string shall be a changing identifier based on the PDF file<del onMouseEnter="mouseEnter(this)" data-issue="328" data-iso="approved">'s contents</del> at the time it was last updated (see 7.5.6, "Incremental updates"). 
 When a PDF file is first written, both identifiers shall be set to the same value. 
-If the first identifier in the reference matches the first identifier in the referenced file’s <b>ID</b> entry, and the last identifier in the reference matches the last identifier in the referenced file’s <b>ID</b> entry, it is very likely that the correct and unchanged PDF file has been found. If only the first identifier matches, a different version of the correct PDF file has been found.
+If the first identifier in the reference matches the first identifier in the referenced file's <b>ID</b> entry, and the last identifier in the reference matches the last identifier in the referenced file's <b>ID</b> entry, it is very likely that the correct and unchanged PDF file has been found. If only the first identifier matches, a different version of the correct PDF file has been found.
 </p>
 
 <p class="location">Change the second paragraph as follows:</p>
@@ -501,7 +501,7 @@ operators (<b>BMC</b>…<b>EMC</b>, <b>BDC</b>…<b>EMC</b>, <del onMouseEnter="
     Each integer key in the number tree shall correspond to a single page of the document or to an individual object (such as an annotation or an XObject) that is a content item in its own right. 
     The integer key shall be the value of the <b>StructParent</b> or <b>StructParents</b> entry in that object (see 14.7.5.4, "Finding structure elements from content items"). 
     The form of the associated value shall depend on the nature of the object: 
-    For an object that is a content item in its own right, the value shall be an indirect reference to the object’s parent element (the structure element that contains it as a content item). 
+    For an object that is a content item in its own right, the value shall be an indirect reference to the object's parent element (the structure element that contains it as a content item). 
     For a page object or content stream containing marked-content sequences that are content items, the value shall be an array of references to the parent elements of those marked-content sequences. 
     <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">This array may contain elements that are <b>null</b>.</ins> 
     See 14.7.5.4, "Finding structure elements from content items" for further discussion.
@@ -672,7 +672,7 @@ NOTE 1: It is not generally expected that a URI for a namespace name will resolv
 <p class="location">Change the second paragraph as follows:</p>
 
 <p>
-The parent tree is a number tree (see 7.9.7, "Number trees"), accessed from the <b>ParentTree</b> entry in a document’s structure tree root 
+The parent tree is a number tree (see 7.9.7, "Number trees"), accessed from the <b>ParentTree</b> entry in a document's structure tree root 
 ("Table 354 — Entries in the structure tree root"). 
 The tree shall contain an entry for each object that is a content item of 
 <del onMouseEnter="mouseEnter(this)" data-issue="343" data-iso="approved">at least one</del>
@@ -686,8 +686,8 @@ The key for each entry shall be an integer given as the value of the <b>StructPa
 <ul>
  <li>...</li>
  <li>
- For a content stream containing marked-content sequences that are content items, the value shall be an array of indirect references to the sequences’ parent structure elements <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">or <b>null</b> for unused marked content identifiers (MCIDs) or those that do not have a structural parent</ins>. 
- The array element corresponding to each sequence shall be found by using the sequence’s marked-content identifier <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">(MCID)</ins> as a zero-based index into the array.
+ For a content stream containing marked-content sequences that are content items, the value shall be an array of indirect references to the sequences' parent structure elements <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">or <b>null</b> for unused marked content identifiers (MCIDs) or those that do not have a structural parent</ins>. 
+ The array element corresponding to each sequence shall be found by using the sequence's marked-content identifier <ins onMouseEnter="mouseEnter(this)" data-issue="308" data-iso="approved">(MCID)</ins> as a zero-based index into the array.
  </li>
 </ul>
 
@@ -720,7 +720,7 @@ Depending on the type of content item, this entry may appear in the page object 
     <td><b>StructParents</b></td>
     <td>integer</td>
     <td>
-    (<i>Required for all content streams containing marked-content sequences that are structural content items; PDF 1.3</i>) The integer key of this object’s entry in the structural parent tree. 
+    (<i>Required for all content streams containing marked-content sequences that are structural content items; PDF 1.3</i>) The integer key of this object's entry in the structural parent tree. 
     <del onMouseEnter="mouseEnter(this)" data-issue="463" data-iso="approved">At most one of these two entries shall be present in a given object.
     An object may be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</del>
     </td>
@@ -791,7 +791,7 @@ The <b>C</b> entry in a structure element dictionary (see "Table 355 — Entries
 an array of class names 
 (<del onMouseEnter="mouseEnter(this)" data-issue="305" data-iso="approved">typically</del><ins onMouseEnter="mouseEnter(this)" data-issue="305" data-iso="approved">possibly</ins> accompanied by revision numbers as well <ins onMouseEnter="mouseEnter(this)" data-issue="305" data-iso="approved"><i>(deprecated in PDF 2.0)</i></ins>; see 14.7.6.3, "Attribute revision numbers"). For each class named in
 the <b>C</b> entry, the corresponding attribute object or objects shall be considered to be attached to the given structure element, along with
-those identified in the element’s <b>A</b> entry. 
+those identified in the element's <b>A</b> entry. 
 <ins onMouseEnter="mouseEnter(this)" data-issue="289" data-iso="approved">Attribute objects included through a class and through an array of classes within the <b>C</b>
 entry may have the value of <b>O</b> and <b>NS</b> repeated. If a given attribute is specified more than once across the attribute objects, the later
 (in array order) shall take precedence.</ins>
@@ -1123,7 +1123,7 @@ endobj
 If the <b>Headers</b> attribute (see 14.8.5, "Standard structure attributes") is not specified, any cell in a table may have multiple headers associated with it. These headers are defined either explicitly by the <b>Headers</b> attribute, or implicitly, by the following algorithm:
 </del>
 <ins>
-When a cell does not explicitly identify its headers through a <b>Headers</b> attribute, the following algorithm may be used to determine the cell’s headers, if any:
+When a cell does not explicitly identify its headers through a <b>Headers</b> attribute, the following algorithm may be used to determine the cell's headers, if any:
 </ins>
 </p>
 
@@ -1232,7 +1232,7 @@ In addition to the standard structure attributes described in 14.8.5.2, "Standar
 <p class="location">Change first paragraph as follows:</p>
 
 <p>
-Each attribute object has an owner, specified by the object's <b>O</b> entry, or, if the value of <b>O</b> is <i>NSO</i>, by the object’s <b>NS</b> entry, which determines the interpretation of the attributes defined in the object's dictionary. Multiple owners may define like-named attributes with different value types or interpretations. Tagged PDF defines a set of standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute owners as shown in "Table 376 — Standard structure attribute owners".
+Each attribute object has an owner, specified by the object's <b>O</b> entry, or, if the value of <b>O</b> is <i>NSO</i>, by the object's <b>NS</b> entry, which determines the interpretation of the attributes defined in the object's dictionary. Multiple owners may define like-named attributes with different value types or interpretations. Tagged PDF defines a set of standard <ins onMouseEnter="mouseEnter(this)" data-issue="224" data-iso="approved">structure</ins> attribute owners as shown in "Table 376 — Standard structure attribute owners".
 </p>
 
 <p>...</p>
@@ -1242,7 +1242,7 @@ Each attribute object has an owner, specified by the object's <b>O</b> entry, or
 <table>
   <caption id="Table376">Table 376 - Standard structure attribute owners</caption>
   <tr>
-    <th>Owner value for the attribute object’s O entry</th>
+    <th>Owner value for the attribute object's O entry</th>
     <th>Description</th>
   </tr>
   <tr>
@@ -2030,7 +2030,7 @@ Other PDF value types shall not be used.
 
 <p>
 <i>Associated files</i> provide a means to associate content in other formats with objects of a PDF file and to identify the relationship between them. 
-<del onMouseEnter="mouseEnter(this)" data-issue="568">Such associated files are designated using file specification dictionaries (see 7.11.3, "File specification dictionaries"), and <b>AF</b> keys are used in object dictionaries to connect the associated file’s specification dictionaries with those objects.</del> 
+<del onMouseEnter="mouseEnter(this)" data-issue="568">Such associated files are designated using file specification dictionaries (see 7.11.3, "File specification dictionaries"), and <b>AF</b> keys are used in object dictionaries to connect the associated file's specification dictionaries with those objects.</del> 
 <ins onMouseEnter="mouseEnter(this)" data-issue="568">Associated files for object dictionaries are designated using an <b>AF</b> entry that shall be an array of file specification dictionaries (see 7.11.3, "File specification dictionaries") that contain an <b>AFRelationship</b> entry. Associated files for marked content sequences shall use an <b>AF</b> marked content tag (see 14.13.5, "Associated files linked to graphics objects"). The <b>AF</b> entry or tag connects the associated file specification dictionaries with an object or sequence of graphic objects.</ins>
 Some PDF objects that can provide the <b>AF</b> keys are:
 </p>
@@ -2050,7 +2050,7 @@ Unlike other types of marked-content tags, the <b>DP</b> or <b>MP</b> marked-con
 <p class="location">Change NOTE 3 as follows:</p>
 
 <p class="hangingindent">
-NOTE 3 The combination of a <b>DP</b> or <b>MP</b> operator with an <b>AF</b> tag (when used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">ies</ins>) is forbidden, as these operators only mark a single point and thus don’t enable connections between any specific sequence of content operators and their associated file.
+NOTE 3 The combination of a <b>DP</b> or <b>MP</b> operator with an <b>AF</b> tag (when used to refer to a<ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">n array of</ins> file specification dictionar<del onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">y</del><ins onMouseEnter="mouseEnter(this)" data-issue="374" data-iso="approved">ies</ins>) is forbidden, as these operators only mark a single point and thus don't enable connections between any specific sequence of content operators and their associated file.
 </p>
 
 <p class="location">Change the paragraph below NOTE 3 as follows:</p>

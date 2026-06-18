@@ -100,7 +100,7 @@ stream
 &lt;rdf:li xml:lang="x-default"&gt;… <i>document title (preserved)</i> …&lt;/rdf:li&gt;
 &lt;/rdf:Alt&gt;&lt;/dc:title&gt;
 &lt;dc:creator&gt;&lt;rdf:Seq&gt;
-&lt;rdf:li&gt;… <i>document author’s personal name (preserved)</i> …&lt;/rdf:li&gt;
+&lt;rdf:li&gt;… <i>document author's personal name (preserved)</i> …&lt;/rdf:li&gt;
 &lt;/rdf:Seq&gt;&lt;/dc:creator&gt;
 &lt;/rdf:Description&gt;
 &lt;rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"&gt;
@@ -130,7 +130,7 @@ endobj
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-The structure element’s structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents. The<b>TOCI</b> value specifies an individual member of a table of contents. The <b>TOC</b> value specifies a list made up of other table of contents items that are individual members of the table of contents and/or lists of table of contents items. (The trailing character in <b>TOCI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".)
+The structure element's structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a table of contents. The<b>TOCI</b> value specifies an individual member of a table of contents. The <b>TOC</b> value specifies a list made up of other table of contents items that are individual members of the table of contents and/or lists of table of contents items. (The trailing character in <b>TOCI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".)
 </p>
 
 <p class="location">Insert a new NOTE after the first paragraph as follows:</p>
@@ -194,7 +194,7 @@ endobj
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>
-The structure element’s structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a list. The <b>LI</b> value specifies an individual list entry. The <b>L</b> value specifies a list made up of individual list entries and/or lists of list entries. The trailing character in <b>LI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".
+The structure element's structure type entry (<b>S</b>) may have values that establish hierarchical relationships between entries in a list. The <b>LI</b> value specifies an individual list entry. The <b>L</b> value specifies a list made up of individual list entries and/or lists of list entries. The trailing character in <b>LI</b> is an <del onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">upper case</del> <ins onMouseEnter="mouseEnter(this)" data-issue="75" data-iso="approved">uppercase</ins> "i".
 </p>
 
 <p>...</p>

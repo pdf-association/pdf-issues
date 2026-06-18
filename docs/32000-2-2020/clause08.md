@@ -206,7 +206,7 @@ nav_order: 8
 <p class="location">Append a new sentence to the last paragraph as follows:</p>
 
 <p>
-Occurrences of the <b>q</b> and <b>Q</b> operators shall be balanced within a given content stream (or within the sequence of streams specified in a page dictionary’s <b>Contents</b> array).
+Occurrences of the <b>q</b> and <b>Q</b> operators shall be balanced within a given content stream (or within the sequence of streams specified in a page dictionary's <b>Contents</b> array).
 <ins onMouseEnter="mouseEnter(this)" data-issue="368" data-iso="approved">See 9.4.1, "General" for additional information that must be managed as part of the graphics state stack when <b>q</b> and <b>Q</b> operators occur within text objects.</ins>
 </p>
 
@@ -244,7 +244,7 @@ a miter to a bevel.
     <td><i>flatness</i></td>
     <td><b>i</b></td>
     <td>
-      Set the flatness tolerance in the graphics state (see 10.7.2, "Flatness tolerance"). <del onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved"><i>flatness</i> is a number in the range 0 to 100; a value of 0 shall specify the output device’s default flatness tolerance.</del>
+      Set the flatness tolerance in the graphics state (see 10.7.2, "Flatness tolerance"). <del onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved"><i>flatness</i> is a number in the range 0 to 100; a value of 0 shall specify the output device's default flatness tolerance.</del>
     </td>
   </tr>
 </table>
@@ -343,7 +343,7 @@ NOTE: While these operators are primarily for path-painting, they also serve a p
   </tr>
   <tr>
     <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">4.<i>x.y.z</i> where <i>x</i> &le; 3</ins></td>
-    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1:2010, <i>Image technology colour management – Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
+    <td><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ISO 15076-1:2010, <i>Image technology colour management - Architecture, profile format and data structure — Part 1: Based on ICC.1:2010</i></ins></td>
   </tr>
 </table>
 
@@ -467,7 +467,7 @@ The pattern cell can include graphical elements such as filled areas, text, and 
 
 <p class="location">Remove the green line below the matrix that is 2 paragraphs before Table 85 as follows:</p>
 
-<p>The coordinates of the control points in a tensor-product patch shall be specified in the shading’s data stream in the following order:</p>
+<p>The coordinates of the control points in a tensor-product patch shall be specified in the shading's data stream in the following order:</p>
 
 <table style="margin-left: auto; margin-right: auto; border: none;" cellspacing="0" cellpadding="0">
   <tr>
@@ -592,7 +592,7 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       as a source of mask shape or mask opacity values in the transparent imaging model. The alpha source parameter in the graphics state
       determines whether the mask values shall be interpreted as shape or opacity.
       </p>
-      <p>If present, this entry shall override the current soft mask in the graphics state, as well as the image’s <b>Mask</b> entry, if any.
+      <p>If present, this entry shall override the current soft mask in the graphics state, as well as the image's <b>Mask</b> entry, if any.
       However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect. 
       If <b>SMask</b> is absent and <b>SMaskInData</b> has value 0, the image shall have no associated soft mask (although the current soft mask in the graphics state may still apply). 
       <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved"><b>SMask</b> shall not be present if <b>SMaskInData</b> has a non-zero value (if present, <b>SMask</b> shall be ignored).</ins>
@@ -613,10 +613,10 @@ The pattern cell can include graphical elements such as filled areas, text, and 
       <ol style="counter-reset: list-item 0;">
         <li>
           If present, encoded soft-mask image information shall be ignored.
-          <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">If present, <b>SMask</b> shall override the current soft mask in the graphics state, as well as the image’s <b>Mask</b> entry, if any. However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect.</ins>
+          <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">If present, <b>SMask</b> shall override the current soft mask in the graphics state, as well as the image's <b>Mask</b> entry, if any. However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect.</ins>
         </li>
-        <li>The image’s data stream includes encoded soft-mask values. A PDF processor shall create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.</li>
-        <li>The image’s data stream includes colour channels that have been premultiplied with an opacity channel; the image data also includes the opacity channel. A PDF processor shall create a soft-mask image from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.</li>
+        <li>The image's data stream includes encoded soft-mask values. A PDF processor shall create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.</li>
+        <li>The image's data stream includes colour channels that have been premultiplied with an opacity channel; the image data also includes the opacity channel. A PDF processor shall create a soft-mask image from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.</li>
       </ol>
       <p>
         If this entry has a non-zero value, <b>SMask</b> shall not be specified
@@ -653,7 +653,7 @@ The pattern cell can include graphical elements such as filled areas, text, and 
     <td>byte string</td>
     <td>
       <p>(<i>Optional; PDF 1.3; indirect reference preferred<ins onMouseEnter="mouseEnter(this)" data-issue="619">; Deprecated in PDF 2.0</ins></i>) 
-      The digital identifier of the image’s parent Web Capture content set (see 14.10.6, "Object attributes related to web capture").</p>
+      The digital identifier of the image's parent Web Capture content set (see 14.10.6, "Object attributes related to web capture").</p>
       <p><ins onMouseEnter="mouseEnter(this)" data-issue="13" data-iso="approved">Additional limitations also apply to this key when used in soft-mask image dictionaries - see clause 11.6.5.2, Soft-mask images.</ins></p>
     </td>
   </tr>
@@ -789,13 +789,13 @@ the corresponding colour spaces either directly or via a default colour space (s
        <i>(<del onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">Optional but strongly recommended</del> <ins onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">Sometimes required</ins>; PDF 1.2)</i> A dictionary specifying any resources (such as fonts and images) required by the form XObject (see 7.8, "Content streams and resources").
      </p>
      <p><del onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">
-      In a PDF whose version is 1.1 and earlier, all named resources used in the form XObject shall be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appear in the resource dictionary of the form XObject. These resources should also be specified in the form XObject’s resource dictionary as well, to determine which resources are used inside the form XObject. If a resource is included in both dictionaries, it shall have the same name in both locations.
+      In a PDF whose version is 1.1 and earlier, all named resources used in the form XObject shall be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appear in the resource dictionary of the form XObject. These resources should also be specified in the form XObject's resource dictionary as well, to determine which resources are used inside the form XObject. If a resource is included in both dictionaries, it shall have the same name in both locations.
     </del></p>
     <p>
-      In PDF 1.2 and later versions, <del onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">form XObjects may be independent of the content streams in which they appear, and this is strongly recommended although not required</del><ins onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">it is strongly recommended that form XObjects be independent of the content streams in which they appear; from PDF 2.0 this is required</ins>. In an independent form XObject, the resource dictionary of the form XObject is required and shall contain all named resources used by the form XObject. These resources shall not be promoted to the outer content stream’s resource dictionary, although that stream’s resource dictionary refers to the form XObject.
+      In PDF 1.2 and later versions, <del onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">form XObjects may be independent of the content streams in which they appear, and this is strongly recommended although not required</del><ins onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">it is strongly recommended that form XObjects be independent of the content streams in which they appear; from PDF 2.0 this is required</ins>. In an independent form XObject, the resource dictionary of the form XObject is required and shall contain all named resources used by the form XObject. These resources shall not be promoted to the outer content stream's resource dictionary, although that stream's resource dictionary refers to the form XObject.
      </p>
      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="292" data-iso="approved">
-      NOTE 1 In PDF 1.1 and earlier, all named resources used in the form XObject were defined to be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appeared in the resource dictionary of the form XObject. These resources also needed to be specified in the form XObject’s resource dictionary as well, to determine which resources were used inside the form XObject. If a resource was included in both dictionaries, it needed to have the same name in both locations.
+      NOTE 1 In PDF 1.1 and earlier, all named resources used in the form XObject were defined to be included in the resource dictionary of each page object on which the form XObject appears, regardless of whether they also appeared in the resource dictionary of the form XObject. These resources also needed to be specified in the form XObject's resource dictionary as well, to determine which resources were used inside the form XObject. If a resource was included in both dictionaries, it needed to have the same name in both locations.
     </ins></p>
     <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="291" data-iso="approved">
      NOTE 2 Linearized PDF files impose additional requirements on resources - see "Annex F - (normative) Linearized PDF".
@@ -806,7 +806,7 @@ the corresponding colour spaces either directly or via a default colour space (s
     <td><b>StructParent</b></td>
     <td>integer</td>
     <td>
-      (<i>Required if the form XObject is a structural content item; PDF 1.3</i>) The integer key of the form XObject’s entry in the structural parent tree (see 14.7.5.4, "Finding structure elements from content items").
+      (<i>Required if the form XObject is a structural content item; PDF 1.3</i>) The integer key of the form XObject's entry in the structural parent tree (see 14.7.5.4, "Finding structure elements from content items").
       <ins onMouseEnter="mouseEnter(this)" data-issue="463" data-iso="approved">At most one of the entries <b>StructParent</b> or <b>StructParents</b> shall be present. A form XObject shall be either a content item in its entirety or a container for marked-content sequences that are content items, but not both.</ins>
     </td>
   </tr>

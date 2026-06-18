@@ -163,7 +163,7 @@ black = 1.0 - <del onMouseEnter="mouseEnter(this)" data-issue="640">grey</del><i
 <p class="location">Delete the paragraph below the bulleted list (above EXAMPLE) as follows:</p>
 
 <p><del onMouseEnter="mouseEnter(this)" data-issue="311" data-iso="approved">
-When a halftone dictionary of some other Type appears as the value of an entry in a Type 5 halftone dictionary, it shall apply only to the single colourant or colour component named by that entry’s key. This is in contrast to such a dictionary’s being used as the current halftone parameter in the graphics state, which shall apply to all colour components. If nonprimary colourants are requested when the current halftone is defined by any means other than a Type 5 halftone dictionary, the gray halftone screen and transfer function shall be used for all such colourants.
+When a halftone dictionary of some other Type appears as the value of an entry in a Type 5 halftone dictionary, it shall apply only to the single colourant or colour component named by that entry's key. This is in contrast to such a dictionary's being used as the current halftone parameter in the graphics state, which shall apply to all colour components. If nonprimary colourants are requested when the current halftone is defined by any means other than a Type 5 halftone dictionary, the gray halftone screen and transfer function shall be used for all such colourants.
 </del></p>
 
 <h2 id="H10.7">10.7 Scan conversion details</h2>
@@ -175,7 +175,7 @@ When a halftone dictionary of some other Type appears as the value of an entry i
 <p>
 The <i>flatness tolerance</i> controls the maximum permitted distance in device pixels between the mathematically correct path and an approximation constructed from straight line segments, as shown in "Figure 69 — Flatness tolerance". Flatness may be specified as the operand of the <b>i</b> operator (see "Table 56 — Graphics state operators") or as the value of the <b>FL</b> entry in a graphics state parameter dictionary (see "Table 57 — Entries in a graphics state parameter dictionary"). 
 <del onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved">It shall be a positive number.</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved">It shall be a number in the range 0 to 100 inclusive, where a value of 0 shall specify the output device’s default flatness tolerance. The value indicates the maximum error tolerance measured in output device pixels.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="371" data-iso="approved">It shall be a number in the range 0 to 100 inclusive, where a value of 0 shall specify the output device's default flatness tolerance. The value indicates the maximum error tolerance measured in output device pixels.</ins>
 </p>
 
 </div>
