@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 13 March 2026
+last_modified_date: 19 June 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -11,8 +11,10 @@ nav_order: 7
 <ul class="noprint">
   <li>7.2 Lexical conventions
    <ul>
-   <li><a href="#H7.2.2">7.2.2 Representation</a>
-   </li>
+    <li><a href="#H7.2.2">7.2.2 Representation</a>
+    </li>
+    <li><a href="#H7.2.4">7.2.4 Comments</a>
+    </li>
    </ul>
   </li>
   <li>7.3 Objects
@@ -107,7 +109,7 @@ nav_order: 7
       </li>
       <li>7.6.4.4 Password algorithms
        <ul> 
-        <li><a href="#H7.6.4.4.2">7.6.4.4.2 Algorithm 3:  Computing the encryption dictionary’s O-entry value (revision 4 and earlier)</a>
+        <li><a href="#H7.6.4.4.2">7.6.4.4.2 Algorithm 3:  Computing the encryption dictionary's O-entry value (revision 4 and earlier)</a>
         </li>
         <li><a href="#H7.6.4.4.9">7.6.4.4.9 Algorithm 10: Computing the encryption dictionary's Perms (permissions) value (Security handlers of revision 6)</a>
         </li>
@@ -287,6 +289,18 @@ However, a</del>
 <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="365" data-iso="approved">
 (a) The delimiter characters { and } (LEFT CURLY BRACKET (7Bh) and RIGHT CURLY BRACKET (7Dh)) are additional delimiter characters only within Type 4 PostScript calculator functions (see 7.10.5 "Type 4 (PostScript calculator) functions").
 </ins></p>
+
+<h3 id="H7.2.4">7.2.4 Comments</h3>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+Any occurrence of the PERCENT SIGN (25h) outside a string or inside a content stream (see 7.8.2, "Content streams") introduces a comment. The comment consists of all characters after the PERCENT SIGN and up to but not including the 
+end-of-<del onMouseEnter="mouseEnter(this)" data-issue="759">the-</del>line marker. 
+A PDF processor should ignore comments. PDF processors shall treat comments as single white-space characters for the purposes of lexical conversion (see 7.2, "Lexical conventions"). That is, a comment separates the token preceding it from the one following it. 
+</p>
+
+<p>...</p>
 
 <h2 id="H7.3">7.3 Objects</h2>
 
@@ -569,8 +583,8 @@ structures used in PDF files shall conform to the JPEG 2000 specification.
 <p>
 If a PDF file contains binary data, as most do (see 7.2, "Lexical conventions"), the header line shall be immediately followed by a 
 <del onMouseEnter="mouseEnter(this)" data-issue="272" data-iso="approved">comment line containing</del> <ins onMouseEnter="mouseEnter(this)" data-issue="272" data-iso="approved">line containing only a comment that starts with</ins> 
-at least four binary characters–that is, characters whose codes are 128 or greater.
-This ensures proper behaviour of file transfer applications that inspect data near the beginning of a file to determine whether to treat the file’s contents as text or as binary.
+at least four binary characters - that is, characters whose codes are 128 or greater.
+This ensures proper behaviour of file transfer applications that inspect data near the beginning of a file to determine whether to treat the file's contents as text or as binary.
 </p>
 
 <h3 id="H7.5.4">7.5.4 Cross reference table</h3>
@@ -656,10 +670,10 @@ SIGNs (3Eh)). Thus, the trailer has the following overall structure:
     <td>
       <p>
         (<i>Required; shall not be an indirect reference</i>) 
-        <del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">The total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value shall be 1 greater than the highest object number defined in the PDF file.</del>
+        <del onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">The total number of entries in the PDF file's cross-reference table, as defined by the combination of the original section and all update sections. Equivalently, this value shall be 1 greater than the highest object number defined in the PDF file.</del>
         <ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">This value shall be 1 greater than the highest object number defined in the PDF file.</ins>
       </p>
-      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE 1: this is equivalent to the total number of entries in the PDF file’s cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
+      <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="149" data-iso="approved">NOTE 1: this is equivalent to the total number of entries in the PDF file's cross-reference table, as defined by the combination of the original section and all update sections (see 7.5.4 "Cross-reference table").</ins></p>
       <p>Any object in a cross-reference section whose number is greater than this value shall be ignored and defined to be missing by a PDF reader.</p>
       <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="522" data-iso="approved">NOTE 2: the value of <b>Size</b> does not decrease in incremental updates.</ins></p>
     </td>
@@ -702,7 +716,7 @@ Incremental updates are used to save changes to documents in these contexts.
 <p class="location">Change the paragraph above NOTE 4 and NOTE 4 as follows:</p>
 
 <p>
-In versions of PDF 1.4 or later a PDF writer may use the <b>Version</b> entry in the document’s catalog dictionary (see 7.7.2, "Document catalog dictionary")
+In versions of PDF 1.4 or later a PDF writer may use the <b>Version</b> entry in the document's catalog dictionary (see 7.7.2, "Document catalog dictionary")
 <del onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">to override the version specified in the header</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">upgrade the current version of the PDF specification to which the document conforms (considering both the document header (see 7.5.2, "File header") and the catalog dictionary <b>Version</b> key value, if already present). The catalog of an incremental update shall not reduce the version of the document with the value, or absence, of the <b>Version</b> entry</ins>
 . 
@@ -863,7 +877,7 @@ The cross-reference stream also contains a type 1 entry for the object stream it
 <p class="location">Change Table 19 as follows:</p>
 
 <table>
-  <caption id="Table19">Table 19 - Additional entries in a hybrid-reference file’s trailer dictionary</caption>
+  <caption id="Table19">Table 19 - Additional entries in a hybrid-reference file's trailer dictionary</caption>
   <tr>
     <th>Key</th>
     <th>Type</th>
@@ -1041,7 +1055,7 @@ and the file encryption key as the key. ...
 
 <h4 id="H7.6.4.4">7.6.4.4 Password algorithms</h4>
 
-<h5 id="H7.6.4.4.2">7.6.4.4.2 Algorithm 3:  Computing the encryption dictionary’s O-entry value (revision 4 and earlier)</h5>
+<h5 id="H7.6.4.4.2">7.6.4.4.2 Algorithm 3:  Computing the encryption dictionary's O-entry value (revision 4 and earlier)</h5>
 
 <p>...</p>
 
@@ -1257,7 +1271,7 @@ payload shall include the <b>AFRelationship</b> key with a value of <i>Encrypted
 <p class="location">Append a new sentence to the end of the first paragraph as follows:</p>
 
 <p>
-The root of a document’s object hierarchy is the catalog dictionary, located by means of the <b>Root</b> entry in the trailer of the PDF file (see 7.5.5, "File trailer"). The catalog dictionary contains references to other objects defining the document’s contents, outline, article threads, named destinations, and other attributes. In addition, it contains information about how the document shall be displayed on the screen, such as whether its outline and thumbnail page images shall be displayed automatically and whether some location other than the first page shall be shown when the document is opened. "Table 29 — Entries in the catalog dictionary" shows the entries in the catalog dictionary.
+The root of a document's object hierarchy is the catalog dictionary, located by means of the <b>Root</b> entry in the trailer of the PDF file (see 7.5.5, "File trailer"). The catalog dictionary contains references to other objects defining the document's contents, outline, article threads, named destinations, and other attributes. In addition, it contains information about how the document shall be displayed on the screen, such as whether its outline and thumbnail page images shall be displayed automatically and whether some location other than the first page shall be shown when the document is opened. "Table 29 — Entries in the catalog dictionary" shows the entries in the catalog dictionary.
 <ins onMouseEnter="mouseEnter(this)" data-issue="439" data-iso="approved">For encrypted documents, the catalog dictionary shall not be in an object stream (see 7.5.7 Object streams).</ins>
 </p>
 
@@ -1486,7 +1500,7 @@ The root of a document’s object hierarchy is the catalog dictionary, located b
        specifications for embedded file streams (see 7.11.4, "Embedded file streams"). ...</p>
     <p>(<i>PDF 2.0</i>) For unencrypted wrapper documents for an encrypted payload document (see 7.6.7, "Unencrypted wrapper document") the
        <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">name</del> strings provided in this tree shall not contain or be derived from
-       the encrypted payload document’s actual file name. This is to avoid potential disclosure of sensitive information in the original filename.
+       the encrypted payload document's actual file name. This is to avoid potential disclosure of sensitive information in the original filename.
        The <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">name</del> string should match the value of <b>F</b> or 
        <b>UF</b> in the referenced File Specification dictionary.</p>
     </td>
@@ -1851,7 +1865,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">2
 <p class="location">Change the last paragraph before the EXAMPLE as follows:</p>
 
 <p>
-The prefix “D:” shall be present, the year field (YYYY) shall be present and all other fields may be
+The prefix "D:" shall be present, the year field (YYYY) shall be present and all other fields may be
 present but only if all of their preceding fields are also present. The APOSTROPHE following the hour
 offset field (HH) shall only be present if the HH field is present. The minute offset field (mm) shall only
 be present if the APOSTROPHE following the hour offset field (HH) is present. The default values for MM and
@@ -1894,8 +1908,8 @@ earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equ
 
 <p class="location">Change the paragraph below Table 36 as follows:</p>
 
-<p>The <b>Kids</b> entries in the root and intermediate nodes define the tree’s structure by identifying the immediate children of each node.
-The <b>Names</b> entries in the leaf (or root) nodes shall contain the tree’s keys and their associated values, arranged in key-value pairs and shall be sorted
+<p>The <b>Kids</b> entries in the root and intermediate nodes define the tree's structure by identifying the immediate children of each node.
+The <b>Names</b> entries in the leaf (or root) nodes shall contain the tree's keys and their associated values, arranged in key-value pairs and shall be sorted
 <del onMouseEnter="mouseEnter(this)" data-issue="214" data-iso="approved">lexically</del> in ascending order by key. Shorter keys shall appear before longer ones beginning with the same byte sequence.
 Any encoding of the keys may be used as long as it is self-consistent; keys shall be compared for equality on a simple byte-by-byte basis.
 </p>
@@ -2038,7 +2052,7 @@ executed conditionally by the <b>if</b> and <b>ifelse</b> operators:
     Any file specification dictionary in the document may have an <b>EF</b> entry that specifies an embedded file stream. The stream data shall still be associated with a location in the file system. In particular, this method shall be used for file attachment annotations (see 12.5.6.15, "File attachment annotations"), which associate the embedded file with a location on a page in the document.
   </li>
   <li>
-    Embedded file streams may be associated with the document as a whole through the <b>EmbeddedFiles</b> entry in the PDF file’s name dictionary (see 7.7.4, "Name dictionary"). The associated name tree shall map name strings to file specifications that refer to embedded file streams through their <b>EF</b> entries.
+    Embedded file streams may be associated with the document as a whole through the <b>EmbeddedFiles</b> entry in the PDF file's name dictionary (see 7.7.4, "Name dictionary"). The associated name tree shall map name strings to file specifications that refer to embedded file streams through their <b>EF</b> entries.
   </li>
 </ul>
 </del>
@@ -2049,7 +2063,7 @@ Embedded file streams shall only be included in a PDF file using file specificat
 </p>
 
 <p>
-File specification dictionaries using embedded file streams can be associated with the document as a whole through the <b>EmbeddedFiles</b> entry in the PDF file’s name dictionary (see 7.7.4, "Name dictionary"), however this is not required unless stated otherwise.  
+File specification dictionaries using embedded file streams can be associated with the document as a whole through the <b>EmbeddedFiles</b> entry in the PDF file's name dictionary (see 7.7.4, "Name dictionary"), however this is not required unless stated otherwise.  
 </p>
 </ins>
 </div>
