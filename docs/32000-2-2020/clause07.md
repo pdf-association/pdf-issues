@@ -508,7 +508,7 @@ endobj
 
 <p>
 The ASCII base-85 encoding shall use the ASCII characters ! through u ((21h) - (75h)) and the character z (7Ah), with the 2-character sequence ~> (7Eh)(3Eh) as its EOD marker. The <b>ASCII85Decode</b> filter shall ignore all white-space characters (see 7.2, "Lexical conventions"). 
-<ins onMouseEnter="mouseEnter(this)" data-issue="293" data-iso="approved">If the <b>ASCII85Decode</b> filter encounters the character ~ in its input, the next character shall be > and the filter will reach EOD. Any other characters shall cause an error.</ins>
+<ins onMouseEnter="mouseEnter(this)" data-issue="293" data-iso="approved">If the <b>ASCII85Decode</b> filter encounters the character ~ in its input, the next character shall be &gt; and the filter will reach EOD.</ins>
 Any other characters, and any character sequences that represent impossible combinations in the ASCII base-85 encoding, shall cause an error.
 </p>
 
@@ -716,8 +716,8 @@ Incremental updates are used to save changes to documents in these contexts.
 <p class="location">Change the paragraph above NOTE 4 and NOTE 4 as follows:</p>
 
 <p>
-In versions of PDF 1.4 or later a PDF writer may use the <b>Version</b> entry in the document's catalog dictionary (see 7.7.2, "Document catalog dictionary")
-<del onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">to override the version specified in the header</del>
+In versions of PDF 1.4 or later a PDF writer may use the <b>Version</b> entry in the document's catalog dictionary (see 7.7.2, "Document catalog dictionary") to
+<del onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">override the version specified in the header</del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="399" data-iso="approved">upgrade the current version of the PDF specification to which the document conforms (considering both the document header (see 7.5.2, "File header") and the catalog dictionary <b>Version</b> key value, if already present). The catalog of an incremental update shall not reduce the version of the document with the value, or absence, of the <b>Version</b> entry</ins>
 . 
 A PDF writer may also need to update the Extensions dictionary, see 7.12, "Extensions dictionary", if the update either deleted or added developer-defined extensions.
