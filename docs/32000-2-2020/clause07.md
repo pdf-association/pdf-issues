@@ -1021,8 +1021,8 @@ named <b>DefEmbeddedFile</b> when file attachments only are encrypted in place o
 
 <p class="location">Insert new NOTE below bullet (f) as follows:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 5;">
-<li>
+<ol class="alphalist"><!-- was style="counter-reset: list-item 5;" by Chrome doesn't do list-item while FF doesn't obey start="6"! -->
+<li value="6"> <!-- "f" -->
 Decrypt the 16-byte <b>Perms</b> string using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24" data-iso="approved">with an initialization vector of zero</del>
 and the file encryption key as the key. ...
 </li>
@@ -1036,8 +1036,8 @@ and the file encryption key as the key. ...
 
 <p class="location">Change bullet (a) as follows:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 0;">
-  <li>
+<ol class="alphalist">
+  <li value="1">
     <p><del onMouseEnter="mouseEnter(this)" data-issue="325" data-iso="approved">
       Make a new string, <b>K1</b>, consisting of 64 repetitions of the sequence: input password, <b>K</b>, the 48-byte user key. The 48 byte user key is only used when checking the owner password or creating the owner key. If checking the user password or creating the user key, <b>K1</b> is the concatenation of the input password and <b>K</b>.
     </del></p>
@@ -1061,12 +1061,12 @@ and the file encryption key as the key. ...
 
 <p class="location">Change bullets (a) and (e) as follows:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 0;">
-  <li>Pad or truncate the owner password string as described in step (<del onMouseEnter="mouseEnter(this)" data-issue="643">b</del><ins onMouseEnter="mouseEnter(this)" data-issue="643">a</ins>) of 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)". If there is no owner password, use the user password instead.</li>
+<ol class="alphalist">
+  <li value="1">Pad or truncate the owner password string as described in step (<del onMouseEnter="mouseEnter(this)" data-issue="643">b</del><ins onMouseEnter="mouseEnter(this)" data-issue="643">a</ins>) of 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)". If there is no owner password, use the user password instead.</li>
   <li>...</li>
   <li>...</li>
   <li>...</li>
-  <li>Pad or truncate the user password string as described in step (<del onMouseEnter="mouseEnter(this)" data-issue="643">b</del><ins onMouseEnter="mouseEnter(this)" data-issue="643">a</ins>) of 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)".  </li>
+  <li value="5">Pad or truncate the user password string as described in step (<del onMouseEnter="mouseEnter(this)" data-issue="643">b</del><ins onMouseEnter="mouseEnter(this)" data-issue="643">a</ins>) of 7.6.4.3.2, "Algorithm 2: Computing a file encryption key in order to encrypt a document (revision 4 and earlier)".  </li>
   <li>...</li>
   <li>...</li>
 </ol>
@@ -1077,8 +1077,8 @@ and the file encryption key as the key. ...
 
 <p class="location">Change bullet (f) as follows:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 5;">
-<li>
+<ol class="alphalist">
+<li value="6">
 Encrypt the 16-byte block using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24" data-iso="approved">with an initialization vector of zero</del>,
 using the file encryption key as the key. The result (16 bytes) is stored as the <b>Perms</b> string, and checked for validity when the file is opened.
 </li>
@@ -1088,8 +1088,8 @@ using the file encryption key as the key. The result (16 bytes) is stored as the
 
 <p class="location">Change bullet (a) as follows:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 0;">
-<li>
+<ol class="alphalist">
+<li value="1">
 Decrypt the 16 byte <b>Perms</b> string using AES-256 in ECB mode <del onMouseEnter="mouseEnter(this)" data-issue="24" data-iso="approved">with an initialization vector of zero</del>
 and the file encryption key as the key. ...
 </li>
@@ -1564,20 +1564,23 @@ nested.</ins>
     <del onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
       Content streams that define the glyph descriptions of a Type 3 font shall include a <b>Resources</b> entry in the Type 3 font dictionary specifying all the resources used by all the content streams in the <b>CharProcs</b> dictionary of a Type 3 font.
     </del>
-    <ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
-      <p>If a glyph description content stream in the <b>CharProcs</b> entry of a Type 3 font uses named resources directly then those resources shall be present in the resource dictionary designated by the first <b>Resources</b> entry found in the following search order:
-      </p>
-      <ol>
-        <li>the stream dictionary of that glyph description content stream;</li>
-        <li>the parent Type 3 font dictionary that contained the <b>CharProcs</b> entry with the glyph description content stream;</li>
-      </ol>
-      <p>If there is no <b>Resources</b> dictionary explicitly associated with the Type 3 glyph description content stream or Type 3 font dictionary:</p>
-      <ol style="counter-reset: list-item 3;">
-        <li>the parent page dictionary on which the Type 3 font is used;</li>
-        <li>resource inheritance from ancestor nodes of the parent page dictionary (see 7.7.3.4 "Inheritance of page attributes").</li>
-      </ol>
-      <p class="hangingindent">NOTE 2: Named resources referenced by a resource, such as an XObject referenced from a glyph description content stream, would be included in the <b>Resources</b> dictionary of that resource rather than in the designated resource dictionary of the glyph description content stream.</p>
-    </ins>
+    <p><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
+      If a glyph description content stream in the <b>CharProcs</b> entry of a Type 3 font uses named resources directly then those resources shall be present in the resource dictionary designated by the first <b>Resources</b> entry found in the following search order:
+    </ins></p>
+    <ol class="numberlist">
+      <li value="1"><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">the stream dictionary of that glyph description content stream;</ins></li>
+      <li value="2"><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">the parent Type 3 font dictionary that contained the <b>CharProcs</b> entry with the glyph description content stream;</ins></li>
+    </ol>
+    <p><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
+    If there is no <b>Resources</b> dictionary explicitly associated with the Type 3 glyph description content stream or Type 3 font dictionary:
+    </ins></p>
+    <ol class="numberlist">
+      <li value="3"><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">the parent page dictionary on which the Type 3 font is used;</ins></li>
+      <li value="4"><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">resource inheritance from ancestor nodes of the parent page dictionary (see 7.7.3.4 "Inheritance of page attributes").</ins></li>
+    </ol>
+    <p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">
+    NOTE 2: Named resources referenced by a resource, such as an XObject referenced from a glyph description content stream, would be included in the <b>Resources</b> dictionary of that resource rather than in the designated resource dictionary of the glyph description content stream.
+    </ins></p>
   </li>
   <li>
     For other types of content streams, a PDF writer shall include a <b>Resources</b> entry in the stream's dictionary specifying a resource dictionary which contains all named resources used by that

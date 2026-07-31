@@ -465,8 +465,8 @@ NOTE 1 Type 3 fonts are more flexible than Type 1 fonts because the glyph descri
 
 <p class="location">Change bullet (d) in the list below Table 110 as follows:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 3;">
- <li><del onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">If any glyph descriptions refer to named resources they shall be looked up in the <b>Resources</b> entry of the Type 3 font dictionary. If any glyph descriptions refer to named resources but this dictionary is absent, the names shall be looked up in the resource dictionary of the page on which the font is used.</del><br/>
+<ol class="alphalist">
+ <li value="4"><del onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">If any glyph descriptions refer to named resources they shall be looked up in the <b>Resources</b> entry of the Type 3 font dictionary. If any glyph descriptions refer to named resources but this dictionary is absent, the names shall be looked up in the resource dictionary of the page on which the font is used.</del><br/>
  <ins onMouseEnter="mouseEnter(this)" data-issue="128" data-iso="approved">If a glyph description content stream refers to named resources they shall be looked up in the designated resource dictionary as described in subclause 7.8.3 "Resource dictionaries".</ins>
  </li>
 </ol>

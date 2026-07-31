@@ -181,6 +181,15 @@
     counter-reset: step-counter 0; 
    }
 
+.isostyle ol.numberlist {
+    list-style: decimal outside;
+    counter-reset: step-counter 0; 
+   }
+
+.isostyle dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;   /* 1st track = dt column, 2nd = dd */
+}
 
 // Copied from https://github.com/just-the-docs/just-the-docs/blob/main/_sass/content.scss
 // so that <ol> styles can be overriden to avoid forced numeric list styles
@@ -287,7 +296,7 @@
 
   dl {
     display: grid;
-    grid-template: auto / 10em 1fr;
+    grid-template: max-content 1fr;
   }
 
   dt,

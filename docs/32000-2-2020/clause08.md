@@ -610,14 +610,21 @@ The pattern cell can include graphical elements such as filled areas, text, and 
         (<i>Optional for images that use the <b>JPXDecode</b> filter, meaningless otherwise; PDF 1.5</i>) A code specifying how soft-mask
         information (see 11.6.5.2, "Soft-mask images") encoded with image samples shall be used:
       </p>
-      <ol style="counter-reset: list-item 0;">
-        <li>
+      <dl>
+        <dt>0</dt>
+        <dd>
           If present, encoded soft-mask image information shall be ignored.
           <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">If present, <b>SMask</b> shall override the current soft mask in the graphics state, as well as the image's <b>Mask</b> entry, if any. However, the other transparency-related graphics state parameters — blend mode and alpha constant — shall remain in effect.</ins>
-        </li>
-        <li>The image's data stream includes encoded soft-mask values. A PDF processor shall create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.</li>
-        <li>The image's data stream includes colour channels that have been premultiplied with an opacity channel; the image data also includes the opacity channel. A PDF processor shall create a soft-mask image from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.</li>
-      </ol>
+        </dd>
+        <dt>1</dt>
+        <dd>
+          The image's data stream includes encoded soft-mask values. A PDF processor shall create a soft-mask image from the information to be used as a source of mask shape or mask opacity in the transparency imaging model.
+        </dd>
+        <dt>2</dt>
+        <dd>
+          The image's data stream includes colour channels that have been premultiplied with an opacity channel; the image data also includes the opacity channel. A PDF processor shall create a soft-mask image from the opacity channel information to be used as a source of mask shape or mask opacity in the transparency model.
+        </dd>
+      </dl>
       <p>
         If this entry has a non-zero value, <b>SMask</b> shall not be specified
         <ins onMouseEnter="mouseEnter(this)" data-issue="215" data-iso="approved">(if present, <b>SMask</b> shall be ignored). If <b>SMaskInData</b> is non-zero, 
@@ -667,32 +674,28 @@ The pattern cell can include graphical elements such as filled areas, text, and 
 
 <p class="hangingindent">NOTE (2020) The following algorithm was changed in this document to <del onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">reflect that <b>OC</b> processing has precedence over <b>DefaultForPrinting</b> functionality, and situations where no image is to be rendered</del><ins onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">clarify the relationship between optional content and <b>DefaultForPrinting</b></ins>.</p>
 
-<ol class="alphalist" style="counter-reset: list-item 0;">
-  <li>
+<ol class="alphalist">
+  <li value="1">
     If the base image contains an <b>OC</b> <del onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">key then <b>DefaultForPrinting</b> shall be ignored on all <b>Alternates</b> entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">entry that specifies that the content is not visible, then nothing shall be shown</ins>.
   </li>
 
-  <li>
+  <li value="2">
     If the base image contains an <b>OC</b> entry that specifies that the base image is visible, then the base image shall be rendered.
   </li>
 
-  <li style="background-color: seashell; color: darkred; text-decoration: line-through; text-decoration-color: red;">
+  <li value="3">
     <del onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">If the base image contains an <b>OC</b> entry that specifies that the base image is not visible, then the list of alternate image dictionaries specified by the base image <b>Alternates</b> entry shall be examined in order, and the first entry not containing an <b>OC</b> key, or containing an <b>OC</b> entry specifying that the alternate image should be visible, shall be selected. Further, if this selected alternate image has an <b>OC</b> entry, then that <b>OC</b> entry shall also be processed to determine if the alternate image shall be rendered or not. If none of the alternate image dictionaries have an <b>OC</b> key, or none of the alternate image dictionaries with an <b>OC</b> entry specify that that alternate image is visible, then nothing shall be shown. <b>DefaultForPrinting</b> shall be ignored on all <b>Alternates</b> entries.</del>
-  </li>
-
-  <li value="3" style="background-color: lightyellow; color: green; text-decoration-style: double; text-decoration-color: green;">
+    <br>
     <ins onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">Otherwise if the PDF is being printed and any of the <b>Alternates</b> entries has <b>DefaultForPrinting</b> set to true, then that alternate image shall be printed.</ins>
   </li>
 
-  <li value ="4" style="background-color: seashell; color: darkred; text-decoration: line-through; text-decoration-color: red;">
+  <li value ="4">
     <del onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">If the base image does not contain an <b>OC</b> key and the PDF is being printed then the first entry in the <b>Alternates</b> array of the base image that has <b>DefaultForPrinting</b> set to true shall be selected. Further, if this selected alternate image has an <b>OC</b> entry, then that <b>OC</b> entry shall also be processed to determine if the alternate image shall be printed or not. If no alternate image dictionary in the Alternates array has <b>DefaultForPrinting</b> set to true, then the base image shall be printed.</del>
-  </li>
-
-  <li value="4" style="background-color: lightyellow; color: green; text-decoration-style: double; text-decoration-color: green;">
+    <br>
     <ins onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">Otherwise, the list of alternates specified by the base image <b>Alternates</b> entry is examined, and the first alternate containing an <b>OC</b> entry specifying that its content is visible shall be shown (<b>Alternates</b> that have no <b>OC</b> entry shall not be shown.) Furthermore if the image dictionary that forms the value of the <b>Image</b> key of the selected alternate contains an <b>OC</b> entry, then that <b>OC</b> in the image dictionary shall not be examined.</ins>
   </li>
 
-  <li value="5" style="background-color: lightyellow; color: green; text-decoration-style: double; text-decoration-color: green;">
+  <li value="5">
     <ins onMouseEnter="mouseEnter(this)" data-issue="79" data-iso="approved">If steps c and d above do not identify an alternate to be rendered then the base image shall be rendered.</ins>
   </li>
 </ol>

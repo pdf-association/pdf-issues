@@ -523,8 +523,8 @@ in <del onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">dra
 An interactive PDF processor shall maintain a current navigation node. When a user navigates to a page, if the page dictionary has a <b>PresSteps</b> entry, the node specified by that entry shall become the current node. (Otherwise, there is no current node.) If the user requests to navigate forward (such as an arrow key press) and there is a current navigation node, the following shall occur:
 </p>
 
-<ol class="alphalist" style="counter-reset: list-item 3;">
-  <li>
+<ol class="alphalist">
+  <li value="1">
     <p>The sequence of actions specified by <b>NA</b> (if present) shall be executed.</p>
     <p>If <b>NA</b> specifies an action that navigates to another page, the following actions for navigating to another page take place, and <b>Next</b> should not be present.</p>
   </li>
@@ -539,8 +539,8 @@ An interactive PDF processor shall maintain a current navigation node. When a us
 Similarly, if the user requests to navigate backward and there is a current navigation node, the following shall occur:
 </p>
 
-<ol class="alphalist" style="counter-reset: list-item 3;">
-  <li>
+<ol class="alphalist">
+  <li value="3">
     <p>The sequence of actions specified by <b>PA</b> (if present) shall be executed.</p>
     <p>If <b>PA</b> specifies an action that navigates to another page, the following actions for navigating to another page take place, and <b>Prev</b> should not be present.
     </p>
@@ -556,8 +556,8 @@ Similarly, if the user requests to navigate backward and there is a current navi
 
 <p>If the user requests to navigate to another page (regardless of whether there is a current node) and that page's dictionary contains a <b>PresSteps</b> entry, the following shall occur:</p>
 
-<ol class="alphalist" style="counter-reset: list-item 1;">
-  <li>
+<ol class="alphalist">
+  <li value="1">
     <p>The navigation node represented by <b>PresSteps</b> shall become the current node.</p>
   </li>
   <li>
