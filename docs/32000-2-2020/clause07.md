@@ -906,7 +906,7 @@ The cross-reference stream also contains a type 1 entry for the object stream it
 
 <ul>
 <li>...</li>
-<li>Any hexadecimal strings representing the value of the Contents key in a Signature dictionary</li>
+<li>Any hexadecimal strings representing the value of the <b>Contents</b> key in a Signature dictionary</li>
 </ul>
 
 <p class="hangingindent" style="margin-left: 40px"><ins onMouseEnter="mouseEnter(this)" data-issue="211" data-iso="approved">NOTE 1 For the signature schemes enumerated in ISO 32000-1 and in this document,
