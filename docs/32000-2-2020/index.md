@@ -16,6 +16,10 @@ This document lists all industry-approved corrections to {{ page.subset }} as de
 All issues related to {{ page.subset }} are recorded in the PDF Association's <a href="https://github.com/pdf-association/pdf-issues" target="_blank">GitHub pdf-issues</a>.
 </p>
 
+<p>
+In the interests of focusing on PDF technical correctness, and as agreed by the PDF TWG, purely editorial errata are <strong>not shown here</strong>. Closed editorial errata have been applied to the master documents that form the basis for future editions of ISO 32000. 
+</p>
+
 <p>Corrections are organized by the top level clauses in {{ page.isodoc }}:</p>
 
 <nav>
