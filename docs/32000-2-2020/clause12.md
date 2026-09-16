@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 12. Interactive features
-last_modified_date: 22 May 2026
+last_modified_date: 16 September 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
@@ -202,6 +202,8 @@ nav_order: 12
    <li><a href="#H12.8.5">12.8.5 Document timestamp (DTS) dictionary</a>
     <ul>
      <li><a href="#H12.8.5.1">12.8.5.1 General</a>
+     </li>
+     <li><a href="#H12.8.5.3">12.8.5.3  Subsequent document timestamp dictionaries</a>
      </li>
     </ul>
    </li>
@@ -1802,6 +1804,18 @@ A document timestamp dictionary
 <ins onMouseEnter="mouseEnter(this)" data-issue="448" data-iso="approved">was added in PDF 2.0 and </ins> 
 establishes the exact contents of the complete PDF file at the time indicated in the timestamp token.
 </p>
+
+<h4 id="H12.8.5.3">12.8.5.3  Subsequent document timestamp dictionaries</h4>
+
+<p class="location">Replace the paragraph below Figure 86 with a note as follows:</p>
+
+<p><del onMouseEnter="mouseEnter(this)" data-issue="766">
+When evaluating the <b>DocMDP</b> restrictions (see 12.8.2.2, "DocMDP") the presence of a document timestamp and/or <b>DSS</b> information shall be ignored.
+</del></p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="766">
+NOTE: According to 12.8.2.2, "DocMDP", and 12.7.5.5, "Signature fields", changes that were necessary to add DSS's (see 12.8.4.3, "Document Security Store (DSS)") and/or document timestamps (see 12.8.5, "Document timestamp (DTS) dictionary") to the document in incremental updates are ignored when evaluating the MDP restrictions.
+</ins></p>
 
 <h3 id="H12.8.6">12.8.6 Permissions</h3>
 
