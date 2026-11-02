@@ -900,17 +900,31 @@ The cross-reference stream also contains a type 1 entry for the object stream it
 
 <h3 id="H7.6.2">7.6.2 Application of encryption</h3>
 
-<p class="location">Add new NOTE 1 after the 4th bullet in the first bulleted list below the first paragraph as follows:</p>
+<p class="location">Modify the first paragraph as follows:</p>
 
-<p>Encryption applies to all strings and streams in the document's PDF file, with the following exceptions:</p>
+<p>Encryption applies to all strings and streams in the document's PDF file, with <del onMouseEnter="mouseEnter(this)" data-issue="783">the following</del> exceptions <ins onMouseEnter="mouseEnter(this)" data-issue="783">including the following ones</ins>:</p>
+
+<ul>
+  <li>The values for the <b>ID</b> entry in the trailer</li>
+  <li>...</li>
+</ul>
+
+<p class="location">Add new NOTE 1 after the 4th bullet in the first bulleted list below the first paragraph as follows:</p>
 
 <ul>
 <li>...</li>
 <li>Any hexadecimal strings representing the value of the <b>Contents</b> key in a Signature dictionary</li>
 </ul>
 
-<p class="hangingindent" style="margin-left: 40px"><ins onMouseEnter="mouseEnter(this)" data-issue="211" data-iso="approved">NOTE 1 For the signature schemes enumerated in ISO 32000-1 and in this document,
-the value of the <b>Contents</b> key in a Signature dictionary is always a hexadecimal string (see "Table 255 — Entries in a signature dictionary").</ins></p>
+<p class="hangingindent" style="margin-left: 40px"><ins onMouseEnter="mouseEnter(this)" data-issue="211" data-iso="approved">
+NOTE 1 For the signature schemes enumerated in ISO 32000-1 and in this document, the value of the <b>Contents</b> key in a Signature dictionary is always a hexadecimal string (see "Table 255 — Entries in a signature dictionary").
+</ins></p>
+
+<p class="location">Add a new NOTE 2 after the entire bulleted list as follows:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="783">
+NOTE 2: The above list of exceptions is incomplete; additional objects are specified to not be encrypted by this document and in extensions.
+</ins></p>
 
 <p>Encryption is not applied to other object types such as integers and boolean values, which are used primarily to convey information about the document's structure rather than its contents. ...</p>
 
