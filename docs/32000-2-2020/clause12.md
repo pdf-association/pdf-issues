@@ -1835,7 +1835,7 @@ NOTE: According to 12.8.2.2, "DocMDP", and 12.7.5.5, "Signature fields", changes
     <p>(<i>Optional</i>) An indirect reference to a signature dictionary (see "Table 255 — Entries in a signature dictionary").
     This dictionary shall contain a <b>Reference</b> entry that shall be
     <ins onMouseEnter="mouseEnter(this)" data-issue="218" data-iso="approved"> an array with at least one entry, exactly one of which is</ins>
-    a signature reference dictionary (see "Table 255 — Entries in a signature dictionary") that has a <b>DocMDP</b> transform method (see 12.8.2.2, "DocMDP") and corresponding transform parameters.
+    a signature reference dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="802">"Table 255 — Entries in a signature dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="802">"Table 256 — Entries in a signature reference dictionary"</ins>) that has a <b>DocMDP</b> transform method (see 12.8.2.2, "DocMDP") and corresponding transform parameters.
     </p>
     <p>...</p>
     </td>
