@@ -113,6 +113,8 @@ nav_order: 12
     <ul>
      <li><a href="#H12.7.4.1">12.7.4.1 General</a>
      </li>
+     <li><a href="#H12.7.4.2">12.7.4.2 Field names</a>
+     </li>
      <li><a href="#H12.7.4.3">12.7.4.3 Variable text</a>
      </li>
     </ul>
@@ -368,13 +370,13 @@ nav_order: 12
 In PDF 1.1, the correspondence between name objects and destinations shall be defined by the <b>Dests</b> entry in the document
 catalog dictionary (see 7.7.2, "Document catalog dictionary"). The value of this entry shall be a dictionary in which each key
 is a destination name and the corresponding value is either<del onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="approved">an array defining the destination, using the syntax shown in
-"Table 149 — Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
-an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="approved">:</ins>
+"Table 149 - Destination syntax", or a dictionary with a D entry whose value is such an array and may optionally contain
+an <b>SD</b> entry as defined in "Table 201 - Action types".</del><ins onMouseEnter="mouseEnter(this)" data-issue="162" data-iso="approved">:</ins>
 </p>
 <ins onMouseEnter="mouseEnter(this)" data-issue="162,288" data-iso="approved, approved">
  <ul>
-  <li>an array defining the destination, using the syntax shown in "Table 149 — Destination syntax", or</li>
-  <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry. See "Table 202 — Additional entries specific to a go-to action", "Table 203 - Additional entries specific to a remote go-to action" and "Table 204 - Additional entries specific to an embedded go-to action".</li>
+  <li>an array defining the destination, using the syntax shown in "Table 149 - Destination syntax", or</li>
+  <li>a dictionary with a <b>D</b> entry whose value is such an array. In PDF 2.0, this dictionary may also optionally contain an <b>SD</b> entry. See "Table 202 - Additional entries specific to a go-to action", "Table 203 - Additional entries specific to a remote go-to action" and "Table 204 - Additional entries specific to an embedded go-to action".</li>
  </ul>
 </ins>
 
@@ -478,7 +480,7 @@ an <b>SD</b> entry as defined in "Table 201 — Action types".</del><ins onMouse
 <p class="location">Change the paragraph before Table 162 as follows:</p>
 
 <p>
-The optional <b>Threads</b> entry in the document catalog dictionary (see 7.7.2, "Document catalog dictionary") holds an array of thread dictionaries ("Table 162 — Entries in a thread dictionary") defining the document's articles. Each individual bead within a thread shall be represented by a bead dictionary ("Table 163 — Entries in a bead dictionary"). The thread dictionary's <b>F</b> entry shall refer to the first bead in the thread; the beads shall be chained together sequentially in a doubly linked list through their <b>N</b> (next) and <b>V</b> (previous) entries. In addition, for each page on which article beads appear, the page object (see 7.7.3, "Page tree") shall contain a <b>B</b> entry whose value is an array of indirect references to the beads on the page, 
+The optional <b>Threads</b> entry in the document catalog dictionary (see 7.7.2, "Document catalog dictionary") holds an array of thread dictionaries ("Table 162 - Entries in a thread dictionary") defining the document's articles. Each individual bead within a thread shall be represented by a bead dictionary ("Table 163 - Entries in a bead dictionary"). The thread dictionary's <b>F</b> entry shall refer to the first bead in the thread; the beads shall be chained together sequentially in a doubly linked list through their <b>N</b> (next) and <b>V</b> (previous) entries. In addition, for each page on which article beads appear, the page object (see 7.7.3, "Page tree") shall contain a <b>B</b> entry whose value is an array of indirect references to the beads on the page, 
 in <del onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">drawing</del><ins onMouseEnter="mouseEnter(this)" data-issue="320" data-iso="approved">reading</ins> order.
 </p>
 
@@ -670,7 +672,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 <p class="location">Change the paragraph below the EXAMPLE as follows and make this non-normative paragraph part of the example (see <a href="https://github.com/pdf-association/pdf-issues/issues/660">PDF Errata #660</a>):</p>
 
 <p>
-where <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject2</i> define the check box's normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 — Entries common to all annotation dictionaries").
+where <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject1</i> and <del onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved">f</del><ins onMouseEnter="mouseEnter(this)" data-issue="422" data-iso="approved"><i>f</i></ins><i>ormXObject2</i> define the check box's normal appearance in its checked and unchecked states, and <i>formXObject3</i> and <i>formXObject4</i> provide visual feedback, such as emboldening its outline, when the user clicks it. (No <b>R</b> entry is defined because no special appearance is needed when the user moves the cursor over the check box without pressing the mouse button.) The choice between the checked and unchecked appearance states is determined by the <b>AS</b> entry in the annotation dictionary (see "Table 166 - Entries common to all annotation dictionaries").
 </p>
 
 <p>...</p>
@@ -703,7 +705,7 @@ an <b>IRT</b> entry that refers to the primary annotation and an <b>RT</b> <ins 
 <p class="location">Correct the first paragraph as follows:</p>
 
 <p>
-Beginning with PDF 1.5, annotations may have an author-specific state associated with them. The state is not specified in the annotation itself but in a separate text annotation that refers to the original annotation by means of its <b>IRT</b> ("in reply to") entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>). States shall be grouped into a number of state models, as shown in "Table 174 — Annotation states".
+Beginning with PDF 1.5, annotations may have an author-specific state associated with them. The state is not specified in the annotation itself but in a separate text annotation that refers to the original annotation by means of its <b>IRT</b> ("in reply to") entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 176 - Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>). States shall be grouped into a number of state models, as shown in "Table 174 - Annotation states".
 </p>
 
 <p>...</p>
@@ -714,7 +716,7 @@ Beginning with PDF 1.5, annotations may have an author-specific state associated
 
 <ul>
   <li>...</li>
-  <li>The <b>IRT</b> entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 176 — Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>) shall refer to the original annotation.</li>
+  <li>The <b>IRT</b> entry (see <del onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 176 - Additional entries specific to a link annotation"</del><ins onMouseEnter="mouseEnter(this)" data-issue="479" data-iso="approved">"Table 172 - Additional entries in an annotation dictionary specific to markup annotations"</ins>) shall refer to the original annotation.</li>
   <li>...</li>
 </ul>
 
@@ -1069,7 +1071,7 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 <p class="location">Change the first paragraph as follows:</p>
 
 <p>A <i>go-to-3D-view action</i> (<i>PDF 1.6</i>) identifies a 3D <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">or RichMedia</ins> annotation and specifies a view for the annotation to use (see 13.6, "3D Artwork"). 
-"Table 220 — Additional entries specific to a go-to-3D-view action" shows the entries in a go-to-3D-view action dictionary.</p>
+"Table 220 - Additional entries specific to a go-to-3D-view action" shows the entries in a go-to-3D-view action dictionary.</p>
 
 <p class="location">Change Table 220 as follows:</p>
 
@@ -1097,10 +1099,10 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
       <p>(<i>Required</i>) The view to use. It may be one of the following types:</p>
       <ul>
        <li>A 3D view dictionary (see 13.6.4, "3D views").</li>
-       <li>An integer specifying an index into the <b>VA</b> array in the <b>3D</b> stream (see "Table 311 — Entries in a 3D stream dictionary")
+       <li>An integer specifying an index into the <b>VA</b> array in the <b>3D</b> stream (see "Table 311 - Entries in a 3D stream dictionary")
        <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
        </li>
-       <li>A text string matching the <b>IN</b> entry in one of the views in the <b>VA</b> array (see "Table 315 — Entries in a 3D view dictionary")
+       <li>A text string matching the <b>IN</b> entry in one of the views in the <b>VA</b> array (see "Table 315 - Entries in a 3D view dictionary")
        <ins onMouseEnter="mouseEnter(this)" data-issue="282" data-iso="approved">, or the <b>Views</b> array of the RichMediaContent dictionary (see "Table 341 - Entries in a RichMediaContent dictionary"), as appropriate for the specified annotation</ins>.
        </li>
        <li>A name that indicates the first (<b>F</b>), last (<b>L</b>), next (<b>N</b>), previous (<b>P</b>), or default (<b>D</b>) entries in the <b>VA</b> 
@@ -1194,6 +1196,16 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
   </tr>
 </table>
 
+<h4 id="H12.7.4.2">12.7.4.2 Field names</h4>
+
+<p class="location">Change the first paragraph as follows:</p>
+
+<p>
+The <b>T</b> entry in the field dictionary (see "Table 226 - Entries common to all field dictionaries") holds a text string defining the field's <i>partial field name</i>. The <i>fully qualified field</i> name is not explicitly <del onMouseEnter="mouseEnter(this)" data-issue="758">defined</del><ins onMouseEnter="mouseEnter(this)" data-issue="758">specified</ins> but shall be constructed from the partial field names of the field and all of its ancestors. For a field with no parent, the partial and fully qualified names are the same. For a field that is the child of another field, the fully qualified name shall be formed by appending the child field's partial name to the parent's fully qualified name, separated by a PERIOD (2Eh) as shown: 
+</p>
+
+<p>...</p>
+
 <h4 id="H12.7.4.3">12.7.4.3 Variable text</h4>
 
 <p class="location">Change Table 228 as follows:</p>
@@ -1219,7 +1231,7 @@ A future edition of ISO 32000 will move this text into a new subclause and updat
 <p class="location">Change the first two paragraphs below the EXAMPLE as follows:</p>
 
 <p>
-The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string (<b>DA</b>) contains any graphics state or text state operators needed to establish the graphics state parameters, such as text size and colour, for displaying the field's variable text. Only operators that are allowed within text objects shall occur in this <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string (see "Figure 9 — Graphics objects"). At a minimum, the <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string shall include a <b>Tf</b> (text font) operator along with its two operands, <i>font</i> and <i>size</i>. The specified font value shall match a resource name in the <b>Font</b> entry of the default resource dictionary (referenced from the <b>DR</b> entry of the interactive form dictionary; see "Table 224 — Entries in the interactive form dictionary"). A zero value for <i>size</i> means that the font shall be <i>auto-sized</i>: its size shall be computed as an implementation dependent function.
+The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string (<b>DA</b>) contains any graphics state or text state operators needed to establish the graphics state parameters, such as text size and colour, for displaying the field's variable text. Only operators that are allowed within text objects shall occur in this <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string (see "Figure 9 - Graphics objects"). At a minimum, the <ins onMouseEnter="mouseEnter(this)" data-issue="318" data-iso="approved">byte</ins> string shall include a <b>Tf</b> (text font) operator along with its two operands, <i>font</i> and <i>size</i>. The specified font value shall match a resource name in the <b>Font</b> entry of the default resource dictionary (referenced from the <b>DR</b> entry of the interactive form dictionary; see "Table 224 - Entries in the interactive form dictionary"). A zero value for <i>size</i> means that the font shall be <i>auto-sized</i>: its size shall be computed as an implementation dependent function.
 </p>
 
 <p>
@@ -1230,7 +1242,7 @@ The default appearance <ins onMouseEnter="mouseEnter(this)" data-issue="318" dat
 
 <p>
 To update an existing appearance stream to reflect a new field value, the interactive PDF processor shall first copy any needed resources from the 
-document's <b>DR</b> dictionary (see "Table 224 — Entries in the interactive form dictionary") into the stream's Resources dictionary. 
+document's <b>DR</b> dictionary (see "Table 224 - Entries in the interactive form dictionary") into the stream's Resources dictionary. 
 (If the <b>DR</b> and <b>Resources</b> dictionaries contain resources with the same name, the one already in the <b>Resources</b> dictionary shall be left intact,
 not replaced with the corresponding value from the <b>DR</b> dictionary.) The interactive PDF processor shall then replace the existing contents of the
 appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> with the corresponding new contents as shown in 
@@ -1248,8 +1260,8 @@ appearance stream from <code>/Tx BMC</code> to the matching <code>EMC</code> wit
 <p class="location">Change the first and only paragraph as follows:</p>
 
 <p>
-A push-button field shall have a field type of <i>Btn</i> and the Pushbutton flag (see "Table 229 — Field flags specific to button fields") set to one. 
-<del onMouseEnter="mouseEnter(this)" data-issue="386" data-iso="approved">Because this type of retains no permanent value, it shall not use the <b>V</b> and <b>DV</b> entries in the field dictionary (see "Table 226 — Entries common to all field dictionaries").</del>
+A push-button field shall have a field type of <i>Btn</i> and the Pushbutton flag (see "Table 229 - Field flags specific to button fields") set to one. 
+<del onMouseEnter="mouseEnter(this)" data-issue="386" data-iso="approved">Because this type of retains no permanent value, it shall not use the <b>V</b> and <b>DV</b> entries in the field dictionary (see "Table 226 - Entries common to all field dictionaries").</del>
 </p>
 
 <h5 id="H12.7.5.2.4">12.7.5.2.4 Radio buttons</h5>
@@ -1259,7 +1271,7 @@ A push-button field shall have a field type of <i>Btn</i> and the Pushbutton fla
 <p class="location">Change the third paragraph as follows:</p>
 
 <p>
-The <b>Kids</b> entry in the radio button field's field dictionary (see "Table 226 — Entries common to all field dictionaries") holds an
+The <b>Kids</b> entry in the radio button field's field dictionary (see "Table 226 - Entries common to all field dictionaries") holds an
 array of widget annotations representing the individual buttons in the set. The parent field's <b>V</b> entry holds a name object
 corresponding to the appearance state of whichever child field is currently in the on state; the default value for this entry is <b>Off</b>.
 <ins onMouseEnter="mouseEnter(this)" data-issue="170" data-iso="approved">The appearance for the off state is optional but, if present, shall be stored in the appearance dictionary under the name <b>Off</b>.</ins>
@@ -1348,6 +1360,12 @@ appearance) string.
     <td>
     <p>(<i>Optional; PDF 2.0</i>) The access permissions granted for this document. <ins onMouseEnter="mouseEnter(this)" data-issue="131" data-iso="approved">Changes to a PDF that are incremental updates which include only the data necessary to add DSS's 12.8.4.3, "Document Security Store (DSS)" and/or document timestamps 12.8.5, "Document timestamp (DTS) dictionary" to the document shall not be considered as changes to the document as defined in the choices below.</ins></p>
     <p>...</p>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Fields</b></td>
+    <td>array</td>
+    <td>(<i>Required if the value of <b>Action</b> is Include or Exclude</i>) An array of text strings containing <ins onMouseEnter="mouseEnter(this)" data-issue="758">fully qualified</ins> field names.
     </td>
   </tr>
 </table>
@@ -1516,7 +1534,7 @@ appearance) string.
     <td>Include/Exclude</td>
     <td>
     <p>
-    If clear, the <b>Fields</b> array (see "Table 241 — Additional entries specific to a reset-form action") specifies which fields to reset.
+    If clear, the <b>Fields</b> array (see "Table 241 - Additional entries specific to a reset-form action") specifies which fields to reset.
     (All descendants of the specified fields in the field hierarchy are reset as well.) If set, the <b>Fields</b> array indicates which fields
     to exclude from resetting; that is, all fields in the document's interactive form shall be reset <i>except</i> those listed in the <b>Fields</b> array.
     <ins onMouseEnter="mouseEnter(this)" data-issue="174" data-iso="approved">(All descendants of the specified fields in the field hierarchy are also exempt from being reset.)</ins>
@@ -1553,7 +1571,7 @@ NOTE See <a href="https://www.iana.org/assignments/media-types/application/fdf">
 <ins onMouseEnter="mouseEnter(this)" data-issue="173" data-iso="approved">Although FDF file encryption is deprecated in PDF 2.0</ins>,
 embedded FDF files specified in the FDF dictionary's <b>EmbeddedFDFs</b> entry may be encrypted.
 Besides the usual entries for an embedded file stream, the stream dictionary representing such an encrypted FDF file shall contain the
-additional entry shown in "Table 247 — Additional entry in an embedded file stream dictionary for an encrypted FDF file" to identify
+additional entry shown in "Table 247 - Additional entry in an embedded file stream dictionary for an encrypted FDF file" to identify
 the revision number of the FDF encryption algorithm used to encrypt the file. Although the FDF encryption mechanism is separate from
 the one for PDF file encryption described in 7.6, "Encryption"<ins onMouseEnter="mouseEnter(this)" data-issue="264" data-iso="approved">,</ins>
 revision 1 (the only one defined) uses a similar RC4 encryption
@@ -1846,10 +1864,10 @@ NOTE: According to 12.8.2.2, "DocMDP", and 12.7.5.5, "Signature fields", changes
     <td><b>DocMDP</b></td>
     <td>dictionary</td>
     <td>
-    <p>(<i>Optional</i>) An indirect reference to a signature dictionary (see "Table 255 — Entries in a signature dictionary").
+    <p>(<i>Optional</i>) An indirect reference to a signature dictionary (see "Table 255 - Entries in a signature dictionary").
     This dictionary shall contain a <b>Reference</b> entry that shall be
     <ins onMouseEnter="mouseEnter(this)" data-issue="218" data-iso="approved"> an array with at least one entry, exactly one of which is</ins>
-    a signature reference dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="802">"Table 255 — Entries in a signature dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="802">"Table 256 — Entries in a signature reference dictionary"</ins>) that has a <b>DocMDP</b> transform method (see 12.8.2.2, "DocMDP") and corresponding transform parameters.
+    a signature reference dictionary (see <del onMouseEnter="mouseEnter(this)" data-issue="802">"Table 255 - Entries in a signature dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="802">"Table 256 - Entries in a signature reference dictionary"</ins>) that has a <b>DocMDP</b> transform method (see 12.8.2.2, "DocMDP") and corresponding transform parameters.
     </p>
     <p>...</p>
     </td>
@@ -1973,7 +1991,7 @@ as administered by the International Association of Oil and Gas Producers (OGP).
     <td>name</td>
     <td>
     <p>(<i>Required</i>) The type of requirement that this dictionary describes.
-    See <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">"Table 276 — Entries in a requirement handler dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">"Table 275 — Requirement types"</ins> for valid values.</p>
+    See <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">"Table 276 - Entries in a requirement handler dictionary"</del><ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">"Table 275 - Requirement types"</ins> for valid values.</p>
     </td>
   </tr>
 </table>
@@ -1982,10 +2000,10 @@ as administered by the International Association of Oil and Gas Producers (OGP).
 
 <p>
 <del onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">
-There are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements (i.e., value of the <b>S</b> key). These are described in "Table 274 — Entries for specific types of requirements".
+There are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements (i.e., value of the <b>S</b> key). These are described in "Table 274 - Entries for specific types of requirements".
 </del>
 <ins onMouseEnter="mouseEnter(this)" data-issue="187" data-iso="approved">
-In addition to the keys in "Table 273 - Entries common to all requirement dictionaries", there are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements as specified by the value of the <b>S</b> key. These are described in "Table 274 — Additional entries for specific types of requirements".
+In addition to the keys in "Table 273 - Entries common to all requirement dictionaries", there are two additional keys that may appear in a requirements dictionary that are specific to certain types of requirements as specified by the value of the <b>S</b> key. These are described in "Table 274 - Additional entries for specific types of requirements".
 </ins>
 </p>
 
