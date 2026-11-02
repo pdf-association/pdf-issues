@@ -793,7 +793,7 @@ The cross-reference stream also contains a type 1 entry for the object stream it
 
 <p>...</p>
 
-<p class="location">Change the first and second bullet points as follows:</p>
+<p class="location">Change the bullet points as follows:</p>
 
 <ul>
   <li>
@@ -814,7 +814,9 @@ The cross-reference stream also contains a type 1 entry for the object stream it
       may be indirect; in fact, some (such as Root in "Table 15 - Entries in the file trailer dictionary") shall be indirect. 
     </p>
   </li>
-  <li>...</li>
+  <li>
+    <p>The cross-reference stream shall not be encrypted and <ins>all</ins> strings appearing in the cross-reference stream dictionary <ins onMouseEnter="mouseEnter(this)" data-issue="784">defined in "Table 5 - Entries common to all stream dictionaries", "Table 15 - Entries in the file trailer dictionary" and "Table 17 - Additional entries specific to a cross-reference stream dictionary"</ins> shall not be encrypted. It shall not have <ins onMouseEnter="mouseEnter(this)" data-issue="784">an <b>F</b> entry (see "Table 5 - Entries common to all stream dictionaries") and shall not</ins> a <b>Filter</b> entry that specifies a <b>Crypt</b> filter (see 7.4.10, "Crypt filter").</p>
+  </li>
 </ul>
 
 
