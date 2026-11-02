@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 12. Interactive features
-last_modified_date: 16 September 2026
+last_modified_date: 2 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
@@ -192,6 +192,8 @@ nav_order: 12
    <li>12.8.4 Long term validation of signatures
     <ul>
      <li><a href="#H12.8.4.1">12.8.4.1 General</a>
+     </li>
+     <li><a href="#H12.8.4.2">12.8.4.2 Introduction to the document security store (DSS)</a>
      </li>
      <li><a href="#H12.8.4.3">12.8.4.3 Document Security Store (DSS)</a>
      </li>
@@ -1781,6 +1783,18 @@ is achieved by using two types of dictionaries:
 <li>document security store (DSS) dictionaries, and</li>
 <li>document timestamp dictionaries (DTS) (see 12.8.5, "Document timestamp (DTS) dictionary").</li>
 </ul>
+
+
+<h4 id="H12.8.4.2">12.8.4.2 Introduction to the document security store (DSS)</h4>
+
+<p>...</p>
+<p class="location">Change the first paragraph below the bullet list as follows:</p>
+
+<p>
+When that timestamp token is already present in the CAdES signature (see <del onMouseEnter="mouseEnter(this)" data-issue="801">12.8.3.4.7, "Revocation checking PAdES signatures at the current time"</del><ins onMouseEnter="mouseEnter(this)" data-issue="801">12.8.3.4.8, "Revocation checking PAdES signatures at a time in the past</ins>) and if that timestamp token is valid, then the UTC time included in that timestamp token shall be used as the time reference to check the revocation status of the signer's certificate and of all the intermediate CA certificates, up to a trusted root. Afterwards, the DSS dictionary shall be used to collect the certificates, CRLs and OCSP responses that are relevant to validate that signature.
+</p>
+
+<p>...</p>
 
 <h4 id="H12.8.4.3">12.8.4.3 Document Security Store (DSS)</h4>
 
