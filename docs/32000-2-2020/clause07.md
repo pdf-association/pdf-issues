@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 19 June 2026
+last_modified_date: 2 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -915,6 +915,32 @@ the value of the <b>Contents</b> key in a Signature dictionary is always a hexad
 <p>Encryption is not applied to other object types such as integers and boolean values, which are used primarily to convey information about the document's structure rather than its contents. ...</p>
 
 <p>...</p>
+
+<p class="location">Change Table 20 as follows:</p>
+
+<table>
+  <caption id="Table20">Table 20 -  Entries common to all encryption dictionaries</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>V</b></td>
+    <td>integer</td>
+    <td>
+     <p>(<i>Required</i>) A code specifying the algorithm to be used in encrypting and decrypting the document: </p>
+      <ol class="numberlist">
+        <li value="3">...</li>
+        <li value="4">
+        (<i>PDF 1.5; deprecated in PDF 2.0</i>) The security handler defines the use of encryption and decryption in the document, using the rules specified by the <b>CF</b>, <b>StmF</b>, <del onMouseEnter="mouseEnter(this)" data-issue="800">and</del> <b>StrF</b> <ins onMouseEnter="mouseEnter(this)" data-issue="800">and (<i>PDF 1.6</i>) <b>EFF</b></ins> entries using 7.6.3.2, "Algorithm 1: Encryption of data using the RC4 or AES algorithms" (deprecated in PDF 2.0) with a file encryption key length of 128 bits. 
+        </li>
+        <li value="5">...</li>
+      </ol>
+    </td>
+  </tr>
+</table>
+
 
 <h3 id="H7.6.3">7.6.3 General encryption algorithm</h3>
 
