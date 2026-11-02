@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 4. Notation
-last_modified_date: 27 April 2024
+last_modified_date: 2 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 4
 ---
@@ -10,6 +10,10 @@ nav_order: 4
 <nav class="subclauses">
 <ul class="noprint">
     <li><a href="#H4.1">4.1 General</a>
+     <ul>
+      <li><a href="#H4.1.1"><ins onMouseEnter="mouseEnter(this)" data-issue="792">4.1.1 Notes for implementers</ins></a>
+      </li>
+     </ul>
     </li>
     <li><a href="#H4.2">4.2 Established notations</a>
     </li>
@@ -49,6 +53,20 @@ digit hexadecimal character code value with the prefix "U+" as shown in the exam
 </p>
 
 <p class="hangingindent">EXAMPLE  EN SPACE (U+2002)</p>
+
+
+<p class="location">Add a new sub-clause in 4.1:</p>
+
+<h3 id="#4.1.1"><ins onMouseEnter="mouseEnter(this)" data-issue="792">4.1.1 Notes for implementers</ins></h3>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="792">
+Algorithms in this document are presented as clearly as possible to ensure technical correctness and interoperability of PDF files - they are not necessarily the most efficient for performance or memory usage. This document does not provide guidance on optimising algorithms. When optimising any algorithm described in this document, implementers must ensure full correctness with the specified algorithm under all conditions.
+</ins></p>
+
+<p><ins onMouseEnter="mouseEnter(this)" data-issue="792">
+The term "implementation-dependent" is used in this document whenever a result is permitted to vary between PDF processors.
+</ins></p>
+
 
 <h2 id="H4.2">4.2 Established notations</h2>
 
