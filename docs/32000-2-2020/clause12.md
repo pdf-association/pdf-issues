@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 12. Interactive features
-last_modified_date: 2 November 2026
+last_modified_date: 6 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 12
 ---
@@ -666,6 +666,14 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="34" data-iso="approved">2<
 </p>
 
 <h3 id="H12.5.5">12.5.5 Appearance streams</h3>
+
+<p>...</p>
+
+<p class="location">Change the paragraph before NOTE 1 as follows:</p>
+
+<p>
+The transparency group shall be composited with a backdrop consisting of the page content along with any previously painted annotations, using the value<del onMouseEnter="mouseEnter(this)" data-issue="850">s</del> of the <b>BM</b><del onMouseEnter="mouseEnter(this)" data-issue="850">, <b>ca</b> and </b>CA</b> entries</del><ins onMouseEnter="mouseEnter(this)" data-issue="850">entry</ins> in the annotation dictionary (see "Table 166 - Entries common to all annotation dictionaries") and a soft mask of <i>None</i>. 
+</p>
 
 <p>...</p>
 
