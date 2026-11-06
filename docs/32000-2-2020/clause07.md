@@ -340,6 +340,12 @@ A PDF processor should ignore comments. PDF processors shall treat comments as s
 
 <p>...</p>
 
+<p class="location">Add the following NOTE after the last paragraph:</p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="826">
+NOTE: PLUS, MINUS, and PERIOD characters never act as token delimiters for consecutive numeric (number or integer) tokens. Consecutive numeric tokens, such as may occur in some PDF arrays or as operators to some operands, always require white-space.
+</ins></p>
+
 <h3 id="H7.3.4">7.3.4 String objects</h3>
 
 <h4 id="H7.3.4.2">7.3.4.2 Literal strings</h4>
