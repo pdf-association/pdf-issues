@@ -729,7 +729,8 @@ NOTE One of the most important uses of stencil masking is for painting character
 Inline image objects shall not be nested; that is, two <b>BI</b> operators shall not appear without an intervening <b>EI</b> to close the first object.
 Similarly, an <b>ID</b> operator shall only appear between a <b>BI</b> and its balancing <b>EI</b>. Unless the image uses <b>ASCIIHexDecode</b> or
 <b>ASCII85Decode</b> as <del onMouseEnter="mouseEnter(this)" data-issue="20" data-iso="approved">one of its filters</del>
-<ins onMouseEnter="mouseEnter(this)" data-issue="20" data-iso="approved">its final or only filter</ins>, the <b>ID</b> operator shall be followed by a
+<ins onMouseEnter="mouseEnter(this)" data-issue="20" data-iso="approved">its final or only filter</ins> 
+<ins onMouseEnter="mouseEnter(this)" data-issue="837">(that is, the filter that is applied first when decoding)</ins>, the <b>ID</b> operator shall be followed by a
 single white-space character, and the next character shall be interpreted as the first byte of image data.
 </p>
 
@@ -741,6 +742,14 @@ For convenience, the abbreviations shown in "Table 91 - Entries in an inline ima
 abbreviations in an inline image object" may be used in place of the full names.
 <ins onMouseEnter="mouseEnter(this)" data-issue="3" data-iso="approved">In the situation where both an abbreviated key name and the corresponding full key name from Table 91 are present, the abbreviated key name shall take precedence.</ins>
 Entries other than those listed shall be ignored.
+</p>
+
+<p>...</p>
+
+<p class="location">Change NOTE 2 as follows:</p>
+
+<p class="hangingindent">
+NOTE 2: The <b>L</b> key permits PDF processors to efficiently skip inline images if they do not need to display them. To skip an image a processor can advance beyond the single white-space character following the <b>ID</b> operator, then if the final or only filter is <b>ASCIIHexDecode</b> or <b>ASCII85Decode</b> <ins onMouseEnter="mouseEnter(this)" data-issue="837">(that is, the filter that is applied first when decoding),</ins> skip any further white-space. The number of characters expressed by the <b>L</b> key is then skipped, and the <b>EI</b> operator is expected following optional white-space. 
 </p>
 
 <p>...</p>
