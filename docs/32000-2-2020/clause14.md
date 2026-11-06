@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 14. Document interchange
-last_modified_date: 16 September 2026
+last_modified_date: 6 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 14
 ---
@@ -1903,6 +1903,26 @@ was rendered as "Druk-" and "ker").
 
 
 <h3 id="H14.11.7">14.11.7 Open prepress interface (OPI)</h3>
+
+<p class="location">Change Table 406 as follows:</p>
+
+<table>
+  <caption id="Table406">Table 406 - Entries in a version 1.3 OPI dictionary</caption>
+  <tr>
+    <th>Key</th>
+    <th>Type</th>
+    <th>OPI Comment</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <td><b>GrayMap</b></td>
+    <td>array</td>
+    <td>%ALDImageGrayMap</td>
+    <td>
+       (<i>Optional</i>) An array of <del onMouseEnter="mouseEnter(this)" data-issue="837">2n</del><ins onMouseEnter="mouseEnter(this)" data-issue="837">2<sup>n</sup></ins> integers in the range 0 to 65,535 (where <i>n</i> is the number of bits per sample) recording changes made to the brightness or contrast of the image. 
+    </td>
+  </tr>
+</table>
 
 <p class="location">Change Table 407 as follows:</p>
 
