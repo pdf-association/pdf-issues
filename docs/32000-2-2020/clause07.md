@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 7. Syntax
-last_modified_date: 2 November 2026
+last_modified_date: 6 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 7
 ---
@@ -1907,7 +1907,7 @@ NOTE <ins onMouseEnter="mouseEnter(this)" data-issue="276" data-iso="approved">2
 
 <p>...</p>
 
-<p class="location">Change the last paragraph before the EXAMPLE as follows:</p>
+<p class="location">Change the last paragraph and add a new NOTE before the EXAMPLE as follows:</p>
 
 <p>
 The prefix "D:" shall be present, the year field (YYYY) shall be present and all other fields may be
@@ -1921,6 +1921,10 @@ earlier than UT, and the LATIN CAPITAL LETTER Z signifies that local time is equ
 <ins onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">the missing timezone offset shall be assumed to be the same as Greenwich Mean Time's timezone offset (+0'00).</ins>
 <del onMouseEnter="mouseEnter(this)" data-issue="251" data-iso="approved">Regardless of whether the time zone is specified, the rest of the date shall be specified in local time.</del>
 </p>
+
+<p class="hangingindent"><ins onMouseEnter="mouseEnter(this)" data-issue="845">
+NOTE: PDF date strings always use the Gregorian calendar.
+</ins></p>
 
 <p>...</p>
 
