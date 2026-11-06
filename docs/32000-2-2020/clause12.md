@@ -407,6 +407,14 @@ an <b>SD</b> entry as defined in "Table 201 - Action types".</del><ins onMouseEn
         shall be an indirect reference</i>) The next item at this outline level.</p>
     </td>
   </tr>
+  <tr>
+    <td><b>SE</b></td>
+    <td>dictionary</td>
+    <td>
+      <p>(<i>Optional; PDF 1.3; shall be an indirect reference</i>) The structure element to which the item refers (see 14.7.2, "Structure  hierarchy").</p>
+      <p class="hangingindent">NOTE: <del onMouseEnter="mouseEnter(this)" data-issue="741">This value is not intended for navigation. Structure Destinations (<b>Dest</b> entry) are the method to provide structure-based navigation</del><ins onMouseEnter="mouseEnter(this)" data-issue="741">Structure destinations (see 12.3.2.3, "Structure destinations") provide the means of navigation using structure elements (see 14.7.2, "Structure hierarchy"), unlike the <b>SE</b> entry which is informational (e.g., to support content reuse) rather than actionable</ins>.</p>
+    </td>
+  </tr>
 </table>
 
 <p>...</p>
