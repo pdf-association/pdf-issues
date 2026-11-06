@@ -2,7 +2,7 @@
 subset: PDF 2.0
 isodoc: ISO 32000-2:2020
 title: 8. Graphics
-last_modified_date: 16 January 2026
+last_modified_date: 6 November 2026
 parent: ISO 32000-2:2020 PDF 2.0
 nav_order: 8
 ---
@@ -356,6 +356,7 @@ NOTE: While these operators are primarily for path-painting, they also serve a p
 <li>A PDF reader shall always process an embedded ICC profile according to the <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">corresponding version of the PDF</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">ICC specification</ins> being processed as shown in <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"ICC Specification versions supported by ICC based colour spaces</del><ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">"Table 66 - ICC profile versions supported by <b>ICCBased</b> colour spaces"</ins> above; it shall not substitute the alternate colour space in these cases.</li>
 <li>A PDF writer should use ICC <del onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved">1:2010</del> profiles<ins onMouseEnter="mouseEnter(this)" data-issue="181" data-iso="approved"> conforming to ISO 15076-1:2010</ins>. It may embed profiles conforming to an earlier or later ICC version.</li> 
 <li>...</li>
+<li><del onMouseEnter="mouseEnter(this)" data-issue="839">Profiles shall conform to the specification version indicated by the Profile version number in its header.</del></li>
 </ul>
 
 <p class="location">Add a new NOTE 2 below NOTE 1 and above Table 67 as follows:</p>
